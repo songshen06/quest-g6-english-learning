@@ -94,7 +94,7 @@ export const AdminInitialization: React.FC = () => {
 
       // 成功创建后关闭设置界面
       setShowAdminSetup(false)
-      window.location.reload() // 重新加载以更新界面
+      // 不需要重新加载页面，Zustand会自动处理状态更新
     } catch (error) {
       console.error('创建管理员账户时出错:', error)
     } finally {

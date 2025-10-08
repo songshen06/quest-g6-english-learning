@@ -70,7 +70,7 @@ function App() {
 
   return (
     <div className={`min-h-screen ${getThemeClasses()} ${getFontSizeClasses()} ${!currentUser?.settings.animationsEnabled && !progress?.settings.animationsEnabled ? 'transition-none' : ''} transition-colors duration-200`}>
-      <Router>
+      <Router basename="/quest-g6-english-learning">
         {/* 访客横幅 */}
         <GuestBanner />
 
