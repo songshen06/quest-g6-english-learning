@@ -1,0 +1,41 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# React路由配置 - 所有路由都重定向到index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# 设置缓存策略
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/content/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# PWA Service Worker缓存
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+# 构建环境变量
+[build.environment]
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
