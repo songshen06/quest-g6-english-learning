@@ -60,7 +60,7 @@ export const Navigation: React.FC = () => {
                 <div
                   key={item.path}
                   className={`flex flex-col items-center justify-center py-2 px-3 rounded-lg opacity-50 cursor-not-allowed ${
-                    !progress?.settings.animationsEnabled ? 'transition-none' : ''
+                    !progress?.settings?.animationsEnabled ? 'transition-none' : ''
                   }`}
                   title="请先登录"
                 >
@@ -80,7 +80,7 @@ export const Navigation: React.FC = () => {
                   active
                     ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
                     : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-                } ${!progress?.settings.animationsEnabled ? 'transition-none' : ''}`}
+                } ${!progress?.settings?.animationsEnabled ? 'transition-none' : ''}`}
               >
                 <div className="relative">
                   <Icon className="w-6 h-6" />
