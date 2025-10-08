@@ -3,6 +3,7 @@ import { Volume2 } from 'lucide-react'
 import { QuestStep } from '@/types'
 import { audioPlayer } from '@/utils/audioPlayer'
 import { useGameStore } from '@/store/useGameStore'
+import { getAssetPath } from '@/utils/assetPath'
 
 interface ZhToEnStepProps {
   step: QuestStep
@@ -85,7 +86,7 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
 
     // Only return audio path if the word is in our known list
     if (knownAudioFiles.includes(wordId)) {
-      return `/audio/tts/${wordId}.mp3`
+      return getAssetPath(`/audio/tts/${wordId}.mp3`)
     }
 
     return null

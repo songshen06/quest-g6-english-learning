@@ -3,6 +3,7 @@ import { Volume2 } from 'lucide-react'
 import { QuestStep } from '@/types'
 import { audioPlayer } from '@/utils/audioPlayer'
 import { useGameStore } from '@/store/useGameStore'
+import { getAssetPath } from '@/utils/assetPath'
 
 interface WordMatchingStepProps {
   step: QuestStep
@@ -53,7 +54,7 @@ export const WordMatchingStep: React.FC<WordMatchingStepProps> = ({ step, onComp
       .replace(/-+/g, '-')            // Replace multiple hyphens with single hyphen
       .replace(/^-|-$/g, '')          // Remove leading/trailing hyphens
 
-    return `/audio/tts/${wordId}.mp3`
+    return getAssetPath(`/audio/tts/${wordId}.mp3`)
   }
 
   const handlePlayAudio = async (e: React.MouseEvent, englishWord: string) => {

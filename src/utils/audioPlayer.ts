@@ -1,4 +1,5 @@
 import { AudioPlayer } from '@/types'
+import { getAssetPath } from './assetPath'
 
 class SimpleAudioPlayer implements AudioPlayer {
   private audio: HTMLAudioElement | null = null
@@ -13,8 +14,11 @@ class SimpleAudioPlayer implements AudioPlayer {
       // Stop any currently playing audio
       this.stop()
 
+      // Ensure the src includes the base path
+      const fullSrc = getAssetPath(src)
+
       // Create new audio element
-      this.audio = new Audio(src)
+      this.audio = new Audio(fullSrc)
 
       // Set up event listeners
       this.audio.addEventListener('ended', () => {
@@ -82,7 +86,7 @@ export class SoundManager {
   private soundEffects: Map<string, HTMLAudioElement> = new Map()
 
   constructor() {
-    // Preload common sound effects
+    // Preload common sound effects with base path
     this.preloadSound('/audio/sfx/correct.mp3', 'correct')
     this.preloadSound('/audio/sfx/wrong.mp3', 'wrong')
     this.preloadSound('/audio/sfx/unlock.mp3', 'unlock')
@@ -91,7 +95,9 @@ export class SoundManager {
 
   private async preloadSound(src: string, id: string): Promise<void> {
     try {
-      const audio = new Audio(src)
+      // Ensure the src includes the base path
+      const fullSrc = getAssetPath(src)
+      const audio = new Audio(fullSrc)
       audio.load()
       this.soundEffects.set(id, audio)
     } catch (error) {

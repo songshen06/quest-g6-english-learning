@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Volume2, Play, Mic, MicOff, Check, X } from 'lucide-react'
+import { getAssetPath } from '@/utils/assetPath'
 
 interface Pattern {
   q: string
@@ -67,7 +68,7 @@ export const PatternCard: React.FC<PatternCardProps> = ({ pattern, index }) => {
       {/* 音频元素 */}
       <audio
         ref={audioRef}
-        src={`/audio/tts/${audioFileName}`}
+        src={getAssetPath(`/audio/tts/${audioFileName}`)}
         preload="none"
       />
 
