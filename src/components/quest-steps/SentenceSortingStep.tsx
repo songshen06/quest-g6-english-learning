@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { QuestStep } from '@/types'
+import { getAssetPath } from '@/utils/assetPath'
 
 interface SentenceSortingStepProps {
   step: QuestStep
@@ -26,7 +27,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
   useEffect(() => {
     if (step.audio && !hasPlayedAudio) {
       // Auto-play audio when component loads
-      const audio = new Audio(step.audio)
+      const audio = new Audio(getAssetPath(step.audio))
       audio.play().catch(() => {
         // Auto-play was prevented, user will need to click play button
       })
@@ -46,7 +47,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
 
   const playAudio = () => {
     if (step.audio) {
-      const audio = new Audio(step.audio)
+      const audio = new Audio(getAssetPath(step.audio))
       audio.play()
     }
   }
