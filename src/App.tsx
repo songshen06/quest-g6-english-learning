@@ -102,7 +102,7 @@ function App() {
             </ProtectedRoute>
           } />
           <Route path="/settings" element={
-            <ProtectedRoute requireAuth={true}>
+            <ProtectedRoute requireAuth={false}>
               <SettingsPage />
             </ProtectedRoute>
           } />
