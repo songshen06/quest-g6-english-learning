@@ -1,0 +1,151 @@
+{
+  "moduleId": "grade5-lower-mod-01",
+  "title": "Driver & Player",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "drive",
+      "en": "drive",
+      "zh": "驾驶",
+      "audio": "/audio/tts/drive.mp3"
+    },
+    {
+      "id": "drove",
+      "en": "drove",
+      "zh": "（drive 的过去式）驾驶",
+      "audio": "/audio/tts/drove.mp3"
+    },
+    {
+      "id": "driver",
+      "en": "driver",
+      "zh": "司机",
+      "audio": "/audio/tts/driver.mp3"
+    },
+    {
+      "id": "player",
+      "en": "player",
+      "zh": "演奏者",
+      "audio": "/audio/tts/player.mp3"
+    },
+    {
+      "id": "office",
+      "en": "office",
+      "zh": "办公室",
+      "audio": "/audio/tts/office.mp3"
+    },
+    {
+      "id": "fish",
+      "en": "fish",
+      "zh": "捕鱼，钓鱼",
+      "audio": "/audio/tts/fish.mp3"
+    }
+  ],
+  "phrases": [],
+  "patterns": [
+    {
+      "q": "My grandma was a driver before.",
+      "a": "我奶奶以前是司机。"
+    },
+    {
+      "q": "What did she drive?",
+      "a": "她开什么车？"
+    },
+    {
+      "q": "She drove a bus.",
+      "a": "她开过公交车。"
+    },
+    {
+      "q": "My grandpa was a flute player before.",
+      "a": "我爷爷以前是笛子演奏者。"
+    },
+    {
+      "q": "What music did he play?",
+      "a": "他演奏什么音乐？"
+    },
+    {
+      "q": "He played Chinese music.",
+      "a": "他演奏中国音乐。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "drive",
+              "zh": "驾驶"
+            },
+            {
+              "en": "driver",
+              "zh": "司机"
+            },
+            {
+              "en": "player",
+              "zh": "演奏者"
+            },
+            {
+              "en": "office",
+              "zh": "办公室"
+            },
+            {
+              "en": "fish",
+              "zh": "捕鱼，钓鱼"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/car-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "按正确顺序排列单词",
+          "audio": "/audio/tts/she-drove-a-bus.mp3",
+          "scrambled": [
+            "bus",
+            "She",
+            "a",
+            "drove"
+          ],
+          "correct": [
+            "She",
+            "drove",
+            "a",
+            "bus"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/music-badge.png",
+        "xp": 10
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My grandma was a ______ before.",
+      "answer": "driver"
+    },
+    {
+      "type": "fillblank",
+      "text": "He ______ Chinese music.",
+      "answer": "played"
+    }
+  ],
+  "funFacts": [
+    "世界上第一位女公交司机出现在 20 世纪早期。",
+    "中国竹制横笛有悠久历史。"
+  ]
+}

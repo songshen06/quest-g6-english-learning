@@ -1,0 +1,103 @@
+{
+  "moduleId": "grade5-lower-mod-04",
+  "title": "Letters & Seasons",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "sent",
+      "en": "sent",
+      "zh": "（send 的过去式）寄，发送",
+      "audio": "/audio/tts/sent.mp3"
+    },
+    {
+      "id": "american",
+      "en": "American",
+      "zh": "美国的；美国人",
+      "audio": "/audio/tts/american.mp3"
+    },
+    {
+      "id": "read-past",
+      "en": "read",
+      "zh": "（read 的过去式）阅读",
+      "audio": "/audio/tts/read-past.mp3"
+    },
+    {
+      "id": "interesting",
+      "en": "interesting",
+      "zh": "有趣的",
+      "audio": "/audio/tts/interesting.mp3"
+    },
+    {
+      "id": "season",
+      "en": "season",
+      "zh": "季节",
+      "audio": "/audio/tts/season.mp3"
+    },
+    {
+      "id": "snow",
+      "en": "snow",
+      "zh": "雪",
+      "audio": "/audio/tts/snow.mp3"
+    }
+  ],
+  "phrases": [],
+  "patterns": [
+    {
+      "q": "I sent you a maths game. Did you get it?",
+      "a": "我寄给你一个数学游戏。你收到了吗？"
+    },
+    {
+      "q": "Yes, Grandma. Thank you.",
+      "a": "收到了，谢谢奶奶。"
+    },
+    {
+      "q": "And I sent you English books. Did you read them?",
+      "a": "我还寄给你英语书，你读了吗？"
+    },
+    {
+      "q": "Yes, Grandma. I read them. They are interesting.",
+      "a": "读了，很有趣。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "past-tense",
+      "title": "一般过去时识别",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "匹配原形与过去式",
+          "pairs": [
+            {
+              "en": "send → sent",
+              "zh": "寄 → 已寄"
+            },
+            {
+              "en": "read → read",
+              "zh": "读 → 读（过去式同形）"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/snow-badge.png",
+        "xp": 10
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I ______ you a maths game.",
+      "answer": "sent"
+    },
+    {
+      "type": "fillblank",
+      "text": "They are ______.",
+      "answer": "interesting"
+    }
+  ],
+  "funFacts": [
+    "英语中 read 的过去式拼写不变，但读音不同。"
+  ]
+}

@@ -1,0 +1,103 @@
+import React, { useState, useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { ArrowLeft, Clock, Star, Lock, CheckCircle } from 'lucide-react'
+import { WordCard } from '@/components/WordCard'
+import { PhraseCard } from '@/components/PhraseCard'
+import { Navigation } from '@/components/Navigation'
+import { useGameStore } from '@/store/useGameStore'
+import { useTranslation } from '@/hooks/useTranslation'
+import { Module } from '@/types'
+
+// Import all module data directly
+import module01howlongData from '@/content/module-01-how-long.json'
+
+const moduleDataMap: Record<string, Module> = {
+  'grade6-upper-mod-01': module01howlongData
+}
+
+export const ModulePage: React.FC = () => {
+  const { moduleId } = useParams<{ moduleId: string }>()
+  const navigate = useNavigate()
+  const { progress, loadModule } = useGameStore()
+  const { t } = useTranslation()
+  const [moduleData, setModuleData] = useState<Module | null>(null)
+
+  useEffect(() => {
+    if (moduleId) {
+      const module = moduleDataMap[moduleId]
+
+      if (module) {
+        console.log('Module loaded:', module)
+        setModuleData(module)
+        loadModule(module)
+      } else {
+        console.error('Module not found:', moduleId)
+        navigate('/modules')
+      }
+    }
+  }, [moduleId, loadModule, navigate])
+
+  if (!moduleData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="loading-spinner mx-auto mb-4" />
+          <p className="text-lg">{t('common.loading')}...</p>
+        </div>
+      </div>
+    )
+  }
+
+  const completedQuests = progress?.completedQuests || []
+  const isQuestCompleted = (questId: string) => completedQuests.includes(questId)
+  const questProgress = (moduleData.quests.filter(q => isQuestCompleted(q.id)).length / moduleData.quests.length) * 100
+
+  const handleStartQuest = (questId: string) => {
+    console.log('Starting quest:', questId)
+  }
+
+  const handleStartFirstQuest = () => {
+    console.log('Starting first quest')
+  }
+
+  const renderTabContent = () => {
+    return (
+      <div className="space-y-4">
+        <div className="bg-white rounded-xl border-2 border-primary-300 p-6">
+          <h3 className="text-lg font-semibold mb-2">Sample Content</h3>
+          <p>This is a template for ModulePage.tsx</p>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Header */}
+      <header className="bg-white border-b border-gray-200 px-4 py-3">
+        <div className="flex items-center space-x-3">
+          <button
+            onClick={() => navigate('/modules')}
+            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <div className="flex-1">
+            <h1 className="text-lg font-semibold">{moduleData.title}</h1>
+            <p className="text-sm text-gray-600">Module Content</p>
+          </div>
+        </div>
+      </header>
+
+      {/* Content */}
+      <main className="flex-1 max-w-md mx-auto w-full px-4 py-6">
+        {renderTabContent()}
+      </main>
+
+      {/* Navigation */}
+      <Navigation />
+    </div>
+  )
+}
+
+export default ModulePage

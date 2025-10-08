@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="45" fill="#F44336" stroke="#C62828" stroke-width="2"/>
+  
+  <!-- Road/crosswalk stripes -->
+  <g fill="#FFF" opacity="0.3">
+    <rect x="20" y="40" width="60" height="4"/>
+    <rect x="20" y="48" width="60" height="4"/>
+    <rect x="20" y="56" width="60" height="4"/>
+  </g>
+  
+  <!-- Walking person silhouette -->
+  <g fill="#FFF">
+    <!-- Head -->
+    <circle cx="45" cy="25" r="6"/>
+    <!-- Body -->
+    <rect x="42" y="32" width="6" height="15" rx="2"/>
+    <!-- Arms -->
+    <rect x="35" y="35" width="8" height="3" rx="1.5"/>
+    <rect x="57" y="35" width="8" height="3" rx="1.5"/>
+    <!-- Legs -->
+    <rect x="40" y="47" width="4" height="12" rx="2"/>
+    <rect x="46" y="47" width="4" height="12" rx="2"/>
+  </g>
+  
+  <!-- Large X prohibition symbol -->
+  <g stroke="#FFF" stroke-width="6" stroke-linecap="round">
+    <line x1="25" y1="25" x2="75" y2="75"/>
+    <line x1="75" y1="25" x2="25" y2="75"/>
+  </g>
+  
+  <!-- Warning border -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#FFF" stroke-width="3" opacity="0.8"/>
+</svg>

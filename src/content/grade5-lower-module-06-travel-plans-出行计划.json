@@ -1,0 +1,161 @@
+{
+  "moduleId": "grade5-lower-mod-06",
+  "title": "Travel Plans",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "build",
+      "en": "build",
+      "zh": "建造",
+      "audio": "/audio/tts/build.mp3"
+    },
+    {
+      "id": "place",
+      "en": "place",
+      "zh": "地方",
+      "audio": "/audio/tts/place.mp3"
+    },
+    {
+      "id": "thousand",
+      "en": "thousand",
+      "zh": "一千",
+      "audio": "/audio/tts/thousand.mp3"
+    },
+    {
+      "id": "circle",
+      "en": "circle",
+      "zh": "圆，圆形",
+      "audio": "/audio/tts/circle.mp3"
+    },
+    {
+      "id": "answer",
+      "en": "answer",
+      "zh": "答案",
+      "audio": "/audio/tts/answer.mp3"
+    },
+    {
+      "id": "hope",
+      "en": "hope",
+      "zh": "希望",
+      "audio": "/audio/tts/hope.mp3"
+    },
+    {
+      "id": "so",
+      "en": "so",
+      "zh": "如此，这样",
+      "audio": "/audio/tts/so.mp3"
+    },
+    {
+      "id": "get",
+      "en": "get",
+      "zh": "到达",
+      "audio": "/audio/tts/get.mp3"
+    },
+    {
+      "id": "hour",
+      "en": "hour",
+      "zh": "小时",
+      "audio": "/audio/tts/hour.mp3"
+    },
+    {
+      "id": "amazing",
+      "en": "amazing",
+      "zh": "令人吃惊的",
+      "audio": "/audio/tts/amazing.mp3"
+    },
+    {
+      "id": "take",
+      "en": "take",
+      "zh": "搭乘，乘坐",
+      "audio": "/audio/tts/take.mp3"
+    },
+    {
+      "id": "short",
+      "en": "short",
+      "zh": "短暂的，短期的",
+      "audio": "/audio/tts/short.mp3"
+    },
+    {
+      "id": "helicopter",
+      "en": "helicopter",
+      "zh": "直升机",
+      "audio": "/audio/tts/helicopter.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "wait-for",
+      "en": "wait for",
+      "zh": "等待",
+      "audio": "/audio/tts/wait-for.mp3"
+    },
+    {
+      "id": "helicopter-ride",
+      "en": "take a helicopter ride",
+      "zh": "坐直升飞机",
+      "audio": "/audio/tts/helicopter-ride.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What will we see there?",
+      "a": "我们在那里会看到什么？"
+    },
+    {
+      "q": "We’ll see lots of very big stones.",
+      "a": "我们会看到很多非常大的石头。"
+    },
+    {
+      "q": "How will we get there?",
+      "a": "我们怎么到那儿？"
+    },
+    {
+      "q": "By car. It will take three hours.",
+      "a": "开车去。需要三个小时。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "transport-choose",
+      "title": "出行方式选择",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "匹配出行问题与回答",
+          "pairs": [
+            {
+              "en": "How will we get there?",
+              "zh": "By car."
+            },
+            {
+              "en": "What will we see there?",
+              "zh": "Lots of big stones."
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/travel-badge.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It will take ______ hours.",
+      "answer": "three"
+    },
+    {
+      "type": "translate",
+      "cn": "我们怎么到那儿？开车去。",
+      "en": [
+        "How will we get there?",
+        "By car."
+      ]
+    }
+  ],
+  "funFacts": [
+    "有些著名遗址由数千块巨石围成圆形。"
+  ]
+}

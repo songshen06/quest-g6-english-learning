@@ -1,0 +1,142 @@
+{
+  "moduleId": "grade5-lower-mod-09",
+  "title": "Theatre & History",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "wore",
+      "en": "wore",
+      "zh": "（wear 的过去式）穿，戴",
+      "audio": "/audio/tts/wore.mp3"
+    },
+    {
+      "id": "theatre",
+      "en": "theatre",
+      "zh": "剧院",
+      "audio": "/audio/tts/theatre.mp3"
+    },
+    {
+      "id": "men",
+      "en": "men",
+      "zh": "男人（复数）",
+      "audio": "/audio/tts/men.mp3"
+    },
+    {
+      "id": "women",
+      "en": "women",
+      "zh": "女人（复数）",
+      "audio": "/audio/tts/women.mp3"
+    },
+    {
+      "id": "told",
+      "en": "told",
+      "zh": "（tell 的过去式）讲",
+      "audio": "/audio/tts/told.mp3"
+    },
+    {
+      "id": "joke",
+      "en": "joke",
+      "zh": "笑话",
+      "audio": "/audio/tts/joke.mp3"
+    },
+    {
+      "id": "funny",
+      "en": "funny",
+      "zh": "滑稽的，可笑的",
+      "audio": "/audio/tts/funny.mp3"
+    },
+    {
+      "id": "show",
+      "en": "show",
+      "zh": "演出，表演",
+      "audio": "/audio/tts/show.mp3"
+    },
+    {
+      "id": "put",
+      "en": "put",
+      "zh": "（put 的过去式）放置",
+      "audio": "/audio/tts/put.mp3"
+    },
+    {
+      "id": "history",
+      "en": "history",
+      "zh": "历史",
+      "audio": "/audio/tts/history.mp3"
+    },
+    {
+      "id": "subject",
+      "en": "subject",
+      "zh": "学科，科目",
+      "audio": "/audio/tts/subject.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "ask-questions",
+      "en": "ask questions",
+      "zh": "问问题",
+      "audio": "/audio/tts/ask-questions.mp3"
+    },
+    {
+      "id": "get-ready-for",
+      "en": "get ready for",
+      "zh": "为……准备",
+      "audio": "/audio/tts/get-ready-for.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Last week, we went to a children's theatre.",
+      "a": "上周我们去了一个儿童剧院。"
+    },
+    {
+      "q": "The actors told lots of jokes. We laughed a lot.",
+      "a": "演员讲了很多笑话，我们笑个不停。"
+    },
+    {
+      "q": "What did the actors do?",
+      "a": "演员们做了什么？"
+    },
+    {
+      "q": "They told lots of funny jokes.",
+      "a": "他们讲了很多有趣的笑话。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "past-experience",
+      "title": "过去经历描述",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "排序剧院经历描述",
+          "audio": "/audio/tts/theatre-experience.mp3",
+          "scrambled": [
+            "We laughed a lot.",
+            "Last week, we went to a children’s theatre.",
+            "The actors told lots of jokes."
+          ],
+          "correct": [
+            "Last week, we went to a children’s theatre.",
+            "The actors told lots of jokes.",
+            "We laughed a lot."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/theatre-badge.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "The actors told lots of ______.",
+      "answer": "jokes"
+    }
+  ],
+  "funFacts": [
+    "很多国家有专门面向儿童的剧院演出。"
+  ]
+}

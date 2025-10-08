@@ -1,0 +1,301 @@
+import React, { useState, useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
+import { ArrowLeft, Clock, Star, Lock, CheckCircle } from 'lucide-react'
+import { WordCard } from '@/components/WordCard'
+import { PhraseCard } from '@/components/PhraseCard'
+import { Navigation } from '@/components/Navigation'
+import { useGameStore } from '@/store/useGameStore'
+import { useTranslation } from '@/hooks/useTranslation'
+import { Module } from '@/types'
+
+// Import all module data directly
+import grade5lowermodule01driverplayer司机演奏者Data from '@/content/grade5-lower-module-01-driver-player-司机-演奏者.json'
+import grade5lowermodule02traditionalfood传统食物Data from '@/content/grade5-lower-module-02-traditional-food-传统食物.json'
+import grade5lowermodule03libraryborrow图书馆借阅Data from '@/content/grade5-lower-module-03-library-borrow-图书馆-借阅.json'
+import grade5lowermodule04lettersseasons寄信季节Data from '@/content/grade5-lower-module-04-letters-seasons-寄信-季节.json'
+import grade5lowermodule05shoppingcarrying购物背负Data from '@/content/grade5-lower-module-05-shopping-carrying-购物-背负.json'
+import grade5lowermodule06travelplans出行计划Data from '@/content/grade5-lower-module-06-travel-plans-出行计划.json'
+import grade5lowermodule07jobstime职业时间Data from '@/content/grade5-lower-module-07-jobs-time-职业-时间.json'
+import grade5lowermodule08makeakite做风筝Data from '@/content/grade5-lower-module-08-make-a-kite-做风筝.json'
+import grade5lowermodule09theatrehistory剧院历史Data from '@/content/grade5-lower-module-09-theatre-history-剧院-历史.json'
+import grade5lowermodule10travelprep行前准备Data from '@/content/grade5-lower-module-10-travel-prep-行前准备.json'
+import module01howlongData from '@/content/module-01-how-long.json'
+import module02chinatowntombsData from '@/content/module-02-chinatown-tombs.json'
+import module03stampshobbiesData from '@/content/module-03-stamps-hobbies.json'
+import module04festivalsData from '@/content/module-04-festivals.json'
+import module05penfriendsData from '@/content/module-05-pen-friends.json'
+import module06schoolanswersData from '@/content/module-06-school-answers.json'
+import module07animalsData from '@/content/module-07-animals.json'
+import module08habitstidyData from '@/content/module-08-habits-tidy.json'
+import module09peaceunData from '@/content/module-09-peace-un.json'
+import module10travelsafetyData from '@/content/module-10-travel-safety.json'
+import grade6lowermodule01futureplansData from '@/content/grade6-lower-module-01-future-plans.json'
+import grade6lowermodule02traveldreamsData from '@/content/grade6-lower-module-02-travel-dreams.json'
+
+const moduleDataMap: Record<string, Module> = {
+        'grade5-lower-mod-01': grade5lowermodule01driverplayer司机演奏者Data,
+        '01': grade6lowermodule01futureplansData,
+        'grade5-lower-mod-02': grade5lowermodule02traditionalfood传统食物Data,
+        '02': grade6lowermodule02traveldreamsData,
+        'grade5-lower-mod-03': grade5lowermodule03libraryborrow图书馆借阅Data,
+        '03': module03stampshobbiesData,
+        'grade5-lower-mod-04': grade5lowermodule04lettersseasons寄信季节Data,
+        '04': module04festivalsData,
+        'grade5-lower-mod-05': grade5lowermodule05shoppingcarrying购物背负Data,
+        '05': module05penfriendsData,
+        'grade5-lower-mod-06': grade5lowermodule06travelplans出行计划Data,
+        '06': module06schoolanswersData,
+        'grade5-lower-mod-07': grade5lowermodule07jobstime职业时间Data,
+        '07': module07animalsData,
+        'grade5-lower-mod-08': grade5lowermodule08makeakite做风筝Data,
+        '08': module08habitstidyData,
+        'grade5-lower-mod-09': grade5lowermodule09theatrehistory剧院历史Data,
+        '09': module09peaceunData,
+        'grade5-lower-mod-10': grade5lowermodule10travelprep行前准备Data,
+        '10': module10travelsafetyData,
+        'grade6-upper-mod-01': module01howlongData,
+        'grade6-upper-mod-02': module02chinatowntombsData,
+        'grade6-upper-mod-03': module03stampshobbiesData,
+        'grade6-upper-mod-04': module04festivalsData,
+        'grade6-upper-mod-05': module05penfriendsData,
+        'grade6-upper-mod-06': module06schoolanswersData,
+        'grade6-upper-mod-07': module07animalsData,
+        'grade6-upper-mod-08': module08habitstidyData,
+        'grade6-upper-mod-09': module09peaceunData,
+        'grade6-upper-mod-10': module10travelsafetyData,
+        'grade6-lower-mod-01': grade6lowermodule01futureplansData,
+        'grade6-lower-mod-02': grade6lowermodule02traveldreamsData
+      }
+
+      const module = moduleDataMap[moduleId]
+
+      if (module) {
+        console.log('Module loaded:', module)
+        setModuleData(module)
+        loadModule(module)
+      } else {
+        console.error('Module not found:', moduleId)
+        navigate('/modules')
+      }
+    }
+  }, [moduleId, loadModule, navigate])
+
+  if (!moduleData) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="loading-spinner mx-auto mb-4" />
+          <p className="text-lg">{t('common.loading')}...</p>
+        </div>
+      </div>
+    )
+  }
+
+  const completedQuests = progress?.completedQuests || []
+  const isQuestCompleted = (questId: string) => completedQuests.includes(questId)
+  const questProgress = (moduleData.quests.filter(q => isQuestCompleted(q.id)).length / moduleData.quests.length) * 100
+
+  const handleStartQuest = (questId: string) => {
+    console.log('Starting quest:', questId)
+    startQuest(questId)
+    navigate(`/quest/${moduleId}/${questId}`)
+  }
+
+  const handleStartFirstQuest = () => {
+    if (moduleData && moduleData.quests.length > 0) {
+      handleStartQuest(moduleData.quests[0].id)
+    }
+  }
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'words':
+        return (
+          <div className="space-y-4">
+            {moduleData.words.map((word) => (
+              <WordCard
+                key={word.id}
+                word={word}
+                showTranslation={true}
+              />
+            ))}
+          </div>
+        )
+
+      case 'phrases':
+        return (
+          <div className="space-y-4">
+            {moduleData.phrases.map((phrase) => (
+              <PhraseCard
+                key={phrase.id}
+                phrase={phrase}
+                showTranslation={true}
+                showIcon={true}
+              />
+            ))}
+          </div>
+        )
+
+      case 'quests':
+        return (
+          <div className="space-y-4">
+            {moduleData.quests.map((quest, index) => {
+              const isCompleted = isQuestCompleted(quest.id)
+              const isLocked = index > 0 && !isQuestCompleted(moduleData.quests[index - 1].id)
+
+              return (
+                <div
+                  key={quest.id}
+                  className={`bg-white rounded-xl border-2 p-6 ${
+                    isCompleted
+                      ? 'border-green-300 bg-green-50'
+                      : isLocked
+                      ? 'border-gray-200 opacity-60'
+                      : 'border-primary-300 hover:border-primary-400 cursor-pointer'
+                  } transition-colors`}
+                  onClick={() => !isLocked && handleStartQuest(quest.id)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
+                        isCompleted
+                          ? 'bg-green-500'
+                          : isLocked
+                          ? 'bg-gray-300'
+                          : 'bg-primary-500'
+                      }`}>
+                        {isCompleted ? (
+                          <CheckCircle className="w-6 h-6 text-white" />
+                        ) : isLocked ? (
+                          <Lock className="w-6 h-6 text-white" />
+                        ) : (
+                          <span className="text-white font-bold">{index + 1}</span>
+                        )}
+                      </div>
+
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900">
+                          {quest.title}
+                        </h3>
+                        <div className="flex items-center gap-2 text-sm text-gray-600 mt-1">
+                          <Clock className="w-4 h-4" />
+                          <span>{quest.steps.length} steps</span>
+                          <Star className="w-4 h-4 ml-2" />
+                          <span>{quest.reward.xp} XP</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      disabled={isLocked}
+                      className={`btn ${
+                        isCompleted
+                          ? 'btn-outline'
+                          : isLocked
+                          ? 'btn-outline opacity-50 cursor-not-allowed'
+                          : 'btn-primary'
+                      }`}
+                    >
+                      {isCompleted ? 'Review' : isLocked ? 'Locked' : t('common.start')}
+                    </button>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        )
+
+      default:
+        return null
+    }
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gray-50">
+      {/* Header */}
+      <header className="safe-top bg-white shadow-sm">
+        <div className="max-w-md mx-auto px-4 py-6">
+          <div className="flex items-center gap-4 mb-4">
+            <button
+              onClick={() => navigate('/')}
+              className="p-2 hover:bg-gray-100 rounded-lg"
+            >
+              <ArrowLeft className="w-6 h-6" />
+            </button>
+            <div>
+              <h1 className="text-2xl font-bold text-gray-900">
+                {moduleData.title}
+              </h1>
+              <p className="text-gray-600">
+                {moduleData.durationMinutes} minutes
+              </p>
+            </div>
+          </div>
+
+          {/* Module Progress */}
+          <div className="mb-4">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-sm text-gray-600">Module Progress</span>
+              <span className="text-sm text-gray-600">{Math.round(questProgress)}%</span>
+            </div>
+            <div className="progress-bar">
+              <div
+                className="progress-fill"
+                style={{ width: `${questProgress}%` }}
+              />
+            </div>
+          </div>
+
+          {/* Start Learning Button */}
+          {moduleData.quests.length > 0 && (
+            <div className="mt-4">
+              <button
+                onClick={handleStartFirstQuest}
+                className="w-full btn btn-adhd btn-primary flex items-center justify-center gap-3"
+              >
+                <Clock className="w-5 h-5" />
+                Start Learning - {moduleData.quests[0].title}
+              </button>
+            </div>
+          )}
+        </div>
+      </header>
+
+      {/* Tabs */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-md mx-auto">
+          <div className="flex">
+            {[
+              { id: 'quests', label: 'Quests', count: moduleData.quests.length },
+              { id: 'words', label: 'Words', count: moduleData.words.length },
+              { id: 'phrases', label: 'Phrases', count: moduleData.phrases.length }
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id as any)}
+                className={`flex-1 py-3 px-4 text-center border-b-2 transition-colors ${
+                  activeTab === tab.id
+                    ? 'border-primary-500 text-primary-600 font-semibold'
+                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                {tab.label}
+                <span className="ml-1 text-sm bg-gray-100 px-2 py-1 rounded-full">
+                  {tab.count}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <main className="flex-1 max-w-md mx-auto w-full px-4 py-6">
+        {renderTabContent()}
+      </main>
+
+      {/* Navigation */}
+      <Navigation />
+    </div>
+  )
+}

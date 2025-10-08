@@ -1,0 +1,147 @@
+{
+  "moduleId": "mod-10",
+  "title": "Travel and Safety",
+  "durationMinutes": 15,
+  "words": [
+    {"id": "aunt", "en": "aunt", "zh": "阿姨；姑姑", "audio": "/audio/tts/aunt.mp3"},
+    {"id": "forgot", "en": "forgot", "zh": "忘记(forget的过去式)", "audio": "/audio/tts/forgot.mp3"},
+    {"id": "way", "en": "way", "zh": "路；方式", "audio": "/audio/tts/way.mp3"},
+    {"id": "cross", "en": "cross", "zh": "穿过", "audio": "/audio/tts/cross.mp3"}
+  ],
+  "phrases": [
+    {"id": "take-away", "en": "take away", "zh": "带走", "icon": "/images/icons/take-away.svg", "audio": "/audio/tts/take-away.mp3"},
+    {"id": "have-picnic", "en": "have our picnic", "zh": "野餐", "icon": "/images/food/picnic.svg", "audio": "/audio/tts/have-picnic.mp3"},
+    {"id": "dont-worry", "en": "don't worry", "zh": "不要担心", "audio": "/audio/tts/dont-worry.mp3"},
+    {"id": "drink-water", "en": "drink clean water", "zh": "喝干净水", "icon": "/images/drinks/water.svg", "audio": "/audio/tts/drink-water.mp3"},
+    {"id": "fun-to", "en": "it's fun to…", "zh": "很高兴去做…", "audio": "/audio/tts/fun-to.mp3"},
+    {"id": "go-straight", "en": "go straight on", "zh": "一直往前走", "icon": "/images/directions/straight.svg", "audio": "/audio/tts/go-straight.mp3"},
+    {"id": "dont-cross", "en": "don't cross", "zh": "禁止穿行", "audio": "/audio/tts/dont-cross.mp3"},
+    {"id": "turn-right", "en": "turn right", "zh": "往右拐", "icon": "/images/directions/right.svg", "audio": "/audio/tts/turn-right.mp3"},
+    {"id": "cross-road", "en": "cross the road", "zh": "穿过马路", "icon": "/images/directions/cross.svg", "audio": "/audio/tts/cross-road.mp3"},
+    {"id": "turn-left", "en": "turn left", "zh": "往左拐", "icon": "/images/directions/left.svg", "audio": "/audio/tts/turn-left.mp3"}
+  ],
+  "patterns": [
+    {"q": "Only drink clean water!", "a": "只喝干净的水！"},
+    {"q": "This water is very clean. It's fun to drink this way.", "a": "这水很干净。这样喝很有趣。"},
+    {"q": "Don't cross the road here!", "a": "不要在这里穿行马路！"},
+    {"q": "Cross at the traffic lights.", "a": "在红绿灯处穿行。"}
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {"en": "aunt", "zh": "阿姨；姑姑", "audio": "/audio/tts/aunt.mp3"},
+            {"en": "forgot", "zh": "忘记(forget的过去式)", "audio": "/audio/tts/forgot.mp3"},
+            {"en": "way", "zh": "路；方式", "audio": "/audio/tts/way.mp3"},
+            {"en": "cross", "zh": "穿过", "audio": "/audio/tts/cross.mp3"},
+            {"en": "take away", "zh": "带走", "audio": "/audio/tts/take-away.mp3"},
+            {"en": "have our picnic", "zh": "野餐", "audio": "/audio/tts/have-picnic.mp3"}
+          ],
+          "options": [
+            {"en": "worry", "zh": "担心"},
+            {"en": "picnic", "zh": "野餐"}
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {"en": "don't worry", "zh": "不要担心", "audio": "/audio/tts/dont-worry.mp3"},
+            {"en": "drink clean water", "zh": "喝干净水", "audio": "/audio/tts/drink-water.mp3"},
+            {"en": "it's fun to…", "zh": "很高兴去做…", "audio": "/audio/tts/fun-to.mp3"},
+            {"en": "go straight on", "zh": "一直往前走", "audio": "/audio/tts/go-straight.mp3"},
+            {"en": "don't cross", "zh": "禁止穿行", "audio": "/audio/tts/dont-cross.mp3"},
+            {"en": "turn right", "zh": "往右拐", "audio": "/audio/tts/turn-right.mp3"}
+          ],
+          "options": [
+            {"en": "straight", "zh": "直"},
+            {"en": "right", "zh": "右"}
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第3部分)",
+          "pairs": [
+            {"en": "cross the road", "zh": "穿过马路", "audio": "/audio/tts/cross-road.mp3"},
+            {"en": "turn left", "zh": "往左拐", "audio": "/audio/tts/turn-left.mp3"}
+          ],
+          "options": [
+            {"en": "left", "zh": "左"},
+            {"en": "road", "zh": "马路"}
+          ]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/vocabulary-badge.png", "xp": 15}
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/dont-worry.mp3",
+          "scrambled": ["worry", "don't", "Please"],
+          "correct": ["Please", "don't", "worry"]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/drink-water.mp3",
+          "scrambled": ["water", "clean", "drink", "Only"],
+          "correct": ["Only", "drink", "clean", "water"]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/go-straight.mp3",
+          "scrambled": ["straight", "go", "on", "Just"],
+          "correct": ["Just", "go", "straight", "on"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/sorting-badge.png", "xp": 15}
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "drink clean water",
+          "scrambledChinese": ["水", "喝", "干净"],
+          "correctChinese": ["喝", "干净", "水"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/translation-badge.png", "xp": 15}
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "穿过马路",
+          "scrambledEnglish": ["cross", "the", "road"],
+          "correctEnglish": ["cross", "the", "road"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/language-badge.png", "xp": 15}
+    }
+  ],
+  "practice": [
+    {"type": "fillblank", "text": "Only drink ________ water!", "answer": "clean"},
+    {"type": "fillblank", "text": "This water is very ________.", "answer": "clean"},
+    {"type": "translate", "cn": "只喝干净的水！", "en": ["Only drink clean water!"]}
+  ],
+  "funFacts": [
+    "Clean drinking water is essential for good health and survival.",
+    "Following road safety rules can prevent accidents and save lives. Always look both ways before crossing the street!"
+  ]
+}

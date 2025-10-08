@@ -1,0 +1,104 @@
+{
+  "moduleId": "grade5-lower-mod-07",
+  "title": "Jobs & Time",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "policeman",
+      "en": "policeman",
+      "zh": "警察",
+      "audio": "/audio/tts/policeman.mp3"
+    },
+    {
+      "id": "evening",
+      "en": "evening",
+      "zh": "傍晚，晚上",
+      "audio": "/audio/tts/evening.mp3"
+    },
+    {
+      "id": "actor",
+      "en": "actor",
+      "zh": "演员",
+      "audio": "/audio/tts/actor.mp3"
+    },
+    {
+      "id": "busy",
+      "en": "busy",
+      "zh": "忙碌的",
+      "audio": "/audio/tts/busy.mp3"
+    },
+    {
+      "id": "nurse",
+      "en": "nurse",
+      "zh": "护士",
+      "audio": "/audio/tts/nurse.mp3"
+    },
+    {
+      "id": "quarter",
+      "en": "quarter",
+      "zh": "一刻钟",
+      "audio": "/audio/tts/quarter.mp3"
+    }
+  ],
+  "phrases": [],
+  "patterns": [
+    {
+      "q": "My father goes to work at 8 o’clock every morning. He is a policeman.",
+      "a": "我爸爸每天早上 8 点上班。他是警察。"
+    },
+    {
+      "q": "My father goes to work at 6 o’clock every evening. He’s an actor.",
+      "a": "我爸爸每天傍晚 6 点上班。他是演员。"
+    },
+    {
+      "q": "What time will you be home?",
+      "a": "你几点到家？"
+    },
+    {
+      "q": "I’ll be home at 7 o’clock.",
+      "a": "我 7 点到家。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "time-expressions",
+      "title": "时间表达练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "排列问答顺序",
+          "audio": "/audio/tts/what-time-home.mp3",
+          "scrambled": [
+            "I’ll be home at 7 o’clock.",
+            "What time will you be home?"
+          ],
+          "correct": [
+            "What time will you be home?",
+            "I’ll be home at 7 o’clock."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/clock-badge.png",
+        "xp": 10
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My father goes to work at ______ o’clock.",
+      "answer": "8"
+    },
+    {
+      "type": "translate",
+      "cn": "我 7 点到家。",
+      "en": [
+        "I’ll be home at 7 o’clock."
+      ]
+    }
+  ],
+  "funFacts": [
+    "24 小时制与 12 小时制换算要注意 am/pm。"
+  ]
+}

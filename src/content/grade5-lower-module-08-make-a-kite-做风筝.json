@@ -1,0 +1,113 @@
+{
+  "moduleId": "grade5-lower-mod-08",
+  "title": "Make a Kite",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "chinese",
+      "en": "Chinese",
+      "zh": "中国人的",
+      "audio": "/audio/tts/chinese.mp3"
+    },
+    {
+      "id": "drew",
+      "en": "drew",
+      "zh": "（draw 的过去式）绘画",
+      "audio": "/audio/tts/drew.mp3"
+    },
+    {
+      "id": "piece",
+      "en": "piece",
+      "zh": "张，片，块",
+      "audio": "/audio/tts/piece.mp3"
+    },
+    {
+      "id": "painted",
+      "en": "painted",
+      "zh": "（paint 的过去式）给……涂颜料",
+      "audio": "/audio/tts/painted.mp3"
+    },
+    {
+      "id": "scissors",
+      "en": "scissors",
+      "zh": "剪刀",
+      "audio": "/audio/tts/scissors.mp3"
+    },
+    {
+      "id": "stick",
+      "en": "stick",
+      "zh": "棍，棒",
+      "audio": "/audio/tts/stick.mp3"
+    },
+    {
+      "id": "tied",
+      "en": "tied",
+      "zh": "（tie 的过去式）扎上，系上",
+      "audio": "/audio/tts/tied.mp3"
+    },
+    {
+      "id": "string",
+      "en": "string",
+      "zh": "线，细绳",
+      "audio": "/audio/tts/string.mp3"
+    }
+  ],
+  "phrases": [],
+  "patterns": [
+    {
+      "q": "I'll make a kite!",
+      "a": "我要做一个风筝！"
+    },
+    {
+      "q": "Will you help me?",
+      "a": "你会帮我吗？"
+    },
+    {
+      "q": "Of course I will.",
+      "a": "当然会。"
+    },
+    {
+      "q": "What do we need to make a kite?",
+      "a": "我们需要什么来做风筝？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "kite-steps",
+      "title": "做风筝步骤",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "排列做风筝步骤",
+          "audio": "/audio/tts/make-a-kite.mp3",
+          "scrambled": [
+            "tie the string",
+            "paint the piece",
+            "use scissors",
+            "add the stick"
+          ],
+          "correct": [
+            "use scissors",
+            "add the stick",
+            "paint the piece",
+            "tie the string"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/kite-badge.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Will you help me? — ______.",
+      "answer": "Of course I will."
+    }
+  ],
+  "funFacts": [
+    "风筝起源于中国，已有两千多年历史。"
+  ]
+}

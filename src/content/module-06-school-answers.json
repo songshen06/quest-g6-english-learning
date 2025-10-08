@@ -1,0 +1,161 @@
+{
+  "moduleId": "grade6-upper-mod-06",
+  "title": "School and Answers",
+  "durationMinutes": 12,
+  "words": [
+    {"id": "world", "en": "world", "zh": "世界", "audio": "/audio/tts/world.mp3"},
+    {"id": "difficult", "en": "difficult", "zh": "困难的", "audio": "/audio/tts/difficult.mp3"},
+    {"id": "answer", "en": "answer", "zh": "回答", "audio": "/audio/tts/answer.mp3"},
+    {"id": "miss", "en": "Miss", "zh": "小姐", "audio": "/audio/tts/miss.mp3"}
+  ],
+  "phrases": [
+    {"id": "show-photo", "en": "show me your photo", "zh": "给我看看你的照片", "icon": "/images/icons/photo.svg", "audio": "/audio/tts/show-photo.mp3"},
+    {"id": "difficult-for", "en": "be difficult for", "zh": "对（某人）来说很难", "audio": "/audio/tts/difficult-for.mp3"},
+    {"id": "write-back", "en": "write back", "zh": "回信", "icon": "/images/icons/reply.svg", "audio": "/audio/tts/write-back.mp3"},
+    {"id": "answer-questions", "en": "answer your questions", "zh": "回答你的问题", "audio": "/audio/tts/answer-questions.mp3"},
+    {"id": "help-poster", "en": "help me make a poster", "zh": "帮我做海报", "icon": "/images/icons/poster.svg", "audio": "/audio/tts/help-poster.mp3"},
+    {"id": "half-past-three", "en": "at half past three", "zh": "三点半", "audio": "/audio/tts/half-past-three.mp3"},
+    {"id": "got-photos", "en": "have got some photos", "zh": "有些照片", "audio": "/audio/tts/got-photos.mp3"},
+    {"id": "art-teacher", "en": "Art teacher", "zh": "美术老师", "audio": "/audio/tts/art-teacher.mp3"},
+    {"id": "school-starts", "en": "school starts", "zh": "学校开始上课在", "icon": "/images/school/school.svg", "audio": "/audio/tts/school-starts.mp3"},
+    {"id": "play-basketball", "en": "play basketball well", "zh": "篮球打得好", "icon": "/images/sports/basketball.svg", "audio": "/audio/tts/play-basketball.mp3"}
+  ],
+  "patterns": [
+    {"q": "I've got some Chinese chopsticks.", "a": "我有一些中国筷子。"},
+    {"q": "My brother has got a Chinese kite.", "a": "我哥哥有一个中国风筝。"},
+    {"q": "Have you got a book about the US?", "a": "你有一本关于美国的书吗？"},
+    {"q": "Yes, I have. It's very interesting.", "a": "是的，我有。它很有趣。"}
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {"en": "world", "zh": "世界", "audio": "/audio/tts/world.mp3"},
+            {"en": "difficult", "zh": "困难的", "audio": "/audio/tts/difficult.mp3"},
+            {"en": "answer", "zh": "回答", "audio": "/audio/tts/answer.mp3"},
+            {"en": "Miss", "zh": "小姐", "audio": "/audio/tts/miss.mp3"},
+            {"en": "show me your photo", "zh": "给我看看你的照片", "audio": "/audio/tts/show-photo.mp3"},
+            {"en": "be difficult for", "zh": "对（某人）来说很难", "audio": "/audio/tts/difficult-for.mp3"}
+          ],
+          "options": [
+            {"en": "write", "zh": "写"},
+            {"en": "photo", "zh": "照片"}
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {"en": "write back", "zh": "回信", "audio": "/audio/tts/write-back.mp3"},
+            {"en": "answer your questions", "zh": "回答你的问题", "audio": "/audio/tts/answer-questions.mp3"},
+            {"en": "help me make a poster", "zh": "帮我做海报", "audio": "/audio/tts/help-poster.mp3"},
+            {"en": "at half past three", "zh": "三点半", "audio": "/audio/tts/half-past-three.mp3"},
+            {"en": "have got some photos", "zh": "有些照片", "audio": "/audio/tts/got-photos.mp3"},
+            {"en": "Art teacher", "zh": "美术老师", "audio": "/audio/tts/art-teacher.mp3"}
+          ],
+          "options": [
+            {"en": "teacher", "zh": "老师"},
+            {"en": "poster", "zh": "海报"}
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第3部分)",
+          "pairs": [
+            {"en": "school starts", "zh": "学校开始上课在", "audio": "/audio/tts/school-starts.mp3"},
+            {"en": "play basketball well", "zh": "篮球打得好", "audio": "/audio/tts/play-basketball.mp3"}
+          ],
+          "options": [
+            {"en": "school", "zh": "学校"},
+            {"en": "basketball", "zh": "篮球"}
+          ]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/vocabulary-badge.png", "xp": 15}
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/show-photo.mp3",
+          "scrambled": ["me", "photo", "your", "show"],
+          "correct": ["Show", "me", "your", "photo"]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/answer-questions.mp3",
+          "scrambled": ["answer", "I'll", "your", "questions"],
+          "correct": ["I'll", "answer", "your", "questions"]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/help-poster.mp3",
+          "scrambled": ["poster", "make", "help", "me", "a"],
+          "correct": ["Help", "me", "make", "a", "poster"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/sorting-badge.png", "xp": 15}
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I've got some Chinese chopsticks",
+          "scrambledChinese": ["我", "筷子", "中国", "有些"],
+          "correctChinese": ["我", "有", "些", "中国", "筷子"]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My brother has got a Chinese kite",
+          "scrambledChinese": ["哥哥", "中国", "有", "我", "风筝", "一个"],
+          "correctChinese": ["我", "哥哥", "有", "一个", "中国", "风筝"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/translation-badge.png", "xp": 15}
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这对我来说很困难",
+          "scrambledEnglish": ["me", "for", "difficult", "is", "This"],
+          "correctEnglish": ["This", "is", "difficult", "for", "me"]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "请给我看看你的照片",
+          "scrambledEnglish": ["photo", "me", "your", "show"],
+          "correctEnglish": ["Show", "me", "your", "photo"]
+        }
+      ],
+      "reward": {"badge": "/images/rewards/language-badge.png", "xp": 15}
+    }
+  ],
+  "practice": [
+    {"type": "fillblank", "text": "I've got some Chinese ________.", "answer": "chopsticks"},
+    {"type": "fillblank", "text": "My brother has got a Chinese ________.", "answer": "kite"},
+    {"type": "translate", "cn": "你有一本关于美国的书吗？", "en": ["Have you got a book about the US?"]}
+  ],
+  "funFacts": [
+    "Chopsticks have been used as eating utensils in China for over 3,000 years.",
+    "Chinese kites were invented over 2,000 years ago and were originally used for military purposes."
+  ]
+}
