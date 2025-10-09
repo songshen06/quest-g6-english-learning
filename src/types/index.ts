@@ -101,8 +101,8 @@ export interface AudioPlayer {
   isPlaying: boolean
 }
 
-// User role types
-export type UserRole = 'student' | 'admin' | 'superadmin'
+// User role types - simplified to student only
+export type UserRole = 'student'
 
 // User management types
 export interface User {
@@ -139,23 +139,16 @@ export interface UserState {
   showGuestConversion: boolean
 
   // Actions
-  register: (username: string, password: string, displayName?: string, role?: UserRole) => Promise<boolean>
+  register: (username: string, password: string, displayName?: string) => Promise<boolean>
   login: (username: string, password: string) => Promise<boolean>
   logout: () => void
   switchUser: (userId: string) => Promise<boolean>
   updateUser: (updates: Partial<User>) => void
   deleteUser: (userId: string) => Promise<boolean>
-  updateUserRole: (userId: string, role: UserRole) => Promise<boolean>
   updateGlobalStats: (stats: Partial<User['globalStats']>) => void
   getModuleProgress: (moduleId: string) => Progress | null
   updateModuleProgress: (moduleId: string, progress: Partial<Progress>) => void
   setShowLoginModal: (show: boolean) => void
   setShowUserSwitcher: (show: boolean) => void
   setShowGuestConversion: (show: boolean) => void
-
-  // Admin helpers
-  isAdmin: () => boolean
-  isSuperAdmin: () => boolean
-  canManageUsers: () => boolean
-  hasAdminPrivileges: () => boolean
 }

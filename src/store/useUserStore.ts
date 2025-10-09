@@ -2,12 +2,6 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { User, UserState, UserSettings, Progress, UserRole } from '@/types'
 import { SimpleEncryption, AuthHelper } from '@/utils/encryption'
-import {
-  quickSuperAdminLogin,
-  shouldProvideSuperAdminAccess,
-  ensureSuperAdminExists,
-  clearSuperAdminAccess
-} from '@/utils/superAdminAuth'
 import { useBookStore } from './useBookStore'
 import { useGameStore } from './useGameStore'
 
@@ -44,7 +38,7 @@ export const useUserStore = create<UserState>()(
       showGuestConversion: false,
 
       // Actions
-      register: async (username: string, password: string, displayName?: string, role: UserRole = 'student') => {
+      register: async (username: string, password: string, displayName?: string) => {
         const { users } = get()
 
         // 检查用户名是否已存在
@@ -62,7 +56,7 @@ export const useUserStore = create<UserState>()(
           id: AuthHelper.generateUserId(),
           username,
           displayName: displayName || username,
-          role,
+          role: 'student', // 固定为学生角色
           passwordHash, // 存储哈希后的密码
           salt, // 存储盐值
           createdAt: new Date().toISOString(),
@@ -156,34 +150,10 @@ export const useUserStore = create<UserState>()(
           return false
         }
 
-        // 安全验证：只有管理员可以切换到其他用户
-        if (currentUser && currentUser.role === 'student') {
-          // 普通学生只能切换到自己之前登录过的账户（通过密码验证）
-          if (currentUser.id !== userId) {
-            console.error('Students can only switch to their own accounts')
-            return false
-          }
-        }
-
-        // 如果切换到管理员账户，需要密码验证
-        if ((targetUser.role === 'admin' || targetUser.role === 'superadmin') &&
-            currentUser?.id !== userId) {
-          if (!password) {
-            console.error('Password required to switch to admin account')
-            return false
-          }
-
-          // 验证密码
-          const isPasswordValid = SimpleEncryption.verifyPassword(
-            password,
-            targetUser.passwordHash,
-            targetUser.salt
-          )
-
-          if (!isPasswordValid) {
-            console.error('Invalid password for admin account')
-            return false
-          }
+        // 简化的用户切换逻辑 - 用户只能切换到自己的账户
+        if (currentUser && currentUser.id !== userId) {
+          console.error('Users can only switch to their own accounts')
+          return false
         }
 
         const updatedUser = {
@@ -312,86 +282,6 @@ export const useUserStore = create<UserState>()(
 
       setShowGuestConversion: (show: boolean) => {
         set({ showGuestConversion: show })
-      },
-
-      updateUserRole: async (userId: string, role: UserRole) => {
-        const { users, currentUser } = get()
-
-        // 只有超级管理员可以修改用户角色
-        if (currentUser?.role !== 'superadmin') {
-          console.error('Only superadmin can update user roles')
-          return false
-        }
-
-        // 不能修改自己的角色
-        if (currentUser.id === userId) {
-          console.error('Cannot modify your own role')
-          return false
-        }
-
-        const user = users.find(u => u.id === userId)
-        if (!user) {
-          console.error('User not found')
-          return false
-        }
-
-        const updatedUser = {
-          ...user,
-          role,
-          lastLogin: new Date().toISOString()
-        }
-
-        set(state => ({
-          users: state.users.map(u => u.id === userId ? updatedUser : u)
-        }))
-
-        return true
-      },
-
-      // Admin helper functions
-      isAdmin: () => {
-        const { currentUser } = get()
-        return currentUser?.role === 'admin' || currentUser?.role === 'superadmin'
-      },
-
-      isSuperAdmin: () => {
-        const { currentUser } = get()
-        return currentUser?.role === 'superadmin'
-      },
-
-      canManageUsers: () => {
-        const { currentUser } = get()
-        return currentUser?.role === 'admin' || currentUser?.role === 'superadmin'
-      },
-
-      hasAdminPrivileges: () => {
-        const { currentUser } = get()
-        return currentUser?.role === 'admin' || currentUser?.role === 'superadmin'
-      },
-
-      // 超级管理员认证方法
-      checkSuperAdminAccess: async () => {
-        const autoAccess = shouldProvideSuperAdminAccess()
-        if (autoAccess.access) {
-          console.log(`🔑 检测到自动管理员权限: ${autoAccess.method}`)
-
-          // 尝试快速登录
-          const loginSuccess = await quickSuperAdminLogin(get())
-          if (loginSuccess) {
-            return true
-          }
-        }
-        return false
-      },
-
-      // 手动超级管理员登录
-      superAdminLogin: async (password: string) => {
-        return await quickSuperAdminLogin(get(), password)
-      },
-
-      // 清除超级管理员权限
-      clearSuperAdminAuth: () => {
-        clearSuperAdminAccess()
       }
     }),
     {
