@@ -14,6 +14,7 @@ import { RewardModal } from '@/components/RewardModal'
 import { LoginModal } from '@/components/auth/LoginModal'
 import { UserSwitcher } from '@/components/auth/UserSwitcher'
 import { AdminInitialization } from '@/components/auth/AdminInitialization'
+import { SuperAdminQuickLogin } from '@/components/auth/SuperAdminQuickLogin'
 import { GuestBanner } from '@/components/auth/GuestBanner'
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute'
 import './globals.css'
@@ -112,6 +113,9 @@ function App() {
         <RewardModal />
         <LoginModal isOpen={showLoginModal} onClose={() => useUserStore.getState().setShowLoginModal(false)} />
         <AdminInitialization />
+
+        {/* 超级管理员快速登录 */}
+        <SuperAdminQuickLogin />
       </Router>
     </div>
   )

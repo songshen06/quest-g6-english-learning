@@ -42,3 +42,8 @@ coverage/
 
 # Vite
 .vite/
+
+# Security - Admin documentation
+docs/super-admin-guide.md
+*_admin_secrets.md
+admin_credentials.*

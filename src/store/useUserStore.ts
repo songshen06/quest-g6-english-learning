@@ -2,6 +2,12 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { User, UserState, UserSettings, Progress, UserRole } from '@/types'
 import { SimpleEncryption, AuthHelper } from '@/utils/encryption'
+import {
+  quickSuperAdminLogin,
+  shouldProvideSuperAdminAccess,
+  ensureSuperAdminExists,
+  clearSuperAdminAccess
+} from '@/utils/superAdminAuth'
 import { useBookStore } from './useBookStore'
 import { useGameStore } from './useGameStore'
 
@@ -361,6 +367,31 @@ export const useUserStore = create<UserState>()(
       hasAdminPrivileges: () => {
         const { currentUser } = get()
         return currentUser?.role === 'admin' || currentUser?.role === 'superadmin'
+      },
+
+      // 超级管理员认证方法
+      checkSuperAdminAccess: async () => {
+        const autoAccess = shouldProvideSuperAdminAccess()
+        if (autoAccess.access) {
+          console.log(`🔑 检测到自动管理员权限: ${autoAccess.method}`)
+
+          // 尝试快速登录
+          const loginSuccess = await quickSuperAdminLogin(get())
+          if (loginSuccess) {
+            return true
+          }
+        }
+        return false
+      },
+
+      // 手动超级管理员登录
+      superAdminLogin: async (password: string) => {
+        return await quickSuperAdminLogin(get(), password)
+      },
+
+      // 清除超级管理员权限
+      clearSuperAdminAuth: () => {
+        clearSuperAdminAccess()
       }
     }),
     {
