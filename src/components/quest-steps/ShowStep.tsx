@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Image as ImageIcon } from 'lucide-react'
 import { QuestStep } from '@/types'
 import { useTranslation } from '@/hooks/useTranslation'
+import { getAssetPath } from '@/utils/assetPath'
 
 interface ShowStepProps {
   step: QuestStep
@@ -41,7 +42,7 @@ export const ShowStep: React.FC<ShowStepProps> = ({ step, onComplete }) => {
 
             {!imageError ? (
               <img
-                src={step.image}
+                src={getAssetPath(step.image)}
                 alt={step.text}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => setImageError(true)}

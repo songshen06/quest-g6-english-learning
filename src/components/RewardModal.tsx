@@ -3,6 +3,7 @@ import { X, Star, Trophy, Sparkles } from 'lucide-react'
 import { useGameStore } from '@/store/useGameStore'
 import { useTranslation } from '@/hooks/useTranslation'
 import { soundManager } from '@/utils/audioPlayer'
+import { getAssetPath } from '@/utils/assetPath'
 import { useNavigate } from 'react-router-dom'
 
 export const RewardModal: React.FC = () => {
@@ -88,7 +89,7 @@ export const RewardModal: React.FC = () => {
                 <div className="text-center">
                   <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shadow-sm">
                     <img
-                      src={currentReward.badge}
+                      src={getAssetPath(currentReward.badge)}
                       alt="Badge"
                       className="w-12 h-12 object-contain"
                       onError={(e) => {

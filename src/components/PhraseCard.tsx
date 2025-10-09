@@ -3,6 +3,7 @@ import { Volume2, ImageIcon } from 'lucide-react'
 import { Phrase } from '@/types'
 import { useTranslation } from '@/hooks/useTranslation'
 import { audioPlayer } from '@/utils/audioPlayer'
+import { getAssetPath } from '@/utils/assetPath'
 import { useGameStore } from '@/store/useGameStore'
 
 interface PhraseCardProps {
@@ -59,7 +60,7 @@ export const PhraseCard: React.FC<PhraseCardProps> = ({
             {showIcon && phrase.icon && (
               <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-sm">
                 <img
-                  src={phrase.icon}
+                  src={getAssetPath(phrase.icon)}
                   alt={phrase.en}
                   className="w-8 h-8 object-contain"
                   onError={(e) => {

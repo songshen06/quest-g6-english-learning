@@ -4,6 +4,7 @@ import { Navigation } from '@/components/Navigation'
 import { useGameStore } from '@/store/useGameStore'
 import { useUserStore } from '@/store/useUserStore'
 import { useTranslation } from '@/hooks/useTranslation'
+import { getAssetPath } from '@/utils/assetPath'
 
 export const ProgressPage: React.FC = () => {
   const { t } = useTranslation()
@@ -162,7 +163,7 @@ export const ProgressPage: React.FC = () => {
                   className="aspect-square bg-gray-50 rounded-lg flex items-center justify-center"
                 >
                   <img
-                    src={badge}
+                    src={getAssetPath(badge)}
                     alt={`Badge ${index + 1}`}
                     className="w-12 h-12 object-contain"
                     onError={(e) => {
