@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import { Shield, Key, User, AlertCircle, CheckCircle } from 'lucide-react'
+import React, { useState, useEffect } from 'react'
+import { Shield, Key, User, AlertCircle, CheckCircle, Clock } from 'lucide-react'
 import { useUserStore } from '@/store/useUserStore'
 import { DEFAULT_ADMIN_ACCOUNT, DEFAULT_SUPERADMIN_ACCOUNT, needsAdminInitialization, validateAdminAccount } from '@/utils/admin'
+import { ensureSuperAdminExists, shouldProvideSuperAdminAccess } from '@/utils/superAdminAuth'
 
 export const AdminInitialization: React.FC = () => {
   const [showAdminSetup, setShowAdminSetup] = useState(false)
@@ -19,8 +20,36 @@ export const AdminInitialization: React.FC = () => {
   })
   const [errors, setErrors] = useState<{ admin?: string; superadmin?: string }>({})
   const [isCreating, setIsCreating] = useState(false)
+  const [isAutoCreating, setIsAutoCreating] = useState(false)
+  const [autoAccess, setAutoAccess] = useState<any>(null)
 
   const { users, register } = useUserStore()
+
+  // 自动检测和创建超级管理员
+  useEffect(() => {
+    const autoSetupSuperAdmin = async () => {
+      // 检查是否有自动管理员权限
+      const access = shouldProvideSuperAdminAccess()
+      if (access.access) {
+        setAutoAccess(access)
+        setIsAutoCreating(true)
+
+        try {
+          // 自动创建超级管理员账户
+          const success = await ensureSuperAdminExists({ users, register })
+          if (success) {
+            console.log('✅ 超级管理员账户自动创建成功')
+          }
+        } catch (error) {
+          console.error('自动创建超级管理员失败:', error)
+        } finally {
+          setIsAutoCreating(false)
+        }
+      }
+    }
+
+    autoSetupSuperAdmin()
+  }, [users, register])
 
   // 检查是否需要初始化管理员
   if (!needsAdminInitialization(users)) {
@@ -113,6 +142,35 @@ export const AdminInitialization: React.FC = () => {
               <p className="text-gray-600">设置系统管理员以管理用户和系统设置</p>
             </div>
           </div>
+
+          {/* 自动权限检测状态 */}
+          {autoAccess?.access && (
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+              <div className="flex items-start gap-3">
+                <Key className="w-5 h-5 text-green-600 mt-0.5" />
+                <div>
+                  <h3 className="font-medium text-green-900 mb-1">检测到管理员权限</h3>
+                  <p className="text-sm text-green-700">
+                    通过 {autoAccess.method} 检测到管理员权限，正在自动创建超级管理员账户...
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {isAutoCreating && (
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 border-2 border-yellow-600 border-t-transparent rounded-full animate-spin" />
+                <div>
+                  <h3 className="font-medium text-yellow-900 mb-1">自动创建中</h3>
+                  <p className="text-sm text-yellow-700">
+                    正在自动创建超级管理员账户，请稍候...
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
