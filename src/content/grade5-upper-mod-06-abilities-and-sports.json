@@ -1,0 +1,47 @@
+{
+  "moduleId": "grade5-upper-mod-06",
+  "title": "Abilities and Sports",
+  "durationMinutes": 14,
+  "words": [
+    {"id": "word-well", "en": "well", "zh": "好", "audio": "/audio/tts/word-well.mp3"},
+    {"id": "word-fast", "en": "fast", "zh": "快", "audio": "/audio/tts/word-fast.mp3"},
+    {"id": "word-high", "en": "high", "zh": "高", "audio": "/audio/tts/word-high.mp3"},
+    {"id": "word-point", "en": "point", "zh": "分数", "audio": "/audio/tts/word-point.mp3"},
+    {"id": "word-got", "en": "got", "zh": "得到（get的过去式）", "audio": "/audio/tts/word-got.mp3"},
+    {"id": "word-fan", "en": "fan", "zh": "迷", "audio": "/audio/tts/word-fan.mp3"}
+  ],
+  "phrases": [
+    {"id": "phrase-play-basketball", "en": "play basketball", "zh": "打篮球", "icon": "/images/icons/basketball.svg", "audio": "/audio/tts/phrase-play-basketball.mp3"},
+    {"id": "phrase-run-fast", "en": "run fast", "zh": "跑得快", "icon": "/images/icons/running.svg", "audio": "/audio/tts/phrase-run-fast.mp3"},
+    {"id": "phrase-jump-high", "en": "jump high", "zh": "跳得高", "icon": "/images/icons/jump.svg", "audio": "/audio/tts/phrase-jump-high.mp3"}
+  ],
+  "patterns": [
+    {"q": "You can play basketball well.", "a": "你篮球打得很好。"},
+    {"q": "Can you run fast?", "a": "你能跑得快吗？"},
+    {"q": "No, I can't.", "a": "不，我不能。"},
+    {"q": "They got seventy points.", "a": "他们得了七十分。"}
+  ],
+  "quests": [
+    {
+      "id": "g5u-m06-q1",
+      "title": "运动技能匹配",
+      "steps": [
+        {"type": "wordmatching", "text": "将运动技能与中文意思配对", "pairs": [{"en": "run fast", "zh": "跑得快"}, {"en": "jump high", "zh": "跳得高"}], "options": [{"en": "run fast", "zh": "跑得快"}, {"en": "jump high", "zh": "跳得高"}, {"en": "swim fast", "zh": "游得快"}]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-medal.png", "xp": 10}
+    },
+    {
+      "id": "g5u-m06-q2",
+      "title": "比赛结果报告",
+      "steps": [
+        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m06-s1.mp3", "scrambled": ["got", "thirty-six", "Sam", "points"], "correct": ["Sam", "got", "thirty-six", "points"]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-trophy.png", "xp": 15}
+    }
+  ],
+  "practice": [
+    {"type": "fillblank", "text": "I can't play basketball ______, but I can run fast.", "answer": "well"},
+    {"type": "translate", "cn": "你能跳得很高。", "en": ["You can jump really high."]}
+  ],
+  "funFacts": ["篮球是1891年由加拿大人詹姆斯·奈史密斯在美国发明的。", "数字在英语中也有很多有趣的表达，比如用 'love' 在网球比赛中代表零分。"]
+}

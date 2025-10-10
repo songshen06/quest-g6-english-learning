@@ -1,0 +1,44 @@
+{
+  "moduleId": "grade5-upper-mod-01",
+  "title": "Changes Around Us",
+  "durationMinutes": 12,
+  "words": [
+    {"id": "word-different", "en": "different", "zh": "不同的", "audio": "/audio/tts/word-different.mp3"},
+    {"id": "word-bench", "en": "bench", "zh": "长凳", "audio": "/audio/tts/word-bench.mp3"},
+    {"id": "word-playground", "en": "playground", "zh": "操场", "audio": "/audio/tts/word-playground.mp3"},
+    {"id": "word-before", "en": "before", "zh": "以前", "audio": "/audio/tts/word-before.mp3"},
+    {"id": "word-now", "en": "now", "zh": "现在", "audio": "/audio/tts/word-now.mp3"}
+  ],
+  "phrases": [
+    {"id": "phrase-two-years-ago", "en": "two years ago", "zh": "两年前", "icon": "/images/icons/calendar.svg", "audio": "/audio/tts/phrase-two-years-ago.mp3"},
+    {"id": "phrase-look-different", "en": "look different", "zh": "看起来不同", "icon": "/images/icons/eye.svg", "audio": "/audio/tts/phrase-look-different.mp3"}
+  ],
+  "patterns": [
+    {"q": "There wasn't a clock here before.", "a": "这里以前没有时钟。"},
+    {"q": "There were lots of little trees before.", "a": "以前有很多小树。"},
+    {"q": "There is a big playground now.", "a": "现在有一个大操场了。"}
+  ],
+  "quests": [
+    {
+      "id": "g5u-m01-q1",
+      "title": "词汇配对：城市变化",
+      "steps": [
+        {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "playground", "zh": "操场"}, {"en": "bench", "zh": "长凳"}], "options": [{"en": "playground", "zh": "操场"}, {"en": "bench", "zh": "长凳"}, {"en": "tree", "zh": "树"}]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-park.png", "xp": 10}
+    },
+    {
+      "id": "g5u-m01-q2",
+      "title": "句型练习：今昔对比",
+      "steps": [
+        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m01-s1.mp3", "scrambled": ["a", "house", "was", "There", "here", "before"], "correct": ["There", "was", "a", "house", "here", "before"]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-time-travel.png", "xp": 15}
+    }
+  ],
+  "practice": [
+    {"type": "fillblank", "text": "There ______ any benches here before.", "answer": "weren't"},
+    {"type": "translate", "cn": "现在有高大的树了。", "en": ["There are tall trees now."]}
+  ],
+  "funFacts": ["伦敦的大本钟在1859年建成，已经有超过160年的历史了！", "有些城市的发展非常快，仅仅十年时间就会有翻天覆地的变化。"]
+}

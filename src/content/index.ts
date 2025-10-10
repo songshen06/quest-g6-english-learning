@@ -14,20 +14,20 @@ import module09PeaceUNData from './module-09-peace-un.json'
 import module10TravelSafetyData from './module-10-travel-safety.json'
 
 // 五年级下册模块 (Grade 5 Lower)
-import grade5LowerModule01DriverPlayerData from './grade5-lower-module-01-driver-player-司机-演奏者.json'
-import grade5LowerModule02TraditionalFoodData from './grade5-lower-module-02-traditional-food-传统食物.json'
-import grade5LowerModule03LibraryBorrowData from './grade5-lower-module-03-library-borrow-图书馆-借阅.json'
-import grade5LowerModule04LettersSeasonsData from './grade5-lower-module-04-letters-seasons-寄信-季节.json'
-import grade5LowerModule05ShoppingCarryingData from './grade5-lower-module-05-shopping-carrying-购物-背负.json'
-import grade5LowerModule06TravelPlansData from './grade5-lower-module-06-travel-plans-出行计划.json'
-import grade5LowerModule07JobsTimeData from './grade5-lower-module-07-jobs-time-职业-时间.json'
-import grade5LowerModule08MakeAKiteData from './grade5-lower-module-08-make-a-kite-做风筝.json'
-import grade5LowerModule09TheatreHistoryData from './grade5-lower-module-09-theatre-history-剧院-历史.json'
-import grade5LowerModule10TravelPrepData from './grade5-lower-module-10-travel-prep-行前准备.json'
+import grade5LowerModule01DriverPlayerData from './grade5-lower-mod-01-driver-player.json'
+import grade5LowerModule02TraditionalFoodData from './grade5-lower-mod-02-traditional-food.json'
+import grade5LowerModule03LibraryBorrowData from './grade5-lower-mod-03-library-borrow.json'
+import grade5LowerModule04LettersSeasonsData from './grade5-lower-mod-04-letters-seasons.json'
+import grade5LowerModule05ShoppingCarryingData from './grade5-lower-mod-05-shopping-carrying.json'
+import grade5LowerModule06TravelPlansData from './grade5-lower-mod-06-travel-plans.json'
+import grade5LowerModule07JobsTimeData from './grade5-lower-mod-07-jobs-time.json'
+import grade5LowerModule08MakeAKiteData from './grade5-lower-mod-08-make-a-kite.json'
+import grade5LowerModule09TheatreHistoryData from './grade5-lower-mod-09-theatre-history.json'
+import grade5LowerModule10TravelPrepData from './grade5-lower-mod-10-travel-prep.json'
 
 // 六年级下册模块 (Grade 6 Lower)
-import grade6LowerModule01FuturePlansData from './grade6-lower-module-01-future-plans.json'
-import grade6LowerModule02TravelDreamsData from './grade6-lower-module-02-travel-dreams.json'
+import grade6LowerModule01FuturePlansData from './grade6-lower-mod-01-future-plans.json'
+import grade6LowerModule02TravelDreamsData from './grade6-lower-mod-02-travel-dreams.json'
 
 // 重新导出所有模块数据
 export { module01HowLongData as module01HowLong }

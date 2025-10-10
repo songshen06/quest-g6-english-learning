@@ -150,8 +150,10 @@ class AudioGenerator:
 
         # 扫描所有格式的模块文件
         module_files = sorted(content_dir.glob("module-*.json"))
-        module_files += sorted(content_dir.glob("grade5-lower-module-*.json"))
-        module_files += sorted(content_dir.glob("grade6-lower-module-*.json"))
+        module_files += sorted(content_dir.glob("grade5-lower-mod-*.json"))
+        module_files += sorted(content_dir.glob("grade5-upper-mod-*.json"))
+        module_files += sorted(content_dir.glob("grade6-lower-mod-*.json"))
+        module_files += sorted(content_dir.glob("grade6-upper-mod-*.json"))
 
         # 去重（基于文件名）
         seen_names = set()

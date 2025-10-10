@@ -1,0 +1,46 @@
+{
+  "moduleId": "grade5-upper-mod-07",
+  "title": "Helpful Animals",
+  "durationMinutes": 13,
+  "words": [
+    {"id": "word-useful", "en": "useful", "zh": "有用的", "audio": "/audio/tts/word-useful.mp3"},
+    {"id": "word-blind", "en": "blind", "zh": "失明的", "audio": "/audio/tts/word-blind.mp3"},
+    {"id": "word-special", "en": "special", "zh": "特别的", "audio": "/audio/tts/word-special.mp3"},
+    {"id": "word-help", "en": "help", "zh": "帮助", "audio": "/audio/tts/word-help.mp3"},
+    {"id": "word-could", "en": "could", "zh": "能（can的过去式）", "audio": "/audio/tts/word-could.mp3"},
+    {"id": "word-firefighter", "en": "firefighter", "zh": "消防员", "audio": "/audio/tts/word-firefighter.mp3"}
+  ],
+  "phrases": [
+    {"id": "phrase-tv-show", "en": "TV show", "zh": "电视节目", "icon": "/images/icons/tv.svg", "audio": "/audio/tts/phrase-tv-show.mp3"},
+    {"id": "phrase-help-people", "en": "help people", "zh": "帮助人们", "icon": "/images/icons/heart.svg", "audio": "/audio/tts/phrase-help-people.mp3"}
+  ],
+  "patterns": [
+    {"q": "His dog can help him.", "a": "他的狗能帮助他。"},
+    {"q": "Can Fifi help blind people?", "a": "菲菲能帮助盲人吗？"},
+    {"q": "It could find the people.", "a": "它能找到那些人。"},
+    {"q": "The firefighters couldn't see the people.", "a": "消防员们看不见那些人。"}
+  ],
+  "quests": [
+    {
+      "id": "g5u-m07-q1",
+      "title": "动物助手词汇",
+      "steps": [
+        {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "blind", "zh": "失明的"}, {"en": "firefighter", "zh": "消防员"}], "options": [{"en": "blind", "zh": "失明的"}, {"en": "firefighter", "zh": "消防员"}, {"en": "doctor", "zh": "医生"}]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-dog-paw.png", "xp": 10}
+    },
+    {
+      "id": "g5u-m07-q2",
+      "title": "救援故事重组",
+      "steps": [
+        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m07-s1.mp3", "scrambled": ["help", "could", "The", "them", "firefighters"], "correct": ["The", "firefighters", "could", "help", "them"]}
+      ],
+      "reward": {"badge": "/images/rewards/badge-siren.png", "xp": 15}
+    }
+  ],
+  "practice": [
+    {"type": "fillblank", "text": "A long time ago, that bird ______ speak English.", "answer": "could"},
+    {"type": "translate", "cn": "这个男人是盲人。", "en": ["This man is blind."]}
+  ],
+  "funFacts": ["导盲犬需要经过大约两年的专业训练才能上岗。", "有些狗的嗅觉非常灵敏，可以帮助消防员在火灾后寻找幸存者。"]
+}
