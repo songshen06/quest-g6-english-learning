@@ -1,0 +1,245 @@
+{
+  "moduleId": "grade5-lower-mod-07",
+  "title": "Jobs & Time",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "policeman",
+      "en": "policeman",
+      "zh": "警察",
+      "audio": "/audio/tts/policeman.mp3"
+    },
+    {
+      "id": "evening",
+      "en": "evening",
+      "zh": "傍晚，晚上",
+      "audio": "/audio/tts/evening.mp3"
+    },
+    {
+      "id": "actor",
+      "en": "actor",
+      "zh": "演员",
+      "audio": "/audio/tts/actor.mp3"
+    },
+    {
+      "id": "busy",
+      "en": "busy",
+      "zh": "忙碌的",
+      "audio": "/audio/tts/busy.mp3"
+    },
+    {
+      "id": "nurse",
+      "en": "nurse",
+      "zh": "护士",
+      "audio": "/audio/tts/nurse.mp3"
+    },
+    {
+      "id": "quarter",
+      "en": "quarter",
+      "zh": "一刻钟",
+      "audio": "/audio/tts/quarter.mp3"
+    }
+  ],
+  "phrases": [],
+  "patterns": [
+    {
+      "q": "My father goes to work at 8 o’clock every morning. He is a policeman.",
+      "a": "我爸爸每天早上 8 点上班。他是警察。"
+    },
+    {
+      "q": "My father goes to work at 6 o’clock every evening. He’s an actor.",
+      "a": "我爸爸每天傍晚 6 点上班。他是演员。"
+    },
+    {
+      "q": "What time will you be home?",
+      "a": "你几点到家？"
+    },
+    {
+      "q": "I’ll be home at 7 o’clock.",
+      "a": "我 7 点到家。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "time-expressions",
+      "title": "时间表达练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "排列问答顺序",
+          "audio": "/audio/tts/what-time-home.mp3",
+          "scrambled": [
+            "I’ll be home at 7 o’clock.",
+            "What time will you be home?"
+          ],
+          "correct": [
+            "What time will you be home?",
+            "I’ll be home at 7 o’clock."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/clock-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对",
+          "pairs": [
+            {
+              "en": "policeman",
+              "zh": "警察"
+            },
+            {
+              "en": "evening",
+              "zh": "傍晚，晚上"
+            },
+            {
+              "en": "actor",
+              "zh": "演员"
+            },
+            {
+              "en": "busy",
+              "zh": "忙碌的"
+            },
+            {
+              "en": "nurse",
+              "zh": "护士"
+            },
+            {
+              "en": "quarter",
+              "zh": "一刻钟"
+            }
+          ],
+          "options": [
+            {
+              "en": "policeman",
+              "zh": "警察"
+            },
+            {
+              "en": "evening",
+              "zh": "傍晚，晚上"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/my-father-goes-to-work-at-8-oclock-every-morning-he-is-a-policeman.mp3",
+          "scrambled": [
+            "goes",
+            "at",
+            "policeman.",
+            "father",
+            "My",
+            "is",
+            "8",
+            "He",
+            "every",
+            "a",
+            "to",
+            "work",
+            "morning.",
+            "o’clock"
+          ],
+          "correct": [
+            "My",
+            "father",
+            "goes",
+            "to",
+            "work",
+            "at",
+            "8",
+            "o’clock",
+            "every",
+            "morning.",
+            "He",
+            "is",
+            "a",
+            "policeman."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "警察",
+          "scrambledEnglish": [
+            "policeman"
+          ],
+          "correctEnglish": [
+            "policeman"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "policeman",
+          "scrambledChinese": [
+            "警",
+            "察"
+          ],
+          "correctChinese": [
+            "警",
+            "察"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My father goes to work at ______ o’clock.",
+      "answer": "8"
+    },
+    {
+      "type": "translate",
+      "cn": "我 7 点到家。",
+      "en": [
+        "I’ll be home at 7 o’clock."
+      ]
+    }
+  ],
+  "funFacts": [
+    "24 小时制与 12 小时制换算要注意 am/pm。"
+  ]
+}

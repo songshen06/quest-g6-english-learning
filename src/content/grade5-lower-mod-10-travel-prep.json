@@ -80,12 +80,12 @@
   ],
   "quests": [
     {
-      "id": "packing-list",
-      "title": "行前清单",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
         {
           "type": "wordmatching",
-          "text": "把旅行物品与中文配对",
+          "text": "将英语单词与短语配对 (第1部分)",
           "pairs": [
             {
               "en": "ticket",
@@ -96,15 +96,228 @@
               "zh": "护照"
             },
             {
-              "en": "presents",
-              "zh": "礼物"
+              "en": "leave",
+              "zh": "离开，动身"
+            },
+            {
+              "en": "July",
+              "zh": "七月"
+            },
+            {
+              "en": "August",
+              "zh": "八月"
+            },
+            {
+              "en": "met",
+              "zh": "（meet 的过去式）遇见"
+            }
+          ],
+          "options": [
+            {
+              "en": "met",
+              "zh": "（meet 的过去式）遇见"
+            },
+            {
+              "en": "classmate",
+              "zh": "同班同学"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "be ready for",
+              "zh": "为……做准备"
+            },
+            {
+              "en": "climb the mountain",
+              "zh": "爬山"
+            }
+          ],
+          "options": [
+            {
+              "en": "met",
+              "zh": "（meet 的过去式）遇见"
+            },
+            {
+              "en": "classmate",
+              "zh": "同班同学"
             }
           ]
         }
       ],
       "reward": {
-        "badge": "/images/rewards/plane-badge.png",
-        "xp": 12
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/be-ready-for.mp3",
+          "scrambled": [
+            "ready",
+            "for",
+            "be"
+          ],
+          "correct": [
+            "be",
+            "ready",
+            "for"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/climb-the-mountain.mp3",
+          "scrambled": [
+            "the",
+            "mountain",
+            "climb"
+          ],
+          "correct": [
+            "climb",
+            "the",
+            "mountain"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/what-did-you-put-in-your-bag.mp3",
+          "scrambled": [
+            "did",
+            "you",
+            "put",
+            "in",
+            "your",
+            "bag?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "did",
+            "you",
+            "put",
+            "in",
+            "your",
+            "bag?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你包里放了什么？",
+          "scrambledEnglish": [
+            "did",
+            "you",
+            "put",
+            "in",
+            "your",
+            "bag?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "did",
+            "you",
+            "put",
+            "in",
+            "your",
+            "bag?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我的衣服、鞋子、一些礼物、我的机票和护照。",
+          "scrambledEnglish": [
+            "clothes,",
+            "my",
+            "shoes,",
+            "some",
+            "presents,",
+            "my",
+            "ticket",
+            "and",
+            "my",
+            "passport.",
+            "My"
+          ],
+          "correctEnglish": [
+            "My",
+            "clothes,",
+            "my",
+            "shoes,",
+            "some",
+            "presents,",
+            "my",
+            "ticket",
+            "and",
+            "my",
+            "passport."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你明天去哪儿？",
+          "scrambledEnglish": [
+            "where",
+            "will",
+            "you",
+            "go",
+            "tomorrow?",
+            "And"
+          ],
+          "correctEnglish": [
+            "And",
+            "where",
+            "will",
+            "you",
+            "go",
+            "tomorrow?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我要去机场。",
+          "scrambledEnglish": [
+            "go",
+            "to",
+            "the",
+            "airport.",
+            "I’ll"
+          ],
+          "correctEnglish": [
+            "I’ll",
+            "go",
+            "to",
+            "the",
+            "airport."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
       }
     }
   ],

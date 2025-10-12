@@ -138,7 +138,10 @@
       "q": "We saw a lion dance in the street.",
       "a": "我们在街道上看到了舞狮。"
     },
-    { "q": "It was very exciting!", "a": "它非常有趣！" }
+    {
+      "q": "It was very exciting!",
+      "a": "它非常有趣！"
+    }
   ],
   "quests": [
     {
@@ -151,130 +154,85 @@
           "pairs": [
             {
               "en": "Chinatown",
-              "zh": "唐人街",
-              "audio": "/audio/tts/chinatown.mp3"
+              "zh": "唐人街"
             },
-            { "en": "town", "zh": "城镇", "audio": "/audio/tts/town.mp3" },
+            {
+              "en": "town",
+              "zh": "城镇"
+            },
             {
               "en": "subject",
-              "zh": "主题；科目",
-              "audio": "/audio/tts/subject.mp3"
+              "zh": "主题；科目"
             },
             {
               "en": "everywhere",
-              "zh": "到处",
-              "audio": "/audio/tts/everywhere.mp3"
+              "zh": "到处"
             },
             {
               "en": "spoke",
-              "zh": "说(speak的过去式)",
-              "audio": "/audio/tts/spoke.mp3"
+              "zh": "说(speak的过去式)"
             },
             {
               "en": "lion dance",
-              "zh": "舞狮",
-              "audio": "/audio/tts/lion-dance.mp3"
+              "zh": "舞狮"
             }
           ],
           "options": [
-            { "en": "tomb", "zh": "坟墓" },
-            { "en": "wrote", "zh": "写(write的过去式)" }
+            {
+              "en": "tomb",
+              "zh": "坟墓"
+            },
+            {
+              "en": "wrote",
+              "zh": "写(write的过去式)"
+            }
           ]
         },
         {
           "type": "wordmatching",
           "text": "将英语单词与短语配对 (第2部分)",
           "pairs": [
-            { "en": "tomb", "zh": "坟墓", "audio": "/audio/tts/tomb.mp3" },
-            {
-              "en": "wrote",
-              "zh": "写(write的过去式)",
-              "audio": "/audio/tts/wrote.mp3"
-            },
-            { "en": "when", "zh": "当...时候", "audio": "/audio/tts/when.mp3" },
             {
               "en": "send an email",
-              "zh": "发邮件",
-              "audio": "/audio/tts/send-email.mp3"
+              "zh": "发邮件"
             },
             {
               "en": "have a big surprise",
-              "zh": "得到一个大惊喜",
-              "audio": "/audio/tts/big-surprise.mp3"
+              "zh": "得到一个大惊喜"
             },
             {
               "en": "lots and lots of",
-              "zh": "许多许多",
-              "audio": "/audio/tts/lots-lots.mp3"
-            }
-          ],
-          "options": [
-            { "en": "different", "zh": "不同的" },
-            { "en": "email", "zh": "邮件" }
-          ]
-        },
-        {
-          "type": "wordmatching",
-          "text": "将英语单词与短语配对 (第3部分)",
-          "pairs": [
+              "zh": "许多许多"
+            },
             {
               "en": "be different from",
-              "zh": "异于，与……不同",
-              "audio": "/audio/tts/different-from.mp3"
+              "zh": "异于，与……不同"
             },
             {
               "en": "see a lion dance",
-              "zh": "看舞狮",
-              "audio": "/audio/tts/see-lion-dance.mp3"
+              "zh": "看舞狮"
             },
             {
               "en": "look at this photo",
-              "zh": "看这些照片",
-              "audio": "/audio/tts/look-photo.mp3"
-            },
-            {
-              "en": "the Ming Tombs",
-              "zh": "明十三陵",
-              "audio": "/audio/tts/ming-tombs.mp3"
-            },
-            {
-              "en": "lots of stone animals",
-              "zh": "许多石头动物",
-              "audio": "/audio/tts/stone-animals.mp3"
-            },
-            {
-              "en": "a big red gate",
-              "zh": "红色大门",
-              "audio": "/audio/tts/red-gate.mp3"
+              "zh": "看这些照片"
             }
           ],
           "options": [
-            { "en": "write", "zh": "写" },
-            { "en": "meet", "zh": "遇见" }
-          ]
-        },
-        {
-          "type": "wordmatching",
-          "text": "将英语单词与短语配对 (第4部分)",
-          "pairs": [
             {
-              "en": "write a story in English",
-              "zh": "写英语故事",
-              "audio": "/audio/tts/write-story.mp3"
+              "en": "tomb",
+              "zh": "坟墓"
             },
             {
-              "en": "meet a farmer",
-              "zh": "遇到农场主",
-              "audio": "/audio/tts/meet-farmer.mp3"
+              "en": "wrote",
+              "zh": "写(write的过去式)"
             }
-          ],
-          "options": [
-            { "en": "farmer", "zh": "农场主" },
-            { "en": "story", "zh": "故事" }
           ]
         }
       ],
-      "reward": { "badge": "/images/rewards/vocabulary-badge.png", "xp": 20 }
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
       "id": "sentence-sorting",
@@ -283,17 +241,77 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/chinatown-yesterday.mp3",
+          "audio": "/audio/tts/send-email.mp3",
           "scrambled": [
-            "New",
-            "in",
-            "I",
-            "Chinatown",
-            "York",
-            "went",
-            "yesterday"
+            "an",
+            "email",
+            "send"
           ],
           "correct": [
+            "send",
+            "an",
+            "email"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/big-surprise.mp3",
+          "scrambled": [
+            "a",
+            "big",
+            "surprise",
+            "have"
+          ],
+          "correct": [
+            "have",
+            "a",
+            "big",
+            "surprise"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/lots-lots.mp3",
+          "scrambled": [
+            "and",
+            "lots",
+            "of",
+            "lots"
+          ],
+          "correct": [
+            "lots",
+            "and",
+            "lots",
+            "of"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我昨天去了纽约的唐人街。",
+          "scrambledEnglish": [
+            "went",
+            "to",
+            "Chinatown",
+            "in",
+            "New",
+            "York",
+            "yesterday.",
+            "I"
+          ],
+          "correctEnglish": [
             "I",
             "went",
             "to",
@@ -301,73 +319,71 @@
             "in",
             "New",
             "York",
-            "yesterday"
+            "yesterday."
           ]
         },
         {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/lion-dance-street.mp3",
-          "scrambled": [
-            "lion",
-            "We",
-            "a",
-            "street",
-            "in",
-            "dance",
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们在街道上看到了舞狮。",
+          "scrambledEnglish": [
             "saw",
-            "the"
+            "a",
+            "lion",
+            "dance",
+            "in",
+            "the",
+            "street.",
+            "We"
           ],
-          "correct": ["We", "saw", "a", "lion", "dance", "in", "the", "street"]
-        }
-      ],
-      "reward": { "badge": "/images/rewards/ordering-badge.png", "xp": 15 }
-    },
-    {
-      "id": "chinatown-visit",
-      "title": "Chinatown Adventure",
-      "steps": [
-        {
-          "type": "fillblank",
-          "text": "Type the answer you heard",
-          "audio": "/audio/tts/chinatown-visit.mp3",
-          "answer": [
-            "I went to Chinatown in New York yesterday.",
-            "went to Chinatown in New York yesterday"
+          "correctEnglish": [
+            "We",
+            "saw",
+            "a",
+            "lion",
+            "dance",
+            "in",
+            "the",
+            "street."
           ]
         },
         {
-          "type": "speak",
-          "text": "Say: We saw a lion dance in the street.",
-          "recordable": true
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "它非常有趣！",
+          "scrambledEnglish": [
+            "was",
+            "very",
+            "exciting!",
+            "It"
+          ],
+          "correctEnglish": [
+            "It",
+            "was",
+            "very",
+            "exciting!"
+          ]
         },
         {
-          "type": "reveal",
-          "text": "The lion dance was very exciting and colorful!"
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "发邮件",
+          "scrambledEnglish": [
+            "an",
+            "email",
+            "send"
+          ],
+          "correctEnglish": [
+            "send",
+            "an",
+            "email"
+          ]
         }
       ],
-      "reward": { "badge": "/images/rewards/dragon-badge.png", "xp": 15 }
-    },
-    {
-      "id": "ming-tombs",
-      "title": "Ming Tombs Discovery",
-      "steps": [
-        {
-          "type": "show",
-          "image": "/images/landmarks/ming-tombs.svg",
-          "text": "Look at the Ming Tombs."
-        },
-        {
-          "type": "drag",
-          "text": "Drag the label to the picture: lots of stone animals",
-          "target": "animals"
-        },
-        {
-          "type": "action",
-          "text": "Do the gesture: walk through a big red gate!"
-        }
-      ],
-      "reward": { "badge": "/images/rewards/ancient-badge.png", "xp": 15 }
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [

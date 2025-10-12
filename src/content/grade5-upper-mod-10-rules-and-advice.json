@@ -3,44 +3,317 @@
   "title": "Rules and Advice",
   "durationMinutes": 13,
   "words": [
-    {"id": "word-should", "en": "should", "zh": "应该", "audio": "/audio/tts/word-should.mp3"},
-    {"id": "word-shouldnt", "en": "shouldn't", "zh": "不应该", "audio": "/audio/tts/word-shouldnt.mp3"},
-    {"id": "word-late", "en": "late", "zh": "迟到", "audio": "/audio/tts/word-late.mp3"},
-    {"id": "word-rule", "en": "rule", "zh": "规则", "audio": "/audio/tts/word-rule.mp3"},
-    {"id": "word-kind", "en": "kind", "zh": "友好的", "audio": "/audio/tts/word-kind.mp3"},
-    {"id": "word-helpful", "en": "helpful", "zh": "有帮助的", "audio": "/audio/tts/word-helpful.mp3"}
+    {
+      "id": "word-should",
+      "en": "should",
+      "zh": "应该",
+      "audio": "/audio/tts/word-should.mp3"
+    },
+    {
+      "id": "word-shouldnt",
+      "en": "shouldn't",
+      "zh": "不应该",
+      "audio": "/audio/tts/word-shouldnt.mp3"
+    },
+    {
+      "id": "word-late",
+      "en": "late",
+      "zh": "迟到",
+      "audio": "/audio/tts/word-late.mp3"
+    },
+    {
+      "id": "word-rule",
+      "en": "rule",
+      "zh": "规则",
+      "audio": "/audio/tts/word-rule.mp3"
+    },
+    {
+      "id": "word-kind",
+      "en": "kind",
+      "zh": "友好的",
+      "audio": "/audio/tts/word-kind.mp3"
+    },
+    {
+      "id": "word-helpful",
+      "en": "helpful",
+      "zh": "有帮助的",
+      "audio": "/audio/tts/word-helpful.mp3"
+    }
   ],
   "phrases": [
-    {"id": "phrase-go-to-bed", "en": "go to bed", "zh": "上床睡觉", "icon": "/images/icons/bed.svg", "audio": "/audio/tts/phrase-go-to-bed.mp3"},
-    {"id": "phrase-make-a-mess", "en": "make a mess", "zh": "弄得一团糟", "icon": "/images/icons/mess.svg", "audio": "/audio/tts/phrase-make-a-mess.mp3"},
-    {"id": "phrase-work-hard", "en": "work hard", "zh": "努力学习", "icon": "/images/icons/brain.svg", "audio": "/audio/tts/phrase-work-hard.mp3"}
+    {
+      "id": "phrase-go-to-bed",
+      "en": "go to bed",
+      "zh": "上床睡觉",
+      "icon": "/images/icons/bed.svg",
+      "audio": "/audio/tts/phrase-go-to-bed.mp3"
+    },
+    {
+      "id": "phrase-make-a-mess",
+      "en": "make a mess",
+      "zh": "弄得一团糟",
+      "icon": "/images/icons/mess.svg",
+      "audio": "/audio/tts/phrase-make-a-mess.mp3"
+    },
+    {
+      "id": "phrase-work-hard",
+      "en": "work hard",
+      "zh": "努力学习",
+      "icon": "/images/icons/brain.svg",
+      "audio": "/audio/tts/phrase-work-hard.mp3"
+    }
   ],
   "patterns": [
-    {"q": "You should tidy your toys.", "a": "你应该收拾你的玩具。"},
-    {"q": "You shouldn't play with the CDs.", "a": "你不应该玩CD。"},
-    {"q": "You shouldn't be late.", "a": "你不应该迟到。"}
+    {
+      "q": "You should tidy your toys.",
+      "a": "你应该收拾你的玩具。"
+    },
+    {
+      "q": "You shouldn't play with the CDs.",
+      "a": "你不应该玩CD。"
+    },
+    {
+      "q": "You shouldn't be late.",
+      "a": "你不应该迟到。"
+    }
   ],
   "quests": [
     {
-      "id": "g5u-m10-q1",
-      "title": "规则判断",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
-        {"type": "wordmatching", "text": "判断 'should' 和 'shouldn't' 的含义", "pairs": [{"en": "should", "zh": "应该"}, {"en": "shouldn't", "zh": "不应该"}], "options": [{"en": "should", "zh": "应该"}, {"en": "shouldn't", "zh": "不应该"}]}
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "should",
+              "zh": "应该"
+            },
+            {
+              "en": "shouldn't",
+              "zh": "不应该"
+            },
+            {
+              "en": "late",
+              "zh": "迟到"
+            },
+            {
+              "en": "rule",
+              "zh": "规则"
+            },
+            {
+              "en": "kind",
+              "zh": "友好的"
+            },
+            {
+              "en": "helpful",
+              "zh": "有帮助的"
+            }
+          ],
+          "options": [
+            {
+              "en": "kind",
+              "zh": "友好的"
+            },
+            {
+              "en": "helpful",
+              "zh": "有帮助的"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "go to bed",
+              "zh": "上床睡觉"
+            },
+            {
+              "en": "make a mess",
+              "zh": "弄得一团糟"
+            },
+            {
+              "en": "work hard",
+              "zh": "努力学习"
+            }
+          ],
+          "options": [
+            {
+              "en": "kind",
+              "zh": "友好的"
+            },
+            {
+              "en": "helpful",
+              "zh": "有帮助的"
+            }
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-checklist.png", "xp": 10}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
-      "id": "g5u-m10-q2",
-      "title": "给出建议",
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m10-s1.mp3", "scrambled": ["to", "your", "listen", "should", "You", "teacher"], "correct": ["You", "should", "listen", "to", "your", "teacher"]}
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-go-to-bed.mp3",
+          "scrambled": [
+            "to",
+            "bed",
+            "go"
+          ],
+          "correct": [
+            "go",
+            "to",
+            "bed"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-make-a-mess.mp3",
+          "scrambled": [
+            "a",
+            "mess",
+            "make"
+          ],
+          "correct": [
+            "make",
+            "a",
+            "mess"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/you-should-tidy-your-toys.mp3",
+          "scrambled": [
+            "should",
+            "tidy",
+            "your",
+            "toys.",
+            "You"
+          ],
+          "correct": [
+            "You",
+            "should",
+            "tidy",
+            "your",
+            "toys."
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-lightbulb.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你应该收拾你的玩具。",
+          "scrambledEnglish": [
+            "should",
+            "tidy",
+            "your",
+            "toys.",
+            "You"
+          ],
+          "correctEnglish": [
+            "You",
+            "should",
+            "tidy",
+            "your",
+            "toys."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你不应该玩CD。",
+          "scrambledEnglish": [
+            "shouldn't",
+            "play",
+            "with",
+            "the",
+            "CDs.",
+            "You"
+          ],
+          "correctEnglish": [
+            "You",
+            "shouldn't",
+            "play",
+            "with",
+            "the",
+            "CDs."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你不应该迟到。",
+          "scrambledEnglish": [
+            "shouldn't",
+            "be",
+            "late.",
+            "You"
+          ],
+          "correctEnglish": [
+            "You",
+            "shouldn't",
+            "be",
+            "late."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "上床睡觉",
+          "scrambledEnglish": [
+            "to",
+            "bed",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "to",
+            "bed"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "You ______ jump on the bed.", "answer": "shouldn't"},
-    {"type": "translate", "cn": "你应该把你的书带到课堂上。", "en": ["You should bring your books to class."]}
+    {
+      "type": "fillblank",
+      "text": "You ______ jump on the bed.",
+      "answer": "shouldn't"
+    },
+    {
+      "type": "translate",
+      "cn": "你应该把你的书带到课堂上。",
+      "en": [
+        "You should bring your books to class."
+      ]
+    }
   ],
-  "funFacts": ["Rule这个词来自拉丁语regula，意思是直尺，引申为衡量行为的标准。", "在英语中，给别人提建议时使用should是一种非常礼貌和常见的方式。"]
+  "funFacts": [
+    "Rule这个词来自拉丁语regula，意思是直尺，引申为衡量行为的标准。",
+    "在英语中，给别人提建议时使用should是一种非常礼貌和常见的方式。"
+  ]
 }

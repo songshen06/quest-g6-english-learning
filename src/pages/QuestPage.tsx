@@ -18,7 +18,7 @@ export const QuestPage: React.FC = () => {
       console.log('Quest page loading module with ID:', moduleId)
 
       // Use unified module data from content management
-      const module = contentModuleData[moduleId]
+      const module = contentModuleData[moduleId as keyof typeof contentModuleData]
 
       if (!module) {
         console.error('Unknown module ID:', moduleId)

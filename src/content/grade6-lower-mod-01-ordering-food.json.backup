@@ -1,0 +1,304 @@
+{
+  "moduleId": "grade6-lower-mod-01",
+  "title": "Ordering Food",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "hot-dog",
+      "en": "hot dog",
+      "zh": "热狗",
+      "audio": "/audio/tts/hot-dog.mp3"
+    },
+    {
+      "id": "hamburger",
+      "en": "hamburger",
+      "zh": "汉堡包",
+      "audio": "/audio/tts/hamburger.mp3"
+    },
+    {
+      "id": "cola",
+      "en": "cola",
+      "zh": "可乐",
+      "audio": "/audio/tts/cola.mp3"
+    },
+    {
+      "id": "soup",
+      "en": "soup",
+      "zh": "汤",
+      "audio": "/audio/tts/soup.mp3"
+    },
+    {
+      "id": "dollar",
+      "en": "dollar",
+      "zh": "美元",
+      "audio": "/audio/tts/dollar.mp3"
+    },
+    {
+      "id": "cent",
+      "en": "cent",
+      "zh": "美分",
+      "audio": "/audio/tts/cent.mp3"
+    },
+    {
+      "id": "meal",
+      "en": "meal",
+      "zh": "餐",
+      "audio": "/audio/tts/meal.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "what-do-you-want",
+      "en": "What do you want?",
+      "zh": "你想要什么？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/what-do-you-want.mp3"
+    },
+    {
+      "id": "i-want-a-hamburger",
+      "en": "I want a hamburger.",
+      "zh": "我想要一个汉堡包。",
+      "icon": "/images/icons/hamburger.svg",
+      "audio": "/audio/tts/i-want-a-hamburger.mp3"
+    },
+    {
+      "id": "how-much-is-it",
+      "en": "How much is it?",
+      "zh": "多少钱？",
+      "icon": "/images/icons/cash.svg",
+      "audio": "/audio/tts/how-much-is-it.mp3"
+    },
+    {
+      "id": "enjoy-your-meal",
+      "en": "Enjoy your meal!",
+      "zh": "用餐愉快！",
+      "icon": "/images/icons/meal.svg",
+      "audio": "/audio/tts/enjoy-your-meal.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What do you want to eat?",
+      "a": "你想吃什么？"
+    },
+    {
+      "q": "I want a hot dog, please.",
+      "a": "请给我一个热狗。"
+    },
+    {
+      "q": "How much is it?",
+      "a": "这个多少钱？"
+    },
+    {
+      "q": "It's thirteen dollars and twenty-five cents.",
+      "a": "十三美元二十五美分。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "hot dog",
+              "zh": "热狗"
+            },
+            {
+              "en": "hamburger",
+              "zh": "汉堡包"
+            },
+            {
+              "en": "cola",
+              "zh": "可乐"
+            },
+            {
+              "en": "soup",
+              "zh": "汤"
+            },
+            {
+              "en": "dollar",
+              "zh": "美元"
+            },
+            {
+              "en": "cent",
+              "zh": "美分"
+            }
+          ],
+          "options": [
+            {
+              "en": "cent",
+              "zh": "美分"
+            },
+            {
+              "en": "meal",
+              "zh": "餐"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "What do you want?",
+              "zh": "你想要什么？"
+            },
+            {
+              "en": "I want a hamburger.",
+              "zh": "我想要一个汉堡包。"
+            },
+            {
+              "en": "How much is it?",
+              "zh": "多少钱？"
+            },
+            {
+              "en": "Enjoy your meal!",
+              "zh": "用餐愉快！"
+            }
+          ],
+          "options": [
+            {
+              "en": "cent",
+              "zh": "美分"
+            },
+            {
+              "en": "meal",
+              "zh": "餐"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/what-do-you-want.mp3",
+          "scrambled": [
+            "do",
+            "you",
+            "want?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "do",
+            "you",
+            "want?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/i-want-a-hamburger.mp3",
+          "scrambled": [
+            "want",
+            "a",
+            "hamburger.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "want",
+            "a",
+            "hamburger."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/how-much-is-it.mp3",
+          "scrambled": [
+            "much",
+            "is",
+            "it?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "much",
+            "is",
+            "it?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你想要什么？",
+          "scrambledEnglish": [
+            "do",
+            "you",
+            "want?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "do",
+            "you",
+            "want?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我想要一个汉堡包。",
+          "scrambledEnglish": [
+            "want",
+            "a",
+            "hamburger.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "want",
+            "a",
+            "hamburger."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I want a ___, please.",
+      "answer": "hamburger"
+    },
+    {
+      "type": "translate",
+      "cn": "这个多少钱？",
+      "en": [
+        "How much is it?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "热狗（Hot dog）起源于德国，但却在美国变得流行起来。",
+    "世界上最昂贵的汉堡售价超过5000美元！"
+  ]
+}

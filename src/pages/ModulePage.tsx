@@ -23,7 +23,7 @@ export const ModulePage: React.FC = () => {
 
   useEffect(() => {
     if (moduleId) {
-      const module = moduleData[moduleId]
+      const module = moduleData[moduleId as keyof typeof moduleData]
 
       if (module) {
         console.log('Module loaded:', module)

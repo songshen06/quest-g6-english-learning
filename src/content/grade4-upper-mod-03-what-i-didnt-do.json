@@ -183,6 +183,67 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "她昨天没有走路去上学。",
+          "scrambledEnglish": [
+            "didn't",
+            "walk",
+            "to",
+            "school",
+            "yesterday.",
+            "She"
+          ],
+          "correctEnglish": [
+            "She",
+            "didn't",
+            "walk",
+            "to",
+            "school",
+            "yesterday."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我没有踢足球。",
+          "scrambledEnglish": [
+            "didn't",
+            "play",
+            "football.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "didn't",
+            "play",
+            "football."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "她昨天没有7点起床。",
+          "scrambledEnglish": [
+            "didn't",
+            "get",
+            "up",
+            "at",
+            "7",
+            "yesterday.",
+            "She"
+          ],
+          "correctEnglish": [
+            "She",
+            "didn't",
+            "get",
+            "up",
+            "at",
+            "7",
+            "yesterday."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
           "chinese": "待在家里",
           "scrambledEnglish": [
             "at",
@@ -194,50 +255,10 @@
             "at",
             "home"
           ]
-        },
-        {
-          "type": "zhtoen",
-          "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "骑我的自行车",
-          "scrambledEnglish": [
-            "my",
-            "bike",
-            "ride"
-          ],
-          "correctEnglish": [
-            "ride",
-            "my",
-            "bike"
-          ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "didn't",
-          "scrambledChinese": [
-            "没",
-            "有",
-            "做"
-          ],
-          "correctChinese": [
-            "没",
-            "有",
-            "做"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

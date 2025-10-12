@@ -1,0 +1,365 @@
+{
+  "moduleId": "grade4-lower-mod-07",
+  "title": "Telling the Time",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-time",
+      "en": "time",
+      "zh": "时间",
+      "audio": "/audio/tts/word-time.mp3"
+    },
+    {
+      "id": "word-clock",
+      "en": "clock",
+      "zh": "时钟",
+      "audio": "/audio/tts/word-clock.mp3"
+    },
+    {
+      "id": "word-watch",
+      "en": "watch",
+      "zh": "手表",
+      "audio": "/audio/tts/word-watch.mp3"
+    },
+    {
+      "id": "word-hour",
+      "en": "hour",
+      "zh": "小时",
+      "audio": "/audio/tts/word-hour.mp3"
+    },
+    {
+      "id": "word-minute",
+      "en": "minute",
+      "zh": "分钟",
+      "audio": "/audio/tts/word-minute.mp3"
+    },
+    {
+      "id": "word-oclock",
+      "en": "o'clock",
+      "zh": "点钟",
+      "audio": "/audio/tts/word-oclock.mp3"
+    },
+    {
+      "id": "word-past",
+      "en": "past",
+      "zh": "过",
+      "audio": "/audio/tts/word-past.mp3"
+    },
+    {
+      "id": "word-to",
+      "en": "to",
+      "zh": "差",
+      "audio": "/audio/tts/word-to.mp3"
+    },
+    {
+      "id": "word-half",
+      "en": "half",
+      "zh": "一半",
+      "audio": "/audio/tts/word-half.mp3"
+    },
+    {
+      "id": "word-quarter",
+      "en": "quarter",
+      "zh": "一刻",
+      "audio": "/audio/tts/word-quarter.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-what-time",
+      "en": "What time is it?",
+      "zh": "几点了？",
+      "icon": "/images/icons/clock-question.svg",
+      "audio": "/audio/tts/phrase-what-time.mp3"
+    },
+    {
+      "id": "phrase-its-oclock",
+      "en": "It's ... o'clock",
+      "zh": "...点了",
+      "icon": "/images/icons/clock-time.svg",
+      "audio": "/audio/tts/phrase-its-oclock.mp3"
+    },
+    {
+      "id": "phrase-half-past",
+      "en": "half past",
+      "zh": "半点",
+      "icon": "/images/icons/clock-half.svg",
+      "audio": "/audio/tts/phrase-half-past.mp3"
+    },
+    {
+      "id": "phrase-quarter-past",
+      "en": "quarter past",
+      "zh": "一刻",
+      "icon": "/images/icons/clock-quarter.svg",
+      "audio": "/audio/tts/phrase-quarter-past.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What time is it?",
+      "a": "几点了？"
+    },
+    {
+      "q": "It's nine o'clock.",
+      "a": "九点了。"
+    },
+    {
+      "q": "It's half past ten.",
+      "a": "十点半。"
+    },
+    {
+      "q": "It's quarter past three.",
+      "a": "三点一刻。"
+    },
+    {
+      "q": "It's twenty to eight.",
+      "a": "差二十分钟八点。"
+    },
+    {
+      "q": "School starts at eight o'clock.",
+      "a": "学校八点开始上课。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "time",
+              "zh": "时间"
+            },
+            {
+              "en": "clock",
+              "zh": "时钟"
+            },
+            {
+              "en": "watch",
+              "zh": "手表"
+            },
+            {
+              "en": "hour",
+              "zh": "小时"
+            },
+            {
+              "en": "minute",
+              "zh": "分钟"
+            },
+            {
+              "en": "o'clock",
+              "zh": "点钟"
+            }
+          ],
+          "options": [
+            {
+              "en": "past",
+              "zh": "过"
+            },
+            {
+              "en": "to",
+              "zh": "差"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "What time is it?",
+              "zh": "几点了？"
+            },
+            {
+              "en": "It's ... o'clock",
+              "zh": "...点了"
+            },
+            {
+              "en": "half past",
+              "zh": "半点"
+            },
+            {
+              "en": "quarter past",
+              "zh": "一刻"
+            }
+          ],
+          "options": [
+            {
+              "en": "past",
+              "zh": "过"
+            },
+            {
+              "en": "to",
+              "zh": "差"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-what-time.mp3",
+          "scrambled": [
+            "time",
+            "is",
+            "it?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "time",
+            "is",
+            "it?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-its-oclock.mp3",
+          "scrambled": [
+            "...",
+            "o'clock",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "...",
+            "o'clock"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/what-time-is-it.mp3",
+          "scrambled": [
+            "time",
+            "is",
+            "it?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "time",
+            "is",
+            "it?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "几点了？",
+          "scrambledEnglish": [
+            "time",
+            "is",
+            "it?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "time",
+            "is",
+            "it?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "九点了。",
+          "scrambledEnglish": [
+            "nine",
+            "o'clock.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "nine",
+            "o'clock."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "十点半。",
+          "scrambledEnglish": [
+            "half",
+            "past",
+            "ten.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "half",
+            "past",
+            "ten."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "三点一刻。",
+          "scrambledEnglish": [
+            "quarter",
+            "past",
+            "three.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "quarter",
+            "past",
+            "three."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "What time ______ it?",
+      "answer": "is"
+    },
+    {
+      "type": "fillblank",
+      "text": "It's three ______.",
+      "answer": "o'clock"
+    },
+    {
+      "type": "translate",
+      "cn": "现在几点了？",
+      "en": [
+        "What time is it now?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "英语中表达时间有两种方式：一种是直接读数字（如three fifteen），另一种是用past和to（如quarter past three）。",
+    "\"o'clock\"只用于整点时间，源自\"of the clock\"的缩写，意思是\"根据时钟\"。"
+  ]
+}

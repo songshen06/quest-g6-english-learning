@@ -226,59 +226,76 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "上床睡觉",
+          "chinese": "早点睡觉。",
           "scrambledEnglish": [
             "to",
             "bed",
-            "go"
+            "early.",
+            "Go"
           ],
           "correctEnglish": [
-            "go",
+            "Go",
             "to",
-            "bed"
+            "bed",
+            "early."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "许多水",
+          "chinese": "每天吃蔬菜。",
           "scrambledEnglish": [
-            "lot",
-            "of",
-            "water",
-            "a"
+            "vegetables",
+            "every",
+            "day.",
+            "Eat"
           ],
           "correctEnglish": [
+            "Eat",
+            "vegetables",
+            "every",
+            "day."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "喝许多水。",
+          "scrambledEnglish": [
             "a",
             "lot",
             "of",
-            "water"
+            "water.",
+            "Drink"
+          ],
+          "correctEnglish": [
+            "Drink",
+            "a",
+            "lot",
+            "of",
+            "water."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "每天做运动。",
+          "scrambledEnglish": [
+            "exercise",
+            "every",
+            "day.",
+            "Do"
+          ],
+          "correctEnglish": [
+            "Do",
+            "exercise",
+            "every",
+            "day."
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "early",
-          "scrambledChinese": [
-            "早"
-          ],
-          "correctChinese": [
-            "早"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

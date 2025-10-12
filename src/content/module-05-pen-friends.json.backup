@@ -1,0 +1,426 @@
+{
+  "moduleId": "grade6-upper-mod-05",
+  "title": "Pen Friends",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "pleased",
+      "en": "pleased",
+      "zh": "高兴的",
+      "audio": "/audio/tts/pleased.mp3"
+    },
+    {
+      "id": "pretty",
+      "en": "pretty",
+      "zh": "漂亮的",
+      "audio": "/audio/tts/pretty.mp3"
+    },
+    {
+      "id": "french",
+      "en": "French",
+      "zh": "法语",
+      "audio": "/audio/tts/french.mp3"
+    },
+    {
+      "id": "phone",
+      "en": "phone",
+      "zh": "电话",
+      "audio": "/audio/tts/phone.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "pleased-meet",
+      "en": "pleased to meet you",
+      "zh": "非常高兴遇到你",
+      "icon": "/images/icons/meet.svg",
+      "audio": "/audio/tts/pleased-meet.mp3"
+    },
+    {
+      "id": "chinese-pen",
+      "en": "Chinese pen friend",
+      "zh": "中国笔友",
+      "audio": "/audio/tts/chinese-pen.mp3"
+    },
+    {
+      "id": "write-her",
+      "en": "write to her",
+      "zh": "给她写信",
+      "icon": "/images/icons/write.svg",
+      "audio": "/audio/tts/write-her.mp3"
+    },
+    {
+      "id": "of-course",
+      "en": "of course",
+      "zh": "当然",
+      "audio": "/audio/tts/of-course.mp3"
+    },
+    {
+      "id": "in-english",
+      "en": "in English",
+      "zh": "用英语",
+      "audio": "/audio/tts/in-english.mp3"
+    },
+    {
+      "id": "in-french",
+      "en": "in French",
+      "zh": "用法语",
+      "audio": "/audio/tts/in-french.mp3"
+    },
+    {
+      "id": "phone-friend",
+      "en": "a phone friend",
+      "zh": "一个电话的朋友",
+      "icon": "/images/icons/phone-call.svg",
+      "audio": "/audio/tts/phone-friend.mp3"
+    },
+    {
+      "id": "learn-english",
+      "en": "learn English",
+      "zh": "学英语",
+      "audio": "/audio/tts/learn-english.mp3"
+    },
+    {
+      "id": "come-london",
+      "en": "come from London",
+      "zh": "来自伦敦",
+      "icon": "/images/landmarks/london.svg",
+      "audio": "/audio/tts/come-london.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "She can speak some English.",
+      "a": "她会说一些英语。"
+    },
+    {
+      "q": "Can I write to her? Of course. You can write to her in English.",
+      "a": "我可以给她写信吗？当然可以。你可以用英语给她写信。"
+    },
+    {
+      "q": "Pleased to meet you!",
+      "a": "很高兴认识你！"
+    },
+    {
+      "q": "Pleased to meet you too!",
+      "a": "我也很高兴认识你！"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "pleased",
+              "zh": "高兴的",
+              "audio": "/audio/tts/pleased.mp3"
+            },
+            {
+              "en": "pretty",
+              "zh": "漂亮的",
+              "audio": "/audio/tts/pretty.mp3"
+            },
+            {
+              "en": "French",
+              "zh": "法语",
+              "audio": "/audio/tts/french.mp3"
+            },
+            {
+              "en": "phone",
+              "zh": "电话",
+              "audio": "/audio/tts/phone.mp3"
+            },
+            {
+              "en": "pleased to meet you",
+              "zh": "非常高兴遇到你",
+              "audio": "/audio/tts/pleased-meet.mp3"
+            },
+            {
+              "en": "Chinese pen friend",
+              "zh": "中国笔友",
+              "audio": "/audio/tts/chinese-pen.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "write",
+              "zh": "写"
+            },
+            {
+              "en": "course",
+              "zh": "当然"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "write to her",
+              "zh": "给她写信",
+              "audio": "/audio/tts/write-her.mp3"
+            },
+            {
+              "en": "of course",
+              "zh": "当然",
+              "audio": "/audio/tts/of-course.mp3"
+            },
+            {
+              "en": "in English",
+              "zh": "用英语",
+              "audio": "/audio/tts/in-english.mp3"
+            },
+            {
+              "en": "in French",
+              "zh": "用法语",
+              "audio": "/audio/tts/in-french.mp3"
+            },
+            {
+              "en": "a phone friend",
+              "zh": "一个电话的朋友",
+              "audio": "/audio/tts/phone-friend.mp3"
+            },
+            {
+              "en": "learn English",
+              "zh": "学英语",
+              "audio": "/audio/tts/learn-english.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "friend",
+              "zh": "朋友"
+            },
+            {
+              "en": "English",
+              "zh": "英语"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第3部分)",
+          "pairs": [
+            {
+              "en": "come from London",
+              "zh": "来自伦敦",
+              "audio": "/audio/tts/come-london.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "London",
+              "zh": "伦敦"
+            },
+            {
+              "en": "come",
+              "zh": "来"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/pleased-meet.mp3",
+          "scrambled": [
+            "meet",
+            "pleased",
+            "Pleased",
+            "you",
+            "to"
+          ],
+          "correct": [
+            "Pleased",
+            "to",
+            "meet",
+            "you"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/write-her.mp3",
+          "scrambled": [
+            "her",
+            "write",
+            "You",
+            "can",
+            "to"
+          ],
+          "correct": [
+            "You",
+            "can",
+            "write",
+            "to",
+            "her"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/learn-english.mp3",
+          "scrambled": [
+            "English",
+            "learn",
+            "She",
+            "can",
+            "some"
+          ],
+          "correct": [
+            "She",
+            "can",
+            "speak",
+            "some",
+            "English"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Can I write to her?",
+          "scrambledChinese": [
+            "我",
+            "写信",
+            "她",
+            "吗",
+            "给",
+            "能"
+          ],
+          "correctChinese": [
+            "我",
+            "能",
+            "给",
+            "她",
+            "写",
+            "信",
+            "吗"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "You can write to her in English",
+          "scrambledChinese": [
+            "用",
+            "你",
+            "英语",
+            "写",
+            "她",
+            "给",
+            "可以"
+          ],
+          "correctChinese": [
+            "你",
+            "可以",
+            "用",
+            "英语",
+            "给",
+            "她",
+            "写",
+            "信"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "非常高兴遇到你",
+          "scrambledEnglish": [
+            "meet",
+            "to",
+            "Pleased",
+            "you"
+          ],
+          "correctEnglish": [
+            "Pleased",
+            "to",
+            "meet",
+            "you"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "她会说一些英语",
+          "scrambledEnglish": [
+            "speak",
+            "can",
+            "She",
+            "English",
+            "some"
+          ],
+          "correctEnglish": [
+            "She",
+            "can",
+            "speak",
+            "some",
+            "English"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "She can speak some ________.",
+      "answer": "English"
+    },
+    {
+      "type": "fillblank",
+      "text": "You can write to her ________ English.",
+      "answer": "in"
+    },
+    {
+      "type": "translate",
+      "cn": "我可以给她写信吗？当然。你可以用英语给她写信。",
+      "en": [
+        "Can I write to her?",
+        "Of course. You can write to her in English."
+      ]
+    }
+  ],
+  "funFacts": [
+    "Having pen friends is a great way to practice writing in different languages.",
+    "London is the capital city of England and the United Kingdom, with over 8 million residents."
+  ]
+}

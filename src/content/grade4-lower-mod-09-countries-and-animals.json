@@ -265,61 +265,89 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "来自中国",
+          "chinese": "我来自中国。",
           "scrambledEnglish": [
-            "China",
-            "from"
+            "am",
+            "from",
+            "China.",
+            "I"
           ],
           "correctEnglish": [
+            "I",
+            "am",
             "from",
-            "China"
+            "China."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "居住在",
+          "chinese": "熊猫生活在中国。",
           "scrambledEnglish": [
+            "live",
             "in",
-            "live"
+            "China.",
+            "Pandas"
           ],
           "correctEnglish": [
+            "Pandas",
             "live",
-            "in"
+            "in",
+            "China."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "袋鼠来自澳大利亚。",
+          "scrambledEnglish": [
+            "are",
+            "from",
+            "Australia.",
+            "Kangaroos"
+          ],
+          "correctEnglish": [
+            "Kangaroos",
+            "are",
+            "from",
+            "Australia."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你来自哪里？",
+          "scrambledEnglish": [
+            "are",
+            "you",
+            "from?",
+            "Where"
+          ],
+          "correctEnglish": [
+            "Where",
+            "are",
+            "you",
+            "from?"
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "China",
-          "scrambledChinese": [
-            "中",
-            "国"
-          ],
-          "correctChinese": [
-            "中",
-            "国"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

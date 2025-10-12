@@ -1,0 +1,357 @@
+{
+  "moduleId": "grade6-lower-mod-06",
+  "title": "Gifts and Past Actions",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "bought",
+      "en": "bought",
+      "zh": "买（过去式）",
+      "audio": "/audio/tts/bought.mp3"
+    },
+    {
+      "id": "present",
+      "en": "present",
+      "zh": "礼物",
+      "audio": "/audio/tts/present.mp3"
+    },
+    {
+      "id": "interested",
+      "en": "interested",
+      "zh": "感兴趣的",
+      "audio": "/audio/tts/interested.mp3"
+    },
+    {
+      "id": "spaceship",
+      "en": "spaceship",
+      "zh": "宇宙飞船",
+      "audio": "/audio/tts/spaceship.mp3"
+    },
+    {
+      "id": "made",
+      "en": "made",
+      "zh": "制作（过去式）",
+      "audio": "/audio/tts/made.mp3"
+    },
+    {
+      "id": "model",
+      "en": "model",
+      "zh": "模型",
+      "audio": "/audio/tts/model.mp3"
+    },
+    {
+      "id": "taikonaut",
+      "en": "taikonaut",
+      "zh": "中国宇航员",
+      "audio": "/audio/tts/taikonaut.mp3"
+    },
+    {
+      "id": "flag",
+      "en": "flag",
+      "zh": "旗",
+      "audio": "/audio/tts/flag.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "space-travel",
+      "en": "space travel",
+      "zh": "太空旅行",
+      "icon": "/images/icons/rocket.svg",
+      "audio": "/audio/tts/space-travel.mp3"
+    },
+    {
+      "id": "interested-in",
+      "en": "interested in",
+      "zh": "对…感兴趣",
+      "icon": "/images/icons/idea.svg",
+      "audio": "/audio/tts/interested-in.mp3"
+    },
+    {
+      "id": "made-a-model",
+      "en": "made a model",
+      "zh": "制作了一个模型",
+      "icon": "/images/icons/tools.svg",
+      "audio": "/audio/tts/made-a-model.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "It was Daming's birthday yesterday.",
+      "a": "昨天是大明的生日。"
+    },
+    {
+      "q": "Simon's mum bought him a book.",
+      "a": "西蒙的妈妈给他买了一本书。"
+    },
+    {
+      "q": "Daming is very interested in space travel.",
+      "a": "大明对太空旅行很感兴趣。"
+    },
+    {
+      "q": "They made a model of a Chinese spaceship.",
+      "a": "他们制作了一个中国宇宙飞船的模型。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "bought",
+              "zh": "买（过去式）"
+            },
+            {
+              "en": "present",
+              "zh": "礼物"
+            },
+            {
+              "en": "interested",
+              "zh": "感兴趣的"
+            },
+            {
+              "en": "spaceship",
+              "zh": "宇宙飞船"
+            },
+            {
+              "en": "made",
+              "zh": "制作（过去式）"
+            },
+            {
+              "en": "model",
+              "zh": "模型"
+            }
+          ],
+          "options": [
+            {
+              "en": "taikonaut",
+              "zh": "中国宇航员"
+            },
+            {
+              "en": "flag",
+              "zh": "旗"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "space travel",
+              "zh": "太空旅行"
+            },
+            {
+              "en": "interested in",
+              "zh": "对…感兴趣"
+            },
+            {
+              "en": "made a model",
+              "zh": "制作了一个模型"
+            }
+          ],
+          "options": [
+            {
+              "en": "taikonaut",
+              "zh": "中国宇航员"
+            },
+            {
+              "en": "flag",
+              "zh": "旗"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/made-a-model.mp3",
+          "scrambled": [
+            "a",
+            "model",
+            "made"
+          ],
+          "correct": [
+            "made",
+            "a",
+            "model"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/it-was-damings-birthday-yesterday.mp3",
+          "scrambled": [
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday.",
+            "It"
+          ],
+          "correct": [
+            "It",
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/simons-mum-bought-him-a-book.mp3",
+          "scrambled": [
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book.",
+            "Simon's"
+          ],
+          "correct": [
+            "Simon's",
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "昨天是大明的生日。",
+          "scrambledEnglish": [
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday.",
+            "It"
+          ],
+          "correctEnglish": [
+            "It",
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "西蒙的妈妈给他买了一本书。",
+          "scrambledEnglish": [
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book.",
+            "Simon's"
+          ],
+          "correctEnglish": [
+            "Simon's",
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "大明对太空旅行很感兴趣。",
+          "scrambledEnglish": [
+            "is",
+            "very",
+            "interested",
+            "in",
+            "space",
+            "travel.",
+            "Daming"
+          ],
+          "correctEnglish": [
+            "Daming",
+            "is",
+            "very",
+            "interested",
+            "in",
+            "space",
+            "travel."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们制作了一个中国宇宙飞船的模型。",
+          "scrambledEnglish": [
+            "made",
+            "a",
+            "model",
+            "of",
+            "a",
+            "Chinese",
+            "spaceship.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "made",
+            "a",
+            "model",
+            "of",
+            "a",
+            "Chinese",
+            "spaceship."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Daming and Simon ___ a model of a spaceship.",
+      "answer": "made"
+    },
+    {
+      "type": "translate",
+      "cn": "我对他很感兴趣。",
+      "en": [
+        "I am interested in him."
+      ]
+    }
+  ],
+  "funFacts": [
+    "Taikonaut 是专门指中国宇航员的英文单词。",
+    "在太空中，因为没有重力，火焰会呈现球形。"
+  ]
+}

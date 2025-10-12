@@ -1,0 +1,289 @@
+{
+  "moduleId": "grade6-lower-mod-05",
+  "title": "Simultaneous Actions",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "telephone",
+      "en": "telephone",
+      "zh": "电话",
+      "audio": "/audio/tts/telephone.mp3"
+    },
+    {
+      "id": "ring",
+      "en": "ring",
+      "zh": "（铃、电话）响",
+      "audio": "/audio/tts/ring.mp3"
+    },
+    {
+      "id": "bell",
+      "en": "bell",
+      "zh": "门铃",
+      "audio": "/audio/tts/bell.mp3"
+    },
+    {
+      "id": "bark",
+      "en": "bark",
+      "zh": "（狗）吠",
+      "audio": "/audio/tts/bark.mp3"
+    },
+    {
+      "id": "arrive",
+      "en": "arrive",
+      "zh": "到达",
+      "audio": "/audio/tts/arrive.mp3"
+    },
+    {
+      "id": "hardly",
+      "en": "hardly",
+      "zh": "几乎不",
+      "audio": "/audio/tts/hardly.mp3"
+    },
+    {
+      "id": "tunnel",
+      "en": "tunnel",
+      "zh": "隧道",
+      "audio": "/audio/tts/tunnel.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "playing-the-suona",
+      "en": "playing the suona",
+      "zh": "吹唢呐",
+      "icon": "/images/icons/music.svg",
+      "audio": "/audio/tts/playing-the-suona.mp3"
+    },
+    {
+      "id": "the-bell-is-ringing",
+      "en": "The bell is ringing",
+      "zh": "门铃在响",
+      "icon": "/images/icons/bell.svg",
+      "audio": "/audio/tts/the-bell-is-ringing.mp3"
+    },
+    {
+      "id": "jumping-in-the-water",
+      "en": "jumping in the water",
+      "zh": "在水里跳",
+      "icon": "/images/icons/water.svg",
+      "audio": "/audio/tts/jumping-in-the-water.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "He is playing the suona, but the telephone rings.",
+      "a": "他正在吹唢呐，但是电话响了。"
+    },
+    {
+      "q": "The bell is ringing.",
+      "a": "门铃在响。"
+    },
+    {
+      "q": "Some children are jumping in the water.",
+      "a": "一些孩子正在水里跳。"
+    },
+    {
+      "q": "The train goes into a tunnel.",
+      "a": "火车进入了隧道。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "telephone",
+              "zh": "电话"
+            },
+            {
+              "en": "ring",
+              "zh": "（铃、电话）响"
+            },
+            {
+              "en": "bell",
+              "zh": "门铃"
+            },
+            {
+              "en": "bark",
+              "zh": "（狗）吠"
+            },
+            {
+              "en": "arrive",
+              "zh": "到达"
+            },
+            {
+              "en": "hardly",
+              "zh": "几乎不"
+            }
+          ],
+          "options": [
+            {
+              "en": "hardly",
+              "zh": "几乎不"
+            },
+            {
+              "en": "tunnel",
+              "zh": "隧道"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "playing the suona",
+              "zh": "吹唢呐"
+            },
+            {
+              "en": "The bell is ringing",
+              "zh": "门铃在响"
+            },
+            {
+              "en": "jumping in the water",
+              "zh": "在水里跳"
+            }
+          ],
+          "options": [
+            {
+              "en": "hardly",
+              "zh": "几乎不"
+            },
+            {
+              "en": "tunnel",
+              "zh": "隧道"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/playing-the-suona.mp3",
+          "scrambled": [
+            "the",
+            "suona",
+            "playing"
+          ],
+          "correct": [
+            "playing",
+            "the",
+            "suona"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/the-bell-is-ringing.mp3",
+          "scrambled": [
+            "bell",
+            "is",
+            "ringing",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "bell",
+            "is",
+            "ringing"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/jumping-in-the-water.mp3",
+          "scrambled": [
+            "in",
+            "the",
+            "water",
+            "jumping"
+          ],
+          "correct": [
+            "jumping",
+            "in",
+            "the",
+            "water"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "吹唢呐",
+          "scrambledEnglish": [
+            "the",
+            "suona",
+            "playing"
+          ],
+          "correctEnglish": [
+            "playing",
+            "the",
+            "suona"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "门铃在响",
+          "scrambledEnglish": [
+            "bell",
+            "is",
+            "ringing",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "bell",
+            "is",
+            "ringing"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "The dog is ___ and dancing.",
+      "answer": "barking"
+    },
+    {
+      "type": "translate",
+      "cn": "火车到达了车站。",
+      "en": [
+        "The train arrives at the station."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一部电话是在1876年发明的。",
+    "狗的听力范围比人类宽得多，能听到更高频率的声音。"
+  ]
+}

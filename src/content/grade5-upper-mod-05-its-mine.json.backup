@@ -1,0 +1,283 @@
+{
+  "moduleId": "grade5-upper-mod-05",
+  "title": "It's Mine!",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "word-whose",
+      "en": "whose",
+      "zh": "谁的",
+      "audio": "/audio/tts/word-whose.mp3"
+    },
+    {
+      "id": "word-mine",
+      "en": "mine",
+      "zh": "我的",
+      "audio": "/audio/tts/word-mine.mp3"
+    },
+    {
+      "id": "word-yours",
+      "en": "yours",
+      "zh": "你的",
+      "audio": "/audio/tts/word-yours.mp3"
+    },
+    {
+      "id": "word-his",
+      "en": "his",
+      "zh": "他的",
+      "audio": "/audio/tts/word-his.mp3"
+    },
+    {
+      "id": "word-hers",
+      "en": "hers",
+      "zh": "她的",
+      "audio": "/audio/tts/word-hers.mp3"
+    },
+    {
+      "id": "word-wet",
+      "en": "wet",
+      "zh": "湿的",
+      "audio": "/audio/tts/word-wet.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-whats-the-matter",
+      "en": "What's the matter?",
+      "zh": "怎么了？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+    },
+    {
+      "id": "phrase-isnt-yours",
+      "en": "isn't yours",
+      "zh": "不是你的",
+      "icon": "/images/icons/cross.svg",
+      "audio": "/audio/tts/phrase-isnt-yours.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Whose T-shirt is it?",
+      "a": "这是谁的T恤衫？"
+    },
+    {
+      "q": "It's mine.",
+      "a": "它是我的。"
+    },
+    {
+      "q": "It isn't yours, Sam.",
+      "a": "山姆，它不是你的。"
+    },
+    {
+      "q": "Amy's blue dress is wet.",
+      "a": "艾米的蓝色连衣裙是湿的。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "g5u-m05-q1",
+      "title": "物主代词配对",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将物主代词与正确的意思配对",
+          "pairs": [
+            {
+              "en": "mine",
+              "zh": "我的"
+            },
+            {
+              "en": "hers",
+              "zh": "她的"
+            }
+          ],
+          "options": [
+            {
+              "en": "mine",
+              "zh": "我的"
+            },
+            {
+              "en": "hers",
+              "zh": "她的"
+            },
+            {
+              "en": "his",
+              "zh": "我们的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-key.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "g5u-m05-q2",
+      "title": "失物招领处",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/g5u-m05-s1.mp3",
+          "scrambled": [
+            "eraser",
+            "it",
+            "is",
+            "Whose"
+          ],
+          "correct": [
+            "Whose",
+            "eraser",
+            "is",
+            "it"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-lost-found.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对",
+          "pairs": [
+            {
+              "en": "whose",
+              "zh": "谁的"
+            },
+            {
+              "en": "mine",
+              "zh": "我的"
+            },
+            {
+              "en": "yours",
+              "zh": "你的"
+            },
+            {
+              "en": "his",
+              "zh": "他的"
+            },
+            {
+              "en": "hers",
+              "zh": "她的"
+            },
+            {
+              "en": "wet",
+              "zh": "湿的"
+            }
+          ],
+          "options": [
+            {
+              "en": "whose",
+              "zh": "谁的"
+            },
+            {
+              "en": "mine",
+              "zh": "我的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/whose-tshirt-is-it.mp3",
+          "scrambled": [
+            "is",
+            "T-shirt",
+            "Whose",
+            "it?"
+          ],
+          "correct": [
+            "Whose",
+            "T-shirt",
+            "is",
+            "it?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "谁的",
+          "scrambledEnglish": [
+            "whose"
+          ],
+          "correctEnglish": [
+            "whose"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "whose",
+          "scrambledChinese": [
+            "谁",
+            "的"
+          ],
+          "correctChinese": [
+            "谁",
+            "的"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "This book is not mine. It's ______.",
+      "answer": "yours"
+    },
+    {
+      "type": "translate",
+      "cn": "那么这是谁的T恤衫呢？",
+      "en": [
+        "Then whose T-shirt is it?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "在英语中，名词后面加's是表示所属关系的最常见方法，比如 Amy's dress。",
+    "物主代词（如 mine, yours, his, hers）可以单独使用，它本身就包含了名词的含义。"
+  ]
+}

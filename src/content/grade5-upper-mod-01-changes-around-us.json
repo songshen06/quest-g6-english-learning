@@ -3,42 +3,294 @@
   "title": "Changes Around Us",
   "durationMinutes": 12,
   "words": [
-    {"id": "word-different", "en": "different", "zh": "不同的", "audio": "/audio/tts/word-different.mp3"},
-    {"id": "word-bench", "en": "bench", "zh": "长凳", "audio": "/audio/tts/word-bench.mp3"},
-    {"id": "word-playground", "en": "playground", "zh": "操场", "audio": "/audio/tts/word-playground.mp3"},
-    {"id": "word-before", "en": "before", "zh": "以前", "audio": "/audio/tts/word-before.mp3"},
-    {"id": "word-now", "en": "now", "zh": "现在", "audio": "/audio/tts/word-now.mp3"}
+    {
+      "id": "word-different",
+      "en": "different",
+      "zh": "不同的",
+      "audio": "/audio/tts/word-different.mp3"
+    },
+    {
+      "id": "word-bench",
+      "en": "bench",
+      "zh": "长凳",
+      "audio": "/audio/tts/word-bench.mp3"
+    },
+    {
+      "id": "word-playground",
+      "en": "playground",
+      "zh": "操场",
+      "audio": "/audio/tts/word-playground.mp3"
+    },
+    {
+      "id": "word-before",
+      "en": "before",
+      "zh": "以前",
+      "audio": "/audio/tts/word-before.mp3"
+    },
+    {
+      "id": "word-now",
+      "en": "now",
+      "zh": "现在",
+      "audio": "/audio/tts/word-now.mp3"
+    }
   ],
   "phrases": [
-    {"id": "phrase-two-years-ago", "en": "two years ago", "zh": "两年前", "icon": "/images/icons/calendar.svg", "audio": "/audio/tts/phrase-two-years-ago.mp3"},
-    {"id": "phrase-look-different", "en": "look different", "zh": "看起来不同", "icon": "/images/icons/eye.svg", "audio": "/audio/tts/phrase-look-different.mp3"}
+    {
+      "id": "phrase-two-years-ago",
+      "en": "two years ago",
+      "zh": "两年前",
+      "icon": "/images/icons/calendar.svg",
+      "audio": "/audio/tts/phrase-two-years-ago.mp3"
+    },
+    {
+      "id": "phrase-look-different",
+      "en": "look different",
+      "zh": "看起来不同",
+      "icon": "/images/icons/eye.svg",
+      "audio": "/audio/tts/phrase-look-different.mp3"
+    }
   ],
   "patterns": [
-    {"q": "There wasn't a clock here before.", "a": "这里以前没有时钟。"},
-    {"q": "There were lots of little trees before.", "a": "以前有很多小树。"},
-    {"q": "There is a big playground now.", "a": "现在有一个大操场了。"}
+    {
+      "q": "There wasn't a clock here before.",
+      "a": "这里以前没有时钟。"
+    },
+    {
+      "q": "There were lots of little trees before.",
+      "a": "以前有很多小树。"
+    },
+    {
+      "q": "There is a big playground now.",
+      "a": "现在有一个大操场了。"
+    }
   ],
   "quests": [
     {
-      "id": "g5u-m01-q1",
-      "title": "词汇配对：城市变化",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
-        {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "playground", "zh": "操场"}, {"en": "bench", "zh": "长凳"}], "options": [{"en": "playground", "zh": "操场"}, {"en": "bench", "zh": "长凳"}, {"en": "tree", "zh": "树"}]}
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "different",
+              "zh": "不同的"
+            },
+            {
+              "en": "bench",
+              "zh": "长凳"
+            },
+            {
+              "en": "playground",
+              "zh": "操场"
+            },
+            {
+              "en": "before",
+              "zh": "以前"
+            },
+            {
+              "en": "now",
+              "zh": "现在"
+            },
+            {
+              "en": "two years ago",
+              "zh": "两年前"
+            }
+          ],
+          "options": [
+            {
+              "en": "before",
+              "zh": "以前"
+            },
+            {
+              "en": "now",
+              "zh": "现在"
+            }
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-park.png", "xp": 10}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
-      "id": "g5u-m01-q2",
-      "title": "句型练习：今昔对比",
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m01-s1.mp3", "scrambled": ["a", "house", "was", "There", "here", "before"], "correct": ["There", "was", "a", "house", "here", "before"]}
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-two-years-ago.mp3",
+          "scrambled": [
+            "years",
+            "ago",
+            "two"
+          ],
+          "correct": [
+            "two",
+            "years",
+            "ago"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/there-wasnt-a-clock-here-before.mp3",
+          "scrambled": [
+            "wasn't",
+            "a",
+            "clock",
+            "here",
+            "before.",
+            "There"
+          ],
+          "correct": [
+            "There",
+            "wasn't",
+            "a",
+            "clock",
+            "here",
+            "before."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/there-were-lots-of-little-trees-before.mp3",
+          "scrambled": [
+            "were",
+            "lots",
+            "of",
+            "little",
+            "trees",
+            "before.",
+            "There"
+          ],
+          "correct": [
+            "There",
+            "were",
+            "lots",
+            "of",
+            "little",
+            "trees",
+            "before."
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-time-travel.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这里以前没有时钟。",
+          "scrambledEnglish": [
+            "wasn't",
+            "a",
+            "clock",
+            "here",
+            "before.",
+            "There"
+          ],
+          "correctEnglish": [
+            "There",
+            "wasn't",
+            "a",
+            "clock",
+            "here",
+            "before."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "以前有很多小树。",
+          "scrambledEnglish": [
+            "were",
+            "lots",
+            "of",
+            "little",
+            "trees",
+            "before.",
+            "There"
+          ],
+          "correctEnglish": [
+            "There",
+            "were",
+            "lots",
+            "of",
+            "little",
+            "trees",
+            "before."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "现在有一个大操场了。",
+          "scrambledEnglish": [
+            "is",
+            "a",
+            "big",
+            "playground",
+            "now.",
+            "There"
+          ],
+          "correctEnglish": [
+            "There",
+            "is",
+            "a",
+            "big",
+            "playground",
+            "now."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "两年前",
+          "scrambledEnglish": [
+            "years",
+            "ago",
+            "two"
+          ],
+          "correctEnglish": [
+            "two",
+            "years",
+            "ago"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "There ______ any benches here before.", "answer": "weren't"},
-    {"type": "translate", "cn": "现在有高大的树了。", "en": ["There are tall trees now."]}
+    {
+      "type": "fillblank",
+      "text": "There ______ any benches here before.",
+      "answer": "weren't"
+    },
+    {
+      "type": "translate",
+      "cn": "现在有高大的树了。",
+      "en": [
+        "There are tall trees now."
+      ]
+    }
   ],
-  "funFacts": ["伦敦的大本钟在1859年建成，已经有超过160年的历史了！", "有些城市的发展非常快，仅仅十年时间就会有翻天覆地的变化。"]
+  "funFacts": [
+    "伦敦的大本钟在1859年建成，已经有超过160年的历史了！",
+    "有些城市的发展非常快，仅仅十年时间就会有翻天覆地的变化。"
+  ]
 }

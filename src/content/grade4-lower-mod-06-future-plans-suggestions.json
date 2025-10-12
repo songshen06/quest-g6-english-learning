@@ -279,61 +279,105 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "将要",
+          "chinese": "我明天要去看奶奶。",
           "scrambledEnglish": [
-            "to",
-            "going"
+            "will",
+            "visit",
+            "my",
+            "grandma",
+            "tomorrow.",
+            "I"
           ],
           "correctEnglish": [
-            "going",
-            "to"
+            "I",
+            "will",
+            "visit",
+            "my",
+            "grandma",
+            "tomorrow."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "下周",
+          "chinese": "我们下周要去公园。",
           "scrambledEnglish": [
-            "week",
-            "next"
+            "are",
+            "going",
+            "to",
+            "the",
+            "park",
+            "next",
+            "week.",
+            "We"
           ],
           "correctEnglish": [
+            "We",
+            "are",
+            "going",
+            "to",
+            "the",
+            "park",
             "next",
-            "week"
+            "week."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你明天要做什么？",
+          "scrambledEnglish": [
+            "will",
+            "you",
+            "do",
+            "tomorrow?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "will",
+            "you",
+            "do",
+            "tomorrow?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们去动物园吧！",
+          "scrambledEnglish": [
+            "go",
+            "to",
+            "the",
+            "zoo!",
+            "Let's"
+          ],
+          "correctEnglish": [
+            "Let's",
+            "go",
+            "to",
+            "the",
+            "zoo!"
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "will",
-          "scrambledChinese": [
-            "将",
-            "要"
-          ],
-          "correctChinese": [
-            "将",
-            "要"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

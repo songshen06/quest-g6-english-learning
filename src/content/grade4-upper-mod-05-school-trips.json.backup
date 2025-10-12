@@ -1,0 +1,320 @@
+{
+  "moduleId": "grade4-upper-mod-05",
+  "title": "School Trips",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-went",
+      "en": "went",
+      "zh": "去了",
+      "audio": "/audio/tts/word-went.mp3"
+    },
+    {
+      "id": "word-saw",
+      "en": "saw",
+      "zh": "看见了",
+      "audio": "/audio/tts/word-saw.mp3"
+    },
+    {
+      "id": "word-ate",
+      "en": "ate",
+      "zh": "吃了",
+      "audio": "/audio/tts/word-ate.mp3"
+    },
+    {
+      "id": "word-had",
+      "en": "had",
+      "zh": "度过了",
+      "audio": "/audio/tts/word-had.mp3"
+    },
+    {
+      "id": "word-bought",
+      "en": "bought",
+      "zh": "买了",
+      "audio": "/audio/tts/word-bought.mp3"
+    },
+    {
+      "id": "word-wore",
+      "en": "wore",
+      "zh": "穿了",
+      "audio": "/audio/tts/word-wore.mp3"
+    },
+    {
+      "id": "word-fell",
+      "en": "fell",
+      "zh": "摔倒了",
+      "audio": "/audio/tts/word-fell.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-school-trip",
+      "en": "school trip",
+      "zh": "学校出游",
+      "icon": "/images/icons/bus.svg",
+      "audio": "/audio/tts/phrase-school-trip.mp3"
+    },
+    {
+      "id": "phrase-had-a-good-time",
+      "en": "had a good time",
+      "zh": "玩得很开心",
+      "icon": "/images/icons/smiley.svg",
+      "audio": "/audio/tts/phrase-had-a-good-time.mp3"
+    },
+    {
+      "id": "phrase-fell-over",
+      "en": "fell over",
+      "zh": "摔倒",
+      "icon": "/images/icons/fall.svg",
+      "audio": "/audio/tts/phrase-fell-over.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "We went to the Great Wall.",
+      "a": "我们去了长城。"
+    },
+    {
+      "q": "And we saw lots of mountains.",
+      "a": "并且我们看见了很多山。"
+    },
+    {
+      "q": "I wore warm clothes.",
+      "a": "我穿了暖和的衣服。"
+    },
+    {
+      "q": "At first, I fell over.",
+      "a": "起初，我摔倒了。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "went",
+              "zh": "去了"
+            },
+            {
+              "en": "saw",
+              "zh": "看见了"
+            },
+            {
+              "en": "ate",
+              "zh": "吃了"
+            },
+            {
+              "en": "had",
+              "zh": "度过了"
+            },
+            {
+              "en": "bought",
+              "zh": "买了"
+            },
+            {
+              "en": "wore",
+              "zh": "穿了"
+            }
+          ],
+          "options": [
+            {
+              "en": "wore",
+              "zh": "穿了"
+            },
+            {
+              "en": "fell",
+              "zh": "摔倒了"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "school trip",
+              "zh": "学校出游"
+            },
+            {
+              "en": "had a good time",
+              "zh": "玩得很开心"
+            },
+            {
+              "en": "fell over",
+              "zh": "摔倒"
+            }
+          ],
+          "options": [
+            {
+              "en": "wore",
+              "zh": "穿了"
+            },
+            {
+              "en": "fell",
+              "zh": "摔倒了"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-had-a-good-time.mp3",
+          "scrambled": [
+            "a",
+            "good",
+            "time",
+            "had"
+          ],
+          "correct": [
+            "had",
+            "a",
+            "good",
+            "time"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/we-went-to-the-great-wall.mp3",
+          "scrambled": [
+            "went",
+            "to",
+            "the",
+            "Great",
+            "Wall.",
+            "We"
+          ],
+          "correct": [
+            "We",
+            "went",
+            "to",
+            "the",
+            "Great",
+            "Wall."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/and-we-saw-lots-of-mountains.mp3",
+          "scrambled": [
+            "we",
+            "saw",
+            "lots",
+            "of",
+            "mountains.",
+            "And"
+          ],
+          "correct": [
+            "And",
+            "we",
+            "saw",
+            "lots",
+            "of",
+            "mountains."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "学校出游",
+          "scrambledEnglish": [
+            "trip",
+            "school"
+          ],
+          "correctEnglish": [
+            "school",
+            "trip"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "玩得很开心",
+          "scrambledEnglish": [
+            "a",
+            "good",
+            "time",
+            "had"
+          ],
+          "correctEnglish": [
+            "had",
+            "a",
+            "good",
+            "time"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "went",
+          "scrambledChinese": [
+            "去",
+            "了"
+          ],
+          "correctChinese": [
+            "去",
+            "了"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "We ______ you a present.",
+      "answer": "bought"
+    },
+    {
+      "type": "translate",
+      "cn": "我们吃了糖果。",
+      "en": [
+        "We ate candies."
+      ]
+    }
+  ],
+  "funFacts": [
+    "长城是世界上最宏伟的人造工程之一。",
+    "英语中有很多不规则动词，它们的过去式不遵循加'-ed'的规则，需要专门记忆。"
+  ]
+}

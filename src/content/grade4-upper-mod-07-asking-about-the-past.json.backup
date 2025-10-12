@@ -1,0 +1,271 @@
+{
+  "moduleId": "grade4-upper-mod-07",
+  "title": "Asking About the Past",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "word-did",
+      "en": "did",
+      "zh": "（构成疑问句）",
+      "audio": "/audio/tts/word-did.mp3"
+    },
+    {
+      "id": "word-take",
+      "en": "take",
+      "zh": "拿",
+      "audio": "/audio/tts/word-take.mp3"
+    },
+    {
+      "id": "word-see",
+      "en": "see",
+      "zh": "看见",
+      "audio": "/audio/tts/word-see.mp3"
+    },
+    {
+      "id": "word-lost",
+      "en": "lost",
+      "zh": "丢失了",
+      "audio": "/audio/tts/word-lost.mp3"
+    },
+    {
+      "id": "word-doll",
+      "en": "doll",
+      "zh": "玩偶",
+      "audio": "/audio/tts/word-doll.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-whats-the-matter",
+      "en": "What's the matter?",
+      "zh": "怎么了？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+    },
+    {
+      "id": "phrase-look-for",
+      "en": "look for",
+      "zh": "寻找",
+      "icon": "/images/icons/magnifying-glass.svg",
+      "audio": "/audio/tts/phrase-look-for.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Did you take Amy's doll?",
+      "a": "你拿了艾米的玩偶吗？"
+    },
+    {
+      "q": "No, I didn't.",
+      "a": "不，我没有。"
+    },
+    {
+      "q": "Did you see it?",
+      "a": "你看见它了吗？"
+    },
+    {
+      "q": "Yes, I did.",
+      "a": "是的，我看见了。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "did",
+              "zh": "（构成疑问句）"
+            },
+            {
+              "en": "take",
+              "zh": "拿"
+            },
+            {
+              "en": "see",
+              "zh": "看见"
+            },
+            {
+              "en": "lost",
+              "zh": "丢失了"
+            },
+            {
+              "en": "doll",
+              "zh": "玩偶"
+            },
+            {
+              "en": "What's the matter?",
+              "zh": "怎么了？"
+            }
+          ],
+          "options": [
+            {
+              "en": "lost",
+              "zh": "丢失了"
+            },
+            {
+              "en": "doll",
+              "zh": "玩偶"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-whats-the-matter?.mp3",
+          "scrambled": [
+            "the",
+            "matter?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "the",
+            "matter?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/did-you-take-amys-doll.mp3",
+          "scrambled": [
+            "you",
+            "take",
+            "Amy's",
+            "doll?",
+            "Did"
+          ],
+          "correct": [
+            "Did",
+            "you",
+            "take",
+            "Amy's",
+            "doll?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/no-i-didnt.mp3",
+          "scrambled": [
+            "I",
+            "didn't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "I",
+            "didn't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "怎么了？",
+          "scrambledEnglish": [
+            "the",
+            "matter?",
+            "What's"
+          ],
+          "correctEnglish": [
+            "What's",
+            "the",
+            "matter?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "寻找",
+          "scrambledEnglish": [
+            "for",
+            "look"
+          ],
+          "correctEnglish": [
+            "look",
+            "for"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "did",
+          "scrambledChinese": [
+            "（",
+            "构",
+            "成",
+            "疑",
+            "问",
+            "句",
+            "）"
+          ],
+          "correctChinese": [
+            "（",
+            "构",
+            "成",
+            "疑",
+            "问",
+            "句",
+            "）"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "______ you fly a kite yesterday?",
+      "answer": "Did"
+    },
+    {
+      "type": "translate",
+      "cn": "我丢了我的钥匙。",
+      "en": [
+        "I lost my key."
+      ]
+    }
+  ],
+  "funFacts": [
+    "在英语中，以 'Did' 开头提问过去的事情时，后面的动词要用原形。",
+    "回答 'Did' 开头的问题，通常用 'Yes, I did.' 或 'No, I didn't.'。"
+  ]
+}

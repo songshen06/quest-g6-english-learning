@@ -183,6 +183,59 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我帮助了我的妈妈。",
+          "scrambledEnglish": [
+            "helped",
+            "my",
+            "mum.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "helped",
+            "my",
+            "mum."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "昨天，我打扫了我的房间。",
+          "scrambledEnglish": [
+            "I",
+            "cleaned",
+            "my",
+            "room.",
+            "Yesterday,"
+          ],
+          "correctEnglish": [
+            "Yesterday,",
+            "I",
+            "cleaned",
+            "my",
+            "room."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "艾米画了一幅画。",
+          "scrambledEnglish": [
+            "painted",
+            "a",
+            "picture.",
+            "Amy"
+          ],
+          "correctEnglish": [
+            "Amy",
+            "painted",
+            "a",
+            "picture."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
           "chinese": "打扫了我的房间",
           "scrambledEnglish": [
             "my",
@@ -194,48 +247,10 @@
             "my",
             "room"
           ]
-        },
-        {
-          "type": "zhtoen",
-          "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "看了电视",
-          "scrambledEnglish": [
-            "TV",
-            "watched"
-          ],
-          "correctEnglish": [
-            "watched",
-            "TV"
-          ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "helped",
-          "scrambledChinese": [
-            "帮",
-            "助",
-            "了"
-          ],
-          "correctChinese": [
-            "帮",
-            "助",
-            "了"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

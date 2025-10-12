@@ -3,25 +3,96 @@
   "title": "Peace and UN",
   "durationMinutes": 12,
   "words": [
-    {"id": "peace", "en": "peace", "zh": "和平", "audio": "/audio/tts/peace.mp3"},
-    {"id": "make-peace", "en": "make peace", "zh": "缔造和平", "audio": "/audio/tts/make-peace.mp3"},
-    {"id": "member-state", "en": "member state", "zh": "成员国", "audio": "/audio/tts/member-state.mp3"},
-    {"id": "famous", "en": "famous", "zh": "著名的", "audio": "/audio/tts/famous.mp3"}
+    {
+      "id": "peace",
+      "en": "peace",
+      "zh": "和平",
+      "audio": "/audio/tts/peace.mp3"
+    },
+    {
+      "id": "make-peace",
+      "en": "make peace",
+      "zh": "缔造和平",
+      "audio": "/audio/tts/make-peace.mp3"
+    },
+    {
+      "id": "member-state",
+      "en": "member state",
+      "zh": "成员国",
+      "audio": "/audio/tts/member-state.mp3"
+    },
+    {
+      "id": "famous",
+      "en": "famous",
+      "zh": "著名的",
+      "audio": "/audio/tts/famous.mp3"
+    }
   ],
   "phrases": [
-    {"id": "important-building", "en": "a very important building", "zh": "重要建筑", "icon": "/images/buildings/un.svg", "audio": "/audio/tts/important-building.mp3"},
-    {"id": "in-world", "en": "in the world", "zh": "在世界上", "audio": "/audio/tts/in-world.mp3"},
-    {"id": "un-building", "en": "the UN building", "zh": "联合国大楼", "icon": "/images/landmarks/un-building.svg", "audio": "/audio/tts/un-building.mp3"},
-    {"id": "one-of", "en": "one of the …", "zh": "其中之一", "audio": "/audio/tts/one-of.mp3"},
-    {"id": "changjiang-river", "en": "the Changjiang River", "zh": "长江", "icon": "/images/geography/changjiang.svg", "audio": "/audio/tts/changjiang-river.mp3"},
-    {"id": "huangshan-mountain", "en": "the Huangshan Mountain", "zh": "黄山", "icon": "/images/geography/huangshan.svg", "audio": "/audio/tts/huangshan-mountain.mp3"},
-    {"id": "south-of", "en": "in the south of", "zh": "在……的南方", "audio": "/audio/tts/south-of.mp3"}
+    {
+      "id": "important-building",
+      "en": "a very important building",
+      "zh": "重要建筑",
+      "icon": "/images/buildings/un.svg",
+      "audio": "/audio/tts/important-building.mp3"
+    },
+    {
+      "id": "in-world",
+      "en": "in the world",
+      "zh": "在世界上",
+      "audio": "/audio/tts/in-world.mp3"
+    },
+    {
+      "id": "un-building",
+      "en": "the UN building",
+      "zh": "联合国大楼",
+      "icon": "/images/landmarks/un-building.svg",
+      "audio": "/audio/tts/un-building.mp3"
+    },
+    {
+      "id": "one-of",
+      "en": "one of the …",
+      "zh": "其中之一",
+      "audio": "/audio/tts/one-of.mp3"
+    },
+    {
+      "id": "changjiang-river",
+      "en": "the Changjiang River",
+      "zh": "长江",
+      "icon": "/images/geography/changjiang.svg",
+      "audio": "/audio/tts/changjiang-river.mp3"
+    },
+    {
+      "id": "huangshan-mountain",
+      "en": "the Huangshan Mountain",
+      "zh": "黄山",
+      "icon": "/images/geography/huangshan.svg",
+      "audio": "/audio/tts/huangshan-mountain.mp3"
+    },
+    {
+      "id": "south-of",
+      "en": "in the south of",
+      "zh": "在……的南方",
+      "audio": "/audio/tts/south-of.mp3"
+    }
   ],
   "patterns": [
-    {"q": "Is this the UN building? Yes. It's a very important building in New York.", "a": "这是联合国大楼吗？是的。它是纽约一个非常重要的建筑。"},
-    {"q": "The UN wants to make peace in the world.", "a": "联合国想在世界上缔造和平。"},
-    {"q": "China is one of the 193 member states in the UN.", "a": "中国是联合国193个成员国之一。"},
-    {"q": "The UN building is in New York City.", "a": "联合国大楼在纽约市。"}
+    {
+      "q": "Is this the UN building? Yes. It's a very important building in New York.",
+      "a": "这是联合国大楼吗？是的。它是纽约一个非常重要的建筑。"
+    },
+    {
+      "q": "The UN wants to make peace in the world.",
+      "a": "联合国想在世界上缔造和平。"
+    },
+    {
+      "q": "China is one of the 193 member states in the UN.",
+      "a": "中国是联合国193个成员国之一。"
+    },
+    {
+      "q": "The UN building is in New York City.",
+      "a": "联合国大楼在纽约市。"
+    }
   ],
   "quests": [
     {
@@ -32,35 +103,79 @@
           "type": "wordmatching",
           "text": "将英语单词与短语配对 (第1部分)",
           "pairs": [
-            {"en": "peace", "zh": "和平", "audio": "/audio/tts/peace.mp3"},
-            {"en": "make peace", "zh": "缔造和平", "audio": "/audio/tts/make-peace.mp3"},
-            {"en": "member state", "zh": "成员国", "audio": "/audio/tts/member-state.mp3"},
-            {"en": "famous", "zh": "著名的", "audio": "/audio/tts/famous.mp3"},
-            {"en": "a very important building", "zh": "重要建筑", "audio": "/audio/tts/important-building.mp3"},
-            {"en": "in the world", "zh": "在世界上", "audio": "/audio/tts/in-world.mp3"}
+            {
+              "en": "peace",
+              "zh": "和平"
+            },
+            {
+              "en": "make peace",
+              "zh": "缔造和平"
+            },
+            {
+              "en": "member state",
+              "zh": "成员国"
+            },
+            {
+              "en": "famous",
+              "zh": "著名的"
+            },
+            {
+              "en": "a very important building",
+              "zh": "重要建筑"
+            },
+            {
+              "en": "in the world",
+              "zh": "在世界上"
+            }
           ],
           "options": [
-            {"en": "building", "zh": "建筑"},
-            {"en": "world", "zh": "世界"}
+            {
+              "en": "member state",
+              "zh": "成员国"
+            },
+            {
+              "en": "famous",
+              "zh": "著名的"
+            }
           ]
         },
         {
           "type": "wordmatching",
           "text": "将英语单词与短语配对 (第2部分)",
           "pairs": [
-            {"en": "the UN building", "zh": "联合国大楼", "audio": "/audio/tts/un-building.mp3"},
-            {"en": "one of the …", "zh": "其中之一", "audio": "/audio/tts/one-of.mp3"},
-            {"en": "the Changjiang River", "zh": "长江", "audio": "/audio/tts/changjiang-river.mp3"},
-            {"en": "the Huangshan Mountain", "zh": "黄山", "audio": "/audio/tts/huangshan-mountain.mp3"},
-            {"en": "in the south of", "zh": "在……的南方", "audio": "/audio/tts/south-of.mp3"}
+            {
+              "en": "the UN building",
+              "zh": "联合国大楼"
+            },
+            {
+              "en": "one of the …",
+              "zh": "其中之一"
+            },
+            {
+              "en": "the Changjiang River",
+              "zh": "长江"
+            },
+            {
+              "en": "the Huangshan Mountain",
+              "zh": "黄山"
+            }
           ],
           "options": [
-            {"en": "river", "zh": "河"},
-            {"en": "mountain", "zh": "山"}
+            {
+              "en": "member state",
+              "zh": "成员国"
+            },
+            {
+              "en": "famous",
+              "zh": "著名的"
+            }
           ]
         }
       ],
-      "reward": {"badge": "/images/rewards/vocabulary-badge.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
       "id": "sentence-sorting",
@@ -69,40 +184,55 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/make-peace.mp3",
-          "scrambled": ["peace", "make", "UN", "the", "wants", "to"],
-          "correct": ["The", "UN", "wants", "to", "make", "peace"]
+          "audio": "/audio/tts/important-building.mp3",
+          "scrambled": [
+            "very",
+            "important",
+            "building",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "very",
+            "important",
+            "building"
+          ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/un-building.mp3",
-          "scrambled": ["building", "UN", "the", "is", "This"],
-          "correct": ["Is", "this", "the", "UN", "building"]
+          "audio": "/audio/tts/in-world.mp3",
+          "scrambled": [
+            "the",
+            "world",
+            "in"
+          ],
+          "correct": [
+            "in",
+            "the",
+            "world"
+          ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/member-state.mp3",
-          "scrambled": ["states", "member", "the", "is", "China", "of", "one"],
-          "correct": ["China", "is", "one", "of", "the", "member", "states"]
+          "audio": "/audio/tts/un-building.mp3",
+          "scrambled": [
+            "UN",
+            "building",
+            "the"
+          ],
+          "correct": [
+            "the",
+            "UN",
+            "building"
+          ]
         }
       ],
-      "reward": {"badge": "/images/rewards/sorting-badge.png", "xp": 15}
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英语句子翻译成正确的中文顺序",
-          "english": "the UN building",
-          "scrambledChinese": ["大楼", "联合国"],
-          "correctChinese": ["联合国", "大楼"]
-        }
-      ],
-      "reward": {"badge": "/images/rewards/translation-badge.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
     },
     {
       "id": "zh-to-en",
@@ -111,18 +241,149 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "在世界上",
-          "scrambledEnglish": ["in", "the", "world"],
-          "correctEnglish": ["in", "the", "world"]
+          "chinese": "这是联合国大楼吗？是的。它是纽约一个非常重要的建筑。",
+          "scrambledEnglish": [
+            "this",
+            "the",
+            "UN",
+            "building?",
+            "Yes.",
+            "It's",
+            "a",
+            "very",
+            "important",
+            "building",
+            "in",
+            "New",
+            "York.",
+            "Is"
+          ],
+          "correctEnglish": [
+            "Is",
+            "this",
+            "the",
+            "UN",
+            "building?",
+            "Yes.",
+            "It's",
+            "a",
+            "very",
+            "important",
+            "building",
+            "in",
+            "New",
+            "York."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "联合国想在世界上缔造和平。",
+          "scrambledEnglish": [
+            "UN",
+            "wants",
+            "to",
+            "make",
+            "peace",
+            "in",
+            "the",
+            "world.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "UN",
+            "wants",
+            "to",
+            "make",
+            "peace",
+            "in",
+            "the",
+            "world."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "中国是联合国193个成员国之一。",
+          "scrambledEnglish": [
+            "is",
+            "one",
+            "of",
+            "the",
+            "193",
+            "member",
+            "states",
+            "in",
+            "the",
+            "UN.",
+            "China"
+          ],
+          "correctEnglish": [
+            "China",
+            "is",
+            "one",
+            "of",
+            "the",
+            "193",
+            "member",
+            "states",
+            "in",
+            "the",
+            "UN."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "联合国大楼在纽约市。",
+          "scrambledEnglish": [
+            "UN",
+            "building",
+            "is",
+            "in",
+            "New",
+            "York",
+            "City.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "UN",
+            "building",
+            "is",
+            "in",
+            "New",
+            "York",
+            "City."
+          ]
         }
       ],
-      "reward": {"badge": "/images/rewards/language-badge.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "The UN wants to make ________ in the world.", "answer": "peace"},
-    {"type": "fillblank", "text": "It's a very ________ building in New York.", "answer": "important"},
-    {"type": "translate", "cn": "这是联合国大楼吗？是的。它是纽约一个非常重要的建筑。", "en": ["Is this the UN building?", "Yes. It's a very important building in New York."]}
+    {
+      "type": "fillblank",
+      "text": "The UN wants to make ________ in the world.",
+      "answer": "peace"
+    },
+    {
+      "type": "fillblank",
+      "text": "It's a very ________ building in New York.",
+      "answer": "important"
+    },
+    {
+      "type": "translate",
+      "cn": "这是联合国大楼吗？是的。它是纽约一个非常重要的建筑。",
+      "en": [
+        "Is this the UN building?",
+        "Yes. It's a very important building in New York."
+      ]
+    }
   ],
   "funFacts": [
     "The United Nations was founded in 1945 and currently has 193 member states.",

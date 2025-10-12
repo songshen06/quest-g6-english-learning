@@ -1,0 +1,335 @@
+{
+  "moduleId": "grade6-lower-mod-04",
+  "title": "Describing Actions",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "carry",
+      "en": "carry",
+      "zh": "搬；拿",
+      "audio": "/audio/tts/carry.mp3"
+    },
+    {
+      "id": "things",
+      "en": "things",
+      "zh": "东西",
+      "audio": "/audio/tts/things.mp3"
+    },
+    {
+      "id": "need",
+      "en": "need",
+      "zh": "需要",
+      "audio": "/audio/tts/need.mp3"
+    },
+    {
+      "id": "grab",
+      "en": "grab",
+      "zh": "抓住",
+      "audio": "/audio/tts/grab.mp3"
+    },
+    {
+      "id": "balloon",
+      "en": "balloon",
+      "zh": "气球",
+      "audio": "/audio/tts/balloon.mp3"
+    },
+    {
+      "id": "stairs",
+      "en": "stairs",
+      "zh": "楼梯",
+      "audio": "/audio/tts/stairs.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "fly-away",
+      "en": "fly away",
+      "zh": "飞走",
+      "icon": "/images/icons/wings.svg",
+      "audio": "/audio/tts/fly-away.mp3"
+    },
+    {
+      "id": "on-the-phone",
+      "en": "on the phone",
+      "zh": "在打电话",
+      "icon": "/images/icons/phone.svg",
+      "audio": "/audio/tts/on-the-phone.mp3"
+    },
+    {
+      "id": "falling-down",
+      "en": "falling down",
+      "zh": "掉下来",
+      "icon": "/images/icons/arrow-down.svg",
+      "audio": "/audio/tts/falling-down.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I can't carry all these things.",
+      "a": "我拿不动所有这些东西。"
+    },
+    {
+      "q": "The oranges are falling!",
+      "a": "橙子掉下来了！"
+    },
+    {
+      "q": "The balloons are flying away!",
+      "a": "气球飞走了！"
+    },
+    {
+      "q": "The apples are falling down the stairs!",
+      "a": "苹果从楼梯上滚下来了！"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "carry",
+              "zh": "搬；拿"
+            },
+            {
+              "en": "things",
+              "zh": "东西"
+            },
+            {
+              "en": "need",
+              "zh": "需要"
+            },
+            {
+              "en": "grab",
+              "zh": "抓住"
+            },
+            {
+              "en": "balloon",
+              "zh": "气球"
+            },
+            {
+              "en": "stairs",
+              "zh": "楼梯"
+            }
+          ],
+          "options": [
+            {
+              "en": "balloon",
+              "zh": "气球"
+            },
+            {
+              "en": "stairs",
+              "zh": "楼梯"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "fly away",
+              "zh": "飞走"
+            },
+            {
+              "en": "on the phone",
+              "zh": "在打电话"
+            },
+            {
+              "en": "falling down",
+              "zh": "掉下来"
+            }
+          ],
+          "options": [
+            {
+              "en": "balloon",
+              "zh": "气球"
+            },
+            {
+              "en": "stairs",
+              "zh": "楼梯"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/on-the-phone.mp3",
+          "scrambled": [
+            "the",
+            "phone",
+            "on"
+          ],
+          "correct": [
+            "on",
+            "the",
+            "phone"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/i-cant-carry-all-these-things.mp3",
+          "scrambled": [
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/the-oranges-are-falling.mp3",
+          "scrambled": [
+            "oranges",
+            "are",
+            "falling!",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "oranges",
+            "are",
+            "falling!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我拿不动所有这些东西。",
+          "scrambledEnglish": [
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "橙子掉下来了！",
+          "scrambledEnglish": [
+            "oranges",
+            "are",
+            "falling!",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "oranges",
+            "are",
+            "falling!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "气球飞走了！",
+          "scrambledEnglish": [
+            "balloons",
+            "are",
+            "flying",
+            "away!",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "balloons",
+            "are",
+            "flying",
+            "away!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "苹果从楼梯上滚下来了！",
+          "scrambledEnglish": [
+            "apples",
+            "are",
+            "falling",
+            "down",
+            "the",
+            "stairs!",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "apples",
+            "are",
+            "falling",
+            "down",
+            "the",
+            "stairs!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I can't ___ all these books.",
+      "answer": "carry"
+    },
+    {
+      "type": "translate",
+      "cn": "气球飞走了！",
+      "en": [
+        "The balloons are flying away!"
+      ]
+    }
+  ],
+  "funFacts": [
+    "一些热气球可以飞到超过10公里的高空。",
+    "世界上最长的楼梯在瑞士，有11,674级台阶。"
+  ]
+}

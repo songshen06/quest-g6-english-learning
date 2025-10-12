@@ -61,27 +61,248 @@
   ],
   "quests": [
     {
-      "id": "past-tense",
-      "title": "一般过去时识别",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
         {
           "type": "wordmatching",
-          "text": "匹配原形与过去式",
+          "text": "将英语单词与短语配对 (第1部分)",
           "pairs": [
             {
-              "en": "send → sent",
-              "zh": "寄 → 已寄"
+              "en": "sent",
+              "zh": "（send 的过去式）寄，发送"
             },
             {
-              "en": "read → read",
-              "zh": "读 → 读（过去式同形）"
+              "en": "American",
+              "zh": "美国的；美国人"
+            },
+            {
+              "en": "read",
+              "zh": "（read 的过去式）阅读"
+            },
+            {
+              "en": "interesting",
+              "zh": "有趣的"
+            },
+            {
+              "en": "season",
+              "zh": "季节"
+            },
+            {
+              "en": "snow",
+              "zh": "雪"
+            }
+          ],
+          "options": [
+            {
+              "en": "season",
+              "zh": "季节"
+            },
+            {
+              "en": "snow",
+              "zh": "雪"
             }
           ]
         }
       ],
       "reward": {
-        "badge": "/images/rewards/snow-badge.png",
+        "badge": "/images/rewards/vocabulary-badge.png",
         "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/i-sent-you-a-maths-game-did-you-get-it.mp3",
+          "scrambled": [
+            "sent",
+            "you",
+            "a",
+            "maths",
+            "game.",
+            "Did",
+            "you",
+            "get",
+            "it?",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "sent",
+            "you",
+            "a",
+            "maths",
+            "game.",
+            "Did",
+            "you",
+            "get",
+            "it?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/yes-grandma-thank-you.mp3",
+          "scrambled": [
+            "Grandma.",
+            "Thank",
+            "you.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "Grandma.",
+            "Thank",
+            "you."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/and-i-sent-you-english-books-did-you-read-them.mp3",
+          "scrambled": [
+            "I",
+            "sent",
+            "you",
+            "English",
+            "books.",
+            "Did",
+            "you",
+            "read",
+            "them?",
+            "And"
+          ],
+          "correct": [
+            "And",
+            "I",
+            "sent",
+            "you",
+            "English",
+            "books.",
+            "Did",
+            "you",
+            "read",
+            "them?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我寄给你一个数学游戏。你收到了吗？",
+          "scrambledEnglish": [
+            "sent",
+            "you",
+            "a",
+            "maths",
+            "game.",
+            "Did",
+            "you",
+            "get",
+            "it?",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "sent",
+            "you",
+            "a",
+            "maths",
+            "game.",
+            "Did",
+            "you",
+            "get",
+            "it?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "收到了，谢谢奶奶。",
+          "scrambledEnglish": [
+            "Grandma.",
+            "Thank",
+            "you.",
+            "Yes,"
+          ],
+          "correctEnglish": [
+            "Yes,",
+            "Grandma.",
+            "Thank",
+            "you."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我还寄给你英语书，你读了吗？",
+          "scrambledEnglish": [
+            "I",
+            "sent",
+            "you",
+            "English",
+            "books.",
+            "Did",
+            "you",
+            "read",
+            "them?",
+            "And"
+          ],
+          "correctEnglish": [
+            "And",
+            "I",
+            "sent",
+            "you",
+            "English",
+            "books.",
+            "Did",
+            "you",
+            "read",
+            "them?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "读了，很有趣。",
+          "scrambledEnglish": [
+            "Grandma.",
+            "I",
+            "read",
+            "them.",
+            "They",
+            "are",
+            "interesting.",
+            "Yes,"
+          ],
+          "correctEnglish": [
+            "Yes,",
+            "Grandma.",
+            "I",
+            "read",
+            "them.",
+            "They",
+            "are",
+            "interesting."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
       }
     }
   ],

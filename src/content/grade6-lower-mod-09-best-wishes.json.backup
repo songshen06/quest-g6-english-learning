@@ -1,0 +1,295 @@
+{
+  "moduleId": "grade6-lower-mod-09",
+  "title": "Best Wishes",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "wish",
+      "en": "wish",
+      "zh": "祝愿",
+      "audio": "/audio/tts/wish.mp3"
+    },
+    {
+      "id": "luck",
+      "en": "luck",
+      "zh": "运气",
+      "audio": "/audio/tts/luck.mp3"
+    },
+    {
+      "id": "primary-school",
+      "en": "primary school",
+      "zh": "小学",
+      "audio": "/audio/tts/primary-school.mp3"
+    },
+    {
+      "id": "forever",
+      "en": "forever",
+      "zh": "永远",
+      "audio": "/audio/tts/forever.mp3"
+    },
+    {
+      "id": "joy",
+      "en": "joy",
+      "zh": "乐趣",
+      "audio": "/audio/tts/joy.mp3"
+    },
+    {
+      "id": "future",
+      "en": "future",
+      "zh": "未来",
+      "audio": "/audio/tts/future.mp3"
+    },
+    {
+      "id": "taught",
+      "en": "taught",
+      "zh": "教（过去式）",
+      "audio": "/audio/tts/taught.mp3"
+    },
+    {
+      "id": "wonderful",
+      "en": "wonderful",
+      "zh": "极好的",
+      "audio": "/audio/tts/wonderful.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "best-wishes-to-you",
+      "en": "Best wishes to you!",
+      "zh": "给你最好的祝愿！",
+      "icon": "/images/icons/star.svg",
+      "audio": "/audio/tts/best-wishes-to-you.mp3"
+    },
+    {
+      "id": "good-luck",
+      "en": "Good luck!",
+      "zh": "祝你好运！",
+      "icon": "/images/icons/clover.svg",
+      "audio": "/audio/tts/good-luck.mp3"
+    },
+    {
+      "id": "i-will-miss-you",
+      "en": "I will miss you.",
+      "zh": "我会想念你的。",
+      "icon": "/images/icons/heart.svg",
+      "audio": "/audio/tts/i-will-miss-you.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Best wishes to you!",
+      "a": "给你最好的祝福！"
+    },
+    {
+      "q": "Good luck for the future!",
+      "a": "祝你未来好运！"
+    },
+    {
+      "q": "You're a wonderful friend. I will miss you!",
+      "a": "你是一个很棒的朋友。我会想你的！"
+    },
+    {
+      "q": "Wishing you happiness every day.",
+      "a": "祝你天天开心。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "wish",
+              "zh": "祝愿"
+            },
+            {
+              "en": "luck",
+              "zh": "运气"
+            },
+            {
+              "en": "primary school",
+              "zh": "小学"
+            },
+            {
+              "en": "forever",
+              "zh": "永远"
+            },
+            {
+              "en": "joy",
+              "zh": "乐趣"
+            },
+            {
+              "en": "future",
+              "zh": "未来"
+            }
+          ],
+          "options": [
+            {
+              "en": "taught",
+              "zh": "教（过去式）"
+            },
+            {
+              "en": "wonderful",
+              "zh": "极好的"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "Best wishes to you!",
+              "zh": "给你最好的祝愿！"
+            },
+            {
+              "en": "Good luck!",
+              "zh": "祝你好运！"
+            },
+            {
+              "en": "I will miss you.",
+              "zh": "我会想念你的。"
+            }
+          ],
+          "options": [
+            {
+              "en": "taught",
+              "zh": "教（过去式）"
+            },
+            {
+              "en": "wonderful",
+              "zh": "极好的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/best-wishes-to-you.mp3",
+          "scrambled": [
+            "wishes",
+            "to",
+            "you!",
+            "Best"
+          ],
+          "correct": [
+            "Best",
+            "wishes",
+            "to",
+            "you!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/i-will-miss-you.mp3",
+          "scrambled": [
+            "will",
+            "miss",
+            "you.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "will",
+            "miss",
+            "you."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/best-wishes-to-you.mp3",
+          "scrambled": [
+            "wishes",
+            "to",
+            "you!",
+            "Best"
+          ],
+          "correct": [
+            "Best",
+            "wishes",
+            "to",
+            "you!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "给你最好的祝愿！",
+          "scrambledEnglish": [
+            "wishes",
+            "to",
+            "you!",
+            "Best"
+          ],
+          "correctEnglish": [
+            "Best",
+            "wishes",
+            "to",
+            "you!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "祝你好运！",
+          "scrambledEnglish": [
+            "luck!",
+            "Good"
+          ],
+          "correctEnglish": [
+            "Good",
+            "luck!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "You brought us lots of ___.",
+      "answer": "joy"
+    },
+    {
+      "type": "translate",
+      "cn": "我永远不会忘记我们在一起的时光。",
+      "en": [
+        "I'll never forget our time together."
+      ]
+    }
+  ],
+  "funFacts": [
+    "在许多文化中，四叶草被认为是幸运的象征。",
+    "再见（Goodbye）最初是 God be with you 的缩写，意思是愿上帝与你同在。"
+  ]
+}

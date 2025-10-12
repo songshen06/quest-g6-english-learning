@@ -104,28 +104,260 @@
   ],
   "quests": [
     {
-      "id": "past-experience",
-      "title": "过去经历描述",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
         {
-          "type": "sentencesorting",
-          "text": "排序剧院经历描述",
-          "audio": "/audio/tts/theatre-experience.mp3",
-          "scrambled": [
-            "We laughed a lot.",
-            "Last week, we went to a children’s theatre.",
-            "The actors told lots of jokes."
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "wore",
+              "zh": "（wear 的过去式）穿，戴"
+            },
+            {
+              "en": "theatre",
+              "zh": "剧院"
+            },
+            {
+              "en": "men",
+              "zh": "男人（复数）"
+            },
+            {
+              "en": "women",
+              "zh": "女人（复数）"
+            },
+            {
+              "en": "told",
+              "zh": "（tell 的过去式）讲"
+            },
+            {
+              "en": "joke",
+              "zh": "笑话"
+            }
           ],
-          "correct": [
-            "Last week, we went to a children’s theatre.",
-            "The actors told lots of jokes.",
-            "We laughed a lot."
+          "options": [
+            {
+              "en": "funny",
+              "zh": "滑稽的，可笑的"
+            },
+            {
+              "en": "show",
+              "zh": "演出，表演"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "ask questions",
+              "zh": "问问题"
+            },
+            {
+              "en": "get ready for",
+              "zh": "为……准备"
+            }
+          ],
+          "options": [
+            {
+              "en": "funny",
+              "zh": "滑稽的，可笑的"
+            },
+            {
+              "en": "show",
+              "zh": "演出，表演"
+            }
           ]
         }
       ],
       "reward": {
-        "badge": "/images/rewards/theatre-badge.png",
-        "xp": 12
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/get-ready-for.mp3",
+          "scrambled": [
+            "ready",
+            "for",
+            "get"
+          ],
+          "correct": [
+            "get",
+            "ready",
+            "for"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/last-week-we-went-to-a-childrens-theatre.mp3",
+          "scrambled": [
+            "week,",
+            "we",
+            "went",
+            "to",
+            "a",
+            "children's",
+            "theatre.",
+            "Last"
+          ],
+          "correct": [
+            "Last",
+            "week,",
+            "we",
+            "went",
+            "to",
+            "a",
+            "children's",
+            "theatre."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/the-actors-told-lots-of-jokes-we-laughed-a-lot.mp3",
+          "scrambled": [
+            "actors",
+            "told",
+            "lots",
+            "of",
+            "jokes.",
+            "We",
+            "laughed",
+            "a",
+            "lot.",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "actors",
+            "told",
+            "lots",
+            "of",
+            "jokes.",
+            "We",
+            "laughed",
+            "a",
+            "lot."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "上周我们去了一个儿童剧院。",
+          "scrambledEnglish": [
+            "week,",
+            "we",
+            "went",
+            "to",
+            "a",
+            "children's",
+            "theatre.",
+            "Last"
+          ],
+          "correctEnglish": [
+            "Last",
+            "week,",
+            "we",
+            "went",
+            "to",
+            "a",
+            "children's",
+            "theatre."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "演员讲了很多笑话，我们笑个不停。",
+          "scrambledEnglish": [
+            "actors",
+            "told",
+            "lots",
+            "of",
+            "jokes.",
+            "We",
+            "laughed",
+            "a",
+            "lot.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "actors",
+            "told",
+            "lots",
+            "of",
+            "jokes.",
+            "We",
+            "laughed",
+            "a",
+            "lot."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "演员们做了什么？",
+          "scrambledEnglish": [
+            "did",
+            "the",
+            "actors",
+            "do?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "did",
+            "the",
+            "actors",
+            "do?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们讲了很多有趣的笑话。",
+          "scrambledEnglish": [
+            "told",
+            "lots",
+            "of",
+            "funny",
+            "jokes.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "told",
+            "lots",
+            "of",
+            "funny",
+            "jokes."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
       }
     }
   ],

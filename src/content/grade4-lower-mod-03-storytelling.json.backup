@@ -1,0 +1,395 @@
+{
+  "moduleId": "grade4-lower-mod-03",
+  "title": "Storytelling",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-once",
+      "en": "once",
+      "zh": "从前",
+      "audio": "/audio/tts/word-once.mp3"
+    },
+    {
+      "id": "word-upon",
+      "en": "upon",
+      "zh": "在...时候",
+      "audio": "/audio/tts/word-upon.mp3"
+    },
+    {
+      "id": "word-time",
+      "en": "time",
+      "zh": "时间",
+      "audio": "/audio/tts/word-time.mp3"
+    },
+    {
+      "id": "word-king",
+      "en": "king",
+      "zh": "国王",
+      "audio": "/audio/tts/word-king.mp3"
+    },
+    {
+      "id": "word-queen",
+      "en": "queen",
+      "zh": "王后",
+      "audio": "/audio/tts/word-queen.mp3"
+    },
+    {
+      "id": "word-prince",
+      "en": "prince",
+      "zh": "王子",
+      "audio": "/audio/tts/word-prince.mp3"
+    },
+    {
+      "id": "word-princess",
+      "en": "princess",
+      "zh": "公主",
+      "audio": "/audio/tts/word-princess.mp3"
+    },
+    {
+      "id": "word-dragon",
+      "en": "dragon",
+      "zh": "龙",
+      "audio": "/audio/tts/word-dragon.mp3"
+    },
+    {
+      "id": "word-castle",
+      "en": "castle",
+      "zh": "城堡",
+      "audio": "/audio/tts/word-castle.mp3"
+    },
+    {
+      "id": "word-magic",
+      "en": "magic",
+      "zh": "魔法",
+      "audio": "/audio/tts/word-magic.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-once-upon",
+      "en": "Once upon a time",
+      "zh": "从前",
+      "icon": "/images/icons/storybook.svg",
+      "audio": "/audio/tts/phrase-once-upon.mp3"
+    },
+    {
+      "id": "phrase-long-ago",
+      "en": "long ago",
+      "zh": "很久以前",
+      "icon": "/images/icons/clock-old.svg",
+      "audio": "/audio/tts/phrase-long-ago.mp3"
+    },
+    {
+      "id": "phrase-happy-ending",
+      "en": "happy ending",
+      "zh": "幸福的结局",
+      "icon": "/images/icons/happy-end.svg",
+      "audio": "/audio/tts/phrase-happy-ending.mp3"
+    },
+    {
+      "id": "phrase-tell-story",
+      "en": "tell a story",
+      "zh": "讲故事",
+      "icon": "/images/icons/storytelling.svg",
+      "audio": "/audio/tts/phrase-tell-story.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Once upon a time, there was a king.",
+      "a": "从前有一位国王。"
+    },
+    {
+      "q": "The princess lived in a castle.",
+      "a": "公主住在城堡里。"
+    },
+    {
+      "q": "They lived happily ever after.",
+      "a": "他们从此过上了幸福的生活。"
+    },
+    {
+      "q": "Can you tell me a story?",
+      "a": "你能给我讲个故事吗？"
+    },
+    {
+      "q": "This is a magic dragon.",
+      "a": "这是一条神奇的龙。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "once",
+              "zh": "从前"
+            },
+            {
+              "en": "upon",
+              "zh": "在...时候"
+            },
+            {
+              "en": "time",
+              "zh": "时间"
+            },
+            {
+              "en": "king",
+              "zh": "国王"
+            },
+            {
+              "en": "queen",
+              "zh": "王后"
+            },
+            {
+              "en": "prince",
+              "zh": "王子"
+            }
+          ],
+          "options": [
+            {
+              "en": "princess",
+              "zh": "公主"
+            },
+            {
+              "en": "dragon",
+              "zh": "龙"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "Once upon a time",
+              "zh": "从前"
+            },
+            {
+              "en": "long ago",
+              "zh": "很久以前"
+            },
+            {
+              "en": "happy ending",
+              "zh": "幸福的结局"
+            },
+            {
+              "en": "tell a story",
+              "zh": "讲故事"
+            }
+          ],
+          "options": [
+            {
+              "en": "princess",
+              "zh": "公主"
+            },
+            {
+              "en": "dragon",
+              "zh": "龙"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-once-upon.mp3",
+          "scrambled": [
+            "upon",
+            "a",
+            "time",
+            "Once"
+          ],
+          "correct": [
+            "Once",
+            "upon",
+            "a",
+            "time"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/once-upon-a-time-there-was-a-king.mp3",
+          "scrambled": [
+            "upon",
+            "a",
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king.",
+            "Once"
+          ],
+          "correct": [
+            "Once",
+            "upon",
+            "a",
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/the-princess-lived-in-a-castle.mp3",
+          "scrambled": [
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle.",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "从前有一位国王。",
+          "scrambledEnglish": [
+            "upon",
+            "a",
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king.",
+            "Once"
+          ],
+          "correctEnglish": [
+            "Once",
+            "upon",
+            "a",
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "公主住在城堡里。",
+          "scrambledEnglish": [
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们从此过上了幸福的生活。",
+          "scrambledEnglish": [
+            "lived",
+            "happily",
+            "ever",
+            "after.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "lived",
+            "happily",
+            "ever",
+            "after."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你能给我讲个故事吗？",
+          "scrambledEnglish": [
+            "you",
+            "tell",
+            "me",
+            "a",
+            "story?",
+            "Can"
+          ],
+          "correctEnglish": [
+            "Can",
+            "you",
+            "tell",
+            "me",
+            "a",
+            "story?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Once upon a ______, there was a princess.",
+      "answer": "time"
+    },
+    {
+      "type": "fillblank",
+      "text": "The king lived in a ______.",
+      "answer": "castle"
+    },
+    {
+      "type": "translate",
+      "cn": "给我讲个故事吧。",
+      "en": [
+        "Tell me a story."
+      ]
+    }
+  ],
+  "funFacts": [
+    "\"Once upon a time\"是英语故事最经典的开头，相当于中文的\"从前\"。",
+    "很多英语故事都有\"happily ever after\"（从此幸福地生活）这样的美好结局。"
+  ]
+}

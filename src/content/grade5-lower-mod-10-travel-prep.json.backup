@@ -1,0 +1,256 @@
+{
+  "moduleId": "grade5-lower-mod-10",
+  "title": "Travel Prep",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "ticket",
+      "en": "ticket",
+      "zh": "票",
+      "audio": "/audio/tts/ticket.mp3"
+    },
+    {
+      "id": "passport",
+      "en": "passport",
+      "zh": "护照",
+      "audio": "/audio/tts/passport.mp3"
+    },
+    {
+      "id": "leave",
+      "en": "leave",
+      "zh": "离开，动身",
+      "audio": "/audio/tts/leave.mp3"
+    },
+    {
+      "id": "july",
+      "en": "July",
+      "zh": "七月",
+      "audio": "/audio/tts/july.mp3"
+    },
+    {
+      "id": "august",
+      "en": "August",
+      "zh": "八月",
+      "audio": "/audio/tts/august.mp3"
+    },
+    {
+      "id": "met",
+      "en": "met",
+      "zh": "（meet 的过去式）遇见",
+      "audio": "/audio/tts/met.mp3"
+    },
+    {
+      "id": "classmate",
+      "en": "classmate",
+      "zh": "同班同学",
+      "audio": "/audio/tts/classmate.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "be-ready-for",
+      "en": "be ready for",
+      "zh": "为……做准备",
+      "audio": "/audio/tts/be-ready-for.mp3"
+    },
+    {
+      "id": "climb-the-mountain",
+      "en": "climb the mountain",
+      "zh": "爬山",
+      "audio": "/audio/tts/climb-the-mountain.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What did you put in your bag?",
+      "a": "你包里放了什么？"
+    },
+    {
+      "q": "My clothes, my shoes, some presents, my ticket and my passport.",
+      "a": "我的衣服、鞋子、一些礼物、我的机票和护照。"
+    },
+    {
+      "q": "And where will you go tomorrow?",
+      "a": "你明天去哪儿？"
+    },
+    {
+      "q": "I’ll go to the airport.",
+      "a": "我要去机场。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "packing-list",
+      "title": "行前清单",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "把旅行物品与中文配对",
+          "pairs": [
+            {
+              "en": "ticket",
+              "zh": "票"
+            },
+            {
+              "en": "passport",
+              "zh": "护照"
+            },
+            {
+              "en": "presents",
+              "zh": "礼物"
+            }
+          ],
+          "options": [
+            {
+              "en": "ticket",
+              "zh": "票"
+            },
+            {
+              "en": "passport",
+              "zh": "护照"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/plane-badge.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对",
+          "pairs": [
+            {
+              "en": "ticket",
+              "zh": "票"
+            },
+            {
+              "en": "passport",
+              "zh": "护照"
+            },
+            {
+              "en": "leave",
+              "zh": "离开，动身"
+            },
+            {
+              "en": "July",
+              "zh": "七月"
+            },
+            {
+              "en": "August",
+              "zh": "八月"
+            },
+            {
+              "en": "met",
+              "zh": "（meet 的过去式）遇见"
+            }
+          ],
+          "options": [
+            {
+              "en": "ticket",
+              "zh": "票"
+            },
+            {
+              "en": "passport",
+              "zh": "护照"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/what-did-you-put-in-your-bag.mp3",
+          "scrambled": [
+            "What",
+            "did",
+            "bag?",
+            "your",
+            "in",
+            "you",
+            "put"
+          ],
+          "correct": [
+            "What",
+            "did",
+            "you",
+            "put",
+            "in",
+            "your",
+            "bag?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "票",
+          "scrambledEnglish": [
+            "ticket"
+          ],
+          "correctEnglish": [
+            "ticket"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "ticket",
+          "scrambledChinese": [
+            "票"
+          ],
+          "correctChinese": [
+            "票"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I’ll go to the ______ tomorrow.",
+      "answer": "airport"
+    }
+  ],
+  "funFacts": [
+    "国际旅行通常需要有效护照与签证。"
+  ]
+}

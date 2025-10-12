@@ -3,44 +3,331 @@
   "title": "School Life",
   "durationMinutes": 14,
   "words": [
-    {"id": "word-often", "en": "often", "zh": "经常", "audio": "/audio/tts/word-often.mp3"},
-    {"id": "word-usually", "en": "usually", "zh": "通常", "audio": "/audio/tts/word-usually.mp3"},
-    {"id": "word-around", "en": "around", "zh": "围绕", "audio": "/audio/tts/word-around.mp3"},
-    {"id": "word-start", "en": "start", "zh": "开始", "audio": "/audio/tts/word-start.mp3"},
-    {"id": "word-finish", "en": "finish", "zh": "结束", "audio": "/audio/tts/word-finish.mp3"},
-    {"id": "word-study", "en": "study", "zh": "学习", "audio": "/audio/tts/word-study.mp3"}
+    {
+      "id": "word-often",
+      "en": "often",
+      "zh": "经常",
+      "audio": "/audio/tts/word-often.mp3"
+    },
+    {
+      "id": "word-usually",
+      "en": "usually",
+      "zh": "通常",
+      "audio": "/audio/tts/word-usually.mp3"
+    },
+    {
+      "id": "word-around",
+      "en": "around",
+      "zh": "围绕",
+      "audio": "/audio/tts/word-around.mp3"
+    },
+    {
+      "id": "word-start",
+      "en": "start",
+      "zh": "开始",
+      "audio": "/audio/tts/word-start.mp3"
+    },
+    {
+      "id": "word-finish",
+      "en": "finish",
+      "zh": "结束",
+      "audio": "/audio/tts/word-finish.mp3"
+    },
+    {
+      "id": "word-study",
+      "en": "study",
+      "zh": "学习",
+      "audio": "/audio/tts/word-study.mp3"
+    }
   ],
   "phrases": [
-    {"id": "phrase-sit-in-lines", "en": "sit in lines", "zh": "坐成行", "icon": "/images/icons/rows.svg", "audio": "/audio/tts/phrase-sit-in-lines.mp3"},
-    {"id": "phrase-do-morning-exercises", "en": "do morning exercises", "zh": "做早操", "icon": "/images/icons/sun.svg", "audio": "/audio/tts/phrase-do-morning-exercises.mp3"},
-    {"id": "phrase-have-fun", "en": "have fun", "zh": "玩得开心", "icon": "/images/icons/smiley.svg", "audio": "/audio/tts/phrase-have-fun.mp3"}
+    {
+      "id": "phrase-sit-in-lines",
+      "en": "sit in lines",
+      "zh": "坐成行",
+      "icon": "/images/icons/rows.svg",
+      "audio": "/audio/tts/phrase-sit-in-lines.mp3"
+    },
+    {
+      "id": "phrase-do-morning-exercises",
+      "en": "do morning exercises",
+      "zh": "做早操",
+      "icon": "/images/icons/sun.svg",
+      "audio": "/audio/tts/phrase-do-morning-exercises.mp3"
+    },
+    {
+      "id": "phrase-have-fun",
+      "en": "have fun",
+      "zh": "玩得开心",
+      "icon": "/images/icons/smiley.svg",
+      "audio": "/audio/tts/phrase-have-fun.mp3"
+    }
   ],
   "patterns": [
-    {"q": "Children often sit around tables in class.", "a": "孩子们在课上经常围着桌子坐。"},
-    {"q": "We usually start school at 8 o'clock.", "a": "我们通常8点钟开始上学。"},
-    {"q": "School finishes at half past three.", "a": "学校在三点半放学。"}
+    {
+      "q": "Children often sit around tables in class.",
+      "a": "孩子们在课上经常围着桌子坐。"
+    },
+    {
+      "q": "We usually start school at 8 o'clock.",
+      "a": "我们通常8点钟开始上学。"
+    },
+    {
+      "q": "School finishes at half past three.",
+      "a": "学校在三点半放学。"
+    }
   ],
   "quests": [
     {
-      "id": "g5u-m08-q1",
-      "title": "校园活动词汇",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
-        {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "start", "zh": "开始"}, {"en": "finish", "zh": "结束"}], "options": [{"en": "start", "zh": "开始"}, {"en": "finish", "zh": "结束"}, {"en": "play", "zh": "玩"}]}
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "often",
+              "zh": "经常"
+            },
+            {
+              "en": "usually",
+              "zh": "通常"
+            },
+            {
+              "en": "around",
+              "zh": "围绕"
+            },
+            {
+              "en": "start",
+              "zh": "开始"
+            },
+            {
+              "en": "finish",
+              "zh": "结束"
+            },
+            {
+              "en": "study",
+              "zh": "学习"
+            }
+          ],
+          "options": [
+            {
+              "en": "finish",
+              "zh": "结束"
+            },
+            {
+              "en": "study",
+              "zh": "学习"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "sit in lines",
+              "zh": "坐成行"
+            },
+            {
+              "en": "do morning exercises",
+              "zh": "做早操"
+            },
+            {
+              "en": "have fun",
+              "zh": "玩得开心"
+            }
+          ],
+          "options": [
+            {
+              "en": "finish",
+              "zh": "结束"
+            },
+            {
+              "en": "study",
+              "zh": "学习"
+            }
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-school-bell.png", "xp": 10}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
-      "id": "g5u-m08-q2",
-      "title": "中英校园对比",
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m08-s1.mp3", "scrambled": ["songs", "sing", "They", "together", "morning", "every"], "correct": ["They", "sing", "songs", "together", "every", "morning"]}
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-sit-in-lines.mp3",
+          "scrambled": [
+            "in",
+            "lines",
+            "sit"
+          ],
+          "correct": [
+            "sit",
+            "in",
+            "lines"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-do-morning-exercises.mp3",
+          "scrambled": [
+            "morning",
+            "exercises",
+            "do"
+          ],
+          "correct": [
+            "do",
+            "morning",
+            "exercises"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/children-often-sit-around-tables-in-class.mp3",
+          "scrambled": [
+            "often",
+            "sit",
+            "around",
+            "tables",
+            "in",
+            "class.",
+            "Children"
+          ],
+          "correct": [
+            "Children",
+            "often",
+            "sit",
+            "around",
+            "tables",
+            "in",
+            "class."
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-globe.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "孩子们在课上经常围着桌子坐。",
+          "scrambledEnglish": [
+            "often",
+            "sit",
+            "around",
+            "tables",
+            "in",
+            "class.",
+            "Children"
+          ],
+          "correctEnglish": [
+            "Children",
+            "often",
+            "sit",
+            "around",
+            "tables",
+            "in",
+            "class."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们通常8点钟开始上学。",
+          "scrambledEnglish": [
+            "usually",
+            "start",
+            "school",
+            "at",
+            "8",
+            "o'clock.",
+            "We"
+          ],
+          "correctEnglish": [
+            "We",
+            "usually",
+            "start",
+            "school",
+            "at",
+            "8",
+            "o'clock."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "学校在三点半放学。",
+          "scrambledEnglish": [
+            "finishes",
+            "at",
+            "half",
+            "past",
+            "three.",
+            "School"
+          ],
+          "correctEnglish": [
+            "School",
+            "finishes",
+            "at",
+            "half",
+            "past",
+            "three."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "坐成行",
+          "scrambledEnglish": [
+            "in",
+            "lines",
+            "sit"
+          ],
+          "correctEnglish": [
+            "sit",
+            "in",
+            "lines"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "In China, we ______ sit in lines.", "answer": "usually"},
-    {"type": "translate", "cn": "他们每天都做作业。", "en": ["They do homework every day."]}
+    {
+      "type": "fillblank",
+      "text": "In China, we ______ sit in lines.",
+      "answer": "usually"
+    },
+    {
+      "type": "translate",
+      "cn": "他们每天都做作业。",
+      "en": [
+        "They do homework every day."
+      ]
+    }
   ],
-  "funFacts": ["在英国，很多小学的教室里，桌子不是一排排的，而是分组摆放的。", "Half past three 是英语中表示三点半的一种地道说法。"]
+  "funFacts": [
+    "在英国，很多小学的教室里，桌子不是一排排的，而是分组摆放的。",
+    "Half past three 是英语中表示三点半的一种地道说法。"
+  ]
 }

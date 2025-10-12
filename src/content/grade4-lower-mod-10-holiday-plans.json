@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-go-on-a-trip.mp3",
+          "audio": "/audio/tts/phrase-go-trip.mp3",
           "scrambled": [
             "on",
             "a",
@@ -275,65 +275,109 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "暑假",
+          "chinese": "假期你要去哪里？",
           "scrambledEnglish": [
-            "holiday",
-            "summer"
+            "will",
+            "you",
+            "go",
+            "for",
+            "the",
+            "holiday?",
+            "Where"
           ],
           "correctEnglish": [
-            "summer",
-            "holiday"
+            "Where",
+            "will",
+            "you",
+            "go",
+            "for",
+            "the",
+            "holiday?"
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "去旅行",
+          "chinese": "我要去海滩。",
           "scrambledEnglish": [
-            "on",
-            "a",
-            "trip",
-            "go"
+            "will",
+            "go",
+            "to",
+            "the",
+            "beach.",
+            "I"
           ],
           "correctEnglish": [
+            "I",
+            "will",
             "go",
-            "on",
+            "to",
+            "the",
+            "beach."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们正计划去山里旅行。",
+          "scrambledEnglish": [
+            "are",
+            "planning",
             "a",
-            "trip"
+            "trip",
+            "to",
+            "the",
+            "mountains.",
+            "We"
+          ],
+          "correctEnglish": [
+            "We",
+            "are",
+            "planning",
+            "a",
+            "trip",
+            "to",
+            "the",
+            "mountains."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们去夏令营吧！",
+          "scrambledEnglish": [
+            "go",
+            "camping",
+            "this",
+            "summer!",
+            "Let's"
+          ],
+          "correctEnglish": [
+            "Let's",
+            "go",
+            "camping",
+            "this",
+            "summer!"
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "holiday",
-          "scrambledChinese": [
-            "假",
-            "期"
-          ],
-          "correctChinese": [
-            "假",
-            "期"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

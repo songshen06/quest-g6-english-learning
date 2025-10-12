@@ -1,0 +1,295 @@
+{
+  "moduleId": "grade6-lower-mod-07",
+  "title": "Famous People",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "flew",
+      "en": "flew",
+      "zh": "飞（过去式）",
+      "audio": "/audio/tts/flew.mp3"
+    },
+    {
+      "id": "spent",
+      "en": "spent",
+      "zh": "度过（过去式）",
+      "audio": "/audio/tts/spent.mp3"
+    },
+    {
+      "id": "famous",
+      "en": "famous",
+      "zh": "著名的",
+      "audio": "/audio/tts/famous.mp3"
+    },
+    {
+      "id": "born",
+      "en": "born",
+      "zh": "出生",
+      "audio": "/audio/tts/born.mp3"
+    },
+    {
+      "id": "illness",
+      "en": "illness",
+      "zh": "疾病",
+      "audio": "/audio/tts/illness.mp3"
+    },
+    {
+      "id": "couldnt",
+      "en": "couldn't",
+      "zh": "不能（过去式）",
+      "audio": "/audio/tts/couldnt.mp3"
+    },
+    {
+      "id": "hear",
+      "en": "hear",
+      "zh": "听见",
+      "audio": "/audio/tts/hear.mp3"
+    },
+    {
+      "id": "learnt",
+      "en": "learnt",
+      "zh": "学习（过去式）",
+      "audio": "/audio/tts/learnt.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "flew-into-space",
+      "en": "flew into space",
+      "zh": "飞入太空",
+      "icon": "/images/icons/rocket.svg",
+      "audio": "/audio/tts/flew-into-space.mp3"
+    },
+    {
+      "id": "all-over-the-world",
+      "en": "all over the world",
+      "zh": "全世界",
+      "icon": "/images/icons/globe.svg",
+      "audio": "/audio/tts/all-over-the-world.mp3"
+    },
+    {
+      "id": "couldnt-see-or-hear",
+      "en": "couldn't see or hear",
+      "zh": "看不见也听不见",
+      "icon": "/images/icons/disability.svg",
+      "audio": "/audio/tts/couldnt-see-or-hear.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "My father flew into space in Shenzhou V.",
+      "a": "我父亲乘坐神舟五号飞入太空。"
+    },
+    {
+      "q": "He spent about twenty-one hours in space.",
+      "a": "他在太空度过了大约二十一个小时。"
+    },
+    {
+      "q": "Helen Keller was born in the US in 1880.",
+      "a": "海伦·凯勒1880年出生于美国。"
+    },
+    {
+      "q": "She couldn't see or hear.",
+      "a": "她看不见也听不见。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "flew",
+              "zh": "飞（过去式）"
+            },
+            {
+              "en": "spent",
+              "zh": "度过（过去式）"
+            },
+            {
+              "en": "famous",
+              "zh": "著名的"
+            },
+            {
+              "en": "born",
+              "zh": "出生"
+            },
+            {
+              "en": "illness",
+              "zh": "疾病"
+            },
+            {
+              "en": "couldn't",
+              "zh": "不能（过去式）"
+            }
+          ],
+          "options": [
+            {
+              "en": "hear",
+              "zh": "听见"
+            },
+            {
+              "en": "learnt",
+              "zh": "学习（过去式）"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "flew into space",
+              "zh": "飞入太空"
+            },
+            {
+              "en": "all over the world",
+              "zh": "全世界"
+            },
+            {
+              "en": "couldn't see or hear",
+              "zh": "看不见也听不见"
+            }
+          ],
+          "options": [
+            {
+              "en": "hear",
+              "zh": "听见"
+            },
+            {
+              "en": "learnt",
+              "zh": "学习（过去式）"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/flew-into-space.mp3",
+          "scrambled": [
+            "into",
+            "space",
+            "flew"
+          ],
+          "correct": [
+            "flew",
+            "into",
+            "space"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/all-over-the-world.mp3",
+          "scrambled": [
+            "over",
+            "the",
+            "world",
+            "all"
+          ],
+          "correct": [
+            "all",
+            "over",
+            "the",
+            "world"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/couldnt-see-or-hear.mp3",
+          "scrambled": [
+            "see",
+            "or",
+            "hear",
+            "couldn't"
+          ],
+          "correct": [
+            "couldn't",
+            "see",
+            "or",
+            "hear"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "飞入太空",
+          "scrambledEnglish": [
+            "into",
+            "space",
+            "flew"
+          ],
+          "correctEnglish": [
+            "flew",
+            "into",
+            "space"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "全世界",
+          "scrambledEnglish": [
+            "over",
+            "the",
+            "world",
+            "all"
+          ],
+          "correctEnglish": [
+            "all",
+            "over",
+            "the",
+            "world"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "When I was a baby, I ___ walk.",
+      "answer": "couldn't"
+    },
+    {
+      "type": "translate",
+      "cn": "他是一位伟大的老师。",
+      "en": [
+        "He was a great teacher."
+      ]
+    }
+  ],
+  "funFacts": [
+    "海伦·凯勒是第一位获得文学学士学位的盲聋人士。",
+    "宇航员（astronaut）这个词来自希腊语，意思是星星的水手。"
+  ]
+}

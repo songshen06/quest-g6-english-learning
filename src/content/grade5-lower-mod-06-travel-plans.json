@@ -116,27 +116,240 @@
   ],
   "quests": [
     {
-      "id": "transport-choose",
-      "title": "出行方式选择",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
         {
           "type": "wordmatching",
-          "text": "匹配出行问题与回答",
+          "text": "将英语单词与短语配对 (第1部分)",
           "pairs": [
             {
-              "en": "How will we get there?",
-              "zh": "By car."
+              "en": "build",
+              "zh": "建造"
             },
             {
-              "en": "What will we see there?",
-              "zh": "Lots of big stones."
+              "en": "place",
+              "zh": "地方"
+            },
+            {
+              "en": "thousand",
+              "zh": "一千"
+            },
+            {
+              "en": "circle",
+              "zh": "圆，圆形"
+            },
+            {
+              "en": "answer",
+              "zh": "答案"
+            },
+            {
+              "en": "hope",
+              "zh": "希望"
+            }
+          ],
+          "options": [
+            {
+              "en": "so",
+              "zh": "如此，这样"
+            },
+            {
+              "en": "get",
+              "zh": "到达"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "wait for",
+              "zh": "等待"
+            },
+            {
+              "en": "take a helicopter ride",
+              "zh": "坐直升飞机"
+            }
+          ],
+          "options": [
+            {
+              "en": "so",
+              "zh": "如此，这样"
+            },
+            {
+              "en": "get",
+              "zh": "到达"
             }
           ]
         }
       ],
       "reward": {
-        "badge": "/images/rewards/travel-badge.png",
-        "xp": 12
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/helicopter-ride.mp3",
+          "scrambled": [
+            "a",
+            "helicopter",
+            "ride",
+            "take"
+          ],
+          "correct": [
+            "take",
+            "a",
+            "helicopter",
+            "ride"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/what-will-we-see-there.mp3",
+          "scrambled": [
+            "will",
+            "we",
+            "see",
+            "there?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "will",
+            "we",
+            "see",
+            "there?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/well-see-lots-of-very-big-stones.mp3",
+          "scrambled": [
+            "see",
+            "lots",
+            "of",
+            "very",
+            "big",
+            "stones.",
+            "We’ll"
+          ],
+          "correct": [
+            "We’ll",
+            "see",
+            "lots",
+            "of",
+            "very",
+            "big",
+            "stones."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们在那里会看到什么？",
+          "scrambledEnglish": [
+            "will",
+            "we",
+            "see",
+            "there?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "will",
+            "we",
+            "see",
+            "there?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们会看到很多非常大的石头。",
+          "scrambledEnglish": [
+            "see",
+            "lots",
+            "of",
+            "very",
+            "big",
+            "stones.",
+            "We’ll"
+          ],
+          "correctEnglish": [
+            "We’ll",
+            "see",
+            "lots",
+            "of",
+            "very",
+            "big",
+            "stones."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们怎么到那儿？",
+          "scrambledEnglish": [
+            "will",
+            "we",
+            "get",
+            "there?",
+            "How"
+          ],
+          "correctEnglish": [
+            "How",
+            "will",
+            "we",
+            "get",
+            "there?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "开车去。需要三个小时。",
+          "scrambledEnglish": [
+            "car.",
+            "It",
+            "will",
+            "take",
+            "three",
+            "hours.",
+            "By"
+          ],
+          "correctEnglish": [
+            "By",
+            "car.",
+            "It",
+            "will",
+            "take",
+            "three",
+            "hours."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
       }
     }
   ],

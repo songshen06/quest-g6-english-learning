@@ -1,0 +1,290 @@
+{
+  "moduleId": "grade5-upper-mod-06",
+  "title": "Abilities and Sports",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "word-well",
+      "en": "well",
+      "zh": "好",
+      "audio": "/audio/tts/word-well.mp3"
+    },
+    {
+      "id": "word-fast",
+      "en": "fast",
+      "zh": "快",
+      "audio": "/audio/tts/word-fast.mp3"
+    },
+    {
+      "id": "word-high",
+      "en": "high",
+      "zh": "高",
+      "audio": "/audio/tts/word-high.mp3"
+    },
+    {
+      "id": "word-point",
+      "en": "point",
+      "zh": "分数",
+      "audio": "/audio/tts/word-point.mp3"
+    },
+    {
+      "id": "word-got",
+      "en": "got",
+      "zh": "得到（get的过去式）",
+      "audio": "/audio/tts/word-got.mp3"
+    },
+    {
+      "id": "word-fan",
+      "en": "fan",
+      "zh": "迷",
+      "audio": "/audio/tts/word-fan.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-play-basketball",
+      "en": "play basketball",
+      "zh": "打篮球",
+      "icon": "/images/icons/basketball.svg",
+      "audio": "/audio/tts/phrase-play-basketball.mp3"
+    },
+    {
+      "id": "phrase-run-fast",
+      "en": "run fast",
+      "zh": "跑得快",
+      "icon": "/images/icons/running.svg",
+      "audio": "/audio/tts/phrase-run-fast.mp3"
+    },
+    {
+      "id": "phrase-jump-high",
+      "en": "jump high",
+      "zh": "跳得高",
+      "icon": "/images/icons/jump.svg",
+      "audio": "/audio/tts/phrase-jump-high.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "You can play basketball well.",
+      "a": "你篮球打得很好。"
+    },
+    {
+      "q": "Can you run fast?",
+      "a": "你能跑得快吗？"
+    },
+    {
+      "q": "No, I can't.",
+      "a": "不，我不能。"
+    },
+    {
+      "q": "They got seventy points.",
+      "a": "他们得了七十分。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "g5u-m06-q1",
+      "title": "运动技能匹配",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将运动技能与中文意思配对",
+          "pairs": [
+            {
+              "en": "run fast",
+              "zh": "跑得快"
+            },
+            {
+              "en": "jump high",
+              "zh": "跳得高"
+            }
+          ],
+          "options": [
+            {
+              "en": "run fast",
+              "zh": "跑得快"
+            },
+            {
+              "en": "jump high",
+              "zh": "跳得高"
+            },
+            {
+              "en": "swim fast",
+              "zh": "游得快"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-medal.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "g5u-m06-q2",
+      "title": "比赛结果报告",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/g5u-m06-s1.mp3",
+          "scrambled": [
+            "got",
+            "thirty-six",
+            "Sam",
+            "points"
+          ],
+          "correct": [
+            "Sam",
+            "got",
+            "thirty-six",
+            "points"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-trophy.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对",
+          "pairs": [
+            {
+              "en": "well",
+              "zh": "好"
+            },
+            {
+              "en": "fast",
+              "zh": "快"
+            },
+            {
+              "en": "high",
+              "zh": "高"
+            },
+            {
+              "en": "point",
+              "zh": "分数"
+            },
+            {
+              "en": "got",
+              "zh": "得到（get的过去式）"
+            },
+            {
+              "en": "fan",
+              "zh": "迷"
+            }
+          ],
+          "options": [
+            {
+              "en": "well",
+              "zh": "好"
+            },
+            {
+              "en": "fast",
+              "zh": "快"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/you-can-play-basketball-well.mp3",
+          "scrambled": [
+            "can",
+            "well.",
+            "You",
+            "basketball",
+            "play"
+          ],
+          "correct": [
+            "You",
+            "can",
+            "play",
+            "basketball",
+            "well."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "好",
+          "scrambledEnglish": [
+            "well"
+          ],
+          "correctEnglish": [
+            "well"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "well",
+          "scrambledChinese": [
+            "好"
+          ],
+          "correctChinese": [
+            "好"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I can't play basketball ______, but I can run fast.",
+      "answer": "well"
+    },
+    {
+      "type": "translate",
+      "cn": "你能跳得很高。",
+      "en": [
+        "You can jump really high."
+      ]
+    }
+  ],
+  "funFacts": [
+    "篮球是1891年由加拿大人詹姆斯·奈史密斯在美国发明的。",
+    "数字在英语中也有很多有趣的表达，比如用 'love' 在网球比赛中代表零分。"
+  ]
+}

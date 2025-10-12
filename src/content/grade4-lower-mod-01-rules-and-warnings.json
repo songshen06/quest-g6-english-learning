@@ -265,61 +265,85 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "不要触摸",
+          "chinese": "不要触摸门。",
           "scrambledEnglish": [
             "touch",
+            "the",
+            "door.",
             "Don't"
           ],
           "correctEnglish": [
             "Don't",
-            "touch"
+            "touch",
+            "the",
+            "door."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "不要跑",
+          "chinese": "不要在教室里跑。",
           "scrambledEnglish": [
             "run",
+            "in",
+            "the",
+            "classroom.",
             "Don't"
           ],
           "correctEnglish": [
             "Don't",
-            "run"
+            "run",
+            "in",
+            "the",
+            "classroom."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "不要大声说话。",
+          "scrambledEnglish": [
+            "talk",
+            "loudly.",
+            "Don't"
+          ],
+          "correctEnglish": [
+            "Don't",
+            "talk",
+            "loudly."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "小心！",
+          "scrambledEnglish": [
+            "careful!",
+            "Be"
+          ],
+          "correctEnglish": [
+            "Be",
+            "careful!"
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "don't",
-          "scrambledChinese": [
-            "不",
-            "要"
-          ],
-          "correctChinese": [
-            "不",
-            "要"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

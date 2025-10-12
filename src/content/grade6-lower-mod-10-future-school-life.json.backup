@@ -1,0 +1,305 @@
+{
+  "moduleId": "grade6-lower-mod-10",
+  "title": "Future School Life",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "different",
+      "en": "different",
+      "zh": "不同的",
+      "audio": "/audio/tts/different.mp3"
+    },
+    {
+      "id": "school",
+      "en": "school",
+      "zh": "学校",
+      "audio": "/audio/tts/school.mp3"
+    },
+    {
+      "id": "leave",
+      "en": "leave",
+      "zh": "离开",
+      "audio": "/audio/tts/leave.mp3"
+    },
+    {
+      "id": "start",
+      "en": "start",
+      "zh": "开始",
+      "audio": "/audio/tts/start.mp3"
+    },
+    {
+      "id": "excited",
+      "en": "excited",
+      "zh": "激动的",
+      "audio": "/audio/tts/excited.mp3"
+    },
+    {
+      "id": "sad",
+      "en": "sad",
+      "zh": "伤心的",
+      "audio": "/audio/tts/sad.mp3"
+    },
+    {
+      "id": "history",
+      "en": "history",
+      "zh": "历史",
+      "audio": "/audio/tts/history.mp3"
+    },
+    {
+      "id": "geography",
+      "en": "geography",
+      "zh": "地理",
+      "audio": "/audio/tts/geography.mp3"
+    },
+    {
+      "id": "chemistry",
+      "en": "chemistry",
+      "zh": "化学",
+      "audio": "/audio/tts/chemistry.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "middle-school",
+      "en": "middle school",
+      "zh": "中学",
+      "icon": "/images/icons/school.svg",
+      "audio": "/audio/tts/middle-school.mp3"
+    },
+    {
+      "id": "say-goodbye-to",
+      "en": "say goodbye to",
+      "zh": "向…告别",
+      "icon": "/images/icons/wave.svg",
+      "audio": "/audio/tts/say-goodbye-to.mp3"
+    },
+    {
+      "id": "at-the-same-time",
+      "en": "at the same time",
+      "zh": "同时",
+      "icon": "/images/icons/clock.svg",
+      "audio": "/audio/tts/at-the-same-time.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "We're going to leave our primary school soon.",
+      "a": "我们很快就要离开我们的小学了。"
+    },
+    {
+      "q": "We're going to different schools.",
+      "a": "我们将去不同的学校。"
+    },
+    {
+      "q": "Which middle school are you going to?",
+      "a": "你要去哪所中学？"
+    },
+    {
+      "q": "I'm going to study History, Science and Geography.",
+      "a": "我将要学习历史、科学和地理。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "different",
+              "zh": "不同的"
+            },
+            {
+              "en": "school",
+              "zh": "学校"
+            },
+            {
+              "en": "leave",
+              "zh": "离开"
+            },
+            {
+              "en": "start",
+              "zh": "开始"
+            },
+            {
+              "en": "excited",
+              "zh": "激动的"
+            },
+            {
+              "en": "sad",
+              "zh": "伤心的"
+            }
+          ],
+          "options": [
+            {
+              "en": "history",
+              "zh": "历史"
+            },
+            {
+              "en": "geography",
+              "zh": "地理"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "middle school",
+              "zh": "中学"
+            },
+            {
+              "en": "say goodbye to",
+              "zh": "向…告别"
+            },
+            {
+              "en": "at the same time",
+              "zh": "同时"
+            }
+          ],
+          "options": [
+            {
+              "en": "history",
+              "zh": "历史"
+            },
+            {
+              "en": "geography",
+              "zh": "地理"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/say-goodbye-to.mp3",
+          "scrambled": [
+            "goodbye",
+            "to",
+            "say"
+          ],
+          "correct": [
+            "say",
+            "goodbye",
+            "to"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/at-the-same-time.mp3",
+          "scrambled": [
+            "the",
+            "same",
+            "time",
+            "at"
+          ],
+          "correct": [
+            "at",
+            "the",
+            "same",
+            "time"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/were-going-to-leave-our-primary-school-soon.mp3",
+          "scrambled": [
+            "going",
+            "to",
+            "leave",
+            "our",
+            "primary",
+            "school",
+            "soon.",
+            "We're"
+          ],
+          "correct": [
+            "We're",
+            "going",
+            "to",
+            "leave",
+            "our",
+            "primary",
+            "school",
+            "soon."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "中学",
+          "scrambledEnglish": [
+            "school",
+            "middle"
+          ],
+          "correctEnglish": [
+            "middle",
+            "school"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "向…告别",
+          "scrambledEnglish": [
+            "goodbye",
+            "to",
+            "say"
+          ],
+          "correctEnglish": [
+            "say",
+            "goodbye",
+            "to"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I'm excited because we're going to learn lots of new ___.",
+      "answer": "things"
+    },
+    {
+      "type": "translate",
+      "cn": "我们将要去不同的学校。",
+      "en": [
+        "We are going to different schools."
+      ]
+    }
+  ],
+  "funFacts": [
+    "学校（school）这个词来自希腊语 skhole，最初的意思是休闲。",
+    "芬兰的学校假期是世界上最长的之一。"
+  ]
+}

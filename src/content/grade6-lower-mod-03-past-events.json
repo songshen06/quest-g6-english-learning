@@ -1,0 +1,343 @@
+{
+  "moduleId": "grade6-lower-mod-03",
+  "title": "Past Events",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "took",
+      "en": "took",
+      "zh": "拍（照）；拿",
+      "audio": "/audio/tts/took.mp3"
+    },
+    {
+      "id": "photos",
+      "en": "photos",
+      "zh": "照片",
+      "audio": "/audio/tts/photos.mp3"
+    },
+    {
+      "id": "went",
+      "en": "went",
+      "zh": "去（过去式）",
+      "audio": "/audio/tts/went.mp3"
+    },
+    {
+      "id": "had",
+      "en": "had",
+      "zh": "有（过去式）",
+      "audio": "/audio/tts/had.mp3"
+    },
+    {
+      "id": "ran",
+      "en": "ran",
+      "zh": "跑（过去式）",
+      "audio": "/audio/tts/ran.mp3"
+    },
+    {
+      "id": "ate",
+      "en": "ate",
+      "zh": "吃（过去式）",
+      "audio": "/audio/tts/ate.mp3"
+    },
+    {
+      "id": "shining",
+      "en": "shining",
+      "zh": "照耀",
+      "audio": "/audio/tts/shining.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "last-sunday",
+      "en": "Last Sunday",
+      "zh": "上周日",
+      "icon": "/images/icons/calendar.svg",
+      "audio": "/audio/tts/last-sunday.mp3"
+    },
+    {
+      "id": "took-some-photos",
+      "en": "took some photos",
+      "zh": "拍了一些照片",
+      "icon": "/images/icons/camera.svg",
+      "audio": "/audio/tts/took-some-photos.mp3"
+    },
+    {
+      "id": "went-to-the-zoo",
+      "en": "went to the zoo",
+      "zh": "去了动物园",
+      "icon": "/images/icons/zoo.svg",
+      "audio": "/audio/tts/went-to-the-zoo.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I had a very funny day on Saturday.",
+      "a": "我周六过了非常有趣的一天。"
+    },
+    {
+      "q": "I took some photos.",
+      "a": "我拍了一些照片。"
+    },
+    {
+      "q": "Then it started to rain.",
+      "a": "然后开始下雨了。"
+    },
+    {
+      "q": "The sun is shining.",
+      "a": "阳光灿烂。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "took",
+              "zh": "拍（照）；拿"
+            },
+            {
+              "en": "photos",
+              "zh": "照片"
+            },
+            {
+              "en": "went",
+              "zh": "去（过去式）"
+            },
+            {
+              "en": "had",
+              "zh": "有（过去式）"
+            },
+            {
+              "en": "ran",
+              "zh": "跑（过去式）"
+            },
+            {
+              "en": "ate",
+              "zh": "吃（过去式）"
+            }
+          ],
+          "options": [
+            {
+              "en": "ate",
+              "zh": "吃（过去式）"
+            },
+            {
+              "en": "shining",
+              "zh": "照耀"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "Last Sunday",
+              "zh": "上周日"
+            },
+            {
+              "en": "took some photos",
+              "zh": "拍了一些照片"
+            },
+            {
+              "en": "went to the zoo",
+              "zh": "去了动物园"
+            }
+          ],
+          "options": [
+            {
+              "en": "ate",
+              "zh": "吃（过去式）"
+            },
+            {
+              "en": "shining",
+              "zh": "照耀"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/took-some-photos.mp3",
+          "scrambled": [
+            "some",
+            "photos",
+            "took"
+          ],
+          "correct": [
+            "took",
+            "some",
+            "photos"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/went-to-the-zoo.mp3",
+          "scrambled": [
+            "to",
+            "the",
+            "zoo",
+            "went"
+          ],
+          "correct": [
+            "went",
+            "to",
+            "the",
+            "zoo"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/i-had-a-very-funny-day-on-saturday.mp3",
+          "scrambled": [
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我周六过了非常有趣的一天。",
+          "scrambledEnglish": [
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我拍了一些照片。",
+          "scrambledEnglish": [
+            "took",
+            "some",
+            "photos.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "took",
+            "some",
+            "photos."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "然后开始下雨了。",
+          "scrambledEnglish": [
+            "it",
+            "started",
+            "to",
+            "rain.",
+            "Then"
+          ],
+          "correctEnglish": [
+            "Then",
+            "it",
+            "started",
+            "to",
+            "rain."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "阳光灿烂。",
+          "scrambledEnglish": [
+            "sun",
+            "is",
+            "shining.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "sun",
+            "is",
+            "shining."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Last Sunday, I ___ to Beihai Park.",
+      "answer": "went"
+    },
+    {
+      "type": "translate",
+      "cn": "这是一个非常有趣的一天。",
+      "en": [
+        "It was a very funny day."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一张照片拍摄于1826年，曝光时间长达8小时。",
+    "昨天（Yesterday）这个词的词源可以追溯到古英语中的 geostran dæg，意思是昨天的那一天。"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "moduleId": "grade5-lower-mod-02",
+  "title": "Traditional Food",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "sausage",
+      "en": "sausage",
+      "zh": "香肠",
+      "audio": "/audio/tts/sausage.mp3"
+    },
+    {
+      "id": "sandwich",
+      "en": "sandwich",
+      "zh": "三明治",
+      "audio": "/audio/tts/sandwich.mp3"
+    },
+    {
+      "id": "traditional",
+      "en": "traditional",
+      "zh": "传统的",
+      "audio": "/audio/tts/traditional.mp3"
+    },
+    {
+      "id": "dish",
+      "en": "dish",
+      "zh": "食品，菜肴",
+      "audio": "/audio/tts/dish.mp3"
+    },
+    {
+      "id": "delicious",
+      "en": "delicious",
+      "zh": "美味的",
+      "audio": "/audio/tts/delicious.mp3"
+    },
+    {
+      "id": "chicken",
+      "en": "chicken",
+      "zh": "鸡肉",
+      "audio": "/audio/tts/chicken.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "fish-and-chips",
+      "en": "fish and chips",
+      "zh": "炸鱼加炸薯条",
+      "audio": "/audio/tts/fish-and-chips.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What did she have for breakfast?",
+      "a": "她早餐吃了什么？"
+    },
+    {
+      "q": "She had eggs and sausage.",
+      "a": "她吃了鸡蛋和香肠。"
+    },
+    {
+      "q": "What did she have for dinner?",
+      "a": "她晚餐吃了什么？"
+    },
+    {
+      "q": "She had fish and chips.",
+      "a": "她吃了炸鱼和薯条。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "food-match",
+      "title": "食物配对",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "配对英文食物与中文",
+          "pairs": [
+            {
+              "en": "sausage",
+              "zh": "香肠"
+            },
+            {
+              "en": "sandwich",
+              "zh": "三明治"
+            },
+            {
+              "en": "chicken",
+              "zh": "鸡肉"
+            },
+            {
+              "en": "fish and chips",
+              "zh": "炸鱼加炸薯条"
+            }
+          ],
+          "options": [
+            {
+              "en": "sausage",
+              "zh": "香肠"
+            },
+            {
+              "en": "sandwich",
+              "zh": "三明治"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/food-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对",
+          "pairs": [
+            {
+              "en": "sausage",
+              "zh": "香肠"
+            },
+            {
+              "en": "sandwich",
+              "zh": "三明治"
+            },
+            {
+              "en": "traditional",
+              "zh": "传统的"
+            },
+            {
+              "en": "dish",
+              "zh": "食品，菜肴"
+            },
+            {
+              "en": "delicious",
+              "zh": "美味的"
+            },
+            {
+              "en": "chicken",
+              "zh": "鸡肉"
+            }
+          ],
+          "options": [
+            {
+              "en": "sausage",
+              "zh": "香肠"
+            },
+            {
+              "en": "sandwich",
+              "zh": "三明治"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/what-did-she-have-for-breakfast.mp3",
+          "scrambled": [
+            "for",
+            "she",
+            "did",
+            "breakfast?",
+            "What",
+            "have"
+          ],
+          "correct": [
+            "What",
+            "did",
+            "she",
+            "have",
+            "for",
+            "breakfast?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "香肠",
+          "scrambledEnglish": [
+            "sausage"
+          ],
+          "correctEnglish": [
+            "sausage"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "sausage",
+          "scrambledChinese": [
+            "香",
+            "肠"
+          ],
+          "correctChinese": [
+            "香",
+            "肠"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "What did she have for ________?",
+      "answer": "breakfast"
+    },
+    {
+      "type": "translate",
+      "cn": "她吃了鸡蛋和香肠。",
+      "en": [
+        "She had eggs and sausage."
+      ]
+    }
+  ],
+  "funFacts": [
+    "鱼和薯条是英国著名的传统快餐。"
+  ]
+}

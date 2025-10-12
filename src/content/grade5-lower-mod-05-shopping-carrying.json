@@ -80,28 +80,246 @@
   ],
   "quests": [
     {
-      "id": "price-quiz",
-      "title": "购物对话填空",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
         {
-          "type": "sentencesorting",
-          "text": "排列购物问价对话",
-          "audio": "/audio/tts/how-much-bag.mp3",
-          "scrambled": [
-            "How much is it?",
-            "It’s light.",
-            "This bag is nice."
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "light",
+              "zh": "轻的"
+            },
+            {
+              "en": "carry",
+              "zh": "提；抱；背；搬"
+            },
+            {
+              "en": "pound",
+              "zh": "英镑"
+            },
+            {
+              "en": "back",
+              "zh": "背部"
+            },
+            {
+              "en": "over",
+              "zh": "在……的上方"
+            },
+            {
+              "en": "shoulder",
+              "zh": "肩膀"
+            }
           ],
-          "correct": [
-            "This bag is nice.",
-            "How much is it?",
-            "It’s light."
+          "options": [
+            {
+              "en": "over",
+              "zh": "在……的上方"
+            },
+            {
+              "en": "shoulder",
+              "zh": "肩膀"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "How much...?",
+              "zh": "……多少钱？"
+            },
+            {
+              "en": "sales assistant",
+              "zh": "售货员/营业员"
+            },
+            {
+              "en": "carry it on my back",
+              "zh": "背在后背上"
+            }
+          ],
+          "options": [
+            {
+              "en": "over",
+              "zh": "在……的上方"
+            },
+            {
+              "en": "shoulder",
+              "zh": "肩膀"
+            }
           ]
         }
       ],
       "reward": {
-        "badge": "/images/rewards/bag-badge.png",
+        "badge": "/images/rewards/vocabulary-badge.png",
         "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/carry-on-back.mp3",
+          "scrambled": [
+            "it",
+            "on",
+            "my",
+            "back",
+            "carry"
+          ],
+          "correct": [
+            "carry",
+            "it",
+            "on",
+            "my",
+            "back"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/this-black-bag-is-nice-its-big.mp3",
+          "scrambled": [
+            "black",
+            "bag",
+            "is",
+            "nice.",
+            "It's",
+            "big.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "black",
+            "bag",
+            "is",
+            "nice.",
+            "It's",
+            "big."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/look-at-this-green-one-its-light.mp3",
+          "scrambled": [
+            "at",
+            "this",
+            "green",
+            "one.",
+            "It's",
+            "light.",
+            "Look"
+          ],
+          "correct": [
+            "Look",
+            "at",
+            "this",
+            "green",
+            "one.",
+            "It's",
+            "light."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这个黑色的包很好，很大。",
+          "scrambledEnglish": [
+            "black",
+            "bag",
+            "is",
+            "nice.",
+            "It's",
+            "big.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "black",
+            "bag",
+            "is",
+            "nice.",
+            "It's",
+            "big."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "看看这个绿色的。它很轻。",
+          "scrambledEnglish": [
+            "at",
+            "this",
+            "green",
+            "one.",
+            "It's",
+            "light.",
+            "Look"
+          ],
+          "correctEnglish": [
+            "Look",
+            "at",
+            "this",
+            "green",
+            "one.",
+            "It's",
+            "light."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这个包多少钱？",
+          "scrambledEnglish": [
+            "much",
+            "is",
+            "this",
+            "bag?",
+            "How"
+          ],
+          "correctEnglish": [
+            "How",
+            "much",
+            "is",
+            "this",
+            "bag?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "二十英镑。",
+          "scrambledEnglish": [
+            "twenty",
+            "pounds.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "twenty",
+            "pounds."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
       }
     }
   ],

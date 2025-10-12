@@ -1,0 +1,297 @@
+{
+  "moduleId": "grade6-lower-mod-08",
+  "title": "Asking Why",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "why",
+      "en": "why",
+      "zh": "为什么",
+      "audio": "/audio/tts/why.mp3"
+    },
+    {
+      "id": "cup",
+      "en": "cup",
+      "zh": "杯子",
+      "audio": "/audio/tts/cup.mp3"
+    },
+    {
+      "id": "head",
+      "en": "head",
+      "zh": "头",
+      "audio": "/audio/tts/head.mp3"
+    },
+    {
+      "id": "laughing",
+      "en": "laughing",
+      "zh": "笑",
+      "audio": "/audio/tts/laughing.mp3"
+    },
+    {
+      "id": "mistake",
+      "en": "mistake",
+      "zh": "错误",
+      "audio": "/audio/tts/mistake.mp3"
+    },
+    {
+      "id": "because",
+      "en": "because",
+      "zh": "因为",
+      "audio": "/audio/tts/because.mp3"
+    },
+    {
+      "id": "scared",
+      "en": "scared",
+      "zh": "害怕的",
+      "audio": "/audio/tts/scared.mp3"
+    },
+    {
+      "id": "happy",
+      "en": "happy",
+      "zh": "开心的",
+      "audio": "/audio/tts/happy.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "on-your-heads",
+      "en": "on your heads",
+      "zh": "在你们头上",
+      "icon": "/images/icons/head.svg",
+      "audio": "/audio/tts/on-your-heads.mp3"
+    },
+    {
+      "id": "make-mistakes",
+      "en": "make mistakes",
+      "zh": "犯错误",
+      "icon": "/images/icons/cross.svg",
+      "audio": "/audio/tts/make-mistakes.mp3"
+    },
+    {
+      "id": "wearing-a-hat",
+      "en": "wearing a hat",
+      "zh": "戴着一顶帽子",
+      "icon": "/images/icons/hat.svg",
+      "audio": "/audio/tts/wearing-a-hat.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Why do you have cups on your heads?",
+      "a": "你们为什么把杯子放在头上？"
+    },
+    {
+      "q": "Why are you laughing?",
+      "a": "你们为什么笑？"
+    },
+    {
+      "q": "Because I'm happy.",
+      "a": "因为我很高兴。"
+    },
+    {
+      "q": "Why are you wearing a raincoat?",
+      "a": "你为什么穿着雨衣？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "why",
+              "zh": "为什么"
+            },
+            {
+              "en": "cup",
+              "zh": "杯子"
+            },
+            {
+              "en": "head",
+              "zh": "头"
+            },
+            {
+              "en": "laughing",
+              "zh": "笑"
+            },
+            {
+              "en": "mistake",
+              "zh": "错误"
+            },
+            {
+              "en": "because",
+              "zh": "因为"
+            }
+          ],
+          "options": [
+            {
+              "en": "scared",
+              "zh": "害怕的"
+            },
+            {
+              "en": "happy",
+              "zh": "开心的"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "on your heads",
+              "zh": "在你们头上"
+            },
+            {
+              "en": "make mistakes",
+              "zh": "犯错误"
+            },
+            {
+              "en": "wearing a hat",
+              "zh": "戴着一顶帽子"
+            }
+          ],
+          "options": [
+            {
+              "en": "scared",
+              "zh": "害怕的"
+            },
+            {
+              "en": "happy",
+              "zh": "开心的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-food.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/on-your-heads.mp3",
+          "scrambled": [
+            "your",
+            "heads",
+            "on"
+          ],
+          "correct": [
+            "on",
+            "your",
+            "heads"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/wearing-a-hat.mp3",
+          "scrambled": [
+            "a",
+            "hat",
+            "wearing"
+          ],
+          "correct": [
+            "wearing",
+            "a",
+            "hat"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/why-do-you-have-cups-on-your-heads.mp3",
+          "scrambled": [
+            "do",
+            "you",
+            "have",
+            "cups",
+            "on",
+            "your",
+            "heads?",
+            "Why"
+          ],
+          "correct": [
+            "Why",
+            "do",
+            "you",
+            "have",
+            "cups",
+            "on",
+            "your",
+            "heads?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在你们头上",
+          "scrambledEnglish": [
+            "your",
+            "heads",
+            "on"
+          ],
+          "correctEnglish": [
+            "on",
+            "your",
+            "heads"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "犯错误",
+          "scrambledEnglish": [
+            "mistakes",
+            "make"
+          ],
+          "correctEnglish": [
+            "make",
+            "mistakes"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ are you crying? Because I'm sad.",
+      "answer": "Why"
+    },
+    {
+      "type": "translate",
+      "cn": "他为什么害怕？",
+      "en": [
+        "Why is he scared?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "人类是唯一会因为情感而流泪的动物。",
+    "笑可以促进血液循环，对心脏有好处。"
+  ]
+}

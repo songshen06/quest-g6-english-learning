@@ -3,42 +3,278 @@
   "title": "Shopping Time",
   "durationMinutes": 13,
   "words": [
-    {"id": "word-heavy", "en": "heavy", "zh": "重的", "audio": "/audio/tts/word-heavy.mp3"},
-    {"id": "word-sell", "en": "sell", "zh": "卖", "audio": "/audio/tts/word-sell.mp3"},
-    {"id": "word-supermarket", "en": "supermarket", "zh": "超市", "audio": "/audio/tts/word-supermarket.mp3"},
-    {"id": "word-different", "en": "different", "zh": "不同的", "audio": "/audio/tts/word-different.mp3"},
-    {"id": "word-sometimes", "en": "sometimes", "zh": "有时", "audio": "/audio/tts/word-sometimes.mp3"}
+    {
+      "id": "word-heavy",
+      "en": "heavy",
+      "zh": "重的",
+      "audio": "/audio/tts/word-heavy.mp3"
+    },
+    {
+      "id": "word-sell",
+      "en": "sell",
+      "zh": "卖",
+      "audio": "/audio/tts/word-sell.mp3"
+    },
+    {
+      "id": "word-supermarket",
+      "en": "supermarket",
+      "zh": "超市",
+      "audio": "/audio/tts/word-supermarket.mp3"
+    },
+    {
+      "id": "word-different",
+      "en": "different",
+      "zh": "不同的",
+      "audio": "/audio/tts/word-different.mp3"
+    },
+    {
+      "id": "word-sometimes",
+      "en": "sometimes",
+      "zh": "有时",
+      "audio": "/audio/tts/word-sometimes.mp3"
+    }
   ],
   "phrases": [
-    {"id": "phrase-a-lot-of", "en": "a lot of", "zh": "许多", "icon": "/images/icons/basket.svg", "audio": "/audio/tts/phrase-a-lot-of.mp3"},
-    {"id": "phrase-different-things", "en": "different things", "zh": "不同的东西", "icon": "/images/icons/box.svg", "audio": "/audio/tts/phrase-different-things.mp3"}
+    {
+      "id": "phrase-a-lot-of",
+      "en": "a lot of",
+      "zh": "许多",
+      "icon": "/images/icons/basket.svg",
+      "audio": "/audio/tts/phrase-a-lot-of.mp3"
+    },
+    {
+      "id": "phrase-different-things",
+      "en": "different things",
+      "zh": "不同的东西",
+      "icon": "/images/icons/box.svg",
+      "audio": "/audio/tts/phrase-different-things.mp3"
+    }
   ],
   "patterns": [
-    {"q": "This one is heavy.", "a": "这个很重。"},
-    {"q": "They sell many different things.", "a": "他们卖许多不同的东西。"},
-    {"q": "There are many sweets over there.", "a": "那边有很多糖果。"}
+    {
+      "q": "This one is heavy.",
+      "a": "这个很重。"
+    },
+    {
+      "q": "They sell many different things.",
+      "a": "他们卖许多不同的东西。"
+    },
+    {
+      "q": "There are many sweets over there.",
+      "a": "那边有很多糖果。"
+    }
   ],
   "quests": [
     {
-      "id": "g5u-m02-q1",
-      "title": "词汇挑战：超市寻宝",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
-        {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "heavy", "zh": "重的"}, {"en": "sell", "zh": "卖"}], "options": [{"en": "heavy", "zh": "重的"}, {"en": "sell", "zh": "卖"}, {"en": "buy", "zh": "买"}]}
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "heavy",
+              "zh": "重的"
+            },
+            {
+              "en": "sell",
+              "zh": "卖"
+            },
+            {
+              "en": "supermarket",
+              "zh": "超市"
+            },
+            {
+              "en": "different",
+              "zh": "不同的"
+            },
+            {
+              "en": "sometimes",
+              "zh": "有时"
+            },
+            {
+              "en": "a lot of",
+              "zh": "许多"
+            }
+          ],
+          "options": [
+            {
+              "en": "different",
+              "zh": "不同的"
+            },
+            {
+              "en": "sometimes",
+              "zh": "有时"
+            }
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-trolley.png", "xp": 10}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
-      "id": "g5u-m02-q2",
-      "title": "对话排序：购物求助",
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m02-s1.mp3", "scrambled": ["help", "Let", "you", "me"], "correct": ["Let", "me", "help", "you"]}
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-a-lot-of.mp3",
+          "scrambled": [
+            "lot",
+            "of",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "lot",
+            "of"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/this-one-is-heavy.mp3",
+          "scrambled": [
+            "one",
+            "is",
+            "heavy.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "one",
+            "is",
+            "heavy."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/they-sell-many-different-things.mp3",
+          "scrambled": [
+            "sell",
+            "many",
+            "different",
+            "things.",
+            "They"
+          ],
+          "correct": [
+            "They",
+            "sell",
+            "many",
+            "different",
+            "things."
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-helpful.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这个很重。",
+          "scrambledEnglish": [
+            "one",
+            "is",
+            "heavy.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "one",
+            "is",
+            "heavy."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们卖许多不同的东西。",
+          "scrambledEnglish": [
+            "sell",
+            "many",
+            "different",
+            "things.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "sell",
+            "many",
+            "different",
+            "things."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "那边有很多糖果。",
+          "scrambledEnglish": [
+            "are",
+            "many",
+            "sweets",
+            "over",
+            "there.",
+            "There"
+          ],
+          "correctEnglish": [
+            "There",
+            "are",
+            "many",
+            "sweets",
+            "over",
+            "there."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "许多",
+          "scrambledEnglish": [
+            "lot",
+            "of",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "lot",
+            "of"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "This bag is very ______. I can't carry it.", "answer": "heavy"},
-    {"type": "translate", "cn": "超市也卖很多来自中国的东西。", "en": ["Supermarkets sell many things from China, too."]}
+    {
+      "type": "fillblank",
+      "text": "This bag is very ______. I can't carry it.",
+      "answer": "heavy"
+    },
+    {
+      "type": "translate",
+      "cn": "超市也卖很多来自中国的东西。",
+      "en": [
+        "Supermarkets sell many things from China, too."
+      ]
+    }
   ],
-  "funFacts": ["世界上第一家超市于1916年在美国开业。", "在一些大型超市里，你甚至可以找到餐厅和游乐区。"]
+  "funFacts": [
+    "世界上第一家超市于1916年在美国开业。",
+    "在一些大型超市里，你甚至可以找到餐厅和游乐区。"
+  ]
 }

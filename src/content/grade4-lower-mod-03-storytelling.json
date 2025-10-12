@@ -206,7 +206,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-once-upon-a-time.mp3",
+          "audio": "/audio/tts/phrase-once-upon.mp3",
           "scrambled": [
             "upon",
             "a",
@@ -273,65 +273,107 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "从前",
+          "chinese": "从前有一位国王。",
           "scrambledEnglish": [
             "upon",
             "a",
-            "time",
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king.",
             "Once"
           ],
           "correctEnglish": [
             "Once",
             "upon",
             "a",
-            "time"
+            "time,",
+            "there",
+            "was",
+            "a",
+            "king."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "很久以前",
+          "chinese": "公主住在城堡里。",
           "scrambledEnglish": [
-            "ago",
-            "long"
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle.",
+            "The"
           ],
           "correctEnglish": [
-            "long",
-            "ago"
+            "The",
+            "princess",
+            "lived",
+            "in",
+            "a",
+            "castle."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们从此过上了幸福的生活。",
+          "scrambledEnglish": [
+            "lived",
+            "happily",
+            "ever",
+            "after.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "lived",
+            "happily",
+            "ever",
+            "after."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你能给我讲个故事吗？",
+          "scrambledEnglish": [
+            "you",
+            "tell",
+            "me",
+            "a",
+            "story?",
+            "Can"
+          ],
+          "correctEnglish": [
+            "Can",
+            "you",
+            "tell",
+            "me",
+            "a",
+            "story?"
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "once",
-          "scrambledChinese": [
-            "从",
-            "前"
-          ],
-          "correctChinese": [
-            "从",
-            "前"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

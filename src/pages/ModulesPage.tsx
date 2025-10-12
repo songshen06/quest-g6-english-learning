@@ -6,31 +6,9 @@ import { useGameStore } from '@/store/useGameStore'
 import { useUserStore } from '@/store/useUserStore'
 
 // Import from unified content management
-import {
-  grade6UpperMod01HowLong,
-  grade6UpperMod02ChinatownTombs,
-  grade6UpperMod03StampsHobbies,
-  grade6UpperMod04Festivals,
-  grade6UpperMod05PenFriends,
-  grade6UpperMod06SchoolAnswers,
-  grade6UpperMod07Animals,
-  grade6UpperMod08HabitsTidyRoom,
-  grade6UpperMod09PeaceUn,
-  grade6UpperMod10TravelSafety
-} from '@/content'
+import { moduleData } from '@/content'
 
-const allModulesData = [
-  grade6UpperMod01HowLong,
-  grade6UpperMod02ChinatownTombs,
-  grade6UpperMod03StampsHobbies,
-  grade6UpperMod04Festivals,
-  grade6UpperMod05PenFriends,
-  grade6UpperMod06SchoolAnswers,
-  grade6UpperMod07Animals,
-  grade6UpperMod08HabitsTidyRoom,
-  grade6UpperMod09PeaceUn,
-  grade6UpperMod10TravelSafety
-]
+const allModulesData = Object.values(moduleData)
 
 // Debug: Log raw module data
 console.log('Raw module data:', allModulesData)

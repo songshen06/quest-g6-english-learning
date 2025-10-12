@@ -261,61 +261,93 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "多少钱",
+          "chinese": "这本书多少钱？",
           "scrambledEnglish": [
             "much",
+            "is",
+            "the",
+            "book?",
             "How"
           ],
           "correctEnglish": [
             "How",
-            "much"
+            "much",
+            "is",
+            "the",
+            "book?"
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "五元",
+          "chinese": "十元。",
           "scrambledEnglish": [
-            "yuan",
-            "five"
+            "ten",
+            "yuan.",
+            "It's"
           ],
           "correctEnglish": [
-            "five",
-            "yuan"
+            "It's",
+            "ten",
+            "yuan."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这个太贵了。",
+          "scrambledEnglish": [
+            "is",
+            "too",
+            "expensive.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "too",
+            "expensive."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我想买一支铅笔。",
+          "scrambledEnglish": [
+            "want",
+            "to",
+            "buy",
+            "a",
+            "pencil.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "want",
+            "to",
+            "buy",
+            "a",
+            "pencil."
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "how",
-          "scrambledChinese": [
-            "多",
-            "少"
-          ],
-          "correctChinese": [
-            "多",
-            "少"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

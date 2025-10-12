@@ -1,0 +1,494 @@
+{
+  "moduleId": "grade6-upper-mod-08",
+  "title": "Habits and Tidy Room",
+  "durationMinutes": 18,
+  "words": [
+    {
+      "id": "coin",
+      "en": "coin",
+      "zh": "硬币",
+      "audio": "/audio/tts/coin.mp3"
+    },
+    {
+      "id": "tidy",
+      "en": "tidy",
+      "zh": "整洁的",
+      "audio": "/audio/tts/tidy.mp3"
+    },
+    {
+      "id": "messy",
+      "en": "messy",
+      "zh": "凌乱的",
+      "audio": "/audio/tts/messy.mp3"
+    },
+    {
+      "id": "never",
+      "en": "never",
+      "zh": "从不",
+      "audio": "/audio/tts/never.mp3"
+    },
+    {
+      "id": "always",
+      "en": "always",
+      "zh": "总是",
+      "audio": "/audio/tts/always.mp3"
+    },
+    {
+      "id": "often",
+      "en": "often",
+      "zh": "经常",
+      "audio": "/audio/tts/often.mp3"
+    },
+    {
+      "id": "sometimes",
+      "en": "sometimes",
+      "zh": "有时",
+      "audio": "/audio/tts/sometimes.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "tidy-room",
+      "en": "tidy my room",
+      "zh": "整理我的房间",
+      "icon": "/images/room/tidy.svg",
+      "audio": "/audio/tts/tidy-room.mp3"
+    },
+    {
+      "id": "find-coin",
+      "en": "find a coin",
+      "zh": "找到一个硬币",
+      "audio": "/audio/tts/find-coin.mp3"
+    },
+    {
+      "id": "tidy-bed",
+      "en": "tidy Tom's bed",
+      "zh": "整理Tom的床铺",
+      "icon": "/images/room/bed.svg",
+      "audio": "/audio/tts/tidy-bed.mp3"
+    },
+    {
+      "id": "read-stories",
+      "en": "read stories",
+      "zh": "读故事",
+      "icon": "/images/books/book.svg",
+      "audio": "/audio/tts/read-stories.mp3"
+    },
+    {
+      "id": "go-library",
+      "en": "go to the library",
+      "zh": "去图书馆",
+      "icon": "/images/buildings/library.svg",
+      "audio": "/audio/tts/go-library.mp3"
+    },
+    {
+      "id": "clean-blackboard",
+      "en": "clean the blackboard",
+      "zh": "檫黑板",
+      "icon": "/images/school/blackboard.svg",
+      "audio": "/audio/tts/clean-blackboard.mp3"
+    },
+    {
+      "id": "go-bus",
+      "en": "go by bus",
+      "zh": "乘公交车",
+      "icon": "/images/transport/bus.svg",
+      "audio": "/audio/tts/go-bus.mp3"
+    },
+    {
+      "id": "hurry-up",
+      "en": "hurry up",
+      "zh": "（使）赶紧，抓紧",
+      "audio": "/audio/tts/hurry-up.mp3"
+    },
+    {
+      "id": "eat-bananas",
+      "en": "eat bananas",
+      "zh": "吃香蕉",
+      "icon": "/images/food/banana.svg",
+      "audio": "/audio/tts/eat-bananas.mp3"
+    },
+    {
+      "id": "go-swimming",
+      "en": "go swimming",
+      "zh": "去游泳",
+      "icon": "/images/sports/swimming.svg",
+      "audio": "/audio/tts/go-swimming.mp3"
+    },
+    {
+      "id": "ride-bike",
+      "en": "ride my bike",
+      "zh": "骑车",
+      "icon": "/images/transport/bike.svg",
+      "audio": "/audio/tts/ride-bike.mp3"
+    },
+    {
+      "id": "read-english-books",
+      "en": "read English books",
+      "zh": "读英语书",
+      "audio": "/audio/tts/read-english-books.mp3"
+    },
+    {
+      "id": "clean-shoes",
+      "en": "clean my shoes",
+      "zh": "擦鞋",
+      "icon": "/images/clothes/shoes.svg",
+      "audio": "/audio/tts/clean-shoes.mp3"
+    },
+    {
+      "id": "be-mean",
+      "en": "be mean",
+      "zh": "小气",
+      "audio": "/audio/tts/be-mean.mp3"
+    },
+    {
+      "id": "cook-dinner",
+      "en": "cook dinner",
+      "zh": "做晚饭",
+      "icon": "/images/food/dinner.svg",
+      "audio": "/audio/tts/cook-dinner.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Do you often tidy your bed? Yes, every day.",
+      "a": "你经常整理床铺吗？是的，每天。"
+    },
+    {
+      "q": "Do you often read stories? Yes. I read stories every day.",
+      "a": "你经常读故事吗？是的。我每天都读故事。"
+    },
+    {
+      "q": "How often do you clean your room?",
+      "a": "你多久打扫一次你的房间？"
+    },
+    {
+      "q": "I always clean my room on weekends.",
+      "a": "我总是在周末打扫我的房间。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "coin",
+              "zh": "硬币",
+              "audio": "/audio/tts/coin.mp3"
+            },
+            {
+              "en": "tidy",
+              "zh": "整洁的",
+              "audio": "/audio/tts/tidy.mp3"
+            },
+            {
+              "en": "messy",
+              "zh": "凌乱的",
+              "audio": "/audio/tts/messy.mp3"
+            },
+            {
+              "en": "never",
+              "zh": "从不",
+              "audio": "/audio/tts/never.mp3"
+            },
+            {
+              "en": "always",
+              "zh": "总是",
+              "audio": "/audio/tts/always.mp3"
+            },
+            {
+              "en": "often",
+              "zh": "经常",
+              "audio": "/audio/tts/often.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "sometimes",
+              "zh": "有时"
+            },
+            {
+              "en": "coin",
+              "zh": "硬币"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "sometimes",
+              "zh": "有时",
+              "audio": "/audio/tts/sometimes.mp3"
+            },
+            {
+              "en": "tidy my room",
+              "zh": "整理我的房间",
+              "audio": "/audio/tts/tidy-room.mp3"
+            },
+            {
+              "en": "find a coin",
+              "zh": "找到一个硬币",
+              "audio": "/audio/tts/find-coin.mp3"
+            },
+            {
+              "en": "tidy Tom's bed",
+              "zh": "整理Tom的床铺",
+              "audio": "/audio/tts/tidy-bed.mp3"
+            },
+            {
+              "en": "read stories",
+              "zh": "读故事",
+              "audio": "/audio/tts/read-stories.mp3"
+            },
+            {
+              "en": "go to the library",
+              "zh": "去图书馆",
+              "audio": "/audio/tts/go-library.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "library",
+              "zh": "图书馆"
+            },
+            {
+              "en": "stories",
+              "zh": "故事"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第3部分)",
+          "pairs": [
+            {
+              "en": "clean the blackboard",
+              "zh": "檫黑板",
+              "audio": "/audio/tts/clean-blackboard.mp3"
+            },
+            {
+              "en": "go by bus",
+              "zh": "乘公交车",
+              "audio": "/audio/tts/go-bus.mp3"
+            },
+            {
+              "en": "hurry up",
+              "zh": "（使）赶紧，抓紧",
+              "audio": "/audio/tts/hurry-up.mp3"
+            },
+            {
+              "en": "eat bananas",
+              "zh": "吃香蕉",
+              "audio": "/audio/tts/eat-bananas.mp3"
+            },
+            {
+              "en": "go swimming",
+              "zh": "去游泳",
+              "audio": "/audio/tts/go-swimming.mp3"
+            },
+            {
+              "en": "ride my bike",
+              "zh": "骑车",
+              "audio": "/audio/tts/ride-bike.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "bus",
+              "zh": "公交车"
+            },
+            {
+              "en": "swimming",
+              "zh": "游泳"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第4部分)",
+          "pairs": [
+            {
+              "en": "read English books",
+              "zh": "读英语书",
+              "audio": "/audio/tts/read-english-books.mp3"
+            },
+            {
+              "en": "clean my shoes",
+              "zh": "擦鞋",
+              "audio": "/audio/tts/clean-shoes.mp3"
+            },
+            {
+              "en": "be mean",
+              "zh": "小气",
+              "audio": "/audio/tts/be-mean.mp3"
+            },
+            {
+              "en": "cook dinner",
+              "zh": "做晚饭",
+              "audio": "/audio/tts/cook-dinner.mp3"
+            }
+          ],
+          "options": [
+            {
+              "en": "dinner",
+              "zh": "晚饭"
+            },
+            {
+              "en": "books",
+              "zh": "书"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/tidy-room.mp3",
+          "scrambled": [
+            "room",
+            "my",
+            "tidy",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "tidy",
+            "my",
+            "room"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/read-stories.mp3",
+          "scrambled": [
+            "stories",
+            "read",
+            "I",
+            "every",
+            "day"
+          ],
+          "correct": [
+            "I",
+            "read",
+            "stories",
+            "every",
+            "day"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/go-library.mp3",
+          "scrambled": [
+            "library",
+            "go",
+            "to",
+            "We",
+            "often"
+          ],
+          "correct": [
+            "We",
+            "often",
+            "go",
+            "to",
+            "the",
+            "library"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "read stories",
+          "scrambledChinese": [
+            "故事",
+            "读"
+          ],
+          "correctChinese": [
+            "读",
+            "故事"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "整理我的房间",
+          "scrambledEnglish": [
+            "tidy",
+            "my",
+            "room"
+          ],
+          "correctEnglish": [
+            "tidy",
+            "my",
+            "room"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Do you often ________ your bed?",
+      "answer": "tidy"
+    },
+    {
+      "type": "fillblank",
+      "text": "I read stories ________ day.",
+      "answer": "every"
+    },
+    {
+      "type": "translate",
+      "cn": "你经常整理床铺吗？是的，每天。",
+      "en": [
+        "Do you often tidy your bed?",
+        "Yes, every day."
+      ]
+    }
+  ],
+  "funFacts": [
+    "Making your bed every morning is linked to increased productivity and better mental health.",
+    "Reading stories every day can improve vocabulary, imagination, and overall academic performance."
+  ]
+}

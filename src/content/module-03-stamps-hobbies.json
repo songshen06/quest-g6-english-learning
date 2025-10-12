@@ -3,31 +3,132 @@
   "title": "Stamps and Hobbies",
   "durationMinutes": 15,
   "words": [
-    {"id": "stamp", "en": "stamp", "zh": "邮票", "audio": "/audio/tts/stamp.mp3"},
-    {"id": "book", "en": "book", "zh": "书", "audio": "/audio/tts/book.mp3"},
-    {"id": "collect", "en": "collect", "zh": "收集", "audio": "/audio/tts/collect.mp3"},
-    {"id": "hobby", "en": "hobby", "zh": "爱好", "audio": "/audio/tts/hobby.mp3"},
-    {"id": "sun", "en": "sun", "zh": "太阳", "audio": "/audio/tts/sun.mp3"},
-    {"id": "island", "en": "island", "zh": "岛", "audio": "/audio/tts/island.mp3"},
-    {"id": "coconut", "en": "coconut", "zh": "椰子", "audio": "/audio/tts/coconut.mp3"}
+    {
+      "id": "stamp",
+      "en": "stamp",
+      "zh": "邮票",
+      "audio": "/audio/tts/stamp.mp3"
+    },
+    {
+      "id": "book",
+      "en": "book",
+      "zh": "书",
+      "audio": "/audio/tts/book.mp3"
+    },
+    {
+      "id": "collect",
+      "en": "collect",
+      "zh": "收集",
+      "audio": "/audio/tts/collect.mp3"
+    },
+    {
+      "id": "hobby",
+      "en": "hobby",
+      "zh": "爱好",
+      "audio": "/audio/tts/hobby.mp3"
+    },
+    {
+      "id": "sun",
+      "en": "sun",
+      "zh": "太阳",
+      "audio": "/audio/tts/sun.mp3"
+    },
+    {
+      "id": "island",
+      "en": "island",
+      "zh": "岛",
+      "audio": "/audio/tts/island.mp3"
+    },
+    {
+      "id": "coconut",
+      "en": "coconut",
+      "zh": "椰子",
+      "audio": "/audio/tts/coconut.mp3"
+    }
   ],
   "phrases": [
-    {"id": "put-into", "en": "put ... into", "zh": "投入", "icon": "/images/icons/put-in.svg", "audio": "/audio/tts/put-into.mp3"},
-    {"id": "stamp-uk", "en": "stamp from the UK", "zh": "英国邮票", "audio": "/audio/tts/stamp-uk.mp3"},
-    {"id": "send-emails", "en": "send me emails", "zh": "给我发邮件", "icon": "/images/icons/email.svg", "audio": "/audio/tts/send-emails.mp3"},
-    {"id": "chinese-stamps", "en": "lots of Chinese stamps", "zh": "许多中国的邮票", "audio": "/audio/tts/chinese-stamps.mp3"},
-    {"id": "collect-stamps", "en": "collect stamps", "zh": "收集邮票", "audio": "/audio/tts/collect-stamps.mp3"},
-    {"id": "picture-of", "en": "a picture of", "zh": "一张…的照片", "audio": "/audio/tts/picture-of.mp3"},
-    {"id": "hainan-island", "en": "Hainan Island", "zh": "海南岛", "icon": "/images/landmarks/hainan.svg", "audio": "/audio/tts/hainan-island.mp3"},
-    {"id": "finger-mountain", "en": "the Five-Finger Mountain", "zh": "五指山", "audio": "/audio/tts/finger-mountain.mp3"},
-    {"id": "coconut-tree", "en": "a coconut tree", "zh": "椰子树", "icon": "/images/natures/coconut-tree.svg", "audio": "/audio/tts/coconut-tree.mp3"},
-    {"id": "at-all", "en": "at all", "zh": "根本", "audio": "/audio/tts/at-all.mp3"}
+    {
+      "id": "put-into",
+      "en": "put ... into",
+      "zh": "投入",
+      "icon": "/images/icons/put-in.svg",
+      "audio": "/audio/tts/put-into.mp3"
+    },
+    {
+      "id": "stamp-uk",
+      "en": "stamp from the UK",
+      "zh": "英国邮票",
+      "audio": "/audio/tts/stamp-uk.mp3"
+    },
+    {
+      "id": "send-emails",
+      "en": "send me emails",
+      "zh": "给我发邮件",
+      "icon": "/images/icons/email.svg",
+      "audio": "/audio/tts/send-emails.mp3"
+    },
+    {
+      "id": "chinese-stamps",
+      "en": "lots of Chinese stamps",
+      "zh": "许多中国的邮票",
+      "audio": "/audio/tts/chinese-stamps.mp3"
+    },
+    {
+      "id": "collect-stamps",
+      "en": "collect stamps",
+      "zh": "收集邮票",
+      "audio": "/audio/tts/collect-stamps.mp3"
+    },
+    {
+      "id": "picture-of",
+      "en": "a picture of",
+      "zh": "一张…的照片",
+      "audio": "/audio/tts/picture-of.mp3"
+    },
+    {
+      "id": "hainan-island",
+      "en": "Hainan Island",
+      "zh": "海南岛",
+      "icon": "/images/landmarks/hainan.svg",
+      "audio": "/audio/tts/hainan-island.mp3"
+    },
+    {
+      "id": "finger-mountain",
+      "en": "the Five-Finger Mountain",
+      "zh": "五指山",
+      "audio": "/audio/tts/finger-mountain.mp3"
+    },
+    {
+      "id": "coconut-tree",
+      "en": "a coconut tree",
+      "zh": "椰子树",
+      "icon": "/images/natures/coconut-tree.svg",
+      "audio": "/audio/tts/coconut-tree.mp3"
+    },
+    {
+      "id": "at-all",
+      "en": "at all",
+      "zh": "根本",
+      "audio": "/audio/tts/at-all.mp3"
+    }
   ],
   "patterns": [
-    {"q": "What are you doing?", "a": "你在做什么？"},
-    {"q": "I'm putting my new stamps into my stamp book.", "a": "我正在把新邮票放进集邮册里。"},
-    {"q": "Have you got any stamps from China?", "a": "你有中国的邮票吗？"},
-    {"q": "No, I haven't.", "a": "不，我没有。"}
+    {
+      "q": "What are you doing?",
+      "a": "你在做什么？"
+    },
+    {
+      "q": "I'm putting my new stamps into my stamp book.",
+      "a": "我正在把新邮票放进集邮册里。"
+    },
+    {
+      "q": "Have you got any stamps from China?",
+      "a": "你有中国的邮票吗？"
+    },
+    {
+      "q": "No, I haven't.",
+      "a": "不，我没有。"
+    }
   ],
   "quests": [
     {
@@ -38,51 +139,87 @@
           "type": "wordmatching",
           "text": "将英语单词与短语配对 (第1部分)",
           "pairs": [
-            {"en": "stamp", "zh": "邮票"},
-            {"en": "collect", "zh": "收集"},
-            {"en": "hobby", "zh": "爱好"},
-            {"en": "book", "zh": "书"},
-            {"en": "put ... into", "zh": "投入"},
-            {"en": "send me emails", "zh": "给我发邮件"}
+            {
+              "en": "stamp",
+              "zh": "邮票"
+            },
+            {
+              "en": "book",
+              "zh": "书"
+            },
+            {
+              "en": "collect",
+              "zh": "收集"
+            },
+            {
+              "en": "hobby",
+              "zh": "爱好"
+            },
+            {
+              "en": "sun",
+              "zh": "太阳"
+            },
+            {
+              "en": "island",
+              "zh": "岛"
+            }
           ],
           "options": [
-            {"en": "picture", "zh": "图片"},
-            {"en": "emails", "zh": "邮件"}
+            {
+              "en": "island",
+              "zh": "岛"
+            },
+            {
+              "en": "coconut",
+              "zh": "椰子"
+            }
           ]
         },
         {
           "type": "wordmatching",
           "text": "将英语单词与短语配对 (第2部分)",
           "pairs": [
-            {"en": "island", "zh": "岛"},
-            {"en": "coconut", "zh": "椰子"},
-            {"en": "stamp from the UK", "zh": "英国邮票"},
-            {"en": "lots of Chinese stamps", "zh": "许多中国的邮票"},
-            {"en": "collect stamps", "zh": "收集邮票"},
-            {"en": "a picture of", "zh": "一张…的照片"}
+            {
+              "en": "put ... into",
+              "zh": "投入"
+            },
+            {
+              "en": "stamp from the UK",
+              "zh": "英国邮票"
+            },
+            {
+              "en": "send me emails",
+              "zh": "给我发邮件"
+            },
+            {
+              "en": "lots of Chinese stamps",
+              "zh": "许多中国的邮票"
+            },
+            {
+              "en": "collect stamps",
+              "zh": "收集邮票"
+            },
+            {
+              "en": "a picture of",
+              "zh": "一张…的照片"
+            }
           ],
           "options": [
-            {"en": "mountain", "zh": "山"},
-            {"en": "tree", "zh": "树"}
-          ]
-        },
-        {
-          "type": "wordmatching",
-          "text": "将英语单词与短语配对 (第3部分)",
-          "pairs": [
-            {"en": "sun", "zh": "太阳"},
-            {"en": "Hainan Island", "zh": "海南岛"},
-            {"en": "the Five-Finger Mountain", "zh": "五指山"},
-            {"en": "a coconut tree", "zh": "椰子树"},
-            {"en": "at all", "zh": "根本"}
-          ],
-          "options": [
-            {"en": "island", "zh": "岛"},
-            {"en": "picture", "zh": "图片"}
+            {
+              "en": "island",
+              "zh": "岛"
+            },
+            {
+              "en": "coconut",
+              "zh": "椰子"
+            }
           ]
         }
       ],
-      "reward": {"badge": "/images/rewards/stamp-badge.png", "xp": 20}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
       "id": "sentence-sorting",
@@ -91,45 +228,55 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/stamp-quest.mp3",
+          "audio": "/audio/tts/put-into.mp3",
           "scrambled": [
-            "stamps", "my", "book", "I'm", "new", "putting", "stamp", "into", "my"
+            "...",
+            "into",
+            "put"
           ],
           "correct": [
-            "I'm", "putting", "my", "new", "stamps", "into", "my", "stamp", "book"
+            "put",
+            "...",
+            "into"
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/collect-stamps.mp3",
+          "audio": "/audio/tts/stamp-uk.mp3",
           "scrambled": [
-            "collect", "I", "countries", "stamps", "from", "different"
+            "from",
+            "the",
+            "UK",
+            "stamp"
           ],
           "correct": [
-            "I", "collect", "stamps", "from", "different", "countries"
+            "stamp",
+            "from",
+            "the",
+            "UK"
           ]
-        }
-      ],
-      "reward": {"badge": "/images/rewards/hobby-badge.png", "xp": 20}
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
+        },
         {
-          "type": "entozh",
-          "text": "将英语句子翻译成正确的中文顺序",
-          "english": "Have you got any stamps from China?",
-          "scrambledChinese": [
-            "邮票", "你", "的", "吗", "来自", "中国", "有"
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/send-emails.mp3",
+          "scrambled": [
+            "me",
+            "emails",
+            "send"
           ],
-          "correctChinese": [
-            "你", "有", "来自", "中国", "的", "邮票", "吗"
+          "correct": [
+            "send",
+            "me",
+            "emails"
           ]
         }
       ],
-      "reward": {"badge": "/images/rewards/translation-badge.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
     },
     {
       "id": "zh-to-en",
@@ -138,22 +285,111 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "你在做什么？我正在把新邮票放进邮票册里。",
+          "chinese": "你在做什么？",
           "scrambledEnglish": [
-            "you", "doing", "are", "What", "putting", "my", "new", "stamps", "into", "I'm", "stamp", "book"
+            "are",
+            "you",
+            "doing?",
+            "What"
           ],
           "correctEnglish": [
-            "What", "are", "you", "doing", "I'm", "putting", "my", "new", "stamps", "into", "my", "stamp", "book"
+            "What",
+            "are",
+            "you",
+            "doing?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我正在把新邮票放进集邮册里。",
+          "scrambledEnglish": [
+            "putting",
+            "my",
+            "new",
+            "stamps",
+            "into",
+            "my",
+            "stamp",
+            "book.",
+            "I'm"
+          ],
+          "correctEnglish": [
+            "I'm",
+            "putting",
+            "my",
+            "new",
+            "stamps",
+            "into",
+            "my",
+            "stamp",
+            "book."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你有中国的邮票吗？",
+          "scrambledEnglish": [
+            "you",
+            "got",
+            "any",
+            "stamps",
+            "from",
+            "China?",
+            "Have"
+          ],
+          "correctEnglish": [
+            "Have",
+            "you",
+            "got",
+            "any",
+            "stamps",
+            "from",
+            "China?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "不，我没有。",
+          "scrambledEnglish": [
+            "I",
+            "haven't.",
+            "No,"
+          ],
+          "correctEnglish": [
+            "No,",
+            "I",
+            "haven't."
           ]
         }
       ],
-      "reward": {"badge": "/images/rewards/language-badge.png", "xp": 20}
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "I'm putting my new stamps into my stamp ________.", "answer": "book"},
-    {"type": "fillblank", "text": "Have you got any stamps from ________?", "answer": "China"},
-    {"type": "translate", "cn": "你在做什么？我正在把新邮票放进邮票册里。", "en": ["What are you doing?", "I'm putting my new stamps into my stamp book."]}
+    {
+      "type": "fillblank",
+      "text": "I'm putting my new stamps into my stamp ________.",
+      "answer": "book"
+    },
+    {
+      "type": "fillblank",
+      "text": "Have you got any stamps from ________?",
+      "answer": "China"
+    },
+    {
+      "type": "translate",
+      "cn": "你在做什么？我正在把新邮票放进邮票册里。",
+      "en": [
+        "What are you doing?",
+        "I'm putting my new stamps into my stamp book."
+      ]
+    }
   ],
   "funFacts": [
     "The world's most valuable stamp is the British Guiana 1c magenta, worth over $9 million.",

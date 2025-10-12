@@ -588,8 +588,8 @@ export const booksData: Book[] = [
     grade: 6,
     semester: 'lower',
     cover: '/images/books/grade6-lower.jpg',
-    description: '六年级下册英语学习内容，包含2个主题单元',
-    totalModules: 2,
+    description: '六年级下册英语学习内容，包含10个主题单元',
+    totalModules: 10,
     difficulty: 'intermediate',
     tags: ['小学中年级', '基础语法', '日常对话'],
     isActive: true,
@@ -599,8 +599,8 @@ export const booksData: Book[] = [
         id: 'g6l-ch1',
         bookId: 'grade6-lower',
         number: 1,
-        title: 'Unit 1: future plans',
-        description: 'future plans',
+        title: 'Unit 1: ordering food',
+        description: 'ordering food',
         moduleIds: ['grade6-lower-mod-01'],
         estimatedMinutes: 25,
         isLocked: false
@@ -609,9 +609,89 @@ export const booksData: Book[] = [
         id: 'g6l-ch2',
         bookId: 'grade6-lower',
         number: 2,
-        title: 'Unit 2: travel dreams',
-        description: 'travel dreams',
+        title: 'Unit 2: plans and weather',
+        description: 'plans and weather',
         moduleIds: ['grade6-lower-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch3',
+        bookId: 'grade6-lower',
+        number: 3,
+        title: 'Unit 3: past events',
+        description: 'past events',
+        moduleIds: ['grade6-lower-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch4',
+        bookId: 'grade6-lower',
+        number: 4,
+        title: 'Unit 4: describing actions',
+        description: 'describing actions',
+        moduleIds: ['grade6-lower-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch5',
+        bookId: 'grade6-lower',
+        number: 5,
+        title: 'Unit 5: simultaneous actions',
+        description: 'simultaneous actions',
+        moduleIds: ['grade6-lower-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch6',
+        bookId: 'grade6-lower',
+        number: 6,
+        title: 'Unit 6: gifts and past actions',
+        description: 'gifts and past actions',
+        moduleIds: ['grade6-lower-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch7',
+        bookId: 'grade6-lower',
+        number: 7,
+        title: 'Unit 7: famous people',
+        description: 'famous people',
+        moduleIds: ['grade6-lower-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch8',
+        bookId: 'grade6-lower',
+        number: 8,
+        title: 'Unit 8: asking why',
+        description: 'asking why',
+        moduleIds: ['grade6-lower-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch9',
+        bookId: 'grade6-lower',
+        number: 9,
+        title: 'Unit 9: best wishes',
+        description: 'best wishes',
+        moduleIds: ['grade6-lower-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g6l-ch10',
+        bookId: 'grade6-lower',
+        number: 10,
+        title: 'Unit 10: future school life',
+        description: 'future school life',
+        moduleIds: ['grade6-lower-mod-10'],
         estimatedMinutes: 25,
         isLocked: false
       }

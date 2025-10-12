@@ -223,57 +223,80 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "从...摔下来",
+          "chinese": "你的头怎么了？",
           "scrambledEnglish": [
-            "off",
-            "fell"
+            "happened",
+            "to",
+            "your",
+            "head?",
+            "What"
           ],
           "correctEnglish": [
-            "fell",
-            "off"
+            "What",
+            "happened",
+            "to",
+            "your",
+            "head?"
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "骑自行车",
+          "chinese": "我撞到头了。",
           "scrambledEnglish": [
-            "ride",
-            "bike"
+            "bumped",
+            "my",
+            "head.",
+            "I"
           ],
           "correctEnglish": [
-            "bike",
-            "ride"
+            "I",
+            "bumped",
+            "my",
+            "head."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你从你的自行车上摔下来了吗？",
+          "scrambledEnglish": [
+            "you",
+            "fall",
+            "off",
+            "your",
+            "bike?",
+            "Did"
+          ],
+          "correctEnglish": [
+            "Did",
+            "you",
+            "fall",
+            "off",
+            "your",
+            "bike?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我伤到了我的膝盖。",
+          "scrambledEnglish": [
+            "hurt",
+            "my",
+            "knees.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "hurt",
+            "my",
+            "knees."
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "happened",
-          "scrambledChinese": [
-            "发",
-            "生",
-            "了"
-          ],
-          "correctChinese": [
-            "发",
-            "生",
-            "了"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

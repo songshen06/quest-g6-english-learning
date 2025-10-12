@@ -181,6 +181,57 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "中国人发明了纸。",
+          "scrambledEnglish": [
+            "people",
+            "invented",
+            "paper.",
+            "Chinese"
+          ],
+          "correctEnglish": [
+            "Chinese",
+            "people",
+            "invented",
+            "paper."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他发明了这辆自行车。",
+          "scrambledEnglish": [
+            "invented",
+            "this",
+            "bicycle.",
+            "He"
+          ],
+          "correctEnglish": [
+            "He",
+            "invented",
+            "this",
+            "bicycle."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "它在房子旁边。",
+          "scrambledEnglish": [
+            "beside",
+            "the",
+            "house.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "beside",
+            "the",
+            "house."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
           "chinese": "在...前面",
           "scrambledEnglish": [
             "front",
@@ -192,48 +243,10 @@
             "front",
             "of"
           ]
-        },
-        {
-          "type": "zhtoen",
-          "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "重要的东西",
-          "scrambledEnglish": [
-            "things",
-            "important"
-          ],
-          "correctEnglish": [
-            "important",
-            "things"
-          ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "invented",
-          "scrambledChinese": [
-            "发",
-            "明",
-            "了"
-          ],
-          "correctChinese": [
-            "发",
-            "明",
-            "了"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

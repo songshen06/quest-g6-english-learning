@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-what-time-is-it?.mp3",
+          "audio": "/audio/tts/phrase-what-time.mp3",
           "scrambled": [
             "time",
             "is",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-its-...-oclock.mp3",
+          "audio": "/audio/tts/phrase-its-oclock.mp3",
           "scrambled": [
             "...",
             "o'clock",
@@ -263,6 +263,15 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
@@ -286,44 +295,55 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "...点了",
+          "chinese": "九点了。",
           "scrambledEnglish": [
-            "...",
-            "o'clock",
+            "nine",
+            "o'clock.",
             "It's"
           ],
           "correctEnglish": [
             "It's",
-            "...",
-            "o'clock"
+            "nine",
+            "o'clock."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "十点半。",
+          "scrambledEnglish": [
+            "half",
+            "past",
+            "ten.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "half",
+            "past",
+            "ten."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "三点一刻。",
+          "scrambledEnglish": [
+            "quarter",
+            "past",
+            "three.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "quarter",
+            "past",
+            "three."
           ]
         }
       ],
       "reward": {
         "badge": "/images/rewards/language-badge.png",
-        "xp": 15
-      }
-    },
-    {
-      "id": "en-to-zh",
-      "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英文句子翻译成正确的中文单词顺序",
-          "english": "time",
-          "scrambledChinese": [
-            "时",
-            "间"
-          ],
-          "correctChinese": [
-            "时",
-            "间"
-          ]
-        }
-      ],
-      "reward": {
-        "badge": "/images/rewards/translation-badge.png",
         "xp": 15
       }
     }

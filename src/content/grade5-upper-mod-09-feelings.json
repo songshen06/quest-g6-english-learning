@@ -3,44 +3,298 @@
   "title": "Feelings",
   "durationMinutes": 12,
   "words": [
-    {"id": "word-sad", "en": "sad", "zh": "伤心的", "audio": "/audio/tts/word-sad.mp3"},
-    {"id": "word-happy", "en": "happy", "zh": "开心的", "audio": "/audio/tts/word-happy.mp3"},
-    {"id": "word-angry", "en": "angry", "zh": "生气的", "audio": "/audio/tts/word-angry.mp3"},
-    {"id": "word-bored", "en": "bored", "zh": "无聊的", "audio": "/audio/tts/word-bored.mp3"},
-    {"id": "word-hungry", "en": "hungry", "zh": "饿的", "audio": "/audio/tts/word-hungry.mp3"},
-    {"id": "word-thirsty", "en": "thirsty", "zh": "渴的", "audio": "/audio/tts/word-thirsty.mp3"}
+    {
+      "id": "word-sad",
+      "en": "sad",
+      "zh": "伤心的",
+      "audio": "/audio/tts/word-sad.mp3"
+    },
+    {
+      "id": "word-happy",
+      "en": "happy",
+      "zh": "开心的",
+      "audio": "/audio/tts/word-happy.mp3"
+    },
+    {
+      "id": "word-angry",
+      "en": "angry",
+      "zh": "生气的",
+      "audio": "/audio/tts/word-angry.mp3"
+    },
+    {
+      "id": "word-bored",
+      "en": "bored",
+      "zh": "无聊的",
+      "audio": "/audio/tts/word-bored.mp3"
+    },
+    {
+      "id": "word-hungry",
+      "en": "hungry",
+      "zh": "饿的",
+      "audio": "/audio/tts/word-hungry.mp3"
+    },
+    {
+      "id": "word-thirsty",
+      "en": "thirsty",
+      "zh": "渴的",
+      "audio": "/audio/tts/word-thirsty.mp3"
+    }
   ],
   "phrases": [
-    {"id": "phrase-whats-the-matter", "en": "What's the matter?", "zh": "怎么了？", "icon": "/images/icons/question-circle.svg", "audio": "/audio/tts/phrase-whats-the-matter.mp3"},
-    {"id": "phrase-very-happy", "en": "very happy", "zh": "非常开心", "icon": "/images/icons/star-struck.svg", "audio": "/audio/tts/phrase-very-happy.mp3"}
+    {
+      "id": "phrase-whats-the-matter",
+      "en": "What's the matter?",
+      "zh": "怎么了？",
+      "icon": "/images/icons/question-circle.svg",
+      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+    },
+    {
+      "id": "phrase-very-happy",
+      "en": "very happy",
+      "zh": "非常开心",
+      "icon": "/images/icons/star-struck.svg",
+      "audio": "/audio/tts/phrase-very-happy.mp3"
+    }
   ],
   "patterns": [
-    {"q": "Are you sad?", "a": "你伤心吗？"},
-    {"q": "No, I'm not.", "a": "不，我不是。"},
-    {"q": "She was sad.", "a": "她（当时）很伤心。"},
-    {"q": "What are you thinking about?", "a": "你在想什么呢？"}
+    {
+      "q": "Are you sad?",
+      "a": "你伤心吗？"
+    },
+    {
+      "q": "No, I'm not.",
+      "a": "不，我不是。"
+    },
+    {
+      "q": "She was sad.",
+      "a": "她（当时）很伤心。"
+    },
+    {
+      "q": "What are you thinking about?",
+      "a": "你在想什么呢？"
+    }
   ],
   "quests": [
     {
-      "id": "g5u-m09-q1",
-      "title": "心情词汇对对碰",
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
       "steps": [
-        {"type": "wordmatching", "text": "将表示心情的英语单词与中文意思配对", "pairs": [{"en": "angry", "zh": "生气的"}, {"en": "bored", "zh": "无聊的"}], "options": [{"en": "angry", "zh": "生气的"}, {"en": "bored", "zh": "无聊的"}, {"en": "tired", "zh": "累的"}]}
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "sad",
+              "zh": "伤心的"
+            },
+            {
+              "en": "happy",
+              "zh": "开心的"
+            },
+            {
+              "en": "angry",
+              "zh": "生气的"
+            },
+            {
+              "en": "bored",
+              "zh": "无聊的"
+            },
+            {
+              "en": "hungry",
+              "zh": "饿的"
+            },
+            {
+              "en": "thirsty",
+              "zh": "渴的"
+            }
+          ],
+          "options": [
+            {
+              "en": "hungry",
+              "zh": "饿的"
+            },
+            {
+              "en": "thirsty",
+              "zh": "渴的"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "What's the matter?",
+              "zh": "怎么了？"
+            },
+            {
+              "en": "very happy",
+              "zh": "非常开心"
+            }
+          ],
+          "options": [
+            {
+              "en": "hungry",
+              "zh": "饿的"
+            },
+            {
+              "en": "thirsty",
+              "zh": "渴的"
+            }
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-emotion-wheel.png", "xp": 10}
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
     },
     {
-      "id": "g5u-m09-q2",
-      "title": "询问心情",
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/g5u-m09-s1.mp3", "scrambled": ["the", "matter", "What's"], "correct": ["What's", "the", "matter"]}
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-whats-the-matter.mp3",
+          "scrambled": [
+            "the",
+            "matter?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "the",
+            "matter?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/are-you-sad.mp3",
+          "scrambled": [
+            "you",
+            "sad?",
+            "Are"
+          ],
+          "correct": [
+            "Are",
+            "you",
+            "sad?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/no-im-not.mp3",
+          "scrambled": [
+            "I'm",
+            "not.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "I'm",
+            "not."
+          ]
+        }
       ],
-      "reward": {"badge": "/images/rewards/badge-speech-bubble.png", "xp": 15}
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你伤心吗？",
+          "scrambledEnglish": [
+            "you",
+            "sad?",
+            "Are"
+          ],
+          "correctEnglish": [
+            "Are",
+            "you",
+            "sad?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "不，我不是。",
+          "scrambledEnglish": [
+            "I'm",
+            "not.",
+            "No,"
+          ],
+          "correctEnglish": [
+            "No,",
+            "I'm",
+            "not."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "她（当时）很伤心。",
+          "scrambledEnglish": [
+            "was",
+            "sad.",
+            "She"
+          ],
+          "correctEnglish": [
+            "She",
+            "was",
+            "sad."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你在想什么呢？",
+          "scrambledEnglish": [
+            "are",
+            "you",
+            "thinking",
+            "about?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "are",
+            "you",
+            "thinking",
+            "about?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
     }
   ],
   "practice": [
-    {"type": "fillblank", "text": "Yesterday, Zara couldn't go out. She was ______.", "answer": "sad"},
-    {"type": "translate", "cn": "你现在开心吗？", "en": ["Are you happy now?"]}
+    {
+      "type": "fillblank",
+      "text": "Yesterday, Zara couldn't go out. She was ______.",
+      "answer": "sad"
+    },
+    {
+      "type": "translate",
+      "cn": "你现在开心吗？",
+      "en": [
+        "Are you happy now?"
+      ]
+    }
   ],
-  "funFacts": ["研究表明，微笑这个动作本身，即使是假装的，也能让你的大脑感觉更快乐。", "英语中有非常多描述情绪的词汇，比如 'ecstatic' 表示狂喜，'furious' 表示暴怒。"]
+  "funFacts": [
+    "研究表明，微笑这个动作本身，即使是假装的，也能让你的大脑感觉更快乐。",
+    "英语中有非常多描述情绪的词汇，比如 'ecstatic' 表示狂喜，'furious' 表示暴怒。"
+  ]
 }
