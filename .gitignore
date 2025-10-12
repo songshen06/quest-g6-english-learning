@@ -47,3 +47,52 @@ coverage/
 docs/super-admin-guide.md
 *_admin_secrets.md
 admin_credentials.*
+
+# Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Audio and development reports
+*.json.backup
+*_report.json
+backup_*/
+test_*/
+*_backup/
+
+# Audio processing files
+test_output.wav
+coqui_audio_report.json
+audio_integrity_report.json
+quick_asr_test_report.json
+audio_quality_test_report.json
+simple_rendering_test_report.json
+grade4_6_comprehensive_test_report.json
+
+# Missing audio and low quality files
+missing_audio_files.json
+low_quality_files.txt
+
+# Pattern coverage reports
+pattern_coverage_report_*.json
+
+# LLM and generation tools
+LLM_*.md
+generate_remaining.py
+
+# Backup files
+*.backup
+*.bak
+*_backup.*
+
+# Test audio directories
+test_coqui_audio/
+
+# PWA preview
+pwa-preview.html
+
+# Data backups
+src/data/books.ts.backup.*
