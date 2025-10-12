@@ -16,7 +16,8 @@ export const FillBlankStep: React.FC<FillBlankStepProps> = ({ step, onComplete }
     e.preventDefault()
     if (!userAnswer.trim()) return
 
-    const correct = userAnswer.toLowerCase().trim() === step.answer.toLowerCase().trim()
+    const correctAnswer = Array.isArray(step.answer) ? step.answer[0] : step.answer
+    const correct = userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase().trim()
     setIsCorrect(correct)
     setShowResult(true)
 
@@ -99,7 +100,7 @@ export const FillBlankStep: React.FC<FillBlankStepProps> = ({ step, onComplete }
               ) : (
                 <>
                   <XCircle className="w-6 h-6" />
-                  <span>答案: {step.answer}</span>
+                  <span>答案: {Array.isArray(step.answer) ? step.answer[0] : step.answer}</span>
                 </>
               )}
             </div>

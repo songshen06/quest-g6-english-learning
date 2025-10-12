@@ -15,6 +15,7 @@ export class GuestConversion {
     return {
       username: newUsername,
       displayName: newDisplayName || newUsername,
+      role: 'student' as const, // 添加必需的 role 属性
       passwordHash, // 新的哈希密码
       salt, // 新的盐值
       avatar: guestUser.avatar,

@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware'
 import { Book, BookProgress, Chapter, UserBookProgress } from '@/types/books'
 import { booksData, getActiveBooks, getNextRecommendedBook } from '@/data/books'
 import { moduleData as contentModuleData } from '@/content'
+import { useUserStore } from './useUserStore'
 
 interface BookState {
   // 当前选中的书籍

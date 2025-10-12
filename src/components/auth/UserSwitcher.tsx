@@ -59,7 +59,7 @@ export const UserSwitcher: React.FC = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-2">
                   <p className="font-semibold text-gray-900">{currentUser.displayName}</p>
-                  <Crown className="w-4 h-4 text-yellow-500" title="当前用户" />
+                  <Crown className="w-4 h-4 text-yellow-500" />
                 </div>
                 <p className="text-sm text-gray-600">@{currentUser.username}</p>
                 <div className="flex items-center gap-4 mt-1">

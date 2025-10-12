@@ -20,11 +20,11 @@ export interface Pattern {
 
 export interface QuestStep {
   type: 'listen' | 'select' | 'speak' | 'reveal' | 'show' | 'drag' | 'action' | 'fillblank' |
-        'wordmatching' | 'sentencesorting' | 'entozh' | 'zhtoen'
+        'wordmatching' | 'sentencesorting' | 'entozh' | 'zhtoen' | string
   text: string
   audio?: string
   image?: string
-  options?: string[]
+  options?: string[] | {en: string, zh: string, audio?: string}[]
   answerIndex?: number
   answer?: string | string[]
   recordable?: boolean
@@ -54,9 +54,9 @@ export interface Quest {
 }
 
 export interface Practice {
-  type: 'fillblank' | 'translate'
-  text: string
-  answer: string | string[]
+  type: 'fillblank' | 'translate' | string
+  text?: string
+  answer?: string | string[]
   cn?: string
   en?: string[]
 }
@@ -82,6 +82,9 @@ export interface Progress {
   startDate: string
   lastPlayed: string
   settings: UserSettings
+  questsCompleted?: number
+  streakDays?: number
+  totalTimeSpent?: number
 }
 
 export interface UserSettings {
@@ -124,6 +127,8 @@ export interface User {
     questsCompleted: number
     streakDays: number
     lastStudyDate: string
+    totalXP?: number
+    badges?: string[]
   }
 }
 

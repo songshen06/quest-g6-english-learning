@@ -15,6 +15,7 @@ import { LoginModal } from '@/components/auth/LoginModal'
 import { UserSwitcher } from '@/components/auth/UserSwitcher'
 import { GuestBanner } from '@/components/auth/GuestBanner'
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute'
+import { PWAInstallPrompt } from '@/components/PWAInstallPrompt'
 import './globals.css'
 
 function App() {
@@ -110,6 +111,7 @@ function App() {
         {/* Global modals */}
         <RewardModal />
         <LoginModal isOpen={showLoginModal} onClose={() => useUserStore.getState().setShowLoginModal(false)} />
+        <PWAInstallPrompt />
       </Router>
     </div>
   )
