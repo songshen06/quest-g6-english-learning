@@ -374,27 +374,29 @@
 
 ## 📚 基于教科书生成说明
 
-本模板用于“基于教科书内容”生成模块数据。请先从教科书对应单元提取信息，再严格映射到下方JSON字段。确保命名、数量与格式符合规范。
+本模板用于“基于教科书内容”生成模块数据。请先从教科书对应单元提取信息，再严格映射到下方 JSON 字段。确保命名、数量与格式符合规范。
 
-### 教材到JSON字段映射
+### 教材到 JSON 字段映射
+
 - 教材信息 → `moduleId`, `title`, `durationMinutes`
   - `moduleId`: `grade{1-6}-{lower/upper}-mod-{01-10}`（如 `grade6-lower-mod-03`）
   - `title`: 教材该单元或课题英文标题（必要时可提炼简洁版）
   - `durationMinutes`: 建议时长（10–15）
-- 教材词汇表 → `words`（5–8个）
+- 教材词汇表 → `words`（5–8 个）
   - 每项包含 `id`（小写连字符）、`en`、`zh`、`audio`（`/audio/tts/<id>.mp3`）
-- 教材短语/搭配 → `phrases`（3–5个）
+- 教材短语/搭配 → `phrases`（3–5 个）
   - 每项包含 `id`、`en`、`zh`、`icon`、`audio`
-- 教材重点句型/例句 → `patterns`（3–4条）
+- 教材重点句型/例句 → `patterns`（3–4 条）
   - 每项包含 `q`（英文）、`a`（中文）
-- 教材练习与活动建议 → `quests`（2–3个）
-  - 选择 `wordmatching`、`sentencesorting`、`entozh`、`zhtoen` 等类型，并为每个任务设计至少1个 `steps`
+- 教材练习与活动建议 → `quests`（2–3 个）
+  - 选择 `wordmatching`、`sentencesorting`、`entozh`、`zhtoen` 等类型，并为每个任务设计至少 1 个 `steps`
   - 每个任务包含 `reward`（`badge` 与 `xp`）
-- 课后练习/巩固 → `practice`（2–3个）
+- 课后练习/巩固 → `practice`（2–3 个）
   - 使用 `fillblank`、`translate` 等类型，难度递进
-- 文化补充/趣味知识 → `funFacts`（2–3个）
+- 文化补充/趣味知识 → `funFacts`（2–3 个）
 
-### 教材输入示例（提供给LLM的上下文）
+### 教材输入示例（提供给 LLM 的上下文）
+
 ```
 教材元信息：
 - 年级学期：grade6-lower
@@ -424,19 +426,48 @@
 ```
 
 ### 生成与导入流程（基于教科书）
+
 1. 按教材单元提取并整理上述“教材输入示例”内容。
-2. 使用本模板提示词生成JSON，文件命名为：`grade6-lower-mod-03-shopping-consumption.json`。
+2. 使用本模板提示词生成 JSON，文件命名为：`grade6-lower-mod-03-shopping-consumption.json`。
 3. 将文件保存到 `src/content/` 目录。
 4. 运行 `npm run validate-json` 完整校验命名与数据格式。
 5. 运行 `npm run import-book:validate` 自动导入并生成模块映射（推荐）。
 6. 启动开发服预览交互效果：`npm run dev`。
 
 ### 质量与一致性要点（来自教科书）
+
 - 主题一致：所有词汇、短语、句型、任务与练习围绕教材主题。
 - 数量规范：`words` 5–8，`phrases` 3–5，`patterns` 3–4，`quests` 2–3，`practice` 2–3，`funFacts` 2–3。
 - 命名规范：`moduleId` 与文件名严格匹配；各 `id` 唯一、小写连字符。
 - 音频规范：统一使用 `/audio/tts/<id>.mp3`；如暂缺音频，可先占位，后续补齐。
-- ADHD友好：步骤清晰、指令简洁、难度递进、奖励明确。
+- ADHD 友好：步骤清晰、指令简洁、难度递进、奖励明确。
+
+---
+
+## 🧭 Quests 强化要求（四类型必含）
+
+为保证交互一致性，每个模块必须包含以下 4 种任务类型，各至少 1 个步骤：
+
+- vocabulary-matching → `type: "wordmatching"`
+
+  - 字段：`text`, `pairs[{en, zh, audio?}]`, `options[{en, zh}]`
+  - 建议：`pairs` 覆盖本模块出现的核心词汇，`options` 为干扰项
+
+- sentence-sorting → `type: "sentencesorting"`
+
+  - 字段：`text`, `audio?`, `scrambled[string[]]`, `correct[string[]]`
+  - 建议：6–8 个单词；如有音频，置于 `audio: /audio/tts/<sentence>.mp3`
+
+- en-to-zh → `type: "entozh"`
+
+  - 字段：`text`, `english`, `scrambledChinese[string[]]`, `correctChinese[string[]]`
+  - 建议：选教材重点句，中文词序打乱后要求排成正确顺序
+
+- zh-to-en → `type: "zhtoen"`
+  - 字段：`text`, `chinese`, `scrambledEnglish[string[]]`, `correctEnglish[string[]]`
+  - 建议：中文句子给定，英文单词打乱后按正确语序排列
+
+注意：`type` 字段必须严格使用：`wordmatching`、`sentencesorting`、`entozh`、`zhtoen`，以匹配系统校验与前端组件。
 
 ---
 
@@ -444,86 +475,195 @@
 
 将以下提示词整体复制给 LLM，并在“模块主题清单”中填入你教科书的 10 个单元主题（英文与中文）。LLM 将一次性输出 10 个独立的 JSON 代码块，每个对应一个文件。
 
-```
-你是一个专业的英语教育内容设计师。请基于五年级下册（grade5-lower）教科书，一次性生成 10 个学习模块的 JSON 文件。
+````
+你是一个专业的英语教育内容设计师。请基于六年级下册（grade6-lower）教科书，一次性生成 10 个学习模块的 JSON 文件。
+
+
 
 ## 全局约束
-- 年级学期：grade5-lower
+
+- 年级学期：grade6-lower
+
 - 单元编号：mod-01 到 mod-10（两位数编号）
+
 - 文件命名格式：grade{1-6}-{lower/upper}-mod-{01-10}-{主题英文}.json
-  - 本次文件名示例：grade5-lower-mod-01-<topic-en>.json ... grade5-lower-mod-10-<topic-en>.json
-- moduleId：grade5-lower-mod-01 ... grade5-lower-mod-10（与文件名中的编号一致）
+
+  - 本次文件名示例：grade6-lower-mod-01-<topic-en>.json ... grade6-lower-mod-10-<topic-en>.json
+
+- moduleId：grade6-lower-mod-01 ... grade6-lower-mod-10（与文件名中的编号一致）
+
 - 时长：每个模块的 `durationMinutes` 为 10–15 分钟
 
+
+
 ## 模块主题清单（替换为教科书实际主题）
+
 - mod-01: <topic-en-01> / <topic-zh-01>
+
 - mod-02: <topic-en-02> / <topic-zh-02>
+
 - mod-03: <topic-en-03> / <topic-zh-03>
+
 - mod-04: <topic-en-04> / <topic-zh-04>
+
 - mod-05: <topic-en-05> / <topic-zh-05>
+
 - mod-06: <topic-en-06> / <topic-zh-06>
+
 - mod-07: <topic-en-07> / <topic-zh-07>
+
 - mod-08: <topic-en-08> / <topic-zh-08>
+
 - mod-09: <topic-en-09> / <topic-zh-09>
+
 - mod-10: <topic-en-10> / <topic-zh-10>
 
+
+
 ## 每个模块的JSON格式（严格一致）
+
 ```json
+
 {
+
   "moduleId": "grade5-lower-mod-01",
+
   "title": "<模块英文标题，基于主题>",
+
   "durationMinutes": 12,
+
   "words": [
+
     {"id": "<word-id-1>", "en": "<en>", "zh": "<zh>", "audio": "/audio/tts/<word-id-1>.mp3"},
+
     {"id": "<word-id-2>", "en": "<en>", "zh": "<zh>", "audio": "/audio/tts/<word-id-2>.mp3"}
+
   ],
+
   "phrases": [
+
     {"id": "<phrase-id-1>", "en": "<en>", "zh": "<zh>", "icon": "/images/icons/<icon-1>.svg", "audio": "/audio/tts/<phrase-id-1>.mp3"}
+
   ],
+
   "patterns": [
+
     {"q": "<重点句型英文>", "a": "<中文译文>"}
+
   ],
+
   "quests": [
+
     {
-      "id": "<task-id-1>",
-      "title": "<任务标题>",
+
+      "id": "vocabulary-matching",
+
+      "title": "词语配对练习",
+
       "steps": [
+
         {"type": "wordmatching", "text": "将英语单词与中文意思配对", "pairs": [{"en": "<en>", "zh": "<zh>"}], "options": [{"en": "<en>", "zh": "<zh>"}]}
+
       ],
+
       "reward": {"badge": "/images/rewards/<badge-1>.png", "xp": 10}
+
     },
+
     {
-      "id": "<task-id-2>",
-      "title": "<任务标题>",
+
+      "id": "sentence-sorting",
+
+      "title": "句子排序练习",
+
       "steps": [
-        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/<sentence-audio>.mp3", "scrambled": ["<w1>", "<w2>"], "correct": ["<w1>", "<w2>"]}
+
+        {"type": "sentencesorting", "text": "听句子并按正确顺序排列单词", "audio": "/audio/tts/<sentence-audio>.mp3", "scrambled": ["<w1>", "<w2>", "<w3>"], "correct": ["<w1>", "<w2>", "<w3>"]}
+
       ],
+
       "reward": {"badge": "/images/rewards/<badge-2>.png", "xp": 15}
+
+    },
+
+    {
+
+      "id": "en-to-zh",
+
+      "title": "英翻中练习",
+
+      "steps": [
+
+        {"type": "entozh", "text": "将英语句子翻译成正确的中文顺序", "english": "<English sentence>", "scrambledChinese": ["<词1>", "<词2>", "<词3>"], "correctChinese": ["<词1>", "<词2>", "<词3>"]}
+
+      ],
+
+      "reward": {"badge": "/images/rewards/<badge-3>.png", "xp": 12}
+
+    },
+
+    {
+
+      "id": "zh-to-en",
+
+      "title": "中翻英练习",
+
+      "steps": [
+
+        {"type": "zhtoen", "text": "将中文句子翻译成正确的英文单词顺序", "chinese": "<中文句子>", "scrambledEnglish": ["<word1>", "<word2>", "<word3>"], "correctEnglish": ["<word1>", "<word2>", "<word3>"]}
+
+      ],
+
+      "reward": {"badge": "/images/rewards/<badge-4>.png", "xp": 12}
+
     }
+
   ],
+
   "practice": [
+
     {"type": "fillblank", "text": "<句子含空格>", "answer": "<答案>"},
+
     {"type": "translate", "cn": "<中文>", "en": ["<英文>"]}
+
   ],
+
   "funFacts": ["<简短趣味事实1>", "<简短趣味事实2>"]
+
 }
-```
+
+````
 
 ## 字段与数量要求（每个模块）
+
 - words：5–8 个；`id` 使用小写连字符且唯一；`audio` 统一为 `/audio/tts/<id>.mp3`
+
 - phrases：3–5 个；包含 `icon` 与 `audio`
+
 - patterns：3–4 条；英文 `q` + 中文 `a`
-- quests：2–3 个；类型从 `wordmatching`、`sentencesorting`、`entozh`、`zhtoen` 中选择；每个任务包含 `steps` 与 `reward`
+
+- quests：4 个，必须包含以下四类型：`wordmatching`、`sentencesorting`、`entozh`、`zhtoen`；每个任务包含 `steps` 与 `reward`
+
 - practice：2–3 个；包含 `fillblank` 与 `translate` 类型，难度递进
+
 - funFacts：2–3 个；简洁、有趣、与主题相关
 
 ## 命名与路径规则
+
 - 文件名与 `moduleId` 严格匹配编号（01–10），示例：`grade5-lower-mod-03-<topic-en>.json`
+
 - 所有 `audio` 路径以 `/audio/tts/` 开头；`badge` 使用 `/images/rewards/`；`icon` 使用 `/images/icons/`
+
 - 不在 JSON 内添加注释；确保语法正确、逗号与括号匹配
 
 ## 输出格式要求
+
 - 输出 10 个相互独立的 JSON 代码块。
-- 每个代码块前用一行标明文件名：`FILENAME: grade5-lower-mod-XX-<topic-en>.json`
+
+- 每个代码块前用一行标明文件名：`FILENAME: grade6-lower-mod-XX-<topic-en>.json`
+
 - 代码块内仅包含合法 JSON 字段，无注释、无多余文本。
+
+```
+
 ```
