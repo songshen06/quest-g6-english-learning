@@ -1,0 +1,350 @@
+{
+  "moduleId": "grade4-lower-mod-09",
+  "title": "Countries and Animals",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-china",
+      "en": "China",
+      "zh": "中国",
+      "audio": "/audio/tts/word-china.mp3"
+    },
+    {
+      "id": "word-america",
+      "en": "America",
+      "zh": "美国",
+      "audio": "/audio/tts/word-america.mp3"
+    },
+    {
+      "id": "word-england",
+      "en": "England",
+      "zh": "英国",
+      "audio": "/audio/tts/word-england.mp3"
+    },
+    {
+      "id": "word-australia",
+      "en": "Australia",
+      "zh": "澳大利亚",
+      "audio": "/audio/tts/word-australia.mp3"
+    },
+    {
+      "id": "word-canada",
+      "en": "Canada",
+      "zh": "加拿大",
+      "audio": "/audio/tts/word-canada.mp3"
+    },
+    {
+      "id": "word-japan",
+      "en": "Japan",
+      "zh": "日本",
+      "audio": "/audio/tts/word-japan.mp3"
+    },
+    {
+      "id": "word-panda",
+      "en": "panda",
+      "zh": "熊猫",
+      "audio": "/audio/tts/word-panda.mp3"
+    },
+    {
+      "id": "word-kangaroo",
+      "en": "kangaroo",
+      "zh": "袋鼠",
+      "audio": "/audio/tts/word-kangaroo.mp3"
+    },
+    {
+      "id": "word-eagle",
+      "en": "eagle",
+      "zh": "老鹰",
+      "audio": "/audio/tts/word-eagle.mp3"
+    },
+    {
+      "id": "word-lion",
+      "en": "lion",
+      "zh": "狮子",
+      "audio": "/audio/tts/word-lion.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-from-china",
+      "en": "from China",
+      "zh": "来自中国",
+      "icon": "/images/icons/china-flag.svg",
+      "audio": "/audio/tts/phrase-from-china.mp3"
+    },
+    {
+      "id": "phrase-live-in",
+      "en": "live in",
+      "zh": "居住在",
+      "icon": "/images/icons/home.svg",
+      "audio": "/audio/tts/phrase-live-in.mp3"
+    },
+    {
+      "id": "phrase-national-animal",
+      "en": "national animal",
+      "zh": "国宝动物",
+      "icon": "/images/icons/crown-animal.svg",
+      "audio": "/audio/tts/phrase-national-animal.mp3"
+    },
+    {
+      "id": "phrase-zoo-animal",
+      "en": "zoo animal",
+      "zh": "动物园动物",
+      "icon": "/images/icons/zoo.svg",
+      "audio": "/audio/tts/phrase-zoo-animal.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I am from China.",
+      "a": "我来自中国。"
+    },
+    {
+      "q": "Pandas live in China.",
+      "a": "熊猫生活在中国。"
+    },
+    {
+      "q": "Kangaroos are from Australia.",
+      "a": "袋鼠来自澳大利亚。"
+    },
+    {
+      "q": "Where are you from?",
+      "a": "你来自哪里？"
+    },
+    {
+      "q": "The eagle is a symbol of America.",
+      "a": "老鹰是美国的象征。"
+    },
+    {
+      "q": "Lions live in Africa.",
+      "a": "狮子生活在非洲。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "China",
+              "zh": "中国"
+            },
+            {
+              "en": "America",
+              "zh": "美国"
+            },
+            {
+              "en": "England",
+              "zh": "英国"
+            },
+            {
+              "en": "Australia",
+              "zh": "澳大利亚"
+            },
+            {
+              "en": "Canada",
+              "zh": "加拿大"
+            },
+            {
+              "en": "Japan",
+              "zh": "日本"
+            }
+          ],
+          "options": [
+            {
+              "en": "panda",
+              "zh": "熊猫"
+            },
+            {
+              "en": "kangaroo",
+              "zh": "袋鼠"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "from China",
+              "zh": "来自中国"
+            },
+            {
+              "en": "live in",
+              "zh": "居住在"
+            },
+            {
+              "en": "national animal",
+              "zh": "国宝动物"
+            },
+            {
+              "en": "zoo animal",
+              "zh": "动物园动物"
+            }
+          ],
+          "options": [
+            {
+              "en": "panda",
+              "zh": "熊猫"
+            },
+            {
+              "en": "kangaroo",
+              "zh": "袋鼠"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/i-am-from-china.mp3",
+          "scrambled": [
+            "am",
+            "from",
+            "China.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "am",
+            "from",
+            "China."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/pandas-live-in-china.mp3",
+          "scrambled": [
+            "live",
+            "in",
+            "China.",
+            "Pandas"
+          ],
+          "correct": [
+            "Pandas",
+            "live",
+            "in",
+            "China."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/kangaroos-are-from-australia.mp3",
+          "scrambled": [
+            "are",
+            "from",
+            "Australia.",
+            "Kangaroos"
+          ],
+          "correct": [
+            "Kangaroos",
+            "are",
+            "from",
+            "Australia."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "来自中国",
+          "scrambledEnglish": [
+            "China",
+            "from"
+          ],
+          "correctEnglish": [
+            "from",
+            "China"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "居住在",
+          "scrambledEnglish": [
+            "in",
+            "live"
+          ],
+          "correctEnglish": [
+            "live",
+            "in"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "China",
+          "scrambledChinese": [
+            "中",
+            "国"
+          ],
+          "correctChinese": [
+            "中",
+            "国"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Pandas live ______ China.",
+      "answer": "in"
+    },
+    {
+      "type": "fillblank",
+      "text": "I am ______ Japan.",
+      "answer": "from"
+    },
+    {
+      "type": "translate",
+      "cn": "你来自哪里？",
+      "en": [
+        "Where are you from?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "熊猫是中国的国宝，主要生活在四川的竹林中。",
+    "袋鼠是澳大利亚的标志性动物，它们不会向后跳跃，只能向前跳。"
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "moduleId": "grade4-lower-mod-02",
+  "title": "Shopping and Prices",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-how",
+      "en": "how",
+      "zh": "多少",
+      "audio": "/audio/tts/word-how.mp3"
+    },
+    {
+      "id": "word-much",
+      "en": "much",
+      "zh": "多少",
+      "audio": "/audio/tts/word-much.mp3"
+    },
+    {
+      "id": "word-yuan",
+      "en": "yuan",
+      "zh": "元",
+      "audio": "/audio/tts/word-yuan.mp3"
+    },
+    {
+      "id": "word-expensive",
+      "en": "expensive",
+      "zh": "昂贵的",
+      "audio": "/audio/tts/word-expensive.mp3"
+    },
+    {
+      "id": "word-cheap",
+      "en": "cheap",
+      "zh": "便宜的",
+      "audio": "/audio/tts/word-cheap.mp3"
+    },
+    {
+      "id": "word-buy",
+      "en": "buy",
+      "zh": "买",
+      "audio": "/audio/tts/word-buy.mp3"
+    },
+    {
+      "id": "word-sell",
+      "en": "sell",
+      "zh": "卖",
+      "audio": "/audio/tts/word-sell.mp3"
+    },
+    {
+      "id": "word-shop",
+      "en": "shop",
+      "zh": "商店",
+      "audio": "/audio/tts/word-shop.mp3"
+    },
+    {
+      "id": "word-money",
+      "en": "money",
+      "zh": "钱",
+      "audio": "/audio/tts/word-money.mp3"
+    },
+    {
+      "id": "word-pay",
+      "en": "pay",
+      "zh": "支付",
+      "audio": "/audio/tts/word-pay.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-how-much",
+      "en": "How much",
+      "zh": "多少钱",
+      "icon": "/images/icons/money-question.svg",
+      "audio": "/audio/tts/phrase-how-much.mp3"
+    },
+    {
+      "id": "phrase-five-yuan",
+      "en": "five yuan",
+      "zh": "五元",
+      "icon": "/images/icons/price-tag.svg",
+      "audio": "/audio/tts/phrase-five-yuan.mp3"
+    },
+    {
+      "id": "phrase-too-expensive",
+      "en": "too expensive",
+      "zh": "太贵了",
+      "icon": "/images/icons/expensive.svg",
+      "audio": "/audio/tts/phrase-too-expensive.mp3"
+    },
+    {
+      "id": "phrase-go-shopping",
+      "en": "go shopping",
+      "zh": "去购物",
+      "icon": "/images/icons/shopping-bag.svg",
+      "audio": "/audio/tts/phrase-go-shopping.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "How much is the book?",
+      "a": "这本书多少钱？"
+    },
+    {
+      "q": "It's ten yuan.",
+      "a": "十元。"
+    },
+    {
+      "q": "This is too expensive.",
+      "a": "这个太贵了。"
+    },
+    {
+      "q": "I want to buy a pencil.",
+      "a": "我想买一支铅笔。"
+    },
+    {
+      "q": "Let's go shopping.",
+      "a": "我们去购物吧。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "how",
+              "zh": "多少"
+            },
+            {
+              "en": "much",
+              "zh": "多少"
+            },
+            {
+              "en": "yuan",
+              "zh": "元"
+            },
+            {
+              "en": "expensive",
+              "zh": "昂贵的"
+            },
+            {
+              "en": "cheap",
+              "zh": "便宜的"
+            },
+            {
+              "en": "buy",
+              "zh": "买"
+            }
+          ],
+          "options": [
+            {
+              "en": "sell",
+              "zh": "卖"
+            },
+            {
+              "en": "shop",
+              "zh": "商店"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "How much",
+              "zh": "多少钱"
+            },
+            {
+              "en": "five yuan",
+              "zh": "五元"
+            },
+            {
+              "en": "too expensive",
+              "zh": "太贵了"
+            },
+            {
+              "en": "go shopping",
+              "zh": "去购物"
+            }
+          ],
+          "options": [
+            {
+              "en": "sell",
+              "zh": "卖"
+            },
+            {
+              "en": "shop",
+              "zh": "商店"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/how-much-is-the-book.mp3",
+          "scrambled": [
+            "much",
+            "is",
+            "the",
+            "book?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "much",
+            "is",
+            "the",
+            "book?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/its-ten-yuan.mp3",
+          "scrambled": [
+            "ten",
+            "yuan.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "ten",
+            "yuan."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/this-is-too-expensive.mp3",
+          "scrambled": [
+            "is",
+            "too",
+            "expensive.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "too",
+            "expensive."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "多少钱",
+          "scrambledEnglish": [
+            "much",
+            "How"
+          ],
+          "correctEnglish": [
+            "How",
+            "much"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "五元",
+          "scrambledEnglish": [
+            "yuan",
+            "five"
+          ],
+          "correctEnglish": [
+            "five",
+            "yuan"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "how",
+          "scrambledChinese": [
+            "多",
+            "少"
+          ],
+          "correctChinese": [
+            "多",
+            "少"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "______ is the pen?",
+      "answer": "How much"
+    },
+    {
+      "type": "fillblank",
+      "text": "It's ten ______.",
+      "answer": "yuan"
+    },
+    {
+      "type": "translate",
+      "cn": "我想去买一本书。",
+      "en": [
+        "I want to buy a book."
+      ]
+    }
+  ],
+  "funFacts": [
+    "中文的\"元\"在英语中直接用\"yuan\"表示，不需要翻译成其他货币单位。",
+    "购物时，我们可以用\"How much\"来询问价格，用\"too expensive\"表示太贵了。"
+  ]
+}

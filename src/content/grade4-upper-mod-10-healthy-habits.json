@@ -1,0 +1,304 @@
+{
+  "moduleId": "grade4-upper-mod-10",
+  "title": "Healthy Habits",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "word-early",
+      "en": "early",
+      "zh": "早",
+      "audio": "/audio/tts/word-early.mp3"
+    },
+    {
+      "id": "word-late",
+      "en": "late",
+      "zh": "晚",
+      "audio": "/audio/tts/word-late.mp3"
+    },
+    {
+      "id": "word-medicine",
+      "en": "medicine",
+      "zh": "药",
+      "audio": "/audio/tts/word-medicine.mp3"
+    },
+    {
+      "id": "word-exercise",
+      "en": "exercise",
+      "zh": "运动",
+      "audio": "/audio/tts/word-exercise.mp3"
+    },
+    {
+      "id": "word-healthy",
+      "en": "healthy",
+      "zh": "健康的",
+      "audio": "/audio/tts/word-healthy.mp3"
+    },
+    {
+      "id": "word-vegetables",
+      "en": "vegetables",
+      "zh": "蔬菜",
+      "audio": "/audio/tts/word-vegetables.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-go-to-bed",
+      "en": "go to bed",
+      "zh": "上床睡觉",
+      "icon": "/images/icons/bed.svg",
+      "audio": "/audio/tts/phrase-go-to-bed.mp3"
+    },
+    {
+      "id": "phrase-a-lot-of-water",
+      "en": "a lot of water",
+      "zh": "许多水",
+      "icon": "/images/icons/water-glass.svg",
+      "audio": "/audio/tts/phrase-a-lot-of-water.mp3"
+    },
+    {
+      "id": "phrase-do-exercise",
+      "en": "do exercise",
+      "zh": "做运动",
+      "icon": "/images/icons/running.svg",
+      "audio": "/audio/tts/phrase-do-exercise.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Go to bed early.",
+      "a": "早点睡觉。"
+    },
+    {
+      "q": "Eat vegetables every day.",
+      "a": "每天吃蔬菜。"
+    },
+    {
+      "q": "Drink a lot of water.",
+      "a": "喝许多水。"
+    },
+    {
+      "q": "Do exercise every day.",
+      "a": "每天做运动。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "early",
+              "zh": "早"
+            },
+            {
+              "en": "late",
+              "zh": "晚"
+            },
+            {
+              "en": "medicine",
+              "zh": "药"
+            },
+            {
+              "en": "exercise",
+              "zh": "运动"
+            },
+            {
+              "en": "healthy",
+              "zh": "健康的"
+            },
+            {
+              "en": "vegetables",
+              "zh": "蔬菜"
+            }
+          ],
+          "options": [
+            {
+              "en": "healthy",
+              "zh": "健康的"
+            },
+            {
+              "en": "vegetables",
+              "zh": "蔬菜"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "go to bed",
+              "zh": "上床睡觉"
+            },
+            {
+              "en": "a lot of water",
+              "zh": "许多水"
+            },
+            {
+              "en": "do exercise",
+              "zh": "做运动"
+            }
+          ],
+          "options": [
+            {
+              "en": "healthy",
+              "zh": "健康的"
+            },
+            {
+              "en": "vegetables",
+              "zh": "蔬菜"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-go-to-bed.mp3",
+          "scrambled": [
+            "to",
+            "bed",
+            "go"
+          ],
+          "correct": [
+            "go",
+            "to",
+            "bed"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-a-lot-of-water.mp3",
+          "scrambled": [
+            "lot",
+            "of",
+            "water",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "lot",
+            "of",
+            "water"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/go-to-bed-early.mp3",
+          "scrambled": [
+            "to",
+            "bed",
+            "early.",
+            "Go"
+          ],
+          "correct": [
+            "Go",
+            "to",
+            "bed",
+            "early."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "上床睡觉",
+          "scrambledEnglish": [
+            "to",
+            "bed",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "to",
+            "bed"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "许多水",
+          "scrambledEnglish": [
+            "lot",
+            "of",
+            "water",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "lot",
+            "of",
+            "water"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "early",
+          "scrambledChinese": [
+            "早"
+          ],
+          "correctChinese": [
+            "早"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Take this ______.",
+      "answer": "medicine"
+    },
+    {
+      "type": "translate",
+      "cn": "每天吃一些水果。",
+      "en": [
+        "Eat some fruit every day."
+      ]
+    }
+  ],
+  "funFacts": [
+    "祈使句是用来给出命令、建议或请求的句子，通常以动词原形开头。",
+    "每天喝足够的水和进行适量运动是保持健康的关键。"
+  ]
+}

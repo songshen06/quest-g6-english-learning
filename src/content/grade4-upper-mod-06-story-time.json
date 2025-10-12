@@ -1,0 +1,291 @@
+{
+  "moduleId": "grade4-upper-mod-06",
+  "title": "Story Time",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "word-ago",
+      "en": "ago",
+      "zh": "以前",
+      "audio": "/audio/tts/word-ago.mp3"
+    },
+    {
+      "id": "word-magic",
+      "en": "magic",
+      "zh": "有魔力的",
+      "audio": "/audio/tts/word-magic.mp3"
+    },
+    {
+      "id": "word-paintbrush",
+      "en": "paintbrush",
+      "zh": "画笔",
+      "audio": "/audio/tts/word-paintbrush.mp3"
+    },
+    {
+      "id": "word-became",
+      "en": "became",
+      "zh": "变成了",
+      "audio": "/audio/tts/word-became.mp3"
+    },
+    {
+      "id": "word-real",
+      "en": "real",
+      "zh": "真实的",
+      "audio": "/audio/tts/word-real.mp3"
+    },
+    {
+      "id": "word-took",
+      "en": "took",
+      "zh": "拿走了",
+      "audio": "/audio/tts/word-took.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-long-long-ago",
+      "en": "long, long ago",
+      "zh": "很久很久以前",
+      "icon": "/images/icons/scroll.svg",
+      "audio": "/audio/tts/phrase-long-long-ago.mp3"
+    },
+    {
+      "id": "phrase-come-back",
+      "en": "come back",
+      "zh": "回来",
+      "icon": "/images/icons/return.svg",
+      "audio": "/audio/tts/phrase-come-back.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "It didn't become gold.",
+      "a": "它没有变成金子。"
+    },
+    {
+      "q": "He didn't come back.",
+      "a": "他没有回来。"
+    },
+    {
+      "q": "This old woman didn't have food.",
+      "a": "这位老妇人没有食物。"
+    },
+    {
+      "q": "Then the food became real.",
+      "a": "然后食物变成了真的。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "ago",
+              "zh": "以前"
+            },
+            {
+              "en": "magic",
+              "zh": "有魔力的"
+            },
+            {
+              "en": "paintbrush",
+              "zh": "画笔"
+            },
+            {
+              "en": "became",
+              "zh": "变成了"
+            },
+            {
+              "en": "real",
+              "zh": "真实的"
+            },
+            {
+              "en": "took",
+              "zh": "拿走了"
+            }
+          ],
+          "options": [
+            {
+              "en": "real",
+              "zh": "真实的"
+            },
+            {
+              "en": "took",
+              "zh": "拿走了"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "long, long ago",
+              "zh": "很久很久以前"
+            },
+            {
+              "en": "come back",
+              "zh": "回来"
+            }
+          ],
+          "options": [
+            {
+              "en": "real",
+              "zh": "真实的"
+            },
+            {
+              "en": "took",
+              "zh": "拿走了"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-long,-long-ago.mp3",
+          "scrambled": [
+            "long",
+            "ago",
+            "long,"
+          ],
+          "correct": [
+            "long,",
+            "long",
+            "ago"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/it-didnt-become-gold.mp3",
+          "scrambled": [
+            "didn't",
+            "become",
+            "gold.",
+            "It"
+          ],
+          "correct": [
+            "It",
+            "didn't",
+            "become",
+            "gold."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/he-didnt-come-back.mp3",
+          "scrambled": [
+            "didn't",
+            "come",
+            "back.",
+            "He"
+          ],
+          "correct": [
+            "He",
+            "didn't",
+            "come",
+            "back."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "很久很久以前",
+          "scrambledEnglish": [
+            "long",
+            "ago",
+            "long,"
+          ],
+          "correctEnglish": [
+            "long,",
+            "long",
+            "ago"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "回来",
+          "scrambledEnglish": [
+            "back",
+            "come"
+          ],
+          "correctEnglish": [
+            "come",
+            "back"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "ago",
+          "scrambledChinese": [
+            "以",
+            "前"
+          ],
+          "correctChinese": [
+            "以",
+            "前"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It became a ______!",
+      "answer": "snake"
+    },
+    {
+      "type": "translate",
+      "cn": "很久很久以前，有一个好孩子。",
+      "en": [
+        "Long, long ago, there was a good boy."
+      ]
+    }
+  ],
+  "funFacts": [
+    "《神笔马良》是中国一个非常有名的民间故事。",
+    "故事是学习新语言和了解不同文化的好方法。"
+  ]
+}

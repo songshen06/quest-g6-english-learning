@@ -7,29 +7,29 @@ import { useUserStore } from '@/store/useUserStore'
 
 // Import from unified content management
 import {
-  module01HowLong,
-  module02ChinatownTombs,
-  module03StampsHobbies,
-  module04Festivals,
-  module05PenFriends,
-  module06SchoolAnswers,
-  module07Animals,
-  module08HabitsTidy,
-  module09PeaceUN,
-  module10TravelSafety
+  grade6UpperMod01HowLong,
+  grade6UpperMod02ChinatownTombs,
+  grade6UpperMod03StampsHobbies,
+  grade6UpperMod04Festivals,
+  grade6UpperMod05PenFriends,
+  grade6UpperMod06SchoolAnswers,
+  grade6UpperMod07Animals,
+  grade6UpperMod08HabitsTidyRoom,
+  grade6UpperMod09PeaceUn,
+  grade6UpperMod10TravelSafety
 } from '@/content'
 
 const allModulesData = [
-  module01HowLong,
-  module02ChinatownTombs,
-  module03StampsHobbies,
-  module04Festivals,
-  module05PenFriends,
-  module06SchoolAnswers,
-  module07Animals,
-  module08HabitsTidy,
-  module09PeaceUN,
-  module10TravelSafety
+  grade6UpperMod01HowLong,
+  grade6UpperMod02ChinatownTombs,
+  grade6UpperMod03StampsHobbies,
+  grade6UpperMod04Festivals,
+  grade6UpperMod05PenFriends,
+  grade6UpperMod06SchoolAnswers,
+  grade6UpperMod07Animals,
+  grade6UpperMod08HabitsTidyRoom,
+  grade6UpperMod09PeaceUn,
+  grade6UpperMod10TravelSafety
 ]
 
 // Debug: Log raw module data

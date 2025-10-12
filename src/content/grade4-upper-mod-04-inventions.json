@@ -1,0 +1,259 @@
+{
+  "moduleId": "grade4-upper-mod-04",
+  "title": "Inventions",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "word-invented",
+      "en": "invented",
+      "zh": "发明了",
+      "audio": "/audio/tts/word-invented.mp3"
+    },
+    {
+      "id": "word-paper",
+      "en": "paper",
+      "zh": "纸",
+      "audio": "/audio/tts/word-paper.mp3"
+    },
+    {
+      "id": "word-printing",
+      "en": "printing",
+      "zh": "印刷术",
+      "audio": "/audio/tts/word-printing.mp3"
+    },
+    {
+      "id": "word-between",
+      "en": "between",
+      "zh": "在...之间",
+      "audio": "/audio/tts/word-between.mp3"
+    },
+    {
+      "id": "word-beside",
+      "en": "beside",
+      "zh": "在...旁边",
+      "audio": "/audio/tts/word-beside.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-in-front-of",
+      "en": "in front of",
+      "zh": "在...前面",
+      "icon": "/images/icons/arrow-up.svg",
+      "audio": "/audio/tts/phrase-in-front-of.mp3"
+    },
+    {
+      "id": "phrase-important-things",
+      "en": "important things",
+      "zh": "重要的东西",
+      "icon": "/images/icons/star.svg",
+      "audio": "/audio/tts/phrase-important-things.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Chinese people invented paper.",
+      "a": "中国人发明了纸。"
+    },
+    {
+      "q": "He invented this bicycle.",
+      "a": "他发明了这辆自行车。"
+    },
+    {
+      "q": "It's beside the house.",
+      "a": "它在房子旁边。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "invented",
+              "zh": "发明了"
+            },
+            {
+              "en": "paper",
+              "zh": "纸"
+            },
+            {
+              "en": "printing",
+              "zh": "印刷术"
+            },
+            {
+              "en": "between",
+              "zh": "在...之间"
+            },
+            {
+              "en": "beside",
+              "zh": "在...旁边"
+            },
+            {
+              "en": "in front of",
+              "zh": "在...前面"
+            }
+          ],
+          "options": [
+            {
+              "en": "between",
+              "zh": "在...之间"
+            },
+            {
+              "en": "beside",
+              "zh": "在...旁边"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-in-front-of.mp3",
+          "scrambled": [
+            "front",
+            "of",
+            "in"
+          ],
+          "correct": [
+            "in",
+            "front",
+            "of"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/chinese-people-invented-paper.mp3",
+          "scrambled": [
+            "people",
+            "invented",
+            "paper.",
+            "Chinese"
+          ],
+          "correct": [
+            "Chinese",
+            "people",
+            "invented",
+            "paper."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/he-invented-this-bicycle.mp3",
+          "scrambled": [
+            "invented",
+            "this",
+            "bicycle.",
+            "He"
+          ],
+          "correct": [
+            "He",
+            "invented",
+            "this",
+            "bicycle."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在...前面",
+          "scrambledEnglish": [
+            "front",
+            "of",
+            "in"
+          ],
+          "correctEnglish": [
+            "in",
+            "front",
+            "of"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "重要的东西",
+          "scrambledEnglish": [
+            "things",
+            "important"
+          ],
+          "correctEnglish": [
+            "important",
+            "things"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "invented",
+          "scrambledChinese": [
+            "发",
+            "明",
+            "了"
+          ],
+          "correctChinese": [
+            "发",
+            "明",
+            "了"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "The mouse is ______ the cat.",
+      "answer": "in front of"
+    },
+    {
+      "type": "translate",
+      "cn": "中国人也发明了印刷术。",
+      "en": [
+        "Chinese people invented printing, too."
+      ]
+    }
+  ],
+  "funFacts": [
+    "造纸术和印刷术是中国古代的四大发明之二。",
+    "世界上第一辆自行车是在19世纪初发明的。"
+  ]
+}

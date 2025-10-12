@@ -2,6 +2,238 @@ import { Book } from '@/types/books'
 
 export const booksData: Book[] = [
   {
+    id: 'grade4-upper',
+    title: '四年级上册',
+    subtitle: 'English Adventure Grade 4A',
+    grade: 4,
+    semester: 'upper',
+    cover: '/images/books/grade4-upper.jpg',
+    description: '四年级上册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'elementary',
+    tags: ['小学中年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g4u-ch1',
+        bookId: 'grade4-upper',
+        number: 1,
+        title: 'Unit 1: past events and friends',
+        description: 'past events and friends',
+        moduleIds: ['grade4-upper-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch2',
+        bookId: 'grade4-upper',
+        number: 2,
+        title: 'Unit 2: helping at home',
+        description: 'helping at home',
+        moduleIds: ['grade4-upper-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch3',
+        bookId: 'grade4-upper',
+        number: 3,
+        title: 'Unit 3: what i didnt do',
+        description: 'what i didnt do',
+        moduleIds: ['grade4-upper-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch4',
+        bookId: 'grade4-upper',
+        number: 4,
+        title: 'Unit 4: inventions',
+        description: 'inventions',
+        moduleIds: ['grade4-upper-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch5',
+        bookId: 'grade4-upper',
+        number: 5,
+        title: 'Unit 5: school trips',
+        description: 'school trips',
+        moduleIds: ['grade4-upper-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch6',
+        bookId: 'grade4-upper',
+        number: 6,
+        title: 'Unit 6: story time',
+        description: 'story time',
+        moduleIds: ['grade4-upper-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch7',
+        bookId: 'grade4-upper',
+        number: 7,
+        title: 'Unit 7: asking about the past',
+        description: 'asking about the past',
+        moduleIds: ['grade4-upper-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch8',
+        bookId: 'grade4-upper',
+        number: 8,
+        title: 'Unit 8: past activities',
+        description: 'past activities',
+        moduleIds: ['grade4-upper-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch9',
+        bookId: 'grade4-upper',
+        number: 9,
+        title: 'Unit 9: accidents',
+        description: 'accidents',
+        moduleIds: ['grade4-upper-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4u-ch10',
+        bookId: 'grade4-upper',
+        number: 10,
+        title: 'Unit 10: healthy habits',
+        description: 'healthy habits',
+        moduleIds: ['grade4-upper-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade4-lower',
+    title: '四年级下册',
+    subtitle: 'English Adventure Grade 4B',
+    grade: 4,
+    semester: 'lower',
+    cover: '/images/books/grade4-lower.jpg',
+    description: '四年级下册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'elementary',
+    tags: ['小学中年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g4l-ch1',
+        bookId: 'grade4-lower',
+        number: 1,
+        title: 'Unit 1: rules and warnings',
+        description: 'rules and warnings',
+        moduleIds: ['grade4-lower-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch2',
+        bookId: 'grade4-lower',
+        number: 2,
+        title: 'Unit 2: shopping and prices',
+        description: 'shopping and prices',
+        moduleIds: ['grade4-lower-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch3',
+        bookId: 'grade4-lower',
+        number: 3,
+        title: 'Unit 3: storytelling',
+        description: 'storytelling',
+        moduleIds: ['grade4-lower-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch4',
+        bookId: 'grade4-lower',
+        number: 4,
+        title: 'Unit 4: music and feelings',
+        description: 'music and feelings',
+        moduleIds: ['grade4-lower-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch5',
+        bookId: 'grade4-lower',
+        number: 5,
+        title: 'Unit 5: present activities',
+        description: 'present activities',
+        moduleIds: ['grade4-lower-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch6',
+        bookId: 'grade4-lower',
+        number: 6,
+        title: 'Unit 6: future plans suggestions',
+        description: 'future plans suggestions',
+        moduleIds: ['grade4-lower-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch7',
+        bookId: 'grade4-lower',
+        number: 7,
+        title: 'Unit 7: telling the time',
+        description: 'telling the time',
+        moduleIds: ['grade4-lower-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch8',
+        bookId: 'grade4-lower',
+        number: 8,
+        title: 'Unit 8: directions and locations',
+        description: 'directions and locations',
+        moduleIds: ['grade4-lower-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch9',
+        bookId: 'grade4-lower',
+        number: 9,
+        title: 'Unit 9: countries and animals',
+        description: 'countries and animals',
+        moduleIds: ['grade4-lower-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g4l-ch10',
+        bookId: 'grade4-lower',
+        number: 10,
+        title: 'Unit 10: holiday plans',
+        description: 'holiday plans',
+        moduleIds: ['grade4-lower-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
     id: 'grade5-upper',
     title: '五年级上册',
     subtitle: 'English Adventure Grade 5A',

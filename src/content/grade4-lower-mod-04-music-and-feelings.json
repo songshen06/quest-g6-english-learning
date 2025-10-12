@@ -1,0 +1,344 @@
+{
+  "moduleId": "grade4-lower-mod-04",
+  "title": "Music and Feelings",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-music",
+      "en": "music",
+      "zh": "音乐",
+      "audio": "/audio/tts/word-music.mp3"
+    },
+    {
+      "id": "word-song",
+      "en": "song",
+      "zh": "歌曲",
+      "audio": "/audio/tts/word-song.mp3"
+    },
+    {
+      "id": "word-sing",
+      "en": "sing",
+      "zh": "唱歌",
+      "audio": "/audio/tts/word-sing.mp3"
+    },
+    {
+      "id": "word-dance",
+      "en": "dance",
+      "zh": "跳舞",
+      "audio": "/audio/tts/word-dance.mp3"
+    },
+    {
+      "id": "word-play",
+      "en": "play",
+      "zh": "演奏",
+      "audio": "/audio/tts/word-play.mp3"
+    },
+    {
+      "id": "word-happy",
+      "en": "happy",
+      "zh": "快乐的",
+      "audio": "/audio/tts/word-happy.mp3"
+    },
+    {
+      "id": "word-sad",
+      "en": "sad",
+      "zh": "伤心的",
+      "audio": "/audio/tts/word-sad.mp3"
+    },
+    {
+      "id": "word-excited",
+      "en": "excited",
+      "zh": "兴奋的",
+      "audio": "/audio/tts/word-excited.mp3"
+    },
+    {
+      "id": "word-piano",
+      "en": "piano",
+      "zh": "钢琴",
+      "audio": "/audio/tts/word-piano.mp3"
+    },
+    {
+      "id": "word-guitar",
+      "en": "guitar",
+      "zh": "吉他",
+      "audio": "/audio/tts/word-guitar.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-listen-music",
+      "en": "listen to music",
+      "zh": "听音乐",
+      "icon": "/images/icons/headphones.svg",
+      "audio": "/audio/tts/phrase-listen-music.mp3"
+    },
+    {
+      "id": "phrase-sing-song",
+      "en": "sing a song",
+      "zh": "唱歌",
+      "icon": "/images/icons/microphone.svg",
+      "audio": "/audio/tts/phrase-sing-song.mp3"
+    },
+    {
+      "id": "phrase-play-piano",
+      "en": "play the piano",
+      "zh": "弹钢琴",
+      "icon": "/images/icons/piano.svg",
+      "audio": "/audio/tts/phrase-play-piano.mp3"
+    },
+    {
+      "id": "phrase-feel-happy",
+      "en": "feel happy",
+      "zh": "感到快乐",
+      "icon": "/images/icons/happy-face.svg",
+      "audio": "/audio/tts/phrase-feel-happy.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I like listening to music.",
+      "a": "我喜欢听音乐。"
+    },
+    {
+      "q": "Can you sing a song for me?",
+      "a": "你能为我唱首歌吗？"
+    },
+    {
+      "q": "She plays the piano very well.",
+      "a": "她钢琴弹得很好。"
+    },
+    {
+      "q": "This music makes me happy.",
+      "a": "这首音乐让我感到快乐。"
+    },
+    {
+      "q": "Let's dance together!",
+      "a": "我们一起跳舞吧！"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "music",
+              "zh": "音乐"
+            },
+            {
+              "en": "song",
+              "zh": "歌曲"
+            },
+            {
+              "en": "sing",
+              "zh": "唱歌"
+            },
+            {
+              "en": "dance",
+              "zh": "跳舞"
+            },
+            {
+              "en": "play",
+              "zh": "演奏"
+            },
+            {
+              "en": "happy",
+              "zh": "快乐的"
+            }
+          ],
+          "options": [
+            {
+              "en": "sad",
+              "zh": "伤心的"
+            },
+            {
+              "en": "excited",
+              "zh": "兴奋的"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "listen to music",
+              "zh": "听音乐"
+            },
+            {
+              "en": "sing a song",
+              "zh": "唱歌"
+            },
+            {
+              "en": "play the piano",
+              "zh": "弹钢琴"
+            },
+            {
+              "en": "feel happy",
+              "zh": "感到快乐"
+            }
+          ],
+          "options": [
+            {
+              "en": "sad",
+              "zh": "伤心的"
+            },
+            {
+              "en": "excited",
+              "zh": "兴奋的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-listen-to-music.mp3",
+          "scrambled": [
+            "to",
+            "music",
+            "listen"
+          ],
+          "correct": [
+            "listen",
+            "to",
+            "music"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-sing-a-song.mp3",
+          "scrambled": [
+            "a",
+            "song",
+            "sing"
+          ],
+          "correct": [
+            "sing",
+            "a",
+            "song"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/phrase-play-the-piano.mp3",
+          "scrambled": [
+            "the",
+            "piano",
+            "play"
+          ],
+          "correct": [
+            "play",
+            "the",
+            "piano"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "听音乐",
+          "scrambledEnglish": [
+            "to",
+            "music",
+            "listen"
+          ],
+          "correctEnglish": [
+            "listen",
+            "to",
+            "music"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "唱歌",
+          "scrambledEnglish": [
+            "a",
+            "song",
+            "sing"
+          ],
+          "correctEnglish": [
+            "sing",
+            "a",
+            "song"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "music",
+          "scrambledChinese": [
+            "音",
+            "乐"
+          ],
+          "correctChinese": [
+            "音",
+            "乐"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I like ______ to music.",
+      "answer": "listening"
+    },
+    {
+      "type": "fillblank",
+      "text": "She can ______ the piano.",
+      "answer": "play"
+    },
+    {
+      "type": "translate",
+      "cn": "这首歌让我感到快乐。",
+      "en": [
+        "This song makes me happy."
+      ]
+    }
+  ],
+  "funFacts": [
+    "音乐能够影响人的情绪，快乐的音乐通常节奏较快，而悲伤的音乐节奏较慢。",
+    "学习音乐可以帮助提高语言能力和记忆力，这就是为什么很多儿歌都很有教育意义。"
+  ]
+}

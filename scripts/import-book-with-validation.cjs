@@ -643,6 +643,210 @@ function updateModulePageFile(modules) {
   console.log('✓ ModulePage.tsx 更新完成');
 }
 
+// 更新统一内容管理系统
+function updateContentIndexFile(modules) {
+  console.log('📝 更新 src/content/index.ts...');
+
+  const CONTENT_INDEX_FILE = path.join(__dirname, '../src/content/index.ts');
+
+  if (!fs.existsSync(CONTENT_INDEX_FILE)) {
+    console.error('❌ src/content/index.ts 文件不存在');
+    return;
+  }
+
+  // 按年级分组模块
+  const gradeGroups = {};
+  modules.forEach(module => {
+    const grade = module.grade;
+    const semester = module.semester;
+    const key = `grade${grade}-${semester}`;
+
+    if (!gradeGroups[key]) {
+      gradeGroups[key] = [];
+    }
+    gradeGroups[key].push(module);
+  });
+
+  // 生成导入语句
+  const imports = [];
+  const exports = [];
+  const mappings = [];
+
+  Object.entries(gradeGroups).forEach(([gradeKey, modules]) => {
+    const [grade, semester] = gradeKey.split('-');
+    const gradeName = getGradeName(parseInt(grade));
+
+    imports.push(`// ${gradeName}册模块 (Grade ${grade} ${semester === 'upper' ? 'Upper' : 'Lower'})`);
+
+    modules.forEach((module, index) => {
+      const varName = generateVariableName(module);
+      const filePath = `./${module.filename}.json`;
+
+      imports.push(`import ${varName} from '${filePath}'`);
+      exports.push(`export { ${varName} }`);
+
+      // 添加映射
+      mappings.push(`  '${module.moduleId}': ${varName},`);
+      const shortId = `${grade[0]}${semester[0]}-${String(index + 1).padStart(2, '0')}`;
+      mappings.push(`  '${shortId}': ${varName},`);
+    });
+
+    imports.push(''); // 空行分隔
+    exports.push(''); // 空行分隔
+  });
+
+  // 读取现有文件内容
+  let content = fs.readFileSync(CONTENT_INDEX_FILE, 'utf8');
+
+  // 找到导入区域和映射区域
+  const importsStart = content.indexOf('// 统一的内容管理模块');
+  const moduleDataStart = content.indexOf('export const moduleData = {');
+
+  if (importsStart === -1 || moduleDataStart === -1) {
+    console.error('❌ 无法找到内容管理文件的正确区域');
+    return;
+  }
+
+  // 构建新内容
+  const beforeImports = content.substring(0, importsStart);
+  const beforeModuleData = content.substring(moduleDataStart);
+
+  const newImportsSection = [
+    '// 统一的内容管理模块',
+    '// 所有JSON文件都在这里集中导入和管理',
+    '',
+    ...imports,
+    '// 重新导出所有模块数据',
+    ...exports,
+    '',
+    '// 模块数据映射 - 支持多种访问方式',
+    'export const moduleData = {',
+    ...mappings,
+    '};',
+    '',
+    beforeModuleData
+  ].join('\n');
+
+  fs.writeFileSync(CONTENT_INDEX_FILE, newImportsSection, 'utf8');
+  console.log('✓ src/content/index.ts 更新完成');
+}
+
+// 生成变量名
+function generateVariableName(module) {
+  const cleanName = module.filename
+    .replace(/^grade(\d+)-/, '') // 移除年级前缀
+    .replace(/-/g, ' ') // 替换连字符为空格
+    .replace(/\b\w/g, (match) => match.toUpperCase()) // 首字母大写
+    .replace(/\s/g, ''); // 移除空格
+
+  return cleanName + 'Data';
+}
+
+// 获取年级名称
+function getGradeName(grade) {
+  const gradeNames = {
+    1: '一',
+    2: '二',
+    3: '三',
+    4: '四',
+    5: '五',
+    6: '六'
+  };
+  return gradeNames[grade] || grade;
+}
+
+// 检查并生成缺失的音频文件
+function checkAndGenerateMissingAudio(modules) {
+  console.log('\n🎵 检查音频文件...');
+
+  const fs = require('fs');
+  const path = require('path');
+  const { execSync } = require('child_process');
+
+  const projectRoot = path.resolve(__dirname, '..');
+  const audioDir = path.join(projectRoot, 'public', 'audio', 'tts');
+
+  // 确保音频目录存在
+  if (!fs.existsSync(audioDir)) {
+    fs.mkdirSync(audioDir, { recursive: true });
+  }
+
+  // 收集所有需要的音频文件
+  const requiredAudioFiles = new Set();
+
+  modules.forEach(module => {
+    // 读取模块JSON文件获取音频需求
+    const moduleFilePath = path.join(projectRoot, 'src', 'content', `${module.filename}.json`);
+    if (fs.existsSync(moduleFilePath)) {
+      try {
+        const moduleData = JSON.parse(fs.readFileSync(moduleFilePath, 'utf8'));
+
+        // 收集单词音频
+        moduleData.words?.forEach(word => {
+          if (word.audio) {
+            const filename = path.basename(word.audio);
+            requiredAudioFiles.add(filename);
+          }
+        });
+
+        // 收集短语音频
+        moduleData.phrases?.forEach(phrase => {
+          if (phrase.audio) {
+            const filename = path.basename(phrase.audio);
+            requiredAudioFiles.add(filename);
+          }
+        });
+
+        // 收集任务音频
+        moduleData.quests?.forEach(quest => {
+          quest.steps?.forEach(step => {
+            if (step.audio) {
+              const filename = path.basename(step.audio);
+              requiredAudioFiles.add(filename);
+            }
+          });
+        });
+
+      } catch (error) {
+        console.warn(`⚠️  无法读取模块文件 ${module.filename}: ${error.message}`);
+      }
+    }
+  });
+
+  // 检查哪些音频文件缺失
+  const missingAudioFiles = [];
+  requiredAudioFiles.forEach(filename => {
+    const audioPath = path.join(audioDir, filename);
+    if (!fs.existsSync(audioPath)) {
+      missingAudioFiles.push(filename);
+    }
+  });
+
+  if (missingAudioFiles.length === 0) {
+    console.log('✅ 所有音频文件都已存在，跳过音频生成');
+    return;
+  }
+
+  console.log(`🔍 发现 ${missingAudioFiles.length} 个缺失音频文件`);
+  console.log('🎵 开始生成缺失的音频文件...');
+
+  try {
+    // 运行音频生成脚本（它会自动跳过已存在的文件）
+    const result = execSync('python generate_audio.py', {
+      cwd: projectRoot,
+      stdio: 'inherit',
+      timeout: 300000 // 5分钟超时
+    });
+
+    console.log('✅ 音频生成完成');
+
+  } catch (error) {
+    console.warn(`⚠️  音频生成遇到问题: ${error.message}`);
+    console.log('📝 音频生成失败，但应用核心功能仍可正常使用');
+    console.log('💡 你可以稍后手动运行: python generate_audio.py');
+  }
+}
+
 // 主函数
 function main() {
   console.log('🚀 开始带验证的自动化书籍导入...\n');
@@ -670,8 +874,13 @@ function main() {
 
     // 3. 更新文件
     updateBooksFile(booksData);
+    // 更新统一内容管理系统
+    updateContentIndexFile(modules);
+    // 更新模块页面组件
     updateBookModulesPageFile(modules);
-    updateModulePageFile(modules);
+
+    // 4. 检查并生成缺失的音频文件
+    checkAndGenerateMissingAudio(modules);
 
     console.log('\n' + '='.repeat(60));
     console.log('✅ 带验证的自动化导入完成！');

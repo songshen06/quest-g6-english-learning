@@ -1,0 +1,354 @@
+{
+  "moduleId": "grade4-lower-mod-05",
+  "title": "Present Activities",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "word-doing",
+      "en": "doing",
+      "zh": "正在做",
+      "audio": "/audio/tts/word-doing.mp3"
+    },
+    {
+      "id": "word-reading",
+      "en": "reading",
+      "zh": "正在读",
+      "audio": "/audio/tts/word-reading.mp3"
+    },
+    {
+      "id": "word-writing",
+      "en": "writing",
+      "zh": "正在写",
+      "audio": "/audio/tts/word-writing.mp3"
+    },
+    {
+      "id": "word-drawing",
+      "en": "drawing",
+      "zh": "正在画",
+      "audio": "/audio/tts/word-drawing.mp3"
+    },
+    {
+      "id": "word-eating",
+      "en": "eating",
+      "zh": "正在吃",
+      "audio": "/audio/tts/word-eating.mp3"
+    },
+    {
+      "id": "word-drinking",
+      "en": "drinking",
+      "zh": "正在喝",
+      "audio": "/audio/tts/word-drinking.mp3"
+    },
+    {
+      "id": "word-playing",
+      "en": "playing",
+      "zh": "正在玩",
+      "audio": "/audio/tts/word-playing.mp3"
+    },
+    {
+      "id": "word-sleeping",
+      "en": "sleeping",
+      "zh": "正在睡觉",
+      "audio": "/audio/tts/word-sleeping.mp3"
+    },
+    {
+      "id": "word-cooking",
+      "en": "cooking",
+      "zh": "正在做饭",
+      "audio": "/audio/tts/word-cooking.mp3"
+    },
+    {
+      "id": "word-working",
+      "en": "working",
+      "zh": "正在工作",
+      "audio": "/audio/tts/word-working.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-what-doing",
+      "en": "What are you doing?",
+      "zh": "你在做什么？",
+      "icon": "/images/icons/question-mark.svg",
+      "audio": "/audio/tts/phrase-what-doing.mp3"
+    },
+    {
+      "id": "phrase-i-am-doing",
+      "en": "I am doing",
+      "zh": "我正在做",
+      "icon": "/images/icons/person-action.svg",
+      "audio": "/audio/tts/phrase-i-am-doing.mp3"
+    },
+    {
+      "id": "phrase-he-is-reading",
+      "en": "He is reading",
+      "zh": "他正在读书",
+      "icon": "/images/icons/reading-book.svg",
+      "audio": "/audio/tts/phrase-he-is-reading.mp3"
+    },
+    {
+      "id": "phrase-they-are-playing",
+      "en": "They are playing",
+      "zh": "他们正在玩",
+      "icon": "/images/icons/children-playing.svg",
+      "audio": "/audio/tts/phrase-they-are-playing.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What are you doing?",
+      "a": "你在做什么？"
+    },
+    {
+      "q": "I am reading a book.",
+      "a": "我正在读一本书。"
+    },
+    {
+      "q": "She is drawing a picture.",
+      "a": "她正在画一幅画。"
+    },
+    {
+      "q": "They are playing football.",
+      "a": "他们正在踢足球。"
+    },
+    {
+      "q": "What is he doing?",
+      "a": "他在做什么？"
+    },
+    {
+      "q": "He is doing his homework.",
+      "a": "他正在做作业。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "doing",
+              "zh": "正在做"
+            },
+            {
+              "en": "reading",
+              "zh": "正在读"
+            },
+            {
+              "en": "writing",
+              "zh": "正在写"
+            },
+            {
+              "en": "drawing",
+              "zh": "正在画"
+            },
+            {
+              "en": "eating",
+              "zh": "正在吃"
+            },
+            {
+              "en": "drinking",
+              "zh": "正在喝"
+            }
+          ],
+          "options": [
+            {
+              "en": "playing",
+              "zh": "正在玩"
+            },
+            {
+              "en": "sleeping",
+              "zh": "正在睡觉"
+            }
+          ]
+        },
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第2部分)",
+          "pairs": [
+            {
+              "en": "What are you doing?",
+              "zh": "你在做什么？"
+            },
+            {
+              "en": "I am doing",
+              "zh": "我正在做"
+            },
+            {
+              "en": "He is reading",
+              "zh": "他正在读书"
+            },
+            {
+              "en": "They are playing",
+              "zh": "他们正在玩"
+            }
+          ],
+          "options": [
+            {
+              "en": "playing",
+              "zh": "正在玩"
+            },
+            {
+              "en": "sleeping",
+              "zh": "正在睡觉"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/phrase-what-are-you-doing?.mp3",
+          "scrambled": [
+            "are",
+            "you",
+            "doing?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "are",
+            "you",
+            "doing?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/phrase-i-am-doing.mp3",
+          "scrambled": [
+            "am",
+            "doing",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "am",
+            "doing"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/phrase-he-is-reading.mp3",
+          "scrambled": [
+            "is",
+            "reading",
+            "He"
+          ],
+          "correct": [
+            "He",
+            "is",
+            "reading"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你在做什么？",
+          "scrambledEnglish": [
+            "are",
+            "you",
+            "doing?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "are",
+            "you",
+            "doing?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我正在做",
+          "scrambledEnglish": [
+            "am",
+            "doing",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "am",
+            "doing"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英文句子翻译成正确的中文单词顺序",
+          "english": "doing",
+          "scrambledChinese": [
+            "正",
+            "在",
+            "做"
+          ],
+          "correctChinese": [
+            "正",
+            "在",
+            "做"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "What ______ you doing?",
+      "answer": "are"
+    },
+    {
+      "type": "fillblank",
+      "text": "I ______ reading a book.",
+      "answer": "am"
+    },
+    {
+      "type": "translate",
+      "cn": "他正在做什么？",
+      "en": [
+        "What is he doing?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "现在进行时（present continuous tense）用来描述正在进行的动作，通常由\"be动词 + 动词-ing\"构成。",
+    "在英语中，我们用\"What are you doing?\"来询问别人正在做什么，这是日常对话中很常用的表达。"
+  ]
+}
