@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA 安装调试工具</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+        button {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #4f46e5;
+        }
+        button:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+        .details {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+        .icon-preview {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            align-items: center;
+        }
+        .icon-item {
+            text-align: center;
+        }
+        .icon-item img {
+            width: 64px;
+            height: 64px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 PWA 安装调试工具</h1>
+        <p>此工具帮助诊断 PWA 安装问题，检查浏览器兼容性和安装条件。</p>
+
+        <div id="browser-info" class="status info">
+            正在检查浏览器兼容性...
+        </div>
+
+        <div id="pwa-status" class="status info">
+            正在检查 PWA 状态...
+        </div>
+
+        <div id="install-status" class="status info">
+            正在检查安装条件...
+        </div>
+
+        <div class="icon-preview">
+            <div class="icon-item">
+                <img src="pwa-icon.svg" alt="PWA Icon SVG">
+                <div>SVG 图标</div>
+            </div>
+            <div class="icon-item">
+                <img src="pwa-192x192.png" alt="PWA Icon 192">
+                <div>192x192 PNG</div>
+            </div>
+            <div class="icon-item">
+                <img src="pwa-512x512.png" alt="PWA Icon 512">
+                <div>512x512 PNG</div>
+            </div>
+        </div>
+
+        <h3>📋 系统信息</h3>
+        <div id="system-details" class="details">
+            正在收集系统信息...
+        </div>
+
+        <h3>🔍 PWA 检查结果</h3>
+        <div id="pwa-details" class="details">
+            正在检查 PWA 功能...
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button id="check-btn" onclick="runChecks()">🔍 重新检查</button>
+            <button id="install-btn" onclick="tryInstall()" disabled>📱 尝试安装</button>
+            <button id="debug-btn" onclick="enableDebug()">🐛 启用调试</button>
+        </div>
+
+        <h3>📝 安装指南</h3>
+        <div class="info">
+            <h4>桌面浏览器 (Chrome/Edge):</h4>
+            <ul>
+                <li>确保使用 HTTPS 或 localhost</li>
+                <li>查找地址栏的安装图标 (⊕)</li>
+                <li>或者等待自动安装提示</li>
+            </ul>
+
+            <h4>移动设备:</h4>
+            <ul>
+                <li><strong>Android Chrome:</strong> 菜单中查找"添加到主屏幕"</li>
+                <li><strong>iOS Safari:</strong> 分享按钮 → "添加到主屏幕"</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let deferredPrompt = null;
+        let debugMode = false;
+
+        function log(message, type = 'info') {
+            if (debugMode) {
+                console.log(`[PWA Debug] ${message}`);
+            }
+        }
+
+        function updateStatus(id, message, type = 'info') {
+            const element = document.getElementById(id);
+            element.textContent = message;
+            element.className = `status ${type}`;
+        }
+
+        function updateDetails(id, content) {
+            document.getElementById(id).textContent = content;
+        }
+
+        function runChecks() {
+            log('开始运行 PWA 检查...');
+
+            // 1. 检查浏览器兼容性
+            checkBrowserCompatibility();
+
+            // 2. 检查 PWA 状态
+            checkPWAStatus();
+
+            // 3. 检查安装条件
+            checkInstallConditions();
+
+            // 4. 收集系统信息
+            collectSystemInfo();
+        }
+
+        function checkBrowserCompatibility() {
+            log('检查浏览器兼容性...');
+
+            const userAgent = navigator.userAgent;
+            const isChrome = /Chrome/.test(userAgent) && /Google Inc/.test(navigator.vendor);
+            const isFirefox = /Firefox/.test(userAgent);
+            const isSafari = /Safari/.test(userAgent) && /Apple Computer/.test(navigator.vendor);
+            const isEdge = /Edg/.test(userAgent);
+            const isIOS = /iPad|iPhone|iPod/.test(userAgent);
+            const isAndroid = /Android/.test(userAgent);
+
+            let compatibility = "✅ 支持良好";
+            let details = `浏览器: ${userAgent}\n`;
+
+            if (isIOS) {
+                compatibility = "⚠️ iOS 设备 - 需要手动安装";
+                details += "iOS: 是\n";
+                details += "PWA 支持: 有限\n";
+                details += "安装方式: Safari 分享菜单 → 添加到主屏幕\n";
+            } else if (isChrome || isEdge) {
+                details += "PWA 支持: 完整\n";
+                details += "自动安装: 支持\n";
+            } else if (isFirefox) {
+                details += "PWA 支持: 部分支持\n";
+                compatibility = "⚠️ Firefox - 有限支持";
+            } else {
+                compatibility = "❌ 浏览器不支持";
+                details += "PWA 支持: 不支持\n";
+            }
+
+            details += `平台: ${isIOS ? 'iOS' : isAndroid ? 'Android' : 'Desktop'}\n`;
+            details += `HTTPS: ${location.protocol === 'https:' ? '是' : '否'}\n`;
+
+            updateStatus('browser-info', compatibility, isIOS || (!isChrome && !isEdge) ? 'warning' : 'success');
+            updateDetails('system-details', details);
+        }
+
+        function checkPWAStatus() {
+            log('检查 PWA 状态...');
+
+            let status = "🔍 PWA 检查中...";
+            let details = "";
+            let statusType = 'info';
+
+            // 检查 Service Worker
+            if ('serviceWorker' in navigator) {
+                details += "✅ Service Worker API: 支持\n";
+
+                navigator.serviceWorker.getRegistrations().then(registrations => {
+                    if (registrations.length > 0) {
+                        details += `✅ Service Worker 已注册: ${registrations.length} 个\n`;
+                        registrations.forEach((reg, index) => {
+                            details += `  - ${reg.scope} (${reg.active ? '活跃' : '未激活'})\n`;
+                        });
+                    } else {
+                        details += "⚠️ Service Worker: 未注册\n";
+                        statusType = 'warning';
+                    }
+                    updateDetails('pwa-details', details);
+                });
+            } else {
+                details += "❌ Service Worker API: 不支持\n";
+                statusType = 'error';
+            }
+
+            // 检查 Web App Manifest
+            if ('onbeforeinstallprompt' in window) {
+                details += "✅ beforeinstallprompt 事件: 支持\n";
+            } else {
+                details += "⚠️ beforeinstallprompt 事件: 不支持 (可能影响自动安装)\n";
+                statusType = 'warning';
+            }
+
+            // 检查是否已安装
+            const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+            const isWebAppiOS = (window.navigator as any).standalone === true;
+
+            if (isStandalone || isWebAppiOS) {
+                status = "✅ PWA 已安装";
+                statusType = 'success';
+                details += "✅ 应用模式: 是\n";
+            } else {
+                status = "📱 PWA 未安装 - 可以安装";
+                details += "📱 应用模式: 否 (可以安装)\n";
+            }
+
+            updateStatus('pwa-status', status, statusType);
+        }
+
+        function checkInstallConditions() {
+            log('检查安装条件...');
+
+            let status = "🔍 检查安装条件...";
+            let details = "";
+            let canInstall = false;
+
+            // 检查 HTTPS
+            if (location.protocol === 'https:' || location.hostname === 'localhost') {
+                details += "✅ 安全连接: 是\n";
+                canInstall = true;
+            } else {
+                details += "❌ 安全连接: 否 (需要 HTTPS)\n";
+                status = "❌ 不满足安装条件";
+                updateStatus('install-status', status, 'error');
+                return;
+            }
+
+            // 检查 Manifest
+            fetch('manifest.webmanifest')
+                .then(response => {
+                    if (response.ok) {
+                        details += "✅ Manifest 文件: 可访问\n";
+                        return response.json();
+                    } else {
+                        throw new Error('Manifest 不可访问');
+                    }
+                })
+                .then(manifest => {
+                    details += `✅ 应用名称: ${manifest.name}\n`;
+                    details += `✅ 图标数量: ${manifest.icons ? manifest.icons.length : 0}\n`;
+
+                    // 检查图标文件
+                    if (manifest.icons && manifest.icons.length > 0) {
+                        const iconCheck = manifest.icons[0];
+                        fetch(iconCheck.src)
+                            .then(iconResponse => {
+                                if (iconResponse.ok) {
+                                    details += `✅ 图标文件: 可访问\n`;
+                                    status = "✅ 满足安装条件";
+                                    document.getElementById('install-btn').disabled = false;
+                                } else {
+                                    details += `⚠️ 图标文件: 不可访问\n`;
+                                    status = "⚠️ 部分条件满足";
+                                }
+                                updateStatus('install-status', status, canInstall ? 'success' : 'warning');
+                                updateDetails('pwa-details', details);
+                            });
+                    }
+                })
+                .catch(error => {
+                    details += `❌ Manifest 错误: ${error.message}\n`;
+                    status = "❌ 不满足安装条件";
+                    updateStatus('install-status', status, 'error');
+                    updateDetails('pwa-details', details);
+                });
+        }
+
+        function collectSystemInfo() {
+            log('收集系统信息...');
+
+            const info = {
+                userAgent: navigator.userAgent,
+                platform: navigator.platform,
+                language: navigator.language,
+                cookieEnabled: navigator.cookieEnabled,
+                onLine: navigator.onLine,
+                protocol: location.protocol,
+                hostname: location.hostname,
+                port: location.port,
+                pathname: location.pathname,
+                screen: `${screen.width}x${screen.height}`,
+                devicePixelRatio: window.devicePixelRatio,
+                timestamp: new Date().toISOString()
+            };
+
+            const details = Object.entries(info)
+                .map(([key, value]) => `${key}: ${value}`)
+                .join('\n');
+
+            updateDetails('system-details', details);
+        }
+
+        function tryInstall() {
+            log('尝试触发安装...');
+
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        log('用户接受了安装');
+                        updateStatus('install-status', '✅ 安装已接受！', 'success');
+                    } else {
+                        log('用户拒绝了安装');
+                        updateStatus('install-status', '❌ 用户拒绝了安装', 'warning');
+                    }
+                    deferredPrompt = null;
+                });
+            } else {
+                updateStatus('install-status', '❌ 无可用安装提示', 'warning');
+                log('无 deferredPrompt 可用');
+            }
+        }
+
+        function enableDebug() {
+            debugMode = !debugMode;
+            const btn = document.getElementById('debug-btn');
+            btn.textContent = debugMode ? '🔇 关闭调试' : '🐛 启用调试';
+
+            if (debugMode) {
+                console.log('🐛 PWA 调试模式已启用');
+                console.log('使用以下命令手动检查:');
+                console.log('- navigator.serviceWorker.getRegistrations()');
+                console.log('- window.matchMedia("(display-mode: standalone)").matches');
+                console.log('- 检查 beforeinstallprompt 事件');
+            }
+        }
+
+        // 监听 beforeinstallprompt 事件
+        window.addEventListener('beforeinstallprompt', (e) => {
+            log('beforeinstallprompt 事件触发！');
+            e.preventDefault();
+            deferredPrompt = e;
+
+            updateStatus('install-status', '🎯 PWA 可以安装！', 'success');
+            document.getElementById('install-btn').disabled = false;
+
+            if (debugMode) {
+                console.log('🎯 beforeinstallprompt 事件详情:', e);
+            }
+        });
+
+        // 监听安装成功事件
+        window.addEventListener('appinstalled', () => {
+            log('appinstalled 事件触发！');
+            updateStatus('pwa-status', '🎉 PWA 安装成功！', 'success');
+            updateStatus('install-status', '✅ 已安装', 'success');
+            document.getElementById('install-btn').disabled = true;
+        });
+
+        // 页面加载时自动运行检查
+        window.addEventListener('load', () => {
+            log('页面加载完成，开始检查...');
+            setTimeout(runChecks, 1000);
+        });
+
+        // 立即运行基础检查
+        runChecks();
+    </script>
+</body>
+</html>

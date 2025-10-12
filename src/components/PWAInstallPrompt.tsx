@@ -56,11 +56,20 @@ export const PWAInstallPrompt: React.FC = () => {
 
     // 延迟检查，确保页面完全加载后再显示
     const timer = setTimeout(() => {
-      if (!deferredPrompt && !isInstalled && !isIOS) {
+      if (!isInstalled && !isIOS) {
         console.log('🔍 3秒后检查PWA安装提示状态')
-        // 在生产环境中，如果还没有收到beforeinstallprompt事件，显示一个手动安装提示
+        console.log('📱 PWA状态:', {
+          hasDeferredPrompt: !!deferredPrompt,
+          isInstalled,
+          isIOS,
+          hostname: window.location.hostname,
+          userAgent: navigator.userAgent.substring(0, 50)
+        })
+
+        // 在生产环境中，即使没有deferredPrompt也显示手动安装提示
         if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
           setShowPrompt(true)
+          console.log('📱 显示手动安装提示 (GitHub Pages 环境)')
         }
       }
     }, 3000)
@@ -74,8 +83,43 @@ export const PWAInstallPrompt: React.FC = () => {
 
   const handleInstall = async () => {
     if (!deferredPrompt) {
-      // 如果没有deferredPrompt，显示手动安装说明
-      alert('请在浏览器菜单中找到"添加到主屏幕"或"安装应用"选项')
+      // 如果没有deferredPrompt，显示详细的手动安装说明
+      const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)
+      const isEdge = /Edg/.test(navigator.userAgent)
+      const isFirefox = /Firefox/.test(navigator.userAgent)
+
+      let instructions = ''
+
+      if (isChrome || isEdge) {
+        instructions = `在 Chrome/Edge 浏览器中安装：
+
+方法1 - 查找地址栏图标：
+• 查看地址栏右侧是否有 ⊕ 安装图标
+• 点击安装图标并确认
+
+方法2 - 通过菜单：
+• 点击右上角三个点菜单
+• 选择"安装应用"或"添加到主屏幕"
+• 确认安装
+
+如果看不到安装选项，请确保：
+• 使用最新版本的 Chrome 或 Edge
+• 页面已完全加载
+• 网络连接正常`
+      } else if (isFirefox) {
+        instructions = `在 Firefox 浏览器中：
+
+• 点击地址栏右侧的 "+" 图标
+• 或者通过菜单选择"安装此站点为应用"`
+      } else {
+        instructions = `请在浏览器菜单中查找"添加到主屏幕"或"安装应用"选项
+
+如果使用移动设备：
+• Android: 浏览器菜单 → 添加到主屏幕
+• iOS: Safari 分享按钮 → 添加到主屏幕`
+      }
+
+      alert(instructions)
       return
     }
 
@@ -93,6 +137,7 @@ export const PWAInstallPrompt: React.FC = () => {
       setShowPrompt(false)
     } catch (error) {
       console.error('❌ PWA安装失败:', error)
+      alert('安装失败，请尝试手动安装。查看浏览器菜单中的"安装应用"选项。')
     }
   }
 
