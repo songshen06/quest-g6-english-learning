@@ -114,7 +114,7 @@ class PatternCoverageChecker:
                         })
 
                 step = {
-                    "type": "wordmatching" as const,
+                    "type": "wordmatching",
                     "text": f"将英语单词与短语配对 (第{i//6 + 1}部分)",
                     "pairs": step_pairs,
                     "options": options
