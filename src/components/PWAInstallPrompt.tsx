@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Download, X } from 'lucide-react'
+import { Download, X, Smartphone } from 'lucide-react'
 
 interface BeforeInstallPromptEvent extends Event {
   readonly platforms: string[]
@@ -14,11 +14,20 @@ export const PWAInstallPrompt: React.FC = () => {
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [showPrompt, setShowPrompt] = useState(false)
   const [isInstalled, setIsInstalled] = useState(false)
+  const [isIOS, setIsIOS] = useState(false)
+  const [isStandalone, setIsStandalone] = useState(false)
 
   useEffect(() => {
     // 检查是否已经安装
     const checkInstalled = () => {
-      setIsInstalled(window.matchMedia('(display-mode: standalone)').matches)
+      const isIosApp = /iPad|iPhone|iPod/.test(navigator.userAgent)
+      const isStandaloneApp = window.matchMedia('(display-mode: standalone)').matches
+      const isInWebAppiOS = (window.navigator as any).standalone === true
+
+      setIsInstalled(isStandaloneApp || isInWebAppiOS)
+      setIsStandalone(isStandaloneApp || isInWebAppiOS)
+      setIsIOS(isIosApp)
+      console.log('📱 PWA状态检查:', { isIosApp, isStandaloneApp, isInWebAppiOS })
     }
 
     // 监听 beforeinstallprompt 事件
@@ -26,7 +35,7 @@ export const PWAInstallPrompt: React.FC = () => {
       e.preventDefault()
       setDeferredPrompt(e as BeforeInstallPromptEvent)
       setShowPrompt(true)
-      console.log('📱 PWA安装提示已准备好')
+      console.log('📱 PWA可以安装了 - beforeinstallprompt事件触发')
     }
 
     // 监听安装成功事件
@@ -35,20 +44,40 @@ export const PWAInstallPrompt: React.FC = () => {
       setDeferredPrompt(null)
       setShowPrompt(false)
       setIsInstalled(true)
+      checkInstalled()
     }
 
+    // 初始检查
     checkInstalled()
+
+    // 监听事件
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
     window.addEventListener('appinstalled', handleAppInstalled)
+
+    // 延迟检查，确保页面完全加载后再显示
+    const timer = setTimeout(() => {
+      if (!deferredPrompt && !isInstalled && !isIOS) {
+        console.log('🔍 3秒后检查PWA安装提示状态')
+        // 在生产环境中，如果还没有收到beforeinstallprompt事件，显示一个手动安装提示
+        if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+          setShowPrompt(true)
+        }
+      }
+    }, 3000)
 
     return () => {
       window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
       window.removeEventListener('appinstalled', handleAppInstalled)
+      clearTimeout(timer)
     }
-  }, [])
+  }, [deferredPrompt, isInstalled, isIOS])
 
   const handleInstall = async () => {
-    if (!deferredPrompt) return
+    if (!deferredPrompt) {
+      // 如果没有deferredPrompt，显示手动安装说明
+      alert('请在浏览器菜单中找到"添加到主屏幕"或"安装应用"选项')
+      return
+    }
 
     try {
       await deferredPrompt.prompt()
@@ -71,15 +100,52 @@ export const PWAInstallPrompt: React.FC = () => {
     setShowPrompt(false)
     // 可以选择在一段时间后重新显示
     setTimeout(() => {
-      if (deferredPrompt && !isInstalled) {
+      if (!isInstalled) {
         setShowPrompt(true)
       }
-    }, 60000) // 1分钟后重新显示
+    }, 300000) // 5分钟后重新显示
   }
 
-  // 如果已经安装或不支持PWA，不显示提示
-  if (isInstalled || (!deferredPrompt && !showPrompt)) {
+  // 如果已经安装，不显示提示
+  if (isInstalled || isStandalone) {
     return null
+  }
+
+  // iOS设备显示不同的提示
+  if (isIOS) {
+    return (
+      <div className="fixed bottom-4 left-4 right-4 z-50 max-w-md mx-auto">
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-lg">
+          <div className="flex items-center gap-3">
+            <div className="flex-shrink-0">
+              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                <Smartphone className="w-5 h-5 text-blue-600" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h4 className="text-sm font-medium text-gray-900 mb-1">
+                安装到主屏幕
+              </h4>
+              <p className="text-xs text-gray-600 mb-2">
+                在Safari中，点击分享按钮，然后选择"添加到主屏幕"
+              </p>
+              <button
+                onClick={handleDismiss}
+                className="text-xs text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                知道了
+              </button>
+            </div>
+            <button
+              onClick={handleDismiss}
+              className="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -104,7 +170,7 @@ export const PWAInstallPrompt: React.FC = () => {
                   onClick={handleInstall}
                   className="flex-1 bg-primary-600 text-white text-xs font-medium px-3 py-2 rounded hover:bg-primary-700 transition-colors"
                 >
-                  立即安装
+                  {deferredPrompt ? '立即安装' : '查看说明'}
                 </button>
                 <button
                   onClick={handleDismiss}
