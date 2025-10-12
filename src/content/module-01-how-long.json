@@ -235,6 +235,82 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How long is the Great Wall?",
+          "scrambledChinese": [
+            "长城",
+            "有多长？"
+          ],
+          "correctChinese": [
+            "长城",
+            "有多长？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's more than forty thousand li long.",
+          "scrambledChinese": [
+            "四万",
+            "里",
+            "它",
+            "有",
+            "长。"
+          ],
+          "correctChinese": [
+            "它",
+            "有",
+            "四万",
+            "多",
+            "里",
+            "长。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How old is it?",
+          "scrambledChinese": [
+            "它",
+            "有多少年",
+            "的历史？"
+          ],
+          "correctChinese": [
+            "它",
+            "有多少年",
+            "的历史？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's more than two thousand years old.",
+          "scrambledChinese": [
+            "它",
+            "有两千多",
+            "年的",
+            "历史了。"
+          ],
+          "correctChinese": [
+            "它",
+            "有",
+            "两千多",
+            "年的",
+            "历史了。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

@@ -314,6 +314,15 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
