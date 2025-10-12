@@ -279,6 +279,92 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What are you doing?",
+          "scrambledChinese": [
+            "做什么",
+            "你",
+            "在？"
+          ],
+          "correctChinese": [
+            "你",
+            "在",
+            "做什么？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'm putting my new stamps into my stamp book.",
+          "scrambledChinese": [
+            "新",
+            "邮票",
+            "我",
+            "正在",
+            "把",
+            "集邮册",
+            "放进",
+            "我的",
+            "里。"
+          ],
+          "correctChinese": [
+            "我",
+            "正在",
+            "把",
+            "新",
+            "邮票",
+            "放进",
+            "我的",
+            "集邮册",
+            "里。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Have you got any stamps from China?",
+          "scrambledChinese": [
+            "中国的",
+            "邮票",
+            "你",
+            "有",
+            "吗？"
+          ],
+          "correctChinese": [
+            "你",
+            "有",
+            "中国的",
+            "邮票",
+            "吗？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "No, I haven't.",
+          "scrambledChinese": [
+            "我",
+            "不，",
+            "没有。"
+          ],
+          "correctChinese": [
+            "不，",
+            "我",
+            "没有。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
