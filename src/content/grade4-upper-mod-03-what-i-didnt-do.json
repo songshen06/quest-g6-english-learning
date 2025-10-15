@@ -7,31 +7,31 @@
       "id": "word-didnt",
       "en": "didn't",
       "zh": "没有做",
-      "audio": "/audio/tts/word-didnt.mp3"
+      "audio": "/audio/tts/didnt.mp3"
     },
     {
       "id": "word-walk",
       "en": "walk",
       "zh": "走路",
-      "audio": "/audio/tts/word-walk.mp3"
+      "audio": "/audio/tts/walk.mp3"
     },
     {
       "id": "word-stay",
       "en": "stay",
       "zh": "停留",
-      "audio": "/audio/tts/word-stay.mp3"
+      "audio": "/audio/tts/stay.mp3"
     },
     {
       "id": "word-ride",
       "en": "ride",
       "zh": "骑",
-      "audio": "/audio/tts/word-ride.mp3"
+      "audio": "/audio/tts/ride.mp3"
     },
     {
       "id": "word-boring",
       "en": "boring",
       "zh": "无聊的",
-      "audio": "/audio/tts/word-boring.mp3"
+      "audio": "/audio/tts/boring.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "stayed at home",
       "zh": "待在家里",
       "icon": "/images/icons/home.svg",
-      "audio": "/audio/tts/phrase-stayed-at-home.mp3"
+      "audio": "/audio/tts/stayed-at-home.mp3"
     },
     {
       "id": "phrase-ride-my-bike",
       "en": "ride my bike",
       "zh": "骑我的自行车",
       "icon": "/images/icons/bicycle.svg",
-      "audio": "/audio/tts/phrase-ride-my-bike.mp3"
+      "audio": "/audio/tts/ride-my-bike.mp3"
     }
   ],
   "patterns": [
@@ -122,7 +122,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-stayed-at-home.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "at",
             "home",
@@ -137,7 +137,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-ride-my-bike.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "my",
             "bike",
@@ -152,7 +152,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/she-didnt-walk-to-school-yesterday.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "didn't",
             "walk",

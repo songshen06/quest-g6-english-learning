@@ -34,20 +34,20 @@
       "en": "pleased to meet you",
       "zh": "非常高兴遇到你",
       "icon": "/images/icons/meet.svg",
-      "audio": "/audio/tts/pleased-meet.mp3"
+      "audio": "/audio/tts/pleased-to-meet-you.mp3"
     },
     {
       "id": "chinese-pen",
       "en": "Chinese pen friend",
       "zh": "中国笔友",
-      "audio": "/audio/tts/chinese-pen.mp3"
+      "audio": "/audio/tts/chinese-pen-friend.mp3"
     },
     {
       "id": "write-her",
       "en": "write to her",
       "zh": "给她写信",
       "icon": "/images/icons/write.svg",
-      "audio": "/audio/tts/write-her.mp3"
+      "audio": "/audio/tts/write-to-her.mp3"
     },
     {
       "id": "of-course",
@@ -72,7 +72,7 @@
       "en": "a phone friend",
       "zh": "一个电话的朋友",
       "icon": "/images/icons/phone-call.svg",
-      "audio": "/audio/tts/phone-friend.mp3"
+      "audio": "/audio/tts/a-phone-friend.mp3"
     },
     {
       "id": "learn-english",
@@ -85,7 +85,7 @@
       "en": "come from London",
       "zh": "来自伦敦",
       "icon": "/images/landmarks/london.svg",
-      "audio": "/audio/tts/come-london.mp3"
+      "audio": "/audio/tts/come-from-london.mp3"
     }
   ],
   "patterns": [
@@ -196,7 +196,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/pleased-meet.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "to",
             "meet",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/chinese-pen.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "pen",
             "friend",
@@ -228,7 +228,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/write-her.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "to",
             "her",

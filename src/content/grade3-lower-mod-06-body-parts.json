@@ -1,0 +1,311 @@
+{
+  "moduleId": "grade3-lower-mod-06",
+  "title": "Body Parts",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "monster",
+      "en": "monster",
+      "zh": "怪物",
+      "audio": "/audio/tts/monster.mp3"
+    },
+    {
+      "id": "computer",
+      "en": "computer",
+      "zh": "电脑",
+      "audio": "/audio/tts/computer.mp3"
+    },
+    {
+      "id": "head",
+      "en": "head",
+      "zh": "头",
+      "audio": "/audio/tts/head.mp3"
+    },
+    {
+      "id": "body",
+      "en": "body",
+      "zh": "身体",
+      "audio": "/audio/tts/body.mp3"
+    },
+    {
+      "id": "arm",
+      "en": "arm",
+      "zh": "胳膊",
+      "audio": "/audio/tts/arm.mp3"
+    },
+    {
+      "id": "hand",
+      "en": "hand",
+      "zh": "手",
+      "audio": "/audio/tts/hand.mp3"
+    },
+    {
+      "id": "leg",
+      "en": "leg",
+      "zh": "腿",
+      "audio": "/audio/tts/leg.mp3"
+    },
+    {
+      "id": "foot",
+      "en": "foot",
+      "zh": "脚",
+      "audio": "/audio/tts/foot.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "draw-a-picture",
+      "en": "draw a picture",
+      "zh": "画一幅画",
+      "icon": "/images/icons/draw.svg",
+      "audio": "/audio/tts/draw-a-picture.mp3"
+    },
+    {
+      "id": "has-got",
+      "en": "has got",
+      "zh": "有",
+      "icon": "/images/icons/check.svg",
+      "audio": "/audio/tts/has-got.mp3"
+    },
+    {
+      "id": "lets-have-a-look",
+      "en": "Let's have a look.",
+      "zh": "让我们看一看。",
+      "icon": "/images/icons/look.svg",
+      "audio": "/audio/tts/lets-have-a-look.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Here is his head.",
+      "a": "这是他的头。"
+    },
+    {
+      "q": "Here are his arms.",
+      "a": "这是他的胳膊。"
+    },
+    {
+      "q": "There is a small monster.",
+      "a": "有一个小怪物。"
+    },
+    {
+      "q": "There are two big monsters.",
+      "a": "有两个大怪物。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "monster",
+              "zh": "怪物"
+            },
+            {
+              "en": "computer",
+              "zh": "电脑"
+            },
+            {
+              "en": "head",
+              "zh": "头"
+            },
+            {
+              "en": "body",
+              "zh": "身体"
+            },
+            {
+              "en": "arm",
+              "zh": "胳膊"
+            },
+            {
+              "en": "hand",
+              "zh": "手"
+            }
+          ],
+          "options": [
+            {
+              "en": "leg",
+              "zh": "腿"
+            },
+            {
+              "en": "foot",
+              "zh": "脚"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "picture",
+            "draw"
+          ],
+          "correct": [
+            "draw",
+            "a",
+            "picture"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "have",
+            "a",
+            "look.",
+            "Let's"
+          ],
+          "correct": [
+            "Let's",
+            "have",
+            "a",
+            "look."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "his",
+            "head.",
+            "Here"
+          ],
+          "correct": [
+            "Here",
+            "is",
+            "his",
+            "head."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "draw a picture",
+          "scrambledChinese": [
+            "一",
+            "幅",
+            "画",
+            "画"
+          ],
+          "correctChinese": [
+            "画",
+            "一",
+            "幅",
+            "画"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Here is his head.",
+          "scrambledChinese": [
+            "是",
+            "他",
+            "的",
+            "头",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "他",
+            "的",
+            "头",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "画一幅画",
+          "scrambledEnglish": [
+            "a",
+            "picture",
+            "draw"
+          ],
+          "correctEnglish": [
+            "draw",
+            "a",
+            "picture"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "有",
+          "scrambledEnglish": [
+            "got",
+            "has"
+          ],
+          "correctEnglish": [
+            "has",
+            "got"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "There is one boy. There are two ___.",
+      "answer": "dogs"
+    },
+    {
+      "type": "translate",
+      "cn": "这是他的脚。",
+      "en": [
+        "Here is his foot."
+      ]
+    }
+  ],
+  "funFacts": [
+    "人体中最长的骨头是大腿骨，最短的骨头在耳朵里。",
+    "怪物（monster）这个词来自拉丁语，意思是神圣的预兆。"
+  ]
+}

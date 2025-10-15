@@ -1,0 +1,294 @@
+{
+  "moduleId": "grade1-upper-mod-06",
+  "title": "Classroom Objects",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "book",
+      "en": "book",
+      "zh": "书",
+      "audio": "/audio/tts/book.mp3"
+    },
+    {
+      "id": "schoolbag",
+      "en": "schoolbag",
+      "zh": "书包",
+      "audio": "/audio/tts/schoolbag.mp3"
+    },
+    {
+      "id": "pen",
+      "en": "pen",
+      "zh": "钢笔",
+      "audio": "/audio/tts/pen.mp3"
+    },
+    {
+      "id": "pencil",
+      "en": "pencil",
+      "zh": "铅笔",
+      "audio": "/audio/tts/pencil.mp3"
+    },
+    {
+      "id": "ruler",
+      "en": "ruler",
+      "zh": "尺子",
+      "audio": "/audio/tts/ruler.mp3"
+    },
+    {
+      "id": "eraser",
+      "en": "eraser",
+      "zh": "橡皮",
+      "audio": "/audio/tts/eraser.mp3"
+    },
+    {
+      "id": "pencil-case",
+      "en": "pencil case",
+      "zh": "铅笔盒",
+      "audio": "/audio/tts/pencil-case.mp3"
+    },
+    {
+      "id": "crayon",
+      "en": "crayon",
+      "zh": "蜡笔",
+      "audio": "/audio/tts/crayon.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "whats-this",
+      "en": "What's this?",
+      "zh": "这是什么？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/whats-this.mp3"
+    },
+    {
+      "id": "its-a-book",
+      "en": "It's a book.",
+      "zh": "它是一本书。",
+      "icon": "/images/icons/book.svg",
+      "audio": "/audio/tts/its-a-book.mp3"
+    },
+    {
+      "id": "its-my-ruler",
+      "en": "It's my ruler.",
+      "zh": "它是我的尺子。",
+      "icon": "/images/icons/ruler.svg",
+      "audio": "/audio/tts/its-my-ruler.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What's this?",
+      "a": "这是什么？"
+    },
+    {
+      "q": "It's my schoolbag.",
+      "a": "它是我的书包。"
+    },
+    {
+      "q": "It's a ruler.",
+      "a": "它是一把尺子。"
+    },
+    {
+      "q": "It's my crayon.",
+      "a": "它是我的蜡笔。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "book",
+              "zh": "书"
+            },
+            {
+              "en": "schoolbag",
+              "zh": "书包"
+            },
+            {
+              "en": "pen",
+              "zh": "钢笔"
+            },
+            {
+              "en": "pencil",
+              "zh": "铅笔"
+            },
+            {
+              "en": "ruler",
+              "zh": "尺子"
+            },
+            {
+              "en": "eraser",
+              "zh": "橡皮"
+            }
+          ],
+          "options": [
+            {
+              "en": "pencil case",
+              "zh": "铅笔盒"
+            },
+            {
+              "en": "crayon",
+              "zh": "蜡笔"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "book.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "a",
+            "book."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "my",
+            "ruler.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "my",
+            "ruler."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What's this?",
+          "scrambledChinese": [
+            "是",
+            "什",
+            "么",
+            "？",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "什",
+            "么",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's a book.",
+          "scrambledChinese": [
+            "是",
+            "一",
+            "本",
+            "书",
+            "。",
+            "它"
+          ],
+          "correctChinese": [
+            "它",
+            "是",
+            "一",
+            "本",
+            "书",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是什么？",
+          "scrambledEnglish": [
+            "this?",
+            "What's"
+          ],
+          "correctEnglish": [
+            "What's",
+            "this?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "它是一本书。",
+          "scrambledEnglish": [
+            "a",
+            "book.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "a",
+            "book."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "What's ___?",
+      "answer": "that"
+    },
+    {
+      "type": "translate",
+      "cn": "这是我的书包。",
+      "en": [
+        "This is my schoolbag."
+      ]
+    }
+  ],
+  "funFacts": [
+    "现代铅笔是在1795年发明的。",
+    "最早的橡皮擦是在1770年发明的，之前人们用面包屑来擦掉铅笔印。"
+  ]
+}

@@ -7,31 +7,31 @@
       "id": "word-invented",
       "en": "invented",
       "zh": "发明了",
-      "audio": "/audio/tts/word-invented.mp3"
+      "audio": "/audio/tts/invented.mp3"
     },
     {
       "id": "word-paper",
       "en": "paper",
       "zh": "纸",
-      "audio": "/audio/tts/word-paper.mp3"
+      "audio": "/audio/tts/paper.mp3"
     },
     {
       "id": "word-printing",
       "en": "printing",
       "zh": "印刷术",
-      "audio": "/audio/tts/word-printing.mp3"
+      "audio": "/audio/tts/printing.mp3"
     },
     {
       "id": "word-between",
       "en": "between",
       "zh": "在...之间",
-      "audio": "/audio/tts/word-between.mp3"
+      "audio": "/audio/tts/between.mp3"
     },
     {
       "id": "word-beside",
       "en": "beside",
       "zh": "在...旁边",
-      "audio": "/audio/tts/word-beside.mp3"
+      "audio": "/audio/tts/beside.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "in front of",
       "zh": "在...前面",
       "icon": "/images/icons/arrow-up.svg",
-      "audio": "/audio/tts/phrase-in-front-of.mp3"
+      "audio": "/audio/tts/in-front-of.mp3"
     },
     {
       "id": "phrase-important-things",
       "en": "important things",
       "zh": "重要的东西",
       "icon": "/images/icons/star.svg",
-      "audio": "/audio/tts/phrase-important-things.mp3"
+      "audio": "/audio/tts/important-things.mp3"
     }
   ],
   "patterns": [
@@ -122,7 +122,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-in-front-of.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "front",
             "of",
@@ -137,7 +137,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/chinese-people-invented-paper.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "people",
             "invented",
@@ -154,7 +154,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/he-invented-this-bicycle.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "invented",
             "this",

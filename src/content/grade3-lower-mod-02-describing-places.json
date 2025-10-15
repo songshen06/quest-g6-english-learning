@@ -1,0 +1,299 @@
+{
+  "moduleId": "grade3-lower-mod-02",
+  "title": "Describing Places",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "river",
+      "en": "river",
+      "zh": "河流",
+      "audio": "/audio/tts/river.mp3"
+    },
+    {
+      "id": "wide",
+      "en": "wide",
+      "zh": "宽的",
+      "audio": "/audio/tts/wide.mp3"
+    },
+    {
+      "id": "long",
+      "en": "long",
+      "zh": "长的",
+      "audio": "/audio/tts/long.mp3"
+    },
+    {
+      "id": "tall",
+      "en": "tall",
+      "zh": "高的",
+      "audio": "/audio/tts/tall.mp3"
+    },
+    {
+      "id": "old",
+      "en": "old",
+      "zh": "古老的",
+      "audio": "/audio/tts/old.mp3"
+    },
+    {
+      "id": "high",
+      "en": "high",
+      "zh": "高的（海拔）",
+      "audio": "/audio/tts/high.mp3"
+    },
+    {
+      "id": "bridge",
+      "en": "bridge",
+      "zh": "桥",
+      "audio": "/audio/tts/bridge.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "big-ben",
+      "en": "Big Ben",
+      "zh": "大本钟",
+      "icon": "/images/icons/clock.svg",
+      "audio": "/audio/tts/big-ben.mp3"
+    },
+    {
+      "id": "london-eye",
+      "en": "London Eye",
+      "zh": "伦敦眼",
+      "icon": "/images/icons/ferris-wheel.svg",
+      "audio": "/audio/tts/london-eye.mp3"
+    },
+    {
+      "id": "tower-bridge",
+      "en": "Tower Bridge",
+      "zh": "塔桥",
+      "icon": "/images/icons/bridge.svg",
+      "audio": "/audio/tts/tower-bridge.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This river is very wide.",
+      "a": "这条河很宽。"
+    },
+    {
+      "q": "It's very long.",
+      "a": "它很长。"
+    },
+    {
+      "q": "It's a very old clock.",
+      "a": "这是一个非常古老的钟。"
+    },
+    {
+      "q": "You'll see Tower Bridge.",
+      "a": "你将会看到塔桥。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "river",
+              "zh": "河流"
+            },
+            {
+              "en": "wide",
+              "zh": "宽的"
+            },
+            {
+              "en": "long",
+              "zh": "长的"
+            },
+            {
+              "en": "tall",
+              "zh": "高的"
+            },
+            {
+              "en": "old",
+              "zh": "古老的"
+            },
+            {
+              "en": "high",
+              "zh": "高的（海拔）"
+            }
+          ],
+          "options": [
+            {
+              "en": "河流",
+              "zh": "river"
+            },
+            {
+              "en": "宽的",
+              "zh": "wide"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "river",
+            "is",
+            "very",
+            "wide.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "river",
+            "is",
+            "very",
+            "wide."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "very",
+            "long.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "very",
+            "long."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "very",
+            "old",
+            "clock.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "a",
+            "very",
+            "old",
+            "clock."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Big Ben",
+          "scrambledChinese": [
+            "本",
+            "钟",
+            "大"
+          ],
+          "correctChinese": [
+            "大",
+            "本",
+            "钟"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "London Eye",
+          "scrambledChinese": [
+            "敦",
+            "眼",
+            "伦"
+          ],
+          "correctChinese": [
+            "伦",
+            "敦",
+            "眼"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "大本钟",
+          "scrambledEnglish": [
+            "Ben",
+            "Big"
+          ],
+          "correctEnglish": [
+            "Big",
+            "Ben"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "伦敦眼",
+          "scrambledEnglish": [
+            "Eye",
+            "London"
+          ],
+          "correctEnglish": [
+            "London",
+            "Eye"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "This house is very ___.",
+      "answer": "old"
+    },
+    {
+      "type": "translate",
+      "cn": "你将会看到大本钟。",
+      "en": [
+        "You'll see Big Ben."
+      ]
+    }
+  ],
+  "funFacts": [
+    "大本钟（Big Ben）其实是钟楼里面那口大钟的名字，而不是钟楼本身。",
+    "伦敦眼（London Eye）是为了庆祝千禧年而建造的。"
+  ]
+}

@@ -83,6 +83,24 @@ export const ModulePage: React.FC = () => {
                 <p className="text-gray-500">暂无词汇内容</p>
               </div>
             )}
+
+            {/* Fun Facts Section - only show in vocabulary tab */}
+            {currentModuleData.funFacts && currentModuleData.funFacts.length > 0 && (
+              <div className="mt-6 bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl border-2 border-purple-200 p-6 shadow-sm">
+                <div className="flex items-center space-x-2 mb-4">
+                  <span className="text-2xl">💡</span>
+                  <h3 className="text-lg font-semibold text-purple-800">趣味知识</h3>
+                </div>
+                <div className="space-y-3">
+                  {currentModuleData.funFacts.map((fact, index) => (
+                    <div key={index} className="flex items-start space-x-3">
+                      <span className="text-purple-500 mt-1 text-lg">•</span>
+                      <p className="text-gray-700 leading-relaxed">{fact}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )
       case 'phrases':

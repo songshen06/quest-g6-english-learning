@@ -1,0 +1,301 @@
+{
+  "moduleId": "grade2-upper-mod-04",
+  "title": "He Likes Clothes",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "likes",
+      "en": "likes",
+      "zh": "喜欢（第三人称单数）",
+      "audio": "/audio/tts/likes.mp3"
+    },
+    {
+      "id": "t-shirt",
+      "en": "T-shirt",
+      "zh": "T恤衫",
+      "audio": "/audio/tts/t-shirt.mp3"
+    },
+    {
+      "id": "dress",
+      "en": "dress",
+      "zh": "连衣裙",
+      "audio": "/audio/tts/dress.mp3"
+    },
+    {
+      "id": "small",
+      "en": "small",
+      "zh": "小的",
+      "audio": "/audio/tts/small.mp3"
+    },
+    {
+      "id": "doesnt-like",
+      "en": "doesn't like",
+      "zh": "不喜欢（第三人称单数）",
+      "audio": "/audio/tts/doesnt-like.mp3"
+    },
+    {
+      "id": "trousers",
+      "en": "trousers",
+      "zh": "裤子",
+      "audio": "/audio/tts/trousers.mp3"
+    },
+    {
+      "id": "shirt",
+      "en": "shirt",
+      "zh": "衬衫",
+      "audio": "/audio/tts/shirt.mp3"
+    },
+    {
+      "id": "shoes",
+      "en": "shoes",
+      "zh": "鞋子",
+      "audio": "/audio/tts/shoes.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "too-small",
+      "en": "too small",
+      "zh": "太小了",
+      "icon": "/images/icons/ruler.svg",
+      "audio": "/audio/tts/too-small.mp3"
+    },
+    {
+      "id": "at-a-party",
+      "en": "at a party",
+      "zh": "在聚会上",
+      "icon": "/images/icons/party.svg",
+      "audio": "/audio/tts/at-a-party.mp3"
+    },
+    {
+      "id": "happy-birthday",
+      "en": "Happy birthday!",
+      "zh": "生日快乐！",
+      "icon": "/images/icons/birthday.svg",
+      "audio": "/audio/tts/happy-birthday.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Sam likes T-shirts.",
+      "a": "萨姆喜欢T恤衫。"
+    },
+    {
+      "q": "Amy likes dresses.",
+      "a": "艾米喜欢连衣裙。"
+    },
+    {
+      "q": "He doesn't like these trousers.",
+      "a": "他不喜欢这条裤子。"
+    },
+    {
+      "q": "He likes the yellow, blue and red T-shirt.",
+      "a": "他喜欢这件黄、蓝、红相间的T恤衫。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "likes",
+              "zh": "喜欢（第三人称单数）"
+            },
+            {
+              "en": "T-shirt",
+              "zh": "T恤衫"
+            },
+            {
+              "en": "dress",
+              "zh": "连衣裙"
+            },
+            {
+              "en": "small",
+              "zh": "小的"
+            },
+            {
+              "en": "doesn't like",
+              "zh": "不喜欢（第三人称单数）"
+            },
+            {
+              "en": "trousers",
+              "zh": "裤子"
+            }
+          ],
+          "options": [
+            {
+              "en": "shirt",
+              "zh": "衬衫"
+            },
+            {
+              "en": "shoes",
+              "zh": "鞋子"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "party",
+            "at"
+          ],
+          "correct": [
+            "at",
+            "a",
+            "party"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "likes",
+            "T-shirts.",
+            "Sam"
+          ],
+          "correct": [
+            "Sam",
+            "likes",
+            "T-shirts."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "likes",
+            "dresses.",
+            "Amy"
+          ],
+          "correct": [
+            "Amy",
+            "likes",
+            "dresses."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "too small",
+          "scrambledChinese": [
+            "小",
+            "了",
+            "太"
+          ],
+          "correctChinese": [
+            "太",
+            "小",
+            "了"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "at a party",
+          "scrambledChinese": [
+            "聚",
+            "会",
+            "上",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "聚",
+            "会",
+            "上"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "太小了",
+          "scrambledEnglish": [
+            "small",
+            "too"
+          ],
+          "correctEnglish": [
+            "too",
+            "small"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在聚会上",
+          "scrambledEnglish": [
+            "a",
+            "party",
+            "at"
+          ],
+          "correctEnglish": [
+            "at",
+            "a",
+            "party"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Thank you, Dad. But it's too ___.",
+      "answer": "small"
+    },
+    {
+      "type": "translate",
+      "cn": "他喜欢这件蓝色的T恤。",
+      "en": [
+        "He likes this blue T-shirt."
+      ]
+    }
+  ],
+  "funFacts": [
+    "T恤衫（T-shirt）因为其展开的形状像字母T而得名。",
+    "最早的裤子（trousers）发现于中国，距今约3000年。"
+  ]
+}

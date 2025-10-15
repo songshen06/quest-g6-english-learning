@@ -7,61 +7,61 @@
       "id": "word-china",
       "en": "China",
       "zh": "中国",
-      "audio": "/audio/tts/word-china.mp3"
+      "audio": "/audio/tts/china.mp3"
     },
     {
       "id": "word-america",
       "en": "America",
       "zh": "美国",
-      "audio": "/audio/tts/word-america.mp3"
+      "audio": "/audio/tts/america.mp3"
     },
     {
       "id": "word-england",
       "en": "England",
       "zh": "英国",
-      "audio": "/audio/tts/word-england.mp3"
+      "audio": "/audio/tts/england.mp3"
     },
     {
       "id": "word-australia",
       "en": "Australia",
       "zh": "澳大利亚",
-      "audio": "/audio/tts/word-australia.mp3"
+      "audio": "/audio/tts/australia.mp3"
     },
     {
       "id": "word-canada",
       "en": "Canada",
       "zh": "加拿大",
-      "audio": "/audio/tts/word-canada.mp3"
+      "audio": "/audio/tts/canada.mp3"
     },
     {
       "id": "word-japan",
       "en": "Japan",
       "zh": "日本",
-      "audio": "/audio/tts/word-japan.mp3"
+      "audio": "/audio/tts/japan.mp3"
     },
     {
       "id": "word-panda",
       "en": "panda",
       "zh": "熊猫",
-      "audio": "/audio/tts/word-panda.mp3"
+      "audio": "/audio/tts/panda.mp3"
     },
     {
       "id": "word-kangaroo",
       "en": "kangaroo",
       "zh": "袋鼠",
-      "audio": "/audio/tts/word-kangaroo.mp3"
+      "audio": "/audio/tts/kangaroo.mp3"
     },
     {
       "id": "word-eagle",
       "en": "eagle",
       "zh": "老鹰",
-      "audio": "/audio/tts/word-eagle.mp3"
+      "audio": "/audio/tts/eagle.mp3"
     },
     {
       "id": "word-lion",
       "en": "lion",
       "zh": "狮子",
-      "audio": "/audio/tts/word-lion.mp3"
+      "audio": "/audio/tts/lion.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "from China",
       "zh": "来自中国",
       "icon": "/images/icons/china-flag.svg",
-      "audio": "/audio/tts/phrase-from-china.mp3"
+      "audio": "/audio/tts/from-china.mp3"
     },
     {
       "id": "phrase-live-in",
       "en": "live in",
       "zh": "居住在",
       "icon": "/images/icons/home.svg",
-      "audio": "/audio/tts/phrase-live-in.mp3"
+      "audio": "/audio/tts/live-in.mp3"
     },
     {
       "id": "phrase-national-animal",
       "en": "national animal",
       "zh": "国宝动物",
       "icon": "/images/icons/crown-animal.svg",
-      "audio": "/audio/tts/phrase-national-animal.mp3"
+      "audio": "/audio/tts/national-animal.mp3"
     },
     {
       "id": "phrase-zoo-animal",
       "en": "zoo animal",
       "zh": "动物园动物",
       "icon": "/images/icons/zoo.svg",
-      "audio": "/audio/tts/phrase-zoo-animal.mp3"
+      "audio": "/audio/tts/zoo-animal.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/i-am-from-china.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "am",
             "from",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/pandas-live-in-china.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "live",
             "in",
@@ -244,7 +244,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/kangaroos-are-from-australia.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "are",
             "from",

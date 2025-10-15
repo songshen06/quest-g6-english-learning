@@ -7,43 +7,43 @@
       "id": "word-went",
       "en": "went",
       "zh": "去了",
-      "audio": "/audio/tts/word-went.mp3"
+      "audio": "/audio/tts/went.mp3"
     },
     {
       "id": "word-saw",
       "en": "saw",
       "zh": "看见了",
-      "audio": "/audio/tts/word-saw.mp3"
+      "audio": "/audio/tts/saw.mp3"
     },
     {
       "id": "word-ate",
       "en": "ate",
       "zh": "吃了",
-      "audio": "/audio/tts/word-ate.mp3"
+      "audio": "/audio/tts/ate.mp3"
     },
     {
       "id": "word-had",
       "en": "had",
       "zh": "度过了",
-      "audio": "/audio/tts/word-had.mp3"
+      "audio": "/audio/tts/had.mp3"
     },
     {
       "id": "word-bought",
       "en": "bought",
       "zh": "买了",
-      "audio": "/audio/tts/word-bought.mp3"
+      "audio": "/audio/tts/bought.mp3"
     },
     {
       "id": "word-wore",
       "en": "wore",
       "zh": "穿了",
-      "audio": "/audio/tts/word-wore.mp3"
+      "audio": "/audio/tts/wore.mp3"
     },
     {
       "id": "word-fell",
       "en": "fell",
       "zh": "摔倒了",
-      "audio": "/audio/tts/word-fell.mp3"
+      "audio": "/audio/tts/fell.mp3"
     }
   ],
   "phrases": [
@@ -52,21 +52,21 @@
       "en": "school trip",
       "zh": "学校出游",
       "icon": "/images/icons/bus.svg",
-      "audio": "/audio/tts/phrase-school-trip.mp3"
+      "audio": "/audio/tts/school-trip.mp3"
     },
     {
       "id": "phrase-had-a-good-time",
       "en": "had a good time",
       "zh": "玩得很开心",
       "icon": "/images/icons/smiley.svg",
-      "audio": "/audio/tts/phrase-had-a-good-time.mp3"
+      "audio": "/audio/tts/had-a-good-time.mp3"
     },
     {
       "id": "phrase-fell-over",
       "en": "fell over",
       "zh": "摔倒",
       "icon": "/images/icons/fall.svg",
-      "audio": "/audio/tts/phrase-fell-over.mp3"
+      "audio": "/audio/tts/fell-over.mp3"
     }
   ],
   "patterns": [
@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-had-a-good-time.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "a",
             "good",
@@ -190,7 +190,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/we-went-to-the-great-wall.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "went",
             "to",
@@ -211,7 +211,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/and-we-saw-lots-of-mountains.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "we",
             "saw",

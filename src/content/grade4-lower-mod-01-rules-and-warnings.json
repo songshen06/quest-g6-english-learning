@@ -7,61 +7,61 @@
       "id": "word-dont",
       "en": "don't",
       "zh": "不要",
-      "audio": "/audio/tts/word-dont.mp3"
+      "audio": "/audio/tts/dont.mp3"
     },
     {
       "id": "word-touch",
       "en": "touch",
       "zh": "触摸",
-      "audio": "/audio/tts/word-touch.mp3"
+      "audio": "/audio/tts/touch.mp3"
     },
     {
       "id": "word-walk",
       "en": "walk",
       "zh": "走",
-      "audio": "/audio/tts/word-walk.mp3"
+      "audio": "/audio/tts/walk.mp3"
     },
     {
       "id": "word-talk",
       "en": "talk",
       "zh": "说话",
-      "audio": "/audio/tts/word-talk.mp3"
+      "audio": "/audio/tts/talk.mp3"
     },
     {
       "id": "word-run",
       "en": "run",
       "zh": "跑",
-      "audio": "/audio/tts/word-run.mp3"
+      "audio": "/audio/tts/run.mp3"
     },
     {
       "id": "word-shout",
       "en": "shout",
       "zh": "喊叫",
-      "audio": "/audio/tts/word-shout.mp3"
+      "audio": "/audio/tts/shout.mp3"
     },
     {
       "id": "word-stop",
       "en": "stop",
       "zh": "停止",
-      "audio": "/audio/tts/word-stop.mp3"
+      "audio": "/audio/tts/stop.mp3"
     },
     {
       "id": "word-dangerous",
       "en": "dangerous",
       "zh": "危险的",
-      "audio": "/audio/tts/word-dangerous.mp3"
+      "audio": "/audio/tts/dangerous.mp3"
     },
     {
       "id": "word-careful",
       "en": "careful",
       "zh": "小心的",
-      "audio": "/audio/tts/word-careful.mp3"
+      "audio": "/audio/tts/careful.mp3"
     },
     {
       "id": "word-warning",
       "en": "warning",
       "zh": "警告",
-      "audio": "/audio/tts/word-warning.mp3"
+      "audio": "/audio/tts/warning.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "Don't touch",
       "zh": "不要触摸",
       "icon": "/images/icons/hand-stop.svg",
-      "audio": "/audio/tts/phrase-dont-touch.mp3"
+      "audio": "/audio/tts/dont-touch.mp3"
     },
     {
       "id": "phrase-dont-run",
       "en": "Don't run",
       "zh": "不要跑",
       "icon": "/images/icons/no-running.svg",
-      "audio": "/audio/tts/phrase-dont-run.mp3"
+      "audio": "/audio/tts/dont-run.mp3"
     },
     {
       "id": "phrase-dont-talk",
       "en": "Don't talk",
       "zh": "不要说话",
       "icon": "/images/icons/silence.svg",
-      "audio": "/audio/tts/phrase-dont-talk.mp3"
+      "audio": "/audio/tts/dont-talk.mp3"
     },
     {
       "id": "phrase-be-careful",
       "en": "Be careful",
       "zh": "小心",
       "icon": "/images/icons/warning.svg",
-      "audio": "/audio/tts/phrase-be-careful.mp3"
+      "audio": "/audio/tts/be-careful.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/dont-touch-the-door.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "touch",
             "the",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/dont-run-in-the-classroom.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "run",
             "in",
@@ -246,7 +246,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/dont-talk-loudly.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "talk",
             "loudly.",

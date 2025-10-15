@@ -1,0 +1,294 @@
+{
+  "moduleId": "grade1-lower-mod-10",
+  "title": "Let's Play!",
+  "durationMinutes": 11,
+  "words": [
+    {
+      "id": "lets",
+      "en": "let's",
+      "zh": "让我们",
+      "audio": "/audio/tts/lets.mp3"
+    },
+    {
+      "id": "play",
+      "en": "play",
+      "zh": "玩",
+      "audio": "/audio/tts/play.mp3"
+    },
+    {
+      "id": "football",
+      "en": "football",
+      "zh": "足球",
+      "audio": "/audio/tts/football.mp3"
+    },
+    {
+      "id": "basketball",
+      "en": "basketball",
+      "zh": "篮球",
+      "audio": "/audio/tts/basketball.mp3"
+    },
+    {
+      "id": "ping-pong",
+      "en": "ping-pong",
+      "zh": "乒乓球",
+      "audio": "/audio/tts/ping-pong.mp3"
+    },
+    {
+      "id": "sing",
+      "en": "sing",
+      "zh": "唱歌",
+      "audio": "/audio/tts/sing.mp3"
+    },
+    {
+      "id": "dance",
+      "en": "dance",
+      "zh": "跳舞",
+      "audio": "/audio/tts/dance.mp3"
+    },
+    {
+      "id": "tired",
+      "en": "tired",
+      "zh": "累的",
+      "audio": "/audio/tts/tired.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "good-idea",
+      "en": "Good idea!",
+      "zh": "好主意！",
+      "icon": "/images/icons/idea.svg",
+      "audio": "/audio/tts/good-idea.mp3"
+    },
+    {
+      "id": "lets-go-swimming",
+      "en": "Let's go swimming!",
+      "zh": "我们去游泳吧！",
+      "icon": "/images/icons/swim.svg",
+      "audio": "/audio/tts/lets-go-swimming.mp3"
+    },
+    {
+      "id": "sit-down",
+      "en": "sit down",
+      "zh": "坐下",
+      "icon": "/images/icons/chair.svg",
+      "audio": "/audio/tts/sit-down.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Let's play football!",
+      "a": "我们踢足球吧！"
+    },
+    {
+      "q": "Good idea!",
+      "a": "好主意！"
+    },
+    {
+      "q": "Let's sing!",
+      "a": "我们唱歌吧！"
+    },
+    {
+      "q": "No. I'm tired.",
+      "a": "不了，我累了。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "let's",
+              "zh": "让我们"
+            },
+            {
+              "en": "play",
+              "zh": "玩"
+            },
+            {
+              "en": "football",
+              "zh": "足球"
+            },
+            {
+              "en": "basketball",
+              "zh": "篮球"
+            },
+            {
+              "en": "ping-pong",
+              "zh": "乒乓球"
+            },
+            {
+              "en": "sing",
+              "zh": "唱歌"
+            }
+          ],
+          "options": [
+            {
+              "en": "dance",
+              "zh": "跳舞"
+            },
+            {
+              "en": "tired",
+              "zh": "累的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "go",
+            "swimming!",
+            "Let's"
+          ],
+          "correct": [
+            "Let's",
+            "go",
+            "swimming!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "play",
+            "football!",
+            "Let's"
+          ],
+          "correct": [
+            "Let's",
+            "play",
+            "football!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Good idea!",
+          "scrambledChinese": [
+            "主",
+            "意",
+            "！",
+            "好"
+          ],
+          "correctChinese": [
+            "好",
+            "主",
+            "意",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Let's go swimming!",
+          "scrambledChinese": [
+            "们",
+            "去",
+            "游",
+            "泳",
+            "吧",
+            "！",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "去",
+            "游",
+            "泳",
+            "吧",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "好主意！",
+          "scrambledEnglish": [
+            "idea!",
+            "Good"
+          ],
+          "correctEnglish": [
+            "Good",
+            "idea!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们去游泳吧！",
+          "scrambledEnglish": [
+            "go",
+            "swimming!",
+            "Let's"
+          ],
+          "correctEnglish": [
+            "Let's",
+            "go",
+            "swimming!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Let's play ___!",
+      "answer": "ping-pong"
+    },
+    {
+      "type": "translate",
+      "cn": "好的！",
+      "en": [
+        "OK!"
+      ]
+    }
+  ],
+  "funFacts": [
+    "唱歌可以释放大脑中的内啡肽，让人感觉更快乐。",
+    "世界上最长的歌曲据说可以持续播放1000年。"
+  ]
+}

@@ -7,37 +7,37 @@
       "id": "word-often",
       "en": "often",
       "zh": "经常",
-      "audio": "/audio/tts/word-often.mp3"
+      "audio": "/audio/tts/often.mp3"
     },
     {
       "id": "word-usually",
       "en": "usually",
       "zh": "通常",
-      "audio": "/audio/tts/word-usually.mp3"
+      "audio": "/audio/tts/usually.mp3"
     },
     {
       "id": "word-around",
       "en": "around",
       "zh": "围绕",
-      "audio": "/audio/tts/word-around.mp3"
+      "audio": "/audio/tts/around.mp3"
     },
     {
       "id": "word-start",
       "en": "start",
       "zh": "开始",
-      "audio": "/audio/tts/word-start.mp3"
+      "audio": "/audio/tts/start.mp3"
     },
     {
       "id": "word-finish",
       "en": "finish",
       "zh": "结束",
-      "audio": "/audio/tts/word-finish.mp3"
+      "audio": "/audio/tts/finish.mp3"
     },
     {
       "id": "word-study",
       "en": "study",
       "zh": "学习",
-      "audio": "/audio/tts/word-study.mp3"
+      "audio": "/audio/tts/study.mp3"
     }
   ],
   "phrases": [
@@ -46,21 +46,21 @@
       "en": "sit in lines",
       "zh": "坐成行",
       "icon": "/images/icons/rows.svg",
-      "audio": "/audio/tts/phrase-sit-in-lines.mp3"
+      "audio": "/audio/tts/sit-in-lines.mp3"
     },
     {
       "id": "phrase-do-morning-exercises",
       "en": "do morning exercises",
       "zh": "做早操",
       "icon": "/images/icons/sun.svg",
-      "audio": "/audio/tts/phrase-do-morning-exercises.mp3"
+      "audio": "/audio/tts/do-morning-exercises.mp3"
     },
     {
       "id": "phrase-have-fun",
       "en": "have fun",
       "zh": "玩得开心",
       "icon": "/images/icons/smiley.svg",
-      "audio": "/audio/tts/phrase-have-fun.mp3"
+      "audio": "/audio/tts/have-fun.mp3"
     }
   ],
   "patterns": [
@@ -163,7 +163,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-sit-in-lines.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "in",
             "lines",
@@ -178,7 +178,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-do-morning-exercises.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "morning",
             "exercises",
@@ -193,7 +193,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/children-often-sit-around-tables-in-class.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "often",
             "sit",

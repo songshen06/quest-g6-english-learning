@@ -7,61 +7,61 @@
       "id": "word-how",
       "en": "how",
       "zh": "多少",
-      "audio": "/audio/tts/word-how.mp3"
+      "audio": "/audio/tts/how.mp3"
     },
     {
       "id": "word-much",
       "en": "much",
       "zh": "多少",
-      "audio": "/audio/tts/word-much.mp3"
+      "audio": "/audio/tts/much.mp3"
     },
     {
       "id": "word-yuan",
       "en": "yuan",
       "zh": "元",
-      "audio": "/audio/tts/word-yuan.mp3"
+      "audio": "/audio/tts/yuan.mp3"
     },
     {
       "id": "word-expensive",
       "en": "expensive",
       "zh": "昂贵的",
-      "audio": "/audio/tts/word-expensive.mp3"
+      "audio": "/audio/tts/expensive.mp3"
     },
     {
       "id": "word-cheap",
       "en": "cheap",
       "zh": "便宜的",
-      "audio": "/audio/tts/word-cheap.mp3"
+      "audio": "/audio/tts/cheap.mp3"
     },
     {
       "id": "word-buy",
       "en": "buy",
       "zh": "买",
-      "audio": "/audio/tts/word-buy.mp3"
+      "audio": "/audio/tts/buy.mp3"
     },
     {
       "id": "word-sell",
       "en": "sell",
       "zh": "卖",
-      "audio": "/audio/tts/word-sell.mp3"
+      "audio": "/audio/tts/sell.mp3"
     },
     {
       "id": "word-shop",
       "en": "shop",
       "zh": "商店",
-      "audio": "/audio/tts/word-shop.mp3"
+      "audio": "/audio/tts/shop.mp3"
     },
     {
       "id": "word-money",
       "en": "money",
       "zh": "钱",
-      "audio": "/audio/tts/word-money.mp3"
+      "audio": "/audio/tts/money.mp3"
     },
     {
       "id": "word-pay",
       "en": "pay",
       "zh": "支付",
-      "audio": "/audio/tts/word-pay.mp3"
+      "audio": "/audio/tts/pay.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "How much",
       "zh": "多少钱",
       "icon": "/images/icons/money-question.svg",
-      "audio": "/audio/tts/phrase-how-much.mp3"
+      "audio": "/audio/tts/how-much.mp3"
     },
     {
       "id": "phrase-five-yuan",
       "en": "five yuan",
       "zh": "五元",
       "icon": "/images/icons/price-tag.svg",
-      "audio": "/audio/tts/phrase-five-yuan.mp3"
+      "audio": "/audio/tts/five-yuan.mp3"
     },
     {
       "id": "phrase-too-expensive",
       "en": "too expensive",
       "zh": "太贵了",
       "icon": "/images/icons/expensive.svg",
-      "audio": "/audio/tts/phrase-too-expensive.mp3"
+      "audio": "/audio/tts/too-expensive.mp3"
     },
     {
       "id": "phrase-go-shopping",
       "en": "go shopping",
       "zh": "去购物",
       "icon": "/images/icons/shopping-bag.svg",
-      "audio": "/audio/tts/phrase-go-shopping.mp3"
+      "audio": "/audio/tts/go-shopping.mp3"
     }
   ],
   "patterns": [
@@ -206,7 +206,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/how-much-is-the-book.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "much",
             "is",
@@ -225,7 +225,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/its-ten-yuan.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "ten",
             "yuan.",
@@ -240,7 +240,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/this-is-too-expensive.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "is",
             "too",

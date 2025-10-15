@@ -1,0 +1,317 @@
+{
+  "moduleId": "grade1-upper-mod-02",
+  "title": "Names and Identity",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "whats",
+      "en": "what's",
+      "zh": "是什么",
+      "audio": "/audio/tts/whats.mp3"
+    },
+    {
+      "id": "your",
+      "en": "your",
+      "zh": "你的",
+      "audio": "/audio/tts/your.mp3"
+    },
+    {
+      "id": "name",
+      "en": "name",
+      "zh": "名字",
+      "audio": "/audio/tts/name.mp3"
+    },
+    {
+      "id": "my",
+      "en": "my",
+      "zh": "我的",
+      "audio": "/audio/tts/audio-2281.mp3"
+    },
+    {
+      "id": "boy",
+      "en": "boy",
+      "zh": "男孩",
+      "audio": "/audio/tts/boy.mp3"
+    },
+    {
+      "id": "girl",
+      "en": "girl",
+      "zh": "女孩",
+      "audio": "/audio/tts/girl.mp3"
+    },
+    {
+      "id": "morning",
+      "en": "morning",
+      "zh": "早上",
+      "audio": "/audio/tts/morning.mp3"
+    },
+    {
+      "id": "afternoon",
+      "en": "afternoon",
+      "zh": "下午",
+      "audio": "/audio/tts/afternoon.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "whats-your-name",
+      "en": "What's your name?",
+      "zh": "你叫什么名字？",
+      "icon": "/images/icons/name-tag.svg",
+      "audio": "/audio/tts/whats-your-name.mp3"
+    },
+    {
+      "id": "my-names",
+      "en": "My name's...",
+      "zh": "我的名字是...",
+      "icon": "/images/icons/person.svg",
+      "audio": "/audio/tts/my-names.mp3"
+    },
+    {
+      "id": "good-morning",
+      "en": "Good morning.",
+      "zh": "早上好。",
+      "icon": "/images/icons/sun.svg",
+      "audio": "/audio/tts/good-morning.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What's your name?",
+      "a": "你叫什么名字？"
+    },
+    {
+      "q": "My name's Daming.",
+      "a": "我的名字是大明。"
+    },
+    {
+      "q": "I'm a boy.",
+      "a": "我是一个男孩。"
+    },
+    {
+      "q": "I'm a girl.",
+      "a": "我是一个女孩。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "what's",
+              "zh": "是什么"
+            },
+            {
+              "en": "your",
+              "zh": "你的"
+            },
+            {
+              "en": "name",
+              "zh": "名字"
+            },
+            {
+              "en": "my",
+              "zh": "我的"
+            },
+            {
+              "en": "boy",
+              "zh": "男孩"
+            },
+            {
+              "en": "girl",
+              "zh": "女孩"
+            }
+          ],
+          "options": [
+            {
+              "en": "morning",
+              "zh": "早上"
+            },
+            {
+              "en": "afternoon",
+              "zh": "下午"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "your",
+            "name?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "your",
+            "name?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "your",
+            "name?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "your",
+            "name?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "name's",
+            "Daming.",
+            "My"
+          ],
+          "correct": [
+            "My",
+            "name's",
+            "Daming."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What's your name?",
+          "scrambledChinese": [
+            "叫",
+            "什",
+            "么",
+            "名",
+            "字",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "叫",
+            "什",
+            "么",
+            "名",
+            "字",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My name's...",
+          "scrambledChinese": [
+            "的",
+            "名",
+            "字",
+            "是",
+            ".",
+            ".",
+            ".",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "的",
+            "名",
+            "字",
+            "是",
+            ".",
+            ".",
+            "."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你叫什么名字？",
+          "scrambledEnglish": [
+            "your",
+            "name?",
+            "What's"
+          ],
+          "correctEnglish": [
+            "What's",
+            "your",
+            "name?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我的名字是...",
+          "scrambledEnglish": [
+            "name's...",
+            "My"
+          ],
+          "correctEnglish": [
+            "My",
+            "name's..."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Good ___.",
+      "answer": "afternoon"
+    },
+    {
+      "type": "translate",
+      "cn": "你叫什么名字？",
+      "en": [
+        "What's your name?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "在许多文化中，名字被认为具有特殊的力量或意义。",
+    "世界上最常见的姓氏之一是\"李\"（Li）。"
+  ]
+}

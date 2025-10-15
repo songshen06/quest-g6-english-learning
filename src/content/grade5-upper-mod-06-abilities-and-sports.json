@@ -7,37 +7,37 @@
       "id": "word-well",
       "en": "well",
       "zh": "好",
-      "audio": "/audio/tts/word-well.mp3"
+      "audio": "/audio/tts/well.mp3"
     },
     {
       "id": "word-fast",
       "en": "fast",
       "zh": "快",
-      "audio": "/audio/tts/word-fast.mp3"
+      "audio": "/audio/tts/fast.mp3"
     },
     {
       "id": "word-high",
       "en": "high",
       "zh": "高",
-      "audio": "/audio/tts/word-high.mp3"
+      "audio": "/audio/tts/high.mp3"
     },
     {
       "id": "word-point",
       "en": "point",
       "zh": "分数",
-      "audio": "/audio/tts/word-point.mp3"
+      "audio": "/audio/tts/point.mp3"
     },
     {
       "id": "word-got",
       "en": "got",
       "zh": "得到（get的过去式）",
-      "audio": "/audio/tts/word-got.mp3"
+      "audio": "/audio/tts/got.mp3"
     },
     {
       "id": "word-fan",
       "en": "fan",
       "zh": "迷",
-      "audio": "/audio/tts/word-fan.mp3"
+      "audio": "/audio/tts/fan.mp3"
     }
   ],
   "phrases": [
@@ -46,21 +46,21 @@
       "en": "play basketball",
       "zh": "打篮球",
       "icon": "/images/icons/basketball.svg",
-      "audio": "/audio/tts/phrase-play-basketball.mp3"
+      "audio": "/audio/tts/play-basketball.mp3"
     },
     {
       "id": "phrase-run-fast",
       "en": "run fast",
       "zh": "跑得快",
       "icon": "/images/icons/running.svg",
-      "audio": "/audio/tts/phrase-run-fast.mp3"
+      "audio": "/audio/tts/run-fast.mp3"
     },
     {
       "id": "phrase-jump-high",
       "en": "jump high",
       "zh": "跳得高",
       "icon": "/images/icons/jump.svg",
-      "audio": "/audio/tts/phrase-jump-high.mp3"
+      "audio": "/audio/tts/jump-high.mp3"
     }
   ],
   "patterns": [
@@ -167,7 +167,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/you-can-play-basketball-well.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "can",
             "play",
@@ -186,7 +186,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/can-you-run-fast.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "you",
             "run",
@@ -203,7 +203,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/no-i-cant.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "I",
             "can't.",

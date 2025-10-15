@@ -25,6 +25,13 @@ from pathlib import Path
 import platform
 import subprocess
 
+# 导入Coqui TTS生成器
+try:
+    from generate_missing_audio import CoquiAudioGenerator
+    COQUI_AVAILABLE = True
+except ImportError:
+    COQUI_AVAILABLE = False
+
 class AudioGenerator:
     def __init__(self, project_root):
         self.project_root = Path(project_root)
@@ -345,7 +352,21 @@ class AudioGenerator:
             print(f"⏭️  跳过已存在的 {filename}")
             return
 
-        # 优先使用 macOS 本地 TTS ('say')
+        # 优先使用 Coqui TTS (最高质量)
+        if COQUI_AVAILABLE:
+            try:
+                print(f"🎙️  尝试 Coqui TTS 生成 {filename}: '{text}'")
+                coqui_generator = CoquiAudioGenerator()
+                success = coqui_generator.generate_coqui_tts(filename, text)
+                if success:
+                    print(f"🎤 (Coqui TTS) 生成 {filename}: '{text}'")
+                    return
+                else:
+                    print(f"⚠️ Coqui TTS 生成 {filename} 失败，尝试其他方法")
+            except Exception as coqui_err:
+                print(f"⚠️ Coqui TTS 生成 {filename} 失败: {coqui_err}")
+
+        # 尝试使用 macOS 本地 TTS ('say')
         if platform.system() == 'Darwin':
             try:
                 with tempfile.NamedTemporaryFile(delete=False, suffix='.aiff') as tmp_aiff:

@@ -1,0 +1,317 @@
+{
+  "moduleId": "grade2-upper-mod-03",
+  "title": "Do You Like...?",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "bananas",
+      "en": "bananas",
+      "zh": "香蕉",
+      "audio": "/audio/tts/bananas.mp3"
+    },
+    {
+      "id": "apples",
+      "en": "apples",
+      "zh": "苹果",
+      "audio": "/audio/tts/apples.mp3"
+    },
+    {
+      "id": "milk",
+      "en": "milk",
+      "zh": "牛奶",
+      "audio": "/audio/tts/milk.mp3"
+    },
+    {
+      "id": "oranges",
+      "en": "oranges",
+      "zh": "橘子",
+      "audio": "/audio/tts/oranges.mp3"
+    },
+    {
+      "id": "fruit",
+      "en": "fruit",
+      "zh": "水果",
+      "audio": "/audio/tts/fruit.mp3"
+    },
+    {
+      "id": "milkshake",
+      "en": "milkshake",
+      "zh": "奶昔",
+      "audio": "/audio/tts/milkshake.mp3"
+    },
+    {
+      "id": "everything",
+      "en": "everything",
+      "zh": "所有东西",
+      "audio": "/audio/tts/everything.mp3"
+    },
+    {
+      "id": "tomatoes",
+      "en": "tomatoes",
+      "zh": "西红柿",
+      "audio": "/audio/tts/tomatoes.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "yes-i-do",
+      "en": "Yes, I do.",
+      "zh": "是的，我喜欢。",
+      "icon": "/images/icons/check.svg",
+      "audio": "/audio/tts/yes-i-do.mp3"
+    },
+    {
+      "id": "no-i-dont",
+      "en": "No, I don't.",
+      "zh": "不，我不喜欢。",
+      "icon": "/images/icons/cross.svg",
+      "audio": "/audio/tts/no-i-dont.mp3"
+    },
+    {
+      "id": "here-you-are",
+      "en": "Here you are.",
+      "zh": "给你。",
+      "icon": "/images/icons/give.svg",
+      "audio": "/audio/tts/here-you-are.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Do you like bananas?",
+      "a": "你喜欢香蕉吗？"
+    },
+    {
+      "q": "Yes, I do.",
+      "a": "是的，我喜欢。"
+    },
+    {
+      "q": "Do you like oranges?",
+      "a": "你喜欢橘子吗？"
+    },
+    {
+      "q": "No, I don't.",
+      "a": "不，我不喜欢。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "bananas",
+              "zh": "香蕉"
+            },
+            {
+              "en": "apples",
+              "zh": "苹果"
+            },
+            {
+              "en": "milk",
+              "zh": "牛奶"
+            },
+            {
+              "en": "oranges",
+              "zh": "橘子"
+            },
+            {
+              "en": "fruit",
+              "zh": "水果"
+            },
+            {
+              "en": "milkshake",
+              "zh": "奶昔"
+            }
+          ],
+          "options": [
+            {
+              "en": "everything",
+              "zh": "所有东西"
+            },
+            {
+              "en": "tomatoes",
+              "zh": "西红柿"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "do.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "I",
+            "do."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "don't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "I",
+            "don't."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "are.",
+            "Here"
+          ],
+          "correct": [
+            "Here",
+            "you",
+            "are."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, I do.",
+          "scrambledChinese": [
+            "的",
+            "，",
+            "我",
+            "喜",
+            "欢",
+            "。",
+            "是"
+          ],
+          "correctChinese": [
+            "是",
+            "的",
+            "，",
+            "我",
+            "喜",
+            "欢",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "No, I don't.",
+          "scrambledChinese": [
+            "，",
+            "我",
+            "不",
+            "喜",
+            "欢",
+            "。",
+            "不"
+          ],
+          "correctChinese": [
+            "不",
+            "，",
+            "我",
+            "不",
+            "喜",
+            "欢",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "是的，我喜欢。",
+          "scrambledEnglish": [
+            "I",
+            "do.",
+            "Yes,"
+          ],
+          "correctEnglish": [
+            "Yes,",
+            "I",
+            "do."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "不，我不喜欢。",
+          "scrambledEnglish": [
+            "I",
+            "don't.",
+            "No,"
+          ],
+          "correctEnglish": [
+            "No,",
+            "I",
+            "don't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It's a fruit ___.",
+      "answer": "milkshake"
+    },
+    {
+      "type": "translate",
+      "cn": "他们喜欢所有东西。",
+      "en": [
+        "They like everything."
+      ]
+    }
+  ],
+  "funFacts": [
+    "从植物学上讲，香蕉是一种浆果，而草莓却不是。",
+    "世界上有超过7500种苹果。"
+  ]
+}

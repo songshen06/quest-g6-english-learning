@@ -1,0 +1,307 @@
+{
+  "moduleId": "grade3-upper-mod-07",
+  "title": "Health Problems",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "sad",
+      "en": "sad",
+      "zh": "伤心的",
+      "audio": "/audio/tts/sad.mp3"
+    },
+    {
+      "id": "ill",
+      "en": "ill",
+      "zh": "生病的",
+      "audio": "/audio/tts/ill.mp3"
+    },
+    {
+      "id": "headache",
+      "en": "headache",
+      "zh": "头痛",
+      "audio": "/audio/tts/headache.mp3"
+    },
+    {
+      "id": "stomach-ache",
+      "en": "stomach ache",
+      "zh": "胃痛",
+      "audio": "/audio/tts/stomach-ache.mp3"
+    },
+    {
+      "id": "test",
+      "en": "test",
+      "zh": "考试",
+      "audio": "/audio/tts/test.mp3"
+    },
+    {
+      "id": "cold",
+      "en": "cold",
+      "zh": "感冒",
+      "audio": "/audio/tts/cold.mp3"
+    },
+    {
+      "id": "cough",
+      "en": "cough",
+      "zh": "咳嗽",
+      "audio": "/audio/tts/cough.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "are-you-ill",
+      "en": "Are you ill?",
+      "zh": "你生病了吗？",
+      "icon": "/images/icons/sick.svg",
+      "audio": "/audio/tts/are-you-ill.mp3"
+    },
+    {
+      "id": "have-got-a-headache",
+      "en": "have got a headache",
+      "zh": "头痛",
+      "icon": "/images/icons/headache.svg",
+      "audio": "/audio/tts/have-got-a-headache.mp3"
+    },
+    {
+      "id": "dont-worry",
+      "en": "Don't worry.",
+      "zh": "别担心。",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/dont-worry.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Have you got a headache?",
+      "a": "你头痛吗？"
+    },
+    {
+      "q": "Yes, I have.",
+      "a": "是的，我头痛。"
+    },
+    {
+      "q": "No, I haven't.",
+      "a": "不，我没有。"
+    },
+    {
+      "q": "She's got a cold.",
+      "a": "她感冒了。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "sad",
+              "zh": "伤心的"
+            },
+            {
+              "en": "ill",
+              "zh": "生病的"
+            },
+            {
+              "en": "headache",
+              "zh": "头痛"
+            },
+            {
+              "en": "stomach ache",
+              "zh": "胃痛"
+            },
+            {
+              "en": "test",
+              "zh": "考试"
+            },
+            {
+              "en": "cold",
+              "zh": "感冒"
+            }
+          ],
+          "options": [
+            {
+              "en": "伤心的",
+              "zh": "sad"
+            },
+            {
+              "en": "生病的",
+              "zh": "ill"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "ill?",
+            "Are"
+          ],
+          "correct": [
+            "Are",
+            "you",
+            "ill?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "got",
+            "a",
+            "headache",
+            "have"
+          ],
+          "correct": [
+            "have",
+            "got",
+            "a",
+            "headache"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "got",
+            "a",
+            "headache?",
+            "Have"
+          ],
+          "correct": [
+            "Have",
+            "you",
+            "got",
+            "a",
+            "headache?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Are you ill?",
+          "scrambledChinese": [
+            "生",
+            "病",
+            "了",
+            "吗",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "生",
+            "病",
+            "了",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "have got a headache",
+          "scrambledChinese": [
+            "痛",
+            "头"
+          ],
+          "correctChinese": [
+            "头",
+            "痛"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你生病了吗？",
+          "scrambledEnglish": [
+            "you",
+            "ill?",
+            "Are"
+          ],
+          "correctEnglish": [
+            "Are",
+            "you",
+            "ill?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "头痛",
+          "scrambledEnglish": [
+            "got",
+            "a",
+            "headache",
+            "have"
+          ],
+          "correctEnglish": [
+            "have",
+            "got",
+            "a",
+            "headache"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Has she got a ___?",
+      "answer": "cough"
+    },
+    {
+      "type": "translate",
+      "cn": "他病了。",
+      "en": [
+        "He's ill."
+      ]
+    }
+  ],
+  "funFacts": [
+    "打喷嚏时的速度可以超过每小时160公里。",
+    "人类是唯一会因情绪而脸红的生物。"
+  ]
+}

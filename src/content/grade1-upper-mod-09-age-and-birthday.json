@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade1-upper-mod-09",
+  "title": "Age and Birthday",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "how-old",
+      "en": "how old",
+      "zh": "多大",
+      "audio": "/audio/tts/how-old.mp3"
+    },
+    {
+      "id": "are",
+      "en": "are",
+      "zh": "是",
+      "audio": "/audio/tts/are.mp3"
+    },
+    {
+      "id": "you",
+      "en": "you",
+      "zh": "你",
+      "audio": "/audio/tts/you.mp3"
+    },
+    {
+      "id": "happy",
+      "en": "happy",
+      "zh": "快乐的",
+      "audio": "/audio/tts/happy.mp3"
+    },
+    {
+      "id": "birthday",
+      "en": "birthday",
+      "zh": "生日",
+      "audio": "/audio/tts/birthday.mp3"
+    },
+    {
+      "id": "for",
+      "en": "for",
+      "zh": "给",
+      "audio": "/audio/tts/for.mp3"
+    },
+    {
+      "id": "thank-you",
+      "en": "thank you",
+      "zh": "谢谢你",
+      "audio": "/audio/tts/thank-you.mp3"
+    },
+    {
+      "id": "welcome",
+      "en": "welcome",
+      "zh": "不客气",
+      "audio": "/audio/tts/welcome.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "how-old-are-you",
+      "en": "How old are you?",
+      "zh": "你几岁了？",
+      "icon": "/images/icons/birthday-cake.svg",
+      "audio": "/audio/tts/how-old-are-you.mp3"
+    },
+    {
+      "id": "im-six",
+      "en": "I'm six.",
+      "zh": "我六岁。",
+      "icon": "/images/icons/number-6.svg",
+      "audio": "/audio/tts/im-six.mp3"
+    },
+    {
+      "id": "happy-birthday",
+      "en": "Happy birthday!",
+      "zh": "生日快乐！",
+      "icon": "/images/icons/present.svg",
+      "audio": "/audio/tts/happy-birthday.mp3"
+    },
+    {
+      "id": "youre-welcome",
+      "en": "You're welcome!",
+      "zh": "不客气！",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/youre-welcome.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "How old are you?",
+      "a": "你几岁了？"
+    },
+    {
+      "q": "I'm seven.",
+      "a": "我七岁。"
+    },
+    {
+      "q": "Happy birthday!",
+      "a": "生日快乐！"
+    },
+    {
+      "q": "A pen for you.",
+      "a": "送你一支钢笔。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "how old",
+              "zh": "多大"
+            },
+            {
+              "en": "are",
+              "zh": "是"
+            },
+            {
+              "en": "you",
+              "zh": "你"
+            },
+            {
+              "en": "happy",
+              "zh": "快乐的"
+            },
+            {
+              "en": "birthday",
+              "zh": "生日"
+            },
+            {
+              "en": "for",
+              "zh": "给"
+            }
+          ],
+          "options": [
+            {
+              "en": "thank you",
+              "zh": "谢谢你"
+            },
+            {
+              "en": "welcome",
+              "zh": "不客气"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "old",
+            "are",
+            "you?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "old",
+            "are",
+            "you?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "old",
+            "are",
+            "you?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "old",
+            "are",
+            "you?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How old are you?",
+          "scrambledChinese": [
+            "几",
+            "岁",
+            "了",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "几",
+            "岁",
+            "了",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'm six.",
+          "scrambledChinese": [
+            "六",
+            "岁",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "六",
+            "岁",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你几岁了？",
+          "scrambledEnglish": [
+            "old",
+            "are",
+            "you?",
+            "How"
+          ],
+          "correctEnglish": [
+            "How",
+            "old",
+            "are",
+            "you?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我六岁。",
+          "scrambledEnglish": [
+            "six.",
+            "I'm"
+          ],
+          "correctEnglish": [
+            "I'm",
+            "six."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Happy ___!",
+      "answer": "birthday"
+    },
+    {
+      "type": "translate",
+      "cn": "你多大了？",
+      "en": [
+        "How old are you?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "唱《生日快乐》歌的传统始于20世纪初的美国。",
+    "世界上最长寿的人活到了122岁。"
+  ]
+}

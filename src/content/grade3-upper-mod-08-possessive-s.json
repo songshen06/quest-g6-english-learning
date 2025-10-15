@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade3-upper-mod-08",
+  "title": "Possessive 's",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "sams-book",
+      "en": "Sam's book",
+      "zh": "萨姆的书",
+      "audio": "/audio/tts/sams-book.mp3"
+    },
+    {
+      "id": "linglings-toys",
+      "en": "Lingling's toys",
+      "zh": "玲玲的玩具",
+      "audio": "/audio/tts/linglings-toys.mp3"
+    },
+    {
+      "id": "grandmas-umbrella",
+      "en": "grandma's umbrella",
+      "zh": "奶奶的雨伞",
+      "audio": "/audio/tts/grandmas-umbrella.mp3"
+    },
+    {
+      "id": "umbrella",
+      "en": "umbrella",
+      "zh": "雨伞",
+      "audio": "/audio/tts/umbrella.mp3"
+    },
+    {
+      "id": "get",
+      "en": "get",
+      "zh": "拿",
+      "audio": "/audio/tts/get.mp3"
+    },
+    {
+      "id": "which",
+      "en": "which",
+      "zh": "哪一个",
+      "audio": "/audio/tts/which.mp3"
+    },
+    {
+      "id": "broken",
+      "en": "broken",
+      "zh": "坏了的",
+      "audio": "/audio/tts/broken.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "are-you-ok",
+      "en": "Are you OK?",
+      "zh": "你还好吗？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/are-you-ok.mp3"
+    },
+    {
+      "id": "be-careful",
+      "en": "Be careful!",
+      "zh": "小心！",
+      "icon": "/images/icons/warning.svg",
+      "audio": "/audio/tts/be-careful.mp3"
+    },
+    {
+      "id": "dont-worry",
+      "en": "Don't worry.",
+      "zh": "别担心。",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/dont-worry.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This is Sam's book.",
+      "a": "这是萨姆的书。"
+    },
+    {
+      "q": "They are not Lingling's toys.",
+      "a": "它们不是玲玲的玩具。"
+    },
+    {
+      "q": "Is this your grandma's umbrella?",
+      "a": "这是你奶奶的雨伞吗？"
+    },
+    {
+      "q": "Yes, it is.",
+      "a": "是的，它是。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "Sam's book",
+              "zh": "萨姆的书"
+            },
+            {
+              "en": "Lingling's toys",
+              "zh": "玲玲的玩具"
+            },
+            {
+              "en": "grandma's umbrella",
+              "zh": "奶奶的雨伞"
+            },
+            {
+              "en": "umbrella",
+              "zh": "雨伞"
+            },
+            {
+              "en": "get",
+              "zh": "拿"
+            },
+            {
+              "en": "which",
+              "zh": "哪一个"
+            }
+          ],
+          "options": [
+            {
+              "en": "萨姆的书",
+              "zh": "Sam's book"
+            },
+            {
+              "en": "玲玲的玩具",
+              "zh": "Lingling's toys"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "OK?",
+            "Are"
+          ],
+          "correct": [
+            "Are",
+            "you",
+            "OK?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "Sam's",
+            "book.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "Sam's",
+            "book."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "are",
+            "not",
+            "Lingling's",
+            "toys.",
+            "They"
+          ],
+          "correct": [
+            "They",
+            "are",
+            "not",
+            "Lingling's",
+            "toys."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Are you OK?",
+          "scrambledChinese": [
+            "还",
+            "好",
+            "吗",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "还",
+            "好",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Be careful!",
+          "scrambledChinese": [
+            "心",
+            "！",
+            "小"
+          ],
+          "correctChinese": [
+            "小",
+            "心",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你还好吗？",
+          "scrambledEnglish": [
+            "you",
+            "OK?",
+            "Are"
+          ],
+          "correctEnglish": [
+            "Are",
+            "you",
+            "OK?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "小心！",
+          "scrambledEnglish": [
+            "careful!",
+            "Be"
+          ],
+          "correctEnglish": [
+            "Be",
+            "careful!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Is this ___ cap?",
+      "answer": "Sam's"
+    },
+    {
+      "type": "translate",
+      "cn": "它坏了。",
+      "en": [
+        "It's broken."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一把可折叠的雨伞是在1928年发明的。",
+    "在英语中，所有格符号 's 最早是单词 'his' 的缩写。"
+  ]
+}

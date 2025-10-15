@@ -73,6 +73,66 @@ import LowerMod08AskingWhyData from './grade6-lower-mod-08-asking-why.json'
 import LowerMod09BestWishesData from './grade6-lower-mod-09-best-wishes.json'
 import LowerMod10FutureSchoolLifeData from './grade6-lower-mod-10-future-school-life.json'
 
+import UpperMod01GreetingsData from './grade1-upper-mod-01-greetings.json'
+import UpperMod02NamesAndIdentityData from './grade1-upper-mod-02-names-and-identity.json'
+import UpperMod03ClassroomCommandsData from './grade1-upper-mod-03-classroom-commands.json'
+import UpperMod04ColorsData from './grade1-upper-mod-04-colors.json'
+import UpperMod05ThisAndThatData from './grade1-upper-mod-05-this-and-that.json'
+import UpperMod06ClassroomObjectsData from './grade1-upper-mod-06-classroom-objects.json'
+import UpperMod07AskingYesNoQuestionsData from './grade1-upper-mod-07-asking-yes-no-questions.json'
+import UpperMod08CountingData from './grade1-upper-mod-08-counting.json'
+import UpperMod09AgeAndBirthdayData from './grade1-upper-mod-09-age-and-birthday.json'
+import UpperMod10FamilyData from './grade1-upper-mod-10-family.json'
+import LowerMod01ProfessionsData from './grade1-lower-mod-01-professions.json'
+import LowerMod02PrepositionsOfPlaceData from './grade1-lower-mod-02-prepositions-of-place.json'
+import LowerMod03CountingAndLocatingData from './grade1-lower-mod-03-counting-and-locating.json'
+import LowerMod04BodyPartsData from './grade1-lower-mod-04-body-parts.json'
+import LowerMod05FarmAnimalsData from './grade1-lower-mod-05-farm-animals.json'
+import LowerMod06DescribingAnimalsData from './grade1-lower-mod-06-describing-animals.json'
+import LowerMod07ThereIsThereAreData from './grade1-lower-mod-07-there-is-there-are.json'
+import LowerMod08ClothesData from './grade1-lower-mod-08-clothes.json'
+import LowerMod09SportsData from './grade1-lower-mod-09-sports.json'
+import LowerMod10LetsPlayData from './grade1-lower-mod-10-lets-play.json'
+import UpperMod01LikesAndDislikesData from './grade2-upper-mod-01-likes-and-dislikes.json'
+import UpperMod02FoodPreferencesData from './grade2-upper-mod-02-food-preferences.json'
+import UpperMod03DoYouLikeData from './grade2-upper-mod-03-do-you-like.json'
+import UpperMod04HeLikesClothesData from './grade2-upper-mod-04-he-likes-clothes.json'
+import UpperMod05DailyRoutinesData from './grade2-upper-mod-05-daily-routines.json'
+import UpperMod06WeekendActivitiesData from './grade2-upper-mod-06-weekend-activities.json'
+import UpperMod07TransportationData from './grade2-upper-mod-07-transportation.json'
+import UpperMod08WeekendRoutinesData from './grade2-upper-mod-08-weekend-routines.json'
+import UpperMod09SeasonsData from './grade2-upper-mod-09-seasons.json'
+import UpperMod10HolidaysData from './grade2-upper-mod-10-holidays.json'
+import LowerMod01WeatherAndActivitiesData from './grade2-lower-mod-01-weather-and-activities.json'
+import LowerMod02DescribingActionsData from './grade2-lower-mod-02-describing-actions.json'
+import LowerMod03NegationsAndQuestionsData from './grade2-lower-mod-03-negations-and-questions.json'
+import LowerMod04WhatsHeDoingData from './grade2-lower-mod-04-whats-he-doing.json'
+import LowerMod05PlayingGamesData from './grade2-lower-mod-05-playing-games.json'
+import LowerMod06UsuallyAndNowData from './grade2-lower-mod-06-usually-and-now.json'
+import LowerMod07ChildrensDayData from './grade2-lower-mod-07-childrens-day.json'
+import LowerMod08MovementAndDirectionData from './grade2-lower-mod-08-movement-and-direction.json'
+import LowerMod09GivingDirectionsData from './grade2-lower-mod-09-giving-directions.json'
+import LowerMod10LocationsData from './grade2-lower-mod-10-locations.json'
+import UpperMod01FoodAndCutleryData from './grade3-upper-mod-01-food-and-cutlery.json'
+import UpperMod02OngoingActionsData from './grade3-upper-mod-02-ongoing-actions.json'
+import UpperMod03TheseAndThoseData from './grade3-upper-mod-03-these-and-those.json'
+import UpperMod04AbilitiesData from './grade3-upper-mod-04-abilities.json'
+import UpperMod05AskingForPermissionData from './grade3-upper-mod-05-asking-for-permission.json'
+import UpperMod06PossessionsData from './grade3-upper-mod-06-possessions.json'
+import UpperMod07HealthProblemsData from './grade3-upper-mod-07-health-problems.json'
+import UpperMod08PossessiveSData from './grade3-upper-mod-08-possessive-s.json'
+import UpperMod09FutureActivitiesData from './grade3-upper-mod-09-future-activities.json'
+import UpperMod10TravelPlansData from './grade3-upper-mod-10-travel-plans.json'
+import LowerMod01DescribingPeopleData from './grade3-lower-mod-01-describing-people.json'
+import LowerMod02DescribingPlacesData from './grade3-lower-mod-02-describing-places.json'
+import LowerMod03WeekendPlansData from './grade3-lower-mod-03-weekend-plans.json'
+import LowerMod04CountingFruitData from './grade3-lower-mod-04-counting-fruit.json'
+import LowerMod05PlansForTheWeekData from './grade3-lower-mod-05-plans-for-the-week.json'
+import LowerMod06BodyPartsData from './grade3-lower-mod-06-body-parts.json'
+import LowerMod07AskingHowManyData from './grade3-lower-mod-07-asking-how-many.json'
+import LowerMod08SchoolReportsData from './grade3-lower-mod-08-school-reports.json'
+import LowerMod09ThenAndNowData from './grade3-lower-mod-09-then-and-now.json'
+import LowerMod10AskingAboutThePastData from './grade3-lower-mod-10-asking-about-the-past.json'
 // 重新导出所有模块数据
 export { UpperMod01PastEventsAndFriendsData }
 export { UpperMod02HelpingAtHomeData }
@@ -143,137 +203,269 @@ export { LowerMod10FutureSchoolLifeData }
 
 // 模块数据映射 - 支持多种访问方式
 export const moduleData = {
-  // Grade 4 Lower
-  'grade4-lower-mod-01': LowerMod01RulesAndWarningsData,
-  '4l-mod-01': LowerMod01RulesAndWarningsData,
-  'grade4-lower-mod-02': LowerMod02ShoppingAndPricesData,
-  '4l-mod-02': LowerMod02ShoppingAndPricesData,
-  'grade4-lower-mod-03': LowerMod03StorytellingData,
-  '4l-mod-03': LowerMod03StorytellingData,
-  'grade4-lower-mod-04': LowerMod04MusicAndFeelingsData,
-  '4l-mod-04': LowerMod04MusicAndFeelingsData,
-  'grade4-lower-mod-05': LowerMod05PresentActivitiesData,
-  '4l-mod-05': LowerMod05PresentActivitiesData,
-  'grade4-lower-mod-06': LowerMod06FuturePlansSuggestionsData,
-  '4l-mod-06': LowerMod06FuturePlansSuggestionsData,
-  'grade4-lower-mod-07': LowerMod07TellingTheTimeData,
-  '4l-mod-07': LowerMod07TellingTheTimeData,
-  'grade4-lower-mod-08': LowerMod08DirectionsAndLocationsData,
-  '4l-mod-08': LowerMod08DirectionsAndLocationsData,
-  'grade4-lower-mod-09': LowerMod09CountriesAndAnimalsData,
-  '4l-mod-09': LowerMod09CountriesAndAnimalsData,
-  'grade4-lower-mod-10': LowerMod10HolidayPlansData,
-  '4l-mod-10': LowerMod10HolidayPlansData,
+  // 一年级上册 (Grade 1 Upper)
+  'grade1-upper-mod-01': UpperMod01GreetingsData,
+  'g1u-01': UpperMod01GreetingsData,
+  'grade1-upper-mod-02': UpperMod02NamesAndIdentityData,
+  'g1u-02': UpperMod02NamesAndIdentityData,
+  'grade1-upper-mod-03': UpperMod03ClassroomCommandsData,
+  'g1u-03': UpperMod03ClassroomCommandsData,
+  'grade1-upper-mod-04': UpperMod04ColorsData,
+  'g1u-04': UpperMod04ColorsData,
+  'grade1-upper-mod-05': UpperMod05ThisAndThatData,
+  'g1u-05': UpperMod05ThisAndThatData,
+  'grade1-upper-mod-06': UpperMod06ClassroomObjectsData,
+  'g1u-06': UpperMod06ClassroomObjectsData,
+  'grade1-upper-mod-07': UpperMod07AskingYesNoQuestionsData,
+  'g1u-07': UpperMod07AskingYesNoQuestionsData,
+  'grade1-upper-mod-08': UpperMod08CountingData,
+  'g1u-08': UpperMod08CountingData,
+  'grade1-upper-mod-09': UpperMod09AgeAndBirthdayData,
+  'g1u-09': UpperMod09AgeAndBirthdayData,
+  'grade1-upper-mod-10': UpperMod10FamilyData,
+  'g1u-10': UpperMod10FamilyData,
 
-  // Grade 4 Upper
+  // 一年级下册 (Grade 1 Lower)
+  'grade1-lower-mod-01': LowerMod01ProfessionsData,
+  'g1l-01': LowerMod01ProfessionsData,
+  'grade1-lower-mod-02': LowerMod02PrepositionsOfPlaceData,
+  'g1l-02': LowerMod02PrepositionsOfPlaceData,
+  'grade1-lower-mod-03': LowerMod03CountingAndLocatingData,
+  'g1l-03': LowerMod03CountingAndLocatingData,
+  'grade1-lower-mod-04': LowerMod04BodyPartsData,
+  'g1l-04': LowerMod04BodyPartsData,
+  'grade1-lower-mod-05': LowerMod05FarmAnimalsData,
+  'g1l-05': LowerMod05FarmAnimalsData,
+  'grade1-lower-mod-06': LowerMod06DescribingAnimalsData,
+  'g1l-06': LowerMod06DescribingAnimalsData,
+  'grade1-lower-mod-07': LowerMod07ThereIsThereAreData,
+  'g1l-07': LowerMod07ThereIsThereAreData,
+  'grade1-lower-mod-08': LowerMod08ClothesData,
+  'g1l-08': LowerMod08ClothesData,
+  'grade1-lower-mod-09': LowerMod09SportsData,
+  'g1l-09': LowerMod09SportsData,
+  'grade1-lower-mod-10': LowerMod10LetsPlayData,
+  'g1l-10': LowerMod10LetsPlayData,
+
+  // 二年级上册 (Grade 2 Upper)
+  'grade2-upper-mod-01': UpperMod01LikesAndDislikesData,
+  'g2u-01': UpperMod01LikesAndDislikesData,
+  'grade2-upper-mod-02': UpperMod02FoodPreferencesData,
+  'g2u-02': UpperMod02FoodPreferencesData,
+  'grade2-upper-mod-03': UpperMod03DoYouLikeData,
+  'g2u-03': UpperMod03DoYouLikeData,
+  'grade2-upper-mod-04': UpperMod04HeLikesClothesData,
+  'g2u-04': UpperMod04HeLikesClothesData,
+  'grade2-upper-mod-05': UpperMod05DailyRoutinesData,
+  'g2u-05': UpperMod05DailyRoutinesData,
+  'grade2-upper-mod-06': UpperMod06WeekendActivitiesData,
+  'g2u-06': UpperMod06WeekendActivitiesData,
+  'grade2-upper-mod-07': UpperMod07TransportationData,
+  'g2u-07': UpperMod07TransportationData,
+  'grade2-upper-mod-08': UpperMod08WeekendRoutinesData,
+  'g2u-08': UpperMod08WeekendRoutinesData,
+  'grade2-upper-mod-09': UpperMod09SeasonsData,
+  'g2u-09': UpperMod09SeasonsData,
+  'grade2-upper-mod-10': UpperMod10HolidaysData,
+  'g2u-10': UpperMod10HolidaysData,
+
+  // 二年级下册 (Grade 2 Lower)
+  'grade2-lower-mod-01': LowerMod01WeatherAndActivitiesData,
+  'g2l-01': LowerMod01WeatherAndActivitiesData,
+  'grade2-lower-mod-02': LowerMod02DescribingActionsData,
+  'g2l-02': LowerMod02DescribingActionsData,
+  'grade2-lower-mod-03': LowerMod03NegationsAndQuestionsData,
+  'g2l-03': LowerMod03NegationsAndQuestionsData,
+  'grade2-lower-mod-04': LowerMod04WhatsHeDoingData,
+  'g2l-04': LowerMod04WhatsHeDoingData,
+  'grade2-lower-mod-05': LowerMod05PlayingGamesData,
+  'g2l-05': LowerMod05PlayingGamesData,
+  'grade2-lower-mod-06': LowerMod06UsuallyAndNowData,
+  'g2l-06': LowerMod06UsuallyAndNowData,
+  'grade2-lower-mod-07': LowerMod07ChildrensDayData,
+  'g2l-07': LowerMod07ChildrensDayData,
+  'grade2-lower-mod-08': LowerMod08MovementAndDirectionData,
+  'g2l-08': LowerMod08MovementAndDirectionData,
+  'grade2-lower-mod-09': LowerMod09GivingDirectionsData,
+  'g2l-09': LowerMod09GivingDirectionsData,
+  'grade2-lower-mod-10': LowerMod10LocationsData,
+  'g2l-10': LowerMod10LocationsData,
+
+  // 三年级上册 (Grade 3 Upper)
+  'grade3-upper-mod-01': UpperMod01FoodAndCutleryData,
+  'g3u-01': UpperMod01FoodAndCutleryData,
+  'grade3-upper-mod-02': UpperMod02OngoingActionsData,
+  'g3u-02': UpperMod02OngoingActionsData,
+  'grade3-upper-mod-03': UpperMod03TheseAndThoseData,
+  'g3u-03': UpperMod03TheseAndThoseData,
+  'grade3-upper-mod-04': UpperMod04AbilitiesData,
+  'g3u-04': UpperMod04AbilitiesData,
+  'grade3-upper-mod-05': UpperMod05AskingForPermissionData,
+  'g3u-05': UpperMod05AskingForPermissionData,
+  'grade3-upper-mod-06': UpperMod06PossessionsData,
+  'g3u-06': UpperMod06PossessionsData,
+  'grade3-upper-mod-07': UpperMod07HealthProblemsData,
+  'g3u-07': UpperMod07HealthProblemsData,
+  'grade3-upper-mod-08': UpperMod08PossessiveSData,
+  'g3u-08': UpperMod08PossessiveSData,
+  'grade3-upper-mod-09': UpperMod09FutureActivitiesData,
+  'g3u-09': UpperMod09FutureActivitiesData,
+  'grade3-upper-mod-10': UpperMod10TravelPlansData,
+  'g3u-10': UpperMod10TravelPlansData,
+
+  // 三年级下册 (Grade 3 Lower)
+  'grade3-lower-mod-01': LowerMod01DescribingPeopleData,
+  'g3l-01': LowerMod01DescribingPeopleData,
+  'grade3-lower-mod-02': LowerMod02DescribingPlacesData,
+  'g3l-02': LowerMod02DescribingPlacesData,
+  'grade3-lower-mod-03': LowerMod03WeekendPlansData,
+  'g3l-03': LowerMod03WeekendPlansData,
+  'grade3-lower-mod-04': LowerMod04CountingFruitData,
+  'g3l-04': LowerMod04CountingFruitData,
+  'grade3-lower-mod-05': LowerMod05PlansForTheWeekData,
+  'g3l-05': LowerMod05PlansForTheWeekData,
+  'grade3-lower-mod-06': LowerMod06BodyPartsData,
+  'g3l-06': LowerMod06BodyPartsData,
+  'grade3-lower-mod-07': LowerMod07AskingHowManyData,
+  'g3l-07': LowerMod07AskingHowManyData,
+  'grade3-lower-mod-08': LowerMod08SchoolReportsData,
+  'g3l-08': LowerMod08SchoolReportsData,
+  'grade3-lower-mod-09': LowerMod09ThenAndNowData,
+  'g3l-09': LowerMod09ThenAndNowData,
+  'grade3-lower-mod-10': LowerMod10AskingAboutThePastData,
+  'g3l-10': LowerMod10AskingAboutThePastData,
+
+  // 四年级上册 (Grade 4 Upper)
   'grade4-upper-mod-01': UpperMod01PastEventsAndFriendsData,
-  '4u-mod-01': UpperMod01PastEventsAndFriendsData,
+  'g4u-01': UpperMod01PastEventsAndFriendsData,
   'grade4-upper-mod-02': UpperMod02HelpingAtHomeData,
-  '4u-mod-02': UpperMod02HelpingAtHomeData,
+  'g4u-02': UpperMod02HelpingAtHomeData,
   'grade4-upper-mod-03': UpperMod03WhatIDidntDoData,
-  '4u-mod-03': UpperMod03WhatIDidntDoData,
+  'g4u-03': UpperMod03WhatIDidntDoData,
   'grade4-upper-mod-04': UpperMod04InventionsData,
-  '4u-mod-04': UpperMod04InventionsData,
+  'g4u-04': UpperMod04InventionsData,
   'grade4-upper-mod-05': UpperMod05SchoolTripsData,
-  '4u-mod-05': UpperMod05SchoolTripsData,
+  'g4u-05': UpperMod05SchoolTripsData,
   'grade4-upper-mod-06': UpperMod06StoryTimeData,
-  '4u-mod-06': UpperMod06StoryTimeData,
+  'g4u-06': UpperMod06StoryTimeData,
   'grade4-upper-mod-07': UpperMod07AskingAboutThePastData,
-  '4u-mod-07': UpperMod07AskingAboutThePastData,
+  'g4u-07': UpperMod07AskingAboutThePastData,
   'grade4-upper-mod-08': UpperMod08PastActivitiesData,
-  '4u-mod-08': UpperMod08PastActivitiesData,
+  'g4u-08': UpperMod08PastActivitiesData,
   'grade4-upper-mod-09': UpperMod09AccidentsData,
-  '4u-mod-09': UpperMod09AccidentsData,
+  'g4u-09': UpperMod09AccidentsData,
   'grade4-upper-mod-10': UpperMod10HealthyHabitsData,
-  '4u-mod-10': UpperMod10HealthyHabitsData,
+  'g4u-10': UpperMod10HealthyHabitsData,
 
-  // Grade 5 Lower
-  'grade5-lower-mod-01': LowerMod01DriverPlayerData,
-  '5l-mod-01': LowerMod01DriverPlayerData,
-  'grade5-lower-mod-02': LowerMod02TraditionalFoodData,
-  '5l-mod-02': LowerMod02TraditionalFoodData,
-  'grade5-lower-mod-03': LowerMod03LibraryBorrowData,
-  '5l-mod-03': LowerMod03LibraryBorrowData,
-  'grade5-lower-mod-04': LowerMod04LettersSeasonsData,
-  '5l-mod-04': LowerMod04LettersSeasonsData,
-  'grade5-lower-mod-05': LowerMod05ShoppingCarryingData,
-  '5l-mod-05': LowerMod05ShoppingCarryingData,
-  'grade5-lower-mod-06': LowerMod06TravelPlansData,
-  '5l-mod-06': LowerMod06TravelPlansData,
-  'grade5-lower-mod-07': LowerMod07JobsTimeData,
-  '5l-mod-07': LowerMod07JobsTimeData,
-  'grade5-lower-mod-08': LowerMod08MakeAKiteData,
-  '5l-mod-08': LowerMod08MakeAKiteData,
-  'grade5-lower-mod-09': LowerMod09TheatreHistoryData,
-  '5l-mod-09': LowerMod09TheatreHistoryData,
-  'grade5-lower-mod-10': LowerMod10TravelPrepData,
-  '5l-mod-10': LowerMod10TravelPrepData,
+  // 四年级下册 (Grade 4 Lower)
+  'grade4-lower-mod-01': LowerMod01RulesAndWarningsData,
+  'g4l-01': LowerMod01RulesAndWarningsData,
+  'grade4-lower-mod-02': LowerMod02ShoppingAndPricesData,
+  'g4l-02': LowerMod02ShoppingAndPricesData,
+  'grade4-lower-mod-03': LowerMod03StorytellingData,
+  'g4l-03': LowerMod03StorytellingData,
+  'grade4-lower-mod-04': LowerMod04MusicAndFeelingsData,
+  'g4l-04': LowerMod04MusicAndFeelingsData,
+  'grade4-lower-mod-05': LowerMod05PresentActivitiesData,
+  'g4l-05': LowerMod05PresentActivitiesData,
+  'grade4-lower-mod-06': LowerMod06FuturePlansSuggestionsData,
+  'g4l-06': LowerMod06FuturePlansSuggestionsData,
+  'grade4-lower-mod-07': LowerMod07TellingTheTimeData,
+  'g4l-07': LowerMod07TellingTheTimeData,
+  'grade4-lower-mod-08': LowerMod08DirectionsAndLocationsData,
+  'g4l-08': LowerMod08DirectionsAndLocationsData,
+  'grade4-lower-mod-09': LowerMod09CountriesAndAnimalsData,
+  'g4l-09': LowerMod09CountriesAndAnimalsData,
+  'grade4-lower-mod-10': LowerMod10HolidayPlansData,
+  'g4l-10': LowerMod10HolidayPlansData,
 
-  // Grade 5 Upper
+  // 五年级上册 (Grade 5 Upper)
   'grade5-upper-mod-01': UpperMod01ChangesAroundUsData,
-  '5u-mod-01': UpperMod01ChangesAroundUsData,
+  'g5u-01': UpperMod01ChangesAroundUsData,
   'grade5-upper-mod-02': UpperMod02ShoppingTimeData,
-  '5u-mod-02': UpperMod02ShoppingTimeData,
+  'g5u-02': UpperMod02ShoppingTimeData,
   'grade5-upper-mod-03': UpperMod03FestivalsData,
-  '5u-mod-03': UpperMod03FestivalsData,
+  'g5u-03': UpperMod03FestivalsData,
   'grade5-upper-mod-04': UpperMod04FuturePlansData,
-  '5u-mod-04': UpperMod04FuturePlansData,
+  'g5u-04': UpperMod04FuturePlansData,
   'grade5-upper-mod-05': UpperMod05ItsMineData,
-  '5u-mod-05': UpperMod05ItsMineData,
+  'g5u-05': UpperMod05ItsMineData,
   'grade5-upper-mod-06': UpperMod06AbilitiesAndSportsData,
-  '5u-mod-06': UpperMod06AbilitiesAndSportsData,
+  'g5u-06': UpperMod06AbilitiesAndSportsData,
   'grade5-upper-mod-07': UpperMod07HelpfulAnimalsData,
-  '5u-mod-07': UpperMod07HelpfulAnimalsData,
+  'g5u-07': UpperMod07HelpfulAnimalsData,
   'grade5-upper-mod-08': UpperMod08SchoolLifeData,
-  '5u-mod-08': UpperMod08SchoolLifeData,
+  'g5u-08': UpperMod08SchoolLifeData,
   'grade5-upper-mod-09': UpperMod09FeelingsData,
-  '5u-mod-09': UpperMod09FeelingsData,
+  'g5u-09': UpperMod09FeelingsData,
   'grade5-upper-mod-10': UpperMod10RulesAndAdviceData,
-  '5u-mod-10': UpperMod10RulesAndAdviceData,
+  'g5u-10': UpperMod10RulesAndAdviceData,
 
-  // Grade 6 Upper (Old format)
+  // 五年级下册 (Grade 5 Lower)
+  'grade5-lower-mod-01': LowerMod01DriverPlayerData,
+  'g5l-01': LowerMod01DriverPlayerData,
+  'grade5-lower-mod-02': LowerMod02TraditionalFoodData,
+  'g5l-02': LowerMod02TraditionalFoodData,
+  'grade5-lower-mod-03': LowerMod03LibraryBorrowData,
+  'g5l-03': LowerMod03LibraryBorrowData,
+  'grade5-lower-mod-04': LowerMod04LettersSeasonsData,
+  'g5l-04': LowerMod04LettersSeasonsData,
+  'grade5-lower-mod-05': LowerMod05ShoppingCarryingData,
+  'g5l-05': LowerMod05ShoppingCarryingData,
+  'grade5-lower-mod-06': LowerMod06TravelPlansData,
+  'g5l-06': LowerMod06TravelPlansData,
+  'grade5-lower-mod-07': LowerMod07JobsTimeData,
+  'g5l-07': LowerMod07JobsTimeData,
+  'grade5-lower-mod-08': LowerMod08MakeAKiteData,
+  'g5l-08': LowerMod08MakeAKiteData,
+  'grade5-lower-mod-09': LowerMod09TheatreHistoryData,
+  'g5l-09': LowerMod09TheatreHistoryData,
+  'grade5-lower-mod-10': LowerMod10TravelPrepData,
+  'g5l-10': LowerMod10TravelPrepData,
+
+  // 六年级上册 (Grade 6 Upper)
   'grade6-upper-mod-01': Module01HowLongData,
-  '6u-mod-01': Module01HowLongData,
+  'g6u-01': Module01HowLongData,
   'grade6-upper-mod-02': Module02ChinatownTombsData,
-  '6u-mod-02': Module02ChinatownTombsData,
+  'g6u-02': Module02ChinatownTombsData,
   'grade6-upper-mod-03': Module03StampsHobbiesData,
-  '6u-mod-03': Module03StampsHobbiesData,
+  'g6u-03': Module03StampsHobbiesData,
   'grade6-upper-mod-04': Module04FestivalsData,
-  '6u-mod-04': Module04FestivalsData,
+  'g6u-04': Module04FestivalsData,
   'grade6-upper-mod-05': Module05PenFriendsData,
-  '6u-mod-05': Module05PenFriendsData,
+  'g6u-05': Module05PenFriendsData,
   'grade6-upper-mod-06': Module06SchoolAnswersData,
-  '6u-mod-06': Module06SchoolAnswersData,
+  'g6u-06': Module06SchoolAnswersData,
   'grade6-upper-mod-07': Module07AnimalsData,
-  '6u-mod-07': Module07AnimalsData,
+  'g6u-07': Module07AnimalsData,
   'grade6-upper-mod-08': Module08HabitsTidyData,
-  '6u-mod-08': Module08HabitsTidyData,
+  'g6u-08': Module08HabitsTidyData,
   'grade6-upper-mod-09': Module09PeaceUnData,
-  '6u-mod-09': Module09PeaceUnData,
+  'g6u-09': Module09PeaceUnData,
   'grade6-upper-mod-10': Module10TravelSafetyData,
-  '6u-mod-10': Module10TravelSafetyData,
+  'g6u-10': Module10TravelSafetyData,
 
-  // Grade 6 Lower (New modules)
+  // 六年级下册 (Grade 6 Lower)
   'grade6-lower-mod-01': LowerMod01OrderingFoodData,
-  '6l-mod-01': LowerMod01OrderingFoodData,
+  'g6l-01': LowerMod01OrderingFoodData,
   'grade6-lower-mod-02': LowerMod02PlansAndWeatherData,
-  '6l-mod-02': LowerMod02PlansAndWeatherData,
+  'g6l-02': LowerMod02PlansAndWeatherData,
   'grade6-lower-mod-03': LowerMod03PastEventsData,
-  '6l-mod-03': LowerMod03PastEventsData,
+  'g6l-03': LowerMod03PastEventsData,
   'grade6-lower-mod-04': LowerMod04DescribingActionsData,
-  '6l-mod-04': LowerMod04DescribingActionsData,
+  'g6l-04': LowerMod04DescribingActionsData,
   'grade6-lower-mod-05': LowerMod05SimultaneousActionsData,
-  '6l-mod-05': LowerMod05SimultaneousActionsData,
+  'g6l-05': LowerMod05SimultaneousActionsData,
   'grade6-lower-mod-06': LowerMod06GiftsAndPastActionsData,
-  '6l-mod-06': LowerMod06GiftsAndPastActionsData,
+  'g6l-06': LowerMod06GiftsAndPastActionsData,
   'grade6-lower-mod-07': LowerMod07FamousPeopleData,
-  '6l-mod-07': LowerMod07FamousPeopleData,
+  'g6l-07': LowerMod07FamousPeopleData,
   'grade6-lower-mod-08': LowerMod08AskingWhyData,
-  '6l-mod-08': LowerMod08AskingWhyData,
+  'g6l-08': LowerMod08AskingWhyData,
   'grade6-lower-mod-09': LowerMod09BestWishesData,
-  '6l-mod-09': LowerMod09BestWishesData,
+  'g6l-09': LowerMod09BestWishesData,
   'grade6-lower-mod-10': LowerMod10FutureSchoolLifeData,
-  '6l-mod-10': LowerMod10FutureSchoolLifeData,
+  'g6l-10': LowerMod10FutureSchoolLifeData,
 };
 
 // 便捷函数：根据模块ID获取数据

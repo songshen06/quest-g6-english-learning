@@ -1,0 +1,314 @@
+{
+  "moduleId": "grade2-lower-mod-07",
+  "title": "Children's Day",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "childrens-day",
+      "en": "Children's Day",
+      "zh": "儿童节",
+      "audio": "/audio/tts/childrens-day.mp3"
+    },
+    {
+      "id": "happy",
+      "en": "happy",
+      "zh": "开心的",
+      "audio": "/audio/tts/happy.mp3"
+    },
+    {
+      "id": "singing",
+      "en": "singing",
+      "zh": "唱歌",
+      "audio": "/audio/tts/singing.mp3"
+    },
+    {
+      "id": "dancing",
+      "en": "dancing",
+      "zh": "跳舞",
+      "audio": "/audio/tts/dancing.mp3"
+    },
+    {
+      "id": "saying",
+      "en": "saying",
+      "zh": "说；朗诵",
+      "audio": "/audio/tts/saying.mp3"
+    },
+    {
+      "id": "poem",
+      "en": "poem",
+      "zh": "诗",
+      "audio": "/audio/tts/poem.mp3"
+    },
+    {
+      "id": "picnic",
+      "en": "picnic",
+      "zh": "野餐",
+      "audio": "/audio/tts/picnic.mp3"
+    },
+    {
+      "id": "family",
+      "en": "family",
+      "zh": "家庭",
+      "audio": "/audio/tts/family.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "doing-a-play",
+      "en": "doing a play",
+      "zh": "表演戏剧",
+      "icon": "/images/icons/theatre.svg",
+      "audio": "/audio/tts/doing-a-play.mp3"
+    },
+    {
+      "id": "singing-a-song",
+      "en": "singing a song",
+      "zh": "唱一首歌",
+      "icon": "/images/icons/music.svg",
+      "audio": "/audio/tts/singing-a-song.mp3"
+    },
+    {
+      "id": "dragon-dance",
+      "en": "dragon dance",
+      "zh": "舞龙",
+      "icon": "/images/icons/dragon.svg",
+      "audio": "/audio/tts/dragon-dance.mp3"
+    },
+    {
+      "id": "having-a-picnic",
+      "en": "having a picnic",
+      "zh": "正在野餐",
+      "icon": "/images/icons/picnic.svg",
+      "audio": "/audio/tts/having-a-picnic.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "It's Children's Day today.",
+      "a": "今天是儿童节。"
+    },
+    {
+      "q": "Lingling is singing a song.",
+      "a": "玲玲正在唱一首歌。"
+    },
+    {
+      "q": "Amy is dancing.",
+      "a": "艾米正在跳舞。"
+    },
+    {
+      "q": "We're having a picnic.",
+      "a": "我们正在野餐。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "Children's Day",
+              "zh": "儿童节"
+            },
+            {
+              "en": "happy",
+              "zh": "开心的"
+            },
+            {
+              "en": "singing",
+              "zh": "唱歌"
+            },
+            {
+              "en": "dancing",
+              "zh": "跳舞"
+            },
+            {
+              "en": "saying",
+              "zh": "说；朗诵"
+            },
+            {
+              "en": "poem",
+              "zh": "诗"
+            }
+          ],
+          "options": [
+            {
+              "en": "picnic",
+              "zh": "野餐"
+            },
+            {
+              "en": "family",
+              "zh": "家庭"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "play",
+            "doing"
+          ],
+          "correct": [
+            "doing",
+            "a",
+            "play"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "song",
+            "singing"
+          ],
+          "correct": [
+            "singing",
+            "a",
+            "song"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "Children's",
+            "Day",
+            "today.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "Children's",
+            "Day",
+            "today."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "doing a play",
+          "scrambledChinese": [
+            "演",
+            "戏",
+            "剧",
+            "表"
+          ],
+          "correctChinese": [
+            "表",
+            "演",
+            "戏",
+            "剧"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "singing a song",
+          "scrambledChinese": [
+            "一",
+            "首",
+            "歌",
+            "唱"
+          ],
+          "correctChinese": [
+            "唱",
+            "一",
+            "首",
+            "歌"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "表演戏剧",
+          "scrambledEnglish": [
+            "a",
+            "play",
+            "doing"
+          ],
+          "correctEnglish": [
+            "doing",
+            "a",
+            "play"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "唱一首歌",
+          "scrambledEnglish": [
+            "a",
+            "song",
+            "singing"
+          ],
+          "correctEnglish": [
+            "singing",
+            "a",
+            "song"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My grandma is ___.",
+      "answer": "sleeping"
+    },
+    {
+      "type": "translate",
+      "cn": "我正在画一幅画。",
+      "en": [
+        "I'm drawing a picture."
+      ]
+    }
+  ],
+  "funFacts": [
+    "国际儿童节定于每年的6月1日。",
+    "舞龙是中国传统民俗文化活动之一，人们相信龙能带来好运。"
+  ]
+}

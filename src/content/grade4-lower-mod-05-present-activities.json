@@ -7,61 +7,61 @@
       "id": "word-doing",
       "en": "doing",
       "zh": "正在做",
-      "audio": "/audio/tts/word-doing.mp3"
+      "audio": "/audio/tts/doing.mp3"
     },
     {
       "id": "word-reading",
       "en": "reading",
       "zh": "正在读",
-      "audio": "/audio/tts/word-reading.mp3"
+      "audio": "/audio/tts/reading.mp3"
     },
     {
       "id": "word-writing",
       "en": "writing",
       "zh": "正在写",
-      "audio": "/audio/tts/word-writing.mp3"
+      "audio": "/audio/tts/writing.mp3"
     },
     {
       "id": "word-drawing",
       "en": "drawing",
       "zh": "正在画",
-      "audio": "/audio/tts/word-drawing.mp3"
+      "audio": "/audio/tts/drawing.mp3"
     },
     {
       "id": "word-eating",
       "en": "eating",
       "zh": "正在吃",
-      "audio": "/audio/tts/word-eating.mp3"
+      "audio": "/audio/tts/eating.mp3"
     },
     {
       "id": "word-drinking",
       "en": "drinking",
       "zh": "正在喝",
-      "audio": "/audio/tts/word-drinking.mp3"
+      "audio": "/audio/tts/drinking.mp3"
     },
     {
       "id": "word-playing",
       "en": "playing",
       "zh": "正在玩",
-      "audio": "/audio/tts/word-playing.mp3"
+      "audio": "/audio/tts/playing.mp3"
     },
     {
       "id": "word-sleeping",
       "en": "sleeping",
       "zh": "正在睡觉",
-      "audio": "/audio/tts/word-sleeping.mp3"
+      "audio": "/audio/tts/sleeping.mp3"
     },
     {
       "id": "word-cooking",
       "en": "cooking",
       "zh": "正在做饭",
-      "audio": "/audio/tts/word-cooking.mp3"
+      "audio": "/audio/tts/cooking.mp3"
     },
     {
       "id": "word-working",
       "en": "working",
       "zh": "正在工作",
-      "audio": "/audio/tts/word-working.mp3"
+      "audio": "/audio/tts/working.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "What are you doing?",
       "zh": "你在做什么？",
       "icon": "/images/icons/question-mark.svg",
-      "audio": "/audio/tts/phrase-what-doing.mp3"
+      "audio": "/audio/tts/what-are-you-doing.mp3"
     },
     {
       "id": "phrase-i-am-doing",
       "en": "I am doing",
       "zh": "我正在做",
       "icon": "/images/icons/person-action.svg",
-      "audio": "/audio/tts/phrase-i-am-doing.mp3"
+      "audio": "/audio/tts/i-am-doing.mp3"
     },
     {
       "id": "phrase-he-is-reading",
       "en": "He is reading",
       "zh": "他正在读书",
       "icon": "/images/icons/reading-book.svg",
-      "audio": "/audio/tts/phrase-he-is-reading.mp3"
+      "audio": "/audio/tts/he-is-reading.mp3"
     },
     {
       "id": "phrase-they-are-playing",
       "en": "They are playing",
       "zh": "他们正在玩",
       "icon": "/images/icons/children-playing.svg",
-      "audio": "/audio/tts/phrase-they-are-playing.mp3"
+      "audio": "/audio/tts/they-are-playing.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-what-doing.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "are",
             "you",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-i-am-doing.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "am",
             "doing",
@@ -242,7 +242,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/phrase-he-is-reading.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "is",
             "reading",

@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade1-upper-mod-03",
+  "title": "Classroom Commands",
+  "durationMinutes": 11,
+  "words": [
+    {
+      "id": "sit-down",
+      "en": "sit down",
+      "zh": "坐下",
+      "audio": "/audio/tts/sit-down.mp3"
+    },
+    {
+      "id": "stand-up",
+      "en": "stand up",
+      "zh": "起立",
+      "audio": "/audio/tts/stand-up.mp3"
+    },
+    {
+      "id": "open",
+      "en": "open",
+      "zh": "打开",
+      "audio": "/audio/tts/open.mp3"
+    },
+    {
+      "id": "door",
+      "en": "door",
+      "zh": "门",
+      "audio": "/audio/tts/door.mp3"
+    },
+    {
+      "id": "window",
+      "en": "window",
+      "zh": "窗户",
+      "audio": "/audio/tts/window.mp3"
+    },
+    {
+      "id": "point-to",
+      "en": "point to",
+      "zh": "指向",
+      "audio": "/audio/tts/point-to.mp3"
+    },
+    {
+      "id": "desk",
+      "en": "desk",
+      "zh": "书桌",
+      "audio": "/audio/tts/desk.mp3"
+    },
+    {
+      "id": "chair",
+      "en": "chair",
+      "zh": "椅子",
+      "audio": "/audio/tts/chair.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "sit-down-please",
+      "en": "Sit down, please.",
+      "zh": "请坐。",
+      "icon": "/images/icons/chair.svg",
+      "audio": "/audio/tts/sit-down-please.mp3"
+    },
+    {
+      "id": "open-the-door",
+      "en": "Open the door!",
+      "zh": "开门！",
+      "icon": "/images/icons/door.svg",
+      "audio": "/audio/tts/open-the-door.mp3"
+    },
+    {
+      "id": "point-to-the-window",
+      "en": "Point to the window!",
+      "zh": "指向窗户！",
+      "icon": "/images/icons/window.svg",
+      "audio": "/audio/tts/point-to-the-window.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Sit down!",
+      "a": "坐下！"
+    },
+    {
+      "q": "Stand up, please!",
+      "a": "请起立！"
+    },
+    {
+      "q": "Point to the window!",
+      "a": "指向窗户！"
+    },
+    {
+      "q": "Open the door!",
+      "a": "开门！"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "sit down",
+              "zh": "坐下"
+            },
+            {
+              "en": "stand up",
+              "zh": "起立"
+            },
+            {
+              "en": "open",
+              "zh": "打开"
+            },
+            {
+              "en": "door",
+              "zh": "门"
+            },
+            {
+              "en": "window",
+              "zh": "窗户"
+            },
+            {
+              "en": "point to",
+              "zh": "指向"
+            }
+          ],
+          "options": [
+            {
+              "en": "desk",
+              "zh": "书桌"
+            },
+            {
+              "en": "chair",
+              "zh": "椅子"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "down,",
+            "please.",
+            "Sit"
+          ],
+          "correct": [
+            "Sit",
+            "down,",
+            "please."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "door!",
+            "Open"
+          ],
+          "correct": [
+            "Open",
+            "the",
+            "door!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "the",
+            "window!",
+            "Point"
+          ],
+          "correct": [
+            "Point",
+            "to",
+            "the",
+            "window!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Sit down, please.",
+          "scrambledChinese": [
+            "坐",
+            "。",
+            "请"
+          ],
+          "correctChinese": [
+            "请",
+            "坐",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Open the door!",
+          "scrambledChinese": [
+            "门",
+            "！",
+            "开"
+          ],
+          "correctChinese": [
+            "开",
+            "门",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "请坐。",
+          "scrambledEnglish": [
+            "down,",
+            "please.",
+            "Sit"
+          ],
+          "correctEnglish": [
+            "Sit",
+            "down,",
+            "please."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "开门！",
+          "scrambledEnglish": [
+            "the",
+            "door!",
+            "Open"
+          ],
+          "correctEnglish": [
+            "Open",
+            "the",
+            "door!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Point to the ___!",
+      "answer": "desk"
+    },
+    {
+      "type": "translate",
+      "cn": "起立！",
+      "en": [
+        "Stand up!"
+      ]
+    }
+  ],
+  "funFacts": [
+    "最早的学校可以追溯到古希腊时期。",
+    "在很多国家，教室的门通常是向内开的，以防止阻碍走廊。"
+  ]
+}

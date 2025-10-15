@@ -1,0 +1,301 @@
+{
+  "moduleId": "grade2-upper-mod-08",
+  "title": "Weekend Routines",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "goes",
+      "en": "goes",
+      "zh": "去（第三人称单数）",
+      "audio": "/audio/tts/goes.mp3"
+    },
+    {
+      "id": "watches",
+      "en": "watches",
+      "zh": "看（第三人称单数）",
+      "audio": "/audio/tts/watches.mp3"
+    },
+    {
+      "id": "reads",
+      "en": "reads",
+      "zh": "读（第三人称单数）",
+      "audio": "/audio/tts/reads.mp3"
+    },
+    {
+      "id": "weekend",
+      "en": "weekend",
+      "zh": "周末",
+      "audio": "/audio/tts/weekend.mp3"
+    },
+    {
+      "id": "play",
+      "en": "play",
+      "zh": "玩；演奏",
+      "audio": "/audio/tts/play.mp3"
+    },
+    {
+      "id": "piano",
+      "en": "piano",
+      "zh": "钢琴",
+      "audio": "/audio/tts/piano.mp3"
+    },
+    {
+      "id": "drums",
+      "en": "drums",
+      "zh": "鼓",
+      "audio": "/audio/tts/drums.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "have-a-good-weekend",
+      "en": "Have a good weekend!",
+      "zh": "周末愉快！",
+      "icon": "/images/icons/weekend.svg",
+      "audio": "/audio/tts/have-a-good-weekend.mp3"
+    },
+    {
+      "id": "go-swimming",
+      "en": "goes swimming",
+      "zh": "去游泳",
+      "icon": "/images/icons/swim.svg",
+      "audio": "/audio/tts/goes-swimming.mp3"
+    },
+    {
+      "id": "play-the-piano",
+      "en": "play the piano",
+      "zh": "弹钢琴",
+      "icon": "/images/icons/piano.svg",
+      "audio": "/audio/tts/play-the-piano.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "She goes swimming.",
+      "a": "她去游泳。"
+    },
+    {
+      "q": "She watches TV and she reads books.",
+      "a": "她看电视和读书。"
+    },
+    {
+      "q": "Does he play the piano?",
+      "a": "他弹钢琴吗？"
+    },
+    {
+      "q": "No, he doesn't.",
+      "a": "不，他不弹。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "goes",
+              "zh": "去（第三人称单数）"
+            },
+            {
+              "en": "watches",
+              "zh": "看（第三人称单数）"
+            },
+            {
+              "en": "reads",
+              "zh": "读（第三人称单数）"
+            },
+            {
+              "en": "weekend",
+              "zh": "周末"
+            },
+            {
+              "en": "play",
+              "zh": "玩；演奏"
+            },
+            {
+              "en": "piano",
+              "zh": "钢琴"
+            }
+          ],
+          "options": [
+            {
+              "en": "去（第三人称单数）",
+              "zh": "goes"
+            },
+            {
+              "en": "看（第三人称单数）",
+              "zh": "watches"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "good",
+            "weekend!",
+            "Have"
+          ],
+          "correct": [
+            "Have",
+            "a",
+            "good",
+            "weekend!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "piano",
+            "play"
+          ],
+          "correct": [
+            "play",
+            "the",
+            "piano"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "goes",
+            "swimming.",
+            "She"
+          ],
+          "correct": [
+            "She",
+            "goes",
+            "swimming."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Have a good weekend!",
+          "scrambledChinese": [
+            "末",
+            "愉",
+            "快",
+            "！",
+            "周"
+          ],
+          "correctChinese": [
+            "周",
+            "末",
+            "愉",
+            "快",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "goes swimming",
+          "scrambledChinese": [
+            "游",
+            "泳",
+            "去"
+          ],
+          "correctChinese": [
+            "去",
+            "游",
+            "泳"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "周末愉快！",
+          "scrambledEnglish": [
+            "a",
+            "good",
+            "weekend!",
+            "Have"
+          ],
+          "correctEnglish": [
+            "Have",
+            "a",
+            "good",
+            "weekend!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "去游泳",
+          "scrambledEnglish": [
+            "swimming",
+            "goes"
+          ],
+          "correctEnglish": [
+            "goes",
+            "swimming"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My brother likes ___.",
+      "answer": "music"
+    },
+    {
+      "type": "translate",
+      "cn": "他听CD吗？",
+      "en": [
+        "Does he listen to CDs?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "钢琴最初是在1700年左右的意大利发明的。",
+    "现代架子鼓（drum kit）是在20世纪初的美国发展起来的。"
+  ]
+}

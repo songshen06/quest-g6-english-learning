@@ -1,0 +1,315 @@
+{
+  "moduleId": "grade2-lower-mod-02",
+  "title": "Describing Actions",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "listening",
+      "en": "listening",
+      "zh": "正在听",
+      "audio": "/audio/tts/listening.mp3"
+    },
+    {
+      "id": "radio",
+      "en": "radio",
+      "zh": "收音机",
+      "audio": "/audio/tts/radio.mp3"
+    },
+    {
+      "id": "reading",
+      "en": "reading",
+      "zh": "正在阅读",
+      "audio": "/audio/tts/reading.mp3"
+    },
+    {
+      "id": "newspaper",
+      "en": "newspaper",
+      "zh": "报纸",
+      "audio": "/audio/tts/newspaper.mp3"
+    },
+    {
+      "id": "playing",
+      "en": "playing",
+      "zh": "正在玩",
+      "audio": "/audio/tts/playing.mp3"
+    },
+    {
+      "id": "drawing",
+      "en": "drawing",
+      "zh": "正在画画",
+      "audio": "/audio/tts/drawing.mp3"
+    },
+    {
+      "id": "writing",
+      "en": "writing",
+      "zh": "正在写字",
+      "audio": "/audio/tts/writing.mp3"
+    },
+    {
+      "id": "colouring",
+      "en": "colouring",
+      "zh": "正在涂色",
+      "audio": "/audio/tts/colouring.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "listening-to-the-radio",
+      "en": "listening to the radio",
+      "zh": "正在听收音机",
+      "icon": "/images/icons/radio.svg",
+      "audio": "/audio/tts/listening-to-the-radio.mp3"
+    },
+    {
+      "id": "reading-a-newspaper",
+      "en": "reading a newspaper",
+      "zh": "正在读报纸",
+      "icon": "/images/icons/newspaper.svg",
+      "audio": "/audio/tts/reading-a-newspaper.mp3"
+    },
+    {
+      "id": "drawing-a-picture",
+      "en": "drawing a picture",
+      "zh": "正在画一幅画",
+      "icon": "/images/icons/draw.svg",
+      "audio": "/audio/tts/drawing-a-picture.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "She's listening to the radio.",
+      "a": "她正在听收音机。"
+    },
+    {
+      "q": "He's reading a newspaper.",
+      "a": "他正在读报纸。"
+    },
+    {
+      "q": "I'm drawing a picture.",
+      "a": "我正在画一幅画。"
+    },
+    {
+      "q": "Tom's playing with his train.",
+      "a": "汤姆正在玩他的火车。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "listening",
+              "zh": "正在听"
+            },
+            {
+              "en": "radio",
+              "zh": "收音机"
+            },
+            {
+              "en": "reading",
+              "zh": "正在阅读"
+            },
+            {
+              "en": "newspaper",
+              "zh": "报纸"
+            },
+            {
+              "en": "playing",
+              "zh": "正在玩"
+            },
+            {
+              "en": "drawing",
+              "zh": "正在画画"
+            }
+          ],
+          "options": [
+            {
+              "en": "writing",
+              "zh": "正在写字"
+            },
+            {
+              "en": "colouring",
+              "zh": "正在涂色"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "the",
+            "radio",
+            "listening"
+          ],
+          "correct": [
+            "listening",
+            "to",
+            "the",
+            "radio"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "newspaper",
+            "reading"
+          ],
+          "correct": [
+            "reading",
+            "a",
+            "newspaper"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "picture",
+            "drawing"
+          ],
+          "correct": [
+            "drawing",
+            "a",
+            "picture"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "listening to the radio",
+          "scrambledChinese": [
+            "在",
+            "听",
+            "收",
+            "音",
+            "机",
+            "正"
+          ],
+          "correctChinese": [
+            "正",
+            "在",
+            "听",
+            "收",
+            "音",
+            "机"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "reading a newspaper",
+          "scrambledChinese": [
+            "在",
+            "读",
+            "报",
+            "纸",
+            "正"
+          ],
+          "correctChinese": [
+            "正",
+            "在",
+            "读",
+            "报",
+            "纸"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "正在听收音机",
+          "scrambledEnglish": [
+            "to",
+            "the",
+            "radio",
+            "listening"
+          ],
+          "correctEnglish": [
+            "listening",
+            "to",
+            "the",
+            "radio"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "正在读报纸",
+          "scrambledEnglish": [
+            "a",
+            "newspaper",
+            "reading"
+          ],
+          "correctEnglish": [
+            "reading",
+            "a",
+            "newspaper"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I'm ___ a panda.",
+      "answer": "drawing"
+    },
+    {
+      "type": "translate",
+      "cn": "她正在给图画上色。",
+      "en": [
+        "She's colouring the picture."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一张永久性照片是在1826年拍摄的。",
+    "收音机是在19世纪末发明的，改变了人们获取信息和娱乐的方式。"
+  ]
+}

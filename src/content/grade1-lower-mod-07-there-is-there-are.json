@@ -1,0 +1,307 @@
+{
+  "moduleId": "grade1-lower-mod-07",
+  "title": "There is / There are",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "there-is",
+      "en": "there is",
+      "zh": "有（单数）",
+      "audio": "/audio/tts/there-is.mp3"
+    },
+    {
+      "id": "there-are",
+      "en": "there are",
+      "zh": "有（复数）",
+      "audio": "/audio/tts/there-are.mp3"
+    },
+    {
+      "id": "tree",
+      "en": "tree",
+      "zh": "树",
+      "audio": "/audio/tts/tree.mp3"
+    },
+    {
+      "id": "cat",
+      "en": "cat",
+      "zh": "猫",
+      "audio": "/audio/tts/cat.mp3"
+    },
+    {
+      "id": "help",
+      "en": "help",
+      "zh": "帮助",
+      "audio": "/audio/tts/help.mp3"
+    },
+    {
+      "id": "table",
+      "en": "table",
+      "zh": "桌子",
+      "audio": "/audio/tts/table.mp3"
+    },
+    {
+      "id": "monkeys",
+      "en": "monkeys",
+      "zh": "猴子",
+      "audio": "/audio/tts/monkeys.mp3"
+    },
+    {
+      "id": "tigers",
+      "en": "tigers",
+      "zh": "老虎",
+      "audio": "/audio/tts/tigers.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "in-the-tree",
+      "en": "in the tree",
+      "zh": "在树上",
+      "icon": "/images/icons/tree.svg",
+      "audio": "/audio/tts/in-the-tree.mp3"
+    },
+    {
+      "id": "over-there",
+      "en": "over there",
+      "zh": "在那边",
+      "icon": "/images/icons/pointer.svg",
+      "audio": "/audio/tts/over-there.mp3"
+    },
+    {
+      "id": "at-the-zoo",
+      "en": "at the zoo",
+      "zh": "在动物园",
+      "icon": "/images/icons/zoo.svg",
+      "audio": "/audio/tts/at-the-zoo.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "There is a cat in the tree.",
+      "a": "树上有一只猫。"
+    },
+    {
+      "q": "There is a table over there.",
+      "a": "那边有一张桌子。"
+    },
+    {
+      "q": "There are three brown monkeys.",
+      "a": "有三只棕色的猴子。"
+    },
+    {
+      "q": "How many animals can you see?",
+      "a": "你能看见多少只动物？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "there is",
+              "zh": "有（单数）"
+            },
+            {
+              "en": "there are",
+              "zh": "有（复数）"
+            },
+            {
+              "en": "tree",
+              "zh": "树"
+            },
+            {
+              "en": "cat",
+              "zh": "猫"
+            },
+            {
+              "en": "help",
+              "zh": "帮助"
+            },
+            {
+              "en": "table",
+              "zh": "桌子"
+            }
+          ],
+          "options": [
+            {
+              "en": "monkeys",
+              "zh": "猴子"
+            },
+            {
+              "en": "tigers",
+              "zh": "老虎"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "tree",
+            "in"
+          ],
+          "correct": [
+            "in",
+            "the",
+            "tree"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "zoo",
+            "at"
+          ],
+          "correct": [
+            "at",
+            "the",
+            "zoo"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "a",
+            "cat",
+            "in",
+            "the",
+            "tree.",
+            "There"
+          ],
+          "correct": [
+            "There",
+            "is",
+            "a",
+            "cat",
+            "in",
+            "the",
+            "tree."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "in the tree",
+          "scrambledChinese": [
+            "树",
+            "上",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "树",
+            "上"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "over there",
+          "scrambledChinese": [
+            "那",
+            "边",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "那",
+            "边"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在树上",
+          "scrambledEnglish": [
+            "the",
+            "tree",
+            "in"
+          ],
+          "correctEnglish": [
+            "in",
+            "the",
+            "tree"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在那边",
+          "scrambledEnglish": [
+            "there",
+            "over"
+          ],
+          "correctEnglish": [
+            "over",
+            "there"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "There is one ___ in the tree.",
+      "answer": "cat"
+    },
+    {
+      "type": "translate",
+      "cn": "那里有两只大象。",
+      "en": [
+        "There are two elephants."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上最高的树是加州红木，可以长到100米以上。",
+    "猫是天生的猎手，即使是家猫也保留着捕猎的本能。"
+  ]
+}

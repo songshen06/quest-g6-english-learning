@@ -1,0 +1,319 @@
+{
+  "moduleId": "grade3-lower-mod-03",
+  "title": "Weekend Plans",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "weekend",
+      "en": "weekend",
+      "zh": "周末",
+      "audio": "/audio/tts/weekend.mp3"
+    },
+    {
+      "id": "zoo",
+      "en": "zoo",
+      "zh": "动物园",
+      "audio": "/audio/tts/zoo.mp3"
+    },
+    {
+      "id": "visit",
+      "en": "visit",
+      "zh": "拜访",
+      "audio": "/audio/tts/visit.mp3"
+    },
+    {
+      "id": "countryside",
+      "en": "countryside",
+      "zh": "乡村",
+      "audio": "/audio/tts/countryside.mp3"
+    },
+    {
+      "id": "farmer",
+      "en": "farmer",
+      "zh": "农民",
+      "audio": "/audio/tts/farmer.mp3"
+    },
+    {
+      "id": "breakfast",
+      "en": "breakfast",
+      "zh": "早餐",
+      "audio": "/audio/tts/breakfast.mp3"
+    },
+    {
+      "id": "lunch",
+      "en": "lunch",
+      "zh": "午餐",
+      "audio": "/audio/tts/lunch.mp3"
+    },
+    {
+      "id": "dinner",
+      "en": "dinner",
+      "zh": "晚餐",
+      "audio": "/audio/tts/dinner.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "go-to-the-zoo",
+      "en": "go to the zoo",
+      "zh": "去动物园",
+      "icon": "/images/icons/zoo.svg",
+      "audio": "/audio/tts/go-to-the-zoo.mp3"
+    },
+    {
+      "id": "visit-my-grandpa",
+      "en": "visit my grandpa",
+      "zh": "看望我的爷爷",
+      "icon": "/images/icons/family.svg",
+      "audio": "/audio/tts/visit-my-grandpa.mp3"
+    },
+    {
+      "id": "have-breakfast",
+      "en": "have breakfast",
+      "zh": "吃早餐",
+      "icon": "/images/icons/meal.svg",
+      "audio": "/audio/tts/have-breakfast.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What will you do this weekend?",
+      "a": "你这个周末打算做什么？"
+    },
+    {
+      "q": "We'll go to the zoo.",
+      "a": "我们打算去动物园。"
+    },
+    {
+      "q": "Will you go, too?",
+      "a": "你也会去吗？"
+    },
+    {
+      "q": "No, I won't.",
+      "a": "不，我不会去。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "weekend",
+              "zh": "周末"
+            },
+            {
+              "en": "zoo",
+              "zh": "动物园"
+            },
+            {
+              "en": "visit",
+              "zh": "拜访"
+            },
+            {
+              "en": "countryside",
+              "zh": "乡村"
+            },
+            {
+              "en": "farmer",
+              "zh": "农民"
+            },
+            {
+              "en": "breakfast",
+              "zh": "早餐"
+            }
+          ],
+          "options": [
+            {
+              "en": "lunch",
+              "zh": "午餐"
+            },
+            {
+              "en": "dinner",
+              "zh": "晚餐"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "the",
+            "zoo",
+            "go"
+          ],
+          "correct": [
+            "go",
+            "to",
+            "the",
+            "zoo"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "my",
+            "grandpa",
+            "visit"
+          ],
+          "correct": [
+            "visit",
+            "my",
+            "grandpa"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "will",
+            "you",
+            "do",
+            "this",
+            "weekend?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "will",
+            "you",
+            "do",
+            "this",
+            "weekend?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "go to the zoo",
+          "scrambledChinese": [
+            "动",
+            "物",
+            "园",
+            "去"
+          ],
+          "correctChinese": [
+            "去",
+            "动",
+            "物",
+            "园"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "visit my grandpa",
+          "scrambledChinese": [
+            "望",
+            "我",
+            "的",
+            "爷",
+            "爷",
+            "看"
+          ],
+          "correctChinese": [
+            "看",
+            "望",
+            "我",
+            "的",
+            "爷",
+            "爷"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "去动物园",
+          "scrambledEnglish": [
+            "to",
+            "the",
+            "zoo",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "to",
+            "the",
+            "zoo"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "看望我的爷爷",
+          "scrambledEnglish": [
+            "my",
+            "grandpa",
+            "visit"
+          ],
+          "correctEnglish": [
+            "visit",
+            "my",
+            "grandpa"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I'll visit my grandpa in the ___.",
+      "answer": "countryside"
+    },
+    {
+      "type": "translate",
+      "cn": "我们7点吃早餐吗？",
+      "en": [
+        "Will we have breakfast at 7?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "周末（weekend）这个概念直到19世纪工业革命时期才在英国普及。",
+    "世界上最古老的动物园是1752年在维也纳建立的美泉宫动物园。"
+  ]
+}

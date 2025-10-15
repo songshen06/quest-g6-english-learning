@@ -1,0 +1,305 @@
+{
+  "moduleId": "grade2-upper-mod-05",
+  "title": "Daily Routines",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "get-up",
+      "en": "get up",
+      "zh": "起床",
+      "audio": "/audio/tts/get-up.mp3"
+    },
+    {
+      "id": "go-to-school",
+      "en": "go to school",
+      "zh": "去上学",
+      "audio": "/audio/tts/go-to-school.mp3"
+    },
+    {
+      "id": "have-lunch",
+      "en": "have lunch",
+      "zh": "吃午餐",
+      "audio": "/audio/tts/have-lunch.mp3"
+    },
+    {
+      "id": "play",
+      "en": "play",
+      "zh": "玩",
+      "audio": "/audio/tts/play.mp3"
+    },
+    {
+      "id": "go-home",
+      "en": "go home",
+      "zh": "回家",
+      "audio": "/audio/tts/go-home.mp3"
+    },
+    {
+      "id": "watch",
+      "en": "watch",
+      "zh": "看",
+      "audio": "/audio/tts/watch.mp3"
+    },
+    {
+      "id": "tv",
+      "en": "TV",
+      "zh": "电视",
+      "audio": "/audio/tts/audio-4887.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "at-7",
+      "en": "at 7",
+      "zh": "在7点",
+      "icon": "/images/icons/clock.svg",
+      "audio": "/audio/tts/at-7.mp3"
+    },
+    {
+      "id": "play-football",
+      "en": "play football",
+      "zh": "踢足球",
+      "icon": "/images/icons/football.svg",
+      "audio": "/audio/tts/play-football.mp3"
+    },
+    {
+      "id": "watch-tv",
+      "en": "watch TV",
+      "zh": "看电视",
+      "icon": "/images/icons/tv.svg",
+      "audio": "/audio/tts/watch-tv.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "At 7, I get up.",
+      "a": "我7点起床。"
+    },
+    {
+      "q": "At 8, I go to school.",
+      "a": "我8点去上学。"
+    },
+    {
+      "q": "At 12, I have lunch.",
+      "a": "我12点吃午饭。"
+    },
+    {
+      "q": "I go home at 5.",
+      "a": "我5点回家。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "get up",
+              "zh": "起床"
+            },
+            {
+              "en": "go to school",
+              "zh": "去上学"
+            },
+            {
+              "en": "have lunch",
+              "zh": "吃午餐"
+            },
+            {
+              "en": "play",
+              "zh": "玩"
+            },
+            {
+              "en": "go home",
+              "zh": "回家"
+            },
+            {
+              "en": "watch",
+              "zh": "看"
+            }
+          ],
+          "options": [
+            {
+              "en": "起床",
+              "zh": "get up"
+            },
+            {
+              "en": "去上学",
+              "zh": "go to school"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "7,",
+            "I",
+            "get",
+            "up.",
+            "At"
+          ],
+          "correct": [
+            "At",
+            "7,",
+            "I",
+            "get",
+            "up."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "8,",
+            "I",
+            "go",
+            "to",
+            "school.",
+            "At"
+          ],
+          "correct": [
+            "At",
+            "8,",
+            "I",
+            "go",
+            "to",
+            "school."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "12,",
+            "I",
+            "have",
+            "lunch.",
+            "At"
+          ],
+          "correct": [
+            "At",
+            "12,",
+            "I",
+            "have",
+            "lunch."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "at 7",
+          "scrambledChinese": [
+            "7",
+            "点",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "7",
+            "点"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "play football",
+          "scrambledChinese": [
+            "足",
+            "球",
+            "踢"
+          ],
+          "correctChinese": [
+            "踢",
+            "足",
+            "球"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在7点",
+          "scrambledEnglish": [
+            "7",
+            "at"
+          ],
+          "correctEnglish": [
+            "at",
+            "7"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "踢足球",
+          "scrambledEnglish": [
+            "football",
+            "play"
+          ],
+          "correctEnglish": [
+            "play",
+            "football"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I watch TV at ___.",
+      "answer": "7"
+    },
+    {
+      "type": "translate",
+      "cn": "我6点看电视。",
+      "en": [
+        "I watch TV at 6."
+      ]
+    }
+  ],
+  "funFacts": [
+    "闹钟的发明是为了在固定时间叫醒工厂的工人。",
+    "世界上第一所现代意义上的大学是意大利的博洛尼亚大学，成立于1088年。"
+  ]
+}

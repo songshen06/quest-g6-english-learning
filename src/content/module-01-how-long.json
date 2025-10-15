@@ -53,19 +53,19 @@
       "en": "the Empire State Building",
       "zh": "帝国大厦",
       "icon": "/images/landmarks/empire-state.svg",
-      "audio": "/audio/tts/empire-state.mp3"
+      "audio": "/audio/tts/the-empire-state-building.mp3"
     },
     {
       "id": "400m-high",
       "en": "four hundred metres high",
       "zh": "四百米高",
-      "audio": "/audio/tts/400m-high.mp3"
+      "audio": "/audio/tts/four-hundred-metres-high.mp3"
     },
     {
       "id": "climb-stairs",
       "en": "climb the stairs to the top",
       "zh": "爬楼梯到顶部",
-      "audio": "/audio/tts/climb-stairs.mp3"
+      "audio": "/audio/tts/climb-the-stairs-to-the-top.mp3"
     }
   ],
   "patterns": [
@@ -176,7 +176,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/empire-state.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "Empire",
             "State",
@@ -193,7 +193,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/400m-high.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "hundred",
             "metres",
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/how-long-is-the-great-wall.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "long",
             "is",

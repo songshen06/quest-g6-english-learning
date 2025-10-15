@@ -7,37 +7,37 @@
       "id": "word-should",
       "en": "should",
       "zh": "应该",
-      "audio": "/audio/tts/word-should.mp3"
+      "audio": "/audio/tts/should.mp3"
     },
     {
       "id": "word-shouldnt",
       "en": "shouldn't",
       "zh": "不应该",
-      "audio": "/audio/tts/word-shouldnt.mp3"
+      "audio": "/audio/tts/shouldnt.mp3"
     },
     {
       "id": "word-late",
       "en": "late",
       "zh": "迟到",
-      "audio": "/audio/tts/word-late.mp3"
+      "audio": "/audio/tts/late.mp3"
     },
     {
       "id": "word-rule",
       "en": "rule",
       "zh": "规则",
-      "audio": "/audio/tts/word-rule.mp3"
+      "audio": "/audio/tts/rule.mp3"
     },
     {
       "id": "word-kind",
       "en": "kind",
       "zh": "友好的",
-      "audio": "/audio/tts/word-kind.mp3"
+      "audio": "/audio/tts/kind.mp3"
     },
     {
       "id": "word-helpful",
       "en": "helpful",
       "zh": "有帮助的",
-      "audio": "/audio/tts/word-helpful.mp3"
+      "audio": "/audio/tts/helpful.mp3"
     }
   ],
   "phrases": [
@@ -46,21 +46,21 @@
       "en": "go to bed",
       "zh": "上床睡觉",
       "icon": "/images/icons/bed.svg",
-      "audio": "/audio/tts/phrase-go-to-bed.mp3"
+      "audio": "/audio/tts/go-to-bed.mp3"
     },
     {
       "id": "phrase-make-a-mess",
       "en": "make a mess",
       "zh": "弄得一团糟",
       "icon": "/images/icons/mess.svg",
-      "audio": "/audio/tts/phrase-make-a-mess.mp3"
+      "audio": "/audio/tts/make-a-mess.mp3"
     },
     {
       "id": "phrase-work-hard",
       "en": "work hard",
       "zh": "努力学习",
       "icon": "/images/icons/brain.svg",
-      "audio": "/audio/tts/phrase-work-hard.mp3"
+      "audio": "/audio/tts/work-hard.mp3"
     }
   ],
   "patterns": [
@@ -163,7 +163,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-go-to-bed.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "to",
             "bed",
@@ -178,7 +178,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-make-a-mess.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "a",
             "mess",
@@ -193,7 +193,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/you-should-tidy-your-toys.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "should",
             "tidy",

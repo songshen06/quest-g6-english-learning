@@ -1,0 +1,299 @@
+{
+  "moduleId": "grade3-upper-mod-05",
+  "title": "Asking for Permission",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "have",
+      "en": "have",
+      "zh": "吃；喝；得到",
+      "audio": "/audio/tts/have.mp3"
+    },
+    {
+      "id": "drink",
+      "en": "drink",
+      "zh": "饮料",
+      "audio": "/audio/tts/drink.mp3"
+    },
+    {
+      "id": "watch",
+      "en": "watch",
+      "zh": "看",
+      "audio": "/audio/tts/watch.mp3"
+    },
+    {
+      "id": "shop",
+      "en": "shop",
+      "zh": "商店",
+      "audio": "/audio/tts/shop.mp3"
+    },
+    {
+      "id": "ill",
+      "en": "ill",
+      "zh": "生病的",
+      "audio": "/audio/tts/ill.mp3"
+    },
+    {
+      "id": "come-in",
+      "en": "come in",
+      "zh": "进来",
+      "audio": "/audio/tts/come-in.mp3"
+    },
+    {
+      "id": "library",
+      "en": "library",
+      "zh": "图书馆",
+      "audio": "/audio/tts/library.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "have-a-look",
+      "en": "have a look",
+      "zh": "看一看",
+      "icon": "/images/icons/look.svg",
+      "audio": "/audio/tts/have-a-look.mp3"
+    },
+    {
+      "id": "go-out",
+      "en": "go out",
+      "zh": "出去",
+      "icon": "/images/icons/exit.svg",
+      "audio": "/audio/tts/go-out.mp3"
+    },
+    {
+      "id": "dont-worry",
+      "en": "Don't worry.",
+      "zh": "别担心。",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/dont-worry.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Can I have an ice cream, please?",
+      "a": "请问，我可以吃一个冰淇淋吗？"
+    },
+    {
+      "q": "Yes, you can.",
+      "a": "是的，你可以。"
+    },
+    {
+      "q": "No, you can't.",
+      "a": "不，你不可以。"
+    },
+    {
+      "q": "Can I come in?",
+      "a": "我可以进来吗？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "have",
+              "zh": "吃；喝；得到"
+            },
+            {
+              "en": "drink",
+              "zh": "饮料"
+            },
+            {
+              "en": "watch",
+              "zh": "看"
+            },
+            {
+              "en": "shop",
+              "zh": "商店"
+            },
+            {
+              "en": "ill",
+              "zh": "生病的"
+            },
+            {
+              "en": "come in",
+              "zh": "进来"
+            }
+          ],
+          "options": [
+            {
+              "en": "吃；喝；得到",
+              "zh": "have"
+            },
+            {
+              "en": "饮料",
+              "zh": "drink"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "look",
+            "have"
+          ],
+          "correct": [
+            "have",
+            "a",
+            "look"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "have",
+            "an",
+            "ice",
+            "cream,",
+            "please?",
+            "Can"
+          ],
+          "correct": [
+            "Can",
+            "I",
+            "have",
+            "an",
+            "ice",
+            "cream,",
+            "please?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "can.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "you",
+            "can."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "have a look",
+          "scrambledChinese": [
+            "一",
+            "看",
+            "看"
+          ],
+          "correctChinese": [
+            "看",
+            "一",
+            "看"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "go out",
+          "scrambledChinese": [
+            "去",
+            "出"
+          ],
+          "correctChinese": [
+            "出",
+            "去"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "看一看",
+          "scrambledEnglish": [
+            "a",
+            "look",
+            "have"
+          ],
+          "correctEnglish": [
+            "have",
+            "a",
+            "look"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "出去",
+          "scrambledEnglish": [
+            "out",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "out"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "But you can have a ___!",
+      "answer": "cake"
+    },
+    {
+      "type": "translate",
+      "cn": "别担心。",
+      "en": [
+        "Don't worry."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上最古老的图书馆之一位于摩洛哥，建于公元859年。",
+    "冰淇淋最早出现在古代中国，当时人们用冰雪混合牛奶和米饭制作。"
+  ]
+}

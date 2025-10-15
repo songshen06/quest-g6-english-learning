@@ -1,0 +1,341 @@
+{
+  "moduleId": "grade3-upper-mod-06",
+  "title": "Possessions",
+  "durationMinutes": 11,
+  "words": [
+    {
+      "id": "have-got",
+      "en": "have got",
+      "zh": "有",
+      "audio": "/audio/tts/have-got.mp3"
+    },
+    {
+      "id": "has-got",
+      "en": "has got",
+      "zh": "有（第三人称单数）",
+      "audio": "/audio/tts/has-got.mp3"
+    },
+    {
+      "id": "new",
+      "en": "new",
+      "zh": "新的",
+      "audio": "/audio/tts/new.mp3"
+    },
+    {
+      "id": "shorts",
+      "en": "shorts",
+      "zh": "短裤",
+      "audio": "/audio/tts/shorts.mp3"
+    },
+    {
+      "id": "shoes",
+      "en": "shoes",
+      "zh": "鞋子",
+      "audio": "/audio/tts/shoes.mp3"
+    },
+    {
+      "id": "football",
+      "en": "football",
+      "zh": "足球",
+      "audio": "/audio/tts/football.mp3"
+    },
+    {
+      "id": "dress",
+      "en": "dress",
+      "zh": "连衣裙",
+      "audio": "/audio/tts/dress.mp3"
+    },
+    {
+      "id": "shirt",
+      "en": "shirt",
+      "zh": "衬衫",
+      "audio": "/audio/tts/shirt.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "ive-got-a-new",
+      "en": "I've got a new...",
+      "zh": "我有一个新的...",
+      "icon": "/images/icons/gift.svg",
+      "audio": "/audio/tts/ive-got-a-new.mp3"
+    },
+    {
+      "id": "hes-got-a-new",
+      "en": "He's got a new...",
+      "zh": "他有一个新的...",
+      "icon": "/images/icons/boy.svg",
+      "audio": "/audio/tts/hes-got-a-new.mp3"
+    },
+    {
+      "id": "dont-worry",
+      "en": "Don't worry.",
+      "zh": "别担心。",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/dont-worry.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I've got new shorts and new shoes.",
+      "a": "我有了新短裤和新鞋。"
+    },
+    {
+      "q": "He's got a new shirt.",
+      "a": "他有了一件新衬衫。"
+    },
+    {
+      "q": "She's got a new dress.",
+      "a": "她有了一条新连衣裙。"
+    },
+    {
+      "q": "It's got long ears.",
+      "a": "它有长长的耳朵。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "have got",
+              "zh": "有"
+            },
+            {
+              "en": "has got",
+              "zh": "有（第三人称单数）"
+            },
+            {
+              "en": "new",
+              "zh": "新的"
+            },
+            {
+              "en": "shorts",
+              "zh": "短裤"
+            },
+            {
+              "en": "shoes",
+              "zh": "鞋子"
+            },
+            {
+              "en": "football",
+              "zh": "足球"
+            }
+          ],
+          "options": [
+            {
+              "en": "dress",
+              "zh": "连衣裙"
+            },
+            {
+              "en": "shirt",
+              "zh": "衬衫"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "got",
+            "a",
+            "new...",
+            "I've"
+          ],
+          "correct": [
+            "I've",
+            "got",
+            "a",
+            "new..."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "got",
+            "a",
+            "new...",
+            "He's"
+          ],
+          "correct": [
+            "He's",
+            "got",
+            "a",
+            "new..."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "got",
+            "new",
+            "shorts",
+            "and",
+            "new",
+            "shoes.",
+            "I've"
+          ],
+          "correct": [
+            "I've",
+            "got",
+            "new",
+            "shorts",
+            "and",
+            "new",
+            "shoes."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I've got a new...",
+          "scrambledChinese": [
+            "有",
+            "一",
+            "个",
+            "新",
+            "的",
+            ".",
+            ".",
+            ".",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "有",
+            "一",
+            "个",
+            "新",
+            "的",
+            ".",
+            ".",
+            "."
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "He's got a new...",
+          "scrambledChinese": [
+            "有",
+            "一",
+            "个",
+            "新",
+            "的",
+            ".",
+            ".",
+            ".",
+            "他"
+          ],
+          "correctChinese": [
+            "他",
+            "有",
+            "一",
+            "个",
+            "新",
+            "的",
+            ".",
+            ".",
+            "."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我有一个新的...",
+          "scrambledEnglish": [
+            "got",
+            "a",
+            "new...",
+            "I've"
+          ],
+          "correctEnglish": [
+            "I've",
+            "got",
+            "a",
+            "new..."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他有一个新的...",
+          "scrambledEnglish": [
+            "got",
+            "a",
+            "new...",
+            "He's"
+          ],
+          "correctEnglish": [
+            "He's",
+            "got",
+            "a",
+            "new..."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I can ___ them!",
+      "answer": "wash"
+    },
+    {
+      "type": "translate",
+      "cn": "他有新裤子。",
+      "en": [
+        "He's got new trousers."
+      ]
+    }
+  ],
+  "funFacts": [
+    "现代足球起源于19世纪的英国。",
+    "世界上最古老的鞋子有5500年历史，是在亚美尼亚的一个山洞里发现的。"
+  ]
+}

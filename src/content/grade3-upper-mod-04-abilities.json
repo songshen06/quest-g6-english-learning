@@ -1,0 +1,299 @@
+{
+  "moduleId": "grade3-upper-mod-04",
+  "title": "Abilities",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "can",
+      "en": "can",
+      "zh": "能，会",
+      "audio": "/audio/tts/can.mp3"
+    },
+    {
+      "id": "cannot",
+      "en": "can't",
+      "zh": "不能，不会",
+      "audio": "/audio/tts/cant.mp3"
+    },
+    {
+      "id": "jump",
+      "en": "jump",
+      "zh": "跳",
+      "audio": "/audio/tts/jump.mp3"
+    },
+    {
+      "id": "run",
+      "en": "run",
+      "zh": "跑",
+      "audio": "/audio/tts/run.mp3"
+    },
+    {
+      "id": "fast",
+      "en": "fast",
+      "zh": "快地",
+      "audio": "/audio/tts/fast.mp3"
+    },
+    {
+      "id": "far",
+      "en": "far",
+      "zh": "远地",
+      "audio": "/audio/tts/far.mp3"
+    },
+    {
+      "id": "swim",
+      "en": "swim",
+      "zh": "游泳",
+      "audio": "/audio/tts/swim.mp3"
+    },
+    {
+      "id": "see",
+      "en": "see",
+      "zh": "看见",
+      "audio": "/audio/tts/see.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "run-fast",
+      "en": "run fast",
+      "zh": "跑得快",
+      "icon": "/images/icons/run.svg",
+      "audio": "/audio/tts/run-fast.mp3"
+    },
+    {
+      "id": "jump-far",
+      "en": "jump far",
+      "zh": "跳得远",
+      "icon": "/images/icons/jump.svg",
+      "audio": "/audio/tts/jump-far.mp3"
+    },
+    {
+      "id": "the-winner",
+      "en": "the winner",
+      "zh": "胜利者",
+      "icon": "/images/icons/trophy.svg",
+      "audio": "/audio/tts/the-winner.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Can you run fast?",
+      "a": "你能跑得快吗？"
+    },
+    {
+      "q": "Yes, I can.",
+      "a": "是的，我能。"
+    },
+    {
+      "q": "No, I can't.",
+      "a": "不，我不能。"
+    },
+    {
+      "q": "What can you see?",
+      "a": "你能看见什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "can",
+              "zh": "能，会"
+            },
+            {
+              "en": "can't",
+              "zh": "不能，不会"
+            },
+            {
+              "en": "jump",
+              "zh": "跳"
+            },
+            {
+              "en": "run",
+              "zh": "跑"
+            },
+            {
+              "en": "fast",
+              "zh": "快地"
+            },
+            {
+              "en": "far",
+              "zh": "远地"
+            }
+          ],
+          "options": [
+            {
+              "en": "swim",
+              "zh": "游泳"
+            },
+            {
+              "en": "see",
+              "zh": "看见"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "run",
+            "fast?",
+            "Can"
+          ],
+          "correct": [
+            "Can",
+            "you",
+            "run",
+            "fast?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "can.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "I",
+            "can."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "can't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "I",
+            "can't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "run fast",
+          "scrambledChinese": [
+            "得",
+            "快",
+            "跑"
+          ],
+          "correctChinese": [
+            "跑",
+            "得",
+            "快"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "jump far",
+          "scrambledChinese": [
+            "得",
+            "远",
+            "跳"
+          ],
+          "correctChinese": [
+            "跳",
+            "得",
+            "远"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "跑得快",
+          "scrambledEnglish": [
+            "fast",
+            "run"
+          ],
+          "correctEnglish": [
+            "run",
+            "fast"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "跳得远",
+          "scrambledEnglish": [
+            "far",
+            "jump"
+          ],
+          "correctEnglish": [
+            "jump",
+            "far"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I can see a bird. It can ___.",
+      "answer": "fly"
+    },
+    {
+      "type": "translate",
+      "cn": "我不能跳得很远。",
+      "en": [
+        "I can't jump far."
+      ]
+    }
+  ],
+  "funFacts": [
+    "猎豹是陆地上跑得最快的动物，时速可以超过100公里。",
+    "考拉（Koala）虽然会爬树，但它们其实不会跳得很远。"
+  ]
+}

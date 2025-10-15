@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade3-lower-mod-07",
+  "title": "Asking How Many",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "many",
+      "en": "many",
+      "zh": "许多的",
+      "audio": "/audio/tts/many.mp3"
+    },
+    {
+      "id": "children",
+      "en": "children",
+      "zh": "孩子们",
+      "audio": "/audio/tts/children.mp3"
+    },
+    {
+      "id": "class",
+      "en": "class",
+      "zh": "班级",
+      "audio": "/audio/tts/class.mp3"
+    },
+    {
+      "id": "question",
+      "en": "question",
+      "zh": "问题",
+      "audio": "/audio/tts/question.mp3"
+    },
+    {
+      "id": "forty",
+      "en": "forty",
+      "zh": "四十",
+      "audio": "/audio/tts/forty.mp3"
+    },
+    {
+      "id": "thirty",
+      "en": "thirty",
+      "zh": "三十",
+      "audio": "/audio/tts/thirty.mp3"
+    },
+    {
+      "id": "about",
+      "en": "about",
+      "zh": "大约",
+      "audio": "/audio/tts/about.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "in-your-class",
+      "en": "in your class",
+      "zh": "在你的班级",
+      "icon": "/images/icons/class.svg",
+      "audio": "/audio/tts/in-your-class.mp3"
+    },
+    {
+      "id": "ask-a-question",
+      "en": "ask a question",
+      "zh": "问一个问题",
+      "icon": "/images/icons/question-mark.svg",
+      "audio": "/audio/tts/ask-a-question.mp3"
+    },
+    {
+      "id": "how-many-boys",
+      "en": "How many boys?",
+      "zh": "多少个男孩？",
+      "icon": "/images/icons/boy.svg",
+      "audio": "/audio/tts/how-many-boys.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Are there many children in your class?",
+      "a": "你们班有很多孩子吗？"
+    },
+    {
+      "q": "Yes, there are.",
+      "a": "是的，有。"
+    },
+    {
+      "q": "No, there aren't.",
+      "a": "不，没有。"
+    },
+    {
+      "q": "How many apples are there in the box?",
+      "a": "盒子里有多少个苹果？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "many",
+              "zh": "许多的"
+            },
+            {
+              "en": "children",
+              "zh": "孩子们"
+            },
+            {
+              "en": "class",
+              "zh": "班级"
+            },
+            {
+              "en": "question",
+              "zh": "问题"
+            },
+            {
+              "en": "forty",
+              "zh": "四十"
+            },
+            {
+              "en": "thirty",
+              "zh": "三十"
+            }
+          ],
+          "options": [
+            {
+              "en": "许多的",
+              "zh": "many"
+            },
+            {
+              "en": "孩子们",
+              "zh": "children"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "your",
+            "class",
+            "in"
+          ],
+          "correct": [
+            "in",
+            "your",
+            "class"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "question",
+            "ask"
+          ],
+          "correct": [
+            "ask",
+            "a",
+            "question"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "many",
+            "boys?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "many",
+            "boys?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "in your class",
+          "scrambledChinese": [
+            "你",
+            "的",
+            "班",
+            "级",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "你",
+            "的",
+            "班",
+            "级"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "ask a question",
+          "scrambledChinese": [
+            "一",
+            "个",
+            "问",
+            "题",
+            "问"
+          ],
+          "correctChinese": [
+            "问",
+            "一",
+            "个",
+            "问",
+            "题"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在你的班级",
+          "scrambledEnglish": [
+            "your",
+            "class",
+            "in"
+          ],
+          "correctEnglish": [
+            "in",
+            "your",
+            "class"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "问一个问题",
+          "scrambledEnglish": [
+            "a",
+            "question",
+            "ask"
+          ],
+          "correctEnglish": [
+            "ask",
+            "a",
+            "question"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ many children are there?",
+      "answer": "How"
+    },
+    {
+      "type": "translate",
+      "cn": "那里有三十个女孩。",
+      "en": [
+        "There are thirty girls."
+      ]
+    }
+  ],
+  "funFacts": [
+    "四十（forty）是唯一一个字母按字母表顺序排列的数字单词。",
+    "数字百（hundred）最初在古挪威语中指的是120，而不是100。"
+  ]
+}

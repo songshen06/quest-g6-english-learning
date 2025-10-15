@@ -1,0 +1,293 @@
+{
+  "moduleId": "grade3-lower-mod-01",
+  "title": "Describing People",
+  "durationMinutes": 11,
+  "words": [
+    {
+      "id": "nice",
+      "en": "nice",
+      "zh": "友好的",
+      "audio": "/audio/tts/nice.mp3"
+    },
+    {
+      "id": "shy",
+      "en": "shy",
+      "zh": "害羞的",
+      "audio": "/audio/tts/shy.mp3"
+    },
+    {
+      "id": "clever",
+      "en": "clever",
+      "zh": "聪明的",
+      "audio": "/audio/tts/clever.mp3"
+    },
+    {
+      "id": "quiet",
+      "en": "quiet",
+      "zh": "安静的",
+      "audio": "/audio/tts/quiet.mp3"
+    },
+    {
+      "id": "naughty",
+      "en": "naughty",
+      "zh": "淘气的",
+      "audio": "/audio/tts/naughty.mp3"
+    },
+    {
+      "id": "helpful",
+      "en": "helpful",
+      "zh": "乐于助人的",
+      "audio": "/audio/tts/helpful.mp3"
+    },
+    {
+      "id": "maths",
+      "en": "Maths",
+      "zh": "数学",
+      "audio": "/audio/tts/maths.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "a-bit-shy",
+      "en": "a bit shy",
+      "zh": "有点害羞",
+      "icon": "/images/icons/shy.svg",
+      "audio": "/audio/tts/a-bit-shy.mp3"
+    },
+    {
+      "id": "helps-people",
+      "en": "helps people",
+      "zh": "帮助人们",
+      "icon": "/images/icons/help.svg",
+      "audio": "/audio/tts/helps-people.mp3"
+    },
+    {
+      "id": "going-to-help",
+      "en": "going to help",
+      "zh": "将要去帮助",
+      "icon": "/images/icons/arrow-right.svg",
+      "audio": "/audio/tts/going-to-help.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "She's very nice.",
+      "a": "她非常友好。"
+    },
+    {
+      "q": "But he's a bit quiet.",
+      "a": "但他有点儿安静。"
+    },
+    {
+      "q": "I'm going to help her.",
+      "a": "我打算去帮她。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "nice",
+              "zh": "友好的"
+            },
+            {
+              "en": "shy",
+              "zh": "害羞的"
+            },
+            {
+              "en": "clever",
+              "zh": "聪明的"
+            },
+            {
+              "en": "quiet",
+              "zh": "安静的"
+            },
+            {
+              "en": "naughty",
+              "zh": "淘气的"
+            },
+            {
+              "en": "helpful",
+              "zh": "乐于助人的"
+            }
+          ],
+          "options": [
+            {
+              "en": "友好的",
+              "zh": "nice"
+            },
+            {
+              "en": "害羞的",
+              "zh": "shy"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "bit",
+            "shy",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "bit",
+            "shy"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "help",
+            "going"
+          ],
+          "correct": [
+            "going",
+            "to",
+            "help"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "very",
+            "nice.",
+            "She's"
+          ],
+          "correct": [
+            "She's",
+            "very",
+            "nice."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "a bit shy",
+          "scrambledChinese": [
+            "点",
+            "害",
+            "羞",
+            "有"
+          ],
+          "correctChinese": [
+            "有",
+            "点",
+            "害",
+            "羞"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "helps people",
+          "scrambledChinese": [
+            "助",
+            "人",
+            "们",
+            "帮"
+          ],
+          "correctChinese": [
+            "帮",
+            "助",
+            "人",
+            "们"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "有点害羞",
+          "scrambledEnglish": [
+            "bit",
+            "shy",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "bit",
+            "shy"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "帮助人们",
+          "scrambledEnglish": [
+            "people",
+            "helps"
+          ],
+          "correctEnglish": [
+            "helps",
+            "people"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "This little boy is ___.",
+      "answer": "naughty"
+    },
+    {
+      "type": "translate",
+      "cn": "他很聪明。",
+      "en": [
+        "He is very clever."
+      ]
+    }
+  ],
+  "funFacts": [
+    "鹦鹉（Parrot）是少数能模仿人类语言的动物之一。",
+    "聪明（clever）这个词在中世纪英语中曾经有灵巧的意思。"
+  ]
+}

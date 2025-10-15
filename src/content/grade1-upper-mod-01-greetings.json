@@ -1,0 +1,309 @@
+{
+  "moduleId": "grade1-upper-mod-01",
+  "title": "Greetings",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "hello",
+      "en": "hello",
+      "zh": "你好",
+      "audio": "/audio/tts/hello.mp3"
+    },
+    {
+      "id": "hi",
+      "en": "hi",
+      "zh": "嗨",
+      "audio": "/audio/tts/audio-3061.mp3"
+    },
+    {
+      "id": "im",
+      "en": "I'm",
+      "zh": "我是",
+      "audio": "/audio/tts/audio-4773.mp3"
+    },
+    {
+      "id": "goodbye",
+      "en": "goodbye",
+      "zh": "再见",
+      "audio": "/audio/tts/goodbye.mp3"
+    },
+    {
+      "id": "bye",
+      "en": "bye",
+      "zh": "再见",
+      "audio": "/audio/tts/bye.mp3"
+    },
+    {
+      "id": "how",
+      "en": "how",
+      "zh": "怎样",
+      "audio": "/audio/tts/how.mp3"
+    },
+    {
+      "id": "are",
+      "en": "are",
+      "zh": "是",
+      "audio": "/audio/tts/are.mp3"
+    },
+    {
+      "id": "you",
+      "en": "you",
+      "zh": "你",
+      "audio": "/audio/tts/you.mp3"
+    },
+    {
+      "id": "fine",
+      "en": "fine",
+      "zh": "好的",
+      "audio": "/audio/tts/fine.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "how-are-you",
+      "en": "How are you?",
+      "zh": "你好吗？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/how-are-you.mp3"
+    },
+    {
+      "id": "im-fine",
+      "en": "I'm fine.",
+      "zh": "我很好。",
+      "icon": "/images/icons/smile.svg",
+      "audio": "/audio/tts/im-fine.mp3"
+    },
+    {
+      "id": "thank-you",
+      "en": "thank you",
+      "zh": "谢谢你",
+      "icon": "/images/icons/thanks.svg",
+      "audio": "/audio/tts/thank-you.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Hello, I'm Amy.",
+      "a": "你好，我是艾米。"
+    },
+    {
+      "q": "Hi, I'm Sam.",
+      "a": "嗨，我是萨姆。"
+    },
+    {
+      "q": "How are you?",
+      "a": "你好吗？"
+    },
+    {
+      "q": "I'm fine, thank you.",
+      "a": "我很好，谢谢你。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "hello",
+              "zh": "你好"
+            },
+            {
+              "en": "hi",
+              "zh": "嗨"
+            },
+            {
+              "en": "I'm",
+              "zh": "我是"
+            },
+            {
+              "en": "goodbye",
+              "zh": "再见"
+            },
+            {
+              "en": "bye",
+              "zh": "再见"
+            },
+            {
+              "en": "how",
+              "zh": "怎样"
+            }
+          ],
+          "options": [
+            {
+              "en": "are",
+              "zh": "是"
+            },
+            {
+              "en": "you",
+              "zh": "你"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "are",
+            "you?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "are",
+            "you?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I'm",
+            "Amy.",
+            "Hello,"
+          ],
+          "correct": [
+            "Hello,",
+            "I'm",
+            "Amy."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I'm",
+            "Sam.",
+            "Hi,"
+          ],
+          "correct": [
+            "Hi,",
+            "I'm",
+            "Sam."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How are you?",
+          "scrambledChinese": [
+            "好",
+            "吗",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "好",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'm fine.",
+          "scrambledChinese": [
+            "很",
+            "好",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "很",
+            "好",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你好吗？",
+          "scrambledEnglish": [
+            "are",
+            "you?",
+            "How"
+          ],
+          "correctEnglish": [
+            "How",
+            "are",
+            "you?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我很好。",
+          "scrambledEnglish": [
+            "fine.",
+            "I'm"
+          ],
+          "correctEnglish": [
+            "I'm",
+            "fine."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ are you?",
+      "answer": "How"
+    },
+    {
+      "type": "translate",
+      "cn": "再见！",
+      "en": [
+        "Goodbye!"
+      ]
+    }
+  ],
+  "funFacts": [
+    "\"Hello\"这个词作为问候语是在19世纪电话发明后才开始普及的。",
+    "\"Goodbye\"最初是\"God be with ye\"（愿上帝与你同在）的缩写。"
+  ]
+}

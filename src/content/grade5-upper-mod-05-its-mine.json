@@ -7,37 +7,37 @@
       "id": "word-whose",
       "en": "whose",
       "zh": "谁的",
-      "audio": "/audio/tts/word-whose.mp3"
+      "audio": "/audio/tts/whose.mp3"
     },
     {
       "id": "word-mine",
       "en": "mine",
       "zh": "我的",
-      "audio": "/audio/tts/word-mine.mp3"
+      "audio": "/audio/tts/mine.mp3"
     },
     {
       "id": "word-yours",
       "en": "yours",
       "zh": "你的",
-      "audio": "/audio/tts/word-yours.mp3"
+      "audio": "/audio/tts/yours.mp3"
     },
     {
       "id": "word-his",
       "en": "his",
       "zh": "他的",
-      "audio": "/audio/tts/word-his.mp3"
+      "audio": "/audio/tts/his.mp3"
     },
     {
       "id": "word-hers",
       "en": "hers",
       "zh": "她的",
-      "audio": "/audio/tts/word-hers.mp3"
+      "audio": "/audio/tts/hers.mp3"
     },
     {
       "id": "word-wet",
       "en": "wet",
       "zh": "湿的",
-      "audio": "/audio/tts/word-wet.mp3"
+      "audio": "/audio/tts/wet.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "What's the matter?",
       "zh": "怎么了？",
       "icon": "/images/icons/question.svg",
-      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+      "audio": "/audio/tts/whats-the-matter.mp3"
     },
     {
       "id": "phrase-isnt-yours",
       "en": "isn't yours",
       "zh": "不是你的",
       "icon": "/images/icons/cross.svg",
-      "audio": "/audio/tts/phrase-isnt-yours.mp3"
+      "audio": "/audio/tts/isnt-yours.mp3"
     }
   ],
   "patterns": [
@@ -156,7 +156,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-whats-the-matter.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "matter?",
@@ -171,7 +171,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/whose-t-shirt-is-it.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "T-shirt",
             "is",

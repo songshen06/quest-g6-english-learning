@@ -1,0 +1,284 @@
+{
+  "moduleId": "grade2-upper-mod-09",
+  "title": "Seasons",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "spring",
+      "en": "spring",
+      "zh": "春天",
+      "audio": "/audio/tts/spring.mp3"
+    },
+    {
+      "id": "summer",
+      "en": "summer",
+      "zh": "夏天",
+      "audio": "/audio/tts/summer.mp3"
+    },
+    {
+      "id": "autumn",
+      "en": "autumn",
+      "zh": "秋天",
+      "audio": "/audio/tts/autumn.mp3"
+    },
+    {
+      "id": "winter",
+      "en": "winter",
+      "zh": "冬天",
+      "audio": "/audio/tts/winter.mp3"
+    },
+    {
+      "id": "wear",
+      "en": "wear",
+      "zh": "穿",
+      "audio": "/audio/tts/wear.mp3"
+    },
+    {
+      "id": "warm",
+      "en": "warm",
+      "zh": "温暖的",
+      "audio": "/audio/tts/warm.mp3"
+    },
+    {
+      "id": "cool",
+      "en": "cool",
+      "zh": "凉爽的",
+      "audio": "/audio/tts/cool.mp3"
+    },
+    {
+      "id": "coat",
+      "en": "coat",
+      "zh": "外套",
+      "audio": "/audio/tts/coat.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "fly-kites",
+      "en": "fly kites",
+      "zh": "放风筝",
+      "icon": "/images/icons/kite.svg",
+      "audio": "/audio/tts/fly-kites.mp3"
+    },
+    {
+      "id": "go-skating",
+      "en": "go skating",
+      "zh": "去滑冰",
+      "icon": "/images/icons/skating.svg",
+      "audio": "/audio/tts/go-skating.mp3"
+    },
+    {
+      "id": "wear-sweaters",
+      "en": "wear sweaters",
+      "zh": "穿毛衣",
+      "icon": "/images/icons/sweater.svg",
+      "audio": "/audio/tts/wear-sweaters.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "It's winter.",
+      "a": "现在是冬天。"
+    },
+    {
+      "q": "It's spring. It's warm.",
+      "a": "现在是春天。天气很暖和。"
+    },
+    {
+      "q": "We wear jackets.",
+      "a": "我们穿夹克。"
+    },
+    {
+      "q": "What does he do in summer?",
+      "a": "他在夏天做什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "spring",
+              "zh": "春天"
+            },
+            {
+              "en": "summer",
+              "zh": "夏天"
+            },
+            {
+              "en": "autumn",
+              "zh": "秋天"
+            },
+            {
+              "en": "winter",
+              "zh": "冬天"
+            },
+            {
+              "en": "wear",
+              "zh": "穿"
+            },
+            {
+              "en": "warm",
+              "zh": "温暖的"
+            }
+          ],
+          "options": [
+            {
+              "en": "cool",
+              "zh": "凉爽的"
+            },
+            {
+              "en": "coat",
+              "zh": "外套"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "spring.",
+            "It's",
+            "warm.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "spring.",
+            "It's",
+            "warm."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "wear",
+            "jackets.",
+            "We"
+          ],
+          "correct": [
+            "We",
+            "wear",
+            "jackets."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "fly kites",
+          "scrambledChinese": [
+            "风",
+            "筝",
+            "放"
+          ],
+          "correctChinese": [
+            "放",
+            "风",
+            "筝"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "go skating",
+          "scrambledChinese": [
+            "滑",
+            "冰",
+            "去"
+          ],
+          "correctChinese": [
+            "去",
+            "滑",
+            "冰"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "放风筝",
+          "scrambledEnglish": [
+            "kites",
+            "fly"
+          ],
+          "correctEnglish": [
+            "fly",
+            "kites"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "去滑冰",
+          "scrambledEnglish": [
+            "skating",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "skating"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It's autumn. It's ___.",
+      "answer": "cool"
+    },
+    {
+      "type": "translate",
+      "cn": "我们戴手套。",
+      "en": [
+        "We wear gloves."
+      ]
+    }
+  ],
+  "funFacts": [
+    "因为地球的倾斜，北半球是夏天的时候，南半球是冬天。",
+    "秋天（autumn）这个词在美式英语中更常用fall，因为这是树叶落下的季节。"
+  ]
+}

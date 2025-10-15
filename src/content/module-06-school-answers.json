@@ -34,13 +34,13 @@
       "en": "show me your photo",
       "zh": "给我看看你的照片",
       "icon": "/images/icons/photo.svg",
-      "audio": "/audio/tts/show-photo.mp3"
+      "audio": "/audio/tts/show-me-your-photo.mp3"
     },
     {
       "id": "difficult-for",
       "en": "be difficult for",
       "zh": "对（某人）来说很难",
-      "audio": "/audio/tts/difficult-for.mp3"
+      "audio": "/audio/tts/be-difficult-for.mp3"
     },
     {
       "id": "write-back",
@@ -53,26 +53,26 @@
       "id": "answer-questions",
       "en": "answer your questions",
       "zh": "回答你的问题",
-      "audio": "/audio/tts/answer-questions.mp3"
+      "audio": "/audio/tts/answer-your-questions.mp3"
     },
     {
       "id": "help-poster",
       "en": "help me make a poster",
       "zh": "帮我做海报",
       "icon": "/images/icons/poster.svg",
-      "audio": "/audio/tts/help-poster.mp3"
+      "audio": "/audio/tts/help-me-make-a-poster.mp3"
     },
     {
       "id": "half-past-three",
       "en": "at half past three",
       "zh": "三点半",
-      "audio": "/audio/tts/half-past-three.mp3"
+      "audio": "/audio/tts/at-half-past-three.mp3"
     },
     {
       "id": "got-photos",
       "en": "have got some photos",
       "zh": "有些照片",
-      "audio": "/audio/tts/got-photos.mp3"
+      "audio": "/audio/tts/have-got-some-photos.mp3"
     },
     {
       "id": "art-teacher",
@@ -92,7 +92,7 @@
       "en": "play basketball well",
       "zh": "篮球打得好",
       "icon": "/images/sports/basketball.svg",
-      "audio": "/audio/tts/play-basketball.mp3"
+      "audio": "/audio/tts/play-basketball-well.mp3"
     }
   ],
   "patterns": [
@@ -203,7 +203,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/show-photo.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "me",
             "your",
@@ -220,7 +220,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/difficult-for.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "difficult",
             "for",
@@ -235,7 +235,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/ive-got-some-chinese-chopsticks.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "got",
             "some",

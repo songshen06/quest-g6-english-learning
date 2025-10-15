@@ -7,31 +7,31 @@
       "id": "word-helped",
       "en": "helped",
       "zh": "帮助了",
-      "audio": "/audio/tts/word-helped.mp3"
+      "audio": "/audio/tts/helped.mp3"
     },
     {
       "id": "word-cleaned",
       "en": "cleaned",
       "zh": "打扫了",
-      "audio": "/audio/tts/word-cleaned.mp3"
+      "audio": "/audio/tts/cleaned.mp3"
     },
     {
       "id": "word-washed",
       "en": "washed",
       "zh": "洗了",
-      "audio": "/audio/tts/word-washed.mp3"
+      "audio": "/audio/tts/washed.mp3"
     },
     {
       "id": "word-painted",
       "en": "painted",
       "zh": "画了",
-      "audio": "/audio/tts/word-painted.mp3"
+      "audio": "/audio/tts/painted.mp3"
     },
     {
       "id": "word-cooked",
       "en": "cooked",
       "zh": "做饭了",
-      "audio": "/audio/tts/word-cooked.mp3"
+      "audio": "/audio/tts/cooked.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "cleaned my room",
       "zh": "打扫了我的房间",
       "icon": "/images/icons/broom.svg",
-      "audio": "/audio/tts/phrase-cleaned-my-room.mp3"
+      "audio": "/audio/tts/cleaned-my-room.mp3"
     },
     {
       "id": "phrase-watched-tv",
       "en": "watched TV",
       "zh": "看了电视",
       "icon": "/images/icons/tv.svg",
-      "audio": "/audio/tts/phrase-watched-tv.mp3"
+      "audio": "/audio/tts/watched-tv.mp3"
     }
   ],
   "patterns": [
@@ -122,7 +122,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-cleaned-my-room.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "my",
             "room",
@@ -137,7 +137,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/i-helped-my-mum.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "helped",
             "my",
@@ -154,7 +154,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/yesterday-i-cleaned-my-room.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "I",
             "cleaned",

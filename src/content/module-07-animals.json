@@ -58,13 +58,13 @@
       "en": "watch a new DVD",
       "zh": "看一部新的DVD",
       "icon": "/media/dvd.svg",
-      "audio": "/audio/tts/watch-dvd.mp3"
+      "audio": "/audio/tts/watch-a-new-dvd.mp3"
     },
     {
       "id": "twelve-hours",
       "en": "twelve hours a day",
       "zh": "一天12小时",
-      "audio": "/audio/tts/twelve-hours.mp3"
+      "audio": "/audio/tts/twelve-hours-a-day.mp3"
     },
     {
       "id": "almost-deaf",
@@ -77,20 +77,20 @@
       "en": "give it to me",
       "zh": "把它给我",
       "icon": "/images/icons/give.svg",
-      "audio": "/audio/tts/give-it-me.mp3"
+      "audio": "/audio/tts/give-it-to-me.mp3"
     },
     {
       "id": "hear-music",
       "en": "hear the music",
       "zh": "听到音乐",
       "icon": "/images/icons/music.svg",
-      "audio": "/audio/tts/hear-music.mp3"
+      "audio": "/audio/tts/hear-the-music.mp3"
     },
     {
       "id": "in-day",
       "en": "in the day",
       "zh": "在白天",
-      "audio": "/audio/tts/in-day.mp3"
+      "audio": "/audio/tts/in-the-day.mp3"
     },
     {
       "id": "at-night",
@@ -102,19 +102,19 @@
       "id": "learn-lesson",
       "en": "learn a lesson",
       "zh": "上一节课",
-      "audio": "/audio/tts/learn-lesson.mp3"
+      "audio": "/audio/tts/learn-a-lesson.mp3"
     },
     {
       "id": "ten-hours",
       "en": "ten hours a night",
       "zh": "每晚十小时",
-      "audio": "/audio/tts/ten-hours.mp3"
+      "audio": "/audio/tts/ten-hours-a-night.mp3"
     },
     {
       "id": "sixteen-hours",
       "en": "sixteen hours a day",
       "zh": "每天十六小时",
-      "audio": "/audio/tts/sixteen-hours.mp3"
+      "audio": "/audio/tts/sixteen-hours-a-day.mp3"
     }
   ],
   "patterns": [
@@ -233,7 +233,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/watch-dvd.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "a",
             "new",
@@ -250,7 +250,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/twelve-hours.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "hours",
             "a",
@@ -267,7 +267,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/pandas-love-bamboo-they-eat-for-twelve-hours-a-day.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "love",
             "bamboo.",

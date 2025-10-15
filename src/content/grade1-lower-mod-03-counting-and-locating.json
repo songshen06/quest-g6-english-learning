@@ -1,0 +1,309 @@
+{
+  "moduleId": "grade1-lower-mod-03",
+  "title": "Counting and Locating",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "orange",
+      "en": "orange",
+      "zh": "橙色的",
+      "audio": "/audio/tts/orange.mp3"
+    },
+    {
+      "id": "black",
+      "en": "black",
+      "zh": "黑色的",
+      "audio": "/audio/tts/black.mp3"
+    },
+    {
+      "id": "white",
+      "en": "white",
+      "zh": "白色的",
+      "audio": "/audio/tts/white.mp3"
+    },
+    {
+      "id": "how-many",
+      "en": "how many",
+      "zh": "多少",
+      "audio": "/audio/tts/how-many.mp3"
+    },
+    {
+      "id": "eleven",
+      "en": "eleven",
+      "zh": "十一",
+      "audio": "/audio/tts/eleven.mp3"
+    },
+    {
+      "id": "twelve",
+      "en": "twelve",
+      "zh": "十二",
+      "audio": "/audio/tts/twelve.mp3"
+    },
+    {
+      "id": "green",
+      "en": "green",
+      "zh": "绿色的",
+      "audio": "/audio/tts/green.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "look-at-the-cats",
+      "en": "Look at the cats.",
+      "zh": "看那些猫。",
+      "icon": "/images/icons/cat.svg",
+      "audio": "/audio/tts/look-at-the-cats.mp3"
+    },
+    {
+      "id": "i-dont-know",
+      "en": "I don't know.",
+      "zh": "我不知道。",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/i-dont-know.mp3"
+    },
+    {
+      "id": "lets-count",
+      "en": "Let's count!",
+      "zh": "我们数一数！",
+      "icon": "/images/icons/numbers.svg",
+      "audio": "/audio/tts/lets-count.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Where's the orange cat?",
+      "a": "那只橙色的猫在哪里？"
+    },
+    {
+      "q": "Is it under the bed?",
+      "a": "它在床底下吗？"
+    },
+    {
+      "q": "Yes, it is.",
+      "a": "是的，它在。"
+    },
+    {
+      "q": "How many green birds?",
+      "a": "有多少只绿色的鸟？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "orange",
+              "zh": "橙色的"
+            },
+            {
+              "en": "black",
+              "zh": "黑色的"
+            },
+            {
+              "en": "white",
+              "zh": "白色的"
+            },
+            {
+              "en": "how many",
+              "zh": "多少"
+            },
+            {
+              "en": "eleven",
+              "zh": "十一"
+            },
+            {
+              "en": "twelve",
+              "zh": "十二"
+            }
+          ],
+          "options": [
+            {
+              "en": "橙色的",
+              "zh": "orange"
+            },
+            {
+              "en": "黑色的",
+              "zh": "black"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "at",
+            "the",
+            "cats.",
+            "Look"
+          ],
+          "correct": [
+            "Look",
+            "at",
+            "the",
+            "cats."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "don't",
+            "know.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "don't",
+            "know."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "orange",
+            "cat?",
+            "Where's"
+          ],
+          "correct": [
+            "Where's",
+            "the",
+            "orange",
+            "cat?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Look at the cats.",
+          "scrambledChinese": [
+            "那",
+            "些",
+            "猫",
+            "。",
+            "看"
+          ],
+          "correctChinese": [
+            "看",
+            "那",
+            "些",
+            "猫",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I don't know.",
+          "scrambledChinese": [
+            "不",
+            "知",
+            "道",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "不",
+            "知",
+            "道",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "看那些猫。",
+          "scrambledEnglish": [
+            "at",
+            "the",
+            "cats.",
+            "Look"
+          ],
+          "correctEnglish": [
+            "Look",
+            "at",
+            "the",
+            "cats."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我不知道。",
+          "scrambledEnglish": [
+            "don't",
+            "know.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "don't",
+            "know."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ many green birds?",
+      "answer": "How"
+    },
+    {
+      "type": "translate",
+      "cn": "是的，它是。",
+      "en": [
+        "Yes, it is."
+      ]
+    }
+  ],
+  "funFacts": [
+    "家猫一天中大约有70%的时间在睡觉。",
+    "数字12在许多文化中都有特殊意义，例如一年有12个月。"
+  ]
+}

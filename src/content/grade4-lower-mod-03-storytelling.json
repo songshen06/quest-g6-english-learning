@@ -7,61 +7,61 @@
       "id": "word-once",
       "en": "once",
       "zh": "从前",
-      "audio": "/audio/tts/word-once.mp3"
+      "audio": "/audio/tts/once.mp3"
     },
     {
       "id": "word-upon",
       "en": "upon",
       "zh": "在...时候",
-      "audio": "/audio/tts/word-upon.mp3"
+      "audio": "/audio/tts/upon.mp3"
     },
     {
       "id": "word-time",
       "en": "time",
       "zh": "时间",
-      "audio": "/audio/tts/word-time.mp3"
+      "audio": "/audio/tts/time.mp3"
     },
     {
       "id": "word-king",
       "en": "king",
       "zh": "国王",
-      "audio": "/audio/tts/word-king.mp3"
+      "audio": "/audio/tts/king.mp3"
     },
     {
       "id": "word-queen",
       "en": "queen",
       "zh": "王后",
-      "audio": "/audio/tts/word-queen.mp3"
+      "audio": "/audio/tts/queen.mp3"
     },
     {
       "id": "word-prince",
       "en": "prince",
       "zh": "王子",
-      "audio": "/audio/tts/word-prince.mp3"
+      "audio": "/audio/tts/prince.mp3"
     },
     {
       "id": "word-princess",
       "en": "princess",
       "zh": "公主",
-      "audio": "/audio/tts/word-princess.mp3"
+      "audio": "/audio/tts/princess.mp3"
     },
     {
       "id": "word-dragon",
       "en": "dragon",
       "zh": "龙",
-      "audio": "/audio/tts/word-dragon.mp3"
+      "audio": "/audio/tts/dragon.mp3"
     },
     {
       "id": "word-castle",
       "en": "castle",
       "zh": "城堡",
-      "audio": "/audio/tts/word-castle.mp3"
+      "audio": "/audio/tts/castle.mp3"
     },
     {
       "id": "word-magic",
       "en": "magic",
       "zh": "魔法",
-      "audio": "/audio/tts/word-magic.mp3"
+      "audio": "/audio/tts/magic.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "Once upon a time",
       "zh": "从前",
       "icon": "/images/icons/storybook.svg",
-      "audio": "/audio/tts/phrase-once-upon.mp3"
+      "audio": "/audio/tts/once-upon-a-time.mp3"
     },
     {
       "id": "phrase-long-ago",
       "en": "long ago",
       "zh": "很久以前",
       "icon": "/images/icons/clock-old.svg",
-      "audio": "/audio/tts/phrase-long-ago.mp3"
+      "audio": "/audio/tts/long-ago.mp3"
     },
     {
       "id": "phrase-happy-ending",
       "en": "happy ending",
       "zh": "幸福的结局",
       "icon": "/images/icons/happy-end.svg",
-      "audio": "/audio/tts/phrase-happy-ending.mp3"
+      "audio": "/audio/tts/happy-ending.mp3"
     },
     {
       "id": "phrase-tell-story",
       "en": "tell a story",
       "zh": "讲故事",
       "icon": "/images/icons/storytelling.svg",
-      "audio": "/audio/tts/phrase-tell-story.mp3"
+      "audio": "/audio/tts/tell-a-story.mp3"
     }
   ],
   "patterns": [
@@ -206,7 +206,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-once-upon.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "upon",
             "a",
@@ -223,7 +223,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/once-upon-a-time-there-was-a-king.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "upon",
             "a",
@@ -248,7 +248,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/the-princess-lived-in-a-castle.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "princess",
             "lived",

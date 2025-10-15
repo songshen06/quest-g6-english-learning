@@ -34,46 +34,46 @@
       "en": "a very important building",
       "zh": "重要建筑",
       "icon": "/images/buildings/un.svg",
-      "audio": "/audio/tts/important-building.mp3"
+      "audio": "/audio/tts/a-very-important-building.mp3"
     },
     {
       "id": "in-world",
       "en": "in the world",
       "zh": "在世界上",
-      "audio": "/audio/tts/in-world.mp3"
+      "audio": "/audio/tts/in-the-world.mp3"
     },
     {
       "id": "un-building",
       "en": "the UN building",
       "zh": "联合国大楼",
       "icon": "/images/landmarks/un-building.svg",
-      "audio": "/audio/tts/un-building.mp3"
+      "audio": "/audio/tts/the-un-building.mp3"
     },
     {
       "id": "one-of",
       "en": "one of the …",
       "zh": "其中之一",
-      "audio": "/audio/tts/one-of.mp3"
+      "audio": "/audio/tts/one-of-the.mp3"
     },
     {
       "id": "changjiang-river",
       "en": "the Changjiang River",
       "zh": "长江",
       "icon": "/images/geography/changjiang.svg",
-      "audio": "/audio/tts/changjiang-river.mp3"
+      "audio": "/audio/tts/the-changjiang-river.mp3"
     },
     {
       "id": "huangshan-mountain",
       "en": "the Huangshan Mountain",
       "zh": "黄山",
       "icon": "/images/geography/huangshan.svg",
-      "audio": "/audio/tts/huangshan-mountain.mp3"
+      "audio": "/audio/tts/the-huangshan-mountain.mp3"
     },
     {
       "id": "south-of",
       "en": "in the south of",
       "zh": "在……的南方",
-      "audio": "/audio/tts/south-of.mp3"
+      "audio": "/audio/tts/in-the-south-of.mp3"
     }
   ],
   "patterns": [
@@ -184,7 +184,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/important-building.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "very",
             "important",
@@ -201,7 +201,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/in-world.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "the",
             "world",
@@ -216,7 +216,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/un-building.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "UN",
             "building",

@@ -52,20 +52,20 @@
       "en": "tidy my room",
       "zh": "整理我的房间",
       "icon": "/images/room/tidy.svg",
-      "audio": "/audio/tts/tidy-room.mp3"
+      "audio": "/audio/tts/tidy-my-room.mp3"
     },
     {
       "id": "find-coin",
       "en": "find a coin",
       "zh": "找到一个硬币",
-      "audio": "/audio/tts/find-coin.mp3"
+      "audio": "/audio/tts/find-a-coin.mp3"
     },
     {
       "id": "tidy-bed",
       "en": "tidy Tom's bed",
       "zh": "整理Tom的床铺",
       "icon": "/images/room/bed.svg",
-      "audio": "/audio/tts/tidy-bed.mp3"
+      "audio": "/audio/tts/tidy-toms-bed.mp3"
     },
     {
       "id": "read-stories",
@@ -79,21 +79,21 @@
       "en": "go to the library",
       "zh": "去图书馆",
       "icon": "/images/buildings/library.svg",
-      "audio": "/audio/tts/go-library.mp3"
+      "audio": "/audio/tts/go-to-the-library.mp3"
     },
     {
       "id": "clean-blackboard",
       "en": "clean the blackboard",
       "zh": "檫黑板",
       "icon": "/images/school/blackboard.svg",
-      "audio": "/audio/tts/clean-blackboard.mp3"
+      "audio": "/audio/tts/clean-the-blackboard.mp3"
     },
     {
       "id": "go-bus",
       "en": "go by bus",
       "zh": "乘公交车",
       "icon": "/images/transport/bus.svg",
-      "audio": "/audio/tts/go-bus.mp3"
+      "audio": "/audio/tts/go-by-bus.mp3"
     },
     {
       "id": "hurry-up",
@@ -120,7 +120,7 @@
       "en": "ride my bike",
       "zh": "骑车",
       "icon": "/images/transport/bike.svg",
-      "audio": "/audio/tts/ride-bike.mp3"
+      "audio": "/audio/tts/ride-my-bike.mp3"
     },
     {
       "id": "read-english-books",
@@ -133,7 +133,7 @@
       "en": "clean my shoes",
       "zh": "擦鞋",
       "icon": "/images/clothes/shoes.svg",
-      "audio": "/audio/tts/clean-shoes.mp3"
+      "audio": "/audio/tts/clean-my-shoes.mp3"
     },
     {
       "id": "be-mean",
@@ -155,8 +155,12 @@
       "a": "你经常整理床铺吗？是的，每天。"
     },
     {
-      "q": "Do you often read stories? Yes. I read stories every day.",
-      "a": "你经常读故事吗？是的。我每天都读故事。"
+      "q": "Do you often read stories?",
+      "a": "你经常读故事吗？"
+    },
+    {
+      "q": "Yes. I read stories every day.",
+      "a": "是的。我每天都读故事。"
     },
     {
       "q": "How often do you clean your room?",
@@ -265,7 +269,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/tidy-room.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "my",
             "room",
@@ -280,7 +284,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/find-coin.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "a",
             "coin",
@@ -295,7 +299,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/tidy-bed.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "Tom's",
             "bed",
@@ -356,18 +360,12 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "你经常读故事吗？是的。我每天都读故事。",
+          "chinese": "你经常读故事吗？",
           "scrambledEnglish": [
             "you",
             "often",
             "read",
             "stories?",
-            "Yes.",
-            "I",
-            "read",
-            "stories",
-            "every",
-            "day.",
             "Do"
           ],
           "correctEnglish": [
@@ -375,7 +373,22 @@
             "you",
             "often",
             "read",
-            "stories?",
+            "stories?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "是的。我每天都读故事。",
+          "scrambledEnglish": [
+            "I",
+            "read",
+            "stories",
+            "every",
+            "day.",
+            "Yes."
+          ],
+          "correctEnglish": [
             "Yes.",
             "I",
             "read",
@@ -454,6 +467,20 @@
       "en": [
         "Do you often tidy your bed?",
         "Yes, every day."
+      ]
+    },
+    {
+      "type": "translate",
+      "cn": "你经常读故事吗？",
+      "en": [
+        "Do you often read stories?"
+      ]
+    },
+    {
+      "type": "translate",
+      "cn": "是的。我每天都读故事。",
+      "en": [
+        "Yes. I read stories every day."
       ]
     }
   ],

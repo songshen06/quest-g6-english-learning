@@ -7,31 +7,31 @@
       "id": "word-heavy",
       "en": "heavy",
       "zh": "重的",
-      "audio": "/audio/tts/word-heavy.mp3"
+      "audio": "/audio/tts/heavy.mp3"
     },
     {
       "id": "word-sell",
       "en": "sell",
       "zh": "卖",
-      "audio": "/audio/tts/word-sell.mp3"
+      "audio": "/audio/tts/sell.mp3"
     },
     {
       "id": "word-supermarket",
       "en": "supermarket",
       "zh": "超市",
-      "audio": "/audio/tts/word-supermarket.mp3"
+      "audio": "/audio/tts/supermarket.mp3"
     },
     {
       "id": "word-different",
       "en": "different",
       "zh": "不同的",
-      "audio": "/audio/tts/word-different.mp3"
+      "audio": "/audio/tts/different.mp3"
     },
     {
       "id": "word-sometimes",
       "en": "sometimes",
       "zh": "有时",
-      "audio": "/audio/tts/word-sometimes.mp3"
+      "audio": "/audio/tts/sometimes.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "a lot of",
       "zh": "许多",
       "icon": "/images/icons/basket.svg",
-      "audio": "/audio/tts/phrase-a-lot-of.mp3"
+      "audio": "/audio/tts/a-lot-of.mp3"
     },
     {
       "id": "phrase-different-things",
       "en": "different things",
       "zh": "不同的东西",
       "icon": "/images/icons/box.svg",
-      "audio": "/audio/tts/phrase-different-things.mp3"
+      "audio": "/audio/tts/different-things.mp3"
     }
   ],
   "patterns": [
@@ -122,7 +122,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-a-lot-of.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "lot",
             "of",
@@ -137,7 +137,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/this-one-is-heavy.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "one",
             "is",
@@ -154,7 +154,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/they-sell-many-different-things.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "sell",
             "many",

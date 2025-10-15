@@ -7,31 +7,31 @@
       "id": "word-when",
       "en": "when",
       "zh": "什么时候",
-      "audio": "/audio/tts/word-when.mp3"
+      "audio": "/audio/tts/when.mp3"
     },
     {
       "id": "word-where",
       "en": "where",
       "zh": "在哪里",
-      "audio": "/audio/tts/word-where.mp3"
+      "audio": "/audio/tts/where.mp3"
     },
     {
       "id": "word-what",
       "en": "what",
       "zh": "什么",
-      "audio": "/audio/tts/word-what.mp3"
+      "audio": "/audio/tts/what.mp3"
     },
     {
       "id": "word-came",
       "en": "came",
       "zh": "来了",
-      "audio": "/audio/tts/word-came.mp3"
+      "audio": "/audio/tts/came.mp3"
     },
     {
       "id": "word-competition",
       "en": "competition",
       "zh": "比赛",
-      "audio": "/audio/tts/word-competition.mp3"
+      "audio": "/audio/tts/competition.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "last Wednesday",
       "zh": "上周三",
       "icon": "/images/icons/calendar-week.svg",
-      "audio": "/audio/tts/phrase-last-wednesday.mp3"
+      "audio": "/audio/tts/last-wednesday.mp3"
     },
     {
       "id": "phrase-play-the-flute",
       "en": "play the flute",
       "zh": "吹长笛",
       "icon": "/images/icons/flute.svg",
-      "audio": "/audio/tts/phrase-play-the-flute.mp3"
+      "audio": "/audio/tts/play-the-flute.mp3"
     }
   ],
   "patterns": [
@@ -126,7 +126,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-play-the-flute.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "flute",
@@ -141,7 +141,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/when-did-they-come.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "did",
             "they",
@@ -158,7 +158,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/they-came-last-wednesday.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "came",
             "last",

@@ -19,7 +19,7 @@
       "id": "spring-festival",
       "en": "the Spring Festival",
       "zh": "春节",
-      "audio": "/audio/tts/spring-festival.mp3"
+      "audio": "/audio/tts/the-spring-festival.mp3"
     },
     {
       "id": "sure",
@@ -65,50 +65,54 @@
       "id": "lot-fun",
       "en": "have a lot of fun",
       "zh": "玩得很快乐",
-      "audio": "/audio/tts/lot-fun.mp3"
+      "audio": "/audio/tts/have-a-lot-of-fun.mp3"
     },
     {
       "id": "write-poem",
       "en": "write a poem",
       "zh": "写一首诗",
-      "audio": "/audio/tts/write-poem.mp3"
+      "audio": "/audio/tts/write-a-poem.mp3"
     },
     {
       "id": "important-to",
       "en": "be important to sb.",
       "zh": "对……很重要",
-      "audio": "/audio/tts/important-to.mp3"
+      "audio": "/audio/tts/be-important-to-sb.mp3"
     },
     {
       "id": "spring-festival2",
       "en": "the Spring Festival",
       "zh": "春节",
       "icon": "/images/festivals/spring.svg",
-      "audio": "/audio/tts/spring-festival2.mp3"
+      "audio": "/audio/tts/the-spring-festival.mp3"
     },
     {
       "id": "important-festival",
       "en": "very important festival",
       "zh": "非常重要的节日",
-      "audio": "/audio/tts/important-festival.mp3"
+      "audio": "/audio/tts/very-important-festival.mp3"
     },
     {
       "id": "many-countries",
       "en": "in many countries",
       "zh": "在许多国家",
-      "audio": "/audio/tts/many-countries.mp3"
+      "audio": "/audio/tts/in-many-countries.mp3"
     },
     {
       "id": "25-december",
       "en": "on the 25th of December",
       "zh": "12月25日",
-      "audio": "/audio/tts/25-december.mp3"
+      "audio": "/audio/tts/on-the-25th-of-december.mp3"
     }
   ],
   "patterns": [
     {
-      "q": "What do you do on Thanksgiving? We always have a big, special dinner.",
-      "a": "感恩节你们做什么？我们总是吃一顿丰盛的特别晚餐。"
+      "q": "What do you do on Thanksgiving day?",
+      "a": "感恩节你们做什么？"
+    },
+    {
+      "q": "We always have a big, special dinner.",
+      "a": "我们总是吃一顿丰盛的特别晚餐。"
     },
     {
       "q": "What's your favourite festival?",
@@ -213,20 +217,14 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/what-do-you-do-on-thanksgiving-we-always-have-a-big-special-dinner.mp3",
+          "audio": "/audio/tts/what-do-you-do-on-thanksgiving-day.mp3",
           "scrambled": [
             "do",
             "you",
             "do",
             "on",
-            "Thanksgiving?",
-            "We",
-            "always",
-            "have",
-            "a",
-            "big,",
-            "special",
-            "dinner.",
+            "Thanksgiving",
+            "day?",
             "What"
           ],
           "correct": [
@@ -235,7 +233,24 @@
             "you",
             "do",
             "on",
-            "Thanksgiving?",
+            "Thanksgiving",
+            "day?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/we-always-have-a-big-special-dinner.mp3",
+          "scrambled": [
+            "We",
+            "always",
+            "have",
+            "a",
+            "big,",
+            "special",
+            "dinner."
+          ],
+          "correct": [
             "We",
             "always",
             "have",
@@ -247,8 +262,8 @@
         },
         {
           "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/whats-your-favourite-festival.mp3",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "your",
             "favourite",
@@ -284,20 +299,14 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "感恩节你们做什么？我们总是吃一顿丰盛的特别晚餐。",
+          "chinese": "感恩节你们做什么？",
           "scrambledEnglish": [
             "do",
             "you",
             "do",
             "on",
-            "Thanksgiving?",
-            "We",
-            "always",
-            "have",
-            "a",
-            "big,",
-            "special",
-            "dinner.",
+            "Thanksgiving",
+            "day?",
             "What"
           ],
           "correctEnglish": [
@@ -306,7 +315,24 @@
             "you",
             "do",
             "on",
-            "Thanksgiving?",
+            "Thanksgiving",
+            "day?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们总是吃一顿丰盛的特别晚餐。",
+          "scrambledEnglish": [
+            "We",
+            "always",
+            "have",
+            "a",
+            "big,",
+            "special",
+            "dinner."
+          ],
+          "correctEnglish": [
             "We",
             "always",
             "have",
@@ -369,7 +395,7 @@
   "practice": [
     {
       "type": "fillblank",
-      "text": "What do you do on ________?",
+      "text": "What do you do on ________ day?",
       "answer": "Thanksgiving"
     },
     {
@@ -379,9 +405,15 @@
     },
     {
       "type": "translate",
-      "cn": "你在感恩节做什么？我们总是吃一顿丰盛的特别晚餐。",
+      "cn": "你在感恩节做什么？",
       "en": [
-        "What do you do on Thanksgiving?",
+        "What do you do on Thanksgiving day?"
+      ]
+    },
+    {
+      "type": "translate",
+      "cn": "我们总是吃一顿丰盛的特别晚餐。",
+      "en": [
         "We always have a big, special dinner."
       ]
     }

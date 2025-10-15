@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade2-upper-mod-02",
+  "title": "Food Preferences",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "dont-like",
+      "en": "don't like",
+      "zh": "不喜欢",
+      "audio": "/audio/tts/dont-like.mp3"
+    },
+    {
+      "id": "meat",
+      "en": "meat",
+      "zh": "肉",
+      "audio": "/audio/tts/meat.mp3"
+    },
+    {
+      "id": "noodles",
+      "en": "noodles",
+      "zh": "面条",
+      "audio": "/audio/tts/noodles.mp3"
+    },
+    {
+      "id": "rice",
+      "en": "rice",
+      "zh": "米饭",
+      "audio": "/audio/tts/rice.mp3"
+    },
+    {
+      "id": "sweets",
+      "en": "sweets",
+      "zh": "糖果",
+      "audio": "/audio/tts/sweets.mp3"
+    },
+    {
+      "id": "ginger",
+      "en": "ginger",
+      "zh": "姜",
+      "audio": "/audio/tts/ginger.mp3"
+    },
+    {
+      "id": "onions",
+      "en": "onions",
+      "zh": "洋葱",
+      "audio": "/audio/tts/onions.mp3"
+    },
+    {
+      "id": "ice-cream",
+      "en": "ice cream",
+      "zh": "冰淇淋",
+      "audio": "/audio/tts/ice-cream.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "for-you",
+      "en": "for you",
+      "zh": "给你",
+      "icon": "/images/icons/gift.svg",
+      "audio": "/audio/tts/for-you.mp3"
+    },
+    {
+      "id": "my-mouth",
+      "en": "My mouth!",
+      "zh": "我的嘴巴！",
+      "icon": "/images/icons/mouth.svg",
+      "audio": "/audio/tts/my-mouth.mp3"
+    },
+    {
+      "id": "good-boys",
+      "en": "good boys",
+      "zh": "好孩子",
+      "icon": "/images/icons/boy.svg",
+      "audio": "/audio/tts/good-boys.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I don't like noodles.",
+      "a": "我不喜欢面条。"
+    },
+    {
+      "q": "I don't like rice.",
+      "a": "我不喜欢米饭。"
+    },
+    {
+      "q": "I like sweets!",
+      "a": "我喜欢糖果！"
+    },
+    {
+      "q": "I don't like ginger.",
+      "a": "我不喜欢姜。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "don't like",
+              "zh": "不喜欢"
+            },
+            {
+              "en": "meat",
+              "zh": "肉"
+            },
+            {
+              "en": "noodles",
+              "zh": "面条"
+            },
+            {
+              "en": "rice",
+              "zh": "米饭"
+            },
+            {
+              "en": "sweets",
+              "zh": "糖果"
+            },
+            {
+              "en": "ginger",
+              "zh": "姜"
+            }
+          ],
+          "options": [
+            {
+              "en": "onions",
+              "zh": "洋葱"
+            },
+            {
+              "en": "ice cream",
+              "zh": "冰淇淋"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "don't",
+            "like",
+            "noodles.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "don't",
+            "like",
+            "noodles."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "don't",
+            "like",
+            "rice.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "don't",
+            "like",
+            "rice."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "sweets!",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "sweets!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "for you",
+          "scrambledChinese": [
+            "你",
+            "给"
+          ],
+          "correctChinese": [
+            "给",
+            "你"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My mouth!",
+          "scrambledChinese": [
+            "的",
+            "嘴",
+            "巴",
+            "！",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "的",
+            "嘴",
+            "巴",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "给你",
+          "scrambledEnglish": [
+            "you",
+            "for"
+          ],
+          "correctEnglish": [
+            "for",
+            "you"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我的嘴巴！",
+          "scrambledEnglish": [
+            "mouth!",
+            "My"
+          ],
+          "correctEnglish": [
+            "My",
+            "mouth!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I don't like ___.",
+      "answer": "onions"
+    },
+    {
+      "type": "translate",
+      "cn": "我喜欢米饭。",
+      "en": [
+        "I like rice."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上有超过一万种不同的大米。",
+    "冰淇淋头痛（brain freeze）是因为冰冷的食物触碰到上颚，导致血管迅速收缩和扩张引起的。"
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "moduleId": "grade2-lower-mod-01",
+  "title": "Weather and Activities",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "weather",
+      "en": "weather",
+      "zh": "天气",
+      "audio": "/audio/tts/weather.mp3"
+    },
+    {
+      "id": "hot",
+      "en": "hot",
+      "zh": "热的",
+      "audio": "/audio/tts/hot.mp3"
+    },
+    {
+      "id": "sunny",
+      "en": "sunny",
+      "zh": "晴朗的",
+      "audio": "/audio/tts/sunny.mp3"
+    },
+    {
+      "id": "cold",
+      "en": "cold",
+      "zh": "冷的",
+      "audio": "/audio/tts/cold.mp3"
+    },
+    {
+      "id": "windy",
+      "en": "windy",
+      "zh": "有风的",
+      "audio": "/audio/tts/windy.mp3"
+    },
+    {
+      "id": "raining",
+      "en": "raining",
+      "zh": "下雨",
+      "audio": "/audio/tts/raining.mp3"
+    },
+    {
+      "id": "swimming",
+      "en": "swimming",
+      "zh": "游泳",
+      "audio": "/audio/tts/swimming.mp3"
+    },
+    {
+      "id": "skiing",
+      "en": "skiing",
+      "zh": "滑雪",
+      "audio": "/audio/tts/skiing.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "whats-the-weather-like",
+      "en": "What's the weather like?",
+      "zh": "天气怎么样？",
+      "icon": "/images/icons/weather.svg",
+      "audio": "/audio/tts/whats-the-weather-like.mp3"
+    },
+    {
+      "id": "i-like-swimming",
+      "en": "I like swimming.",
+      "zh": "我喜欢游泳。",
+      "icon": "/images/icons/swim.svg",
+      "audio": "/audio/tts/i-like-swimming.mp3"
+    },
+    {
+      "id": "in-summer",
+      "en": "in summer",
+      "zh": "在夏天",
+      "icon": "/images/icons/sun.svg",
+      "audio": "/audio/tts/in-summer.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What's the weather like?",
+      "a": "天气怎么样？"
+    },
+    {
+      "q": "It's hot and sunny.",
+      "a": "天气又热又晴。"
+    },
+    {
+      "q": "What do you like doing in winter?",
+      "a": "冬天你喜欢做什么？"
+    },
+    {
+      "q": "I like skiing.",
+      "a": "我喜欢滑雪。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "weather",
+              "zh": "天气"
+            },
+            {
+              "en": "hot",
+              "zh": "热的"
+            },
+            {
+              "en": "sunny",
+              "zh": "晴朗的"
+            },
+            {
+              "en": "cold",
+              "zh": "冷的"
+            },
+            {
+              "en": "windy",
+              "zh": "有风的"
+            },
+            {
+              "en": "raining",
+              "zh": "下雨"
+            }
+          ],
+          "options": [
+            {
+              "en": "swimming",
+              "zh": "游泳"
+            },
+            {
+              "en": "skiing",
+              "zh": "滑雪"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "weather",
+            "like?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "the",
+            "weather",
+            "like?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "swimming.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "swimming."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "weather",
+            "like?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "the",
+            "weather",
+            "like?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What's the weather like?",
+          "scrambledChinese": [
+            "气",
+            "怎",
+            "么",
+            "样",
+            "？",
+            "天"
+          ],
+          "correctChinese": [
+            "天",
+            "气",
+            "怎",
+            "么",
+            "样",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I like swimming.",
+          "scrambledChinese": [
+            "喜",
+            "欢",
+            "游",
+            "泳",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "喜",
+            "欢",
+            "游",
+            "泳",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "天气怎么样？",
+          "scrambledEnglish": [
+            "the",
+            "weather",
+            "like?",
+            "What's"
+          ],
+          "correctEnglish": [
+            "What's",
+            "the",
+            "weather",
+            "like?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我喜欢游泳。",
+          "scrambledEnglish": [
+            "like",
+            "swimming.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "like",
+            "swimming."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It's cold and it ___.",
+      "answer": "snows"
+    },
+    {
+      "type": "translate",
+      "cn": "春天你喜欢做什么？",
+      "en": [
+        "What do you like doing in spring?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "雪花有六个边，但几乎没有两片雪花是完全一样的。",
+    "夏天北极圈内的一些地方，太阳24小时都不会落下。"
+  ]
+}

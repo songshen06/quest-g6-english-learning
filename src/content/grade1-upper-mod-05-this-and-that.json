@@ -1,0 +1,329 @@
+{
+  "moduleId": "grade1-upper-mod-05",
+  "title": "This and That",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "this",
+      "en": "this",
+      "zh": "这个",
+      "audio": "/audio/tts/this.mp3"
+    },
+    {
+      "id": "that",
+      "en": "that",
+      "zh": "那个",
+      "audio": "/audio/tts/that.mp3"
+    },
+    {
+      "id": "our",
+      "en": "our",
+      "zh": "我们的",
+      "audio": "/audio/tts/our.mp3"
+    },
+    {
+      "id": "school",
+      "en": "school",
+      "zh": "学校",
+      "audio": "/audio/tts/school.mp3"
+    },
+    {
+      "id": "classroom",
+      "en": "classroom",
+      "zh": "教室",
+      "audio": "/audio/tts/classroom.mp3"
+    },
+    {
+      "id": "teacher",
+      "en": "teacher",
+      "zh": "老师",
+      "audio": "/audio/tts/teacher.mp3"
+    },
+    {
+      "id": "desk",
+      "en": "desk",
+      "zh": "书桌",
+      "audio": "/audio/tts/desk.mp3"
+    },
+    {
+      "id": "chair",
+      "en": "chair",
+      "zh": "椅子",
+      "audio": "/audio/tts/chair.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "this-is-our-school",
+      "en": "This is our school.",
+      "zh": "这是我们的学校。",
+      "icon": "/images/icons/school.svg",
+      "audio": "/audio/tts/this-is-our-school.mp3"
+    },
+    {
+      "id": "this-is-my-desk",
+      "en": "This is my desk.",
+      "zh": "这是我的书桌。",
+      "icon": "/images/icons/desk.svg",
+      "audio": "/audio/tts/this-is-my-desk.mp3"
+    },
+    {
+      "id": "nice-to-meet-you",
+      "en": "Nice to meet you.",
+      "zh": "很高兴见到你。",
+      "icon": "/images/icons/handshake.svg",
+      "audio": "/audio/tts/nice-to-meet-you.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This is our classroom.",
+      "a": "这是我们的教室。"
+    },
+    {
+      "q": "This is my desk.",
+      "a": "这是我的书桌。"
+    },
+    {
+      "q": "That is a yellow cat.",
+      "a": "那是一只黄色的猫。"
+    },
+    {
+      "q": "That is my desk.",
+      "a": "那是我的书桌。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "this",
+              "zh": "这个"
+            },
+            {
+              "en": "that",
+              "zh": "那个"
+            },
+            {
+              "en": "our",
+              "zh": "我们的"
+            },
+            {
+              "en": "school",
+              "zh": "学校"
+            },
+            {
+              "en": "classroom",
+              "zh": "教室"
+            },
+            {
+              "en": "teacher",
+              "zh": "老师"
+            }
+          ],
+          "options": [
+            {
+              "en": "desk",
+              "zh": "书桌"
+            },
+            {
+              "en": "chair",
+              "zh": "椅子"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "our",
+            "school.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "our",
+            "school."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "my",
+            "desk.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "my",
+            "desk."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "meet",
+            "you.",
+            "Nice"
+          ],
+          "correct": [
+            "Nice",
+            "to",
+            "meet",
+            "you."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This is our school.",
+          "scrambledChinese": [
+            "是",
+            "我",
+            "们",
+            "的",
+            "学",
+            "校",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "我",
+            "们",
+            "的",
+            "学",
+            "校",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This is my desk.",
+          "scrambledChinese": [
+            "是",
+            "我",
+            "的",
+            "书",
+            "桌",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "我",
+            "的",
+            "书",
+            "桌",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是我们的学校。",
+          "scrambledEnglish": [
+            "is",
+            "our",
+            "school.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "our",
+            "school."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是我的书桌。",
+          "scrambledEnglish": [
+            "is",
+            "my",
+            "desk.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "my",
+            "desk."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ is a desk.",
+      "answer": "This"
+    },
+    {
+      "type": "translate",
+      "cn": "那是一扇窗户。",
+      "en": [
+        "That is a window."
+      ]
+    }
+  ],
+  "funFacts": [
+    "\"学校\"（school）这个词来自古希腊语，最初的意思是\"休闲时间\"。",
+    "在英语中，\"this\"通常指近处的事物，\"that\"指远处的事物。"
+  ]
+}

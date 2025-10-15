@@ -7,61 +7,61 @@
       "id": "word-time",
       "en": "time",
       "zh": "时间",
-      "audio": "/audio/tts/word-time.mp3"
+      "audio": "/audio/tts/time.mp3"
     },
     {
       "id": "word-clock",
       "en": "clock",
       "zh": "时钟",
-      "audio": "/audio/tts/word-clock.mp3"
+      "audio": "/audio/tts/clock.mp3"
     },
     {
       "id": "word-watch",
       "en": "watch",
       "zh": "手表",
-      "audio": "/audio/tts/word-watch.mp3"
+      "audio": "/audio/tts/watch.mp3"
     },
     {
       "id": "word-hour",
       "en": "hour",
       "zh": "小时",
-      "audio": "/audio/tts/word-hour.mp3"
+      "audio": "/audio/tts/hour.mp3"
     },
     {
       "id": "word-minute",
       "en": "minute",
       "zh": "分钟",
-      "audio": "/audio/tts/word-minute.mp3"
+      "audio": "/audio/tts/minute.mp3"
     },
     {
       "id": "word-oclock",
       "en": "o'clock",
       "zh": "点钟",
-      "audio": "/audio/tts/word-oclock.mp3"
+      "audio": "/audio/tts/oclock.mp3"
     },
     {
       "id": "word-past",
       "en": "past",
       "zh": "过",
-      "audio": "/audio/tts/word-past.mp3"
+      "audio": "/audio/tts/past.mp3"
     },
     {
       "id": "word-to",
       "en": "to",
       "zh": "差",
-      "audio": "/audio/tts/word-to.mp3"
+      "audio": "/audio/tts/audio-7312.mp3"
     },
     {
       "id": "word-half",
       "en": "half",
       "zh": "一半",
-      "audio": "/audio/tts/word-half.mp3"
+      "audio": "/audio/tts/half.mp3"
     },
     {
       "id": "word-quarter",
       "en": "quarter",
       "zh": "一刻",
-      "audio": "/audio/tts/word-quarter.mp3"
+      "audio": "/audio/tts/quarter.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "What time is it?",
       "zh": "几点了？",
       "icon": "/images/icons/clock-question.svg",
-      "audio": "/audio/tts/phrase-what-time.mp3"
+      "audio": "/audio/tts/what-time-is-it.mp3"
     },
     {
       "id": "phrase-its-oclock",
       "en": "It's ... o'clock",
       "zh": "...点了",
       "icon": "/images/icons/clock-time.svg",
-      "audio": "/audio/tts/phrase-its-oclock.mp3"
+      "audio": "/audio/tts/its-oclock.mp3"
     },
     {
       "id": "phrase-half-past",
       "en": "half past",
       "zh": "半点",
       "icon": "/images/icons/clock-half.svg",
-      "audio": "/audio/tts/phrase-half-past.mp3"
+      "audio": "/audio/tts/half-past.mp3"
     },
     {
       "id": "phrase-quarter-past",
       "en": "quarter past",
       "zh": "一刻",
       "icon": "/images/icons/clock-quarter.svg",
-      "audio": "/audio/tts/phrase-quarter-past.mp3"
+      "audio": "/audio/tts/quarter-past.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-what-time.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "time",
             "is",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-its-oclock.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "...",
             "o'clock",
@@ -242,7 +242,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/what-time-is-it.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "time",
             "is",

@@ -1,0 +1,309 @@
+{
+  "moduleId": "grade3-upper-mod-09",
+  "title": "Future Activities",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "going-to",
+      "en": "going to",
+      "zh": "将要，打算",
+      "audio": "/audio/tts/going-to.mp3"
+    },
+    {
+      "id": "sports-day",
+      "en": "sports day",
+      "zh": "运动日",
+      "audio": "/audio/tts/sports-day.mp3"
+    },
+    {
+      "id": "long-jump",
+      "en": "long jump",
+      "zh": "跳远",
+      "audio": "/audio/tts/long-jump.mp3"
+    },
+    {
+      "id": "high-jump",
+      "en": "high jump",
+      "zh": "跳高",
+      "audio": "/audio/tts/high-jump.mp3"
+    },
+    {
+      "id": "race",
+      "en": "race",
+      "zh": "赛跑",
+      "audio": "/audio/tts/race.mp3"
+    },
+    {
+      "id": "driver",
+      "en": "driver",
+      "zh": "司机",
+      "audio": "/audio/tts/driver.mp3"
+    },
+    {
+      "id": "doctor",
+      "en": "doctor",
+      "zh": "医生",
+      "audio": "/audio/tts/doctor.mp3"
+    },
+    {
+      "id": "nurse",
+      "en": "nurse",
+      "zh": "护士",
+      "audio": "/audio/tts/nurse.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "run-a-race",
+      "en": "run a race",
+      "zh": "参加赛跑",
+      "icon": "/images/icons/run.svg",
+      "audio": "/audio/tts/run-a-race.mp3"
+    },
+    {
+      "id": "do-the-long-jump",
+      "en": "do the long jump",
+      "zh": "参加跳远",
+      "icon": "/images/icons/jump.svg",
+      "audio": "/audio/tts/do-the-long-jump.mp3"
+    },
+    {
+      "id": "be-a-doctor",
+      "en": "be a doctor",
+      "zh": "成为一名医生",
+      "icon": "/images/icons/doctor.svg",
+      "audio": "/audio/tts/be-a-doctor.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I'm going to do the long jump.",
+      "a": "我打算参加跳远。"
+    },
+    {
+      "q": "Amy is going to do the high jump.",
+      "a": "艾米打算参加跳高。"
+    },
+    {
+      "q": "I'm going to be a driver.",
+      "a": "我将来要成为一名司机。"
+    },
+    {
+      "q": "What are you going to be?",
+      "a": "你将来想成为什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "going to",
+              "zh": "将要，打算"
+            },
+            {
+              "en": "sports day",
+              "zh": "运动日"
+            },
+            {
+              "en": "long jump",
+              "zh": "跳远"
+            },
+            {
+              "en": "high jump",
+              "zh": "跳高"
+            },
+            {
+              "en": "race",
+              "zh": "赛跑"
+            },
+            {
+              "en": "driver",
+              "zh": "司机"
+            }
+          ],
+          "options": [
+            {
+              "en": "doctor",
+              "zh": "医生"
+            },
+            {
+              "en": "nurse",
+              "zh": "护士"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "race",
+            "run"
+          ],
+          "correct": [
+            "run",
+            "a",
+            "race"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "long",
+            "jump",
+            "do"
+          ],
+          "correct": [
+            "do",
+            "the",
+            "long",
+            "jump"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "doctor",
+            "be"
+          ],
+          "correct": [
+            "be",
+            "a",
+            "doctor"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "run a race",
+          "scrambledChinese": [
+            "加",
+            "赛",
+            "跑",
+            "参"
+          ],
+          "correctChinese": [
+            "参",
+            "加",
+            "赛",
+            "跑"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "do the long jump",
+          "scrambledChinese": [
+            "加",
+            "跳",
+            "远",
+            "参"
+          ],
+          "correctChinese": [
+            "参",
+            "加",
+            "跳",
+            "远"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "参加赛跑",
+          "scrambledEnglish": [
+            "a",
+            "race",
+            "run"
+          ],
+          "correctEnglish": [
+            "run",
+            "a",
+            "race"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "参加跳远",
+          "scrambledEnglish": [
+            "the",
+            "long",
+            "jump",
+            "do"
+          ],
+          "correctEnglish": [
+            "do",
+            "the",
+            "long",
+            "jump"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "It's going to be ___ day on Friday.",
+      "answer": "sports"
+    },
+    {
+      "type": "translate",
+      "cn": "我将会成为一名护士。",
+      "en": [
+        "I'm going to be a nurse."
+      ]
+    }
+  ],
+  "funFacts": [
+    "现代奥运会起源于古希腊。",
+    "世界上第一位获得认证的女医生是伊丽莎白·布莱克威尔，她于1849年获得学位。"
+  ]
+}

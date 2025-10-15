@@ -1,0 +1,294 @@
+{
+  "moduleId": "grade1-upper-mod-04",
+  "title": "Colors",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "red",
+      "en": "red",
+      "zh": "红色",
+      "audio": "/audio/tts/red.mp3"
+    },
+    {
+      "id": "yellow",
+      "en": "yellow",
+      "zh": "黄色",
+      "audio": "/audio/tts/yellow.mp3"
+    },
+    {
+      "id": "green",
+      "en": "green",
+      "zh": "绿色",
+      "audio": "/audio/tts/green.mp3"
+    },
+    {
+      "id": "blue",
+      "en": "blue",
+      "zh": "蓝色",
+      "audio": "/audio/tts/blue.mp3"
+    },
+    {
+      "id": "black",
+      "en": "black",
+      "zh": "黑色",
+      "audio": "/audio/tts/black.mp3"
+    },
+    {
+      "id": "white",
+      "en": "white",
+      "zh": "白色",
+      "audio": "/audio/tts/white.mp3"
+    },
+    {
+      "id": "orange",
+      "en": "orange",
+      "zh": "橙色",
+      "audio": "/audio/tts/orange.mp3"
+    },
+    {
+      "id": "colour",
+      "en": "colour",
+      "zh": "颜色",
+      "audio": "/audio/tts/colour.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "what-colour",
+      "en": "What colour?",
+      "zh": "什么颜色？",
+      "icon": "/images/icons/color-wheel.svg",
+      "audio": "/audio/tts/what-colour.mp3"
+    },
+    {
+      "id": "a-green-cat",
+      "en": "a green cat",
+      "zh": "一只绿色的猫",
+      "icon": "/images/icons/cat.svg",
+      "audio": "/audio/tts/a-green-cat.mp3"
+    },
+    {
+      "id": "a-red-dog",
+      "en": "a red dog",
+      "zh": "一只红色的狗",
+      "icon": "/images/icons/dog.svg",
+      "audio": "/audio/tts/a-red-dog.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What colour?",
+      "a": "什么颜色？"
+    },
+    {
+      "q": "It's red.",
+      "a": "是红色的。"
+    },
+    {
+      "q": "It's blue.",
+      "a": "是蓝色的。"
+    },
+    {
+      "q": "It's a red dog.",
+      "a": "它是一只红色的狗。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "red",
+              "zh": "红色"
+            },
+            {
+              "en": "yellow",
+              "zh": "黄色"
+            },
+            {
+              "en": "green",
+              "zh": "绿色"
+            },
+            {
+              "en": "blue",
+              "zh": "蓝色"
+            },
+            {
+              "en": "black",
+              "zh": "黑色"
+            },
+            {
+              "en": "white",
+              "zh": "白色"
+            }
+          ],
+          "options": [
+            {
+              "en": "orange",
+              "zh": "橙色"
+            },
+            {
+              "en": "colour",
+              "zh": "颜色"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "green",
+            "cat",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "green",
+            "cat"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "red",
+            "dog",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "red",
+            "dog"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What colour?",
+          "scrambledChinese": [
+            "么",
+            "颜",
+            "色",
+            "？",
+            "什"
+          ],
+          "correctChinese": [
+            "什",
+            "么",
+            "颜",
+            "色",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "a green cat",
+          "scrambledChinese": [
+            "只",
+            "绿",
+            "色",
+            "的",
+            "猫",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "只",
+            "绿",
+            "色",
+            "的",
+            "猫"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "什么颜色？",
+          "scrambledEnglish": [
+            "colour?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "colour?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一只绿色的猫",
+          "scrambledEnglish": [
+            "green",
+            "cat",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "green",
+            "cat"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Wow! A ___ cat!",
+      "answer": "green"
+    },
+    {
+      "type": "translate",
+      "cn": "它是什么颜色的？",
+      "en": [
+        "What colour is it?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "变色龙可以改变皮肤颜色来适应环境或表达情绪。",
+    "彩虹实际上是一个完整的圆圈，但我们通常只能看到一半。"
+  ]
+}

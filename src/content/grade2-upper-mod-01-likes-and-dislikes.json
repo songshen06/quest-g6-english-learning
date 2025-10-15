@@ -1,0 +1,301 @@
+{
+  "moduleId": "grade2-upper-mod-01",
+  "title": "Likes and Dislikes",
+  "durationMinutes": 11,
+  "words": [
+    {
+      "id": "like",
+      "en": "like",
+      "zh": "喜欢",
+      "audio": "/audio/tts/like.mp3"
+    },
+    {
+      "id": "song",
+      "en": "song",
+      "zh": "歌曲",
+      "audio": "/audio/tts/song.mp3"
+    },
+    {
+      "id": "favourite",
+      "en": "favourite",
+      "zh": "最喜欢的",
+      "audio": "/audio/tts/favourite.mp3"
+    },
+    {
+      "id": "football",
+      "en": "football",
+      "zh": "足球",
+      "audio": "/audio/tts/football.mp3"
+    },
+    {
+      "id": "basketball",
+      "en": "basketball",
+      "zh": "篮球",
+      "audio": "/audio/tts/basketball.mp3"
+    },
+    {
+      "id": "swimming",
+      "en": "swimming",
+      "zh": "游泳",
+      "audio": "/audio/tts/swimming.mp3"
+    },
+    {
+      "id": "team",
+      "en": "team",
+      "zh": "队伍",
+      "audio": "/audio/tts/team.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "abc-song",
+      "en": "the ABC song",
+      "zh": "字母歌",
+      "icon": "/images/icons/music.svg",
+      "audio": "/audio/tts/the-abc-song.mp3"
+    },
+    {
+      "id": "i-like-football",
+      "en": "I like football.",
+      "zh": "我喜欢足球。",
+      "icon": "/images/icons/football.svg",
+      "audio": "/audio/tts/i-like-football.mp3"
+    },
+    {
+      "id": "come-on",
+      "en": "Come on!",
+      "zh": "加油！",
+      "icon": "/images/icons/cheer.svg",
+      "audio": "/audio/tts/come-on.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I like the ABC song.",
+      "a": "我喜欢字母歌。"
+    },
+    {
+      "q": "It's my favourite song.",
+      "a": "这是我最喜欢的歌曲。"
+    },
+    {
+      "q": "I like football, too.",
+      "a": "我也喜欢足球。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "like",
+              "zh": "喜欢"
+            },
+            {
+              "en": "song",
+              "zh": "歌曲"
+            },
+            {
+              "en": "favourite",
+              "zh": "最喜欢的"
+            },
+            {
+              "en": "football",
+              "zh": "足球"
+            },
+            {
+              "en": "basketball",
+              "zh": "篮球"
+            },
+            {
+              "en": "swimming",
+              "zh": "游泳"
+            }
+          ],
+          "options": [
+            {
+              "en": "喜欢",
+              "zh": "like"
+            },
+            {
+              "en": "歌曲",
+              "zh": "song"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "ABC",
+            "song",
+            "the"
+          ],
+          "correct": [
+            "the",
+            "ABC",
+            "song"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "football.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "football."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "the",
+            "ABC",
+            "song.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "the",
+            "ABC",
+            "song."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "the ABC song",
+          "scrambledChinese": [
+            "母",
+            "歌",
+            "字"
+          ],
+          "correctChinese": [
+            "字",
+            "母",
+            "歌"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I like football.",
+          "scrambledChinese": [
+            "喜",
+            "欢",
+            "足",
+            "球",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "喜",
+            "欢",
+            "足",
+            "球",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "字母歌",
+          "scrambledEnglish": [
+            "ABC",
+            "song",
+            "the"
+          ],
+          "correctEnglish": [
+            "the",
+            "ABC",
+            "song"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我喜欢足球。",
+          "scrambledEnglish": [
+            "like",
+            "football.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "like",
+            "football."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I like your ___.",
+      "answer": "bike"
+    },
+    {
+      "type": "translate",
+      "cn": "我喜欢游泳。",
+      "en": [
+        "I like swimming."
+      ]
+    }
+  ],
+  "funFacts": [
+    "字母歌的旋律与《一闪一闪小星星》的旋律是一样的。",
+    "足球是世界上最受欢迎的体育运动。"
+  ]
+}

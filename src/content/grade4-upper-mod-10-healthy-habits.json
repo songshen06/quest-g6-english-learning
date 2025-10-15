@@ -7,37 +7,37 @@
       "id": "word-early",
       "en": "early",
       "zh": "早",
-      "audio": "/audio/tts/word-early.mp3"
+      "audio": "/audio/tts/early.mp3"
     },
     {
       "id": "word-late",
       "en": "late",
       "zh": "晚",
-      "audio": "/audio/tts/word-late.mp3"
+      "audio": "/audio/tts/late.mp3"
     },
     {
       "id": "word-medicine",
       "en": "medicine",
       "zh": "药",
-      "audio": "/audio/tts/word-medicine.mp3"
+      "audio": "/audio/tts/medicine.mp3"
     },
     {
       "id": "word-exercise",
       "en": "exercise",
       "zh": "运动",
-      "audio": "/audio/tts/word-exercise.mp3"
+      "audio": "/audio/tts/exercise.mp3"
     },
     {
       "id": "word-healthy",
       "en": "healthy",
       "zh": "健康的",
-      "audio": "/audio/tts/word-healthy.mp3"
+      "audio": "/audio/tts/healthy.mp3"
     },
     {
       "id": "word-vegetables",
       "en": "vegetables",
       "zh": "蔬菜",
-      "audio": "/audio/tts/word-vegetables.mp3"
+      "audio": "/audio/tts/vegetables.mp3"
     }
   ],
   "phrases": [
@@ -46,21 +46,21 @@
       "en": "go to bed",
       "zh": "上床睡觉",
       "icon": "/images/icons/bed.svg",
-      "audio": "/audio/tts/phrase-go-to-bed.mp3"
+      "audio": "/audio/tts/go-to-bed.mp3"
     },
     {
       "id": "phrase-a-lot-of-water",
       "en": "a lot of water",
       "zh": "许多水",
       "icon": "/images/icons/water-glass.svg",
-      "audio": "/audio/tts/phrase-a-lot-of-water.mp3"
+      "audio": "/audio/tts/a-lot-of-water.mp3"
     },
     {
       "id": "phrase-do-exercise",
       "en": "do exercise",
       "zh": "做运动",
       "icon": "/images/icons/running.svg",
-      "audio": "/audio/tts/phrase-do-exercise.mp3"
+      "audio": "/audio/tts/do-exercise.mp3"
     }
   ],
   "patterns": [
@@ -167,7 +167,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-go-to-bed.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "to",
             "bed",
@@ -182,7 +182,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-a-lot-of-water.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "lot",
             "of",
@@ -199,7 +199,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/go-to-bed-early.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "to",
             "bed",

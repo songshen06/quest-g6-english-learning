@@ -41,7 +41,7 @@
       "en": "have our picnic",
       "zh": "野餐",
       "icon": "/images/food/picnic.svg",
-      "audio": "/audio/tts/have-picnic.mp3"
+      "audio": "/audio/tts/have-our-picnic.mp3"
     },
     {
       "id": "dont-worry",
@@ -54,20 +54,20 @@
       "en": "drink clean water",
       "zh": "喝干净水",
       "icon": "/images/drinks/water.svg",
-      "audio": "/audio/tts/drink-water.mp3"
+      "audio": "/audio/tts/drink-clean-water.mp3"
     },
     {
       "id": "fun-to",
       "en": "it's fun to…",
       "zh": "很高兴去做…",
-      "audio": "/audio/tts/fun-to.mp3"
+      "audio": "/audio/tts/its-fun-to.mp3"
     },
     {
       "id": "go-straight",
       "en": "go straight on",
       "zh": "一直往前走",
       "icon": "/images/directions/straight.svg",
-      "audio": "/audio/tts/go-straight.mp3"
+      "audio": "/audio/tts/go-straight-on.mp3"
     },
     {
       "id": "dont-cross",
@@ -87,7 +87,7 @@
       "en": "cross the road",
       "zh": "穿过马路",
       "icon": "/images/directions/cross.svg",
-      "audio": "/audio/tts/cross-road.mp3"
+      "audio": "/audio/tts/cross-the-road.mp3"
     },
     {
       "id": "turn-left",
@@ -205,7 +205,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/have-picnic.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "our",
             "picnic",
@@ -220,7 +220,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/only-drink-clean-water.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "drink",
             "clean",
@@ -237,7 +237,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/this-water-is-very-clean-its-fun-to-drink-this-way.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "water",
             "is",

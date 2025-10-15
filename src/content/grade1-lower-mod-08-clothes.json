@@ -1,0 +1,305 @@
+{
+  "moduleId": "grade1-lower-mod-08",
+  "title": "Clothes",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "shorts",
+      "en": "shorts",
+      "zh": "短裤",
+      "audio": "/audio/tts/shorts.mp3"
+    },
+    {
+      "id": "shirt",
+      "en": "shirt",
+      "zh": "衬衫",
+      "audio": "/audio/tts/shirt.mp3"
+    },
+    {
+      "id": "shoes",
+      "en": "shoes",
+      "zh": "鞋子",
+      "audio": "/audio/tts/shoes.mp3"
+    },
+    {
+      "id": "socks",
+      "en": "socks",
+      "zh": "袜子",
+      "audio": "/audio/tts/socks.mp3"
+    },
+    {
+      "id": "clothes",
+      "en": "clothes",
+      "zh": "衣服",
+      "audio": "/audio/tts/clothes.mp3"
+    },
+    {
+      "id": "pair",
+      "en": "pair",
+      "zh": "一双；一对",
+      "audio": "/audio/tts/pair.mp3"
+    },
+    {
+      "id": "desk",
+      "en": "desk",
+      "zh": "书桌",
+      "audio": "/audio/tts/desk.mp3"
+    },
+    {
+      "id": "hat",
+      "en": "hat",
+      "zh": "帽子",
+      "audio": "/audio/tts/hat.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "a-pair-of-shorts",
+      "en": "a pair of shorts",
+      "zh": "一条短裤",
+      "icon": "/images/icons/shorts.svg",
+      "audio": "/audio/tts/a-pair-of-shorts.mp3"
+    },
+    {
+      "id": "put-on",
+      "en": "put on",
+      "zh": "穿上",
+      "icon": "/images/icons/clothes.svg",
+      "audio": "/audio/tts/put-on.mp3"
+    },
+    {
+      "id": "under-the-desk",
+      "en": "under the desk",
+      "zh": "在书桌下",
+      "icon": "/images/icons/desk.svg",
+      "audio": "/audio/tts/under-the-desk.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This is my shirt.",
+      "a": "这是我的衬衫。"
+    },
+    {
+      "q": "These are my shorts.",
+      "a": "这是我的短裤。"
+    },
+    {
+      "q": "There's a pair of shorts under that duck.",
+      "a": "那只鸭子下面有一条短裤。"
+    },
+    {
+      "q": "There are two footballs under my desk.",
+      "a": "我的书桌下有两个足球。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "shorts",
+              "zh": "短裤"
+            },
+            {
+              "en": "shirt",
+              "zh": "衬衫"
+            },
+            {
+              "en": "shoes",
+              "zh": "鞋子"
+            },
+            {
+              "en": "socks",
+              "zh": "袜子"
+            },
+            {
+              "en": "clothes",
+              "zh": "衣服"
+            },
+            {
+              "en": "pair",
+              "zh": "一双；一对"
+            }
+          ],
+          "options": [
+            {
+              "en": "desk",
+              "zh": "书桌"
+            },
+            {
+              "en": "hat",
+              "zh": "帽子"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "pair",
+            "of",
+            "shorts",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "pair",
+            "of",
+            "shorts"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "desk",
+            "under"
+          ],
+          "correct": [
+            "under",
+            "the",
+            "desk"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "my",
+            "shirt.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "my",
+            "shirt."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "a pair of shorts",
+          "scrambledChinese": [
+            "条",
+            "短",
+            "裤",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "条",
+            "短",
+            "裤"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "put on",
+          "scrambledChinese": [
+            "上",
+            "穿"
+          ],
+          "correctChinese": [
+            "穿",
+            "上"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一条短裤",
+          "scrambledEnglish": [
+            "pair",
+            "of",
+            "shorts",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "pair",
+            "of",
+            "shorts"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "穿上",
+          "scrambledEnglish": [
+            "on",
+            "put"
+          ],
+          "correctEnglish": [
+            "put",
+            "on"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Put on the ___.",
+      "answer": "hat"
+    },
+    {
+      "type": "translate",
+      "cn": "这是你的衬衫吗？",
+      "en": [
+        "Is this your shirt?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "短裤最初是作为男童的服装在19世纪末流行的。",
+    "古埃及人穿的凉鞋是最早的鞋子之一。"
+  ]
+}

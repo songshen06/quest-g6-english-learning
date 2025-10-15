@@ -7,61 +7,61 @@
       "id": "word-music",
       "en": "music",
       "zh": "音乐",
-      "audio": "/audio/tts/word-music.mp3"
+      "audio": "/audio/tts/music.mp3"
     },
     {
       "id": "word-song",
       "en": "song",
       "zh": "歌曲",
-      "audio": "/audio/tts/word-song.mp3"
+      "audio": "/audio/tts/song.mp3"
     },
     {
       "id": "word-sing",
       "en": "sing",
       "zh": "唱歌",
-      "audio": "/audio/tts/word-sing.mp3"
+      "audio": "/audio/tts/sing.mp3"
     },
     {
       "id": "word-dance",
       "en": "dance",
       "zh": "跳舞",
-      "audio": "/audio/tts/word-dance.mp3"
+      "audio": "/audio/tts/dance.mp3"
     },
     {
       "id": "word-play",
       "en": "play",
       "zh": "演奏",
-      "audio": "/audio/tts/word-play.mp3"
+      "audio": "/audio/tts/play.mp3"
     },
     {
       "id": "word-happy",
       "en": "happy",
       "zh": "快乐的",
-      "audio": "/audio/tts/word-happy.mp3"
+      "audio": "/audio/tts/happy.mp3"
     },
     {
       "id": "word-sad",
       "en": "sad",
       "zh": "伤心的",
-      "audio": "/audio/tts/word-sad.mp3"
+      "audio": "/audio/tts/sad.mp3"
     },
     {
       "id": "word-excited",
       "en": "excited",
       "zh": "兴奋的",
-      "audio": "/audio/tts/word-excited.mp3"
+      "audio": "/audio/tts/excited.mp3"
     },
     {
       "id": "word-piano",
       "en": "piano",
       "zh": "钢琴",
-      "audio": "/audio/tts/word-piano.mp3"
+      "audio": "/audio/tts/piano.mp3"
     },
     {
       "id": "word-guitar",
       "en": "guitar",
       "zh": "吉他",
-      "audio": "/audio/tts/word-guitar.mp3"
+      "audio": "/audio/tts/guitar.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "listen to music",
       "zh": "听音乐",
       "icon": "/images/icons/headphones.svg",
-      "audio": "/audio/tts/phrase-listen-music.mp3"
+      "audio": "/audio/tts/listen-to-music.mp3"
     },
     {
       "id": "phrase-sing-song",
       "en": "sing a song",
       "zh": "唱歌",
       "icon": "/images/icons/microphone.svg",
-      "audio": "/audio/tts/phrase-sing-song.mp3"
+      "audio": "/audio/tts/sing-a-song.mp3"
     },
     {
       "id": "phrase-play-piano",
       "en": "play the piano",
       "zh": "弹钢琴",
       "icon": "/images/icons/piano.svg",
-      "audio": "/audio/tts/phrase-play-piano.mp3"
+      "audio": "/audio/tts/play-the-piano.mp3"
     },
     {
       "id": "phrase-feel-happy",
       "en": "feel happy",
       "zh": "感到快乐",
       "icon": "/images/icons/happy-face.svg",
-      "audio": "/audio/tts/phrase-feel-happy.mp3"
+      "audio": "/audio/tts/feel-happy.mp3"
     }
   ],
   "patterns": [
@@ -206,7 +206,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-listen-music.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "to",
             "music",
@@ -221,7 +221,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-sing-song.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "a",
             "song",
@@ -236,7 +236,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/phrase-play-piano.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "the",
             "piano",

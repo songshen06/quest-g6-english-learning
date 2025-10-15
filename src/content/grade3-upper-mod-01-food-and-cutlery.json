@@ -1,0 +1,305 @@
+{
+  "moduleId": "grade3-upper-mod-01",
+  "title": "Food and Cutlery",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "chopsticks",
+      "en": "chopsticks",
+      "zh": "筷子",
+      "audio": "/audio/tts/chopsticks.mp3"
+    },
+    {
+      "id": "use",
+      "en": "use",
+      "zh": "使用",
+      "audio": "/audio/tts/use.mp3"
+    },
+    {
+      "id": "knife",
+      "en": "knife",
+      "zh": "刀",
+      "audio": "/audio/tts/knife.mp3"
+    },
+    {
+      "id": "fork",
+      "en": "fork",
+      "zh": "叉",
+      "audio": "/audio/tts/fork.mp3"
+    },
+    {
+      "id": "hamburger",
+      "en": "hamburger",
+      "zh": "汉堡包",
+      "audio": "/audio/tts/hamburger.mp3"
+    },
+    {
+      "id": "chips",
+      "en": "chips",
+      "zh": "薯条",
+      "audio": "/audio/tts/chips.mp3"
+    },
+    {
+      "id": "food",
+      "en": "food",
+      "zh": "食物",
+      "audio": "/audio/tts/food.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "fast-food",
+      "en": "fast food",
+      "zh": "快餐",
+      "icon": "/images/icons/fast-food.svg",
+      "audio": "/audio/tts/fast-food.mp3"
+    },
+    {
+      "id": "a-knife-and-fork",
+      "en": "a knife and fork",
+      "zh": "一副刀叉",
+      "icon": "/images/icons/cutlery.svg",
+      "audio": "/audio/tts/a-knife-and-fork.mp3"
+    },
+    {
+      "id": "im-hungry",
+      "en": "I'm hungry.",
+      "zh": "我饿了。",
+      "icon": "/images/icons/hungry.svg",
+      "audio": "/audio/tts/im-hungry.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Do you use chopsticks in the UK?",
+      "a": "你们在英国用筷子吗？"
+    },
+    {
+      "q": "No, we don't.",
+      "a": "不，我们不用。"
+    },
+    {
+      "q": "What are you eating?",
+      "a": "你在吃什么？"
+    },
+    {
+      "q": "I'm eating hamburgers and chips.",
+      "a": "我在吃汉堡包和薯条。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "chopsticks",
+              "zh": "筷子"
+            },
+            {
+              "en": "use",
+              "zh": "使用"
+            },
+            {
+              "en": "knife",
+              "zh": "刀"
+            },
+            {
+              "en": "fork",
+              "zh": "叉"
+            },
+            {
+              "en": "hamburger",
+              "zh": "汉堡包"
+            },
+            {
+              "en": "chips",
+              "zh": "薯条"
+            }
+          ],
+          "options": [
+            {
+              "en": "筷子",
+              "zh": "chopsticks"
+            },
+            {
+              "en": "使用",
+              "zh": "use"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "knife",
+            "and",
+            "fork",
+            "a"
+          ],
+          "correct": [
+            "a",
+            "knife",
+            "and",
+            "fork"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "use",
+            "chopsticks",
+            "in",
+            "the",
+            "UK?",
+            "Do"
+          ],
+          "correct": [
+            "Do",
+            "you",
+            "use",
+            "chopsticks",
+            "in",
+            "the",
+            "UK?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "we",
+            "don't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "we",
+            "don't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "fast food",
+          "scrambledChinese": [
+            "餐",
+            "快"
+          ],
+          "correctChinese": [
+            "快",
+            "餐"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "a knife and fork",
+          "scrambledChinese": [
+            "副",
+            "刀",
+            "叉",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "副",
+            "刀",
+            "叉"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "快餐",
+          "scrambledEnglish": [
+            "food",
+            "fast"
+          ],
+          "correctEnglish": [
+            "fast",
+            "food"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一副刀叉",
+          "scrambledEnglish": [
+            "knife",
+            "and",
+            "fork",
+            "a"
+          ],
+          "correctEnglish": [
+            "a",
+            "knife",
+            "and",
+            "fork"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "They're Chinese fast ___.",
+      "answer": "food"
+    },
+    {
+      "type": "translate",
+      "cn": "我正在用我的手。",
+      "en": [
+        "I'm using my hands."
+      ]
+    }
+  ],
+  "funFacts": [
+    "筷子在中国已经有超过3000年的历史了。",
+    "汉堡包的名字来源于德国的汉堡市（Hamburg）。"
+  ]
+}

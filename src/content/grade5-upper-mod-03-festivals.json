@@ -7,37 +7,37 @@
       "id": "word-halloween",
       "en": "Halloween",
       "zh": "万圣节前夕",
-      "audio": "/audio/tts/word-halloween.mp3"
+      "audio": "/audio/tts/halloween.mp3"
     },
     {
       "id": "word-festival",
       "en": "festival",
       "zh": "节日",
-      "audio": "/audio/tts/word-festival.mp3"
+      "audio": "/audio/tts/festival.mp3"
     },
     {
       "id": "word-scary",
       "en": "scary",
       "zh": "吓人的",
-      "audio": "/audio/tts/word-scary.mp3"
+      "audio": "/audio/tts/scary.mp3"
     },
     {
       "id": "word-mask",
       "en": "mask",
       "zh": "面具",
-      "audio": "/audio/tts/word-mask.mp3"
+      "audio": "/audio/tts/mask.mp3"
     },
     {
       "id": "word-easter",
       "en": "Easter",
       "zh": "复活节",
-      "audio": "/audio/tts/word-easter.mp3"
+      "audio": "/audio/tts/easter.mp3"
     },
     {
       "id": "word-chocolate",
       "en": "chocolate",
       "zh": "巧克力",
-      "audio": "/audio/tts/word-chocolate.mp3"
+      "audio": "/audio/tts/chocolate.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "trick or treat",
       "zh": "不给糖就捣蛋",
       "icon": "/images/icons/candy.svg",
-      "audio": "/audio/tts/phrase-trick-or-treat.mp3"
+      "audio": "/audio/tts/trick-or-treat.mp3"
     },
     {
       "id": "phrase-wear-scary-clothes",
       "en": "wear scary clothes",
       "zh": "穿吓人的衣服",
       "icon": "/images/icons/ghost.svg",
-      "audio": "/audio/tts/phrase-wear-scary-clothes.mp3"
+      "audio": "/audio/tts/wear-scary-clothes.mp3"
     }
   ],
   "patterns": [
@@ -152,7 +152,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-trick-or-treat.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "or",
             "treat",
@@ -167,7 +167,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/phrase-wear-scary-clothes.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "scary",
             "clothes",
@@ -182,7 +182,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/today-is-halloween.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "is",
             "Halloween.",

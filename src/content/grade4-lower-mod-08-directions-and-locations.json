@@ -7,61 +7,61 @@
       "id": "word-where",
       "en": "where",
       "zh": "在哪里",
-      "audio": "/audio/tts/word-where.mp3"
+      "audio": "/audio/tts/where.mp3"
     },
     {
       "id": "word-here",
       "en": "here",
       "zh": "这里",
-      "audio": "/audio/tts/word-here.mp3"
+      "audio": "/audio/tts/here.mp3"
     },
     {
       "id": "word-there",
       "en": "there",
       "zh": "那里",
-      "audio": "/audio/tts/word-there.mp3"
+      "audio": "/audio/tts/there.mp3"
     },
     {
       "id": "word-left",
       "en": "left",
       "zh": "左边",
-      "audio": "/audio/tts/word-left.mp3"
+      "audio": "/audio/tts/left.mp3"
     },
     {
       "id": "word-right",
       "en": "right",
       "zh": "右边",
-      "audio": "/audio/tts/word-right.mp3"
+      "audio": "/audio/tts/right.mp3"
     },
     {
       "id": "word-straight",
       "en": "straight",
       "zh": "直走",
-      "audio": "/audio/tts/word-straight.mp3"
+      "audio": "/audio/tts/straight.mp3"
     },
     {
       "id": "word-turn",
       "en": "turn",
       "zh": "转",
-      "audio": "/audio/tts/word-turn.mp3"
+      "audio": "/audio/tts/turn.mp3"
     },
     {
       "id": "word-near",
       "en": "near",
       "zh": "附近",
-      "audio": "/audio/tts/word-near.mp3"
+      "audio": "/audio/tts/near.mp3"
     },
     {
       "id": "word-far",
       "en": "far",
       "zh": "远",
-      "audio": "/audio/tts/word-far.mp3"
+      "audio": "/audio/tts/far.mp3"
     },
     {
       "id": "word-lost",
       "en": "lost",
       "zh": "迷路",
-      "audio": "/audio/tts/word-lost.mp3"
+      "audio": "/audio/tts/lost.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "Where is",
       "zh": "在哪里",
       "icon": "/images/icons/location-question.svg",
-      "audio": "/audio/tts/phrase-where-is.mp3"
+      "audio": "/audio/tts/where-is.mp3"
     },
     {
       "id": "phrase-turn-left",
       "en": "turn left",
       "zh": "向左转",
       "icon": "/images/icons/turn-left.svg",
-      "audio": "/audio/tts/phrase-turn-left.mp3"
+      "audio": "/audio/tts/turn-left.mp3"
     },
     {
       "id": "phrase-go-straight",
       "en": "go straight",
       "zh": "直走",
       "icon": "/images/icons/straight-arrow.svg",
-      "audio": "/audio/tts/phrase-go-straight.mp3"
+      "audio": "/audio/tts/go-straight.mp3"
     },
     {
       "id": "phrase-over-there",
       "en": "over there",
       "zh": "在那边",
       "icon": "/images/icons/pointing.svg",
-      "audio": "/audio/tts/phrase-over-there.mp3"
+      "audio": "/audio/tts/over-there.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/where-is-the-library.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "is",
             "the",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/its-over-there.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "over",
             "there.",
@@ -242,7 +242,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/go-straight-and-turn-left.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "straight",
             "and",

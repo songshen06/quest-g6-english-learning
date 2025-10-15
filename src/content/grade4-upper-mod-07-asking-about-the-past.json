@@ -7,31 +7,31 @@
       "id": "word-did",
       "en": "did",
       "zh": "（构成疑问句）",
-      "audio": "/audio/tts/word-did.mp3"
+      "audio": "/audio/tts/did.mp3"
     },
     {
       "id": "word-take",
       "en": "take",
       "zh": "拿",
-      "audio": "/audio/tts/word-take.mp3"
+      "audio": "/audio/tts/take.mp3"
     },
     {
       "id": "word-see",
       "en": "see",
       "zh": "看见",
-      "audio": "/audio/tts/word-see.mp3"
+      "audio": "/audio/tts/see.mp3"
     },
     {
       "id": "word-lost",
       "en": "lost",
       "zh": "丢失了",
-      "audio": "/audio/tts/word-lost.mp3"
+      "audio": "/audio/tts/lost.mp3"
     },
     {
       "id": "word-doll",
       "en": "doll",
       "zh": "玩偶",
-      "audio": "/audio/tts/word-doll.mp3"
+      "audio": "/audio/tts/doll.mp3"
     }
   ],
   "phrases": [
@@ -40,14 +40,14 @@
       "en": "What's the matter?",
       "zh": "怎么了？",
       "icon": "/images/icons/question.svg",
-      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+      "audio": "/audio/tts/whats-the-matter.mp3"
     },
     {
       "id": "phrase-look-for",
       "en": "look for",
       "zh": "寻找",
       "icon": "/images/icons/magnifying-glass.svg",
-      "audio": "/audio/tts/phrase-look-for.mp3"
+      "audio": "/audio/tts/look-for.mp3"
     }
   ],
   "patterns": [
@@ -126,7 +126,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-whats-the-matter.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "matter?",
@@ -141,7 +141,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/did-you-take-amys-doll.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "you",
             "take",
@@ -160,7 +160,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/no-i-didnt.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "I",
             "didn't.",

@@ -1,0 +1,319 @@
+{
+  "moduleId": "grade3-lower-mod-05",
+  "title": "Plans for the Week",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "tomorrow",
+      "en": "tomorrow",
+      "zh": "明天",
+      "audio": "/audio/tts/tomorrow.mp3"
+    },
+    {
+      "id": "monday",
+      "en": "Monday",
+      "zh": "星期一",
+      "audio": "/audio/tts/monday.mp3"
+    },
+    {
+      "id": "tuesday",
+      "en": "Tuesday",
+      "zh": "星期二",
+      "audio": "/audio/tts/tuesday.mp3"
+    },
+    {
+      "id": "wednesday",
+      "en": "Wednesday",
+      "zh": "星期三",
+      "audio": "/audio/tts/wednesday.mp3"
+    },
+    {
+      "id": "thursday",
+      "en": "Thursday",
+      "zh": "星期四",
+      "audio": "/audio/tts/thursday.mp3"
+    },
+    {
+      "id": "friday",
+      "en": "Friday",
+      "zh": "星期五",
+      "audio": "/audio/tts/friday.mp3"
+    },
+    {
+      "id": "saturday",
+      "en": "Saturday",
+      "zh": "星期六",
+      "audio": "/audio/tts/saturday.mp3"
+    },
+    {
+      "id": "sunday",
+      "en": "Sunday",
+      "zh": "星期日",
+      "audio": "/audio/tts/sunday.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "good-idea",
+      "en": "good idea",
+      "zh": "好主意",
+      "icon": "/images/icons/idea.svg",
+      "audio": "/audio/tts/good-idea.mp3"
+    },
+    {
+      "id": "why-not",
+      "en": "Why not?",
+      "zh": "为什么不呢？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/why-not.mp3"
+    },
+    {
+      "id": "on-monday",
+      "en": "on Monday",
+      "zh": "在星期一",
+      "icon": "/images/icons/calendar.svg",
+      "audio": "/audio/tts/on-monday.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "On Saturday, we're going to have a picnic.",
+      "a": "星期六，我们准备去野餐。"
+    },
+    {
+      "q": "Will you take your ball tomorrow?",
+      "a": "你明天会带上你的球吗？"
+    },
+    {
+      "q": "No, I won't.",
+      "a": "不，我不会。"
+    },
+    {
+      "q": "On Monday, I'll go swimming.",
+      "a": "星期一，我会去游泳。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "tomorrow",
+              "zh": "明天"
+            },
+            {
+              "en": "Monday",
+              "zh": "星期一"
+            },
+            {
+              "en": "Tuesday",
+              "zh": "星期二"
+            },
+            {
+              "en": "Wednesday",
+              "zh": "星期三"
+            },
+            {
+              "en": "Thursday",
+              "zh": "星期四"
+            },
+            {
+              "en": "Friday",
+              "zh": "星期五"
+            }
+          ],
+          "options": [
+            {
+              "en": "Saturday",
+              "zh": "星期六"
+            },
+            {
+              "en": "Sunday",
+              "zh": "星期日"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "Saturday,",
+            "we're",
+            "going",
+            "to",
+            "have",
+            "a",
+            "picnic.",
+            "On"
+          ],
+          "correct": [
+            "On",
+            "Saturday,",
+            "we're",
+            "going",
+            "to",
+            "have",
+            "a",
+            "picnic."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "you",
+            "take",
+            "your",
+            "ball",
+            "tomorrow?",
+            "Will"
+          ],
+          "correct": [
+            "Will",
+            "you",
+            "take",
+            "your",
+            "ball",
+            "tomorrow?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "I",
+            "won't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "I",
+            "won't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "good idea",
+          "scrambledChinese": [
+            "主",
+            "意",
+            "好"
+          ],
+          "correctChinese": [
+            "好",
+            "主",
+            "意"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Why not?",
+          "scrambledChinese": [
+            "什",
+            "么",
+            "不",
+            "呢",
+            "？",
+            "为"
+          ],
+          "correctChinese": [
+            "为",
+            "什",
+            "么",
+            "不",
+            "呢",
+            "？"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "好主意",
+          "scrambledEnglish": [
+            "idea",
+            "good"
+          ],
+          "correctEnglish": [
+            "good",
+            "idea"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "为什么不呢？",
+          "scrambledEnglish": [
+            "not?",
+            "Why"
+          ],
+          "correctEnglish": [
+            "Why",
+            "not?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ is Friday. We're going on Saturday!",
+      "answer": "Tomorrow"
+    },
+    {
+      "type": "translate",
+      "cn": "你周日会做什么？",
+      "en": [
+        "What will you do on Sunday?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "许多西方语言中一周的命名都源于古代神话，例如Thursday（星期四）来自北欧神话中的雷神索尔（Thor）。",
+    "在一些中东国家，一周是从星期日开始的。"
+  ]
+}

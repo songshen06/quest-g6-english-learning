@@ -16,6 +16,7 @@ import { UserSwitcher } from '@/components/auth/UserSwitcher'
 import { GuestBanner } from '@/components/auth/GuestBanner'
 import { ProtectedRoute } from '@/components/auth/ProtectedRoute'
 import { PWAInstallPrompt } from '@/components/PWAInstallPrompt'
+import { OfflineIndicator } from '@/components/OfflineIndicator'
 import './globals.css'
 
 function App() {
@@ -78,6 +79,9 @@ function App() {
         <div className="fixed top-4 right-4 z-40">
           {isLoggedIn && <UserSwitcher />}
         </div>
+
+        {/* 离线状态指示器 */}
+        <OfflineIndicator />
 
         <Routes>
           <Route path="/" element={<HomePage />} />

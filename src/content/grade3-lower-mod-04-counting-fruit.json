@@ -1,0 +1,313 @@
+{
+  "moduleId": "grade3-lower-mod-04",
+  "title": "Counting Fruit",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "pick",
+      "en": "pick",
+      "zh": "采摘",
+      "audio": "/audio/tts/pick.mp3"
+    },
+    {
+      "id": "fruit",
+      "en": "fruit",
+      "zh": "水果",
+      "audio": "/audio/tts/fruit.mp3"
+    },
+    {
+      "id": "thirteen",
+      "en": "thirteen",
+      "zh": "十三",
+      "audio": "/audio/tts/thirteen.mp3"
+    },
+    {
+      "id": "fourteen",
+      "en": "fourteen",
+      "zh": "十四",
+      "audio": "/audio/tts/fourteen.mp3"
+    },
+    {
+      "id": "fifteen",
+      "en": "fifteen",
+      "zh": "十五",
+      "audio": "/audio/tts/fifteen.mp3"
+    },
+    {
+      "id": "sixteen",
+      "en": "sixteen",
+      "zh": "十六",
+      "audio": "/audio/tts/sixteen.mp3"
+    },
+    {
+      "id": "seventeen",
+      "en": "seventeen",
+      "zh": "十七",
+      "audio": "/audio/tts/seventeen.mp3"
+    },
+    {
+      "id": "eighteen",
+      "en": "eighteen",
+      "zh": "十八",
+      "audio": "/audio/tts/eighteen.mp3"
+    },
+    {
+      "id": "nineteen",
+      "en": "nineteen",
+      "zh": "十九",
+      "audio": "/audio/tts/nineteen.mp3"
+    },
+    {
+      "id": "twenty",
+      "en": "twenty",
+      "zh": "二十",
+      "audio": "/audio/tts/twenty.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "fruit-farm",
+      "en": "fruit farm",
+      "zh": "水果农场",
+      "icon": "/images/icons/farm.svg",
+      "audio": "/audio/tts/fruit-farm.mp3"
+    },
+    {
+      "id": "pick-apples",
+      "en": "pick apples",
+      "zh": "摘苹果",
+      "icon": "/images/icons/apple.svg",
+      "audio": "/audio/tts/pick-apples.mp3"
+    },
+    {
+      "id": "how-many",
+      "en": "How many",
+      "zh": "多少",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/how-many.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "We'll pick fruit.",
+      "a": "我们将要摘水果。"
+    },
+    {
+      "q": "Will we pick pears?",
+      "a": "我们会摘梨吗？"
+    },
+    {
+      "q": "Yes, we will.",
+      "a": "是的，我们会。"
+    },
+    {
+      "q": "How many pens?",
+      "a": "有多少支笔？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "pick",
+              "zh": "采摘"
+            },
+            {
+              "en": "fruit",
+              "zh": "水果"
+            },
+            {
+              "en": "thirteen",
+              "zh": "十三"
+            },
+            {
+              "en": "fourteen",
+              "zh": "十四"
+            },
+            {
+              "en": "fifteen",
+              "zh": "十五"
+            },
+            {
+              "en": "sixteen",
+              "zh": "十六"
+            }
+          ],
+          "options": [
+            {
+              "en": "seventeen",
+              "zh": "十七"
+            },
+            {
+              "en": "eighteen",
+              "zh": "十八"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "pick",
+            "fruit.",
+            "We'll"
+          ],
+          "correct": [
+            "We'll",
+            "pick",
+            "fruit."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "we",
+            "pick",
+            "pears?",
+            "Will"
+          ],
+          "correct": [
+            "Will",
+            "we",
+            "pick",
+            "pears?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "we",
+            "will.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "we",
+            "will."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "fruit farm",
+          "scrambledChinese": [
+            "果",
+            "农",
+            "场",
+            "水"
+          ],
+          "correctChinese": [
+            "水",
+            "果",
+            "农",
+            "场"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "pick apples",
+          "scrambledChinese": [
+            "苹",
+            "果",
+            "摘"
+          ],
+          "correctChinese": [
+            "摘",
+            "苹",
+            "果"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "水果农场",
+          "scrambledEnglish": [
+            "farm",
+            "fruit"
+          ],
+          "correctEnglish": [
+            "fruit",
+            "farm"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "摘苹果",
+          "scrambledEnglish": [
+            "apples",
+            "pick"
+          ],
+          "correctEnglish": [
+            "pick",
+            "apples"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "We're going to a ___ farm.",
+      "answer": "fruit"
+    },
+    {
+      "type": "translate",
+      "cn": "你有多少本书？",
+      "en": [
+        "How many books do you have?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "在英语中，所有以-teen结尾的数字（13-19）都表示十几岁的青少年时期（teenage years）。",
+    "苹果属于玫瑰家族，和梨、桃子是亲戚。"
+  ]
+}

@@ -7,61 +7,61 @@
       "id": "word-holiday",
       "en": "holiday",
       "zh": "假期",
-      "audio": "/audio/tts/word-holiday.mp3"
+      "audio": "/audio/tts/holiday.mp3"
     },
     {
       "id": "word-vacation",
       "en": "vacation",
       "zh": "度假",
-      "audio": "/audio/tts/word-vacation.mp3"
+      "audio": "/audio/tts/vacation.mp3"
     },
     {
       "id": "word-trip",
       "en": "trip",
       "zh": "旅行",
-      "audio": "/audio/tts/word-trip.mp3"
+      "audio": "/audio/tts/trip.mp3"
     },
     {
       "id": "word-travel",
       "en": "travel",
       "zh": "旅行",
-      "audio": "/audio/tts/word-travel.mp3"
+      "audio": "/audio/tts/travel.mp3"
     },
     {
       "id": "word-beach",
       "en": "beach",
       "zh": "海滩",
-      "audio": "/audio/tts/word-beach.mp3"
+      "audio": "/audio/tts/beach.mp3"
     },
     {
       "id": "word-mountain",
       "en": "mountain",
       "zh": "山",
-      "audio": "/audio/tts/word-mountain.mp3"
+      "audio": "/audio/tts/mountain.mp3"
     },
     {
       "id": "word-camping",
       "en": "camping",
       "zh": "露营",
-      "audio": "/audio/tts/word-camping.mp3"
+      "audio": "/audio/tts/camping.mp3"
     },
     {
       "id": "word-swimming",
       "en": "swimming",
       "zh": "游泳",
-      "audio": "/audio/tts/word-swimming.mp3"
+      "audio": "/audio/tts/swimming.mp3"
     },
     {
       "id": "word-sightseeing",
       "en": "sightseeing",
       "zh": "观光",
-      "audio": "/audio/tts/word-sightseeing.mp3"
+      "audio": "/audio/tts/sightseeing.mp3"
     },
     {
       "id": "word-adventure",
       "en": "adventure",
       "zh": "冒险",
-      "audio": "/audio/tts/word-adventure.mp3"
+      "audio": "/audio/tts/adventure.mp3"
     }
   ],
   "phrases": [
@@ -70,28 +70,28 @@
       "en": "summer holiday",
       "zh": "暑假",
       "icon": "/images/icons/summer-sun.svg",
-      "audio": "/audio/tts/phrase-summer-holiday.mp3"
+      "audio": "/audio/tts/summer-holiday.mp3"
     },
     {
       "id": "phrase-go-trip",
       "en": "go on a trip",
       "zh": "去旅行",
       "icon": "/images/icons/suitcase.svg",
-      "audio": "/audio/tts/phrase-go-trip.mp3"
+      "audio": "/audio/tts/go-on-a-trip.mp3"
     },
     {
       "id": "phrase-have-fun",
       "en": "have fun",
       "zh": "玩得开心",
       "icon": "/images/icons/party.svg",
-      "audio": "/audio/tts/phrase-have-fun.mp3"
+      "audio": "/audio/tts/have-fun.mp3"
     },
     {
       "id": "phrase-take-photos",
       "en": "take photos",
       "zh": "拍照",
       "icon": "/images/icons/camera.svg",
-      "audio": "/audio/tts/phrase-take-photos.mp3"
+      "audio": "/audio/tts/take-photos.mp3"
     }
   ],
   "patterns": [
@@ -210,7 +210,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-go-trip.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "on",
             "a",
@@ -227,7 +227,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/where-will-you-go-for-the-holiday.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "will",
             "you",
@@ -250,7 +250,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/i-will-go-to-the-beach.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "will",
             "go",

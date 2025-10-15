@@ -1,0 +1,322 @@
+{
+  "moduleId": "grade2-upper-mod-07",
+  "title": "Transportation",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "how",
+      "en": "how",
+      "zh": "怎样",
+      "audio": "/audio/tts/how.mp3"
+    },
+    {
+      "id": "go",
+      "en": "go",
+      "zh": "去",
+      "audio": "/audio/tts/audio-7330.mp3"
+    },
+    {
+      "id": "bus",
+      "en": "bus",
+      "zh": "公共汽车",
+      "audio": "/audio/tts/bus.mp3"
+    },
+    {
+      "id": "by",
+      "en": "by",
+      "zh": "乘坐",
+      "audio": "/audio/tts/audio-2820.mp3"
+    },
+    {
+      "id": "walk",
+      "en": "walk",
+      "zh": "步行",
+      "audio": "/audio/tts/walk.mp3"
+    },
+    {
+      "id": "bike",
+      "en": "bike",
+      "zh": "自行车",
+      "audio": "/audio/tts/bike.mp3"
+    },
+    {
+      "id": "train",
+      "en": "train",
+      "zh": "火车",
+      "audio": "/audio/tts/train.mp3"
+    },
+    {
+      "id": "plane",
+      "en": "plane",
+      "zh": "飞机",
+      "audio": "/audio/tts/plane.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "go-to-school",
+      "en": "go to school",
+      "zh": "去上学",
+      "icon": "/images/icons/school.svg",
+      "audio": "/audio/tts/go-to-school.mp3"
+    },
+    {
+      "id": "by-bus",
+      "en": "by bus",
+      "zh": "乘公共汽车",
+      "icon": "/images/icons/bus.svg",
+      "audio": "/audio/tts/by-bus.mp3"
+    },
+    {
+      "id": "how-about",
+      "en": "How about...?",
+      "zh": "...怎么样？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/how-about.mp3"
+    },
+    {
+      "id": "go-to-work",
+      "en": "go to work",
+      "zh": "去上班",
+      "icon": "/images/icons/work.svg",
+      "audio": "/audio/tts/go-to-work.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "How do you go to school?",
+      "a": "你怎么去上学？"
+    },
+    {
+      "q": "I go to school by bus.",
+      "a": "我乘公共汽车去上学。"
+    },
+    {
+      "q": "I walk to school.",
+      "a": "我走路去上学。"
+    },
+    {
+      "q": "He goes to work by bike.",
+      "a": "他骑自行车去上班。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "how",
+              "zh": "怎样"
+            },
+            {
+              "en": "go",
+              "zh": "去"
+            },
+            {
+              "en": "bus",
+              "zh": "公共汽车"
+            },
+            {
+              "en": "by",
+              "zh": "乘坐"
+            },
+            {
+              "en": "walk",
+              "zh": "步行"
+            },
+            {
+              "en": "bike",
+              "zh": "自行车"
+            }
+          ],
+          "options": [
+            {
+              "en": "train",
+              "zh": "火车"
+            },
+            {
+              "en": "plane",
+              "zh": "飞机"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "school",
+            "go"
+          ],
+          "correct": [
+            "go",
+            "to",
+            "school"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "do",
+            "you",
+            "go",
+            "to",
+            "school?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "do",
+            "you",
+            "go",
+            "to",
+            "school?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "go",
+            "to",
+            "school",
+            "by",
+            "bus.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "go",
+            "to",
+            "school",
+            "by",
+            "bus."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "go to school",
+          "scrambledChinese": [
+            "上",
+            "学",
+            "去"
+          ],
+          "correctChinese": [
+            "去",
+            "上",
+            "学"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "by bus",
+          "scrambledChinese": [
+            "公",
+            "共",
+            "汽",
+            "车",
+            "乘"
+          ],
+          "correctChinese": [
+            "乘",
+            "公",
+            "共",
+            "汽",
+            "车"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "去上学",
+          "scrambledEnglish": [
+            "to",
+            "school",
+            "go"
+          ],
+          "correctEnglish": [
+            "go",
+            "to",
+            "school"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "乘公共汽车",
+          "scrambledEnglish": [
+            "bus",
+            "by"
+          ],
+          "correctEnglish": [
+            "by",
+            "bus"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I go to Hainan on ___.",
+      "answer": "holiday"
+    },
+    {
+      "type": "translate",
+      "cn": "我们乘飞机去中国。",
+      "en": [
+        "We go to China by plane."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一辆公共汽车是1827年在法国南特投入使用的。",
+    "莱特兄弟在1903年发明了第一架飞机。"
+  ]
+}

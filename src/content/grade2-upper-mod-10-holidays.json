@@ -1,0 +1,303 @@
+{
+  "moduleId": "grade2-upper-mod-10",
+  "title": "Holidays",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "happy-new-year",
+      "en": "Happy New Year",
+      "zh": "新年快乐",
+      "audio": "/audio/tts/happy-new-year.mp3"
+    },
+    {
+      "id": "present",
+      "en": "present",
+      "zh": "礼物",
+      "audio": "/audio/tts/present.mp3"
+    },
+    {
+      "id": "dumplings",
+      "en": "dumplings",
+      "zh": "饺子",
+      "audio": "/audio/tts/dumplings.mp3"
+    },
+    {
+      "id": "eat",
+      "en": "eat",
+      "zh": "吃",
+      "audio": "/audio/tts/eat.mp3"
+    },
+    {
+      "id": "firecrackers",
+      "en": "firecrackers",
+      "zh": "鞭炮",
+      "audio": "/audio/tts/firecrackers.mp3"
+    },
+    {
+      "id": "christmas",
+      "en": "Christmas",
+      "zh": "圣诞节",
+      "audio": "/audio/tts/christmas.mp3"
+    },
+    {
+      "id": "dinner",
+      "en": "dinner",
+      "zh": "正餐",
+      "audio": "/audio/tts/dinner.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "chinese-new-year",
+      "en": "Chinese New Year",
+      "zh": "中国新年",
+      "icon": "/images/icons/lantern.svg",
+      "audio": "/audio/tts/chinese-new-year.mp3"
+    },
+    {
+      "id": "come-in",
+      "en": "Come in!",
+      "zh": "请进！",
+      "icon": "/images/icons/door.svg",
+      "audio": "/audio/tts/come-in.mp3"
+    },
+    {
+      "id": "christmas-tree",
+      "en": "Christmas tree",
+      "zh": "圣诞树",
+      "icon": "/images/icons/tree.svg",
+      "audio": "/audio/tts/christmas-tree.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Happy New Year!",
+      "a": "新年快乐！"
+    },
+    {
+      "q": "We eat dumplings at Chinese New Year.",
+      "a": "我们在中国新年吃饺子。"
+    },
+    {
+      "q": "We have firecrackers at Chinese New Year!",
+      "a": "我们在中国新年放鞭炮！"
+    },
+    {
+      "q": "In the UK, we have Christmas.",
+      "a": "在英国，我们过圣诞节。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "Happy New Year",
+              "zh": "新年快乐"
+            },
+            {
+              "en": "present",
+              "zh": "礼物"
+            },
+            {
+              "en": "dumplings",
+              "zh": "饺子"
+            },
+            {
+              "en": "eat",
+              "zh": "吃"
+            },
+            {
+              "en": "firecrackers",
+              "zh": "鞭炮"
+            },
+            {
+              "en": "Christmas",
+              "zh": "圣诞节"
+            }
+          ],
+          "options": [
+            {
+              "en": "新年快乐",
+              "zh": "Happy New Year"
+            },
+            {
+              "en": "礼物",
+              "zh": "present"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "New",
+            "Year",
+            "Chinese"
+          ],
+          "correct": [
+            "Chinese",
+            "New",
+            "Year"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "New",
+            "Year!",
+            "Happy"
+          ],
+          "correct": [
+            "Happy",
+            "New",
+            "Year!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "eat",
+            "dumplings",
+            "at",
+            "Chinese",
+            "New",
+            "Year.",
+            "We"
+          ],
+          "correct": [
+            "We",
+            "eat",
+            "dumplings",
+            "at",
+            "Chinese",
+            "New",
+            "Year."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Chinese New Year",
+          "scrambledChinese": [
+            "国",
+            "新",
+            "年",
+            "中"
+          ],
+          "correctChinese": [
+            "中",
+            "国",
+            "新",
+            "年"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Come in!",
+          "scrambledChinese": [
+            "进",
+            "！",
+            "请"
+          ],
+          "correctChinese": [
+            "请",
+            "进",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "中国新年",
+          "scrambledEnglish": [
+            "New",
+            "Year",
+            "Chinese"
+          ],
+          "correctEnglish": [
+            "Chinese",
+            "New",
+            "Year"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "请进！",
+          "scrambledEnglish": [
+            "in!",
+            "Come"
+          ],
+          "correctEnglish": [
+            "Come",
+            "in!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "We have Christmas ___.",
+      "answer": "trees"
+    },
+    {
+      "type": "translate",
+      "cn": "这是给你的礼物。",
+      "en": [
+        "Here's a present for you."
+      ]
+    }
+  ],
+  "funFacts": [
+    "在中国，过年吃饺子象征着财富和好运。",
+    "用常青树来装饰庆祝圣诞节的传统起源于德国。"
+  ]
+}

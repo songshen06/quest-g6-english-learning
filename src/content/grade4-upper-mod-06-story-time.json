@@ -7,37 +7,37 @@
       "id": "word-ago",
       "en": "ago",
       "zh": "以前",
-      "audio": "/audio/tts/word-ago.mp3"
+      "audio": "/audio/tts/ago.mp3"
     },
     {
       "id": "word-magic",
       "en": "magic",
       "zh": "有魔力的",
-      "audio": "/audio/tts/word-magic.mp3"
+      "audio": "/audio/tts/magic.mp3"
     },
     {
       "id": "word-paintbrush",
       "en": "paintbrush",
       "zh": "画笔",
-      "audio": "/audio/tts/word-paintbrush.mp3"
+      "audio": "/audio/tts/paintbrush.mp3"
     },
     {
       "id": "word-became",
       "en": "became",
       "zh": "变成了",
-      "audio": "/audio/tts/word-became.mp3"
+      "audio": "/audio/tts/became.mp3"
     },
     {
       "id": "word-real",
       "en": "real",
       "zh": "真实的",
-      "audio": "/audio/tts/word-real.mp3"
+      "audio": "/audio/tts/real.mp3"
     },
     {
       "id": "word-took",
       "en": "took",
       "zh": "拿走了",
-      "audio": "/audio/tts/word-took.mp3"
+      "audio": "/audio/tts/took.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "long, long ago",
       "zh": "很久很久以前",
       "icon": "/images/icons/scroll.svg",
-      "audio": "/audio/tts/phrase-long-long-ago.mp3"
+      "audio": "/audio/tts/long-long-ago.mp3"
     },
     {
       "id": "phrase-come-back",
       "en": "come back",
       "zh": "回来",
       "icon": "/images/icons/return.svg",
-      "audio": "/audio/tts/phrase-come-back.mp3"
+      "audio": "/audio/tts/come-back.mp3"
     }
   ],
   "patterns": [
@@ -156,7 +156,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-long-long-ago.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "long",
             "ago",
@@ -171,7 +171,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/it-didnt-become-gold.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "didn't",
             "become",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/he-didnt-come-back.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "didn't",
             "come",

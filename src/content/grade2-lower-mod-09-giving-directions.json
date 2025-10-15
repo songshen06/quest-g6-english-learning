@@ -1,0 +1,301 @@
+{
+  "moduleId": "grade2-lower-mod-09",
+  "title": "Giving Directions",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "left",
+      "en": "left",
+      "zh": "左边",
+      "audio": "/audio/tts/left.mp3"
+    },
+    {
+      "id": "right",
+      "en": "right",
+      "zh": "右边",
+      "audio": "/audio/tts/right.mp3"
+    },
+    {
+      "id": "road",
+      "en": "road",
+      "zh": "路",
+      "audio": "/audio/tts/road.mp3"
+    },
+    {
+      "id": "excuse-me",
+      "en": "excuse me",
+      "zh": "打扰一下",
+      "audio": "/audio/tts/excuse-me.mp3"
+    },
+    {
+      "id": "straight",
+      "en": "straight",
+      "zh": "直地",
+      "audio": "/audio/tts/straight.mp3"
+    },
+    {
+      "id": "lost",
+      "en": "lost",
+      "zh": "迷路的",
+      "audio": "/audio/tts/lost.mp3"
+    },
+    {
+      "id": "live",
+      "en": "live",
+      "zh": "居住",
+      "audio": "/audio/tts/live.mp3"
+    },
+    {
+      "id": "factory",
+      "en": "factory",
+      "zh": "工厂",
+      "audio": "/audio/tts/factory.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "turn-left",
+      "en": "Turn left!",
+      "zh": "向左转！",
+      "icon": "/images/icons/turn-left.svg",
+      "audio": "/audio/tts/turn-left.mp3"
+    },
+    {
+      "id": "turn-right",
+      "en": "Turn right!",
+      "zh": "向右转！",
+      "icon": "/images/icons/turn-right.svg",
+      "audio": "/audio/tts/turn-right.mp3"
+    },
+    {
+      "id": "go-straight-on",
+      "en": "Go straight on.",
+      "zh": "直走。",
+      "icon": "/images/icons/go-straight.svg",
+      "audio": "/audio/tts/go-straight-on.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Where's Xihu Road?",
+      "a": "西湖路在哪里？"
+    },
+    {
+      "q": "Go straight on!",
+      "a": "直走！"
+    },
+    {
+      "q": "Then turn left!",
+      "a": "然后向左转！"
+    },
+    {
+      "q": "Where do you live?",
+      "a": "你住在哪里？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "left",
+              "zh": "左边"
+            },
+            {
+              "en": "right",
+              "zh": "右边"
+            },
+            {
+              "en": "road",
+              "zh": "路"
+            },
+            {
+              "en": "excuse me",
+              "zh": "打扰一下"
+            },
+            {
+              "en": "straight",
+              "zh": "直地"
+            },
+            {
+              "en": "lost",
+              "zh": "迷路的"
+            }
+          ],
+          "options": [
+            {
+              "en": "live",
+              "zh": "居住"
+            },
+            {
+              "en": "factory",
+              "zh": "工厂"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "straight",
+            "on.",
+            "Go"
+          ],
+          "correct": [
+            "Go",
+            "straight",
+            "on."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "Xihu",
+            "Road?",
+            "Where's"
+          ],
+          "correct": [
+            "Where's",
+            "Xihu",
+            "Road?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "straight",
+            "on!",
+            "Go"
+          ],
+          "correct": [
+            "Go",
+            "straight",
+            "on!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Turn left!",
+          "scrambledChinese": [
+            "左",
+            "转",
+            "！",
+            "向"
+          ],
+          "correctChinese": [
+            "向",
+            "左",
+            "转",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Turn right!",
+          "scrambledChinese": [
+            "右",
+            "转",
+            "！",
+            "向"
+          ],
+          "correctChinese": [
+            "向",
+            "右",
+            "转",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "向左转！",
+          "scrambledEnglish": [
+            "left!",
+            "Turn"
+          ],
+          "correctEnglish": [
+            "Turn",
+            "left!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "向右转！",
+          "scrambledEnglish": [
+            "right!",
+            "Turn"
+          ],
+          "correctEnglish": [
+            "Turn",
+            "right!"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Go out of the school. Turn ___.",
+      "answer": "left"
+    },
+    {
+      "type": "translate",
+      "cn": "不客气。",
+      "en": [
+        "You're welcome."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上大约10%的人是左撇子。",
+    "“迷宫”（Labyrinth）一词来自古希腊，原指一个传说中结构复杂的建筑。"
+  ]
+}

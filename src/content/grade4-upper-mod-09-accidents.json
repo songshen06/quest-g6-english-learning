@@ -7,37 +7,37 @@
       "id": "word-happened",
       "en": "happened",
       "zh": "发生了",
-      "audio": "/audio/tts/word-happened.mp3"
+      "audio": "/audio/tts/happened.mp3"
     },
     {
       "id": "word-bumped",
       "en": "bumped",
       "zh": "撞了",
-      "audio": "/audio/tts/word-bumped.mp3"
+      "audio": "/audio/tts/bumped.mp3"
     },
     {
       "id": "word-head",
       "en": "head",
       "zh": "头",
-      "audio": "/audio/tts/word-head.mp3"
+      "audio": "/audio/tts/head.mp3"
     },
     {
       "id": "word-hurt",
       "en": "hurt",
       "zh": "受伤",
-      "audio": "/audio/tts/word-hurt.mp3"
+      "audio": "/audio/tts/hurt.mp3"
     },
     {
       "id": "word-knee",
       "en": "knee",
       "zh": "膝盖",
-      "audio": "/audio/tts/word-knee.mp3"
+      "audio": "/audio/tts/knee.mp3"
     },
     {
       "id": "word-cut",
       "en": "cut",
       "zh": "割伤",
-      "audio": "/audio/tts/word-cut.mp3"
+      "audio": "/audio/tts/cut.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "fell off",
       "zh": "从...摔下来",
       "icon": "/images/icons/fall-down.svg",
-      "audio": "/audio/tts/phrase-fell-off.mp3"
+      "audio": "/audio/tts/fell-off.mp3"
     },
     {
       "id": "phrase-bike-ride",
       "en": "bike ride",
       "zh": "骑自行车",
       "icon": "/images/icons/bike.svg",
-      "audio": "/audio/tts/phrase-bike-ride.mp3"
+      "audio": "/audio/tts/bike-ride.mp3"
     }
   ],
   "patterns": [
@@ -156,7 +156,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/what-happened-to-your-head.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "happened",
             "to",
@@ -175,7 +175,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/i-bumped-my-head.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "bumped",
             "my",
@@ -192,7 +192,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/did-you-fall-off-your-bike.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "you",
             "fall",

@@ -2,6 +2,702 @@ import { Book } from '@/types/books'
 
 export const booksData: Book[] = [
   {
+    id: 'grade1-upper',
+    title: '一年级上册',
+    subtitle: 'English Adventure Grade 1A',
+    grade: 1,
+    semester: 'upper',
+    cover: '/images/books/grade1-upper.jpg',
+    description: '一年级上册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'beginner',
+    tags: ['小学低年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g1u-ch1',
+        bookId: 'grade1-upper',
+        number: 1,
+        title: 'Unit 1: greetings',
+        description: 'greetings',
+        moduleIds: ['grade1-upper-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch2',
+        bookId: 'grade1-upper',
+        number: 2,
+        title: 'Unit 2: names and identity',
+        description: 'names and identity',
+        moduleIds: ['grade1-upper-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch3',
+        bookId: 'grade1-upper',
+        number: 3,
+        title: 'Unit 3: classroom commands',
+        description: 'classroom commands',
+        moduleIds: ['grade1-upper-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch4',
+        bookId: 'grade1-upper',
+        number: 4,
+        title: 'Unit 4: colors',
+        description: 'colors',
+        moduleIds: ['grade1-upper-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch5',
+        bookId: 'grade1-upper',
+        number: 5,
+        title: 'Unit 5: this and that',
+        description: 'this and that',
+        moduleIds: ['grade1-upper-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch6',
+        bookId: 'grade1-upper',
+        number: 6,
+        title: 'Unit 6: classroom objects',
+        description: 'classroom objects',
+        moduleIds: ['grade1-upper-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch7',
+        bookId: 'grade1-upper',
+        number: 7,
+        title: 'Unit 7: asking yes no questions',
+        description: 'asking yes no questions',
+        moduleIds: ['grade1-upper-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch8',
+        bookId: 'grade1-upper',
+        number: 8,
+        title: 'Unit 8: counting',
+        description: 'counting',
+        moduleIds: ['grade1-upper-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch9',
+        bookId: 'grade1-upper',
+        number: 9,
+        title: 'Unit 9: age and birthday',
+        description: 'age and birthday',
+        moduleIds: ['grade1-upper-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1u-ch10',
+        bookId: 'grade1-upper',
+        number: 10,
+        title: 'Unit 10: family',
+        description: 'family',
+        moduleIds: ['grade1-upper-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade1-lower',
+    title: '一年级下册',
+    subtitle: 'English Adventure Grade 1B',
+    grade: 1,
+    semester: 'lower',
+    cover: '/images/books/grade1-lower.jpg',
+    description: '一年级下册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'beginner',
+    tags: ['小学低年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g1l-ch1',
+        bookId: 'grade1-lower',
+        number: 1,
+        title: 'Unit 1: professions',
+        description: 'professions',
+        moduleIds: ['grade1-lower-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch2',
+        bookId: 'grade1-lower',
+        number: 2,
+        title: 'Unit 2: prepositions of place',
+        description: 'prepositions of place',
+        moduleIds: ['grade1-lower-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch3',
+        bookId: 'grade1-lower',
+        number: 3,
+        title: 'Unit 3: counting and locating',
+        description: 'counting and locating',
+        moduleIds: ['grade1-lower-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch4',
+        bookId: 'grade1-lower',
+        number: 4,
+        title: 'Unit 4: body parts',
+        description: 'body parts',
+        moduleIds: ['grade1-lower-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch5',
+        bookId: 'grade1-lower',
+        number: 5,
+        title: 'Unit 5: farm animals',
+        description: 'farm animals',
+        moduleIds: ['grade1-lower-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch6',
+        bookId: 'grade1-lower',
+        number: 6,
+        title: 'Unit 6: describing animals',
+        description: 'describing animals',
+        moduleIds: ['grade1-lower-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch7',
+        bookId: 'grade1-lower',
+        number: 7,
+        title: 'Unit 7: there is there are',
+        description: 'there is there are',
+        moduleIds: ['grade1-lower-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch8',
+        bookId: 'grade1-lower',
+        number: 8,
+        title: 'Unit 8: clothes',
+        description: 'clothes',
+        moduleIds: ['grade1-lower-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch9',
+        bookId: 'grade1-lower',
+        number: 9,
+        title: 'Unit 9: sports',
+        description: 'sports',
+        moduleIds: ['grade1-lower-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g1l-ch10',
+        bookId: 'grade1-lower',
+        number: 10,
+        title: 'Unit 10: lets play',
+        description: 'lets play',
+        moduleIds: ['grade1-lower-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade2-upper',
+    title: '二年级上册',
+    subtitle: 'English Adventure Grade 2A',
+    grade: 2,
+    semester: 'upper',
+    cover: '/images/books/grade2-upper.jpg',
+    description: '二年级上册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'beginner',
+    tags: ['小学低年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g2u-ch1',
+        bookId: 'grade2-upper',
+        number: 1,
+        title: 'Unit 1: likes and dislikes',
+        description: 'likes and dislikes',
+        moduleIds: ['grade2-upper-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch2',
+        bookId: 'grade2-upper',
+        number: 2,
+        title: 'Unit 2: food preferences',
+        description: 'food preferences',
+        moduleIds: ['grade2-upper-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch3',
+        bookId: 'grade2-upper',
+        number: 3,
+        title: 'Unit 3: do you like',
+        description: 'do you like',
+        moduleIds: ['grade2-upper-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch4',
+        bookId: 'grade2-upper',
+        number: 4,
+        title: 'Unit 4: he likes clothes',
+        description: 'he likes clothes',
+        moduleIds: ['grade2-upper-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch5',
+        bookId: 'grade2-upper',
+        number: 5,
+        title: 'Unit 5: daily routines',
+        description: 'daily routines',
+        moduleIds: ['grade2-upper-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch6',
+        bookId: 'grade2-upper',
+        number: 6,
+        title: 'Unit 6: weekend activities',
+        description: 'weekend activities',
+        moduleIds: ['grade2-upper-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch7',
+        bookId: 'grade2-upper',
+        number: 7,
+        title: 'Unit 7: transportation',
+        description: 'transportation',
+        moduleIds: ['grade2-upper-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch8',
+        bookId: 'grade2-upper',
+        number: 8,
+        title: 'Unit 8: weekend routines',
+        description: 'weekend routines',
+        moduleIds: ['grade2-upper-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch9',
+        bookId: 'grade2-upper',
+        number: 9,
+        title: 'Unit 9: seasons',
+        description: 'seasons',
+        moduleIds: ['grade2-upper-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2u-ch10',
+        bookId: 'grade2-upper',
+        number: 10,
+        title: 'Unit 10: holidays',
+        description: 'holidays',
+        moduleIds: ['grade2-upper-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade2-lower',
+    title: '二年级下册',
+    subtitle: 'English Adventure Grade 2B',
+    grade: 2,
+    semester: 'lower',
+    cover: '/images/books/grade2-lower.jpg',
+    description: '二年级下册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'beginner',
+    tags: ['小学低年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g2l-ch1',
+        bookId: 'grade2-lower',
+        number: 1,
+        title: 'Unit 1: weather and activities',
+        description: 'weather and activities',
+        moduleIds: ['grade2-lower-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch2',
+        bookId: 'grade2-lower',
+        number: 2,
+        title: 'Unit 2: describing actions',
+        description: 'describing actions',
+        moduleIds: ['grade2-lower-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch3',
+        bookId: 'grade2-lower',
+        number: 3,
+        title: 'Unit 3: negations and questions',
+        description: 'negations and questions',
+        moduleIds: ['grade2-lower-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch4',
+        bookId: 'grade2-lower',
+        number: 4,
+        title: 'Unit 4: whats he doing',
+        description: 'whats he doing',
+        moduleIds: ['grade2-lower-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch5',
+        bookId: 'grade2-lower',
+        number: 5,
+        title: 'Unit 5: playing games',
+        description: 'playing games',
+        moduleIds: ['grade2-lower-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch6',
+        bookId: 'grade2-lower',
+        number: 6,
+        title: 'Unit 6: usually and now',
+        description: 'usually and now',
+        moduleIds: ['grade2-lower-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch7',
+        bookId: 'grade2-lower',
+        number: 7,
+        title: 'Unit 7: childrens day',
+        description: 'childrens day',
+        moduleIds: ['grade2-lower-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch8',
+        bookId: 'grade2-lower',
+        number: 8,
+        title: 'Unit 8: movement and direction',
+        description: 'movement and direction',
+        moduleIds: ['grade2-lower-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch9',
+        bookId: 'grade2-lower',
+        number: 9,
+        title: 'Unit 9: giving directions',
+        description: 'giving directions',
+        moduleIds: ['grade2-lower-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g2l-ch10',
+        bookId: 'grade2-lower',
+        number: 10,
+        title: 'Unit 10: locations',
+        description: 'locations',
+        moduleIds: ['grade2-lower-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade3-upper',
+    title: '三年级上册',
+    subtitle: 'English Adventure Grade 3A',
+    grade: 3,
+    semester: 'upper',
+    cover: '/images/books/grade3-upper.jpg',
+    description: '三年级上册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'elementary',
+    tags: ['小学中年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g3u-ch1',
+        bookId: 'grade3-upper',
+        number: 1,
+        title: 'Unit 1: food and cutlery',
+        description: 'food and cutlery',
+        moduleIds: ['grade3-upper-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch2',
+        bookId: 'grade3-upper',
+        number: 2,
+        title: 'Unit 2: ongoing actions',
+        description: 'ongoing actions',
+        moduleIds: ['grade3-upper-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch3',
+        bookId: 'grade3-upper',
+        number: 3,
+        title: 'Unit 3: these and those',
+        description: 'these and those',
+        moduleIds: ['grade3-upper-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch4',
+        bookId: 'grade3-upper',
+        number: 4,
+        title: 'Unit 4: abilities',
+        description: 'abilities',
+        moduleIds: ['grade3-upper-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch5',
+        bookId: 'grade3-upper',
+        number: 5,
+        title: 'Unit 5: asking for permission',
+        description: 'asking for permission',
+        moduleIds: ['grade3-upper-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch6',
+        bookId: 'grade3-upper',
+        number: 6,
+        title: 'Unit 6: possessions',
+        description: 'possessions',
+        moduleIds: ['grade3-upper-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch7',
+        bookId: 'grade3-upper',
+        number: 7,
+        title: 'Unit 7: health problems',
+        description: 'health problems',
+        moduleIds: ['grade3-upper-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch8',
+        bookId: 'grade3-upper',
+        number: 8,
+        title: 'Unit 8: possessive s',
+        description: 'possessive s',
+        moduleIds: ['grade3-upper-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch9',
+        bookId: 'grade3-upper',
+        number: 9,
+        title: 'Unit 9: future activities',
+        description: 'future activities',
+        moduleIds: ['grade3-upper-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3u-ch10',
+        bookId: 'grade3-upper',
+        number: 10,
+        title: 'Unit 10: travel plans',
+        description: 'travel plans',
+        moduleIds: ['grade3-upper-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 'grade3-lower',
+    title: '三年级下册',
+    subtitle: 'English Adventure Grade 3B',
+    grade: 3,
+    semester: 'lower',
+    cover: '/images/books/grade3-lower.jpg',
+    description: '三年级下册英语学习内容，包含10个主题单元',
+    totalModules: 10,
+    difficulty: 'elementary',
+    tags: ['小学中年级', '基础语法', '日常对话'],
+    isActive: true,
+    publishedAt: '2024-01-01',
+    chapters: [
+      {
+        id: 'g3l-ch1',
+        bookId: 'grade3-lower',
+        number: 1,
+        title: 'Unit 1: describing people',
+        description: 'describing people',
+        moduleIds: ['grade3-lower-mod-01'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch2',
+        bookId: 'grade3-lower',
+        number: 2,
+        title: 'Unit 2: describing places',
+        description: 'describing places',
+        moduleIds: ['grade3-lower-mod-02'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch3',
+        bookId: 'grade3-lower',
+        number: 3,
+        title: 'Unit 3: weekend plans',
+        description: 'weekend plans',
+        moduleIds: ['grade3-lower-mod-03'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch4',
+        bookId: 'grade3-lower',
+        number: 4,
+        title: 'Unit 4: counting fruit',
+        description: 'counting fruit',
+        moduleIds: ['grade3-lower-mod-04'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch5',
+        bookId: 'grade3-lower',
+        number: 5,
+        title: 'Unit 5: plans for the week',
+        description: 'plans for the week',
+        moduleIds: ['grade3-lower-mod-05'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch6',
+        bookId: 'grade3-lower',
+        number: 6,
+        title: 'Unit 6: body parts',
+        description: 'body parts',
+        moduleIds: ['grade3-lower-mod-06'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch7',
+        bookId: 'grade3-lower',
+        number: 7,
+        title: 'Unit 7: asking how many',
+        description: 'asking how many',
+        moduleIds: ['grade3-lower-mod-07'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch8',
+        bookId: 'grade3-lower',
+        number: 8,
+        title: 'Unit 8: school reports',
+        description: 'school reports',
+        moduleIds: ['grade3-lower-mod-08'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch9',
+        bookId: 'grade3-lower',
+        number: 9,
+        title: 'Unit 9: then and now',
+        description: 'then and now',
+        moduleIds: ['grade3-lower-mod-09'],
+        estimatedMinutes: 25,
+        isLocked: false
+      },
+      {
+        id: 'g3l-ch10',
+        bookId: 'grade3-lower',
+        number: 10,
+        title: 'Unit 10: asking about the past',
+        description: 'asking about the past',
+        moduleIds: ['grade3-lower-mod-10'],
+        estimatedMinutes: 25,
+        isLocked: false
+      }
+    ]
+  },
+  {
     id: 'grade4-upper',
     title: '四年级上册',
     subtitle: 'English Adventure Grade 4A',

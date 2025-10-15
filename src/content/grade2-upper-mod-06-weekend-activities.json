@@ -1,0 +1,299 @@
+{
+  "moduleId": "grade2-upper-mod-06",
+  "title": "Weekend Activities",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "on-sundays",
+      "en": "on Sundays",
+      "zh": "在星期天",
+      "audio": "/audio/tts/on-sundays.mp3"
+    },
+    {
+      "id": "play-football",
+      "en": "play football",
+      "zh": "踢足球",
+      "audio": "/audio/tts/play-football.mp3"
+    },
+    {
+      "id": "do",
+      "en": "do",
+      "zh": "做",
+      "audio": "/audio/tts/audio-638.mp3"
+    },
+    {
+      "id": "park",
+      "en": "park",
+      "zh": "公园",
+      "audio": "/audio/tts/park.mp3"
+    },
+    {
+      "id": "together",
+      "en": "together",
+      "zh": "一起",
+      "audio": "/audio/tts/together.mp3"
+    },
+    {
+      "id": "live",
+      "en": "live",
+      "zh": "居住",
+      "audio": "/audio/tts/live.mp3"
+    },
+    {
+      "id": "city",
+      "en": "city",
+      "zh": "城市",
+      "audio": "/audio/tts/city.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "at-the-park",
+      "en": "at the park",
+      "zh": "在公园",
+      "icon": "/images/icons/park.svg",
+      "audio": "/audio/tts/at-the-park.mp3"
+    },
+    {
+      "id": "play-together",
+      "en": "play together",
+      "zh": "一起玩",
+      "icon": "/images/icons/friends.svg",
+      "audio": "/audio/tts/play-together.mp3"
+    },
+    {
+      "id": "go-to-school",
+      "en": "go to school",
+      "zh": "去上学",
+      "icon": "/images/icons/school.svg",
+      "audio": "/audio/tts/go-to-school.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What do you do on Sundays?",
+      "a": "你在星期天做什么？"
+    },
+    {
+      "q": "I play football.",
+      "a": "我踢足球。"
+    },
+    {
+      "q": "Where do you play football?",
+      "a": "你在哪里踢足球？"
+    },
+    {
+      "q": "Where do you live?",
+      "a": "你住在哪里？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "on Sundays",
+              "zh": "在星期天"
+            },
+            {
+              "en": "play football",
+              "zh": "踢足球"
+            },
+            {
+              "en": "do",
+              "zh": "做"
+            },
+            {
+              "en": "park",
+              "zh": "公园"
+            },
+            {
+              "en": "together",
+              "zh": "一起"
+            },
+            {
+              "en": "live",
+              "zh": "居住"
+            }
+          ],
+          "options": [
+            {
+              "en": "在星期天",
+              "zh": "on Sundays"
+            },
+            {
+              "en": "踢足球",
+              "zh": "play football"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "the",
+            "park",
+            "at"
+          ],
+          "correct": [
+            "at",
+            "the",
+            "park"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "school",
+            "go"
+          ],
+          "correct": [
+            "go",
+            "to",
+            "school"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "do",
+            "you",
+            "do",
+            "on",
+            "Sundays?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "do",
+            "you",
+            "do",
+            "on",
+            "Sundays?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "at the park",
+          "scrambledChinese": [
+            "公",
+            "园",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "公",
+            "园"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "play together",
+          "scrambledChinese": [
+            "起",
+            "玩",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "起",
+            "玩"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在公园",
+          "scrambledEnglish": [
+            "the",
+            "park",
+            "at"
+          ],
+          "correctEnglish": [
+            "at",
+            "the",
+            "park"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一起玩",
+          "scrambledEnglish": [
+            "together",
+            "play"
+          ],
+          "correctEnglish": [
+            "play",
+            "together"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I play football at the ___.",
+      "answer": "park"
+    },
+    {
+      "type": "translate",
+      "cn": "你住在哪里？",
+      "en": [
+        "Where do you live?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一个城市公园是1857年在纽约市开放的中央公园。",
+    "星期日（Sunday）在古英语中意为太阳之日。"
+  ]
+}

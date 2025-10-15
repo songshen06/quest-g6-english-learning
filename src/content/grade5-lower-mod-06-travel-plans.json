@@ -43,7 +43,7 @@
       "id": "so",
       "en": "so",
       "zh": "如此，这样",
-      "audio": "/audio/tts/so.mp3"
+      "audio": "/audio/tts/audio-6254.mp3"
     },
     {
       "id": "get",
@@ -93,7 +93,7 @@
       "id": "helicopter-ride",
       "en": "take a helicopter ride",
       "zh": "坐直升飞机",
-      "audio": "/audio/tts/helicopter-ride.mp3"
+      "audio": "/audio/tts/take-a-helicopter-ride.mp3"
     }
   ],
   "patterns": [
@@ -196,7 +196,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/helicopter-ride.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "a",
             "helicopter",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/what-will-we-see-there.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "will",
             "we",
@@ -232,7 +232,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/well-see-lots-of-very-big-stones.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "see",
             "lots",

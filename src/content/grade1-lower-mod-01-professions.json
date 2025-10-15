@@ -1,0 +1,325 @@
+{
+  "moduleId": "grade1-lower-mod-01",
+  "title": "Professions",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "doctor",
+      "en": "doctor",
+      "zh": "医生",
+      "audio": "/audio/tts/doctor.mp3"
+    },
+    {
+      "id": "nurse",
+      "en": "nurse",
+      "zh": "护士",
+      "audio": "/audio/tts/nurse.mp3"
+    },
+    {
+      "id": "teacher",
+      "en": "teacher",
+      "zh": "老师",
+      "audio": "/audio/tts/teacher.mp3"
+    },
+    {
+      "id": "policeman",
+      "en": "policeman",
+      "zh": "警察",
+      "audio": "/audio/tts/policeman.mp3"
+    },
+    {
+      "id": "driver",
+      "en": "driver",
+      "zh": "司机",
+      "audio": "/audio/tts/driver.mp3"
+    },
+    {
+      "id": "pupil",
+      "en": "pupil",
+      "zh": "学生",
+      "audio": "/audio/tts/pupil.mp3"
+    },
+    {
+      "id": "boy",
+      "en": "boy",
+      "zh": "男孩",
+      "audio": "/audio/tts/boy.mp3"
+    },
+    {
+      "id": "girl",
+      "en": "girl",
+      "zh": "女孩",
+      "audio": "/audio/tts/girl.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "this-is-my-mother",
+      "en": "This is my mother.",
+      "zh": "这是我的妈妈。",
+      "icon": "/images/icons/family.svg",
+      "audio": "/audio/tts/this-is-my-mother.mp3"
+    },
+    {
+      "id": "this-is-my-father",
+      "en": "This is my father.",
+      "zh": "这是我的爸爸。",
+      "icon": "/images/icons/family.svg",
+      "audio": "/audio/tts/this-is-my-father.mp3"
+    },
+    {
+      "id": "thats-me",
+      "en": "That's me!",
+      "zh": "那是我！",
+      "icon": "/images/icons/person.svg",
+      "audio": "/audio/tts/thats-me.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "He's a doctor.",
+      "a": "他是一名医生。"
+    },
+    {
+      "q": "She's a nurse.",
+      "a": "她是一名护士。"
+    },
+    {
+      "q": "This is my father.",
+      "a": "这是我的爸爸。"
+    },
+    {
+      "q": "And is this your sister Amy?",
+      "a": "这是你的妹妹艾米吗？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "doctor",
+              "zh": "医生"
+            },
+            {
+              "en": "nurse",
+              "zh": "护士"
+            },
+            {
+              "en": "teacher",
+              "zh": "老师"
+            },
+            {
+              "en": "policeman",
+              "zh": "警察"
+            },
+            {
+              "en": "driver",
+              "zh": "司机"
+            },
+            {
+              "en": "pupil",
+              "zh": "学生"
+            }
+          ],
+          "options": [
+            {
+              "en": "boy",
+              "zh": "男孩"
+            },
+            {
+              "en": "girl",
+              "zh": "女孩"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "my",
+            "mother.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "my",
+            "mother."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "my",
+            "father.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "my",
+            "father."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "doctor.",
+            "He's"
+          ],
+          "correct": [
+            "He's",
+            "a",
+            "doctor."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This is my mother.",
+          "scrambledChinese": [
+            "是",
+            "我",
+            "的",
+            "妈",
+            "妈",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "我",
+            "的",
+            "妈",
+            "妈",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This is my father.",
+          "scrambledChinese": [
+            "是",
+            "我",
+            "的",
+            "爸",
+            "爸",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "我",
+            "的",
+            "爸",
+            "爸",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是我的妈妈。",
+          "scrambledEnglish": [
+            "is",
+            "my",
+            "mother.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "my",
+            "mother."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是我的爸爸。",
+          "scrambledEnglish": [
+            "is",
+            "my",
+            "father.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "my",
+            "father."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "She's a ___.",
+      "answer": "teacher"
+    },
+    {
+      "type": "translate",
+      "cn": "他是一名司机。",
+      "en": [
+        "He's a driver."
+      ]
+    }
+  ],
+  "funFacts": [
+    "花木兰是中国古代传说中的一位女英雄。",
+    "\"警察\"这个词来源于希腊语\"polis\"，意思是\"城市\"。"
+  ]
+}

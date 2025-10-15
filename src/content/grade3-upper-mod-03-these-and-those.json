@@ -1,0 +1,304 @@
+{
+  "moduleId": "grade3-upper-mod-03",
+  "title": "These and Those",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "these",
+      "en": "these",
+      "zh": "这些",
+      "audio": "/audio/tts/these.mp3"
+    },
+    {
+      "id": "those",
+      "en": "those",
+      "zh": "那些",
+      "audio": "/audio/tts/those.mp3"
+    },
+    {
+      "id": "ducks",
+      "en": "ducks",
+      "zh": "鸭子",
+      "audio": "/audio/tts/ducks.mp3"
+    },
+    {
+      "id": "naughty",
+      "en": "naughty",
+      "zh": "淘气的",
+      "audio": "/audio/tts/naughty.mp3"
+    },
+    {
+      "id": "boat",
+      "en": "boat",
+      "zh": "小船",
+      "audio": "/audio/tts/boat.mp3"
+    },
+    {
+      "id": "row",
+      "en": "row",
+      "zh": "划船",
+      "audio": "/audio/tts/row.mp3"
+    },
+    {
+      "id": "lake",
+      "en": "lake",
+      "zh": "湖",
+      "audio": "/audio/tts/lake.mp3"
+    },
+    {
+      "id": "rain",
+      "en": "rain",
+      "zh": "雨",
+      "audio": "/audio/tts/rain.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "dragon-boats",
+      "en": "dragon boats",
+      "zh": "龙舟",
+      "icon": "/images/icons/boat.svg",
+      "audio": "/audio/tts/dragon-boats.mp3"
+    },
+    {
+      "id": "over-there",
+      "en": "over there",
+      "zh": "在那边",
+      "icon": "/images/icons/pointer.svg",
+      "audio": "/audio/tts/over-there.mp3"
+    },
+    {
+      "id": "playing-in-the-rain",
+      "en": "playing in the rain",
+      "zh": "在雨中玩耍",
+      "icon": "/images/icons/rain.svg",
+      "audio": "/audio/tts/playing-in-the-rain.mp3"
+    },
+    {
+      "id": "hide-and-seek",
+      "en": "hide-and-seek",
+      "zh": "捉迷藏",
+      "icon": "/images/icons/game.svg",
+      "audio": "/audio/tts/hide-and-seek.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What are those?",
+      "a": "那些是什么？"
+    },
+    {
+      "q": "They're dragon boats.",
+      "a": "它们是龙舟。"
+    },
+    {
+      "q": "These ducks are very naughty!",
+      "a": "这些鸭子非常淘气！"
+    },
+    {
+      "q": "The ducks are playing in the rain.",
+      "a": "鸭子们正在雨中玩耍。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "these",
+              "zh": "这些"
+            },
+            {
+              "en": "those",
+              "zh": "那些"
+            },
+            {
+              "en": "ducks",
+              "zh": "鸭子"
+            },
+            {
+              "en": "naughty",
+              "zh": "淘气的"
+            },
+            {
+              "en": "boat",
+              "zh": "小船"
+            },
+            {
+              "en": "row",
+              "zh": "划船"
+            }
+          ],
+          "options": [
+            {
+              "en": "lake",
+              "zh": "湖"
+            },
+            {
+              "en": "rain",
+              "zh": "雨"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "in",
+            "the",
+            "rain",
+            "playing"
+          ],
+          "correct": [
+            "playing",
+            "in",
+            "the",
+            "rain"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "are",
+            "those?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "are",
+            "those?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "dragon",
+            "boats.",
+            "They're"
+          ],
+          "correct": [
+            "They're",
+            "dragon",
+            "boats."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "dragon boats",
+          "scrambledChinese": [
+            "舟",
+            "龙"
+          ],
+          "correctChinese": [
+            "龙",
+            "舟"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "over there",
+          "scrambledChinese": [
+            "那",
+            "边",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "那",
+            "边"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "龙舟",
+          "scrambledEnglish": [
+            "boats",
+            "dragon"
+          ],
+          "correctEnglish": [
+            "dragon",
+            "boats"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在那边",
+          "scrambledEnglish": [
+            "there",
+            "over"
+          ],
+          "correctEnglish": [
+            "over",
+            "there"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Look at those ___ over there!",
+      "answer": "ducks"
+    },
+    {
+      "type": "translate",
+      "cn": "他们在玩捉迷藏。",
+      "en": [
+        "They're playing hide-and-seek."
+      ]
+    }
+  ],
+  "funFacts": [
+    "龙舟比赛是一项古老的中国传统活动，已有2000多年的历史。",
+    "鸭子脚上没有神经和血管，所以它们在冰冷的地面上行走也不会觉得冷。"
+  ]
+}

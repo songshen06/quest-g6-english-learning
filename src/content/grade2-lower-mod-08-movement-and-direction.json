@@ -1,0 +1,313 @@
+{
+  "moduleId": "grade2-lower-mod-08",
+  "title": "Movement and Direction",
+  "durationMinutes": 12,
+  "words": [
+    {
+      "id": "up",
+      "en": "up",
+      "zh": "向上",
+      "audio": "/audio/tts/audio-5766.mp3"
+    },
+    {
+      "id": "down",
+      "en": "down",
+      "zh": "向下",
+      "audio": "/audio/tts/down.mp3"
+    },
+    {
+      "id": "past",
+      "en": "past",
+      "zh": "经过",
+      "audio": "/audio/tts/past.mp3"
+    },
+    {
+      "id": "station",
+      "en": "station",
+      "zh": "车站",
+      "audio": "/audio/tts/station.mp3"
+    },
+    {
+      "id": "hill",
+      "en": "hill",
+      "zh": "小山",
+      "audio": "/audio/tts/hill.mp3"
+    },
+    {
+      "id": "hospital",
+      "en": "hospital",
+      "zh": "医院",
+      "audio": "/audio/tts/hospital.mp3"
+    },
+    {
+      "id": "turn-around",
+      "en": "turn around",
+      "zh": "转身",
+      "audio": "/audio/tts/turn-around.mp3"
+    },
+    {
+      "id": "back",
+      "en": "back",
+      "zh": "回来",
+      "audio": "/audio/tts/back.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "going-up-a-hill",
+      "en": "going up a hill",
+      "zh": "上山",
+      "icon": "/images/icons/arrow-up.svg",
+      "audio": "/audio/tts/going-up-a-hill.mp3"
+    },
+    {
+      "id": "going-down-a-hill",
+      "en": "going down a hill",
+      "zh": "下山",
+      "icon": "/images/icons/arrow-down.svg",
+      "audio": "/audio/tts/going-down-a-hill.mp3"
+    },
+    {
+      "id": "come-back",
+      "en": "coming back",
+      "zh": "回来",
+      "icon": "/images/icons/return.svg",
+      "audio": "/audio/tts/coming-back.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "The train is going up a hill.",
+      "a": "火车正在上山。"
+    },
+    {
+      "q": "Now, it's going down a hill.",
+      "a": "现在，它正在下山。"
+    },
+    {
+      "q": "The horse is turning around.",
+      "a": "马正在转身。"
+    },
+    {
+      "q": "The horse is coming back.",
+      "a": "马正在回来。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "up",
+              "zh": "向上"
+            },
+            {
+              "en": "down",
+              "zh": "向下"
+            },
+            {
+              "en": "past",
+              "zh": "经过"
+            },
+            {
+              "en": "station",
+              "zh": "车站"
+            },
+            {
+              "en": "hill",
+              "zh": "小山"
+            },
+            {
+              "en": "hospital",
+              "zh": "医院"
+            }
+          ],
+          "options": [
+            {
+              "en": "turn around",
+              "zh": "转身"
+            },
+            {
+              "en": "back",
+              "zh": "回来"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "up",
+            "a",
+            "hill",
+            "going"
+          ],
+          "correct": [
+            "going",
+            "up",
+            "a",
+            "hill"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "down",
+            "a",
+            "hill",
+            "going"
+          ],
+          "correct": [
+            "going",
+            "down",
+            "a",
+            "hill"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "train",
+            "is",
+            "going",
+            "up",
+            "a",
+            "hill.",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "train",
+            "is",
+            "going",
+            "up",
+            "a",
+            "hill."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "going up a hill",
+          "scrambledChinese": [
+            "山",
+            "上"
+          ],
+          "correctChinese": [
+            "上",
+            "山"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "going down a hill",
+          "scrambledChinese": [
+            "山",
+            "下"
+          ],
+          "correctChinese": [
+            "下",
+            "山"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "上山",
+          "scrambledEnglish": [
+            "up",
+            "a",
+            "hill",
+            "going"
+          ],
+          "correctEnglish": [
+            "going",
+            "up",
+            "a",
+            "hill"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "下山",
+          "scrambledEnglish": [
+            "down",
+            "a",
+            "hill",
+            "going"
+          ],
+          "correctEnglish": [
+            "going",
+            "down",
+            "a",
+            "hill"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "The train is going ___ a hospital.",
+      "answer": "past"
+    },
+    {
+      "type": "translate",
+      "cn": "马正在跳跃。",
+      "en": [
+        "The horse is jumping."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上最陡峭的铁路在瑞士，倾斜度高达48%。",
+    "马睡觉时可以站着也可以躺着。"
+  ]
+}

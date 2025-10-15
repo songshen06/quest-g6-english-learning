@@ -1,0 +1,317 @@
+{
+  "moduleId": "grade1-lower-mod-05",
+  "title": "Farm Animals",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "farm",
+      "en": "farm",
+      "zh": "农场",
+      "audio": "/audio/tts/farm.mp3"
+    },
+    {
+      "id": "cows",
+      "en": "cows",
+      "zh": "奶牛",
+      "audio": "/audio/tts/cows.mp3"
+    },
+    {
+      "id": "pigs",
+      "en": "pigs",
+      "zh": "猪",
+      "audio": "/audio/tts/pigs.mp3"
+    },
+    {
+      "id": "ducks",
+      "en": "ducks",
+      "zh": "鸭子",
+      "audio": "/audio/tts/ducks.mp3"
+    },
+    {
+      "id": "chickens",
+      "en": "chickens",
+      "zh": "鸡",
+      "audio": "/audio/tts/chickens.mp3"
+    },
+    {
+      "id": "fat",
+      "en": "fat",
+      "zh": "胖的",
+      "audio": "/audio/tts/fat.mp3"
+    },
+    {
+      "id": "thin",
+      "en": "thin",
+      "zh": "瘦的",
+      "audio": "/audio/tts/thin.mp3"
+    },
+    {
+      "id": "big",
+      "en": "big",
+      "zh": "大的",
+      "audio": "/audio/tts/big.mp3"
+    },
+    {
+      "id": "little",
+      "en": "little",
+      "zh": "小的",
+      "audio": "/audio/tts/little.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "our-farm",
+      "en": "our farm",
+      "zh": "我们的农场",
+      "icon": "/images/icons/farm.svg",
+      "audio": "/audio/tts/our-farm.mp3"
+    },
+    {
+      "id": "what-are-they",
+      "en": "What are they?",
+      "zh": "它们是什么？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/what-are-they.mp3"
+    },
+    {
+      "id": "so-many-eggs",
+      "en": "So many eggs!",
+      "zh": "好多鸡蛋！",
+      "icon": "/images/icons/egg.svg",
+      "audio": "/audio/tts/so-many-eggs.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This is our farm.",
+      "a": "这是我们的农场。"
+    },
+    {
+      "q": "What are they?",
+      "a": "它们是什么？"
+    },
+    {
+      "q": "They're cows.",
+      "a": "它们是奶牛。"
+    },
+    {
+      "q": "It's thin.",
+      "a": "它很瘦。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "farm",
+              "zh": "农场"
+            },
+            {
+              "en": "cows",
+              "zh": "奶牛"
+            },
+            {
+              "en": "pigs",
+              "zh": "猪"
+            },
+            {
+              "en": "ducks",
+              "zh": "鸭子"
+            },
+            {
+              "en": "chickens",
+              "zh": "鸡"
+            },
+            {
+              "en": "fat",
+              "zh": "胖的"
+            }
+          ],
+          "options": [
+            {
+              "en": "thin",
+              "zh": "瘦的"
+            },
+            {
+              "en": "big",
+              "zh": "大的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "are",
+            "they?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "are",
+            "they?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "many",
+            "eggs!",
+            "So"
+          ],
+          "correct": [
+            "So",
+            "many",
+            "eggs!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "our",
+            "farm.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "our",
+            "farm."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "our farm",
+          "scrambledChinese": [
+            "们",
+            "的",
+            "农",
+            "场",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "的",
+            "农",
+            "场"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What are they?",
+          "scrambledChinese": [
+            "们",
+            "是",
+            "什",
+            "么",
+            "？",
+            "它"
+          ],
+          "correctChinese": [
+            "它",
+            "们",
+            "是",
+            "什",
+            "么",
+            "？"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我们的农场",
+          "scrambledEnglish": [
+            "farm",
+            "our"
+          ],
+          "correctEnglish": [
+            "our",
+            "farm"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "它们是什么？",
+          "scrambledEnglish": [
+            "are",
+            "they?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "are",
+            "they?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "They're fat and they're ___.",
+      "answer": "small"
+    },
+    {
+      "type": "translate",
+      "cn": "它很大。",
+      "en": [
+        "It's big."
+      ]
+    }
+  ],
+  "funFacts": [
+    "奶牛每天可以产出大量的牛奶，足够制作很多奶酪和黄油。",
+    "猪其实是非常聪明的动物，甚至比一些狗还要聪明。"
+  ]
+}

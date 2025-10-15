@@ -1,0 +1,309 @@
+{
+  "moduleId": "grade3-upper-mod-10",
+  "title": "Travel Plans",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "airport",
+      "en": "airport",
+      "zh": "飞机场",
+      "audio": "/audio/tts/airport.mp3"
+    },
+    {
+      "id": "hong-kong",
+      "en": "Hong Kong",
+      "zh": "香港",
+      "audio": "/audio/tts/hong-kong.mp3"
+    },
+    {
+      "id": "hainan",
+      "en": "Hainan",
+      "zh": "海南",
+      "audio": "/audio/tts/hainan.mp3"
+    },
+    {
+      "id": "sea",
+      "en": "sea",
+      "zh": "大海",
+      "audio": "/audio/tts/sea.mp3"
+    },
+    {
+      "id": "visit",
+      "en": "visit",
+      "zh": "拜访",
+      "audio": "/audio/tts/visit.mp3"
+    },
+    {
+      "id": "film",
+      "en": "film",
+      "zh": "电影",
+      "audio": "/audio/tts/film.mp3"
+    },
+    {
+      "id": "dance",
+      "en": "dance",
+      "zh": "跳舞",
+      "audio": "/audio/tts/dance.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "going-to-hong-kong",
+      "en": "going to Hong Kong",
+      "zh": "要去香港",
+      "icon": "/images/icons/plane.svg",
+      "audio": "/audio/tts/going-to-hong-kong.mp3"
+    },
+    {
+      "id": "swim-in-the-sea",
+      "en": "swim in the sea",
+      "zh": "在海里游泳",
+      "icon": "/images/icons/swim.svg",
+      "audio": "/audio/tts/swim-in-the-sea.mp3"
+    },
+    {
+      "id": "see-a-film",
+      "en": "see a film",
+      "zh": "看一场电影",
+      "icon": "/images/icons/film.svg",
+      "audio": "/audio/tts/see-a-film.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Where are you going?",
+      "a": "你要去哪里？"
+    },
+    {
+      "q": "Are you going to Hong Kong?",
+      "a": "你打算去香港吗？"
+    },
+    {
+      "q": "No, I'm not.",
+      "a": "不，我不去。"
+    },
+    {
+      "q": "What are you going to do?",
+      "a": "你打算做什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "airport",
+              "zh": "飞机场"
+            },
+            {
+              "en": "Hong Kong",
+              "zh": "香港"
+            },
+            {
+              "en": "Hainan",
+              "zh": "海南"
+            },
+            {
+              "en": "sea",
+              "zh": "大海"
+            },
+            {
+              "en": "visit",
+              "zh": "拜访"
+            },
+            {
+              "en": "film",
+              "zh": "电影"
+            }
+          ],
+          "options": [
+            {
+              "en": "飞机场",
+              "zh": "airport"
+            },
+            {
+              "en": "香港",
+              "zh": "Hong Kong"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "Hong",
+            "Kong",
+            "going"
+          ],
+          "correct": [
+            "going",
+            "to",
+            "Hong",
+            "Kong"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "in",
+            "the",
+            "sea",
+            "swim"
+          ],
+          "correct": [
+            "swim",
+            "in",
+            "the",
+            "sea"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "a",
+            "film",
+            "see"
+          ],
+          "correct": [
+            "see",
+            "a",
+            "film"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "going to Hong Kong",
+          "scrambledChinese": [
+            "去",
+            "香",
+            "港",
+            "要"
+          ],
+          "correctChinese": [
+            "要",
+            "去",
+            "香",
+            "港"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "swim in the sea",
+          "scrambledChinese": [
+            "海",
+            "里",
+            "游",
+            "泳",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "海",
+            "里",
+            "游",
+            "泳"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "要去香港",
+          "scrambledEnglish": [
+            "to",
+            "Hong",
+            "Kong",
+            "going"
+          ],
+          "correctEnglish": [
+            "going",
+            "to",
+            "Hong",
+            "Kong"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "在海里游泳",
+          "scrambledEnglish": [
+            "in",
+            "the",
+            "sea",
+            "swim"
+          ],
+          "correctEnglish": [
+            "swim",
+            "in",
+            "the",
+            "sea"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My grandma lives ___.",
+      "answer": "there"
+    },
+    {
+      "type": "translate",
+      "cn": "你要去哪里？",
+      "en": [
+        "Where are you going?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上最繁忙的国际机场之一是迪拜国际机场。",
+    "《西游记》中的美猴王（The Monkey King）是中国最著名的神话人物之一。"
+  ]
+}

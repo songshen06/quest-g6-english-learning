@@ -1,0 +1,315 @@
+{
+  "moduleId": "grade2-lower-mod-10",
+  "title": "Locations",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "next-to",
+      "en": "next to",
+      "zh": "在…旁边",
+      "audio": "/audio/tts/next-to.mp3"
+    },
+    {
+      "id": "in-front-of",
+      "en": "in front of",
+      "zh": "在…前面",
+      "audio": "/audio/tts/in-front-of.mp3"
+    },
+    {
+      "id": "supermarket",
+      "en": "supermarket",
+      "zh": "超市",
+      "audio": "/audio/tts/supermarket.mp3"
+    },
+    {
+      "id": "park",
+      "en": "park",
+      "zh": "公园",
+      "audio": "/audio/tts/park.mp3"
+    },
+    {
+      "id": "school",
+      "en": "school",
+      "zh": "学校",
+      "audio": "/audio/tts/school.mp3"
+    },
+    {
+      "id": "helping",
+      "en": "helping",
+      "zh": "帮助",
+      "audio": "/audio/tts/helping.mp3"
+    },
+    {
+      "id": "child",
+      "en": "child",
+      "zh": "孩子",
+      "audio": "/audio/tts/child.mp3"
+    },
+    {
+      "id": "cinema",
+      "en": "cinema",
+      "zh": "电影院",
+      "audio": "/audio/tts/cinema.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "nice-to-meet-you",
+      "en": "Nice to meet you.",
+      "zh": "很高兴见到你。",
+      "icon": "/images/icons/handshake.svg",
+      "audio": "/audio/tts/nice-to-meet-you.mp3"
+    },
+    {
+      "id": "the-wrong-way",
+      "en": "the wrong way",
+      "zh": "错误的路",
+      "icon": "/images/icons/wrong-way.svg",
+      "audio": "/audio/tts/the-wrong-way.mp3"
+    },
+    {
+      "id": "turn-back",
+      "en": "Turn back.",
+      "zh": "往回走。",
+      "icon": "/images/icons/turn-back.svg",
+      "audio": "/audio/tts/turn-back.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Where's your home?",
+      "a": "你家在哪？"
+    },
+    {
+      "q": "It's next to the park.",
+      "a": "它在公园旁边。"
+    },
+    {
+      "q": "It's in front of the school.",
+      "a": "它在学校前面。"
+    },
+    {
+      "q": "He's helping a child.",
+      "a": "他正在帮助一个孩子。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "next to",
+              "zh": "在…旁边"
+            },
+            {
+              "en": "in front of",
+              "zh": "在…前面"
+            },
+            {
+              "en": "supermarket",
+              "zh": "超市"
+            },
+            {
+              "en": "park",
+              "zh": "公园"
+            },
+            {
+              "en": "school",
+              "zh": "学校"
+            },
+            {
+              "en": "helping",
+              "zh": "帮助"
+            }
+          ],
+          "options": [
+            {
+              "en": "child",
+              "zh": "孩子"
+            },
+            {
+              "en": "cinema",
+              "zh": "电影院"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "meet",
+            "you.",
+            "Nice"
+          ],
+          "correct": [
+            "Nice",
+            "to",
+            "meet",
+            "you."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "wrong",
+            "way",
+            "the"
+          ],
+          "correct": [
+            "the",
+            "wrong",
+            "way"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "your",
+            "home?",
+            "Where's"
+          ],
+          "correct": [
+            "Where's",
+            "your",
+            "home?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Nice to meet you.",
+          "scrambledChinese": [
+            "高",
+            "兴",
+            "见",
+            "到",
+            "你",
+            "。",
+            "很"
+          ],
+          "correctChinese": [
+            "很",
+            "高",
+            "兴",
+            "见",
+            "到",
+            "你",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "the wrong way",
+          "scrambledChinese": [
+            "误",
+            "的",
+            "路",
+            "错"
+          ],
+          "correctChinese": [
+            "错",
+            "误",
+            "的",
+            "路"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "很高兴见到你。",
+          "scrambledEnglish": [
+            "to",
+            "meet",
+            "you.",
+            "Nice"
+          ],
+          "correctEnglish": [
+            "Nice",
+            "to",
+            "meet",
+            "you."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "错误的路",
+          "scrambledEnglish": [
+            "wrong",
+            "way",
+            "the"
+          ],
+          "correctEnglish": [
+            "the",
+            "wrong",
+            "way"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Go straight on. It's in ___ of the school.",
+      "answer": "front"
+    },
+    {
+      "type": "translate",
+      "cn": "打扰了，动物园在哪？",
+      "en": [
+        "Excuse me. Where's the zoo?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上第一个交通信号灯于1868年安装在伦敦。",
+    "世界上第一家电影院于1895年在德国柏林开业。"
+  ]
+}

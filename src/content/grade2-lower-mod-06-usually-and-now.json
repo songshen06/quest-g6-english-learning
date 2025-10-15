@@ -1,0 +1,309 @@
+{
+  "moduleId": "grade2-lower-mod-06",
+  "title": "Usually and Now",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "usually",
+      "en": "usually",
+      "zh": "通常",
+      "audio": "/audio/tts/usually.mp3"
+    },
+    {
+      "id": "play",
+      "en": "play",
+      "zh": "玩",
+      "audio": "/audio/tts/play.mp3"
+    },
+    {
+      "id": "ride",
+      "en": "ride",
+      "zh": "骑",
+      "audio": "/audio/tts/ride.mp3"
+    },
+    {
+      "id": "bike",
+      "en": "bike",
+      "zh": "自行车",
+      "audio": "/audio/tts/bike.mp3"
+    },
+    {
+      "id": "ill",
+      "en": "ill",
+      "zh": "生病的",
+      "audio": "/audio/tts/ill.mp3"
+    },
+    {
+      "id": "cook",
+      "en": "cook",
+      "zh": "做饭",
+      "audio": "/audio/tts/cook.mp3"
+    },
+    {
+      "id": "kitchen",
+      "en": "kitchen",
+      "zh": "厨房",
+      "audio": "/audio/tts/kitchen.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "play-basketball",
+      "en": "play basketball",
+      "zh": "打篮球",
+      "icon": "/images/icons/basketball.svg",
+      "audio": "/audio/tts/play-basketball.mp3"
+    },
+    {
+      "id": "ride-my-bike",
+      "en": "ride my bike",
+      "zh": "骑我的自行车",
+      "icon": "/images/icons/bike.svg",
+      "audio": "/audio/tts/ride-my-bike.mp3"
+    },
+    {
+      "id": "go-shopping",
+      "en": "go shopping",
+      "zh": "去购物",
+      "icon": "/images/icons/shopping.svg",
+      "audio": "/audio/tts/go-shopping.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "On Sundays, I usually play basketball.",
+      "a": "在周日，我通常打篮球。"
+    },
+    {
+      "q": "But he's not playing basketball.",
+      "a": "但他（现在）没在打篮球。"
+    },
+    {
+      "q": "My grandma usually cooks.",
+      "a": "我奶奶通常做饭。"
+    },
+    {
+      "q": "But today she isn't doing these things.",
+      "a": "但今天她没在做这些事。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "usually",
+              "zh": "通常"
+            },
+            {
+              "en": "play",
+              "zh": "玩"
+            },
+            {
+              "en": "ride",
+              "zh": "骑"
+            },
+            {
+              "en": "bike",
+              "zh": "自行车"
+            },
+            {
+              "en": "ill",
+              "zh": "生病的"
+            },
+            {
+              "en": "cook",
+              "zh": "做饭"
+            }
+          ],
+          "options": [
+            {
+              "en": "通常",
+              "zh": "usually"
+            },
+            {
+              "en": "玩",
+              "zh": "play"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "my",
+            "bike",
+            "ride"
+          ],
+          "correct": [
+            "ride",
+            "my",
+            "bike"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "Sundays,",
+            "I",
+            "usually",
+            "play",
+            "basketball.",
+            "On"
+          ],
+          "correct": [
+            "On",
+            "Sundays,",
+            "I",
+            "usually",
+            "play",
+            "basketball."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "he's",
+            "not",
+            "playing",
+            "basketball.",
+            "But"
+          ],
+          "correct": [
+            "But",
+            "he's",
+            "not",
+            "playing",
+            "basketball."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "play basketball",
+          "scrambledChinese": [
+            "篮",
+            "球",
+            "打"
+          ],
+          "correctChinese": [
+            "打",
+            "篮",
+            "球"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "ride my bike",
+          "scrambledChinese": [
+            "我",
+            "的",
+            "自",
+            "行",
+            "车",
+            "骑"
+          ],
+          "correctChinese": [
+            "骑",
+            "我",
+            "的",
+            "自",
+            "行",
+            "车"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "打篮球",
+          "scrambledEnglish": [
+            "basketball",
+            "play"
+          ],
+          "correctEnglish": [
+            "play",
+            "basketball"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "骑我的自行车",
+          "scrambledEnglish": [
+            "my",
+            "bike",
+            "ride"
+          ],
+          "correctEnglish": [
+            "ride",
+            "my",
+            "bike"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "He's not doing his ___ now.",
+      "answer": "homework"
+    },
+    {
+      "type": "translate",
+      "cn": "她通常去购物。",
+      "en": [
+        "She usually goes shopping."
+      ]
+    }
+  ],
+  "funFacts": [
+    "篮球是1891年由加拿大人詹姆斯·奈史密斯发明的。",
+    "世界上最长的厨房有489米长。"
+  ]
+}

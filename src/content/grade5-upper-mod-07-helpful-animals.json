@@ -7,37 +7,37 @@
       "id": "word-useful",
       "en": "useful",
       "zh": "有用的",
-      "audio": "/audio/tts/word-useful.mp3"
+      "audio": "/audio/tts/useful.mp3"
     },
     {
       "id": "word-blind",
       "en": "blind",
       "zh": "失明的",
-      "audio": "/audio/tts/word-blind.mp3"
+      "audio": "/audio/tts/blind.mp3"
     },
     {
       "id": "word-special",
       "en": "special",
       "zh": "特别的",
-      "audio": "/audio/tts/word-special.mp3"
+      "audio": "/audio/tts/special.mp3"
     },
     {
       "id": "word-help",
       "en": "help",
       "zh": "帮助",
-      "audio": "/audio/tts/word-help.mp3"
+      "audio": "/audio/tts/help.mp3"
     },
     {
       "id": "word-could",
       "en": "could",
       "zh": "能（can的过去式）",
-      "audio": "/audio/tts/word-could.mp3"
+      "audio": "/audio/tts/could.mp3"
     },
     {
       "id": "word-firefighter",
       "en": "firefighter",
       "zh": "消防员",
-      "audio": "/audio/tts/word-firefighter.mp3"
+      "audio": "/audio/tts/firefighter.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "TV show",
       "zh": "电视节目",
       "icon": "/images/icons/tv.svg",
-      "audio": "/audio/tts/phrase-tv-show.mp3"
+      "audio": "/audio/tts/tv-show.mp3"
     },
     {
       "id": "phrase-help-people",
       "en": "help people",
       "zh": "帮助人们",
       "icon": "/images/icons/heart.svg",
-      "audio": "/audio/tts/phrase-help-people.mp3"
+      "audio": "/audio/tts/help-people.mp3"
     }
   ],
   "patterns": [
@@ -156,7 +156,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/his-dog-can-help-him.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "dog",
             "can",
@@ -175,7 +175,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/can-fifi-help-blind-people.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "Fifi",
             "help",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/it-could-find-the-people.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "could",
             "find",

@@ -1,0 +1,307 @@
+{
+  "moduleId": "grade2-lower-mod-04",
+  "title": "What's He Doing?",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "calling",
+      "en": "calling",
+      "zh": "打电话",
+      "audio": "/audio/tts/calling.mp3"
+    },
+    {
+      "id": "noise",
+      "en": "noise",
+      "zh": "噪音",
+      "audio": "/audio/tts/noise.mp3"
+    },
+    {
+      "id": "drinking",
+      "en": "drinking",
+      "zh": "喝",
+      "audio": "/audio/tts/drinking.mp3"
+    },
+    {
+      "id": "eating",
+      "en": "eating",
+      "zh": "吃",
+      "audio": "/audio/tts/eating.mp3"
+    },
+    {
+      "id": "talking",
+      "en": "talking",
+      "zh": "说话",
+      "audio": "/audio/tts/talking.mp3"
+    },
+    {
+      "id": "playing",
+      "en": "playing",
+      "zh": "玩",
+      "audio": "/audio/tts/playing.mp3"
+    },
+    {
+      "id": "hiding",
+      "en": "hiding",
+      "zh": "躲藏",
+      "audio": "/audio/tts/hiding.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "whats-that-noise",
+      "en": "What's that noise?",
+      "zh": "那是什么声音？",
+      "icon": "/images/icons/sound.svg",
+      "audio": "/audio/tts/whats-that-noise.mp3"
+    },
+    {
+      "id": "talking-to-you",
+      "en": "talking to you",
+      "zh": "和你说话",
+      "icon": "/images/icons/talk.svg",
+      "audio": "/audio/tts/talking-to-you.mp3"
+    },
+    {
+      "id": "hide-and-seek",
+      "en": "hide-and-seek",
+      "zh": "捉迷藏",
+      "icon": "/images/icons/game.svg",
+      "audio": "/audio/tts/hide-and-seek.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "What are you doing?",
+      "a": "你在做什么？"
+    },
+    {
+      "q": "Are you drinking?",
+      "a": "你在喝东西吗？"
+    },
+    {
+      "q": "No, I'm not.",
+      "a": "不，我没有。"
+    },
+    {
+      "q": "What's he doing?",
+      "a": "他在做什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "calling",
+              "zh": "打电话"
+            },
+            {
+              "en": "noise",
+              "zh": "噪音"
+            },
+            {
+              "en": "drinking",
+              "zh": "喝"
+            },
+            {
+              "en": "eating",
+              "zh": "吃"
+            },
+            {
+              "en": "talking",
+              "zh": "说话"
+            },
+            {
+              "en": "playing",
+              "zh": "玩"
+            }
+          ],
+          "options": [
+            {
+              "en": "打电话",
+              "zh": "calling"
+            },
+            {
+              "en": "噪音",
+              "zh": "noise"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "that",
+            "noise?",
+            "What's"
+          ],
+          "correct": [
+            "What's",
+            "that",
+            "noise?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "you",
+            "talking"
+          ],
+          "correct": [
+            "talking",
+            "to",
+            "you"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "are",
+            "you",
+            "doing?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "are",
+            "you",
+            "doing?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What's that noise?",
+          "scrambledChinese": [
+            "是",
+            "什",
+            "么",
+            "声",
+            "音",
+            "？",
+            "那"
+          ],
+          "correctChinese": [
+            "那",
+            "是",
+            "什",
+            "么",
+            "声",
+            "音",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "talking to you",
+          "scrambledChinese": [
+            "你",
+            "说",
+            "话",
+            "和"
+          ],
+          "correctChinese": [
+            "和",
+            "你",
+            "说",
+            "话"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "那是什么声音？",
+          "scrambledEnglish": [
+            "that",
+            "noise?",
+            "What's"
+          ],
+          "correctEnglish": [
+            "What's",
+            "that",
+            "noise?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "和你说话",
+          "scrambledEnglish": [
+            "to",
+            "you",
+            "talking"
+          ],
+          "correctEnglish": [
+            "talking",
+            "to",
+            "you"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "He's playing with his ___.",
+      "answer": "train"
+    },
+    {
+      "type": "translate",
+      "cn": "他在做什么？",
+      "en": [
+        "What's he doing?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "电话的发明者是亚历山大·格拉汉姆·贝尔。",
+    "捉迷藏是全世界儿童都喜欢玩的一种古老游戏。"
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "moduleId": "grade2-lower-mod-03",
+  "title": "Negations and Questions",
+  "durationMinutes": 14,
+  "words": [
+    {
+      "id": "tidying",
+      "en": "tidying",
+      "zh": "整理",
+      "audio": "/audio/tts/tidying.mp3"
+    },
+    {
+      "id": "room",
+      "en": "room",
+      "zh": "房间",
+      "audio": "/audio/tts/room.mp3"
+    },
+    {
+      "id": "homework",
+      "en": "homework",
+      "zh": "家庭作业",
+      "audio": "/audio/tts/homework.mp3"
+    },
+    {
+      "id": "doing",
+      "en": "doing",
+      "zh": "做",
+      "audio": "/audio/tts/doing.mp3"
+    },
+    {
+      "id": "sleeping",
+      "en": "sleeping",
+      "zh": "睡觉",
+      "audio": "/audio/tts/sleeping.mp3"
+    },
+    {
+      "id": "secret",
+      "en": "secret",
+      "zh": "秘密",
+      "audio": "/audio/tts/secret.mp3"
+    },
+    {
+      "id": "drawing",
+      "en": "drawing",
+      "zh": "画画",
+      "audio": "/audio/tts/drawing.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "tidying-his-room",
+      "en": "tidying his room",
+      "zh": "整理他的房间",
+      "icon": "/images/icons/broom.svg",
+      "audio": "/audio/tts/tidying-his-room.mp3"
+    },
+    {
+      "id": "doing-his-homework",
+      "en": "doing his homework",
+      "zh": "做他的家庭作业",
+      "icon": "/images/icons/homework.svg",
+      "audio": "/audio/tts/doing-his-homework.mp3"
+    },
+    {
+      "id": "birthday-card",
+      "en": "birthday card",
+      "zh": "生日贺卡",
+      "icon": "/images/icons/card.svg",
+      "audio": "/audio/tts/birthday-card.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Sam isn't tidying his room.",
+      "a": "萨姆没有在整理他的房间。"
+    },
+    {
+      "q": "Is he doing his homework?",
+      "a": "他正在做作业吗？"
+    },
+    {
+      "q": "No, he isn't.",
+      "a": "不，他没有。"
+    },
+    {
+      "q": "Are you doing your homework?",
+      "a": "你正在做作业吗？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "tidying",
+              "zh": "整理"
+            },
+            {
+              "en": "room",
+              "zh": "房间"
+            },
+            {
+              "en": "homework",
+              "zh": "家庭作业"
+            },
+            {
+              "en": "doing",
+              "zh": "做"
+            },
+            {
+              "en": "sleeping",
+              "zh": "睡觉"
+            },
+            {
+              "en": "secret",
+              "zh": "秘密"
+            }
+          ],
+          "options": [
+            {
+              "en": "整理",
+              "zh": "tidying"
+            },
+            {
+              "en": "房间",
+              "zh": "room"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "his",
+            "room",
+            "tidying"
+          ],
+          "correct": [
+            "tidying",
+            "his",
+            "room"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "his",
+            "homework",
+            "doing"
+          ],
+          "correct": [
+            "doing",
+            "his",
+            "homework"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "isn't",
+            "tidying",
+            "his",
+            "room.",
+            "Sam"
+          ],
+          "correct": [
+            "Sam",
+            "isn't",
+            "tidying",
+            "his",
+            "room."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "tidying his room",
+          "scrambledChinese": [
+            "理",
+            "他",
+            "的",
+            "房",
+            "间",
+            "整"
+          ],
+          "correctChinese": [
+            "整",
+            "理",
+            "他",
+            "的",
+            "房",
+            "间"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "doing his homework",
+          "scrambledChinese": [
+            "他",
+            "的",
+            "家",
+            "庭",
+            "作",
+            "业",
+            "做"
+          ],
+          "correctChinese": [
+            "做",
+            "他",
+            "的",
+            "家",
+            "庭",
+            "作",
+            "业"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "整理他的房间",
+          "scrambledEnglish": [
+            "his",
+            "room",
+            "tidying"
+          ],
+          "correctEnglish": [
+            "tidying",
+            "his",
+            "room"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "做他的家庭作业",
+          "scrambledEnglish": [
+            "his",
+            "homework",
+            "doing"
+          ],
+          "correctEnglish": [
+            "doing",
+            "his",
+            "homework"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Are you ___ your room now?",
+      "answer": "tidying"
+    },
+    {
+      "type": "translate",
+      "cn": "你正在画画吗？",
+      "en": [
+        "Are you drawing a picture?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "有些动物，比如海豚，睡觉时只让一半的大脑休息，另一半保持清醒。",
+    "世界上第一张生日贺卡出现在19世纪的英国。"
+  ]
+}

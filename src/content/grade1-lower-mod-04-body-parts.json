@@ -1,0 +1,319 @@
+{
+  "moduleId": "grade1-lower-mod-04",
+  "title": "Body Parts",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "head",
+      "en": "head",
+      "zh": "头",
+      "audio": "/audio/tts/head.mp3"
+    },
+    {
+      "id": "face",
+      "en": "face",
+      "zh": "脸",
+      "audio": "/audio/tts/face.mp3"
+    },
+    {
+      "id": "nose",
+      "en": "nose",
+      "zh": "鼻子",
+      "audio": "/audio/tts/nose.mp3"
+    },
+    {
+      "id": "ear",
+      "en": "ear",
+      "zh": "耳朵",
+      "audio": "/audio/tts/ear.mp3"
+    },
+    {
+      "id": "mouth",
+      "en": "mouth",
+      "zh": "嘴",
+      "audio": "/audio/tts/mouth.mp3"
+    },
+    {
+      "id": "eye",
+      "en": "eye",
+      "zh": "眼睛",
+      "audio": "/audio/tts/eye.mp3"
+    },
+    {
+      "id": "body",
+      "en": "body",
+      "zh": "身体",
+      "audio": "/audio/tts/body.mp3"
+    },
+    {
+      "id": "leg",
+      "en": "leg",
+      "zh": "腿",
+      "audio": "/audio/tts/leg.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "this-is-my-head",
+      "en": "This is my head.",
+      "zh": "这是我的头。",
+      "icon": "/images/icons/head.svg",
+      "audio": "/audio/tts/this-is-my-head.mp3"
+    },
+    {
+      "id": "touch-your-nose",
+      "en": "Touch your nose.",
+      "zh": "摸你的鼻子。",
+      "icon": "/images/icons/touch.svg",
+      "audio": "/audio/tts/touch-your-nose.mp3"
+    },
+    {
+      "id": "point-to-his-leg",
+      "en": "Point to his leg.",
+      "zh": "指向他的腿。",
+      "icon": "/images/icons/pointer.svg",
+      "audio": "/audio/tts/point-to-his-leg.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "This is my head.",
+      "a": "这是我的头。"
+    },
+    {
+      "q": "This is your ear.",
+      "a": "这是你的耳朵。"
+    },
+    {
+      "q": "These are your eyes.",
+      "a": "这是你的眼睛。"
+    },
+    {
+      "q": "What are these?",
+      "a": "这些是什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "head",
+              "zh": "头"
+            },
+            {
+              "en": "face",
+              "zh": "脸"
+            },
+            {
+              "en": "nose",
+              "zh": "鼻子"
+            },
+            {
+              "en": "ear",
+              "zh": "耳朵"
+            },
+            {
+              "en": "mouth",
+              "zh": "嘴"
+            },
+            {
+              "en": "eye",
+              "zh": "眼睛"
+            }
+          ],
+          "options": [
+            {
+              "en": "body",
+              "zh": "身体"
+            },
+            {
+              "en": "leg",
+              "zh": "腿"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "is",
+            "my",
+            "head.",
+            "This"
+          ],
+          "correct": [
+            "This",
+            "is",
+            "my",
+            "head."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "your",
+            "nose.",
+            "Touch"
+          ],
+          "correct": [
+            "Touch",
+            "your",
+            "nose."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "to",
+            "his",
+            "leg.",
+            "Point"
+          ],
+          "correct": [
+            "Point",
+            "to",
+            "his",
+            "leg."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This is my head.",
+          "scrambledChinese": [
+            "是",
+            "我",
+            "的",
+            "头",
+            "。",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "我",
+            "的",
+            "头",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Touch your nose.",
+          "scrambledChinese": [
+            "你",
+            "的",
+            "鼻",
+            "子",
+            "。",
+            "摸"
+          ],
+          "correctChinese": [
+            "摸",
+            "你",
+            "的",
+            "鼻",
+            "子",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "这是我的头。",
+          "scrambledEnglish": [
+            "is",
+            "my",
+            "head.",
+            "This"
+          ],
+          "correctEnglish": [
+            "This",
+            "is",
+            "my",
+            "head."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "摸你的鼻子。",
+          "scrambledEnglish": [
+            "your",
+            "nose.",
+            "Touch"
+          ],
+          "correctEnglish": [
+            "Touch",
+            "your",
+            "nose."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "Touch ___ hands!",
+      "answer": "hands"
+    },
+    {
+      "type": "translate",
+      "cn": "指向他的头。",
+      "en": [
+        "Point to his head."
+      ]
+    }
+  ],
+  "funFacts": [
+    "人的鼻子和耳朵一生中都在不断生长。",
+    "蜘蛛有很多眼睛，但大多数蜘蛛的视力并不好。"
+  ]
+}

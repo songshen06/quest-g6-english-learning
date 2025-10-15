@@ -7,37 +7,37 @@
       "id": "word-sad",
       "en": "sad",
       "zh": "伤心的",
-      "audio": "/audio/tts/word-sad.mp3"
+      "audio": "/audio/tts/sad.mp3"
     },
     {
       "id": "word-happy",
       "en": "happy",
       "zh": "开心的",
-      "audio": "/audio/tts/word-happy.mp3"
+      "audio": "/audio/tts/happy.mp3"
     },
     {
       "id": "word-angry",
       "en": "angry",
       "zh": "生气的",
-      "audio": "/audio/tts/word-angry.mp3"
+      "audio": "/audio/tts/angry.mp3"
     },
     {
       "id": "word-bored",
       "en": "bored",
       "zh": "无聊的",
-      "audio": "/audio/tts/word-bored.mp3"
+      "audio": "/audio/tts/bored.mp3"
     },
     {
       "id": "word-hungry",
       "en": "hungry",
       "zh": "饿的",
-      "audio": "/audio/tts/word-hungry.mp3"
+      "audio": "/audio/tts/hungry.mp3"
     },
     {
       "id": "word-thirsty",
       "en": "thirsty",
       "zh": "渴的",
-      "audio": "/audio/tts/word-thirsty.mp3"
+      "audio": "/audio/tts/thirsty.mp3"
     }
   ],
   "phrases": [
@@ -46,14 +46,14 @@
       "en": "What's the matter?",
       "zh": "怎么了？",
       "icon": "/images/icons/question-circle.svg",
-      "audio": "/audio/tts/phrase-whats-the-matter.mp3"
+      "audio": "/audio/tts/whats-the-matter.mp3"
     },
     {
       "id": "phrase-very-happy",
       "en": "very happy",
       "zh": "非常开心",
       "icon": "/images/icons/star-struck.svg",
-      "audio": "/audio/tts/phrase-very-happy.mp3"
+      "audio": "/audio/tts/very-happy.mp3"
     }
   ],
   "patterns": [
@@ -156,7 +156,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/phrase-whats-the-matter.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "matter?",
@@ -171,7 +171,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/are-you-sad.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "you",
             "sad?",
@@ -186,7 +186,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/no-im-not.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "I'm",
             "not.",

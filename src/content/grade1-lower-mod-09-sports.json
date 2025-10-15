@@ -1,0 +1,295 @@
+{
+  "moduleId": "grade1-lower-mod-09",
+  "title": "Sports",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "like",
+      "en": "like",
+      "zh": "喜欢",
+      "audio": "/audio/tts/like.mp3"
+    },
+    {
+      "id": "football",
+      "en": "football",
+      "zh": "足球",
+      "audio": "/audio/tts/football.mp3"
+    },
+    {
+      "id": "basketball",
+      "en": "basketball",
+      "zh": "篮球",
+      "audio": "/audio/tts/basketball.mp3"
+    },
+    {
+      "id": "swimming",
+      "en": "swimming",
+      "zh": "游泳",
+      "audio": "/audio/tts/swimming.mp3"
+    },
+    {
+      "id": "ping-pong",
+      "en": "ping-pong",
+      "zh": "乒乓球",
+      "audio": "/audio/tts/ping-pong.mp3"
+    },
+    {
+      "id": "sport",
+      "en": "sport",
+      "zh": "运动",
+      "audio": "/audio/tts/sport.mp3"
+    },
+    {
+      "id": "favourite",
+      "en": "favourite",
+      "zh": "最喜欢的",
+      "audio": "/audio/tts/favourite.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "play-together",
+      "en": "play together",
+      "zh": "一起玩",
+      "icon": "/images/icons/friends.svg",
+      "audio": "/audio/tts/play-together.mp3"
+    },
+    {
+      "id": "what-about-you",
+      "en": "What about you?",
+      "zh": "你呢？",
+      "icon": "/images/icons/question.svg",
+      "audio": "/audio/tts/what-about-you.mp3"
+    },
+    {
+      "id": "i-like-them-all",
+      "en": "I like them all.",
+      "zh": "我全都喜欢。",
+      "icon": "/images/icons/heart.svg",
+      "audio": "/audio/tts/i-like-them-all.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "I like football.",
+      "a": "我喜欢足球。"
+    },
+    {
+      "q": "We like football, too.",
+      "a": "我们也喜欢足球。"
+    },
+    {
+      "q": "They like football.",
+      "a": "他们喜欢足球。"
+    },
+    {
+      "q": "What's your favourite sport?",
+      "a": "你最喜欢的运动是什么？"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "like",
+              "zh": "喜欢"
+            },
+            {
+              "en": "football",
+              "zh": "足球"
+            },
+            {
+              "en": "basketball",
+              "zh": "篮球"
+            },
+            {
+              "en": "swimming",
+              "zh": "游泳"
+            },
+            {
+              "en": "ping-pong",
+              "zh": "乒乓球"
+            },
+            {
+              "en": "sport",
+              "zh": "运动"
+            }
+          ],
+          "options": [
+            {
+              "en": "喜欢",
+              "zh": "like"
+            },
+            {
+              "en": "足球",
+              "zh": "football"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "about",
+            "you?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "about",
+            "you?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "them",
+            "all.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "them",
+            "all."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "like",
+            "football.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "like",
+            "football."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "play together",
+          "scrambledChinese": [
+            "起",
+            "玩",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "起",
+            "玩"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What about you?",
+          "scrambledChinese": [
+            "呢",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "呢",
+            "？"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一起玩",
+          "scrambledEnglish": [
+            "together",
+            "play"
+          ],
+          "correctEnglish": [
+            "play",
+            "together"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你呢？",
+          "scrambledEnglish": [
+            "about",
+            "you?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "about",
+            "you?"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "My favourite sport is ___.",
+      "answer": "swimming"
+    },
+    {
+      "type": "translate",
+      "cn": "我喜欢乒乓球。",
+      "en": [
+        "I like ping-pong."
+      ]
+    }
+  ],
+  "funFacts": [
+    "乒乓球运动起源于19世纪的英国。",
+    "大熊猫是中国的国宝，它们主要吃竹子。"
+  ]
+}

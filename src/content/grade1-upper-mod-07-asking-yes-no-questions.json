@@ -1,0 +1,319 @@
+{
+  "moduleId": "grade1-upper-mod-07",
+  "title": "Asking Yes/No Questions",
+  "durationMinutes": 13,
+  "words": [
+    {
+      "id": "is-it",
+      "en": "is it",
+      "zh": "它是...吗",
+      "audio": "/audio/tts/is-it.mp3"
+    },
+    {
+      "id": "dog",
+      "en": "dog",
+      "zh": "狗",
+      "audio": "/audio/tts/dog.mp3"
+    },
+    {
+      "id": "cat",
+      "en": "cat",
+      "zh": "猫",
+      "audio": "/audio/tts/cat.mp3"
+    },
+    {
+      "id": "monkey",
+      "en": "monkey",
+      "zh": "猴子",
+      "audio": "/audio/tts/monkey.mp3"
+    },
+    {
+      "id": "monster",
+      "en": "monster",
+      "zh": "怪物",
+      "audio": "/audio/tts/monster.mp3"
+    },
+    {
+      "id": "kite",
+      "en": "kite",
+      "zh": "风筝",
+      "audio": "/audio/tts/kite.mp3"
+    },
+    {
+      "id": "house",
+      "en": "house",
+      "zh": "房子",
+      "audio": "/audio/tts/house.mp3"
+    },
+    {
+      "id": "box",
+      "en": "box",
+      "zh": "盒子",
+      "audio": "/audio/tts/box.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "is-it-a-dog",
+      "en": "Is it a dog?",
+      "zh": "它是一只狗吗？",
+      "icon": "/images/icons/dog.svg",
+      "audio": "/audio/tts/is-it-a-dog.mp3"
+    },
+    {
+      "id": "yes-it-is",
+      "en": "Yes, it is.",
+      "zh": "是的，它是。",
+      "icon": "/images/icons/check.svg",
+      "audio": "/audio/tts/yes-it-is.mp3"
+    },
+    {
+      "id": "no-it-isnt",
+      "en": "No, it isn't.",
+      "zh": "不，它不是。",
+      "icon": "/images/icons/cross.svg",
+      "audio": "/audio/tts/no-it-isnt.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Is it a dog?",
+      "a": "它是一只狗吗？"
+    },
+    {
+      "q": "No, it isn't.",
+      "a": "不，它不是。"
+    },
+    {
+      "q": "Is it a monster?",
+      "a": "它是一个怪物吗？"
+    },
+    {
+      "q": "Yes, it is!",
+      "a": "是的，它是！"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "is it",
+              "zh": "它是...吗"
+            },
+            {
+              "en": "dog",
+              "zh": "狗"
+            },
+            {
+              "en": "cat",
+              "zh": "猫"
+            },
+            {
+              "en": "monkey",
+              "zh": "猴子"
+            },
+            {
+              "en": "monster",
+              "zh": "怪物"
+            },
+            {
+              "en": "kite",
+              "zh": "风筝"
+            }
+          ],
+          "options": [
+            {
+              "en": "house",
+              "zh": "房子"
+            },
+            {
+              "en": "box",
+              "zh": "盒子"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "it",
+            "a",
+            "dog?",
+            "Is"
+          ],
+          "correct": [
+            "Is",
+            "it",
+            "a",
+            "dog?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "it",
+            "is.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "it",
+            "is."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "it",
+            "isn't.",
+            "No,"
+          ],
+          "correct": [
+            "No,",
+            "it",
+            "isn't."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Is it a dog?",
+          "scrambledChinese": [
+            "是",
+            "一",
+            "只",
+            "狗",
+            "吗",
+            "？",
+            "它"
+          ],
+          "correctChinese": [
+            "它",
+            "是",
+            "一",
+            "只",
+            "狗",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, it is.",
+          "scrambledChinese": [
+            "的",
+            "，",
+            "它",
+            "是",
+            "。",
+            "是"
+          ],
+          "correctChinese": [
+            "是",
+            "的",
+            "，",
+            "它",
+            "是",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "它是一只狗吗？",
+          "scrambledEnglish": [
+            "it",
+            "a",
+            "dog?",
+            "Is"
+          ],
+          "correctEnglish": [
+            "Is",
+            "it",
+            "a",
+            "dog?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "是的，它是。",
+          "scrambledEnglish": [
+            "it",
+            "is.",
+            "Yes,"
+          ],
+          "correctEnglish": [
+            "Yes,",
+            "it",
+            "is."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "___ it a book?",
+      "answer": "Is"
+    },
+    {
+      "type": "translate",
+      "cn": "不，它不是。",
+      "en": [
+        "No, it isn't."
+      ]
+    }
+  ],
+  "funFacts": [
+    "风筝起源于中国，已有2000多年的历史。",
+    "狗的嗅觉比人类灵敏成千上万倍。"
+  ]
+}

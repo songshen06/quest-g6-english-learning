@@ -1,0 +1,311 @@
+{
+  "moduleId": "grade3-lower-mod-09",
+  "title": "Then and Now",
+  "durationMinutes": 15,
+  "words": [
+    {
+      "id": "was",
+      "en": "was",
+      "zh": "是（am/is的过去式）",
+      "audio": "/audio/tts/was.mp3"
+    },
+    {
+      "id": "were",
+      "en": "were",
+      "zh": "是（are的过去式）",
+      "audio": "/audio/tts/were.mp3"
+    },
+    {
+      "id": "young",
+      "en": "young",
+      "zh": "年轻的",
+      "audio": "/audio/tts/young.mp3"
+    },
+    {
+      "id": "then",
+      "en": "then",
+      "zh": "那时",
+      "audio": "/audio/tts/then.mp3"
+    },
+    {
+      "id": "now",
+      "en": "now",
+      "zh": "现在",
+      "audio": "/audio/tts/now.mp3"
+    },
+    {
+      "id": "grandparent",
+      "en": "grandparent",
+      "zh": "祖父母",
+      "audio": "/audio/tts/grandparent.mp3"
+    },
+    {
+      "id": "yesterday",
+      "en": "yesterday",
+      "zh": "昨天",
+      "audio": "/audio/tts/yesterday.mp3"
+    },
+    {
+      "id": "fun",
+      "en": "fun",
+      "zh": "有趣的",
+      "audio": "/audio/tts/fun.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "very-young",
+      "en": "very young",
+      "zh": "非常年轻",
+      "icon": "/images/icons/young.svg",
+      "audio": "/audio/tts/very-young.mp3"
+    },
+    {
+      "id": "very-old",
+      "en": "very old",
+      "zh": "非常年老",
+      "icon": "/images/icons/old.svg",
+      "audio": "/audio/tts/very-old.mp3"
+    },
+    {
+      "id": "in-london",
+      "en": "in London",
+      "zh": "在伦敦",
+      "icon": "/images/icons/location.svg",
+      "audio": "/audio/tts/in-london.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "They were very young then.",
+      "a": "他们那时很年轻。"
+    },
+    {
+      "q": "But they are very old now.",
+      "a": "但是他们现在很老了。"
+    },
+    {
+      "q": "I was two.",
+      "a": "我那时两岁。"
+    },
+    {
+      "q": "He was in Hong Kong.",
+      "a": "他那时在香港。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与中文意思配对",
+          "pairs": [
+            {
+              "en": "was",
+              "zh": "是（am/is的过去式）"
+            },
+            {
+              "en": "were",
+              "zh": "是（are的过去式）"
+            },
+            {
+              "en": "young",
+              "zh": "年轻的"
+            },
+            {
+              "en": "then",
+              "zh": "那时"
+            },
+            {
+              "en": "now",
+              "zh": "现在"
+            },
+            {
+              "en": "grandparent",
+              "zh": "祖父母"
+            }
+          ],
+          "options": [
+            {
+              "en": "yesterday",
+              "zh": "昨天"
+            },
+            {
+              "en": "fun",
+              "zh": "有趣的"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-vocab.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "句子排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "were",
+            "very",
+            "young",
+            "then.",
+            "They"
+          ],
+          "correct": [
+            "They",
+            "were",
+            "very",
+            "young",
+            "then."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "they",
+            "are",
+            "very",
+            "old",
+            "now.",
+            "But"
+          ],
+          "correct": [
+            "But",
+            "they",
+            "are",
+            "very",
+            "old",
+            "now."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词.mp3",
+          "scrambled": [
+            "was",
+            "two.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "was",
+            "two."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "very young",
+          "scrambledChinese": [
+            "常",
+            "年",
+            "轻",
+            "非"
+          ],
+          "correctChinese": [
+            "非",
+            "常",
+            "年",
+            "轻"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "very old",
+          "scrambledChinese": [
+            "常",
+            "年",
+            "老",
+            "非"
+          ],
+          "correctChinese": [
+            "非",
+            "常",
+            "年",
+            "老"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
+        "xp": 12
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "非常年轻",
+          "scrambledEnglish": [
+            "young",
+            "very"
+          ],
+          "correctEnglish": [
+            "very",
+            "young"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "非常年老",
+          "scrambledEnglish": [
+            "old",
+            "very"
+          ],
+          "correctEnglish": [
+            "very",
+            "old"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-language.png",
+        "xp": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "I was short and thin ___.",
+      "answer": "then"
+    },
+    {
+      "type": "translate",
+      "cn": "他们现在很高。",
+      "en": [
+        "They are tall now."
+      ]
+    }
+  ],
+  "funFacts": [
+    "世界上最古老的照片之一拍摄于大约1826年，展示了当时法国的风景。",
+    "昨天（Yesterday）这个词的词源意为过去的那一天。"
+  ]
+}
