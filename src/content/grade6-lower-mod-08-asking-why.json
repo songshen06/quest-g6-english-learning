@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/on-your-heads.mp3",
           "scrambled": [
             "your",
             "heads",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/wearing-a-hat.mp3",
           "scrambled": [
             "a",
             "hat",
@@ -209,7 +209,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/why-do-you-have-cups-on-your-heads.mp3",
           "scrambled": [
             "do",
             "you",
@@ -234,6 +234,108 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Why do you have cups on your heads?",
+          "scrambledChinese": [
+            "为什么",
+            "把",
+            "杯",
+            "子",
+            "放",
+            "在",
+            "头",
+            "上",
+            "？",
+            "你们"
+          ],
+          "correctChinese": [
+            "你们",
+            "为什么",
+            "把",
+            "杯",
+            "子",
+            "放",
+            "在",
+            "头",
+            "上",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Why are you laughing?",
+          "scrambledChinese": [
+            "为什么",
+            "笑",
+            "？",
+            "你们"
+          ],
+          "correctChinese": [
+            "你们",
+            "为什么",
+            "笑",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Because I'm happy.",
+          "scrambledChinese": [
+            "为",
+            "我",
+            "很",
+            "高",
+            "兴",
+            "。",
+            "因"
+          ],
+          "correctChinese": [
+            "因",
+            "为",
+            "我",
+            "很",
+            "高",
+            "兴",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Why are you wearing a raincoat?",
+          "scrambledChinese": [
+            "为什么",
+            "穿",
+            "着",
+            "雨",
+            "衣",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "为什么",
+            "穿",
+            "着",
+            "雨",
+            "衣",
+            "？"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

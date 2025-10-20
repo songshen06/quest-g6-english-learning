@@ -184,7 +184,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/what-do-you-want.mp3",
           "scrambled": [
             "do",
             "you",
@@ -201,7 +201,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/i-want-a-hamburger.mp3",
           "scrambled": [
             "want",
             "a",
@@ -218,7 +218,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/how-much-is-it.mp3",
           "scrambled": [
             "much",
             "is",
@@ -235,6 +235,110 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What do you want to eat?",
+          "scrambledChinese": [
+            "想",
+            "吃",
+            "什么",
+            "？",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "想",
+            "吃",
+            "什么",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I want a hot dog, please.",
+          "scrambledChinese": [
+            "给",
+            "我",
+            "一",
+            "个",
+            "热",
+            "狗",
+            "。",
+            "请"
+          ],
+          "correctChinese": [
+            "请",
+            "给",
+            "我",
+            "一",
+            "个",
+            "热",
+            "狗",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How much is it?",
+          "scrambledChinese": [
+            "个",
+            "多",
+            "少",
+            "钱",
+            "？",
+            "这"
+          ],
+          "correctChinese": [
+            "这",
+            "个",
+            "多",
+            "少",
+            "钱",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's thirteen dollars and twenty-five cents.",
+          "scrambledChinese": [
+            "三",
+            "美",
+            "元",
+            "二",
+            "十",
+            "五",
+            "美",
+            "分",
+            "。",
+            "十"
+          ],
+          "correctChinese": [
+            "十",
+            "三",
+            "美",
+            "元",
+            "二",
+            "十",
+            "五",
+            "美",
+            "分",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/going-to-rain.mp3",
           "scrambled": [
             "to",
             "rain",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/when-are-we-going-to-eat.mp3",
           "scrambled": [
             "are",
             "we",
@@ -209,7 +209,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/its-going-to-rain-soon.mp3",
           "scrambled": [
             "going",
             "to",
@@ -228,6 +228,108 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "When are we going to eat?",
+          "scrambledChinese": [
+            "什么",
+            "时",
+            "候",
+            "吃饭",
+            "？",
+            "我们"
+          ],
+          "correctChinese": [
+            "我们",
+            "什么",
+            "时",
+            "候",
+            "吃饭",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's going to rain soon.",
+          "scrambledChinese": [
+            "快",
+            "就",
+            "要",
+            "下",
+            "雨",
+            "了",
+            "。",
+            "很"
+          ],
+          "correctChinese": [
+            "很",
+            "快",
+            "就",
+            "要",
+            "下",
+            "雨",
+            "了",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What will the weather be like in Beijing?",
+          "scrambledChinese": [
+            "京",
+            "的",
+            "天",
+            "气",
+            "会",
+            "怎么样",
+            "？",
+            "北"
+          ],
+          "correctChinese": [
+            "北",
+            "京",
+            "的",
+            "天",
+            "气",
+            "会",
+            "怎么样",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It will be sunny.",
+          "scrambledChinese": [
+            "会",
+            "是",
+            "晴",
+            "天",
+            "。",
+            "将"
+          ],
+          "correctChinese": [
+            "将",
+            "会",
+            "是",
+            "晴",
+            "天",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

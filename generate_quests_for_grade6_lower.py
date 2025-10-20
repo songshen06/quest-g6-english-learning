@@ -39,6 +39,65 @@ class QuestGenerator:
         filename = filename.strip('-')
         return filename + ".mp3"
 
+    def split_chinese_sentence(self, sentence: str) -> List[str]:
+        """智能分割中文句子，将标点符号独立处理
+
+        Args:
+            sentence: 中文句子，如"你在做什么？"
+
+        Returns:
+            分割后的词语列表，如["你", "在", "做什么", "？"]
+        """
+        import re
+
+        # 中文标点符号集合
+        chinese_punctuation = r'[，。！？；：""''（）【】《》、]'
+
+        # 第一步：提取并分割标点符号
+        # 使用正则表达式找到所有标点符号的位置
+        punctuation_pattern = f'({chinese_punctuation})'
+        parts = re.split(punctuation_pattern, sentence)
+
+        # 第二步：处理非标点符号部分，按词语分割
+        result = []
+        for part in parts:
+            if not part:  # 跳过空字符串
+                continue
+            elif re.match(chinese_punctuation, part):  # 如果是标点符号
+                result.append(part)
+            else:  # 如果是文字部分
+                # 移除可能的空格，然后按常见分词规则分割
+                clean_part = part.strip()
+                if clean_part:
+                    # 简单的中文分词逻辑：
+                    # 1. 先尝试按空格分割
+                    words = clean_part.split()
+                    if len(words) > 1:
+                        result.extend(words)
+                    else:
+                        # 2. 如果没有空格，尝试按常见的词语边界分割
+                        # 这里使用启发式方法：常见的词语长度为2-3个字
+                        text = clean_part
+                        i = 0
+                        while i < len(text):
+                            # 优先尝试3字词
+                            if i + 3 <= len(text) and text[i:i+3] in ['做什么', '干什么', '怎么做', '为什么', '怎么样']:
+                                result.append(text[i:i+3])
+                                i += 3
+                            # 然后尝试2字词
+                            elif i + 2 <= len(text) and text[i:i+2] in ['我们', '你们', '他们', '什么', '怎么', '为什么', '这样', '那样', '这里', '那里', '现在', '正在', '已经', '可以', '应该', '需要', '想要', '喜欢', '知道', '明白', '理解', '学习', '工作', '生活', '回家', '吃饭', '睡觉', '起床', '出门', '进门', '上楼', '下楼', '开门', '关门', '开灯', '关灯']:
+                                result.append(text[i:i+2])
+                                i += 2
+                            else:
+                                # 单字处理
+                                result.append(text[i])
+                                i += 1
+
+        # 过滤掉空字符串
+        result = [word for word in result if word.strip()]
+
+        return result
+
     def create_vocabulary_matching_quest(self, words: List[Dict], phrases: List[Dict]) -> Dict:
         """创建词语配对练习"""
         # 合并words和phrases作为配对内容
@@ -151,7 +210,7 @@ class QuestGenerator:
         # 添加patterns中的所有句子
         for pattern in patterns:
             if 'q' in pattern and 'a' in pattern:
-                chinese_words = pattern['a'].split()
+                chinese_words = self.split_chinese_sentence(pattern['a'])
                 if len(chinese_words) >= 2:
                     translation_items.append({
                         "type": "entozh",
@@ -165,7 +224,7 @@ class QuestGenerator:
         if len(translation_items) < 4:  # 目标是4个练习
             for phrase in phrases[:4-len(translation_items)]:
                 if 'en' in phrase and 'zh' in phrase:
-                    chinese_words = phrase['zh'].split()
+                    chinese_words = self.split_chinese_sentence(phrase['zh'])
                     if len(chinese_words) >= 2:
                         translation_items.append({
                             "type": "entozh",

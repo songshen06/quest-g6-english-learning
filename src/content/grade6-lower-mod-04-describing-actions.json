@@ -167,7 +167,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/on-the-phone.mp3",
           "scrambled": [
             "the",
             "phone",
@@ -182,7 +182,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/i-cant-carry-all-these-things.mp3",
           "scrambled": [
             "can't",
             "carry",
@@ -203,7 +203,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/the-oranges-are-falling.mp3",
           "scrambled": [
             "oranges",
             "are",
@@ -220,6 +220,122 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I can't carry all these things.",
+          "scrambledChinese": [
+            "拿",
+            "不",
+            "动",
+            "所",
+            "有",
+            "这",
+            "些",
+            "东",
+            "西",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "拿",
+            "不",
+            "动",
+            "所",
+            "有",
+            "这",
+            "些",
+            "东",
+            "西",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The oranges are falling!",
+          "scrambledChinese": [
+            "子",
+            "掉",
+            "下",
+            "来",
+            "了",
+            "！",
+            "橙"
+          ],
+          "correctChinese": [
+            "橙",
+            "子",
+            "掉",
+            "下",
+            "来",
+            "了",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The balloons are flying away!",
+          "scrambledChinese": [
+            "球",
+            "飞",
+            "走",
+            "了",
+            "！",
+            "气"
+          ],
+          "correctChinese": [
+            "气",
+            "球",
+            "飞",
+            "走",
+            "了",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The apples are falling down the stairs!",
+          "scrambledChinese": [
+            "果",
+            "从",
+            "楼",
+            "梯",
+            "上",
+            "滚",
+            "下",
+            "来",
+            "了",
+            "！",
+            "苹"
+          ],
+          "correctChinese": [
+            "苹",
+            "果",
+            "从",
+            "楼",
+            "梯",
+            "上",
+            "滚",
+            "下",
+            "来",
+            "了",
+            "！"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

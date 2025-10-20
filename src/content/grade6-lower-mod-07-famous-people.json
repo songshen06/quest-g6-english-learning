@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/flew-into-space.mp3",
           "scrambled": [
             "into",
             "space",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/all-over-the-world.mp3",
           "scrambled": [
             "over",
             "the",
@@ -211,7 +211,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/couldnt-see-or-hear.mp3",
           "scrambled": [
             "see",
             "or",
@@ -228,6 +228,162 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My father flew into space in Shenzhou V.",
+          "scrambledChinese": [
+            "父",
+            "亲",
+            "乘",
+            "坐",
+            "神",
+            "舟",
+            "五",
+            "号",
+            "飞",
+            "入",
+            "太",
+            "空",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "父",
+            "亲",
+            "乘",
+            "坐",
+            "神",
+            "舟",
+            "五",
+            "号",
+            "飞",
+            "入",
+            "太",
+            "空",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "He spent about twenty-one hours in space.",
+          "scrambledChinese": [
+            "在",
+            "太",
+            "空",
+            "度",
+            "过",
+            "了",
+            "大",
+            "约",
+            "二",
+            "十",
+            "一",
+            "个",
+            "小",
+            "时",
+            "。",
+            "他"
+          ],
+          "correctChinese": [
+            "他",
+            "在",
+            "太",
+            "空",
+            "度",
+            "过",
+            "了",
+            "大",
+            "约",
+            "二",
+            "十",
+            "一",
+            "个",
+            "小",
+            "时",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Helen Keller was born in the US in 1880.",
+          "scrambledChinese": [
+            "伦",
+            "·",
+            "凯",
+            "勒",
+            "1",
+            "8",
+            "8",
+            "0",
+            "年",
+            "出",
+            "生",
+            "于",
+            "美",
+            "国",
+            "。",
+            "海"
+          ],
+          "correctChinese": [
+            "海",
+            "伦",
+            "·",
+            "凯",
+            "勒",
+            "1",
+            "8",
+            "8",
+            "0",
+            "年",
+            "出",
+            "生",
+            "于",
+            "美",
+            "国",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "She couldn't see or hear.",
+          "scrambledChinese": [
+            "看",
+            "不",
+            "见",
+            "也",
+            "听",
+            "不",
+            "见",
+            "。",
+            "她"
+          ],
+          "correctChinese": [
+            "她",
+            "看",
+            "不",
+            "见",
+            "也",
+            "听",
+            "不",
+            "见",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

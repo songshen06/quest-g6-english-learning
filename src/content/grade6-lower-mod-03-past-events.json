@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/took-some-photos.mp3",
           "scrambled": [
             "some",
             "photos",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/went-to-the-zoo.mp3",
           "scrambled": [
             "to",
             "the",
@@ -205,7 +205,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/i-had-a-very-funny-day-on-saturday.mp3",
           "scrambled": [
             "had",
             "a",
@@ -230,6 +230,120 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I had a very funny day on Saturday.",
+          "scrambledChinese": [
+            "周",
+            "六",
+            "过",
+            "了",
+            "非",
+            "常",
+            "有",
+            "趣",
+            "的",
+            "一",
+            "天",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "周",
+            "六",
+            "过",
+            "了",
+            "非",
+            "常",
+            "有",
+            "趣",
+            "的",
+            "一",
+            "天",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I took some photos.",
+          "scrambledChinese": [
+            "拍",
+            "了",
+            "一",
+            "些",
+            "照",
+            "片",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "拍",
+            "了",
+            "一",
+            "些",
+            "照",
+            "片",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Then it started to rain.",
+          "scrambledChinese": [
+            "后",
+            "开",
+            "始",
+            "下",
+            "雨",
+            "了",
+            "。",
+            "然"
+          ],
+          "correctChinese": [
+            "然",
+            "后",
+            "开",
+            "始",
+            "下",
+            "雨",
+            "了",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The sun is shining.",
+          "scrambledChinese": [
+            "光",
+            "灿",
+            "烂",
+            "。",
+            "阳"
+          ],
+          "correctChinese": [
+            "阳",
+            "光",
+            "灿",
+            "烂",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

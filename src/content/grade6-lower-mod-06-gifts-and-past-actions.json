@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/made-a-model.mp3",
           "scrambled": [
             "a",
             "model",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/it-was-damings-birthday-yesterday.mp3",
           "scrambled": [
             "was",
             "Daming's",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/simons-mum-bought-him-a-book.mp3",
           "scrambled": [
             "mum",
             "bought",
@@ -234,6 +234,152 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It was Daming's birthday yesterday.",
+          "scrambledChinese": [
+            "天",
+            "是",
+            "大",
+            "明",
+            "的",
+            "生",
+            "日",
+            "。",
+            "昨"
+          ],
+          "correctChinese": [
+            "昨",
+            "天",
+            "是",
+            "大",
+            "明",
+            "的",
+            "生",
+            "日",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Simon's mum bought him a book.",
+          "scrambledChinese": [
+            "蒙",
+            "的",
+            "妈",
+            "妈",
+            "给",
+            "他",
+            "买",
+            "了",
+            "一",
+            "本",
+            "书",
+            "。",
+            "西"
+          ],
+          "correctChinese": [
+            "西",
+            "蒙",
+            "的",
+            "妈",
+            "妈",
+            "给",
+            "他",
+            "买",
+            "了",
+            "一",
+            "本",
+            "书",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Daming is very interested in space travel.",
+          "scrambledChinese": [
+            "明",
+            "对",
+            "太",
+            "空",
+            "旅",
+            "行",
+            "很",
+            "感",
+            "兴",
+            "趣",
+            "。",
+            "大"
+          ],
+          "correctChinese": [
+            "大",
+            "明",
+            "对",
+            "太",
+            "空",
+            "旅",
+            "行",
+            "很",
+            "感",
+            "兴",
+            "趣",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "They made a model of a Chinese spaceship.",
+          "scrambledChinese": [
+            "制",
+            "作",
+            "了",
+            "一",
+            "个",
+            "中",
+            "国",
+            "宇",
+            "宙",
+            "飞",
+            "船",
+            "的",
+            "模",
+            "型",
+            "。",
+            "他们"
+          ],
+          "correctChinese": [
+            "他们",
+            "制",
+            "作",
+            "了",
+            "一",
+            "个",
+            "中",
+            "国",
+            "宇",
+            "宙",
+            "飞",
+            "船",
+            "的",
+            "模",
+            "型",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

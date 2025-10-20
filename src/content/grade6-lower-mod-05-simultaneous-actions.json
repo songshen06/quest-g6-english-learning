@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/playing-the-suona.mp3",
           "scrambled": [
             "the",
             "suona",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/the-bell-is-ringing.mp3",
           "scrambled": [
             "bell",
             "is",
@@ -205,7 +205,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/jumping-in-the-water.mp3",
           "scrambled": [
             "in",
             "the",
@@ -222,6 +222,122 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "He is playing the suona, but the telephone rings.",
+          "scrambledChinese": [
+            "正在",
+            "吹",
+            "唢",
+            "呐",
+            "，",
+            "但",
+            "是",
+            "电",
+            "话",
+            "响",
+            "了",
+            "。",
+            "他"
+          ],
+          "correctChinese": [
+            "他",
+            "正在",
+            "吹",
+            "唢",
+            "呐",
+            "，",
+            "但",
+            "是",
+            "电",
+            "话",
+            "响",
+            "了",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The bell is ringing.",
+          "scrambledChinese": [
+            "铃",
+            "在",
+            "响",
+            "。",
+            "门"
+          ],
+          "correctChinese": [
+            "门",
+            "铃",
+            "在",
+            "响",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Some children are jumping in the water.",
+          "scrambledChinese": [
+            "些",
+            "孩",
+            "子",
+            "正在",
+            "水",
+            "里",
+            "跳",
+            "。",
+            "一"
+          ],
+          "correctChinese": [
+            "一",
+            "些",
+            "孩",
+            "子",
+            "正在",
+            "水",
+            "里",
+            "跳",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The train goes into a tunnel.",
+          "scrambledChinese": [
+            "车",
+            "进",
+            "入",
+            "了",
+            "隧",
+            "道",
+            "。",
+            "火"
+          ],
+          "correctChinese": [
+            "火",
+            "车",
+            "进",
+            "入",
+            "了",
+            "隧",
+            "道",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },

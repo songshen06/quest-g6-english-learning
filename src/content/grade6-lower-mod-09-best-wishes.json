@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/best-wishes-to-you.mp3",
           "scrambled": [
             "wishes",
             "to",
@@ -196,7 +196,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/i-will-miss-you.mp3",
           "scrambled": [
             "will",
             "miss",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/best-wishes-to-you.mp3",
           "scrambled": [
             "wishes",
             "to",
@@ -230,6 +230,128 @@
       ],
       "reward": {
         "badge": "/images/rewards/badge-sentence.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Best wishes to you!",
+          "scrambledChinese": [
+            "你",
+            "最",
+            "好",
+            "的",
+            "祝",
+            "福",
+            "！",
+            "给"
+          ],
+          "correctChinese": [
+            "给",
+            "你",
+            "最",
+            "好",
+            "的",
+            "祝",
+            "福",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Good luck for the future!",
+          "scrambledChinese": [
+            "你",
+            "未",
+            "来",
+            "好",
+            "运",
+            "！",
+            "祝"
+          ],
+          "correctChinese": [
+            "祝",
+            "你",
+            "未",
+            "来",
+            "好",
+            "运",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "You're a wonderful friend. I will miss you!",
+          "scrambledChinese": [
+            "是",
+            "一",
+            "个",
+            "很",
+            "棒",
+            "的",
+            "朋",
+            "友",
+            "。",
+            "我",
+            "会",
+            "想",
+            "你",
+            "的",
+            "！",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "是",
+            "一",
+            "个",
+            "很",
+            "棒",
+            "的",
+            "朋",
+            "友",
+            "。",
+            "我",
+            "会",
+            "想",
+            "你",
+            "的",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Wishing you happiness every day.",
+          "scrambledChinese": [
+            "你",
+            "天",
+            "天",
+            "开",
+            "心",
+            "。",
+            "祝"
+          ],
+          "correctChinese": [
+            "祝",
+            "你",
+            "天",
+            "天",
+            "开",
+            "心",
+            "。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/badge-translate.png",
         "xp": 15
       }
     },
