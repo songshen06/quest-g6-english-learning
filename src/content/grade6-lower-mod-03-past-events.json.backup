@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/took-some-photos.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "some",
             "photos",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/went-to-the-zoo.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "to",
             "the",
@@ -205,7 +205,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/i-had-a-very-funny-day-on-saturday.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "had",
             "a",
@@ -240,29 +240,79 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "上周日",
+          "chinese": "我周六过了非常有趣的一天。",
           "scrambledEnglish": [
-            "Sunday",
-            "Last"
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday.",
+            "I"
           ],
           "correctEnglish": [
-            "Last",
-            "Sunday"
+            "I",
+            "had",
+            "a",
+            "very",
+            "funny",
+            "day",
+            "on",
+            "Saturday."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "拍了一些照片",
+          "chinese": "我拍了一些照片。",
           "scrambledEnglish": [
-            "some",
-            "photos",
-            "took"
-          ],
-          "correctEnglish": [
             "took",
             "some",
-            "photos"
+            "photos.",
+            "I"
+          ],
+          "correctEnglish": [
+            "I",
+            "took",
+            "some",
+            "photos."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "然后开始下雨了。",
+          "scrambledEnglish": [
+            "it",
+            "started",
+            "to",
+            "rain.",
+            "Then"
+          ],
+          "correctEnglish": [
+            "Then",
+            "it",
+            "started",
+            "to",
+            "rain."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "阳光灿烂。",
+          "scrambledEnglish": [
+            "sun",
+            "is",
+            "shining.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "sun",
+            "is",
+            "shining."
           ]
         }
       ],

@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/made-a-model.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "a",
             "model",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/it-was-damings-birthday-yesterday.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "was",
             "Daming's",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/simons-mum-bought-him-a-book.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "mum",
             "bought",
@@ -244,27 +244,89 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "太空旅行",
+          "chinese": "昨天是大明的生日。",
           "scrambledEnglish": [
-            "travel",
-            "space"
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday.",
+            "It"
           ],
           "correctEnglish": [
-            "space",
-            "travel"
+            "It",
+            "was",
+            "Daming's",
+            "birthday",
+            "yesterday."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "对…感兴趣",
+          "chinese": "西蒙的妈妈给他买了一本书。",
           "scrambledEnglish": [
-            "in",
-            "interested"
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book.",
+            "Simon's"
           ],
           "correctEnglish": [
+            "Simon's",
+            "mum",
+            "bought",
+            "him",
+            "a",
+            "book."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "大明对太空旅行很感兴趣。",
+          "scrambledEnglish": [
+            "is",
+            "very",
             "interested",
-            "in"
+            "in",
+            "space",
+            "travel.",
+            "Daming"
+          ],
+          "correctEnglish": [
+            "Daming",
+            "is",
+            "very",
+            "interested",
+            "in",
+            "space",
+            "travel."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "他们制作了一个中国宇宙飞船的模型。",
+          "scrambledEnglish": [
+            "made",
+            "a",
+            "model",
+            "of",
+            "a",
+            "Chinese",
+            "spaceship.",
+            "They"
+          ],
+          "correctEnglish": [
+            "They",
+            "made",
+            "a",
+            "model",
+            "of",
+            "a",
+            "Chinese",
+            "spaceship."
           ]
         }
       ],

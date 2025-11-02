@@ -167,7 +167,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/on-the-phone.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "phone",
@@ -182,7 +182,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/i-cant-carry-all-these-things.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "can't",
             "carry",
@@ -203,7 +203,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/the-oranges-are-falling.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "oranges",
             "are",
@@ -230,29 +230,81 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "飞走",
+          "chinese": "我拿不动所有这些东西。",
           "scrambledEnglish": [
-            "away",
-            "fly"
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things.",
+            "I"
           ],
           "correctEnglish": [
-            "fly",
-            "away"
+            "I",
+            "can't",
+            "carry",
+            "all",
+            "these",
+            "things."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "在打电话",
+          "chinese": "橙子掉下来了！",
           "scrambledEnglish": [
-            "the",
-            "phone",
-            "on"
+            "oranges",
+            "are",
+            "falling!",
+            "The"
           ],
           "correctEnglish": [
-            "on",
+            "The",
+            "oranges",
+            "are",
+            "falling!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "气球飞走了！",
+          "scrambledEnglish": [
+            "balloons",
+            "are",
+            "flying",
+            "away!",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "balloons",
+            "are",
+            "flying",
+            "away!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "苹果从楼梯上滚下来了！",
+          "scrambledEnglish": [
+            "apples",
+            "are",
+            "falling",
+            "down",
             "the",
-            "phone"
+            "stairs!",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "apples",
+            "are",
+            "falling",
+            "down",
+            "the",
+            "stairs!"
           ]
         }
       ],

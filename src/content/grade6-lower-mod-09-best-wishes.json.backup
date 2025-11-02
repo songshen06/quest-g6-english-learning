@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/best-wishes-to-you.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "wishes",
             "to",
@@ -196,7 +196,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/i-will-miss-you.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "will",
             "miss",
@@ -213,7 +213,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/best-wishes-to-you.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "wishes",
             "to",
@@ -240,7 +240,7 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "给你最好的祝愿！",
+          "chinese": "给你最好的祝福！",
           "scrambledEnglish": [
             "wishes",
             "to",
@@ -257,14 +257,64 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "祝你好运！",
+          "chinese": "祝你未来好运！",
           "scrambledEnglish": [
-            "luck!",
+            "luck",
+            "for",
+            "the",
+            "future!",
             "Good"
           ],
           "correctEnglish": [
             "Good",
-            "luck!"
+            "luck",
+            "for",
+            "the",
+            "future!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你是一个很棒的朋友。我会想你的！",
+          "scrambledEnglish": [
+            "a",
+            "wonderful",
+            "friend.",
+            "I",
+            "will",
+            "miss",
+            "you!",
+            "You're"
+          ],
+          "correctEnglish": [
+            "You're",
+            "a",
+            "wonderful",
+            "friend.",
+            "I",
+            "will",
+            "miss",
+            "you!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "祝你天天开心。",
+          "scrambledEnglish": [
+            "you",
+            "happiness",
+            "every",
+            "day.",
+            "Wishing"
+          ],
+          "correctEnglish": [
+            "Wishing",
+            "you",
+            "happiness",
+            "every",
+            "day."
           ]
         }
       ],

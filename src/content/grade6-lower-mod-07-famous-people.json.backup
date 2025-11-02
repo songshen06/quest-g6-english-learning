@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/flew-into-space.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "into",
             "space",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/all-over-the-world.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "over",
             "the",
@@ -211,7 +211,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/couldnt-see-or-hear.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "see",
             "or",
@@ -238,33 +238,95 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "飞入太空",
+          "chinese": "我父亲乘坐神舟五号飞入太空。",
           "scrambledEnglish": [
-            "into",
-            "space",
-            "flew"
-          ],
-          "correctEnglish": [
+            "father",
             "flew",
             "into",
-            "space"
+            "space",
+            "in",
+            "Shenzhou",
+            "V.",
+            "My"
+          ],
+          "correctEnglish": [
+            "My",
+            "father",
+            "flew",
+            "into",
+            "space",
+            "in",
+            "Shenzhou",
+            "V."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "全世界",
+          "chinese": "他在太空度过了大约二十一个小时。",
           "scrambledEnglish": [
-            "over",
-            "the",
-            "world",
-            "all"
+            "spent",
+            "about",
+            "twenty-one",
+            "hours",
+            "in",
+            "space.",
+            "He"
           ],
           "correctEnglish": [
-            "all",
-            "over",
+            "He",
+            "spent",
+            "about",
+            "twenty-one",
+            "hours",
+            "in",
+            "space."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "海伦·凯勒1880年出生于美国。",
+          "scrambledEnglish": [
+            "Keller",
+            "was",
+            "born",
+            "in",
             "the",
-            "world"
+            "US",
+            "in",
+            "1880.",
+            "Helen"
+          ],
+          "correctEnglish": [
+            "Helen",
+            "Keller",
+            "was",
+            "born",
+            "in",
+            "the",
+            "US",
+            "in",
+            "1880."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "她看不见也听不见。",
+          "scrambledEnglish": [
+            "couldn't",
+            "see",
+            "or",
+            "hear.",
+            "She"
+          ],
+          "correctEnglish": [
+            "She",
+            "couldn't",
+            "see",
+            "or",
+            "hear."
           ]
         }
       ],

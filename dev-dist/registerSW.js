@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/quest-g6-english-learning/dev-sw.js?dev-sw', { scope: '/quest-g6-english-learning/', type: 'classic' })

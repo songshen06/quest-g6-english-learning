@@ -1,0 +1,347 @@
+{
+  "moduleId": "grade5-lower-mod-03",
+  "title": "Library & Borrowing",
+  "durationMinutes": 10,
+  "words": [
+    {
+      "id": "dvd",
+      "en": "DVD",
+      "zh": "数字化视频光盘",
+      "audio": "/audio/tts/dvd.mp3"
+    },
+    {
+      "id": "librarian",
+      "en": "librarian",
+      "zh": "图书馆管理员",
+      "audio": "/audio/tts/librarian.mp3"
+    },
+    {
+      "id": "show",
+      "en": "show",
+      "zh": "给（某人）看",
+      "audio": "/audio/tts/show.mp3"
+    },
+    {
+      "id": "borrow",
+      "en": "borrow",
+      "zh": "借入，借来",
+      "audio": "/audio/tts/borrow.mp3"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "talk-to-friends",
+      "en": "talk to friends",
+      "zh": "跟朋友说话",
+      "audio": "/audio/tts/talk-to-friends.mp3"
+    }
+  ],
+  "patterns": [
+    {
+      "q": "Have you got the Harry Potter DVDs?",
+      "a": "你有哈利波特的 DVD 吗？"
+    },
+    {
+      "q": "Sorry, we haven’t got the DVDs. But we have got the books.",
+      "a": "抱歉，没有 DVD，不过有书。"
+    },
+    {
+      "q": "You’ve got lots of Harry Potter books here!",
+      "a": "你们这儿有好多哈利波特的书！"
+    },
+    {
+      "q": "Yes, we have.",
+      "a": "是的，我们有。"
+    }
+  ],
+  "quests": [
+    {
+      "id": "vocabulary-matching",
+      "title": "词语配对练习",
+      "steps": [
+        {
+          "type": "wordmatching",
+          "text": "将英语单词与短语配对 (第1部分)",
+          "pairs": [
+            {
+              "en": "DVD",
+              "zh": "数字化视频光盘"
+            },
+            {
+              "en": "librarian",
+              "zh": "图书馆管理员"
+            },
+            {
+              "en": "show",
+              "zh": "给（某人）看"
+            },
+            {
+              "en": "borrow",
+              "zh": "借入，借来"
+            },
+            {
+              "en": "talk to friends",
+              "zh": "跟朋友说话"
+            }
+          ],
+          "options": [
+            {
+              "en": "show",
+              "zh": "给（某人）看"
+            },
+            {
+              "en": "borrow",
+              "zh": "借入，借来"
+            }
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/vocabulary-badge.png",
+        "xp": 10
+      }
+    },
+    {
+      "id": "sentence-sorting",
+      "title": "词语排序练习",
+      "steps": [
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第1部分)",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "scrambled": [
+            "to",
+            "friends",
+            "talk"
+          ],
+          "correct": [
+            "talk",
+            "to",
+            "friends"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "scrambled": [
+            "you",
+            "got",
+            "the",
+            "Harry",
+            "Potter",
+            "DVDs?",
+            "Have"
+          ],
+          "correct": [
+            "Have",
+            "you",
+            "got",
+            "the",
+            "Harry",
+            "Potter",
+            "DVDs?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "scrambled": [
+            "we",
+            "haven’t",
+            "got",
+            "the",
+            "DVDs.",
+            "But",
+            "we",
+            "have",
+            "got",
+            "the",
+            "books.",
+            "Sorry,"
+          ],
+          "correct": [
+            "Sorry,",
+            "we",
+            "haven’t",
+            "got",
+            "the",
+            "DVDs.",
+            "But",
+            "we",
+            "have",
+            "got",
+            "the",
+            "books."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/sorting-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Have you got the Harry Potter DVDs?",
+          "scrambledChinese": [
+            "DVD",
+            "吗？",
+            "你有哈利波特的"
+          ],
+          "correctChinese": [
+            "你有哈利波特的",
+            "DVD",
+            "吗？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Sorry, we haven’t got the DVDs. But we have got the books.",
+          "scrambledChinese": [
+            "DVD，不过有书。",
+            "抱歉，没有"
+          ],
+          "correctChinese": [
+            "抱歉，没有",
+            "DVD，不过有书。"
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
+      "id": "zh-to-en",
+      "title": "中翻英练习",
+      "steps": [
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你有哈利波特的 DVD 吗？",
+          "scrambledEnglish": [
+            "you",
+            "got",
+            "the",
+            "Harry",
+            "Potter",
+            "DVDs?",
+            "Have"
+          ],
+          "correctEnglish": [
+            "Have",
+            "you",
+            "got",
+            "the",
+            "Harry",
+            "Potter",
+            "DVDs?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "抱歉，没有 DVD，不过有书。",
+          "scrambledEnglish": [
+            "we",
+            "haven’t",
+            "got",
+            "the",
+            "DVDs.",
+            "But",
+            "we",
+            "have",
+            "got",
+            "the",
+            "books.",
+            "Sorry,"
+          ],
+          "correctEnglish": [
+            "Sorry,",
+            "we",
+            "haven’t",
+            "got",
+            "the",
+            "DVDs.",
+            "But",
+            "we",
+            "have",
+            "got",
+            "the",
+            "books."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你们这儿有好多哈利波特的书！",
+          "scrambledEnglish": [
+            "got",
+            "lots",
+            "of",
+            "Harry",
+            "Potter",
+            "books",
+            "here!",
+            "You’ve"
+          ],
+          "correctEnglish": [
+            "You’ve",
+            "got",
+            "lots",
+            "of",
+            "Harry",
+            "Potter",
+            "books",
+            "here!"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "是的，我们有。",
+          "scrambledEnglish": [
+            "we",
+            "have.",
+            "Yes,"
+          ],
+          "correctEnglish": [
+            "Yes,",
+            "we",
+            "have."
+          ]
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/language-badge.png",
+        "xp": 15
+      }
+    }
+  ],
+  "practice": [
+    {
+      "type": "fillblank",
+      "text": "The _______ helps students in the library.",
+      "answer": "librarian"
+    },
+    {
+      "type": "translate",
+      "cn": "你有哈利波特的 DVD 吗？",
+      "en": [
+        "Have you got the Harry Potter DVDs?"
+      ]
+    }
+  ],
+  "funFacts": [
+    "图书馆常设有借阅期限与续借规则。"
+  ]
+}

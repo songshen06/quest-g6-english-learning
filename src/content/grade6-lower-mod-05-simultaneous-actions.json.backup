@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/playing-the-suona.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "the",
             "suona",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/the-bell-is-ringing.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "bell",
             "is",
@@ -205,7 +205,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/jumping-in-the-water.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "in",
             "the",
@@ -232,33 +232,89 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "吹唢呐",
+          "chinese": "他正在吹唢呐，但是电话响了。",
           "scrambledEnglish": [
-            "the",
-            "suona",
-            "playing"
-          ],
-          "correctEnglish": [
+            "is",
             "playing",
             "the",
-            "suona"
+            "suona,",
+            "but",
+            "the",
+            "telephone",
+            "rings.",
+            "He"
+          ],
+          "correctEnglish": [
+            "He",
+            "is",
+            "playing",
+            "the",
+            "suona,",
+            "but",
+            "the",
+            "telephone",
+            "rings."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "门铃在响",
+          "chinese": "门铃在响。",
           "scrambledEnglish": [
             "bell",
             "is",
-            "ringing",
+            "ringing.",
             "The"
           ],
           "correctEnglish": [
             "The",
             "bell",
             "is",
-            "ringing"
+            "ringing."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "一些孩子正在水里跳。",
+          "scrambledEnglish": [
+            "children",
+            "are",
+            "jumping",
+            "in",
+            "the",
+            "water.",
+            "Some"
+          ],
+          "correctEnglish": [
+            "Some",
+            "children",
+            "are",
+            "jumping",
+            "in",
+            "the",
+            "water."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "火车进入了隧道。",
+          "scrambledEnglish": [
+            "train",
+            "goes",
+            "into",
+            "a",
+            "tunnel.",
+            "The"
+          ],
+          "correctEnglish": [
+            "The",
+            "train",
+            "goes",
+            "into",
+            "a",
+            "tunnel."
           ]
         }
       ],

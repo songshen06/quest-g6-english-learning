@@ -179,7 +179,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/on-your-heads.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "your",
             "heads",
@@ -194,7 +194,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/wearing-a-hat.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "a",
             "hat",
@@ -209,7 +209,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/why-do-you-have-cups-on-your-heads.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "do",
             "you",
@@ -244,29 +244,79 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "在你们头上",
+          "chinese": "你们为什么把杯子放在头上？",
           "scrambledEnglish": [
-            "your",
-            "heads",
-            "on"
-          ],
-          "correctEnglish": [
+            "do",
+            "you",
+            "have",
+            "cups",
             "on",
             "your",
-            "heads"
+            "heads?",
+            "Why"
+          ],
+          "correctEnglish": [
+            "Why",
+            "do",
+            "you",
+            "have",
+            "cups",
+            "on",
+            "your",
+            "heads?"
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "犯错误",
+          "chinese": "你们为什么笑？",
           "scrambledEnglish": [
-            "mistakes",
-            "make"
+            "are",
+            "you",
+            "laughing?",
+            "Why"
           ],
           "correctEnglish": [
-            "make",
-            "mistakes"
+            "Why",
+            "are",
+            "you",
+            "laughing?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "因为我很高兴。",
+          "scrambledEnglish": [
+            "I'm",
+            "happy.",
+            "Because"
+          ],
+          "correctEnglish": [
+            "Because",
+            "I'm",
+            "happy."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你为什么穿着雨衣？",
+          "scrambledEnglish": [
+            "are",
+            "you",
+            "wearing",
+            "a",
+            "raincoat?",
+            "Why"
+          ],
+          "correctEnglish": [
+            "Why",
+            "are",
+            "you",
+            "wearing",
+            "a",
+            "raincoat?"
           ]
         }
       ],

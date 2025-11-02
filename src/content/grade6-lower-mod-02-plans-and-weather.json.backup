@@ -173,7 +173,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/going-to-rain.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "to",
             "rain",
@@ -188,7 +188,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/when-are-we-going-to-eat.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "are",
             "we",
@@ -209,7 +209,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/its-going-to-rain-soon.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "going",
             "to",
@@ -238,29 +238,83 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "哎呀！",
+          "chinese": "我们什么时候吃饭？",
           "scrambledEnglish": [
-            "dear!",
-            "Oh"
+            "are",
+            "we",
+            "going",
+            "to",
+            "eat?",
+            "When"
           ],
           "correctEnglish": [
-            "Oh",
-            "dear!"
+            "When",
+            "are",
+            "we",
+            "going",
+            "to",
+            "eat?"
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "将要下雨",
+          "chinese": "很快就要下雨了。",
           "scrambledEnglish": [
-            "to",
-            "rain",
-            "going"
-          ],
-          "correctEnglish": [
             "going",
             "to",
-            "rain"
+            "rain",
+            "soon.",
+            "It's"
+          ],
+          "correctEnglish": [
+            "It's",
+            "going",
+            "to",
+            "rain",
+            "soon."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "北京的天气会怎么样？",
+          "scrambledEnglish": [
+            "will",
+            "the",
+            "weather",
+            "be",
+            "like",
+            "in",
+            "Beijing?",
+            "What"
+          ],
+          "correctEnglish": [
+            "What",
+            "will",
+            "the",
+            "weather",
+            "be",
+            "like",
+            "in",
+            "Beijing?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "将会是晴天。",
+          "scrambledEnglish": [
+            "will",
+            "be",
+            "sunny.",
+            "It"
+          ],
+          "correctEnglish": [
+            "It",
+            "will",
+            "be",
+            "sunny."
           ]
         }
       ],

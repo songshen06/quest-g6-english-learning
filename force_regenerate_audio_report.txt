@@ -1,0 +1,22 @@
+
+强制重新生成低质量音频文件报告
+=====================================
+时间: 2025-10-15 17:11:01
+处理文件数: 12
+成功重新生成: 12
+重新生成失败: 0
+成功率: 100.0%
+
+处理的文件列表:
+- what-do-you-want.mp3 (grade6-lower-mod-01) - 'What do you want?'
+- what-do-you-want-to-eat.mp3 (grade6-lower-mod-01) - 'What do you want to eat?'
+- i-want-a-hot-dog-please.mp3 (grade6-lower-mod-01) - 'I want a hot dog, please.'
+- its-thirteen-dollars-and-twenty-five-cents.mp3 (grade6-lower-mod-01) - 'It's thirteen dollars and twenty-five cents.'
+- oh-dear.mp3 (grade6-lower-mod-02) - 'Oh dear!'
+- what-will-the-weather-be-like-in-beijing.mp3 (grade6-lower-mod-02) - 'What will the weather be like in Beijing?'
+- went-to-the-zoo.mp3 (grade6-lower-mod-03) - 'went to the zoo'
+- the-oranges-are-falling.mp3 (grade6-lower-mod-04) - 'The oranges are falling!'
+- made-a-model.mp3 (grade6-lower-mod-06) - 'made a model'
+- flew-into-space.mp3 (grade6-lower-mod-07) - 'flew into space'
+- couldnt-see-or-hear.mp3 (grade6-lower-mod-07) - 'couldn't see or hear'
+- because-im-happy.mp3 (grade6-lower-mod-08) - 'Because I'm happy.'

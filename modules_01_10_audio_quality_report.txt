@@ -1,0 +1,235 @@
+================================================================================
+📚 Module 01-10 音频质量检查报告
+🤖 基于 Whisper ASR 的短语、句子和单词质量分析
+================================================================================
+📅 检查时间: 2025-10-15 21:43:08
+🤖 使用的模型: Whisper Base
+
+📊 总体统计:
+   检查模块数: 10
+   短语总数: 96
+   句子总数: 39
+   单词总数: 59
+   检查完成: 194
+   高质量 (≥90%): 150 (77.3%)
+   中等质量 (70-89%): 28 (14.4%)
+   低质量 (<70%): 16 (8.2%)
+   文件缺失: 0
+   转录失败: 0
+
+📈 按模块统计:
+--------------------------------------------------------------------------------
+📁 grade6-upper-mod-01 (How long?)
+   总计: 14 | 成功率: 71.4%
+   高质量: 6 | 中等质量: 4 | 低质量: 4
+
+📁 grade6-upper-mod-02 (Chinatown and Tombs)
+   总计: 23 | 成功率: 82.6%
+   高质量: 17 | 中等质量: 2 | 低质量: 4
+
+📁 grade6-upper-mod-03 (Stamps and Hobbies)
+   总计: 21 | 成功率: 85.7%
+   高质量: 14 | 中等质量: 4 | 低质量: 3
+
+📁 grade6-upper-mod-04 (Festivals)
+   总计: 19 | 成功率: 94.7%
+   高质量: 16 | 中等质量: 2 | 低质量: 1
+
+📁 grade6-upper-mod-05 (Pen Friends)
+   总计: 17 | 成功率: 100.0%
+   高质量: 14 | 中等质量: 3 | 低质量: 0
+
+📁 grade6-upper-mod-06 (School and Answers)
+   总计: 18 | 成功率: 100.0%
+   高质量: 17 | 中等质量: 1 | 低质量: 0
+
+📁 grade6-upper-mod-07 (Animals)
+   总计: 22 | 成功率: 90.9%
+   高质量: 14 | 中等质量: 6 | 低质量: 2
+
+📁 grade6-upper-mod-08 (Habits and Tidy Room)
+   总计: 27 | 成功率: 100.0%
+   高质量: 25 | 中等质量: 2 | 低质量: 0
+
+📁 grade6-upper-mod-09 (Peace and UN)
+   总计: 15 | 成功率: 93.3%
+   高质量: 12 | 中等质量: 2 | 低质量: 1
+
+📁 grade6-upper-mod-10 (Travel and Safety)
+   总计: 18 | 成功率: 94.4%
+   高质量: 15 | 中等质量: 2 | 低质量: 1
+
+⚠️ 需要关注的音频文件:
+--------------------------------------------------------------------------------
+🔴 grade6-upper-mod-02 (word)
+   📄 文件: town.mp3
+   📝 原文: 'town'
+   🔊 识别: '湯'
+   📊 相似度: 0.0%
+   ⚠️  识别准确率极低
+   ⚠️  音频可能被截断
+
+🔴 grade6-upper-mod-03 (word)
+   📄 文件: sun.mp3
+   📝 原文: 'sun'
+   🔊 识别: '�oda'
+   📊 相似度: 0.0%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-09 (phrase)
+   📄 文件: the-huangshan-mountain.mp3
+   📝 原文: 'the Huangshan Mountain'
+   🔊 识别: 'Und das Er Clementschamps Audio Hatsael ändern die SH2 Plusiko fighting. Die CUK am Lowelliefutter werden schon aus sich abseiten Saiya den Bundesquatschern im delbe Tier churches gesetzelt. Es ist 2020 zum nearlyablyals ISO troubleshooting und vor der AbhaologCuating Inst extenties handelt die BYAM transformal minimieren. Der Lego졌 extracting die broadband biaself, Denkbertydmaschine pneumonia einer Transaktion'
+   📊 相似度: 0.0%
+   ⚠️  识别准确率极低
+   ⚠️  音频可能包含额外内容
+
+🔴 grade6-upper-mod-02 (word)
+   📄 文件: when.mp3
+   📝 原文: 'when'
+   🔊 识别: 'One.'
+   📊 相似度: 28.6%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-01 (word)
+   📄 文件: along.mp3
+   📝 原文: 'along'
+   🔊 识别: 'Alarm'
+   📊 相似度: 40.0%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-01 (word)
+   📄 文件: near.mp3
+   📝 原文: 'near'
+   🔊 识别: 'There.'
+   📊 相似度: 44.4%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-02 (word)
+   📄 文件: wrote.mp3
+   📝 原文: 'wrote'
+   🔊 识别: 'Road'
+   📊 相似度: 44.4%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-03 (phrase)
+   📄 文件: at-all.mp3
+   📝 原文: 'at all'
+   🔊 识别: 'at home.'
+   📊 相似度: 46.2%
+   ⚠️  识别准确率极低
+
+🔴 grade6-upper-mod-03 (word)
+   📄 文件: book.mp3
+   📝 原文: 'book'
+   🔊 识别: 'Buck.'
+   📊 相似度: 50.0%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-07 (word)
+   📄 文件: frightened.mp3
+   📝 原文: 'frightened'
+   🔊 识别: 'Fried and'
+   📊 相似度: 52.6%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-04 (phrase)
+   📄 文件: write-a-poem.mp3
+   📝 原文: 'write a poem'
+   🔊 识别: 'Right up point.'
+   📊 相似度: 53.8%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-01 (phrase)
+   📄 文件: four-hundred-metres-high.mp3
+   📝 原文: 'four hundred metres high'
+   🔊 识别: '400 meters high.'
+   📊 相似度: 56.4%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-10 (word)
+   📄 文件: aunt.mp3
+   📝 原文: 'aunt'
+   🔊 识别: 'and'
+   📊 相似度: 57.1%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-02 (word)
+   📄 文件: spoke.mp3
+   📝 原文: 'spoke'
+   🔊 识别: 'Spulk'
+   📊 相似度: 60.0%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-07 (word)
+   📄 文件: roar.mp3
+   📝 原文: 'roar'
+   🔊 识别: 'roller'
+   📊 相似度: 60.0%
+   ⚠️  识别准确率较低
+
+🔴 grade6-upper-mod-01 (pattern)
+   📄 文件: its-more-than-forty-thousand-li-long.mp3
+   📝 原文: 'It's more than forty thousand li long.'
+   🔊 识别: 'It's more than 40,000ly long.'
+   📊 相似度: 64.5%
+   ⚠️  识别准确率较低
+
+✅ 高质量音频示例:
+--------------------------------------------------------------------------------
+📁 grade6-upper-mod-01 (phrase)
+   📝 原文: 'look at'
+   🔊 识别: 'Look at.'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-01 (phrase)
+   📝 原文: 'climb the stairs to the top'
+   🔊 识别: 'Climb the stairs to the top.'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-01 (pattern)
+   📝 原文: 'How long is the Great Wall?'
+   🔊 识别: 'How long is the Great Wall?'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-01 (pattern)
+   📝 原文: 'How old is it?'
+   🔊 识别: 'How old is it?'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-01 (word)
+   📝 原文: 'how long'
+   🔊 识别: 'How long?'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-01 (word)
+   📝 原文: 'more than'
+   🔊 识别: 'More than'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-02 (phrase)
+   📝 原文: 'send an email'
+   🔊 识别: 'Send an email.'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-02 (phrase)
+   📝 原文: 'have a big surprise'
+   🔊 识别: 'Have a big surprise.'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-02 (phrase)
+   📝 原文: 'lots and lots of'
+   🔊 识别: 'Lots and lots of.'
+   📊 相似度: 100.0%
+
+📁 grade6-upper-mod-02 (phrase)
+   📝 原文: 'be different from'
+   🔊 识别: 'Be different from.'
+   📊 相似度: 100.0%
+
+💡 建议:
+--------------------------------------------------------------------------------
+🔄 重新生成 16 个低质量音频文件
+🎉 音频质量优秀，系统运行良好
+
+================================================================================

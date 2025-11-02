@@ -185,7 +185,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/say-goodbye-to.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
           "scrambled": [
             "goodbye",
             "to",
@@ -200,7 +200,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/at-the-same-time.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
           "scrambled": [
             "the",
             "same",
@@ -217,7 +217,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/were-going-to-leave-our-primary-school-soon.mp3",
+          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
           "scrambled": [
             "going",
             "to",
@@ -252,29 +252,93 @@
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "中学",
+          "chinese": "我们很快就要离开我们的小学了。",
           "scrambledEnglish": [
+            "going",
+            "to",
+            "leave",
+            "our",
+            "primary",
             "school",
-            "middle"
+            "soon.",
+            "We're"
           ],
           "correctEnglish": [
-            "middle",
-            "school"
+            "We're",
+            "going",
+            "to",
+            "leave",
+            "our",
+            "primary",
+            "school",
+            "soon."
           ]
         },
         {
           "type": "zhtoen",
           "text": "将中文句子翻译成正确的英文单词顺序",
-          "chinese": "向…告别",
+          "chinese": "我们将去不同的学校。",
           "scrambledEnglish": [
-            "goodbye",
+            "going",
             "to",
-            "say"
+            "different",
+            "schools.",
+            "We're"
           ],
           "correctEnglish": [
-            "say",
-            "goodbye",
-            "to"
+            "We're",
+            "going",
+            "to",
+            "different",
+            "schools."
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "你要去哪所中学？",
+          "scrambledEnglish": [
+            "middle",
+            "school",
+            "are",
+            "you",
+            "going",
+            "to?",
+            "Which"
+          ],
+          "correctEnglish": [
+            "Which",
+            "middle",
+            "school",
+            "are",
+            "you",
+            "going",
+            "to?"
+          ]
+        },
+        {
+          "type": "zhtoen",
+          "text": "将中文句子翻译成正确的英文单词顺序",
+          "chinese": "我将要学习历史、科学和地理。",
+          "scrambledEnglish": [
+            "going",
+            "to",
+            "study",
+            "History,",
+            "Science",
+            "and",
+            "Geography.",
+            "I'm"
+          ],
+          "correctEnglish": [
+            "I'm",
+            "going",
+            "to",
+            "study",
+            "History,",
+            "Science",
+            "and",
+            "Geography."
           ]
         }
       ],
