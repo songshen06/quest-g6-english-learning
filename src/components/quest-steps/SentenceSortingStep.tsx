@@ -24,7 +24,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
     setShowFeedback(false)
     setIsCorrect(false)
     setHasPlayedAudio(false)
-  }, [scrambled, correct])
+  }, [step, scrambled, correct])
 
   useEffect(() => {
     if (step.audio && !hasPlayedAudio) {
@@ -70,11 +70,19 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
     const isAnswerCorrect = selectedOrder.length === correct.length &&
                    selectedOrder.every((word, index) => word === correct[index])
 
+    console.log('SentenceSorting - Answer submitted:', {
+      selectedOrder,
+      correct,
+      isAnswerCorrect,
+      stepText: step.text
+    })
+
     setIsCorrect(isAnswerCorrect)
     setShowFeedback(true)
 
     setTimeout(() => {
       if (isAnswerCorrect) {
+        console.log('SentenceSorting - Calling onComplete()')
         onComplete()
       }
     }, 2000)
@@ -82,6 +90,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
 
   const resetOrder = () => {
     setSelectedOrder([])
+    setSelectedWordIndexes([])
     setShowFeedback(false)
   }
 

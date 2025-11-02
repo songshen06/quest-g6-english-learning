@@ -25,11 +25,19 @@ export const QuestRunner: React.FC<QuestRunnerProps> = ({ quest, onQuestComplete
   const currentStep = quest.steps[currentStepIndex]
 
   const handleStepComplete = () => {
+    console.log('QuestRunner - Step completed:', {
+      currentStepIndex,
+      totalSteps: quest.steps.length,
+      stepType: currentStep?.type,
+      stepText: currentStep?.text
+    })
+
     // Notify store of step completion
     completeStep()
 
     // Check if this was the last step
     if (currentStepIndex >= quest.steps.length - 1) {
+      console.log('QuestRunner - Quest completed!')
       // Notify store of quest completion
       completeQuest()
       onQuestComplete?.()
