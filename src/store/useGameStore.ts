@@ -121,14 +121,25 @@ export const useGameStore = create<GameState>()(
 
       completeStep: () => {
         const { currentQuest, currentStepIndex } = get()
-        if (!currentQuest) return
+        if (!currentQuest) {
+          console.log('GameStore - completeStep: No currentQuest')
+          return
+        }
 
         const nextStepIndex = currentStepIndex + 1
+        console.log('GameStore - completeStep:', {
+          currentStepIndex,
+          nextStepIndex,
+          totalSteps: currentQuest.steps.length,
+          currentStep: currentQuest.steps[currentStepIndex]?.type
+        })
 
         if (nextStepIndex >= currentQuest.steps.length) {
           // Quest completed
+          console.log('GameStore - Quest completed, calling completeQuest')
           get().completeQuest()
         } else {
+          console.log('GameStore - Setting currentStepIndex to:', nextStepIndex)
           set({ currentStepIndex: nextStepIndex })
         }
       },

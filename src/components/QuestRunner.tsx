@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ListenStep } from './quest-steps/ListenStep'
 import { SelectStep } from './quest-steps/SelectStep'
 import { SpeakStep } from './quest-steps/SpeakStep'
@@ -23,6 +23,12 @@ export const QuestRunner: React.FC<QuestRunnerProps> = ({ quest, onQuestComplete
   const { completeStep, completeQuest, currentStepIndex, setCurrentStepIndex } = useGameStore()
 
   const currentStep = quest.steps[currentStepIndex]
+
+  // Debug: Monitor currentStepIndex changes
+  useEffect(() => {
+    console.log('QuestRunner - currentStepIndex changed to:', currentStepIndex)
+    console.log('QuestRunner - currentStep is now:', currentStep?.type, currentStep?.text)
+  }, [currentStepIndex, currentStep])
 
   const handleStepComplete = () => {
     console.log('QuestRunner - Step completed:', {
