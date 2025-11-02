@@ -241,50 +241,68 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/i-went-to-chinatown-in-new-york-yesterday.mp3",
           "scrambled": [
-            "an",
-            "email",
-            "send"
+            "went",
+            "to",
+            "Chinatown",
+            "in",
+            "New",
+            "York",
+            "yesterday.",
+            "I"
           ],
           "correct": [
-            "send",
-            "an",
-            "email"
+            "I",
+            "went",
+            "to",
+            "Chinatown",
+            "in",
+            "New",
+            "York",
+            "yesterday."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/we-saw-a-lion-dance-in-the-street.mp3",
           "scrambled": [
+            "saw",
             "a",
-            "big",
-            "surprise",
-            "have"
+            "lion",
+            "dance",
+            "in",
+            "the",
+            "street.",
+            "We"
           ],
           "correct": [
-            "have",
+            "We",
+            "saw",
             "a",
-            "big",
-            "surprise"
+            "lion",
+            "dance",
+            "in",
+            "the",
+            "street."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/it-was-very-exciting.mp3",
           "scrambled": [
-            "and",
-            "lots",
-            "of",
-            "lots"
+            "was",
+            "very",
+            "exciting!",
+            "It"
           ],
           "correct": [
-            "lots",
-            "and",
-            "lots",
-            "of"
+            "It",
+            "was",
+            "very",
+            "exciting!"
           ]
         }
       ],

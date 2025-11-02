@@ -233,41 +233,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
-          "scrambled": [
-            "a",
-            "new",
-            "DVD",
-            "watch"
-          ],
-          "correct": [
-            "watch",
-            "a",
-            "new",
-            "DVD"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
-          "scrambled": [
-            "hours",
-            "a",
-            "day",
-            "twelve"
-          ],
-          "correct": [
-            "twelve",
-            "hours",
-            "a",
-            "day"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/pandas-love-bamboo.mp3",
           "scrambled": [
             "love",
             "bamboo.",
@@ -291,6 +257,67 @@
             "hours",
             "a",
             "day!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/snakes-music.mp3",
+          "scrambled": [
+            "snakes",
+            "love",
+            "music?",
+            "No,",
+            "they",
+            "don't.",
+            "They're",
+            "almost",
+            "deaf!",
+            "Do"
+          ],
+          "correct": [
+            "Do",
+            "snakes",
+            "love",
+            "music?",
+            "No,",
+            "they",
+            "don't.",
+            "They're",
+            "almost",
+            "deaf!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/what-pandas-eat.mp3",
+          "scrambled": [
+            "do",
+            "pandas",
+            "eat?",
+            "What"
+          ],
+          "correct": [
+            "What",
+            "do",
+            "pandas",
+            "eat?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/pandas-eat-bamboo.mp3",
+          "scrambled": [
+            "eat",
+            "bamboo.",
+            "Pandas"
+          ],
+          "correct": [
+            "Pandas",
+            "eat",
+            "bamboo."
           ]
         }
       ],

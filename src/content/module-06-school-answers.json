@@ -203,39 +203,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
-          "scrambled": [
-            "me",
-            "your",
-            "photo",
-            "show"
-          ],
-          "correct": [
-            "show",
-            "me",
-            "your",
-            "photo"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
-          "scrambled": [
-            "difficult",
-            "for",
-            "be"
-          ],
-          "correct": [
-            "be",
-            "difficult",
-            "for"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/chinese-chopsticks.mp3",
           "scrambled": [
             "got",
             "some",
@@ -249,6 +217,75 @@
             "some",
             "Chinese",
             "chopsticks."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/chinese-kite.mp3",
+          "scrambled": [
+            "brother",
+            "has",
+            "got",
+            "a",
+            "Chinese",
+            "kite.",
+            "My"
+          ],
+          "correct": [
+            "My",
+            "brother",
+            "has",
+            "got",
+            "a",
+            "Chinese",
+            "kite."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/book-about-us.mp3",
+          "scrambled": [
+            "you",
+            "got",
+            "a",
+            "book",
+            "about",
+            "the",
+            "US?",
+            "Have"
+          ],
+          "correct": [
+            "Have",
+            "you",
+            "got",
+            "a",
+            "book",
+            "about",
+            "the",
+            "US?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/very-interesting.mp3",
+          "scrambled": [
+            "I",
+            "have.",
+            "It's",
+            "very",
+            "interesting.",
+            "Yes,"
+          ],
+          "correct": [
+            "Yes,",
+            "I",
+            "have.",
+            "It's",
+            "very",
+            "interesting."
           ]
         }
       ],

@@ -176,41 +176,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
-          "scrambled": [
-            "Empire",
-            "State",
-            "Building",
-            "the"
-          ],
-          "correct": [
-            "the",
-            "Empire",
-            "State",
-            "Building"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
-          "scrambled": [
-            "hundred",
-            "metres",
-            "high",
-            "four"
-          ],
-          "correct": [
-            "four",
-            "hundred",
-            "metres",
-            "high"
-          ]
-        },
-        {
-          "type": "sentencesorting",
-          "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/how-long-is-the-great-wall.mp3",
           "scrambled": [
             "long",
             "is",
@@ -226,6 +192,69 @@
             "the",
             "Great",
             "Wall?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第2部分)",
+          "audio": "/audio/tts/its-more-than-forty-thousand-li-long.mp3",
+          "scrambled": [
+            "more",
+            "than",
+            "forty",
+            "thousand",
+            "li",
+            "long.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "more",
+            "than",
+            "forty",
+            "thousand",
+            "li",
+            "long."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第3部分)",
+          "audio": "/audio/tts/how-old-is-it.mp3",
+          "scrambled": [
+            "old",
+            "is",
+            "it?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "old",
+            "is",
+            "it?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/its-more-than-two-thousand-years-old.mp3",
+          "scrambled": [
+            "more",
+            "than",
+            "two",
+            "thousand",
+            "years",
+            "old.",
+            "It's"
+          ],
+          "correct": [
+            "It's",
+            "more",
+            "than",
+            "two",
+            "thousand",
+            "years",
+            "old."
           ]
         }
       ],

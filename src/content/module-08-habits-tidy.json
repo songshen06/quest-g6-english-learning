@@ -269,46 +269,114 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/tidy-your-bed.mp3",
           "scrambled": [
-            "my",
-            "room",
-            "tidy"
+            "you",
+            "often",
+            "tidy",
+            "your",
+            "bed?",
+            "Yes,",
+            "every",
+            "day.",
+            "Do"
           ],
           "correct": [
+            "Do",
+            "you",
+            "often",
             "tidy",
-            "my",
-            "room"
+            "your",
+            "bed?",
+            "Yes,",
+            "every",
+            "day."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/read-stories.mp3",
           "scrambled": [
-            "a",
-            "coin",
-            "find"
+            "you",
+            "often",
+            "read",
+            "stories?",
+            "Do"
           ],
           "correct": [
-            "find",
-            "a",
-            "coin"
+            "Do",
+            "you",
+            "often",
+            "read",
+            "stories?"
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/read-stories-daily.mp3",
           "scrambled": [
-            "Tom's",
-            "bed",
-            "tidy"
+            "I",
+            "read",
+            "stories",
+            "every",
+            "day.",
+            "Yes."
           ],
           "correct": [
-            "tidy",
-            "Tom's",
-            "bed"
+            "Yes.",
+            "I",
+            "read",
+            "stories",
+            "every",
+            "day."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/clean-room.mp3",
+          "scrambled": [
+            "often",
+            "do",
+            "you",
+            "clean",
+            "your",
+            "room?",
+            "How"
+          ],
+          "correct": [
+            "How",
+            "often",
+            "do",
+            "you",
+            "clean",
+            "your",
+            "room?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第5部分)",
+          "audio": "/audio/tts/clean-room-weekends.mp3",
+          "scrambled": [
+            "always",
+            "clean",
+            "my",
+            "room",
+            "on",
+            "weekends.",
+            "I"
+          ],
+          "correct": [
+            "I",
+            "always",
+            "clean",
+            "my",
+            "room",
+            "on",
+            "weekends."
           ]
         }
       ],

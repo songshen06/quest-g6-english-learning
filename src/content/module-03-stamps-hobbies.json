@@ -228,48 +228,83 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/what-are-you-doing.mp3",
           "scrambled": [
-            "...",
-            "into",
-            "put"
+            "are",
+            "you",
+            "doing?",
+            "What"
           ],
           "correct": [
-            "put",
-            "...",
-            "into"
+            "What",
+            "are",
+            "you",
+            "doing?"
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/im-putting-my-new-stamps-into-my-stamp-book.mp3",
           "scrambled": [
-            "from",
-            "the",
-            "UK",
-            "stamp"
+            "putting",
+            "my",
+            "new",
+            "stamps",
+            "into",
+            "my",
+            "stamp",
+            "book.",
+            "I'm"
           ],
           "correct": [
+            "I'm",
+            "putting",
+            "my",
+            "new",
+            "stamps",
+            "into",
+            "my",
             "stamp",
-            "from",
-            "the",
-            "UK"
+            "book."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/have-you-got-any-stamps-from-china.mp3",
           "scrambled": [
-            "me",
-            "emails",
-            "send"
+            "you",
+            "got",
+            "any",
+            "stamps",
+            "from",
+            "China?",
+            "Have"
           ],
           "correct": [
-            "send",
-            "me",
-            "emails"
+            "Have",
+            "you",
+            "got",
+            "any",
+            "stamps",
+            "from",
+            "China?"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/no-i-havent.mp3",
+          "scrambled": [
+            "haven't.",
+            "I",
+            "No"
+          ],
+          "correct": [
+            "No,",
+            "I",
+            "haven't."
           ]
         }
       ],

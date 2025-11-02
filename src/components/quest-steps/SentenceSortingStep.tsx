@@ -35,10 +35,19 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
     }
   }, [step.audio, hasPlayedAudio])
 
-  const handleWordClick = (word: string) => {
-    if (selectedOrder.includes(word)) {
-      // Remove word from selected order
-      setSelectedOrder(prev => prev.filter(w => w !== word))
+  const handleWordClick = (word: string, index: number) => {
+    // Create a unique identifier for this word instance
+    const wordId = `${word}-${index}`
+
+    // Check if this specific word instance is already selected
+    const existingIndex = selectedOrder.findIndex((w, i) => {
+      const selectedWordId = `${w}-${scrambled.indexOf(w)}`
+      return selectedWordId === wordId
+    })
+
+    if (existingIndex !== -1) {
+      // Remove this specific word instance from selected order
+      setSelectedOrder(prev => prev.filter((_, i) => i !== existingIndex))
     } else {
       // Add word to selected order
       setSelectedOrder(prev => [...prev, word])
@@ -71,15 +80,31 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
     setShowFeedback(false)
   }
 
-  const getWordStatus = (word: string) => {
-    const isSelected = selectedOrder.includes(word)
-    const selectedIndex = selectedOrder.indexOf(word)
+  const getWordStatus = (word: string, wordIndex: number) => {
+    // Check if this specific word instance is selected
+    const selectedIndex = selectedOrder.findIndex((w, i) => {
+      const selectedWordId = `${w}-${scrambled.indexOf(w, i === 0 ? 0 : scrambled.indexOf(w) + 1)}`
+      const currentWordId = `${word}-${wordIndex}`
+      return selectedWordId === currentWordId
+    })
+    const isSelected = selectedIndex !== -1
 
     if (isSelected && showFeedback && isCorrect) {
       return 'correct'
     }
     if (isSelected && showFeedback && !isCorrect) {
-      const correctIndex = correct.indexOf(word)
+      // Find the correct position for this word instance
+      let correctIndex = -1
+      let wordCount = 0
+      for (let i = 0; i < correct.length; i++) {
+        if (correct[i] === word) {
+          if (wordCount === wordIndex) {
+            correctIndex = i
+            break
+          }
+          wordCount++
+        }
+      }
       return selectedIndex === correctIndex ? 'correct' : 'incorrect'
     }
 
@@ -129,12 +154,12 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
           <h3 className="text-lg font-semibold text-gray-700 mb-4">点击单词选择正确顺序：</h3>
           <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
             {scrambled.map((word, index) => {
-              const status = getWordStatus(word)
+              const status = getWordStatus(word, index)
 
               return (
                 <button
                   key={`word-${index}`}
-                  onClick={() => handleWordClick(word)}
+                  onClick={() => handleWordClick(word, index)}
                   disabled={status === 'correct'}
                   className={`px-4 py-3 rounded-lg border-2 font-medium text-lg transition-all ${
                     status === 'correct'
@@ -149,7 +174,11 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
                   {word}
                   {status === 'selected' && (
                     <span className="ml-2 text-sm text-blue-600">
-                      #{selectedOrder.indexOf(word) + 1}
+                      #{selectedOrder.findIndex((w, i) => {
+                        const selectedWordId = `${w}-${scrambled.indexOf(w, i === 0 ? 0 : scrambled.indexOf(w) + 1)}`
+                        const currentWordId = `${word}-${index}`
+                        return selectedWordId === currentWordId
+                      }) + 1}
                     </span>
                   )}
                 </button>

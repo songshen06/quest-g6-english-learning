@@ -184,48 +184,121 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/un-building.mp3",
           "scrambled": [
-            "very",
-            "important",
-            "building",
-            "a"
-          ],
-          "correct": [
+            "this",
+            "the",
+            "UN",
+            "building?",
+            "Yes.",
+            "It's",
             "a",
             "very",
             "important",
-            "building"
+            "building",
+            "in",
+            "New",
+            "York.",
+            "Is"
+          ],
+          "correct": [
+            "Is",
+            "this",
+            "the",
+            "UN",
+            "building?",
+            "Yes.",
+            "It's",
+            "a",
+            "very",
+            "important",
+            "building",
+            "in",
+            "New",
+            "York."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/make-peace.mp3",
           "scrambled": [
-            "the",
-            "world",
-            "in"
-          ],
-          "correct": [
+            "UN",
+            "wants",
+            "to",
+            "make",
+            "peace",
             "in",
             "the",
-            "world"
+            "world.",
+            "The"
+          ],
+          "correct": [
+            "The",
+            "UN",
+            "wants",
+            "to",
+            "make",
+            "peace",
+            "in",
+            "the",
+            "world."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/china-member-state.mp3",
+          "scrambled": [
+            "is",
+            "one",
+            "of",
+            "the",
+            "193",
+            "member",
+            "states",
+            "in",
+            "the",
+            "UN.",
+            "China"
+          ],
+          "correct": [
+            "China",
+            "is",
+            "one",
+            "of",
+            "the",
+            "193",
+            "member",
+            "states",
+            "in",
+            "the",
+            "UN."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/un-building-nyc.mp3",
           "scrambled": [
             "UN",
             "building",
-            "the"
+            "is",
+            "in",
+            "New",
+            "York",
+            "City.",
+            "The"
           ],
           "correct": [
-            "the",
+            "The",
             "UN",
-            "building"
+            "building",
+            "is",
+            "in",
+            "New",
+            "York",
+            "City."
           ]
         }
       ],

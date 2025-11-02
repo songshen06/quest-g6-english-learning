@@ -1,6 +1,6 @@
 # Quest G6 - 外研社（一年级起）英语学习系统
 
-![Version](https://img.shields.io/badge/version-2.2.0-blue.svg)
+![Version](https://img.shields.io/badge/version-2.2.1-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![React](https://img.shields.io/badge/react-18.2.0-blue.svg)
 ![TypeScript](https://img.shields.io/badge/typescript-5.2.2-blue.svg)
@@ -268,6 +268,14 @@ npm run preview      # 预览构建结果
 
 ## 版本历史
 
+### v2.2.1 (2025-11-02) - 句子排序练习优化版
+- 🔧 **核心修复**：修复句子排序练习中重复单词选择逻辑错误
+- 📝 **内容优化**：修正所有单元句子排序练习，使用patterns中的完整句型
+- 🎯 **学习提升**：改进练习设计，从短语片段升级为完整实用句型
+- 🏗️ **架构改进**：优化React组件处理重复单词的逻辑
+- 📚 **内容覆盖**：涵盖Module 01-09所有句子排序练习的优化
+- ✅ **质量保证**：确保所有练习使用完整句型而非零散短语
+
 ### v2.2.0 (2025-10-12) - 外研社完整覆盖版
 - 🎯 **完整覆盖**：外研社（一年级起）4-6年级完整覆盖（42个模块）
 - 🎵 **音频升级**：新增978个高质量音频文件
@@ -315,4 +323,4 @@ npm run preview      # 预览构建结果
 
 ---
 
-**Quest G6 v2.2.0** - 让英语学习更加有趣和高效！ 🚀
+**Quest G6 v2.2.1** - 让英语学习更加有趣和高效！ 🚀

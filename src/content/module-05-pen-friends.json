@@ -196,48 +196,102 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/she-can-speak-some-english.mp3",
           "scrambled": [
-            "to",
-            "meet",
-            "you",
-            "pleased"
+            "speak",
+            "some",
+            "English.",
+            "can",
+            "She"
           ],
           "correct": [
-            "pleased",
-            "to",
-            "meet",
-            "you"
+            "She",
+            "can",
+            "speak",
+            "some",
+            "English."
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/can-i-write-to-her.mp3",
           "scrambled": [
-            "pen",
-            "friend",
-            "Chinese"
+            "write",
+            "to",
+            "her?",
+            "I",
+            "Can"
           ],
           "correct": [
-            "Chinese",
-            "pen",
-            "friend"
+            "Can",
+            "I",
+            "write",
+            "to",
+            "her?"
           ]
         },
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/of-course-you-can-write-to-her-in-english.mp3",
           "scrambled": [
-            "to",
-            "her",
-            "write"
-          ],
-          "correct": [
+            "course.",
+            "You",
+            "can",
             "write",
             "to",
-            "her"
+            "her",
+            "in",
+            "English.",
+            "Of"
+          ],
+          "correct": [
+            "Of",
+            "course.",
+            "You",
+            "can",
+            "write",
+            "to",
+            "her",
+            "in",
+            "English."
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第4部分)",
+          "audio": "/audio/tts/pleased-to-meet-you.mp3",
+          "scrambled": [
+            "to",
+            "meet",
+            "you!",
+            "Pleased"
+          ],
+          "correct": [
+            "Pleased",
+            "to",
+            "meet",
+            "you!"
+          ]
+        },
+        {
+          "type": "sentencesorting",
+          "text": "听句子并按正确顺序排列单词 (第5部分)",
+          "audio": "/audio/tts/pleased-to-meet-you-too.mp3",
+          "scrambled": [
+            "to",
+            "meet",
+            "you",
+            "too!",
+            "Pleased"
+          ],
+          "correct": [
+            "Pleased",
+            "to",
+            "meet",
+            "you",
+            "too!"
           ]
         }
       ],
