@@ -9,6 +9,7 @@ interface SentenceSortingStepProps {
 
 export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, onComplete }) => {
   const [selectedOrder, setSelectedOrder] = useState<string[]>([])
+  const [selectedWordIndexes, setSelectedWordIndexes] = useState<number[]>([])
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [hasPlayedAudio, setHasPlayedAudio] = useState(false)
@@ -19,6 +20,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
   // Reset state when step data changes
   useEffect(() => {
     setSelectedOrder([])
+    setSelectedWordIndexes([])
     setShowFeedback(false)
     setIsCorrect(false)
     setHasPlayedAudio(false)
@@ -36,21 +38,24 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
   }, [step.audio, hasPlayedAudio])
 
   const handleWordClick = (word: string, index: number) => {
-    // Create a unique identifier for this word instance
-    const wordId = `${word}-${index}`
+    const selectedIndex = selectedWordIndexes.indexOf(index)
 
-    // Check if this specific word instance is already selected
-    const existingIndex = selectedOrder.findIndex((w, i) => {
-      const selectedWordId = `${w}-${scrambled.indexOf(w)}`
-      return selectedWordId === wordId
-    })
-
-    if (existingIndex !== -1) {
-      // Remove this specific word instance from selected order
-      setSelectedOrder(prev => prev.filter((_, i) => i !== existingIndex))
+    if (selectedIndex !== -1) {
+      // Remove this specific word instance
+      setSelectedOrder(prev => {
+        const newOrder = [...prev]
+        newOrder.splice(selectedIndex, 1)
+        return newOrder
+      })
+      setSelectedWordIndexes(prev => {
+        const newIndexes = [...prev]
+        newIndexes.splice(selectedIndex, 1)
+        return newIndexes
+      })
     } else {
       // Add word to selected order
       setSelectedOrder(prev => [...prev, word])
+      setSelectedWordIndexes(prev => [...prev, index])
     }
   }
 
@@ -81,13 +86,9 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
   }
 
   const getWordStatus = (word: string, wordIndex: number) => {
-    // Check if this specific word instance is selected
-    const selectedIndex = selectedOrder.findIndex((w, i) => {
-      const selectedWordId = `${w}-${scrambled.indexOf(w, i === 0 ? 0 : scrambled.indexOf(w) + 1)}`
-      const currentWordId = `${word}-${wordIndex}`
-      return selectedWordId === currentWordId
-    })
-    const isSelected = selectedIndex !== -1
+    // Check if this specific word instance is selected using the word index tracking
+    const isSelected = selectedWordIndexes.includes(wordIndex)
+    const selectedIndex = selectedWordIndexes.indexOf(wordIndex)
 
     if (isSelected && showFeedback && isCorrect) {
       return 'correct'
@@ -174,11 +175,7 @@ export const SentenceSortingStep: React.FC<SentenceSortingStepProps> = ({ step, 
                   {word}
                   {status === 'selected' && (
                     <span className="ml-2 text-sm text-blue-600">
-                      #{selectedOrder.findIndex((w, i) => {
-                        const selectedWordId = `${w}-${scrambled.indexOf(w, i === 0 ? 0 : scrambled.indexOf(w) + 1)}`
-                        const currentWordId = `${word}-${index}`
-                        return selectedWordId === currentWordId
-                      }) + 1}
+                      #{selectedWordIndexes.indexOf(index) + 1}
                     </span>
                   )}
                 </button>
