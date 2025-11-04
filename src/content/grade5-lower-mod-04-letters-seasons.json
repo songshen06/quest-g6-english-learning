@@ -117,7 +117,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/i-sent-you-a-maths-game-did-you-get-it.mp3",
           "scrambled": [
             "sent",
             "you",
@@ -146,7 +146,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/yes-grandma-thank-you.mp3",
           "scrambled": [
             "Grandma.",
             "Thank",
@@ -163,7 +163,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/and-i-sent-you-english-books-did-you-read-them.mp3",
           "scrambled": [
             "I",
             "sent",

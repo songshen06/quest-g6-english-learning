@@ -274,7 +274,102 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Only drink clean water!",
+          "audio": "/audio/tts/only-drink-clean-water.mp3",
+          "scrambledChinese": [
+            "喝",
+            "水",
+            "的",
+            "只",
+            "干净",
+            "！"
+          ],
+          "correctChinese": [
+            "只",
+            "喝",
+            "干净",
+            "的",
+            "水",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This water is very clean. It's fun to drink this way.",
+          "audio": "/audio/tts/this-water-is-very-clean-its-fun-to-drink-this-way.mp3",
+          "scrambledChinese": [
+            "这样",
+            "这",
+            "。",
+            "很",
+            "喝",
+            "。",
+            "水",
+            "很",
+            "有趣",
+            "干净"
+          ],
+          "correctChinese": [
+            "这",
+            "水",
+            "很",
+            "干净",
+            "。",
+            "这样",
+            "喝",
+            "很",
+            "有趣",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Don't cross the road here!",
+          "audio": "/audio/tts/dont-cross-the-road-here.mp3",
+          "scrambledChinese": [
+            "在",
+            "这里",
+            "马路",
+            "！",
+            "穿行",
+            "不要"
+          ],
+          "correctChinese": [
+            "不要",
+            "在",
+            "这里",
+            "穿行",
+            "马路",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Cross at the traffic lights.",
+          "audio": "/audio/tts/cross-at-the-traffic-lights.mp3",
+          "scrambledChinese": [
+            "处",
+            "穿行",
+            "。",
+            "红绿灯",
+            "在"
+          ],
+          "correctChinese": [
+            "在",
+            "红绿灯",
+            "处",
+            "穿行",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

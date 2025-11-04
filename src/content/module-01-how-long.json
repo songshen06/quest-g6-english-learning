@@ -271,14 +271,19 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "How long is the Great Wall?",
+          "audio": "/audio/tts/how-long-is-the-great-wall.mp3",
           "scrambledChinese": [
-            "有多长",
+            "吗",
+            "是",
+            "长城",
             "？",
-            "长城"
+            "这"
           ],
           "correctChinese": [
+            "这",
+            "是",
             "长城",
-            "有多长",
+            "吗",
             "？"
           ]
         },
@@ -286,23 +291,18 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "It's more than forty thousand li long.",
+          "audio": "/audio/tts/its-more-than-forty-thousand-li-long.mp3",
           "scrambledChinese": [
-            "有",
-            "四",
-            "万",
-            "多",
-            "里",
             "长",
+            "四万多里",
+            "它",
             "。",
-            "它"
+            "有"
           ],
           "correctChinese": [
             "它",
             "有",
-            "四",
-            "万",
-            "多",
-            "里",
+            "四万多里",
             "长",
             "。"
           ]
@@ -311,23 +311,18 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "How old is it?",
+          "audio": "/audio/tts/how-old-is-it.mp3",
           "scrambledChinese": [
-            "有",
-            "多",
-            "少",
-            "年",
-            "的",
             "历史",
-            "？",
-            "它"
+            "有",
+            "多少年",
+            "它",
+            "？"
           ],
           "correctChinese": [
             "它",
             "有",
-            "多",
-            "少",
-            "年",
-            "的",
+            "多少年",
             "历史",
             "？"
           ]
@@ -336,13 +331,10 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "It's more than two thousand years old.",
+          "audio": "/audio/tts/its-more-than-two-thousand-years-old.mp3",
           "scrambledChinese": [
             "有",
-            "两",
-            "千",
-            "多",
-            "年",
-            "的",
+            "两千多年",
             "历史",
             "了",
             "。",
@@ -351,11 +343,7 @@
           "correctChinese": [
             "它",
             "有",
-            "两",
-            "千",
-            "多",
-            "年",
-            "的",
+            "两千多年",
             "历史",
             "了",
             "。"

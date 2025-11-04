@@ -286,7 +286,74 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What do you do on Thanksgiving day?",
+          "audio": "/audio/tts/what-do-you-do-on-thanksgiving-day.mp3",
+          "scrambledChinese": [
+            "你们",
+            "做什么",
+            "？",
+            "感恩节"
+          ],
+          "correctChinese": [
+            "感恩节",
+            "你们",
+            "做什么",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "We always have a big, special dinner.",
+          "audio": "/audio/tts/we-always-have-a-big-special-dinner.mp3",
+          "scrambledChinese": [
+            "。",
+            "吃",
+            "的",
+            "一顿",
+            "我们",
+            "晚餐",
+            "特别",
+            "总是",
+            "丰盛"
+          ],
+          "correctChinese": [
+            "我们",
+            "总是",
+            "吃",
+            "一顿",
+            "丰盛",
+            "的",
+            "特别",
+            "晚餐",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What's your favourite festival?",
+          "audio": "/audio/tts/whats-your-favourite-festival.mp3",
+          "scrambledChinese": [
+            "你",
+            "？",
+            "节日",
+            "最喜欢",
+            "什么"
+          ],
+          "correctChinese": [
+            "你",
+            "最喜欢",
+            "什么",
+            "节日",
+            "？"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

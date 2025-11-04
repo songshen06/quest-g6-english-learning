@@ -314,7 +314,76 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I went to Chinatown in New York yesterday.",
+          "audio": "/audio/tts/i-went-to-chinatown-in-new-york-yesterday.mp3",
+          "scrambledChinese": [
+            "唐人街",
+            "纽约",
+            "去了",
+            "昨天",
+            "我",
+            "。",
+            "的"
+          ],
+          "correctChinese": [
+            "我",
+            "昨天",
+            "去了",
+            "纽约",
+            "的",
+            "唐人街",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "We saw a lion dance in the street.",
+          "audio": "/audio/tts/we-saw-a-lion-dance-in-the-street.mp3",
+          "scrambledChinese": [
+            "了",
+            "在",
+            "舞狮",
+            "我们",
+            "街道",
+            "看到",
+            "。",
+            "上"
+          ],
+          "correctChinese": [
+            "我们",
+            "在",
+            "街道",
+            "上",
+            "看到",
+            "了",
+            "舞狮",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It was very exciting!",
+          "audio": "/audio/tts/it-was-very-exciting.mp3",
+          "scrambledChinese": [
+            "！",
+            "它",
+            "非常",
+            "有趣"
+          ],
+          "correctChinese": [
+            "它",
+            "非常",
+            "有趣",
+            "！"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

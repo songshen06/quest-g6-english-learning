@@ -303,7 +303,114 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "She can speak some English.",
+          "audio": "/audio/tts/she-can-speak-some-english.mp3",
+          "scrambledChinese": [
+            "。",
+            "一些",
+            "英语",
+            "她",
+            "说",
+            "会"
+          ],
+          "correctChinese": [
+            "她",
+            "会",
+            "说",
+            "一些",
+            "英语",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Can I write to her? Of course. You can write to her in English.",
+          "audio": "/audio/tts/can-i-write-to-her-of-course-you-can-write-to-her-in-english.mp3",
+          "scrambledChinese": [
+            "英语",
+            "用",
+            "给",
+            "你",
+            "给",
+            "她",
+            "可以",
+            "我",
+            "写信",
+            "她",
+            "。",
+            "可以",
+            "写信",
+            "？",
+            "。",
+            "吗",
+            "当然"
+          ],
+          "correctChinese": [
+            "我",
+            "可以",
+            "给",
+            "她",
+            "写信",
+            "吗",
+            "？",
+            "当然",
+            "。",
+            "你",
+            "可以",
+            "用",
+            "英语",
+            "给",
+            "她",
+            "写信",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Pleased to meet you!",
+          "audio": "/audio/tts/pleased-to-meet-you.mp3",
+          "scrambledChinese": [
+            "很高兴",
+            "！",
+            "你",
+            "认识"
+          ],
+          "correctChinese": [
+            "很高兴",
+            "认识",
+            "你",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Pleased to meet you too!",
+          "audio": "/audio/tts/pleased-to-meet-you-too.mp3",
+          "scrambledChinese": [
+            "我",
+            "！",
+            "很高兴",
+            "你",
+            "认识",
+            "也"
+          ],
+          "correctChinese": [
+            "我",
+            "也",
+            "很高兴",
+            "认识",
+            "你",
+            "！"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

@@ -310,7 +310,124 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Is this the UN building? Yes. It's a very important building in New York.",
+          "audio": "/audio/tts/is-this-the-un-building-yes-its-a-very-important-building-in-new-york.mp3",
+          "scrambledChinese": [
+            "。",
+            "是",
+            "它",
+            "重要",
+            "的",
+            "。",
+            "吗",
+            "非常",
+            "？",
+            "一个",
+            "是",
+            "大楼",
+            "建筑",
+            "是",
+            "纽约",
+            "联合国",
+            "这",
+            "的"
+          ],
+          "correctChinese": [
+            "这",
+            "是",
+            "联合国",
+            "大楼",
+            "吗",
+            "？",
+            "是",
+            "的",
+            "。",
+            "它",
+            "是",
+            "纽约",
+            "一个",
+            "非常",
+            "重要",
+            "的",
+            "建筑",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The UN wants to make peace in the world.",
+          "audio": "/audio/tts/the-un-wants-to-make-peace-in-the-world.mp3",
+          "scrambledChinese": [
+            "上",
+            "在",
+            "联合国",
+            "和平",
+            "缔造",
+            "世界",
+            "想",
+            "。"
+          ],
+          "correctChinese": [
+            "联合国",
+            "想",
+            "在",
+            "世界",
+            "上",
+            "缔造",
+            "和平",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "China is one of the 193 member states in the UN.",
+          "audio": "/audio/tts/china-is-one-of-the-193-member-states-in-the-un.mp3",
+          "scrambledChinese": [
+            "中国",
+            "成员国",
+            "是",
+            "。",
+            "联合国",
+            "193个",
+            "之一"
+          ],
+          "correctChinese": [
+            "中国",
+            "是",
+            "联合国",
+            "193个",
+            "成员国",
+            "之一",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The UN building is in New York City.",
+          "audio": "/audio/tts/the-un-building-is-in-new-york-city.mp3",
+          "scrambledChinese": [
+            "在",
+            "大楼",
+            "纽约市",
+            "。",
+            "联合国"
+          ],
+          "correctChinese": [
+            "联合国",
+            "大楼",
+            "在",
+            "纽约市",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

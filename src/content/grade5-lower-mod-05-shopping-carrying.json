@@ -164,7 +164,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/carry-it-on-my-back.mp3",
           "scrambled": [
             "it",
             "on",
@@ -183,7 +183,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/this-black-bag-is-nice-its-big.mp3",
           "scrambled": [
             "black",
             "bag",
@@ -206,7 +206,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/look-at-this-green-one-its-light.mp3",
           "scrambled": [
             "at",
             "this",

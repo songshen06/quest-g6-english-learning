@@ -108,7 +108,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/talk-to-friends.mp3",
           "scrambled": [
             "to",
             "friends",
@@ -123,7 +123,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/have-you-got-the-harry-potter-dvds.mp3",
           "scrambled": [
             "you",
             "got",
@@ -146,7 +146,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/sorry-we-havent-got-the-dvds-but-we-have-got-the-books.mp3",
           "scrambled": [
             "we",
             "haven’t",
@@ -185,78 +185,7 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [
-        {
-          "type": "entozh",
-          "text": "将英语句子翻译成正确的中文顺序",
-          "english": "Have you got the Harry Potter DVDs?",
-          "scrambledChinese": [
-            "有",
-            "哈",
-            "利",
-            "波",
-            "特",
-            "的",
-            "D",
-            "V",
-            "D",
-            "吗",
-            "？",
-            "你"
-          ],
-          "correctChinese": [
-            "你",
-            "有",
-            "哈",
-            "利",
-            "波",
-            "特",
-            "的",
-            "D",
-            "V",
-            "D",
-            "吗",
-            "？"
-          ]
-        },
-        {
-          "type": "entozh",
-          "text": "将英语句子翻译成正确的中文顺序",
-          "english": "Sorry, we haven’t got the DVDs. But we have got the books.",
-          "scrambledChinese": [
-            "歉",
-            "，",
-            "没",
-            "有",
-            "D",
-            "V",
-            "D",
-            "，",
-            "不",
-            "过",
-            "有",
-            "书",
-            "。",
-            "抱"
-          ],
-          "correctChinese": [
-            "抱",
-            "歉",
-            "，",
-            "没",
-            "有",
-            "D",
-            "V",
-            "D",
-            "，",
-            "不",
-            "过",
-            "有",
-            "书",
-            "。"
-          ]
-        }
-      ],
+      "steps": [],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

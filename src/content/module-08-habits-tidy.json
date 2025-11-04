@@ -388,7 +388,144 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Do you often tidy your bed? Yes, every day.",
+          "audio": "/audio/tts/do-you-often-tidy-your-bed-yes-every-day.mp3",
+          "scrambledChinese": [
+            "整理",
+            "每天",
+            "的",
+            "是",
+            "，",
+            "。",
+            "你",
+            "床铺",
+            "吗",
+            "？",
+            "经常"
+          ],
+          "correctChinese": [
+            "你",
+            "经常",
+            "整理",
+            "床铺",
+            "吗",
+            "？",
+            "是",
+            "的",
+            "，",
+            "每天",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Do you often read stories?",
+          "audio": "/audio/tts/do-you-often-read-stories.mp3",
+          "scrambledChinese": [
+            "读",
+            "故事",
+            "？",
+            "经常",
+            "吗",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "经常",
+            "读",
+            "故事",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes. I read stories every day.",
+          "audio": "/audio/tts/yes-i-read-stories-every-day.mp3",
+          "scrambledChinese": [
+            "的",
+            "读",
+            "是",
+            "我",
+            "都",
+            "每天",
+            "故事",
+            "。",
+            "。"
+          ],
+          "correctChinese": [
+            "是",
+            "的",
+            "。",
+            "我",
+            "每天",
+            "都",
+            "读",
+            "故事",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How often do you clean your room?",
+          "audio": "/audio/tts/how-often-do-you-clean-your-room.mp3",
+          "scrambledChinese": [
+            "你",
+            "多久",
+            "？",
+            "房间",
+            "打扫",
+            "的",
+            "一次",
+            "你"
+          ],
+          "correctChinese": [
+            "你",
+            "多久",
+            "打扫",
+            "一次",
+            "你",
+            "的",
+            "房间",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I always clean my room on weekends.",
+          "audio": "/audio/tts/i-always-clean-my-room-on-weekends.mp3",
+          "scrambledChinese": [
+            "的",
+            "房间",
+            "打扫",
+            "我",
+            "在",
+            "我",
+            "。",
+            "周末",
+            "总是"
+          ],
+          "correctChinese": [
+            "我",
+            "总是",
+            "在",
+            "周末",
+            "打扫",
+            "我",
+            "的",
+            "房间",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

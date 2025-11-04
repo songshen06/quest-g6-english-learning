@@ -329,7 +329,116 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Pandas love bamboo. They eat for twelve hours a day!",
+          "audio": "/audio/tts/pandas-love-bamboo-they-eat-for-twelve-hours-a-day.mp3",
+          "scrambledChinese": [
+            "。",
+            "十二",
+            "小时",
+            "熊猫",
+            "竹子",
+            "一天",
+            "吃",
+            "它们",
+            "个",
+            "喜欢",
+            "！"
+          ],
+          "correctChinese": [
+            "熊猫",
+            "喜欢",
+            "竹子",
+            "。",
+            "它们",
+            "一天",
+            "吃",
+            "十二",
+            "个",
+            "小时",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Do snakes love music? No, they don't. They're almost deaf!",
+          "audio": "/audio/tts/do-snakes-love-music-no-they-dont-theyre-almost-deaf.mp3",
+          "scrambledChinese": [
+            "。",
+            "吗",
+            "几乎",
+            "全聋",
+            "喜欢",
+            "不",
+            "，",
+            "喜欢",
+            "！",
+            "不",
+            "？",
+            "它们",
+            "蛇",
+            "它们",
+            "音乐"
+          ],
+          "correctChinese": [
+            "蛇",
+            "喜欢",
+            "音乐",
+            "吗",
+            "？",
+            "不",
+            "，",
+            "它们",
+            "不",
+            "喜欢",
+            "。",
+            "它们",
+            "几乎",
+            "全聋",
+            "！"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What do pandas eat?",
+          "audio": "/audio/tts/what-do-pandas-eat.mp3",
+          "scrambledChinese": [
+            "？",
+            "熊猫",
+            "什么",
+            "吃"
+          ],
+          "correctChinese": [
+            "熊猫",
+            "吃",
+            "什么",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Pandas eat bamboo.",
+          "audio": "/audio/tts/pandas-eat-bamboo.mp3",
+          "scrambledChinese": [
+            "。",
+            "熊猫",
+            "吃",
+            "竹子"
+          ],
+          "correctChinese": [
+            "熊猫",
+            "吃",
+            "竹子",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

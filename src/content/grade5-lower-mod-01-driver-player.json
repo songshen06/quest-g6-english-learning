@@ -125,7 +125,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第1部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第1部分.mp3",
+          "audio": "/audio/tts/my-grandma-was-a-driver-before.mp3",
           "scrambled": [
             "grandma",
             "was",
@@ -146,7 +146,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第2部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第2部分.mp3",
+          "audio": "/audio/tts/what-did-she-drive.mp3",
           "scrambled": [
             "did",
             "she",
@@ -163,7 +163,7 @@
         {
           "type": "sentencesorting",
           "text": "听句子并按正确顺序排列单词 (第3部分)",
-          "audio": "/audio/tts/听句子并按正确顺序排列单词-第3部分.mp3",
+          "audio": "/audio/tts/she-drove-a-bus.mp3",
           "scrambled": [
             "drove",
             "a",
@@ -186,7 +186,132 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My grandma was a driver before.",
+          "audio": "/audio/tts/my-grandma-was-a-driver-before.mp3",
+          "scrambledChinese": [
+            "是",
+            "奶奶",
+            "以前",
+            "司机",
+            "我",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "奶奶",
+            "以前",
+            "是",
+            "司机",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What did she drive?",
+          "audio": "/audio/tts/what-did-she-drive.mp3",
+          "scrambledChinese": [
+            "车",
+            "什么",
+            "她",
+            "？",
+            "开"
+          ],
+          "correctChinese": [
+            "她",
+            "开",
+            "什么",
+            "车",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "She drove a bus.",
+          "audio": "/audio/tts/she-drove-a-bus.mp3",
+          "scrambledChinese": [
+            "。",
+            "开过",
+            "公交车",
+            "她"
+          ],
+          "correctChinese": [
+            "她",
+            "开过",
+            "公交车",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My grandpa was a flute player before.",
+          "audio": "/audio/tts/my-grandpa-was-a-flute-player-before.mp3",
+          "scrambledChinese": [
+            "是",
+            "以前",
+            "笛子",
+            "爷爷",
+            "演奏者",
+            "。",
+            "我"
+          ],
+          "correctChinese": [
+            "我",
+            "爷爷",
+            "以前",
+            "是",
+            "笛子",
+            "演奏者",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What music did he play?",
+          "audio": "/audio/tts/what-music-did-he-play.mp3",
+          "scrambledChinese": [
+            "他",
+            "音乐",
+            "什么",
+            "演奏",
+            "？"
+          ],
+          "correctChinese": [
+            "他",
+            "演奏",
+            "什么",
+            "音乐",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "He played Chinese music.",
+          "audio": "/audio/tts/he-played-chinese-music.mp3",
+          "scrambledChinese": [
+            "他",
+            "。",
+            "中国",
+            "音乐",
+            "演奏"
+          ],
+          "correctChinese": [
+            "他",
+            "演奏",
+            "中国",
+            "音乐",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

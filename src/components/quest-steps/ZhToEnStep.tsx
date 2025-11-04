@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Volume2 } from 'lucide-react'
 import { QuestStep } from '@/types'
 import { audioPlayer } from '@/utils/audioPlayer'
@@ -20,6 +20,13 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
   const chinese = step.chinese || ''
   const scrambledEnglish = step.scrambledEnglish || []
   const correctEnglish = step.correctEnglish || []
+
+  // Reset state when step changes
+  useEffect(() => {
+    setSelectedOrder([])
+    setShowFeedback(false)
+    setIsCorrect(false)
+  }, [step])
 
   const handleWordClick = (word: string) => {
     if (selectedOrder.includes(word)) {

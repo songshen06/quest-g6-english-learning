@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { QuestStep } from '@/types'
+import { audioPlayer } from '@/utils/audioPlayer'
 
 interface EnToZhStepProps {
   step: QuestStep
@@ -10,10 +11,31 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
   const [selectedOrder, setSelectedOrder] = useState<string[]>([])
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
+  const [isPlayingAudio, setIsPlayingAudio] = useState(false)
 
   const english = step.english || ''
   const scrambledChinese = step.scrambledChinese || []
   const correctChinese = step.correctChinese || []
+
+  // Reset state when step changes
+  useEffect(() => {
+    setSelectedOrder([])
+    setShowFeedback(false)
+    setIsCorrect(false)
+  }, [step])
+
+  const handlePlayAudio = async () => {
+    if (step.audio) {
+      try {
+        setIsPlayingAudio(true)
+        await audioPlayer.play(step.audio)
+      } catch (error) {
+        console.error('Failed to play audio:', error)
+      } finally {
+        setIsPlayingAudio(false)
+      }
+    }
+  }
 
   const handleWordClick = (word: string) => {
     if (selectedOrder.includes(word)) {
@@ -68,7 +90,28 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
 
         {/* English sentence */}
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-gray-700 mb-4">英语句子：</h3>
+          <div className="flex items-center justify-center mb-4">
+            <h3 className="text-lg font-semibold text-gray-700">英语句子：</h3>
+            {step.audio && (
+              <button
+                onClick={handlePlayAudio}
+                disabled={isPlayingAudio}
+                className="ml-3 p-2 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                title="播放英文句子"
+              >
+                {isPlayingAudio ? (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                ) : (
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )}
+              </button>
+            )}
+          </div>
           <div className="bg-blue-50 p-6 rounded-lg max-w-3xl mx-auto">
             <p className="text-2xl font-medium text-blue-900">
               {english}

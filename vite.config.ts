@@ -8,6 +8,18 @@ import path from 'path'
 
 export default defineConfig({
   base: '/quest-g6-english-learning/',
+  server: {
+    host: true, // 允许外部访问
+    port: 5173,
+    fs: {
+      // 减少文件系统监控范围
+      strict: false
+    }
+  },
+  optimizeDeps: {
+    // 预构建依赖以加速启动
+    include: ['react', 'react-dom', 'lucide-react', 'clsx']
+  },
   plugins: [
     react(),
     viteStaticCopy({
@@ -22,7 +34,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       strategies: 'generateSW',
       devOptions: {
-        enabled: true, // 在开发环境中也启用PWA
+        enabled: false, // 在开发环境中禁用PWA以加速启动
         type: 'module'
       },
       workbox: {

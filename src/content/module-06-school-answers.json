@@ -297,7 +297,112 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I've got some Chinese chopsticks.",
+          "audio": "/audio/tts/ive-got-some-chinese-chopsticks.mp3",
+          "scrambledChinese": [
+            "筷子",
+            "中国",
+            "我",
+            "。",
+            "一些",
+            "有"
+          ],
+          "correctChinese": [
+            "我",
+            "有",
+            "一些",
+            "中国",
+            "筷子",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My brother has got a Chinese kite.",
+          "audio": "/audio/tts/my-brother-has-got-a-chinese-kite.mp3",
+          "scrambledChinese": [
+            "有",
+            "我",
+            "哥哥",
+            "。",
+            "一个",
+            "中国",
+            "风筝"
+          ],
+          "correctChinese": [
+            "我",
+            "哥哥",
+            "有",
+            "一个",
+            "中国",
+            "风筝",
+            "。"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Have you got a book about the US?",
+          "audio": "/audio/tts/have-you-got-a-book-about-the-us.mp3",
+          "scrambledChinese": [
+            "关于",
+            "美国",
+            "？",
+            "有",
+            "的",
+            "书",
+            "你",
+            "吗",
+            "一本"
+          ],
+          "correctChinese": [
+            "你",
+            "有",
+            "一本",
+            "关于",
+            "美国",
+            "的",
+            "书",
+            "吗",
+            "？"
+          ]
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, I have. It's very interesting.",
+          "audio": "/audio/tts/yes-i-have-its-very-interesting.mp3",
+          "scrambledChinese": [
+            "有趣",
+            "是",
+            "。",
+            "，",
+            "很",
+            "有",
+            "我",
+            "。",
+            "的",
+            "它"
+          ],
+          "correctChinese": [
+            "是",
+            "的",
+            "，",
+            "我",
+            "有",
+            "。",
+            "它",
+            "很",
+            "有趣",
+            "。"
+          ]
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

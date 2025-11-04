@@ -1,140 +1,77 @@
 ================================================================================
 🎵 音频质量检查报告 (基于 Whisper ASR)
 ================================================================================
-📅 检查时间: 2025-10-15 15:03:12
+📅 检查时间: 2025-11-02 17:50:10
 🤖 使用的模型: Whisper Base
 
 📊 统计摘要:
-   总计检查: 31
-   高质量 (≥90%): 12 (38.7%)
-   中等质量 (70-89%): 3 (9.7%)
-   低质量 (<70%): 7 (22.6%)
-   文件缺失: 9
+   总计检查: 22
+   高质量 (≥90%): 14 (63.6%)
+   中等质量 (70-89%): 3 (13.6%)
+   低质量 (<70%): 5 (22.7%)
+   文件缺失: 0
    转录失败: 0
 
 ⚠️ 需要关注的音频文件:
 --------------------------------------------------------------------------------
-📁 grade6-lower-mod-01-pattern-3 (pattern)
-   文件: its-thirteen-dollars-and-twenty-five-cents.mp3
-   原文: 'It's thirteen dollars and twenty-five cents.'
-   识别: 'It's $13.25.'
-   相似度: 16.3%
+📁 grade6-upper-mod-05-quest1-step2 (quest)
+   文件: of-course-you-can-write-to-her-in-english.mp3
+   原文: '听句子并按正确顺序排列单词 (第3部分)'
+   识别: 'Of course, you can write to her in English.'
+   相似度: 3.4%
    ⚠️  识别准确率极低
-   ⚠️  音频可能被截断
+   ⚠️  音频可能包含额外内容
 
-📁 grade4-upper-mod-01-word-1 (word)
-   文件: were.mp3
-   原文: 'were'
-   识别: 'or'
-   相似度: 33.3%
+📁 grade6-upper-mod-05-quest1-step0 (quest)
+   文件: she-can-speak-some-english.mp3
+   原文: '听句子并按正确顺序排列单词 (第1部分)'
+   识别: 'She can speak some English.'
+   相似度: 4.5%
    ⚠️  识别准确率极低
 
-📁 grade6-lower-mod-01-pattern-0 (pattern)
-   文件: what-do-you-want-to-eat.mp3
-   原文: 'What do you want to eat?'
-   识别: 'Do you tweet?'
-   相似度: 51.4%
-   ⚠️  识别准确率较低
+📁 grade6-upper-mod-05-quest1-step4 (quest)
+   文件: pleased-to-meet-you-too.mp3
+   原文: '听句子并按正确顺序排列单词 (第5部分)'
+   识别: 'List to meet you too.'
+   相似度: 5.3%
+   ⚠️  识别准确率极低
 
-📁 grade6-lower-mod-01-word-6 (word)
-   文件: meal.mp3
-   原文: 'meal'
-   识别: 'mesland'
-   相似度: 54.5%
-   ⚠️  识别准确率较低
+📁 grade6-upper-mod-05-quest1-step1 (quest)
+   文件: can-i-write-to-her.mp3
+   原文: '听句子并按正确顺序排列单词 (第2部分)'
+   识别: 'that I write to her.'
+   相似度: 5.4%
+   ⚠️  识别准确率极低
 
-📁 grade6-lower-mod-01-phrase-0 (phrase)
-   文件: what-do-you-want.mp3
-   原文: 'What do you want?'
-   识别: 'Do you?'
-   相似度: 54.5%
-   ⚠️  识别准确率较低
-   ⚠️  音频可能被截断
+📁 grade6-upper-mod-05-quest1-step3 (quest)
+   文件: pleased-to-meet-you.mp3
+   原文: '听句子并按正确顺序排列单词 (第4部分)'
+   识别: 'List to meet you.'
+   相似度: 5.9%
+   ⚠️  识别准确率极低
 
-📁 grade4-upper-mod-01-phrase-0 (phrase)
-   文件: birthday-party.mp3
-   原文: 'birthday party'
-   识别: 'Riftik Party.'
-   相似度: 61.5%
-   ⚠️  识别准确率较低
+📁 grade6-upper-mod-05-phrase-0 (phrase)
+   文件: pleased-to-meet-you.mp3
+   原文: 'pleased to meet you'
+   识别: 'List to meet you.'
+   相似度: 80.0%
 
-📁 grade6-lower-mod-01-pattern-1 (pattern)
-   文件: i-want-a-hot-dog-please.mp3
-   原文: 'I want a hot dog, please.'
-   识别: 'I am HeartDoc. Please.'
-   相似度: 69.8%
-   ⚠️  识别准确率较低
+📁 grade6-upper-mod-05-pattern-2 (pattern)
+   文件: pleased-to-meet-you.mp3
+   原文: 'Pleased to meet you!'
+   识别: 'List to meet you.'
+   相似度: 80.0%
 
-📁 grade6-lower-mod-01-word-5 (word)
-   文件: cent.mp3
-   原文: 'cent'
-   识别: 'Sent.'
-   相似度: 75.0%
-
-📁 grade6-lower-mod-01-phrase-1 (phrase)
-   文件: i-want-a-hamburger.mp3
-   原文: 'I want a hamburger.'
-   识别: 'I am Hamburger.'
-   相似度: 81.2%
-
-📁 grade6-lower-mod-01-word-0 (word)
-   文件: hot-dog.mp3
-   原文: 'hot dog'
-   识别: 'hop dog'
-   相似度: 85.7%
-
-❌ 严重问题:
---------------------------------------------------------------------------------
-📁 grade4-upper-mod-01-word-2 (word)
-   文件: dear.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade4-upper-mod-01-word-3 (word)
-   文件: soon.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade4-upper-mod-01-word-4 (word)
-   文件: friend.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade4-upper-mod-01-quest1-step0 (quest)
-   文件: 听句子并按正确顺序排列单词-第1部分.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade4-upper-mod-01-quest1-step1 (quest)
-   文件: 听句子并按正确顺序排列单词-第2部分.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade4-upper-mod-01-quest1-step2 (quest)
-   文件: 听句子并按正确顺序排列单词-第3部分.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade6-lower-mod-01-quest1-step0 (quest)
-   文件: 听句子并按正确顺序排列单词-第1部分.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade6-lower-mod-01-quest1-step1 (quest)
-   文件: 听句子并按正确顺序排列单词-第2部分.mp3
-   状态: missing
-   问题: 音频文件不存在
-
-📁 grade6-lower-mod-01-quest1-step2 (quest)
-   文件: 听句子并按正确顺序排列单词-第3部分.mp3
-   状态: missing
-   问题: 音频文件不存在
+📁 grade6-upper-mod-05-pattern-3 (pattern)
+   文件: pleased-to-meet-you-too.mp3
+   原文: 'Pleased to meet you too!'
+   识别: 'List to meet you too.'
+   相似度: 83.7%
 
 💡 建议:
 --------------------------------------------------------------------------------
-🔄 重新生成 7 个低质量音频文件
+🔄 重新生成 5 个低质量音频文件
    建议检查音频生成参数或文本内容
-📝 生成 9 个缺失的音频文件
 
 🎯 整体建议:
    🔴 音频质量需要改进，建议系统检查

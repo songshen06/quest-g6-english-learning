@@ -321,11 +321,12 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "What are you doing?",
+          "audio": "/audio/tts/what-are-you-doing.mp3",
           "scrambledChinese": [
-            "在",
             "做什么",
+            "你",
             "？",
-            "你"
+            "在"
           ],
           "correctChinese": [
             "你",
@@ -338,20 +339,17 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "I'm putting my new stamps into my stamp book.",
+          "audio": "/audio/tts/im-putting-my-new-stamps-into-my-stamp-book.mp3",
           "scrambledChinese": [
-            "正在",
-            "把",
             "新",
-            "邮票",
-            "放",
-            "进",
-            "我",
-            "的",
-            "集",
-            "邮",
-            "册里",
             "。",
-            "我"
+            "里",
+            "邮票",
+            "放进",
+            "把",
+            "我",
+            "集邮册",
+            "正在"
           ],
           "correctChinese": [
             "我",
@@ -359,13 +357,9 @@
             "把",
             "新",
             "邮票",
-            "放",
-            "进",
-            "我",
-            "的",
-            "集",
-            "邮",
-            "册里",
+            "放进",
+            "集邮册",
+            "里",
             "。"
           ]
         },
@@ -373,21 +367,20 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "Have you got any stamps from China?",
+          "audio": "/audio/tts/have-you-got-any-stamps-from-china.mp3",
           "scrambledChinese": [
-            "有",
-            "中",
-            "国",
-            "的",
-            "邮票",
-            "吗",
             "？",
-            "你"
+            "有",
+            "中国",
+            "吗",
+            "的",
+            "你",
+            "邮票"
           ],
           "correctChinese": [
             "你",
             "有",
-            "中",
-            "国",
+            "中国",
             "的",
             "邮票",
             "吗",
@@ -398,20 +391,19 @@
           "type": "entozh",
           "text": "将英语句子翻译成正确的中文顺序",
           "english": "No, I haven't.",
+          "audio": "/audio/tts/no-i-havent.mp3",
           "scrambledChinese": [
             "，",
+            "不",
+            "没有",
             "我",
-            "没",
-            "有",
-            "。",
-            "不"
+            "。"
           ],
           "correctChinese": [
             "不",
             "，",
             "我",
-            "没",
-            "有",
+            "没有",
             "。"
           ]
         }
