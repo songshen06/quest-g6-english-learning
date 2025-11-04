@@ -196,6 +196,122 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I sent you a maths game. Did you get it?",
+          "scrambledChinese": [
+            "我",
+            "寄",
+            "给",
+            "你",
+            "一个",
+            "数学",
+            "游戏。",
+            "你",
+            "收到",
+            "了",
+            "吗？"
+          ],
+          "correctChinese": [
+            "我",
+            "寄",
+            "给",
+            "你",
+            "一个",
+            "数学",
+            "游戏。",
+            "你",
+            "收到",
+            "了",
+            "吗？"
+          ],
+          "audio": "/audio/tts/i-sent-you-a-maths-game-did-you-get-it.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, Grandma. Thank you.",
+          "scrambledChinese": [
+            "收到",
+            "了",
+            "，",
+            "谢谢",
+            "奶奶。"
+          ],
+          "correctChinese": [
+            "收到",
+            "了",
+            "，",
+            "谢谢",
+            "奶奶。"
+          ],
+          "audio": "/audio/tts/yes-grandma-thank-you.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "And I sent you English books. Did you read them?",
+          "scrambledChinese": [
+            "我",
+            "还",
+            "寄",
+            "给",
+            "你",
+            "英语",
+            "书",
+            "，",
+            "你",
+            "读",
+            "了",
+            "吗？"
+          ],
+          "correctChinese": [
+            "我",
+            "还",
+            "寄",
+            "给",
+            "你",
+            "英语",
+            "书",
+            "，",
+            "你",
+            "读",
+            "了",
+            "吗？"
+          ],
+          "audio": "/audio/tts/and-i-sent-you-english-books-did-you-read-them.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, Grandma. I read them. They are interesting.",
+          "scrambledChinese": [
+            "读",
+            "了",
+            "，",
+            "很有趣",
+            "。"
+          ],
+          "correctChinese": [
+            "读",
+            "了",
+            "，",
+            "很有趣",
+            "。"
+          ],
+          "audio": "/audio/tts/yes-grandma-i-read-them-they-are-interesting.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

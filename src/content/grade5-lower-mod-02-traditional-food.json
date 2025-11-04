@@ -183,6 +183,92 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What did she have for breakfast?",
+          "scrambledChinese": [
+            "她",
+            "早餐",
+            "吃了",
+            "什么？"
+          ],
+          "correctChinese": [
+            "她",
+            "早餐",
+            "吃了",
+            "什么？"
+          ],
+          "audio": "/audio/tts/what-did-she-have-for-breakfast.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "She had eggs and sausage.",
+          "scrambledChinese": [
+            "她",
+            "吃了",
+            "鸡蛋",
+            "和",
+            "香肠。"
+          ],
+          "correctChinese": [
+            "她",
+            "吃了",
+            "鸡蛋",
+            "和",
+            "香肠。"
+          ],
+          "audio": "/audio/tts/she-had-eggs-and-sausage.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What did she have for dinner?",
+          "scrambledChinese": [
+            "她",
+            "晚餐",
+            "吃了",
+            "什么？"
+          ],
+          "correctChinese": [
+            "她",
+            "晚餐",
+            "吃了",
+            "什么？"
+          ],
+          "audio": "/audio/tts/what-did-she-have-for-dinner.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "She had fish and chips.",
+          "scrambledChinese": [
+            "她",
+            "吃了",
+            "炸鱼",
+            "和",
+            "薯条。"
+          ],
+          "correctChinese": [
+            "她",
+            "吃了",
+            "炸鱼",
+            "和",
+            "薯条。"
+          ],
+          "audio": "/audio/tts/she-had-fish-and-chips.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

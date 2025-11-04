@@ -223,6 +223,164 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My father goes to work at 8 o'clock every morning. He is a policeman.",
+          "scrambledChinese": [
+            "我",
+            "爸",
+            "爸",
+            "每",
+            "天",
+            "早",
+            "上",
+            "8",
+            "点",
+            "上",
+            "班",
+            "。",
+            "他",
+            "是",
+            "警",
+            "察",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "爸",
+            "爸",
+            "每",
+            "天",
+            "早",
+            "上",
+            "8",
+            "点",
+            "上",
+            "班",
+            "。",
+            "他",
+            "是",
+            "警",
+            "察",
+            "。"
+          ],
+          "audio": "/audio/tts/my-father-goes-to-work-at-8-oclock-every-morning-he-is-a-policeman.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My father goes to work at 6 o'clock every evening. He's an actor.",
+          "scrambledChinese": [
+            "我",
+            "爸",
+            "爸",
+            "每",
+            "天",
+            "晚",
+            "上",
+            "6",
+            "点",
+            "上",
+            "班",
+            "。",
+            "他",
+            "是",
+            "演",
+            "员",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "爸",
+            "爸",
+            "每",
+            "天",
+            "晚",
+            "上",
+            "6",
+            "点",
+            "上",
+            "班",
+            "。",
+            "他",
+            "是",
+            "演",
+            "员",
+            "。"
+          ],
+          "audio": "/audio/tts/my-father-goes-to-work-at-6-oclock-every-evening-hes-an-actor.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My grandma was a driver before.",
+          "scrambledChinese": [
+            "我",
+            "奶",
+            "奶",
+            "以",
+            "前",
+            "是",
+            "司",
+            "机",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "奶",
+            "奶",
+            "以",
+            "前",
+            "是",
+            "司",
+            "机",
+            "。"
+          ],
+          "audio": "/audio/tts/my-grandma-was-a-driver-before.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "My grandpa was a flute player before.",
+          "scrambledChinese": [
+            "我",
+            "爷",
+            "爷",
+            "以",
+            "前",
+            "是",
+            "吹",
+            "笛",
+            "子",
+            "的",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "爷",
+            "爷",
+            "以",
+            "前",
+            "是",
+            "吹",
+            "笛",
+            "子",
+            "的",
+            "。"
+          ],
+          "audio": "/audio/tts/my-grandpa-was-a-flute-player-before.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

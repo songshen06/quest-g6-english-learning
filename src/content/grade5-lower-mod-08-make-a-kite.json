@@ -184,6 +184,134 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What do we need to make a kite?",
+          "scrambledChinese": [
+            "我",
+            "们",
+            "需",
+            "要",
+            "什",
+            "么",
+            "来",
+            "制",
+            "作",
+            "风",
+            "筝",
+            "？"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "需",
+            "要",
+            "什",
+            "么",
+            "来",
+            "制",
+            "作",
+            "风",
+            "筝",
+            "？"
+          ],
+          "audio": "/audio/tts/what-do-we-need-to-make-a-kite.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'll make a kite.",
+          "scrambledChinese": [
+            "我",
+            "要",
+            "制",
+            "作",
+            "一",
+            "个",
+            "风",
+            "筝",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "要",
+            "制",
+            "作",
+            "一",
+            "个",
+            "风",
+            "筝",
+            "。"
+          ],
+          "audio": "/audio/tts/ill-make-a-kite.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Be ready for your trip.",
+          "scrambledChinese": [
+            "为",
+            "你",
+            "的",
+            "旅",
+            "行",
+            "做",
+            "好",
+            "准",
+            "备",
+            "。"
+          ],
+          "correctChinese": [
+            "为",
+            "你",
+            "的",
+            "旅",
+            "行",
+            "做",
+            "好",
+            "准",
+            "备",
+            "。"
+          ],
+          "audio": "/audio/tts/be-ready-for.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Get ready for school.",
+          "scrambledChinese": [
+            "为",
+            "上",
+            "学",
+            "做",
+            "好",
+            "准",
+            "备",
+            "。"
+          ],
+          "correctChinese": [
+            "为",
+            "上",
+            "学",
+            "做",
+            "好",
+            "准",
+            "备",
+            "。"
+          ],
+          "audio": "/audio/tts/get-ready-for.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

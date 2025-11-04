@@ -233,6 +233,96 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "This black bag is nice. It's big.",
+          "scrambledChinese": [
+            "这个",
+            "黑色",
+            "的",
+            "包",
+            "很好",
+            "，",
+            "很大。"
+          ],
+          "correctChinese": [
+            "这个",
+            "黑色",
+            "的",
+            "包",
+            "很好",
+            "，",
+            "很大。"
+          ],
+          "audio": "/audio/tts/this-black-bag-is-nice-its-big.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Look at this green one. It's light.",
+          "scrambledChinese": [
+            "看",
+            "看",
+            "这个",
+            "绿色",
+            "的。",
+            "它",
+            "很",
+            "轻。"
+          ],
+          "correctChinese": [
+            "看",
+            "看",
+            "这个",
+            "绿色",
+            "的。",
+            "它",
+            "很",
+            "轻。"
+          ],
+          "audio": "/audio/tts/look-at-this-green-one-its-light.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How much is this bag?",
+          "scrambledChinese": [
+            "这个",
+            "包",
+            "多少钱？"
+          ],
+          "correctChinese": [
+            "这个",
+            "包",
+            "多少钱？"
+          ],
+          "audio": "/audio/tts/how-much-is-this-bag.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It's twenty pounds.",
+          "scrambledChinese": [
+            "二十",
+            "英镑。"
+          ],
+          "correctChinese": [
+            "二十",
+            "英镑。"
+          ],
+          "audio": "/audio/tts/its-twenty-pounds.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

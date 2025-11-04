@@ -7,8 +7,14 @@ interface EnToZhStepProps {
   onComplete: () => void
 }
 
+interface WordItem {
+  id: string
+  text: string
+  index: number
+}
+
 export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
-  const [selectedOrder, setSelectedOrder] = useState<string[]>([])
+  const [selectedOrder, setSelectedOrder] = useState<WordItem[]>([])
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [isPlayingAudio, setIsPlayingAudio] = useState(false)
@@ -16,6 +22,13 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
   const english = step.english || ''
   const scrambledChinese = step.scrambledChinese || []
   const correctChinese = step.correctChinese || []
+
+  // Create word items with unique IDs
+  const wordItems: WordItem[] = scrambledChinese.map((word, index) => ({
+    id: `word-${index}`,
+    text: word,
+    index
+  }))
 
   // Reset state when step changes
   useEffect(() => {
@@ -37,19 +50,20 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
     }
   }
 
-  const handleWordClick = (word: string) => {
-    if (selectedOrder.includes(word)) {
+  const handleWordClick = (wordItem: WordItem) => {
+    const isSelected = selectedOrder.some(item => item.id === wordItem.id)
+    if (isSelected) {
       // Remove word from selected order
-      setSelectedOrder(prev => prev.filter(w => w !== word))
+      setSelectedOrder(prev => prev.filter(item => item.id !== wordItem.id))
     } else {
       // Add word to selected order
-      setSelectedOrder(prev => [...prev, word])
+      setSelectedOrder(prev => [...prev, wordItem])
     }
   }
 
   const checkAnswer = () => {
     const correct = selectedOrder.length === correctChinese.length &&
-                   selectedOrder.every((word, index) => word === correctChinese[index])
+                   selectedOrder.every((wordItem, index) => wordItem.text === correctChinese[index])
 
     setIsCorrect(correct)
     setShowFeedback(true)
@@ -66,16 +80,19 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
     setShowFeedback(false)
   }
 
-  const getWordStatus = (word: string) => {
-    const isSelected = selectedOrder.includes(word)
-    const selectedIndex = selectedOrder.indexOf(word)
+  const getWordStatus = (wordItem: WordItem) => {
+    const selectedItem = selectedOrder.find(item => item.id === wordItem.id)
+    const isSelected = !!selectedItem
+    const selectedIndex = selectedOrder.findIndex(item => item.id === wordItem.id)
 
     if (isSelected && showFeedback && isCorrect) {
       return 'correct'
     }
     if (isSelected && showFeedback && !isCorrect) {
-      const correctIndex = correctChinese.indexOf(word)
-      return selectedIndex === correctIndex ? 'correct' : 'incorrect'
+      const correctIndex = correctChinese.findIndex((word, index) =>
+        word === wordItem.text && index === selectedIndex
+      )
+      return correctIndex !== -1 ? 'correct' : 'incorrect'
     }
 
     return isSelected ? 'selected' : 'available'
@@ -133,13 +150,13 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
         <div className="mb-8">
           <h3 className="text-lg font-semibold text-gray-700 mb-4">点击中文词选择正确顺序：</h3>
           <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
-            {scrambledChinese.map((word, index) => {
-              const status = getWordStatus(word)
+            {wordItems.map((wordItem) => {
+              const status = getWordStatus(wordItem)
 
               return (
                 <button
-                  key={`word-${index}`}
-                  onClick={() => handleWordClick(word)}
+                  key={wordItem.id}
+                  onClick={() => handleWordClick(wordItem)}
                   disabled={status === 'correct'}
                   className={`px-4 py-3 rounded-lg border-2 font-medium text-lg transition-all ${
                     status === 'correct'
@@ -151,10 +168,10 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
                       : 'bg-white border-gray-300 hover:border-blue-400 hover:bg-blue-50'
                   }`}
                 >
-                  {word}
+                  {wordItem.text}
                   {status === 'selected' && (
                     <span className="ml-2 text-sm text-blue-600">
-                      #{selectedOrder.indexOf(word) + 1}
+                      #{selectedOrder.findIndex(item => item.id === wordItem.id) + 1}
                     </span>
                   )}
                 </button>
@@ -169,7 +186,7 @@ export const EnToZhStep: React.FC<EnToZhStepProps> = ({ step, onComplete }) => {
             <h3 className="text-lg font-semibold text-gray-700 mb-4">你的翻译：</h3>
             <div className="bg-gray-50 p-4 rounded-lg max-w-2xl mx-auto">
               <p className="text-xl font-medium">
-                {selectedOrder.join('')}
+                {selectedOrder.map(item => item.text).join('')}
               </p>
             </div>
           </div>

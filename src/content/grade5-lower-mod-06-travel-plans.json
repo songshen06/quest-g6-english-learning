@@ -259,6 +259,112 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "How will we get there?",
+          "scrambledChinese": [
+            "我",
+            "们",
+            "怎",
+            "么",
+            "去",
+            "那",
+            "里",
+            "？"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "怎",
+            "么",
+            "去",
+            "那",
+            "里",
+            "？"
+          ],
+          "audio": "/audio/tts/how-will-we-get-there.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "By car, it will take three hours.",
+          "scrambledChinese": [
+            "坐",
+            "车",
+            "要",
+            "三",
+            "个",
+            "小",
+            "时",
+            "。"
+          ],
+          "correctChinese": [
+            "坐",
+            "车",
+            "要",
+            "三",
+            "个",
+            "小",
+            "时",
+            "。"
+          ],
+          "audio": "/audio/tts/by-car-it-will-take-three-hours.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'll go to the airport.",
+          "scrambledChinese": [
+            "我",
+            "要",
+            "去",
+            "机",
+            "场",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "要",
+            "去",
+            "机",
+            "场",
+            "。"
+          ],
+          "audio": "/audio/tts/ill-go-to-the-airport.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'll be home at 7 o'clock.",
+          "scrambledChinese": [
+            "我",
+            "7",
+            "点",
+            "到",
+            "家",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "7",
+            "点",
+            "到",
+            "家",
+            "。"
+          ],
+          "audio": "/audio/tts/ill-be-home-at-7-oclock.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

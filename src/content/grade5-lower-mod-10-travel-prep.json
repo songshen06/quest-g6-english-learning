@@ -217,6 +217,146 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What will we see there?",
+          "scrambledChinese": [
+            "我",
+            "们",
+            "在",
+            "那",
+            "里",
+            "会",
+            "看",
+            "到",
+            "什",
+            "么",
+            "？"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "在",
+            "那",
+            "里",
+            "会",
+            "看",
+            "到",
+            "什",
+            "么",
+            "？"
+          ],
+          "audio": "/audio/tts/what-will-we-see-there.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "We'll see lots of very big stones.",
+          "scrambledChinese": [
+            "我",
+            "们",
+            "会",
+            "看",
+            "到",
+            "很",
+            "多",
+            "非",
+            "常",
+            "大",
+            "的",
+            "石",
+            "头",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "会",
+            "看",
+            "到",
+            "很",
+            "多",
+            "非",
+            "常",
+            "大",
+            "的",
+            "石",
+            "头",
+            "。"
+          ],
+          "audio": "/audio/tts/well-see-lots-of-very-big-stones.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "When is Easter in the UK?",
+          "scrambledChinese": [
+            "英",
+            "国",
+            "的",
+            "复",
+            "活",
+            "节",
+            "是",
+            "什",
+            "么",
+            "时",
+            "候",
+            "？"
+          ],
+          "correctChinese": [
+            "英",
+            "国",
+            "的",
+            "复",
+            "活",
+            "节",
+            "是",
+            "什",
+            "么",
+            "时",
+            "候",
+            "？"
+          ],
+          "audio": "/audio/tts/when-is-easter-in-the-uk.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "What are we going to do?",
+          "scrambledChinese": [
+            "我",
+            "们",
+            "打",
+            "算",
+            "做",
+            "什",
+            "么",
+            "？"
+          ],
+          "correctChinese": [
+            "我",
+            "们",
+            "打",
+            "算",
+            "做",
+            "什",
+            "么",
+            "？"
+          ],
+          "audio": "/audio/tts/what-are-we-going-to-do.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [

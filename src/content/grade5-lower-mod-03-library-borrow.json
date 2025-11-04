@@ -185,7 +185,104 @@
     {
       "id": "en-to-zh",
       "title": "英翻中练习",
-      "steps": [],
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Have you got the Harry Potter DVDs?",
+          "scrambledChinese": [
+            "你",
+            "有",
+            "哈利",
+            "波特",
+            "的",
+            "DVD",
+            "吗？"
+          ],
+          "correctChinese": [
+            "你",
+            "有",
+            "哈利",
+            "波特",
+            "的",
+            "DVD",
+            "吗？"
+          ],
+          "audio": "/audio/tts/have-you-got-the-harry-potter-dvds.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Sorry, we haven't got the DVDs. But we have got the books.",
+          "scrambledChinese": [
+            "抱歉",
+            "，",
+            "我们",
+            "没有",
+            "DVD",
+            "，",
+            "不过",
+            "有",
+            "书。"
+          ],
+          "correctChinese": [
+            "抱歉",
+            "，",
+            "我们",
+            "没有",
+            "DVD",
+            "，",
+            "不过",
+            "有",
+            "书。"
+          ],
+          "audio": "/audio/tts/sorry-we-havent-got-the-dvds-but-we-have-got-the-books.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "You've got lots of Harry Potter books here!",
+          "scrambledChinese": [
+            "你们",
+            "这儿",
+            "有",
+            "好多",
+            "哈利",
+            "波特",
+            "的",
+            "书！"
+          ],
+          "correctChinese": [
+            "你们",
+            "这儿",
+            "有",
+            "好多",
+            "哈利",
+            "波特",
+            "的",
+            "书！"
+          ],
+          "audio": "/audio/tts/youve-got-lots-of-harry-potter-books-here.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Yes, we have.",
+          "scrambledChinese": [
+            "是的",
+            "，",
+            "我们",
+            "有。"
+          ],
+          "correctChinese": [
+            "是的",
+            "，",
+            "我们",
+            "有。"
+          ],
+          "audio": "/audio/tts/yes-we-have.mp3"
+        }
+      ],
       "reward": {
         "badge": "/images/rewards/translation-badge.png",
         "xp": 15

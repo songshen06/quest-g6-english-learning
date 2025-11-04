@@ -257,6 +257,168 @@
       }
     },
     {
+      "id": "en-to-zh",
+      "title": "英翻中练习",
+      "steps": [
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "Last week we went to a children's theatre.",
+          "scrambledChinese": [
+            "上",
+            "周",
+            "我",
+            "们",
+            "去",
+            "了",
+            "一",
+            "家",
+            "儿",
+            "童",
+            "剧",
+            "院",
+            "。"
+          ],
+          "correctChinese": [
+            "上",
+            "周",
+            "我",
+            "们",
+            "去",
+            "了",
+            "一",
+            "家",
+            "儿",
+            "童",
+            "剧",
+            "院",
+            "。"
+          ],
+          "audio": "/audio/tts/last-week-we-went-to-a-childrens-theatre.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "The actors told lots of jokes. We laughed a lot.",
+          "scrambledChinese": [
+            "演",
+            "员",
+            "们",
+            "讲",
+            "了",
+            "很",
+            "多",
+            "笑",
+            "话",
+            "。",
+            "我",
+            "们",
+            "笑",
+            "了",
+            "很",
+            "多",
+            "。"
+          ],
+          "correctChinese": [
+            "演",
+            "员",
+            "们",
+            "讲",
+            "了",
+            "很",
+            "多",
+            "笑",
+            "话",
+            "。",
+            "我",
+            "们",
+            "笑",
+            "了",
+            "很",
+            "多",
+            "。"
+          ],
+          "audio": "/audio/tts/the-actors-told-lots-of-jokes-we-laughed-a-lot.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "It was very exciting.",
+          "scrambledChinese": [
+            "它",
+            "非",
+            "常",
+            "令",
+            "人",
+            "兴",
+            "奋",
+            "。"
+          ],
+          "correctChinese": [
+            "它",
+            "非",
+            "常",
+            "令",
+            "人",
+            "兴",
+            "奋",
+            "。"
+          ],
+          "audio": "/audio/tts/it-was-very-exciting.mp3"
+        },
+        {
+          "type": "entozh",
+          "text": "将英语句子翻译成正确的中文顺序",
+          "english": "I'm putting my new stamps into my stamp book.",
+          "scrambledChinese": [
+            "我",
+            "正",
+            "在",
+            "把",
+            "我",
+            "的",
+            "新",
+            "邮",
+            "票",
+            "放",
+            "进",
+            "我",
+            "的",
+            "邮",
+            "票",
+            "册",
+            "里",
+            "。"
+          ],
+          "correctChinese": [
+            "我",
+            "正",
+            "在",
+            "把",
+            "我",
+            "的",
+            "新",
+            "邮",
+            "票",
+            "放",
+            "进",
+            "我",
+            "的",
+            "邮",
+            "票",
+            "册",
+            "里",
+            "。"
+          ],
+          "audio": "/audio/tts/im-putting-my-new-stamps-into-my-stamp-book.mp3"
+        }
+      ],
+      "reward": {
+        "badge": "/images/rewards/translation-badge.png",
+        "xp": 15
+      }
+    },
+    {
       "id": "zh-to-en",
       "title": "中翻英练习",
       "steps": [
