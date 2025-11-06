@@ -118,6 +118,7 @@ export const WordMatchingStep: React.FC<WordMatchingStepProps> = ({ step, onComp
     setIsCorrect(correct)
     setShowFeedback(true)
 
+    // Only proceed to next step if correct
     setTimeout(() => {
       if (correct) {
         onComplete()
@@ -149,7 +150,14 @@ export const WordMatchingStep: React.FC<WordMatchingStepProps> = ({ step, onComp
               <div className="text-center">
                 <div className="text-4xl mb-3">🎉</div>
                 <p className="text-xl font-bold mb-2">完美！所有配对正确！</p>
-                <p className="text-sm">准备进入下一个练习...</p>
+                <p className="text-sm">
+                  {step.text?.includes('第1部分')
+                    ? '第一部分完成！准备进入第二部分...'
+                    : step.text?.includes('第2部分')
+                    ? '第二部分完成！准备进入下一个练习...'
+                    : '准备进入下一个练习...'
+                  }
+                </p>
               </div>
             ) : (
               <div className="text-center">

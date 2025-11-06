@@ -24,13 +24,25 @@ export const QuestRunner: React.FC<QuestRunnerProps> = ({ quest, onQuestComplete
 
   const currentStep = quest.steps[currentStepIndex]
 
-  
   const handleStepComplete = () => {
+    // Check if this is the last step before completing it
+    const isLastStep = currentStepIndex >= quest.steps.length - 1
+
     // Notify store of step completion
     completeStep()
 
+    // Force a state update check after a brief delay to handle async issues
+    setTimeout(() => {
+      const { currentStepIndex: newIndex } = useGameStore.getState()
+
+      // If step didn't advance and this isn't the last step, force the update
+      if (newIndex === currentStepIndex && !isLastStep) {
+        setCurrentStepIndex(currentStepIndex + 1)
+      }
+    }, 100)
+
     // Check if this was the last step
-    if (currentStepIndex >= quest.steps.length - 1) {
+    if (isLastStep) {
       // Notify store of quest completion
       completeQuest()
       onQuestComplete?.()
@@ -135,6 +147,7 @@ export const QuestRunner: React.FC<QuestRunnerProps> = ({ quest, onQuestComplete
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm text-gray-600">
               {t('common.progress')} {currentStepIndex + 1} / {quest.steps.length}
+              {currentStep?.text?.includes('第') && ` - ${currentStep.text}`}
             </span>
             <span className="text-sm text-gray-600">
               {Math.round(progressPercentage)}%
@@ -150,14 +163,17 @@ export const QuestRunner: React.FC<QuestRunnerProps> = ({ quest, onQuestComplete
 
         {/* Step Indicators */}
         <div className="flex justify-center gap-2">
-          {quest.steps.map((_, index) => (
+          {quest.steps.map((step, index) => (
             <div
               key={index}
               className={`w-2 h-2 rounded-full transition-colors ${
-                index <= currentStepIndex
+                index === currentStepIndex
+                  ? 'bg-primary-600 ring-2 ring-primary-300'
+                  : index < currentStepIndex
                   ? 'bg-primary-600'
                   : 'bg-gray-300'
               }`}
+              title={step.text || `步骤 ${index + 1}`}
             />
           ))}
         </div>

@@ -125,12 +125,11 @@ export const useGameStore = create<GameState>()(
 
         const nextStepIndex = currentStepIndex + 1
 
-        if (nextStepIndex >= currentQuest.steps.length) {
-          // Quest completed
-          get().completeQuest()
-        } else {
+        // Only update if we're not going beyond the array bounds
+        if (nextStepIndex < currentQuest.steps.length) {
           set({ currentStepIndex: nextStepIndex })
         }
+        // If this would go beyond bounds, let QuestRunner handle completion
       },
 
       completeQuest: () => {
