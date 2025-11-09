@@ -4,6 +4,7 @@ import { getAssetPath } from './assetPath'
 class SimpleAudioPlayer implements AudioPlayer {
   private audio: HTMLAudioElement | null = null
   private _isPlaying = false
+  private audioCache = new Map<string, HTMLAudioElement>() // Audio cache for mobile performance
 
   get isPlaying(): boolean {
     return this._isPlaying
@@ -17,8 +18,34 @@ class SimpleAudioPlayer implements AudioPlayer {
       // Ensure the src includes the base path
       const fullSrc = getAssetPath(src)
 
-      // Create new audio element
-      this.audio = new Audio(fullSrc)
+      // Check cache first for mobile performance
+      let cachedAudio = this.audioCache.get(fullSrc)
+
+      if (!cachedAudio) {
+        // Create new audio element with preloading and mobile optimizations
+        cachedAudio = new Audio(fullSrc)
+
+        // Mobile-specific optimizations
+        cachedAudio.preload = 'auto'
+        cachedAudio.crossOrigin = 'anonymous'
+
+        // Cache the audio for future use (limit cache size)
+        if (this.audioCache.size >= 20) { // Limit cache to 20 audio files
+          const firstKey = this.audioCache.keys().next().value
+          this.audioCache.delete(firstKey)
+        }
+        this.audioCache.set(fullSrc, cachedAudio)
+      }
+
+      // Clone the cached audio for independent playback
+      this.audio = cachedAudio.cloneNode() as HTMLAudioElement
+
+      // Set audio loading optimizations
+      if (this.audio.readyState < 3) { // HAVE_FUTURE_DATA
+        this.audio.addEventListener('canplaythrough', () => {
+          // Audio is ready to play without buffering
+        }, { once: true })
+      }
 
       // Set up event listeners
       this.audio.addEventListener('ended', () => {
@@ -43,9 +70,36 @@ class SimpleAudioPlayer implements AudioPlayer {
         console.warn('Audio playback stalled')
       })
 
-      // Play the audio
+      // Play the audio with mobile-specific handling
       this._isPlaying = true
-      await this.audio.play()
+
+      // For mobile, try to play with a small delay to ensure loading
+      if (this.audio.readyState >= 3) { // HAVE_FUTURE_DATA
+        await this.audio.play()
+      } else {
+        // Wait for audio to be ready, then play
+        await new Promise((resolve, reject) => {
+          const timeout = setTimeout(() => {
+            reject(new Error('Audio loading timeout'))
+          }, 5000) // 5 second timeout
+
+          const onCanPlay = async () => {
+            clearTimeout(timeout)
+            try {
+              await this.audio!.play()
+              resolve(void 0)
+            } catch (error) {
+              reject(error)
+            }
+          }
+
+          if (this.audio!.readyState >= 3) {
+            onCanPlay()
+          } else {
+            this.audio!.addEventListener('canplaythrough', onCanPlay, { once: true })
+          }
+        })
+      }
     } catch (error) {
       console.error('Failed to play audio:', error)
       console.error('Audio src:', src)
@@ -76,6 +130,11 @@ class SimpleAudioPlayer implements AudioPlayer {
     }
     this._isPlaying = false
   }
+
+  // Clear cache method for memory management
+  clearCache(): void {
+    this.audioCache.clear()
+  }
 }
 
 export const audioPlayer = new SimpleAudioPlayer()
@@ -98,7 +157,32 @@ export class SoundManager {
       // Ensure the src includes the base path
       const fullSrc = getAssetPath(src)
       const audio = new Audio(fullSrc)
-      audio.load()
+
+      // Mobile optimizations for preloading
+      audio.preload = 'auto'
+      audio.crossOrigin = 'anonymous'
+
+      // Wait for audio to be ready before marking as preloaded
+      if (audio.readyState < 3) {
+        await new Promise<void>((resolve, reject) => {
+          const timeout = setTimeout(() => {
+            resolve() // Don't block on preload timeout
+          }, 3000)
+
+          const onCanPlay = () => {
+            clearTimeout(timeout)
+            resolve()
+          }
+
+          audio.addEventListener('canplaythrough', onCanPlay, { once: true })
+
+          // Fallback if already ready
+          if (audio.readyState >= 3) {
+            onCanPlay()
+          }
+        })
+      }
+
       this.soundEffects.set(id, audio)
     } catch (error) {
       console.warn(`Failed to preload sound: ${id}`, error)
