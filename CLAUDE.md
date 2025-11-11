@@ -5,6 +5,7 @@
 **Quest G6** is a comprehensive English learning application for grades 4-6 students, based on FLTRP (Foreign Language Teaching and Research Press) textbook series. The application provides interactive gamified learning experiences with 240+ content modules and 1,700+ audio files.
 
 ### Key Features
+
 - 📚 **42 Complete Modules**: Covering grades 4-6 curriculum
 - 🎵 **Rich Audio System**: 1,700+ high-quality pronunciation files
 - 🎮 **Gamification**: XP system, badges, and achievements
@@ -15,6 +16,7 @@
 ## 🏗️ Project Architecture
 
 ### Technology Stack
+
 - **Frontend**: React 18.2.0 + TypeScript 5.2.2
 - **Build Tool**: Vite 5.0.8
 - **Styling**: Tailwind CSS
@@ -22,6 +24,7 @@
 - **Deployment**: GitHub Pages
 
 ### Directory Structure
+
 ```
 quest-g6-english-learning/
 ├── public/                 # Static assets
@@ -58,12 +61,14 @@ quest-g6-english-learning/
 ### Code Style & Conventions
 
 #### TypeScript
+
 - **Strict typing enabled**: Always use proper TypeScript types
 - **Interface over Type**: Prefer `interface` for object shapes
 - **Enum usage**: Use enums for predefined values (e.g., themes, exercise types)
 - **Null safety**: Use `?` and `!` operators appropriately
 
 #### React Patterns
+
 - **Functional Components**: Use functional components with hooks
 - **Custom Hooks**: Extract reusable logic into custom hooks
 - **Props Destructuring**: Destructure props in function signatures
@@ -82,13 +87,14 @@ export const ExerciseComponent: React.FC<ExerciseProps> = ({
   question,
   options,
   onAnswer,
-  onComplete
+  onComplete,
 }) => {
   // Component implementation
 };
 ```
 
 #### File Naming
+
 - **Components**: PascalCase (e.g., `ExerciseCard.tsx`)
 - **Utilities**: camelCase (e.g., `audioPlayer.ts`)
 - **Types**: camelCase with suffix (e.g., `userTypes.ts`)
@@ -97,6 +103,7 @@ export const ExerciseComponent: React.FC<ExerciseProps> = ({
 ### State Management (Zustand)
 
 #### Store Structure
+
 ```typescript
 // ✅ Store template
 interface State {
@@ -128,12 +135,15 @@ export const useUserStore = create<State & Actions>((set) => ({
 ### Audio Management
 
 #### Adding New Audio Files
+
 1. **Generate Audio**: Use the audio generation script
+
    ```bash
    python regenerate_problematic_audio.py "new phrase text"
    ```
 
 2. **Update Content**: Reference audio files in module JSON
+
    ```json
    {
      "en": "new phrase text",
@@ -144,6 +154,7 @@ export const useUserStore = create<State & Actions>((set) => ({
 3. **Test Playback**: Verify audio plays correctly in all environments
 
 #### Audio Quality Standards
+
 - **Format**: MP3, 44.1kHz, 128kbps minimum
 - **Engine**: Use Coqui TTS for high-quality generation
 - **File Naming**: kebab-case, descriptive names
@@ -152,6 +163,7 @@ export const useUserStore = create<State & Actions>((set) => ({
 ### Content Management
 
 #### Module Structure
+
 ```json
 {
   "id": "module-xx-name",
@@ -193,6 +205,7 @@ export const useUserStore = create<State & Actions>((set) => ({
 ### Testing & Quality Assurance
 
 #### Before Committing
+
 1. **Audio Testing**: Verify all new audio files play correctly
 2. **Functionality Testing**: Test new features on multiple devices
 3. **Responsive Testing**: Check mobile and desktop compatibility
@@ -200,6 +213,7 @@ export const useUserStore = create<State & Actions>((set) => ({
 5. **Performance Testing**: Check for memory leaks and loading times
 
 #### Build Validation
+
 ```bash
 # Run build and check for errors
 npm run build
@@ -214,18 +228,21 @@ npm run test
 ## 🚨 Safety Guidelines
 
 ### What to Modify Carefully
+
 - **Audio Files**: Always test after modification
 - **User Data**: Ensure backward compatibility
 - **Content Structure**: Maintain JSON schema consistency
 - **State Management**: Avoid breaking existing state contracts
 
 ### What Requires Special Attention
+
 - **Authentication Logic**: Password encryption and user data
 - **Progress Tracking**: Ensure data integrity
 - **PWA Configuration**: Service worker and manifest
 - **Build Configuration**: Vite and deployment settings
 
 ### Backup Requirements
+
 - **Content Files**: Always backup before bulk changes
 - **User Data**: Test migration scripts thoroughly
 - **Audio Files**: Keep original high-quality versions
@@ -234,6 +251,7 @@ npm run test
 ## 🛠️ Available Scripts & Tools
 
 ### Development Scripts
+
 ```bash
 npm run dev          # Start development server
 npm run build        # Build for production
@@ -242,6 +260,7 @@ npm run lint         # Run linter (needs configuration)
 ```
 
 ### Audio Generation Scripts
+
 ```bash
 # Generate audio for specific phrases
 python regenerate_problematic_audio.py "phrase 1" "phrase 2"
@@ -254,6 +273,7 @@ python regenerate_module03_audio.py
 ```
 
 ### Maintenance Scripts
+
 ```bash
 # Clean backup files
 find . -name "*.backup-*" -delete
@@ -265,12 +285,14 @@ python -c "import json; json.load(open('src/content/index.ts'))"
 ## 📊 Performance Considerations
 
 ### Audio Optimization
+
 - **Lazy Loading**: Load audio files on demand
 - **Caching Strategy**: Cache frequently used audio
 - **Preloading**: Preload critical audio files
 - **Compression**: Balance quality and file size
 
 ### Content Loading
+
 - **Chunking**: Load modules in chunks
 - **Progressive Loading**: Load content as needed
 - **Caching**: Cache loaded content in localStorage
@@ -279,12 +301,14 @@ python -c "import json; json.load(open('src/content/index.ts'))"
 ## 🔍 Debugging Guidelines
 
 ### Common Issues
+
 - **Audio Playback**: Check file paths and formats
 - **State Management**: Verify Zustand store usage
 - **Content Loading**: Check JSON structure and parsing
 - **PWA Issues**: Verify service worker registration
 
 ### Debug Tools
+
 - **React DevTools**: Component state and props inspection
 - **Network Tab**: Audio file loading and caching
 - **Console**: Audio and state management errors
@@ -293,12 +317,14 @@ python -c "import json; json.load(open('src/content/index.ts'))"
 ## 🚀 Deployment
 
 ### GitHub Pages Deployment
+
 1. **Build Project**: `npm run build`
 2. **Push Changes**: `git push origin main`
 3. **Automatic Deploy**: GitHub Actions will deploy to GitHub Pages
 4. **Verify Deployment**: Check https://songshen06.github.io/quest-g6-english-learning/
 
 ### Environment Variables
+
 ```env
 VITE_APP_TITLE=Quest G6 English Learning
 VITE_GITHUB_PAGES_BASE=/quest-g6-english-learning/
@@ -306,13 +332,15 @@ VITE_GITHUB_PAGES_BASE=/quest-g6-english-learning/
 
 ## 📝 Project History & Context
 
-### Recent Improvements (2024-11)
+### Recent Improvements (2025-11)
+
 - **Audio Quality Upgraded**: Replaced with high-quality Coqui TTS files
 - **Script Optimization**: Enhanced audio generation with command-line parameters
 - **Performance**: Improved audio caching and mobile compatibility
 - **Content**: Added 16 new high-quality audio files for key phrases
 
 ### Known Issues & Work in Progress
+
 - **ESLint Configuration**: Needs proper setup for code quality
 - **Performance Testing**: Pending comprehensive performance analysis
 - **Accessibility Audit**: Needs thorough accessibility testing
@@ -321,12 +349,14 @@ VITE_GITHUB_PAGES_BASE=/quest-g6-english-learning/
 ## 💡 Feature Ideas & Future Enhancements
 
 ### High Priority
+
 - **Speech Recognition**: AI-powered pronunciation practice
 - **Progress Analytics**: Detailed learning insights
 - **Offline Mode**: Enhanced offline capabilities
 - **Error Boundaries**: Better error handling
 
 ### Medium Priority
+
 - **Social Features**: Leaderboards and group learning
 - **Custom Content**: Teacher content creation tools
 - **Advanced Reporting**: Parent/teacher dashboards
@@ -335,6 +365,7 @@ VITE_GITHUB_PAGES_BASE=/quest-g6-english-learning/
 ## 🤖 Claude AI Assistant Role
 
 When working on this project, Claude should:
+
 1. **Understand Educational Context**: This is a learning application for young students
 2. **Prioritize Accessibility**: All features should be accessible and inclusive
 3. **Respect Content Structure**: Maintain consistency with existing content patterns
@@ -344,6 +375,7 @@ When working on this project, Claude should:
 7. **Follow Educational Best Practices**: Align with modern language learning pedagogy
 
 ### Claude's Capabilities in This Project
+
 - **Audio Generation**: Can regenerate and optimize audio files
 - **Content Updates**: Can modify learning content following established patterns
 - **Feature Development**: Can build new educational features and exercises
@@ -353,6 +385,6 @@ When working on this project, Claude should:
 
 ---
 
-*Last Updated: November 2024*
-*Project Version: 2.2.1*
-*Maintainer: Shen Song*
+_Last Updated: November 2025_
+_Project Version: 2.2.1_
+_Maintainer: Shen Song_
