@@ -11,7 +11,7 @@ interface ZhToEnStepProps {
 }
 
 export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
-  const [selectedOrder, setSelectedOrder] = useState<string[]>([])
+  const [selectedIndices, setSelectedIndices] = useState<number[]>([])
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const { progress } = useGameStore()
@@ -23,20 +23,23 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
 
   // Reset state when step changes
   useEffect(() => {
-    setSelectedOrder([])
+    setSelectedIndices([])
     setShowFeedback(false)
     setIsCorrect(false)
   }, [step])
 
-  const handleWordClick = (word: string) => {
-    if (selectedOrder.includes(word)) {
-      // Remove word from selected order
-      setSelectedOrder(prev => prev.filter(w => w !== word))
+  const handleWordClick = (index: number) => {
+    if (selectedIndices.includes(index)) {
+      // Remove index from selected order
+      setSelectedIndices(prev => prev.filter(i => i !== index))
     } else {
-      // Add word to selected order
-      setSelectedOrder(prev => [...prev, word])
+      // Add index to selected order
+      setSelectedIndices(prev => [...prev, index])
     }
   }
+
+  // Get selected words based on indices
+  const selectedOrder = selectedIndices.map(index => scrambledEnglish[index])
 
   // Create a mapping of English words to their audio paths
   // Only return audio path if the file likely exists (based on common words we know exist)
@@ -72,10 +75,10 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
       'take-away', 'have-picnic', 'dont-worry', 'drink-water', 'fun-to',
       'go-straight', 'dont-cross', 'turn-right', 'cross-road', 'turn-left', 'its',
       // High priority basic words (essential for learning)
-      'a', 'are', 'big', 'do', 'have', 'in', 'into', 'long', 'make', 'me', 'my',
-      'new', 'of', 'on', 'the', 'to', 'watch', 'we', 'what', 'you', 'your',
+      'a', 'are', 'big', 'can', 'do', 'have', 'i', 'in', 'into', 'long', 'make', 'me', 'my',
+      'new', 'of', 'on', 'the', 'to', 'watch', 'we', 'what', 'write', 'you', 'your',
       // Medium priority descriptive words
-      'dinner', 'photo', 'room', 'worry',
+      'dinner', 'english', 'her', 'photo', 'room', 'worry',
       // Low priority context-specific words
       'course', 'doing', 'dont', 'dvd', 'forty', 'im', 'li', 'meet', 'putting',
       'questions', 'road', 'show', 'special', 'stamps',
@@ -128,13 +131,13 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
   }
 
   const resetOrder = () => {
-    setSelectedOrder([])
+    setSelectedIndices([])
     setShowFeedback(false)
   }
 
-  const getWordStatus = (word: string) => {
-    const isSelected = selectedOrder.includes(word)
-    const selectedIndex = selectedOrder.indexOf(word)
+  const getWordStatus = (word: string, index: number) => {
+    const isSelected = selectedIndices.includes(index)
+    const selectedIndex = selectedIndices.indexOf(index)
 
     if (isSelected && showFeedback && isCorrect) {
       return 'correct'
@@ -179,8 +182,9 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
           <h3 className="text-lg font-semibold text-gray-700 mb-4">点击英文单词选择正确顺序：</h3>
           <div className="flex flex-wrap gap-3 justify-center max-w-3xl mx-auto">
             {scrambledEnglish.map((word, index) => {
-              const status = getWordStatus(word)
+              const status = getWordStatus(word, index)
               const audioPath = getAudioPath(word)
+              const selectedIndex = selectedIndices.indexOf(index)
 
               return (
                 <div
@@ -196,14 +200,14 @@ export const ZhToEnStep: React.FC<ZhToEnStepProps> = ({ step, onComplete }) => {
                   }`}
                 >
                   <button
-                    onClick={() => handleWordClick(word)}
+                    onClick={() => handleWordClick(index)}
                     disabled={status === 'correct'}
                     className="flex-1 text-left"
                   >
                     {word}
-                    {status === 'selected' && (
+                    {status === 'selected' && selectedIndex !== -1 && (
                       <span className="ml-2 text-sm text-blue-600">
-                        #{selectedOrder.indexOf(word) + 1}
+                        #{selectedIndex + 1}
                       </span>
                     )}
                   </button>

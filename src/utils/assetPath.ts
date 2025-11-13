@@ -3,7 +3,7 @@
  */
 
 // Get the base path from Vite configuration
-export const BASE_PATH = '/quest-g6-english-learning'
+export const BASE_PATH = import.meta.env.PROD ? '/quest-g6-english-learning' : ''
 
 /**
  * Convert a relative asset path to include the base path

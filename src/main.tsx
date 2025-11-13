@@ -6,7 +6,8 @@ import './globals.css'
 // 注册 Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/quest-g6-english-learning/sw.js')
+    const swPath = import.meta.env.PROD ? '/quest-g6-english-learning/sw.js' : '/sw.js'
+    navigator.serviceWorker.register(swPath)
       .then((registration) => {
         console.log('✅ Service Worker 注册成功:', registration.scope)
 
